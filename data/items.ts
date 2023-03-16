@@ -30,6 +30,20 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 6,
 		isNonstandard: "Past",
 	},
+	butterfreeite: {
+		name: "Butterfreeite",
+		spritenum: 575,
+		megaStone: "Butterfree-Mega",
+		megaEvolves: "Butterfree",
+		itemUser: ["Butterfree"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 6,
+		isNonstandard: "Past",
+	},
 	absolite: {
 		name: "Absolite",
 		spritenum: 576,
