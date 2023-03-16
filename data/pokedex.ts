@@ -19254,3 +19254,4 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		gen: 5,
 	},
 }
+}
