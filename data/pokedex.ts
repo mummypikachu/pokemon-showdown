@@ -19253,4 +19253,4 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Undiscovered"],
 		gen: 5,
 	},
-};
+}
