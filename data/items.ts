@@ -40,7 +40,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: 674,
+		num: 10005,
 		gen: 9,
 
 	},
