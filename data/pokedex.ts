@@ -287,7 +287,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		baseSpecies: "Butterfree",
 		forme: "Mega",
 		types: ["Bug", "Psychic"],
-		baseStats: {hp: 80, atk: 5, def: 95, spa: 170, spd: 95, spe: 115,
+		baseStats: {hp: 80, atk: 5, def: 95, spa: 170, spd: 95, spe: 115},
 		abilities: {0: "Psychic Surge"},
 		heightm: 17,
 		weightkg: 0,
@@ -19253,5 +19253,4 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Undiscovered"],
 		gen: 5,
 	},
-}
 }
