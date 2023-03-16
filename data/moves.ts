@@ -4998,7 +4998,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	explosion: {
 		num: 153,
 		accuracy: 100,
-		basePower: 250,
+		basePower: 500,
 		category: "Physical",
 		name: "Explosion",
 		pp: 5,
@@ -16316,7 +16316,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	selfdestruct: {
 		num: 120,
 		accuracy: 100,
-		basePower: 200,
+		basePower: 400,
 		category: "Physical",
 		name: "Self-Destruct",
 		pp: 5,
@@ -20739,7 +20739,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		isNonstandard: "Unobtainable",
 		name: "Victory Dance",
 		pp: 10,
 		priority: 0,
@@ -21605,7 +21604,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 80,
 		category: "Physical",
-		isNonstandard: "LGPE",
 		name: "Zippy Zap",
 		pp: 10,
 		priority: 2,
@@ -21614,7 +21612,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			chance: 100,
 			self: {
 				boosts: {
-					evasion: 1,
+					attack: 1,
 				},
 			},
 		},
