@@ -21608,14 +21608,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 10,
 		priority: 2,
 		flags: {contact: 1, protect: 1},
-		secondary: {
-			chance: 100,
-			self: {
-				boosts: {
-					attack: 1,
-				},
-			},
-		},
+		secondary: null,
 		target: "normal",
 		type: "Electric",
 		contestType: "Cool",
