@@ -41,7 +41,8 @@ export const Items: {[itemid: string]: ItemData} = {
 			return true;
 		},
 		num: 10005,
-		gen: 9,
+		gen: 7,
+		isNonstandard: "Past",
 
 	},
 	absolite: {

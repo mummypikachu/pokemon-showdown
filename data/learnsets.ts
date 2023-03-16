@@ -23865,7 +23865,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	ledian: {
 		learnset: {
 			acrobatics: ["7M", "6M", "5M"],
-			victorydance: ["7V"],
+			victorydance: ["7M","8M","9M"],
 			aerialace: ["7M", "6M", "5M", "4M", "3M"],
 			agility: ["7L33", "7V", "6L36", "5L36", "4L36", "3L51"],
 			aircutter: ["4T"],
