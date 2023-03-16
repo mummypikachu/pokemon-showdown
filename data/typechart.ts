@@ -98,7 +98,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 	},
 	fairy: {
 		damageTaken: {
-			Bug: 2,
+			Bug: 1,
 			Dark: 2,
 			Dragon: 3,
 			Electric: 0,
@@ -402,7 +402,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Fighting: 1,
 			Fire: 1,
 			Flying: 2,
-			Ghost: 0,
+			Ghost: 2,
 			Grass: 2,
 			Ground: 1,
 			Ice: 2,

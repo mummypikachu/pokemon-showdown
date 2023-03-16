@@ -23779,6 +23779,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	},
 	ledyba: {
 		learnset: {
+			victorydance: ["7V"],
 			acrobatics: ["7M", "6M", "5M"],
 			aerialace: ["7M", "6M", "5M", "4M", "3M", "3S0"],
 			agility: ["7L29", "7V", "6L30", "5L30", "4L30", "3L43"],
@@ -23864,6 +23865,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	ledian: {
 		learnset: {
 			acrobatics: ["7M", "6M", "5M"],
+			victorydance: ["7V"],
 			aerialace: ["7M", "6M", "5M", "4M", "3M"],
 			agility: ["7L33", "7V", "6L36", "5L36", "4L36", "3L51"],
 			aircutter: ["4T"],
