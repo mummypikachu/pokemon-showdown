@@ -27,8 +27,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			return true;
 		},
 		num: 674,
-		gen: 6,
-		isNonstandard: "Past",
+		gen: 9,
 	},
 	butterfreeite: {
 		name: "Butterfreeite",
@@ -41,8 +40,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			return true;
 		},
 		num: 674,
-		gen: 6,
-		isNonstandard: "Past",
+		gen: 9,
 
 	},
 	absolite: {
