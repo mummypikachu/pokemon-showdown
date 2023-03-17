@@ -344,8 +344,8 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 640,
 		gen: 6,
 	},
-	strikevest: {
-		name: "Striker's Vest",
+	strikervest: {
+		name: "Striker Vest",
 		spritenum: 581,
 		fling: {
 			basePower: 80,
