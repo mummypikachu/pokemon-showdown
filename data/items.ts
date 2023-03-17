@@ -362,7 +362,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			}
 		},
 		num: 640,
-		gen: 6,
+		gen: 9,
 	},
 	audinite: {
 		name: "Audinite",
