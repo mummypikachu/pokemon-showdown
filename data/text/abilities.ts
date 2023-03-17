@@ -386,11 +386,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	drizzle: {
 		name: "Drizzle",
-		shortDesc: "On switch-in, this Pokemon summons Rain Dance.",
+		shortDesc: "On switch-in, this Pokemon summons Rain.",
 	},
 	drought: {
 		name: "Drought",
-		shortDesc: "On switch-in, this Pokemon summons Sunny Day.",
+		shortDesc: "On switch-in, this Pokemon summons Sun.",
 	},
 	dryskin: {
 		name: "Dry Skin",

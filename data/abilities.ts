@@ -1004,7 +1004,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				if (action.choice === 'runPrimal' && action.pokemon === source && source.species.id === 'kyogre') return;
 				if (action.choice !== 'runSwitch' && action.choice !== 'runPrimal') break;
 			}
-			this.field.setWeather('rain');
+			this.field.setWeather('raindance');
 		},
 		name: "Drizzle",
 		rating: 4,
@@ -1016,7 +1016,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				if (action.choice === 'runPrimal' && action.pokemon === source && source.species.id === 'groudon') return;
 				if (action.choice !== 'runSwitch' && action.choice !== 'runPrimal') break;
 			}
-			this.field.setWeather('sun');
+			this.field.setWeather('sunny day');
 		},
 		name: "Drought",
 		rating: 4,
