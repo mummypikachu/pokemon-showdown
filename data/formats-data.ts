@@ -87,9 +87,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Illegal",
 		natDexTier: "RU",
 	},
-	butterfreegmax: {
+	butterfreemega: {
 		isNonstandard: "Past",
 		tier: "Illegal",
+		natDexTier: "OU",
 	},
 	weedle: {
 		isNonstandard: "Past",
