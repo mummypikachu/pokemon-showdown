@@ -9,6 +9,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Abomasite",
 		desc: "If held by an Abomasnow, this item allows it to Mega Evolve in battle.",
 	},
+	butterfreeite: {
+		name: "Butterfreeite",
+		desc: "If held by an Butterfree, this item allows it to Mega Evolve in battle.",
+	},
 	absolite: {
 		name: "Absolite",
 		desc: "If held by an Absol, this item allows it to Mega Evolve in battle.",
@@ -85,6 +89,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 	assaultvest: {
 		name: "Assault Vest",
 		desc: "Holder's Sp. Def is 1.5x, but it can only select damaging moves.",
+	},
+	strikevest: {
+		name: "Striker's Vest",
+		desc: "Holder's Defense is 1.5x, but it can only select damaging moves.",
 	},
 	audinite: {
 		name: "Audinite",

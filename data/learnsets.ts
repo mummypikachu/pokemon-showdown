@@ -87214,6 +87214,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			wildcharge: ["9M"],
 			willowisp: ["9M"],
 			zenheadbutt: ["9M"],
+			victorydance: ["9M"],
 		},
 		eventData: [
 			{generation: 9, level: 52, shiny: 1, moves: ["morningsun", "lunge", "superpower", "lowsweep"]},
