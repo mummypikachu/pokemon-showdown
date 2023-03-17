@@ -497,6 +497,38 @@ export const Conditions: {[k: string]: ConditionData} = {
 			this.add('-weather', 'none');
 		},
 	},
+	rain: {
+		name: 'Rain',
+		effectType: 'Weather',
+		duration: 0,
+		onWeatherModifyDamage(damage, attacker, defender, move) {
+			if (defender.hasItem('utilityumbrella')) return;
+			if (move.type === 'Water') {
+				this.debug('rain water boost');
+				return this.chainModify(1.5);
+			}
+			if (move.type === 'Fire') {
+				this.debug('rain fire suppress');
+				return this.chainModify(0.5);
+			}
+		},
+		onFieldStart(field, source, effect) {
+			if (effect?.effectType === 'Ability') {
+				if (this.gen <= 5) this.effectState.duration = 0;
+				this.add('-weather', 'Rain', '[from] ability: ' + effect.name, '[of] ' + source);
+			} else {
+				this.add('-weather', 'Rain');
+			}
+		},
+		onFieldResidualOrder: 1,
+		onFieldResidual() {
+			this.add('-weather', 'Rain', '[upkeep]');
+			this.eachEvent('Weather');
+		},
+		onFieldEnd() {
+			this.add('-weather', 'none');
+		},
+	},
 	primordialsea: {
 		name: 'PrimordialSea',
 		effectType: 'Weather',
@@ -575,6 +607,48 @@ export const Conditions: {[k: string]: ConditionData} = {
 			this.add('-weather', 'none');
 		},
 	},
+
+	sun: {
+		name: 'Sun',
+		effectType: 'Weather',
+		duration: 0,
+		onWeatherModifyDamage(damage, attacker, defender, move) {
+			if (move.id === 'hydrosteam' && !attacker.hasItem('utilityumbrella')) {
+				this.debug('Sunny Day Hydro Steam boost');
+				return this.chainModify(1.5);
+			}
+			if (defender.hasItem('utilityumbrella')) return;
+			if (move.type === 'Fire') {
+				this.debug('Sunny Day fire boost');
+				return this.chainModify(1.5);
+			}
+			if (move.type === 'Water') {
+				this.debug('Sunny Day water suppress');
+				return this.chainModify(0.5);
+			}
+		},
+		onFieldStart(battle, source, effect) {
+			if (effect?.effectType === 'Ability') {
+				if (this.gen <= 5) this.effectState.duration = 0;
+				this.add('-weather', 'Sun', '[from] ability: ' + effect.name, '[of] ' + source);
+			} else {
+				this.add('-weather', 'Sun');
+			}
+		},
+		onImmunity(type, pokemon) {
+			if (pokemon.hasItem('utilityumbrella')) return;
+			if (type === 'frz') return false;
+		},
+		onFieldResidualOrder: 1,
+		onFieldResidual() {
+			this.add('-weather', 'SunnyDay', '[upkeep]');
+			this.eachEvent('Weather');
+		},
+		onFieldEnd() {
+			this.add('-weather', 'none');
+		},
+	},
+
 	desolateland: {
 		name: 'DesolateLand',
 		effectType: 'Weather',
