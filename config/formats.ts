@@ -153,10 +153,10 @@ export const Formats: FormatList = [
 		ruleset: ['Min Source Gen = 9', 'Obtainable', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause'],
 	},
 	{
-		name: "[Gen 9] CAP",
+		name: "[Gen 9] dont.",
 
 		mod: 'gen9',
-		ruleset: ['[Gen 9] OU', '+CAP'],
+		ruleset: ['[Gen 9] OU'],
 		banlist: ['Crucibellite'],
 	},
 	{
