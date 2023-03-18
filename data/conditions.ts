@@ -134,6 +134,35 @@ export const Conditions: {[k: string]: ConditionData} = {
 			this.damage(pokemon.baseMaxhp / 8);
 		},
 	},
+	trickroom: {
+		name: 'trickroom',
+		effectType: 'Weather',
+		duration: 8,
+		durationCallback(source, effect) {
+			if (source?.hasAbility('persistent')) {
+				this.add('-activate', source, 'ability: Persistent', '[move] Trick Room');
+				return 10;
+			}
+			return 5;
+		},
+		onFieldStart(target, source) {
+			if (source?.hasAbility('twister')) {
+				this.add('-fieldstart', 'move: Trick Room', '[of] ' + source, '[persistent]');
+			} else {
+				this.add('-fieldstart', 'move: Trick Room', '[of] ' + source);
+			}
+		},
+		
+		onFieldRestart(target, source) {
+			this.field.removePseudoWeather('trickroom');
+		},
+		// Speed modification is changed in Pokemon.getActionSpeed() in sim/pokemon.js
+		onFieldResidualOrder: 27,
+		onFieldResidualSubOrder: 1,
+		onFieldEnd() {
+			this.add('-fieldend', 'move: Trick Room');
+		},
+	},
 	tox: {
 		name: 'tox',
 		effectType: 'Status',

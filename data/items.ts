@@ -361,7 +361,7 @@ export const Items: {[itemid: string]: ItemData} = {
 				}
 			}
 		},
-		num: 640,
+		num: 1577,
 		gen: 9,
 	},
 	audinite: {
