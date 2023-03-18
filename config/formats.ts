@@ -56,7 +56,7 @@ export const Formats: FormatList = [
 		name: "[Gen 9] OU",
 
 		mod: 'gen9',
-		ruleset: ['Standard'],
+		ruleset: ['Standard', '+CAP'],
 		banlist: ['Uber', 'AG', 'Moody', 'Sand Veil', 'Snow Cloak', 'King\'s Rock', 'Baton Pass'],
 	},
 	{

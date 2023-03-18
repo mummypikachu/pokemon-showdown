@@ -1010,6 +1010,19 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 4,
 		num: 2,
 	},
+	twister: {
+		onStart(source) {
+			for (const action of this.queue) {
+				if (action.choice === 'runPrimal' && action.pokemon === source && source.species.id === 'kyogre') return;
+				if (action.choice !== 'runSwitch' && action.choice !== 'runPrimal') break;
+			}
+			this.field.setWeather('trickroom');
+		},
+		name: "Twister",
+		rating: 4,
+		num: 2,
+	},
+	
 	drought: {
 		onStart(source) {
 			for (const action of this.queue) {
@@ -5172,7 +5185,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		isBreakable: true,
 		name: "Mountaineer",
 		rating: 3,
-		num: -2,
+		num: 281,
 	},
 	rebound: {
 		isNonstandard: "CAP",
@@ -5205,13 +5218,13 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		isBreakable: true,
 		rating: 3,
-		num: -3,
+		num: 280,
 	},
 	persistent: {
 		isNonstandard: "CAP",
 		name: "Persistent",
 		// implemented in the corresponding move
 		rating: 3,
-		num: -4,
+		num: 279,
 	},
 };
