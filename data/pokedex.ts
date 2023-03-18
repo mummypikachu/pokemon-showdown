@@ -15577,7 +15577,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Psychic", "Fairy"],
 		gender: "F",
 		baseStats: {hp: 57, atk: 90, def: 95, spa: 136, spd: 103, spe: 29},
-		abilities: {0: "Healer", 1: "Persistant", H: "Magic Bounce"},
+		abilities: {0: "Healer", 1: "Persistent", H: "Magic Bounce"},
 		heightm: 2.1,
 		weightkg: 5.1,
 		color: "Pink",
