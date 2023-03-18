@@ -41497,6 +41497,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	},
 	banette: {
 		learnset: {
+			shedtail: ["9M"],
 			allyswitch: ["7T"],
 			attract: ["7M", "6M", "5M", "4M", "3M"],
 			bodyslam: ["3T"],
@@ -55073,6 +55074,11 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	},
 	leavanny: {
 		learnset: {
+			axekick: ["9M"],
+			pounce: ["9M"],
+			trailblaze: ["9M"],
+			silktrap: ["9M"],
+			lunge: ["9M"],
 			aerialace: ["7M", "6M", "5M"],
 			attract: ["7M", "6M", "5M"],
 			bugbite: ["7T", "7L1", "6T", "6L1", "5T", "5L1"],
@@ -80293,6 +80299,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	},
 	centiskorch: {
 		learnset: {
+			victorydance: ["9M"],
 			attract: ["8M"],
 			bite: ["8L1"],
 			brutalswing: ["8M"],
