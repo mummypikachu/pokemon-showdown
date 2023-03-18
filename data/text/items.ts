@@ -90,8 +90,8 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Assault Vest",
 		desc: "Holder's Sp. Def is 1.5x, but it can only select damaging moves.",
 	},
-	strikevest: {
-		name: "Striker's Vest",
+	strikervest: {
+		name: "Striker Vest",
 		desc: "Holder's Defense is 1.5x, but it can only select damaging moves.",
 	},
 	audinite: {
