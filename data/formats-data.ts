@@ -1273,23 +1273,19 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	cyndaquil: {
-		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tier: "LC",
 		natDexTier: "LC",
 	},
 	quilava: {
-		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tier: "NFE",
 		natDexTier: "NFE",
 	},
 	typhlosion: {
-		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tier: "OU",
 		natDexTier: "RU",
 	},
 	typhlosionhisui: {
-		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tier: "OU",
 	},
 	totodile: {
 		isNonstandard: "Past",
@@ -1570,8 +1566,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "NFE",
 	},
 	sneaselhisui: {
-		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tier: "NFE",
 	},
 	weavile: {
 		tier: "RU",
@@ -1579,8 +1574,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "UU",
 	},
 	sneasler: {
-		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tier: "OU",
 	},
 	teddiursa: {
 		tier: "LC",
@@ -1591,8 +1585,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	ursaluna: {
-		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tier: "OU",
 	},
 	slugma: {
 		isNonstandard: "Past",
@@ -1691,8 +1684,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	wyrdeer: {
-		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tier: "OU",
 	},
 	smeargle: {
 		isNonstandard: "Past",
@@ -1930,8 +1922,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	gardevoirmega: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 		natDexTier: "RUBL",
 	},
 	gallade: {
@@ -1940,8 +1931,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	gallademega: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 		natDexTier: "RUBL",
 	},
 	surskit: {
@@ -2035,18 +2025,15 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	sableyemega: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 		natDexTier: "UU",
 	},
 	mawile: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 		natDexTier: "RU",
 	},
 	mawilemega: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 		natDexTier: "UUBL",
 	},
 	aron: {
@@ -2372,13 +2359,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	absol: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 		natDexTier: "RU",
 	},
 	absolmega: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 		natDexTier: "RU",
 	},
 	snorunt: {

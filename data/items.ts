@@ -350,8 +350,8 @@ export const Items: {[itemid: string]: ItemData} = {
 		fling: {
 			basePower: 80,
 		},
-		onModifySpDPriority: 1,
-		onModifySpD(def) {
+		onModifyDefPriority: 1,
+		onModifyDef(def) {
 			return this.chainModify(1.5);
 		},
 		onDisableMove(pokemon) {
@@ -375,8 +375,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			return true;
 		},
 		num: 757,
-		gen: 6,
-		isNonstandard: "Past",
+		gen: 9,
 	},
 	auspiciousarmor: {
 		name: "Auspicious Armor",
@@ -419,8 +418,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			return true;
 		},
 		num: 668,
-		gen: 6,
-		isNonstandard: "Past",
+		gen: 9,
 	},
 	beastball: {
 		name: "Beast Ball",
@@ -440,8 +438,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			return true;
 		},
 		num: 770,
-		gen: 6,
-		isNonstandard: "Past",
+		gen: 9,
 	},
 	belueberry: {
 		name: "Belue Berry",
@@ -3473,8 +3470,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			return true;
 		},
 		num: 681,
-		gen: 6,
-		isNonstandard: "Past",
+		gen: 9,
 	},
 	meadowplate: {
 		name: "Meadow Plate",
@@ -4957,8 +4953,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		itemUser: ["Zamazenta-Crowned"],
 		num: 1104,
-		gen: 8,
-		isNonstandard: "Unobtainable",
+		gen: 9,
 	},
 	rustedsword: {
 		name: "Rusted Sword",
@@ -4971,8 +4966,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		itemUser: ["Zacian-Crowned"],
 		num: 1103,
-		gen: 8,
-		isNonstandard: "Unobtainable",
+		gen: 9,
 	},
 	sablenite: {
 		name: "Sablenite",
@@ -4985,8 +4979,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			return true;
 		},
 		num: 754,
-		gen: 6,
-		isNonstandard: "Past",
+		gen: 9,
 	},
 	sachet: {
 		name: "Sachet",
