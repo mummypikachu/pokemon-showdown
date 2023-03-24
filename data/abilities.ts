@@ -2090,17 +2090,12 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	libero: {
 		onPrepareHit(source, target, move) {
-			if (this.effectState.libero) return;
 			if (move.hasBounced || move.isFutureMove || move.sourceEffect === 'snatch') return;
 			const type = move.type;
 			if (type && type !== '???' && source.getTypes().join() !== type) {
 				if (!source.setType(type)) return;
-				this.effectState.libero = true;
 				this.add('-start', source, 'typechange', type, '[from] ability: Libero');
 			}
-		},
-		onSwitchIn() {
-			delete this.effectState.libero;
 		},
 		name: "Libero",
 		rating: 4,
@@ -3159,19 +3154,15 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	protean: {
 		onPrepareHit(source, target, move) {
-			if (this.effectState.protean) return;
 			if (move.hasBounced || move.isFutureMove || move.sourceEffect === 'snatch') return;
 			const type = move.type;
 			if (type && type !== '???' && source.getTypes().join() !== type) {
 				if (!source.setType(type)) return;
-				this.effectState.protean = true;
 				this.add('-start', source, 'typechange', type, '[from] ability: Protean');
 			}
 		},
-		onSwitchIn(pokemon) {
-			delete this.effectState.protean;
-		},
 		name: "Protean",
+		onSwitchIn() {},
 		rating: 4,
 		num: 168,
 	},

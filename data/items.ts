@@ -54,8 +54,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			return true;
 		},
 		num: 677,
-		gen: 6,
-		isNonstandard: "Past",
+		gen: 9,
 	},
 	absorbbulb: {
 		name: "Absorb Bulb",
