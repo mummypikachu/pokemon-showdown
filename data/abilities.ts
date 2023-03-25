@@ -2098,6 +2098,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			}
 		},
 		name: "Libero",
+		onSwitchIn() {},
 		rating: 4,
 		num: 236,
 	},
