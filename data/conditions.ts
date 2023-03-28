@@ -384,7 +384,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 	},
 	mustrecharge: {
 		name: 'mustrecharge',
-		duration: 2,
+		duration: 0,
 		onBeforeMovePriority: 11,
 		onBeforeMove(pokemon) {
 			this.add('cant', pokemon, 'recharge');
@@ -392,10 +392,9 @@ export const Conditions: {[k: string]: ConditionData} = {
 			pokemon.removeVolatile('truant');
 			return null;
 		},
-		onStart(pokemon) {
-			this.add('-mustrecharge', pokemon);
-		},
+		onStart() {},
 		onLockMove: 'recharge',
+		
 	},
 	futuremove: {
 		// this is a slot condition

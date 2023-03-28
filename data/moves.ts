@@ -5694,20 +5694,18 @@ export const Moves: {[moveid: string]: MoveData} = {
 	flash: {
 		num: 148,
 		accuracy: 100,
-		basePower: 0,
-		category: "Status",
-		isNonstandard: "Past",
+		basePower: 60,
+		category: "Special",
 		name: "Flash",
 		pp: 20,
 		priority: 0,
 		flags: {protect: 1, reflectable: 1, mirror: 1},
 		boosts: {
-			accuracy: -1,
+			atk: -1,
 		},
 		secondary: null,
 		target: "normal",
-		type: "Normal",
-		zMove: {boost: {evasion: 1}},
+		type: "Electric",
 		contestType: "Beautiful",
 	},
 	flashcannon: {
@@ -20296,7 +20294,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				// Curse Glitch
 				const action = this.queue.willMove(target);
 				if (action && action.move.id === 'curse') {
-					action.targetLoc = -1;
+					action.targetLoc = -1; 
 				}
 			}
 		},

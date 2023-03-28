@@ -5042,6 +5042,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onStart(pokemon) {
 			if (pokemon.side.sideConditions['tailwind']) {
 				this.boost({atk: 1}, pokemon, pokemon);
+				this.boost({spa: 1}, pokemon, pokemon);
 			}
 		},
 		onTryHit(target, source, move) {
@@ -5056,6 +5057,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			const pokemon = this.effectState.target;
 			if (sideCondition.id === 'tailwind') {
 				this.boost({atk: 1}, pokemon, pokemon);
+				this.boost({spa: 1}, pokemon, pokemon);
 			}
 		},
 		name: "Wind Rider",
@@ -5215,7 +5217,9 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	persistent: {
 		isNonstandard: "CAP",
 		name: "Persistent",
-		// implemented in the corresponding move
+			onStart(source) {
+				this.field.getPseudoWeather('trickroom');
+			},
 		rating: 3,
 		num: 279,
 	},
