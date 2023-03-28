@@ -37,6 +37,20 @@ export const Formats: FormatList = [
 		ruleset: ['PotD', 'Obtainable', 'Species Clause', 'HP Percentage Mod', 'Cancel Mod', 'Sleep Clause Mod'],
 	},
 	{
+		name: "[Gen 9] Multi Battle",
+
+		mod: 'gen9',
+		gameType: 'multi',
+		searchShow: false,
+		tournamentShow: false,
+		rated: false,
+		ruleset: [
+			'Max Team Size = 3',
+			'Standard', '+CAP'	
+		],
+		banlist: ['Uber', 'AG', 'Moody', 'Sand Veil', 'Snow Cloak', 'King\'s Rock', 'Baton Pass'],
+	},
+	{
 		name: "[Gen 9] Unrated Random Battle",
 
 		mod: 'gen9',
