@@ -41501,7 +41501,6 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	},
 	banette: {
 		learnset: {
-			shedtail: ["9M"],
 			allyswitch: ["7T"],
 			attract: ["7M", "6M", "5M", "4M", "3M"],
 			bodyslam: ["9T"],
