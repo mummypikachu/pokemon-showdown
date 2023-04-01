@@ -487,6 +487,16 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3,
 		num: 34,
 	},
+	blazingrush: {
+		onModifySpe(spe, pokemon) {
+			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
+				return this.chainModify(2);
+			}
+		},
+		name: "Blazing Rush",
+		rating: 3,
+		num: 255,
+	},
 	clearbody: {
 		onTryBoost(boost, target, source, effect) {
 			if (source && target === source) return;
@@ -1628,6 +1638,23 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Hadron Engine",
 		rating: 4.5,
 		num: 289,
+	},
+	ampereoverdrive: {
+		onStart(pokemon) {
+			if (!this.field.setTerrain('electricterrain') && this.field.isTerrain('electricterrain')) {
+				this.add('-activate', pokemon, 'ability: Ampere Overdrive');
+			}
+		},
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, attacker, defender, move) {
+			if (this.field.isTerrain('electricterrain')) {
+				this.debug('Ampere Overdrive boost');
+				return this.chainModify([5461, 4096]);
+			}
+		},
+		name: "Ampere Overdrive",
+		rating: 4.5,
+		num: 567,
 	},
 	harvest: {
 		name: "Harvest",
@@ -2780,6 +2807,25 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			}
 		},
 		name: "Orichalcum Pulse",
+		rating: 4.5,
+		num: 288,
+	},
+	infernalsurge: {
+		onStart(pokemon) {
+			if (this.field.setWeather('sunnyday')) {
+				this.add('-activate', pokemon, 'Infernal Surge', '[source]');
+			} else if (this.field.isWeather('sunnyday')) {
+				this.add('-activate', pokemon, 'ability: Infernal Surge');
+			}
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(atk, pokemon) {
+			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
+				this.debug('Infernal boost');
+				return this.chainModify([5461, 4096]);
+			}
+		},
+		name: "Infernal Surge",
 		rating: 4.5,
 		num: 288,
 	},
@@ -3947,7 +3993,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			this.add('-end', pokemon, 'Slow Start', '[silent]');
 		},
 		condition: {
-			duration: 5,
+			duration: 1,
 			onResidualOrder: 28,
 			onResidualSubOrder: 2,
 			onStart(target) {
@@ -5170,7 +5216,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			}
 		},
 		onTryHit(target, source, move) {
-			if (move.type === 'Rock' && !target.activeTurns) {
+			if (target !== source && move.type === 'Rock') {
 				this.add('-immune', target, '[from] ability: Mountaineer');
 				return null;
 			}

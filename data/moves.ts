@@ -1450,9 +1450,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {recharge: 1, protect: 1, mirror: 1},
-		self: {
-			volatileStatus: 'mustrecharge',
-		},
+		onAfterHit(target, source) {
+			if (target.hp > 0) source.addVolatile('mustrecharge');
+	    },
 		secondary: null,
 		target: "normal",
 		type: "Fire",
@@ -4964,9 +4964,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {recharge: 1, protect: 1, mirror: 1},
-		self: {
-			volatileStatus: 'mustrecharge',
-		},
+		onAfterHit(target, source) {
+			if (target.hp > 0) source.addVolatile('mustrecharge');
+	  },
 		secondary: null,
 		target: "normal",
 		type: "Dragon",
@@ -6291,9 +6291,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {recharge: 1, protect: 1, mirror: 1, nonsky: 1},
-		self: {
-			volatileStatus: 'mustrecharge',
-		},
+		onAfterHit(target, source) {
+			if (target.hp > 0) source.addVolatile('mustrecharge');
+	    },
 		secondary: null,
 		target: "normal",
 		type: "Grass",
@@ -6641,9 +6641,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {contact: 1, recharge: 1, protect: 1, mirror: 1},
-		self: {
-			volatileStatus: 'mustrecharge',
-		},
+		onAfterHit(target, source) {
+			if (target.hp > 0) source.addVolatile('mustrecharge');
+	    },
 		secondary: null,
 		target: "normal",
 		type: "Normal",
@@ -9193,9 +9193,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {recharge: 1, protect: 1, mirror: 1},
-		self: {
-			volatileStatus: 'mustrecharge',
-		},
+		onAfterHit(target, source) {
+			if (target.hp > 0) source.addVolatile('mustrecharge');
+	    },
 		secondary: null,
 		target: "normal",
 		type: "Water",
@@ -9255,9 +9255,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {recharge: 1, protect: 1, mirror: 1},
-		self: {
-			volatileStatus: 'mustrecharge',
-		},
+		onAfterHit(target, source) {
+			if (target.hp > 0) source.addVolatile('mustrecharge');
+	    },
 		secondary: null,
 		target: "normal",
 		type: "Normal",
@@ -14520,6 +14520,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 10,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
+		onModifyMove(move, pokemon) {
+			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
+		},
 		secondary: null,
 		target: "normal",
 		type: "Psychic",
@@ -15586,9 +15589,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {bullet: 1, recharge: 1, protect: 1, mirror: 1},
-		self: {
-			volatileStatus: 'mustrecharge',
-		},
+		onAfterHit(target, source) {
+			if (target.hp > 0) source.addVolatile('mustrecharge');
+	    },
 		secondary: null,
 		target: "normal",
 		type: "Rock",
@@ -18846,7 +18849,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Sucker Punch",
 		pp: 5,
 		priority: 1,
-		flags: {contact: 1, protect: 1, mirror: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, punch: 1},
 		onTry(source, target) {
 			const action = this.queue.willMove(target);
 			const move = action?.choice === 'move' ? action.move : null;

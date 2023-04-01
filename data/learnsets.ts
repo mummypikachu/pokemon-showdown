@@ -11624,6 +11624,8 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	},
 	magnezone: {
 		learnset: {
+			flamethrower: ["9M"],
+			fireblast: ["9M"],
 			allyswitch: ["8M", "7T"],
 			barrier: ["7L1", "6L1", "5L1", "4L1"],
 			bodypress: ["9M", "8M"],
