@@ -6443,7 +6443,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		baseSpecies: "Banette",
 		forme: "Mega",
 		types: ["Ghost", "Normal"],
-		baseStats: {hp: 69, atk: 165, def: 1055, spa: 93, spd: 103, spe: 95},
+		baseStats: {hp: 69, atk: 165, def: 105, spa: 93, spd: 103, spe: 95},
 		abilities: {0: "Tough Claws"},
 		heightm: 1.2,
 		weightkg: 13,
