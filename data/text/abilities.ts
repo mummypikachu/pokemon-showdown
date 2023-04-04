@@ -2152,4 +2152,19 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 
 		activate: "  [POKEMON] extends [MOVE] by 2 turns!",
 	},
+	ampereoverdrive: {
+		name: "Ampere Overdrive",
+		shortDesc: "On switch-in, summons Electric Terrain. During Electric Terrain, Attack is 1.3333x.",
+
+		start: "  [POKEMON] turned the ground into Electric Terrain, energizing its engine!",
+		activate: "  [POKEMON] used the Electric Terrain to energize its engine!",
+	},
+	infernalsurge: {
+		name: "Infernal Surge",
+		shortDesc: "On switch-in, summons Sunny Day. During Sunny Day, Sp.Atk is 1.3333x.",
+
+		start: "  [POKEMON] turned the sunlight harsh, sending its ancient pulse into a frenzy!",
+		activate: "  [POKEMON] basked in the sunlight, sending its ancient pulse into a frenzy!",
+	},
 };
+
