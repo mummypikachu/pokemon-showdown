@@ -74659,6 +74659,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	},
 	golisopod: {
 		learnset: {
+			aquacutter: ["9M"],
 			aerialace: ["7M"],
 			assurance: ["9M"],
 			attract: ["9M", "7M"],

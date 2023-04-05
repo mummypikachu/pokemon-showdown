@@ -1113,18 +1113,15 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	porygon: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "LC",
 		natDexTier: "LC",
 	},
 	porygon2: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "PU",
 		natDexTier: "NFE",
 	},
 	porygonz: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 		natDexTier: "RUBL",
 	},
 	omanyte: {
@@ -1213,38 +1210,31 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "OU",
 	},
 	mewtwo: {
-		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tier: "Uber",
 		natDexTier: "Uber",
 	},
 	mewtwomegax: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Uber",
 		natDexTier: "Uber",
 	},
 	mewtwomegay: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Uber",
 		natDexTier: "Uber",
 	},
 	mew: {
-		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tier: "OU",
 		natDexTier: "UU",
 	},
 	chikorita: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "LC",
 		natDexTier: "LC",
 	},
 	bayleef: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "NFE",
 		natDexTier: "NFE",
 	},
 	meganium: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 		natDexTier: "RU",
 	},
 	cyndaquil: {
@@ -1263,18 +1253,15 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "OU",
 	},
 	totodile: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "LC",
 		natDexTier: "LC",
 	},
 	croconaw: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "NFE",
 		natDexTier: "NFE",
 	},
 	feraligatr: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 		natDexTier: "RU",
 	},
 	sentret: {
@@ -4526,13 +4513,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	wimpod: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "LC",
 		natDexTier: "LC",
 	},
 	golisopod: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 		natDexTier: "RU",
 	},
 	sandygast: {
