@@ -211,6 +211,14 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 			desc: "If Sunny Day is active, this Pokemon's Speed is doubled.",
 		},
 	},
+	blazingrush: {
+		name: "Blazing Rush",
+		desc: "If Sunny Day is active, this Pokemon's Speed is doubled. This effect is prevented if this Pokemon is holding a Utility Umbrella.",
+		shortDesc: "If Sunny Day is active, this Pokemon's Speed is doubled.",
+		gen7: {
+			desc: "If Sunny Day is active, this Pokemon's Speed is doubled.",
+		},
+	},
 	clearbody: {
 		name: "Clear Body",
 		shortDesc: "Prevents other Pokemon from lowering this Pokemon's stat stages.",
@@ -775,7 +783,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	ironfist: {
 		name: "Iron Fist",
 		desc: "This Pokemon's punch-based attacks have their power multiplied by 1.2.",
-		shortDesc: "This Pokemon's punch-based attacks have 1.2x power. Sucker Punch is not boosted.",
+		shortDesc: "This Pokemon's punch-based attacks have 1.2x power.",
 	},
 	justified: {
 		name: "Justified",
