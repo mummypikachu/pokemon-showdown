@@ -34540,6 +34540,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			captivate: ["7L44", "6L44", "5L60", "4M", "4L53"],
 			chargebeam: ["9M", "9M", "6M", "5M", "4M"],
 			charm: ["9M", "9L1", "9M", "8L1"],
+			closecombat: ["9M"],
 			confide: ["9M", "6M"],
 			confuseray: ["9M"],
 			confusion: ["9L1", "8L1", "7L1", "6L1", "5L1", "4L1", "3L1"],
