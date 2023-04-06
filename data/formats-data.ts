@@ -2931,114 +2931,85 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "Uber",
 	},
 	arceus: {
-		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tier: "Uber",
 		natDexTier: "Uber",
 	},
 	arceusbug: {
-		isNonstandard: "Unobtainable",
 	},
 	arceusdark: {
-		isNonstandard: "Unobtainable",
 	},
 	arceusdragon: {
-		isNonstandard: "Unobtainable",
 	},
 	arceuselectric: {
-		isNonstandard: "Unobtainable",
 	},
 	arceusfairy: {
-		isNonstandard: "Unobtainable",
 	},
 	arceusfighting: {
-		isNonstandard: "Unobtainable",
 	},
 	arceusfire: {
-		isNonstandard: "Unobtainable",
 	},
 	arceusflying: {
-		isNonstandard: "Unobtainable",
 	},
 	arceusghost: {
-		isNonstandard: "Unobtainable",
 	},
 	arceusgrass: {
-		isNonstandard: "Unobtainable",
 	},
 	arceusground: {
-		isNonstandard: "Unobtainable",
 	},
 	arceusice: {
-		isNonstandard: "Unobtainable",
 	},
 	arceuspoison: {
-		isNonstandard: "Unobtainable",
 	},
 	arceuspsychic: {
-		isNonstandard: "Unobtainable",
 	},
 	arceusrock: {
-		isNonstandard: "Unobtainable",
 	},
 	arceussteel: {
-		isNonstandard: "Unobtainable",
 	},
 	arceuswater: {
-		isNonstandard: "Unobtainable",
 	},
 	victini: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 		natDexTier: "UU",
 	},
 	snivy: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "LC",
 		natDexTier: "LC",
 	},
 	servine: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "NFE",
 		natDexTier: "NFE",
 	},
 	serperior: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 		natDexTier: "UU",
 	},
 	tepig: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "LC",
 		natDexTier: "LC",
 	},
 	pignite: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "NFE",
 		natDexTier: "NFE",
 	},
 	emboar: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 		natDexTier: "RU",
 	},
 	oshawott: {
-		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tier: "LC",
 		natDexTier: "LC",
 	},
 	dewott: {
-		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tier: "NFE",
 		natDexTier: "NFE",
 	},
 	samurott: {
-		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tier: "OU",
 		natDexTier: "RU",
 	},
 	samurotthisui: {
-		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tier: "OU",
 	},
 	patrat: {
 		isNonstandard: "Past",
@@ -3166,13 +3137,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	drilbur: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "LC",
 		natDexTier: "LC",
 	},
 	excadrill: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 		natDexTier: "UU",
 	},
 	audino: {
@@ -3186,43 +3155,36 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	timburr: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "LC",
 		natDexTier: "LC",
 	},
 	gurdurr: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "NFE",
 		natDexTier: "NFE",
 	},
 	conkeldurr: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
+		doublesTier: "(DOU)",
 		natDexTier: "RU",
 	},
 	tympole: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "LC",
 		natDexTier: "LC",
 	},
 	palpitoad: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "NFE",
 		natDexTier: "NFE",
 	},
 	seismitoad: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 		natDexTier: "RU",
 	},
 	throh: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "RU",
 		natDexTier: "RU",
 	},
 	sawk: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "RU",
 		natDexTier: "RU",
 	},
 	sewaddle: {
@@ -3250,13 +3212,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	cottonee: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "LC",
 		natDexTier: "LC",
 	},
 	whimsicott: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
+		doublesTier: "(DOU)",
 		natDexTier: "RU",
 	},
 	petilil: {
@@ -3281,7 +3242,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	basculinwhitestriped: {
-		tier: "OU",
+		tier: "NU",
 	},
 	basculegion: {
 		tier: "OU",
