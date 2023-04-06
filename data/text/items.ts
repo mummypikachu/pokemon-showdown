@@ -504,7 +504,7 @@ export const ItemsText: {[k: string]: ItemText} = {
 	},
 	expertbelt: {
 		name: "Expert Belt",
-		desc: "Holder's attacks that are super effective against the target do 1.2x damage.",
+		desc: "Holder's attacks that are super effective against the target do 1.5x damage.",
 	},
 	fairiumz: {
 		name: "Fairium Z",

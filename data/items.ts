@@ -1713,7 +1713,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		onModifyDamage(damage, source, target, move) {
 			if (move && target.getMoveHitData(move).typeMod > 0) {
-				return this.chainModify([4915, 4096]);
+				return this.chainModify([6144, 4096]);
 			}
 		},
 		num: 268,
