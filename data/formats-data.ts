@@ -276,7 +276,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	clefairy: {
 		tier: "PU",
-  doublesTier: "(DUU)",
+        doublesTier: "(DUU)",
 		natDexTier: "NFE",
 	},
 	clefable: {
@@ -426,7 +426,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	arcaninehisui: {
-		tier: "LC",
+		tier: "RU",
 	},
 	poliwag: {
 		tier: "LC",
