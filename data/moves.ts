@@ -4050,7 +4050,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	dracometeor: {
 		num: 434,
 		accuracy: 90,
-		basePower: 130,
+		basePower: 140,
 		category: "Special",
 		name: "Draco Meteor",
 		pp: 5,
@@ -15444,12 +15444,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 		basePower: 150,
 		category: "Special",
 		name: "Roar of Time",
-		pp: 5,
+		pp: 10,
 		priority: 0,
 		flags: {recharge: 1, protect: 1, mirror: 1},
-		self: {
-			volatileStatus: 'mustrecharge',
-		},
+		onAfterHit(target, source) {
+			if (target.hp > 0) source.addVolatile('mustrecharge');
+	    },
 		secondary: null,
 		target: "normal",
 		type: "Dragon",
@@ -21118,12 +21118,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 		contestType: "Beautiful",
 	},
 	weatherstorm: {
-		num: 311,
+		num: 911,
 		accuracy: 100,
 		basePower: 75,
 		category: "Special",
 		name: "Weather Storm",
-		pp: 16,
+		pp: 15,
 		priority: 0,
 		flags: {bullet: 1, protect: 1, mirror: 1},
 		onModifyType(move, pokemon) {
@@ -21168,8 +21168,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Normal",
-		zMove: {basePower: 160},
-		maxMove: {basePower: 130},
+		zMove: {basePower: 190},
+		maxMove: {basePower: 160},
 		contestType: "Beautiful",
 	},
 	whirlpool: {
