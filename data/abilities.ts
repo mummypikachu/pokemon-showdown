@@ -1258,6 +1258,13 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				return this.chainModify(1.5);
 			}
 		},
+		onAllyModifySpAPriority: 3,
+		onAllyModifySpA(spa, pokemon) {
+			if (this.effectState.target.baseSpecies.baseSpecies !== 'Cherrim') return;
+			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
+				return this.chainModify(1.5);
+			}
+		},
 		onAllyModifySpDPriority: 4,
 		onAllyModifySpD(spd, pokemon) {
 			if (this.effectState.target.baseSpecies.baseSpecies !== 'Cherrim') return;
