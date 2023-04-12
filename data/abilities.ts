@@ -1127,21 +1127,31 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 2.5,
 		num: 280,
 	},
-	emergencyexit: {
-		onEmergencyExit(target) {
-			if (!this.canSwitch(target.side) || target.forceSwitchFlag || target.switchFlag) return;
-			for (const side of this.sides) {
-				for (const active of side.active) {
-					active.switchFlag = false;
+		emergencyexit: {
+			onBeforeTurn(pokemon) {
+				pokemon.abilityState.originalHP = pokemon.hp;
+			},
+			onStart(pokemon) {
+				pokemon.abilityState.originalHP = pokemon.hp;
+			},
+			onResidualOrder: 28,
+			onResidualSubOrder: 2,
+			onResidual(pokemon) {
+				if (pokemon.hp <= pokemon.maxhp / 2 && pokemon.abilityState.originalHP > pokemon.maxhp / 2) {
+					if (!this.canSwitch(pokemon.side) || pokemon.forceSwitchFlag || pokemon.switchFlag) return;
+					for (const side of this.sides) {
+						for (const active of side.active) {
+							active.switchFlag = false;
+						}
+					}
+					pokemon.switchFlag = true;
+					this.add('-activate', pokemon, 'ability: Emergency Exit');
 				}
-			}
-			target.switchFlag = true;
-			this.add('-activate', target, 'ability: Emergency Exit');
+			},
+			name: "Emergency Exit",
+			rating: 1,
+			num: 194,
 		},
-		name: "Emergency Exit",
-		rating: 1,
-		num: 194,
-	},
 	fairyaura: {
 		onStart(pokemon) {
 			if (this.suppressingAbility(pokemon)) return;

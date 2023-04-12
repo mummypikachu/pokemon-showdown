@@ -4832,8 +4832,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	psystrike: {
 		name: "Psystrike",
-		desc: "Deals damage to the target based on its Defense instead of Special Defense.",
-		shortDesc: "Damages target based on Defense, not Sp. Def.",
+		desc: "This move becomes a physical attack if the user's Attack is greater than its Special Attack, including stat stage changes. This move and its effects ignore the Abilities of other Pokemon.",
+		shortDesc: "Physical if user's Atk > Sp. Atk. Ignores Abilities.",
 	},
 	psywave: {
 		name: "Psywave",

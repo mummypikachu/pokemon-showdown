@@ -14514,7 +14514,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 100,
 		category: "Special",
-		overrideDefensiveStat: 'def',
 		name: "Psystrike",
 		pp: 10,
 		priority: 0,
