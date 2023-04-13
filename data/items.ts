@@ -785,7 +785,19 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 660,
 		gen: 6,
-		isNonstandard: "Past",
+	},
+	garbodite: {
+		name: "Garbodite",
+		spritenum: 585,
+		megaStone: "Garbodor-Mega",
+		megaEvolves: "Garbodor",
+		itemUser: ["Garbodor"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 6697,
+		gen: 8,
 	},
 	charizarditey: {
 		name: "Charizardite Y",
@@ -799,7 +811,6 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 678,
 		gen: 6,
-		isNonstandard: "Past",
 	},
 	chartiberry: {
 		name: "Charti Berry",

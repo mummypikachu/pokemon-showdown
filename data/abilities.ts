@@ -840,18 +840,18 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	defeatist: {
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, pokemon) {
-			if (pokemon.hp <= pokemon.maxhp / 2) {
+			if (pokemon.hp <= pokemon.maxhp / 4) {
 				return this.chainModify(0.5);
 			}
 		},
 		onModifySpAPriority: 5,
 		onModifySpA(atk, pokemon) {
-			if (pokemon.hp <= pokemon.maxhp / 2) {
+			if (pokemon.hp <= pokemon.maxhp / 4) {
 				return this.chainModify(0.5);
 			}
 		},
 		name: "Defeatist",
-		rating: -1,
+		rating: 2,
 		num: 129,
 	},
 	defiant: {
@@ -1167,6 +1167,16 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Fairy Aura",
 		rating: 3,
 		num: 187,
+	},
+	selfsufficient: {
+		onResidualOrder: 28,
+		onResidualSubOrder: 2,
+		onResidual(pokemon) {
+			this.heal(pokemon.baseMaxhp / 16);
+		},
+		name: "Self Sufficient",
+		rating: 3,
+		gen: 8,
 	},
 	filter: {
 		onSourceModifyDamage(damage, source, target, move) {
@@ -5284,7 +5294,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		isNonstandard: "CAP",
 		name: "Persistent",
 			onStart(source) {
-				this.field.getPseudoWeather('trickroom');
+				this.field.setWeather('trickroom');
 			},
 		rating: 3,
 		num: 279,

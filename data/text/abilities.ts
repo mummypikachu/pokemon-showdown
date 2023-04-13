@@ -353,8 +353,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	defeatist: {
 		name: "Defeatist",
-		desc: "While this Pokemon has 1/2 or less of its maximum HP, its Attack and Special Attack are halved.",
-		shortDesc: "While this Pokemon has 1/2 or less of its max HP, its Attack and Sp. Atk are halved.",
+		desc: "While this Pokemon has 1/4 or less of its maximum HP, its Attack and Special Attack are halved.",
+		shortDesc: "While this Pokemon has 1/4 or less of its max HP, its Attack and Sp. Atk are halved.",
 	},
 	defiant: {
 		name: "Defiant",
@@ -443,8 +443,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	emergencyexit: {
 		name: "Emergency Exit",
-		desc: "When this Pokemon has more than 1/2 its maximum HP and takes damage bringing it to 1/2 or less of its maximum HP, it immediately switches out to a chosen ally. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability. This effect applies to both direct and indirect damage, except Curse and Substitute on use, Belly Drum, Pain Split, and confusion damage.",
-		shortDesc: "This Pokemon switches out when it reaches 1/2 or less of its maximum HP.",
+		desc: "At the end of the turn, if this Pokemon has less than 1/2 of its maximum HP, it switches out to a chosen ally.",
+		shortDesc: "If this Pokemon is below 1/2 HP at the end of the turn, it switches out.",
 	},
 	fairyaura: {
 		name: "Fairy Aura",
@@ -2140,7 +2140,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 
 		activate: "  [POKEMON] underwent a heroic transformation!",
 	},
-
+	selfsufficient: {
+		name: "Self Sufficient",
+		shortDesc: "At the end of every turn, this Pokemon restores 1/16 of its max HP.",
+	},
 	// CAP
 	mountaineer: {
 		name: "Mountaineer",
