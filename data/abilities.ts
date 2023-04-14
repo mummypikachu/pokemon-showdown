@@ -3135,7 +3135,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 211,
 	},
 	powerofalchemy: {
-		onAllyFaint(target) {
+		onSwap(target) {
 			if (!this.effectState.target.hp) return;
 			const ability = target.getAbility();
 			const additionalBannedAbilities = [
@@ -3512,7 +3512,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 155,
 	},
 	receiver: {
-		onAllyFaint(target) {
+		onSwap(target) {
 			if (!this.effectState.target.hp) return;
 			const ability = target.getAbility();
 			const additionalBannedAbilities = [

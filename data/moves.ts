@@ -1479,9 +1479,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 	blazingtorque: {
 		num: 896,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 100,
 		category: "Physical",
-		isNonstandard: "Unobtainable",
 		name: "Blazing Torque",
 		pp: 10,
 		priority: 0,
@@ -2637,7 +2636,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
-		isNonstandard: "Unobtainable",
 		name: "Combat Torque",
 		pp: 10,
 		priority: 0,
@@ -10842,7 +10840,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
-		isNonstandard: "Unobtainable",
 		name: "Magical Torque",
 		pp: 10,
 		priority: 0,
@@ -12994,7 +12991,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
-		isNonstandard: "Unobtainable",
 		name: "Noxious Torque",
 		pp: 10,
 		priority: 0,
@@ -14948,6 +14944,29 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Water",
 		zMove: {boost: {spe: 1}},
 		contestType: "Beautiful",
+	},
+	rapidjab: {
+		num: 901,
+		accuracy: 100,
+		basePower: 90,
+		category: "Physical",
+		name: "Rapid Jab",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		ignoreDefensive: true,
+		ignoreEvasion: true,
+		secondary: {
+			chance: 10,
+			self: {
+				boosts: {
+					spe: 1,
+				},
+			},
+		},
+		target: "normal",
+		type: "Normal",
+		contestType: "Cool",
 	},
 	rapidspin: {
 		num: 229,
@@ -18008,6 +18027,13 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
+		//onModifyType(move, pokemon) {
+			//if (pokemon.ignoringItem()) return;
+			//const item = pokemon.getItem();
+			//if (item.id && item.onPlate) {
+			//	move.type = item.onPlate;
+			//}
+		//},
 		self: {
 			boosts: {
 				spe: -2,
@@ -21219,9 +21245,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 	wickedtorque: {
 		num: 897,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 100,
 		category: "Physical",
-		isNonstandard: "Unobtainable",
 		name: "Wicked Torque",
 		pp: 10,
 		priority: 0,
