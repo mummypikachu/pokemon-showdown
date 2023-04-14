@@ -5294,17 +5294,16 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		isNonstandard: "CAP",
 		name: "Persistent",
 			onStart(source) {
-				this.field.setWeather('trickroom');
+				this.field.addPseudoWeather('trickroom');
 			},
 		rating: 3,
 		num: 279,
 	},
 	cleanslate: {
 		name: "Clean Slate",
-		onTryHitPriority: 1,
-		onTryHit(target, source, move) {
+		onStart(source) {
 			let success = false;
-			if (!target.volatiles['substitute'] || move.infiltrates) success = !!this.boost({evasion: -1});
+			if (!source.volatiles['substitute']) success = !!this.boost({evasion: -1});
 			const removeTarget = [
 				'reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist', 'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge',
 			];
@@ -5312,9 +5311,9 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge',
 			];
 			for (const targetCondition of removeTarget) {
-				if (target.side.removeSideCondition(targetCondition)) {
+				if (source.side.removeSideCondition(targetCondition)) {
 					if (!removeAll.includes(targetCondition)) continue;
-					this.add('-sideend', target.side, this.dex.conditions.get(targetCondition).name, '[from] move: Defog', '[of] ' + source);
+					this.add('-sideend', source.side, this.dex.conditions.get(targetCondition).name, '[from] move: Defog', '[of] ' + source);
 					success = true;
 				}
 			}
