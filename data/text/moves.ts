@@ -4982,6 +4982,11 @@ export const MovesText: {[k: string]: MoveText} = {
 			desc: "For 5 turns, the weather becomes Rain Dance, even if the current weather is Rain Dance. The damage of Water-type attacks is multiplied by 1.5 and the damage of Fire-type attacks is multiplied by 0.5 during the effect.",
 		},
 	},
+	rapidjab: {
+		name: "Rapid Jab",
+		desc: "The user attacks the opponent with a flurry of quick punches. The move has a low chance of raising Speed.",
+		shortDesc: "10% chance to raise Speed.",
+	},
 	rapidspin: {
 		name: "Rapid Spin",
 		desc: "If this move is successful and the user has not fainted, the effects of Leech Seed and binding moves end for the user, and all hazards are removed from the user's side of the field. Has a 100% chance to raise the user's Speed by 1 stage.",
