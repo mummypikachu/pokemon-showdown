@@ -43,7 +43,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		// message happens AFTER "Pokemon used Move!"
 		cant: "[POKEMON] can't use [MOVE]!",
 		cantNoMove: "[POKEMON] can't move!",
-		fail: "  But it failed!",
+		fail: "  But it failed! Skill issue...",
 
 		// n.b. this is the default message for in-battle forme changes
 		// for the move Transform and ability Imposter, see the entry for the move Transform
@@ -114,15 +114,15 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		resistedSpread: "  It's not very effective on [POKEMON].",
 		crit: "  A lucky crit!",
 		critSpread: "  A critical hit on [POKEMON]!",
-		immune: "  It doesn't affect [POKEMON]...",
+		immune: "  Skill issue. It doesn't affect [POKEMON]...",
 		immuneNoPokemon: "  It had no effect!", // old gens
 		immuneOHKO: "  [POKEMON] is unaffected!",
-		miss: "  [POKEMON] avoided the attack!",
+		miss: "  [POKEMON] avoided the attack! Blame RNG.",
 		missNoPokemon: "  [SOURCE]'s attack missed!", // old gens
 
 		center: "  Automatic center!",
 		noTarget: "  But there was no target...", // gen 5 and earlier
-		ohko: "  It's a one-hit KO!",
+		ohko: "  NO FUCKING WAY!!! It's a one-hit KO!",
 		combine: "  The two moves have become one! It's a combined move!",
 		hitCount: "  The Pok\u00E9mon was hit [NUMBER] times!",
 		hitCountSingular: "  The Pok\u00E9mon was hit 1 time!",
