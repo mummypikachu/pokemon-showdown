@@ -207,9 +207,9 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		damage: "#psn",
 	},
 	slp: {
-		start: "  [POKEMON] fell asleep!",
+		start: "  [POKEMON] fell asleep! Honk choooo mimimimimi.",
 		startFromRest: "  [POKEMON] slept and became healthy!",
-		alreadyStarted: "  [POKEMON] is already asleep! Honk choooo mimimimimi.",
+		alreadyStarted: "  [POKEMON] is already asleep!",
 		end: "  [POKEMON] woke up!",
 		endFromItem: "  [POKEMON]'s [ITEM] woke it up!",
 		cant: "[POKEMON] is fast asleep.",
