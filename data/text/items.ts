@@ -238,6 +238,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Charizardite Y",
 		desc: "If held by a Charizard, this item allows it to Mega Evolve in battle.",
 	},
+	garbodite: {
+		name: "Garbodite",
+		desc: "If held by a Garbodor, this item allows it to Mega Evolve in battle.",
+	},
 	chartiberry: {
 		name: "Charti Berry",
 		desc: "Halves damage taken from a supereffective Rock-type attack. Single use.",

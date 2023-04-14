@@ -2177,5 +2177,12 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		start: "  [POKEMON] turned the sunlight harsh, sending its ancient pulse into a frenzy!",
 		activate: "  [POKEMON] basked in the sunlight, sending its ancient pulse into a frenzy!",
 	},
+	cleanslate: {
+		name: "Clean Slate",
+		shortDesc: "On switch-in, all hazards are cleared off the field",
+
+		start: " [POKEMON] cleaned off the field."
+	}
 };
+
 
