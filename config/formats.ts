@@ -36,20 +36,20 @@ export const Formats: FormatList = [
 	//	team: 'random',
 	//	ruleset: ['PotD', 'Obtainable', 'Species Clause', 'HP Percentage Mod', 'Cancel Mod', 'Sleep Clause Mod'],
 	//},
-	//{
-	//	name: "[Gen 9] Multi Battle",
+	{
+		name: "[Gen 9] Multi Battle - 4 way fun",
 
-	//	mod: 'gen9',
-	//	gameType: 'multi',
-	//	searchShow: false,
-	//	tournamentShow: false,
-	//	rated: false,
-	//	ruleset: [
-	//		'Max Team Size = 3',
-	//		'Standard', '+CAP'	
-	//	],
-	//	banlist: ['Uber', 'AG', 'Moody', 'Sand Veil', 'Snow Cloak', 'King\'s Rock', 'Baton Pass'],
-	//},
+		mod: 'gen9',
+		gameType: 'multi',
+		searchShow: false,
+		tournamentShow: false,
+		rated: false,
+		ruleset: [
+			'Max Team Size = 3',
+			'Standard', '+CAP'	
+		],
+		banlist: ['Uber', 'AG', 'Moody', 'Sand Veil', 'Snow Cloak', 'King\'s Rock', 'Baton Pass'],
+	},
 	//{
 	//	name: "[Gen 9] Unrated Random Battle",
 
@@ -68,7 +68,7 @@ export const Formats: FormatList = [
 	//},
 
 	{
-		name: "[Gen 9] OU",
+		name: "[Gen 9] OU - The Standard",
 
 		mod: 'gen9',
 		ruleset: ['Standard', '+CAP'],
@@ -85,7 +85,7 @@ export const Formats: FormatList = [
 		banlist: ['AG', 'King\'s Rock', 'Baton Pass'],
 	},
 	{
-		name: "[Gen 9] UU",
+		name: "[Gen 9] UU - We Still Rockin",
 		threads: [
 			`&bullet; <a href="https://www.smogon.com/forums/threads/3713709/">UU Metagame Discussion</a>`,
 		],
@@ -122,17 +122,17 @@ export const Formats: FormatList = [
 	//	banlist: ['NU', 'PUBL'],
 	//},
 	{
-		name: "[Gen 9] LC",
+		name: "[Gen 9] LC - The Playground",
 		threads: [
 			`&bullet; <a href="https://www.smogon.com/forums/threads/3710868/">Little Cup Metagame Discussion</a>`,
 		],
 
 		mod: 'gen9',
-		ruleset: ['Little Cup', 'Standard'],
+		ruleset: ['Little Cup', 'Standard', '+CAP'],
 		banlist: ['Dunsparce', 'Flittle', 'Gastly', 'Girafarig', 'Meditite', 'Misdreavus', 'Murkrow', 'Rufflet', 'Scyther', 'Sneasel', 'Moody', 'Baton Pass'],
 	},
 	{
-		name: "[Gen 9] Monotype",
+		name: "[Gen 9] Monotype - (The coolest format)",
 		threads: [
 			`&bullet; <a href="https://www.smogon.com/forums/threads/3710724/">Monotype Metagame Discussion</a>`,
 		],
@@ -159,7 +159,7 @@ export const Formats: FormatList = [
 	//	],
 	//},
 	{
-		name: "[Gen 9] Anything Goes",
+		name: "[Gen 9] Anything Goes - welcome to hell.",
 		threads: [
 			`&bullet; <a href="https://www.smogon.com/forums/threads/3710911/">AG Metagame Discussion</a>`,
 		],
@@ -175,7 +175,7 @@ export const Formats: FormatList = [
 	//	banlist: ['Crucibellite'],
 	//},
 	{
-		name: "[Gen 9] Free-For-All",
+		name: "[Gen 9] Free-For-All - Me when Sand",
 		threads: [
 			`&bullet; <a href="https://www.smogon.com/forums/threads/3711724/">Free-For-All</a>`,
 		],
@@ -206,7 +206,7 @@ export const Formats: FormatList = [
 		ruleset: ['Flat Rules', '!! Adjust Level = 50', 'Paldea Pokedex', 'Min Source Gen = 9', 'VGC Timer'],
 	},
 	{
-		name: "[Gen 9] Custom Game",
+		name: "[Gen 9] Custom Game - For Fun",
 
 		mod: 'gen9',
 		searchShow: true,
