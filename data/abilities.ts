@@ -2118,18 +2118,6 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: -1,
 		num: 103,
 	},
-	knightsresolve: {
-		onSourceModifyDamage(damage, source, target, move) {
-			if (target.getMoveHitData(move).typeMod > 0) {
-				this.debug('Filter neutralize');
-				return this.chainModify(0.5);
-			}
-		},
-		isBreakable: true,
-		name: "Knight's Resolve",
-		rating: 3,
-
-	},
 	leafguard: {
 		onSetStatus(status, target, source, effect) {
 			if (['sunnyday', 'desolateland'].includes(target.effectiveWeather())) {

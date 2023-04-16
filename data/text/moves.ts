@@ -2235,11 +2235,6 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Causes the Grass type to be added to the target, effectively making it have two or three types. Fails if the target is already a Grass type. If Trick-or-Treat adds a type to the target, it replaces the type added by this move and vice versa.",
 		shortDesc: "Adds Grass to the target's type(s).",
 	},
-	forestizuna: {
-		name: "Forest Izuna",
-		desc: "This move can hit Pokemon with Levitate and is stronger on Flying types. It also lower Defence and Sp. Def.",
-		shortDesc: "Removes the target's Ground immunity. Super effective on Flying. Lowers Def and Sp.Def.",
-	},
 	foulplay: {
 		name: "Foul Play",
 		desc: "Damage is calculated using the target's Attack stat, including stat stage changes. The user's Ability, item, and burn are used as normal.",
