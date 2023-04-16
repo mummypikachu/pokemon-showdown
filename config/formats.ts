@@ -25,47 +25,48 @@ export const Formats: FormatList = [
 	{
 		section: "S/V Singles",
 	},
-	{
-		name: "[Gen 9] Random Battle",
-		desc: `Randomized teams of Pok&eacute;mon with sets that are generated to be competitively viable.`,
-		threads: [
-			`&bullet; <a href="https://www.smogon.com/forums/threads/3712619/">Random Battle Suggestions</a>`,
-		],
+	//{
+	//	name: "[Gen 9] Random Battle",
+	//	desc: `Randomized teams of Pok&eacute;mon with sets that are generated to be competitively viable.`,
+	//	threads: [
+	//		`&bullet; <a href="https://www.smogon.com/forums/threads/3712619/">Random Battle Suggestions</a>`,
+	//	],
 
-		mod: 'gen9',
-		team: 'random',
-		ruleset: ['PotD', 'Obtainable', 'Species Clause', 'HP Percentage Mod', 'Cancel Mod', 'Sleep Clause Mod'],
-	},
-	{
-		name: "[Gen 9] Multi Battle",
+	//	mod: 'gen9',
+	//	team: 'random',
+	//	ruleset: ['PotD', 'Obtainable', 'Species Clause', 'HP Percentage Mod', 'Cancel Mod', 'Sleep Clause Mod'],
+	//},
+	//{
+	//	name: "[Gen 9] Multi Battle",
 
-		mod: 'gen9',
-		gameType: 'multi',
-		searchShow: false,
-		tournamentShow: false,
-		rated: false,
-		ruleset: [
-			'Max Team Size = 3',
-			'Standard', '+CAP'	
-		],
-		banlist: ['Uber', 'AG', 'Moody', 'Sand Veil', 'Snow Cloak', 'King\'s Rock', 'Baton Pass'],
-	},
-	{
-		name: "[Gen 9] Unrated Random Battle",
+	//	mod: 'gen9',
+	//	gameType: 'multi',
+	//	searchShow: false,
+	//	tournamentShow: false,
+	//	rated: false,
+	//	ruleset: [
+	//		'Max Team Size = 3',
+	//		'Standard', '+CAP'	
+	//	],
+	//	banlist: ['Uber', 'AG', 'Moody', 'Sand Veil', 'Snow Cloak', 'King\'s Rock', 'Baton Pass'],
+	//},
+	//{
+	//	name: "[Gen 9] Unrated Random Battle",
 
-		mod: 'gen9',
-		team: 'random',
-		challengeShow: false,
-		rated: false,
-		ruleset: ['Obtainable', 'Species Clause', 'HP Percentage Mod', 'Cancel Mod', 'Sleep Clause Mod'],
-	},
-	{
-		name: "[Gen 9] Random Battle (Blitz)",
+	//	mod: 'gen9',
+	//	team: 'random',
+	//	challengeShow: false,
+	//	rated: false,
+	//	ruleset: ['Obtainable', 'Species Clause', 'HP Percentage Mod', 'Cancel Mod', 'Sleep Clause Mod'],
+	//},
+	//{
+	//	name: "[Gen 9] Random Battle (Blitz)",
 
-		mod: 'gen9',
-		team: 'random',
-		ruleset: ['[Gen 9] Random Battle', 'Blitz'],
-	},
+	//mod: 'gen9',
+	//team: 'random',
+	//ruleset: ['[Gen 9] Random Battle', 'Blitz'],
+	//},
+
 	{
 		name: "[Gen 9] OU",
 
@@ -93,33 +94,33 @@ export const Formats: FormatList = [
 		ruleset: ['[Gen 9] OU'],
 		banlist: ['OU', 'UUBL'],
 	},
-	{
-		name: "[Gen 9] RU",
-		threads: [
-			`&bullet; <a href="https://www.smogon.com/forums/threads/3713711/">RU Metagame Discussion</a>`,
-		],
+	//{
+	//	name: "[Gen 9] RU",
+	//	threads: [
+	//		`&bullet; <a href="https://www.smogon.com/forums/threads/3713711/">RU Metagame Discussion</a>`,
+	//	],
 
-		mod: 'gen9',
-		ruleset: ['[Gen 9] UU'],
-		banlist: ['UU', 'RUBL', 'Light Clay'],
-	},
-	{
-		name: "[Gen 9] NU",
-		threads: [
-			`&bullet; <a href="https://www.smogon.com/forums/threads/3715408/">NU Metagame Discussion</a>`,
-		],
+	//	mod: 'gen9',
+	//	ruleset: ['[Gen 9] UU'],
+	//	banlist: ['UU', 'RUBL', 'Light Clay'],
+	//},
+	//{
+	//	name: "[Gen 9] NU",
+	//	threads: [
+	//		`&bullet; <a href="https://www.smogon.com/forums/threads/3715408/">NU Metagame Discussion</a>`,
+	//	],
 
-		mod: 'gen9',
-		ruleset: ['[Gen 9] RU'],
-		banlist: ['RU', 'NUBL'],
-	},
-	{
-		name: "[Gen 9] PU",
+	//	mod: 'gen9',
+	//	ruleset: ['[Gen 9] RU'],
+	//	banlist: ['RU', 'NUBL'],
+	//},
+	//{
+	//	name: "[Gen 9] PU",
 
-		mod: 'gen9',
-		ruleset: ['[Gen 9] NU'],
-		banlist: ['NU', 'PUBL'],
-	},
+	//	mod: 'gen9',
+	//	ruleset: ['[Gen 9] NU'],
+	//	banlist: ['NU', 'PUBL'],
+	//},
 	{
 		name: "[Gen 9] LC",
 		threads: [
@@ -140,23 +141,23 @@ export const Formats: FormatList = [
 		ruleset: ['Standard', 'Evasion Abilities Clause', 'Same Type Clause', 'Terastal Clause'],
 		banlist: ['Annihilape', 'Chi-Yu', 'Houndstone', 'Iron Bundle', 'Koraidon', 'Miraidon', 'Palafin', 'Moody', 'Shadow Tag', 'Booster Energy', 'Damp Rock', 'Focus Band', 'King\'s Rock', 'Quick Claw', 'Acupressure', 'Baton Pass'],
 	},
-	{
-		name: "[Gen 9] 1v1",
-		desc: `Bring three Pok&eacute;mon to Team Preview and choose one to battle.`,
-		threads: [
-			`&bullet; <a href="https://www.smogon.com/forums/threads/3710864/">1v1 Metagame Discussion</a>`,
-		],
-
-		mod: 'gen9',
-		ruleset: [
-			'Picked Team Size = 1', 'Max Team Size = 3',
-			'Standard', 'Terastal Clause', 'Sleep Moves Clause', 'Accuracy Moves Clause', '!Sleep Clause Mod',
-		],
-		banlist: [
-			'Chi-Yu', 'Cinderace', 'Dragonite', 'Flutter Mane', 'Gholdengo', 'Koraidon', 'Mimikyu', 'Miraidon', 'Scream Tail',
-			'Moody', 'Focus Band', 'Focus Sash', 'King\'s Rock', 'Quick Claw', 'Acupressure', 'Perish Song',
-		],
-	},
+	//{
+//		name: "[Gen 9] 1v1",
+//		desc: `Bring three Pok&eacute;mon to Team Preview and choose one to battle.`,
+//		threads: [
+//			`&bullet; <a href="https://www.smogon.com/forums/threads/3710864/">1v1 Metagame Discussion</a>`,
+//		],
+//
+	//	mod: 'gen9',
+	//	ruleset: [
+	//		'Picked Team Size = 1', 'Max Team Size = 3',
+	//		'Standard', 'Terastal Clause', 'Sleep Moves Clause', 'Accuracy Moves Clause', '!Sleep Clause Mod',
+	//	],
+	//	banlist: [
+	//		'Chi-Yu', 'Cinderace', 'Dragonite', 'Flutter Mane', 'Gholdengo', 'Koraidon', 'Mimikyu', 'Miraidon', 'Scream Tail',
+	//		'Moody', 'Focus Band', 'Focus Sash', 'King\'s Rock', 'Quick Claw', 'Acupressure', 'Perish Song',
+	//	],
+	//},
 	{
 		name: "[Gen 9] Anything Goes",
 		threads: [
@@ -166,13 +167,13 @@ export const Formats: FormatList = [
 		mod: 'gen9',
 		ruleset: ['Min Source Gen = 9', 'Obtainable', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause'],
 	},
-	{
-		name: "[Gen 9] dont.",
+	//{
+	//	name: "[Gen 9] dont.",
 
-		mod: 'gen9',
-		ruleset: ['[Gen 9] OU'],
-		banlist: ['Crucibellite'],
-	},
+	//	mod: 'gen9',
+	//	ruleset: ['[Gen 9] OU'],
+	//	banlist: ['Crucibellite'],
+	//},
 	{
 		name: "[Gen 9] Free-For-All",
 		threads: [
