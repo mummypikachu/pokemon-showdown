@@ -2261,6 +2261,10 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				move.type = 'Water';
 			}
 		},
+		onBasePowerPriority: 23,
+		onBasePower(basePower, pokemon, target, move) {
+			if (move.typeChangerBoosted === this.effect) return this.chainModify([4915, 4096]);
+		},
 		name: "Liquid Voice",
 		rating: 1.5,
 		num: 204,
@@ -5313,9 +5317,20 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	cleanslate: {
 		name: "Clean Slate",
-		onStart(source) {
+		onStart(pokemon) {
+			let totalspa = 0;
+			let totalatk = 0;
+			for (const target of pokemon.foes()) {
+				totalatk += target.getStat('atk', false, true);
+				totalspa += target.getStat('spa', false, true);
+			}
+			if (totalatk && totalspa >= totalspa) {
+				this.boost({def: 1});
+			} else if (totalspa) {
+				this.boost({spd: 1});
+			}
 			let success = false;
-			if (!source.volatiles['substitute']) success = !!this.boost({evasion: -1});
+			if (!pokemon.volatiles['substitute']) success;
 			const removeTarget = [
 				'reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist', 'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge',
 			];
@@ -5323,15 +5338,15 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge',
 			];
 			for (const targetCondition of removeTarget) {
-				if (source.side.removeSideCondition(targetCondition)) {
+				if (pokemon.side.removeSideCondition(targetCondition)) {
 					if (!removeAll.includes(targetCondition)) continue;
-					this.add('-sideend', source.side, this.dex.conditions.get(targetCondition).name, '[from] move: Defog', '[of] ' + source);
+					this.add('-sideend', pokemon.side, this.dex.conditions.get(targetCondition).name, '[from] ability: Clean State', '[of] ' + pokemon);
 					success = true;
 				}
 			}
 			for (const sideCondition of removeAll) {
-				if (source.side.removeSideCondition(sideCondition)) {
-					this.add('-sideend', source.side, this.dex.conditions.get(sideCondition).name, '[from] move: Defog', '[of] ' + source);
+				if (pokemon.side.removeSideCondition(sideCondition)) {
+					this.add('-sideend', pokemon.side, this.dex.conditions.get(sideCondition).name, '[from] ability: Clean State', '[of] ' + pokemon);
 					success = true;
 				}
 			}
