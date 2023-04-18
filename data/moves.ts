@@ -13668,7 +13668,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
-		isNonstandard: "Past",
 		name: "Plasma Fists",
 		pp: 15,
 		priority: 0,
