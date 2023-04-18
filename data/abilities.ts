@@ -5188,40 +5188,22 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 2,
 		num: 147,
 	},
-	zenmode: {
-		onResidualOrder: 29,
-		onResidual(pokemon) {
+		zenmode: {
+		onStart(pokemon) {
 			if (pokemon.baseSpecies.baseSpecies !== 'Darmanitan' || pokemon.transformed) {
 				return;
 			}
-			if (pokemon.hp <= pokemon.maxhp / 2 && !['Zen', 'Galar-Zen'].includes(pokemon.species.forme)) {
-				pokemon.addVolatile('zenmode');
-			} else if (pokemon.hp > pokemon.maxhp / 2 && ['Zen', 'Galar-Zen'].includes(pokemon.species.forme)) {
-				pokemon.addVolatile('zenmode'); // in case of base Darmanitan-Zen
-				pokemon.removeVolatile('zenmode');
-			}
-		},
-		onEnd(pokemon) {
-			if (!pokemon.volatiles['zenmode'] || !pokemon.hp) return;
-			pokemon.transformed = false;
-			delete pokemon.volatiles['zenmode'];
-			if (pokemon.species.baseSpecies === 'Darmanitan' && pokemon.species.battleOnly) {
-				pokemon.formeChange(pokemon.species.battleOnly as string, this.effect, false, '[silent]');
-			}
-		},
-		condition: {
-			onStart(pokemon) {
-				if (!pokemon.species.name.includes('Galar')) {
-					if (pokemon.species.id !== 'darmanitanzen') pokemon.formeChange('Darmanitan-Zen');
-				} else {
-					if (pokemon.species.id !== 'darmanitangalarzen') pokemon.formeChange('Darmanitan-Galar-Zen');
+			if (!pokemon.species.name.includes('Galar')) {
+				if (pokemon.species.id !== 'darmanitanzen') {
+					this.add('-activate', pokemon, 'ability: Zen Mode');
+					pokemon.formeChange('Darmanitan-Zen', this.effect, true);
 				}
-			},
-			onEnd(pokemon) {
-				if (['Zen', 'Galar-Zen'].includes(pokemon.species.forme)) {
-					pokemon.formeChange(pokemon.species.battleOnly as string);
+			} else {
+				if (pokemon.species.id !== 'darmanitangalarzen') {
+					this.add('-activate', pokemon, 'ability: Zen Mode');
+					pokemon.formeChange('Darmanitan-Galar-Zen', this.effect, true);
 				}
-			},
+			}
 		},
 		isPermanent: true,
 		name: "Zen Mode",
