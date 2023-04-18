@@ -78307,7 +78307,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			gigaimpact: ["9M", "9M"],
 			grassknot: ["9M", "9M"],
 			grasspledge: ["9M", "8T"],
-			grassyglide: ["8T"],
+			grassyglide: ["9T"],
 			grassyterrain: ["9M", "9L1", "9M", "8L1"],
 			growl: ["9L1", "8L1"],
 			highhorsepower: ["9M"],

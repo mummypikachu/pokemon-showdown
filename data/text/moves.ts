@@ -4744,7 +4744,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	pressurechop: {
 		name: "Pressure Chop",
 		desc: "The user strikes from behind, breaking through all forms of the target's protection and hits their weak point and either flinchs, paralyzes, or puts them to sleep.",
-		shortDesc: "Nullifies Detect, Protect, and Quick/Wide Guard. 100% chance of paralysis",
+		shortDesc: "Nullifies Detect, Protect, and Quick/Wide Guard. 50% chance of flinching, paralysis, or sleep.",
 		activate: "  [POKEMON] hit [TARGET] in its weak point!",
 	},
 	prismaticlaser: {
