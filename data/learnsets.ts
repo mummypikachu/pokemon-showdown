@@ -54266,7 +54266,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			mudsport: ["7L1", "6L1", "5L1"],
 			poisonjab: ["9M", "9M", "6M", "5M"],
 			protect: ["9M", "9M", "6M", "5M"],
-			rapidspin: ["8L1", "7L1", "6L1", "5L1"],
+			rapidspin: ["9L1", "7L1", "6L1", "5L1"],
 			rest: ["9M", "9M", "6M", "5M"],
 			return: ["9M", "6M", "5M"],
 			rockblast: ["9M"],
