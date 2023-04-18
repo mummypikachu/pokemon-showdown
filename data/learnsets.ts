@@ -67296,7 +67296,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			hyperbeam: ["9M", "7M", "6M"],
 			irondefense: ["9M", "8L1", "9T", "7L1", "6T", "6L1"],
 			ironhead: ["9M", "8L1", "9T", "7L1", "6T", "6L1"],
-			kingsshield: ["8L0", "7L1", "6L1", "6S0"],
+			kingsshield: ["9L0", "7L1", "6L1", "6S0"],
 			laserfocus: ["9T"],
 			magnetrise: ["9T", "6T"],
 			metalsound: ["8L1"],
