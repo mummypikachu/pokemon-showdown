@@ -14904,7 +14904,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Corviknight",
 		types: ["Flying", "Steel"],
 		baseStats: {hp: 108, atk: 97, def: 105, spa: 53, spd: 105, spe: 67},
-		abilities: {0: "Pressure", 1: "Mirror Armor", H: "Clear Slate"},
+		abilities: {0: "Pressure", 1: "Mirror Armor", H: "Clean Slate"},
 		heightm: 2.2,
 		weightkg: 75,
 		color: "Purple",
