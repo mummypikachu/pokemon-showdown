@@ -834,6 +834,27 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Ice",
 		contestType: "Beautiful",
 	},
+	aurorastorm: {
+		num: 904,
+		accuracy: 90,
+		basePower: 95,
+		category: "Special",
+		name: "Aurora Storm",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onBasePower(basePower, source) {
+			if (this.field.isWeather(['hail', 'snow'])) 
+			return this.chainModify(1.5);
+		},
+		secondary: {
+			chance: 10,
+			status: 'frz',
+		},
+		target: "normal",
+		type: "Ice",
+		contestType: "Beautiful",
+	},
 	auroraveil: {
 		num: 694,
 		accuracy: true,
@@ -6216,14 +6237,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			},
 			// groundedness implemented in battle.engine.js:BattlePokemon#isGrounded
 		},
-		secondary: {
-			self: {
-				boosts: {
-					def: -1,
-					spd: -1,
-				},
-			},
-		},
+		secondary: null,
 		target: "normal",
 		type: "Grass",
 		contestType: "Tough",
@@ -14217,6 +14231,34 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Normal",
 		contestType: "Cute",
+	},
+	pressurechop: {
+		num: 903,
+		accuracy: 100,
+		basePower: 50,
+		category: "Physical",
+		name: "Pressure Chop",
+		pp: 10,
+		priority: 2,
+		flags: {mirror: 1},
+		breaksProtect: true,
+		// Breaking protection implemented in scripts.js
+		secondary: {
+			chance: 50,
+			onHit(target, source) {
+				const result = this.random(3);
+				if (result === 0) {
+					target.trySetStatus('flinch', source);
+				} else if (result === 1) {
+					target.trySetStatus('par', source);
+				} else {
+					target.trySetStatus('slp', source);
+				}
+			},
+		},
+		target: "normal",
+		type: "Fighting",
+		contestType: "Clever",
 	},
 	prismaticlaser: {
 		num: 711,

@@ -280,6 +280,11 @@ export const MovesText: {[k: string]: MoveText} = {
 			shortDesc: "33% chance to lower the target's Attack by 1.",
 		},
 	},
+	aurorastorm: {
+		name: "Aurora Storm",
+		desc: "This move is 1.5x times stronger in snow and has a 10% chance to freeze the target.",
+		shortDesc: "1.5x times stronger in Snow. 10% chance to freeze.",
+	},
 	auroraveil: {
 		name: "Aurora Veil",
 		desc: "For 5 turns, the user and its party members take 0.5x damage from physical and special attacks, or 0.66x damage if in a Double Battle; does not reduce damage further with Reflect or Light Screen. Critical hits ignore this protection. It is removed from the user's side if the user or an ally is successfully hit by Brick Break, Psychic Fangs, or Defog. Brick Break and Psychic Fangs remove the effect before damage is calculated. Lasts for 8 turns if the user is holding Light Clay. Fails unless the weather is Hail.",
@@ -4735,6 +4740,12 @@ export const MovesText: {[k: string]: MoveText} = {
 		gen2: {
 			desc: "If this move is successful, it deals damage or heals the target. 102/256 chance for 40 power, 76/256 chance for 80 power, 26/256 chance for 120 power, or 52/256 chance to heal the target by 1/4 of its maximum HP, rounded down. If this move deals damage, it uses an abnormal version of the damage formula by substituting certain values. The user's Attack stat is replaced with 10 times the effectiveness of this move against the target, the target's Defense stat is replaced with the index number of the user's secondary type, and the user's level is replaced with the index number of the target's secondary type. If a Pokemon does not have a secondary type, its primary type is used. The index numbers for each type are Normal: 0, Fighting: 1, Flying: 2, Poison: 3, Ground: 4, Rock: 5, Bug: 7, Ghost: 8, Steel: 9, Fire: 20, Water: 21, Grass: 22, Electric: 23, Psychic: 24, Ice: 25, Dragon: 26, Dark: 27. If at any point a division by 0 would happen in the damage formula, it divides by 1 instead.",
 		},
+	},
+	pressurechop: {
+		name: "Pressure Chop",
+		desc: "The user strikes from behind, breaking through all forms of the target's protection and hits their weak point and either flinchs, paralyzes, or puts them to sleep.",
+		shortDesc: "Nullifies Detect, Protect, and Quick/Wide Guard. 100% chance of paralysis",
+		activate: "  [POKEMON] hit [TARGET] in its weak point!",
 	},
 	prismaticlaser: {
 		name: "Prismatic Laser",
