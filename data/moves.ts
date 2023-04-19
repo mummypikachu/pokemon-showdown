@@ -14235,10 +14235,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 	pressurechop: {
 		num: 903,
 		accuracy: 100,
-		basePower: 50,
+		basePower: 40,
 		category: "Physical",
 		name: "Pressure Chop",
-		pp: 10,
+		pp: 15,
 		priority: 2,
 		flags: {mirror: 1},
 		breaksProtect: true,
@@ -14791,6 +14791,37 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Dark",
 		zMove: {boost: {spe: 1}},
 		contestType: "Clever",
+	},
+	queensorder: {
+		num: 906,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+	
+		name: "Queen's Order",
+		pp: 5,
+		priority: 0,
+		flags: {snatch: 1, sound: 1, dance: 1},
+		onTry(source) {
+			if (source.hp <= (source.maxhp * 25 / 100) || source.maxhp === 1) return false;
+		},
+		onTryHit(pokemon, target, move) {
+			if (!this.boost(move.boosts as SparseBoostsTable)) return null;
+			delete move.boosts;
+		},
+		onHit(pokemon) {
+			this.directDamage(pokemon.maxhp * 33 / 100);
+		},
+		boosts: {
+			atk: 1,
+			def: 1,
+			spa: 1,
+			spd: 1,
+			spe: 1,
+		},
+		secondary: null,
+		target: "self",
+		type: "Bug",
 	},
 	quickattack: {
 		num: 98,
@@ -19152,6 +19183,25 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Fairy",
 		zMove: {boost: {spa: 1}},
+		contestType: "Cute",
+	},
+	sweettooth: {
+		num: 905,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		name: "Sweet Tooth",
+		pp: 15,
+		priority: 0,
+		flags: {bite: 1, contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 20,
+			boosts: {
+				spe: -1,
+			},
+		},
+		target: "normal",
+		type: "Fairy",
 		contestType: "Cute",
 	},
 	sweetscent: {

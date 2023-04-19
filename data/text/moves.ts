@@ -4913,6 +4913,11 @@ export const MovesText: {[k: string]: MoveText} = {
 
 		activate: "  [TARGET]'s move was postponed!",
 	},
+	queensorder: {
+		name: "Queen's Order",
+		desc: "Raises the user's Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage in exchange for the user losing 25% of its maximum HP, rounded down. Fails if the user would faint or if its Attack, Defense, Special Attack, Special Defense, and Speed stat stages would not change.",
+		shortDesc: "User loses 25% of its max HP. +1 to all stats.",
+	},
 	quickattack: {
 		name: "Quick Attack",
 		desc: "No additional effect.",
@@ -6481,6 +6486,11 @@ export const MovesText: {[k: string]: MoveText} = {
 	sweetkiss: {
 		name: "Sweet Kiss",
 		shortDesc: "Causes the target to become confused.",
+	},
+	sweettooth: {
+		name: "Sweet Tooth",
+		desc: "Has a 20% chance to lower the target's Speed by 1 stage.",
+		shortDesc: "20% chance to lower the target's Speed by 1.",
 	},
 	sweetscent: {
 		name: "Sweet Scent",

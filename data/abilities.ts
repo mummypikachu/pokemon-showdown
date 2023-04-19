@@ -1743,6 +1743,21 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 0,
 		num: 134,
 	},
+	hivemind: {
+		onStart(pokemon) {
+			if (this.suppressingAbility(pokemon)) return;
+			this.add('-ability', pokemon, 'Hivemind');
+		},
+		onAnyBasePowerPriority: 20,
+		onAnyBasePower(basePower, source, target, move) {
+			if (target === source || move.category === 'Status' || move.type !== 'Bug') return;
+			if (!move.auraBooster?.hasAbility('Hivemind')) move.auraBooster = this.effectState.target;
+			if (move.auraBooster !== this.effectState.target) return;
+			return this.chainModify([move.hasAuraBreak ? 3072 : 5448, 4096]);
+		},
+		name: "Hivemind",
+		rating: 3,
+	},
 	honeygather: {
 		name: "Honey Gather",
 		rating: 0,
@@ -5174,6 +5189,14 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Wonder Guard",
 		rating: 5,
 		num: 25,
+	},
+	wonderpower: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(spa) {
+			return this.chainModify(2);
+		},
+		name: "Wonder Power",
+		rating: 5,
 	},
 	wonderskin: {
 		onModifyAccuracyPriority: 10,

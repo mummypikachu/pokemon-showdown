@@ -642,6 +642,13 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "This Pokemon's weight is doubled. This effect is calculated after the effect of Autotomize, and before the effect of Float Stone.",
 		shortDesc: "This Pokemon's weight is doubled.",
 	},
+	hivemind: {
+		name: "Hivemind",
+		desc: "While this Pokemon is active, the power of Bug-type moves used by active Pokemon is multiplied by 1.33.",
+		shortDesc: "While this Pokemon is active, a Bug move used by any Pokemon has 1.33x power.",
+
+		start: "  [POKEMON]'s hivemind is beginning to form!",
+	},
 	honeygather: {
 		name: "Honey Gather",
 		shortDesc: "No competitive use.",
@@ -2118,6 +2125,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		gen3: {
 			shortDesc: "This Pokemon is only damaged by supereffective moves and indirect damage.",
 		},
+	},
+	wonderpower: {
+		name: "Wonder Power",
+		shortDesc: "This Pokemon's Special Attack is doubled.",
 	},
 	wonderskin: {
 		name: "Wonder Skin",
