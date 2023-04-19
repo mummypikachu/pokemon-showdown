@@ -82288,6 +82288,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			sleeptalk: ["9M", "9M"],
 			snarl: ["9M", "9M"],
 			snore: ["9M"],
+			slackoff: ["9M"],
 			solarbeam: ["9M", "9M"],
 			steelbeam: ["9M", "9T"],
 			stoneedge: ["9M"],
