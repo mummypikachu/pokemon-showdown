@@ -4192,7 +4192,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Fairy", "Fighting"],
 		genderRatio: {M: 0.25, F: 0.75},
 		baseStats: {hp: 90, atk: 120, def: 85, spa: 60, spd: 85, spe: 95},
-		abilities: {0: "Intimidate", 1: "Quick Feet", H: "Rattled"},
+		abilities: {0: "Intimidate", 1: "Quick Feet", H: "Strong Jaw"},
 		heightm: 1.4,
 		weightkg: 48.7,
 		color: "Purple",

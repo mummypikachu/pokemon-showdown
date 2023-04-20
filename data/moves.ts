@@ -2505,14 +2505,14 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {snatch: 1, sound: 1, dance: 1},
 		onTry(source) {
-			if (source.hp <= (source.maxhp * 33 / 100) || source.maxhp === 1) return false;
+			if (source.hp <= (source.maxhp * 25 / 100) || source.maxhp === 1) return false;
 		},
 		onTryHit(pokemon, target, move) {
 			if (!this.boost(move.boosts as SparseBoostsTable)) return null;
 			delete move.boosts;
 		},
 		onHit(pokemon) {
-			this.directDamage(pokemon.maxhp * 33 / 100);
+			this.directDamage(pokemon.maxhp * 25 / 100);
 		},
 		boosts: {
 			atk: 1,
@@ -14802,6 +14802,26 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {snatch: 1, sound: 1, dance: 1},
+		self: {
+			volatileStatus: 'queensorder',
+		},
+		condition: {
+			noCopy: true,
+			onStart(pokemon) {
+				this.add('-singlemove', pokemon, 'Queens Order ', '[silent]');
+			},
+			onAccuracy() {
+				return true;
+			},
+			onSourceModifyDamage() {
+				return this.chainModify(2);
+			},
+			onBeforeMovePriority: 100,
+			onBeforeMove(pokemon) {
+				this.debug('removing Queens Order drawback before attack');
+				pokemon.removeVolatile('queensorder');
+			},
+		},
 		onTry(source) {
 			if (source.hp <= (source.maxhp * 25 / 100) || source.maxhp === 1) return false;
 		},
@@ -14810,7 +14830,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			delete move.boosts;
 		},
 		onHit(pokemon) {
-			this.directDamage(pokemon.maxhp * 33 / 100);
+			this.directDamage(pokemon.maxhp * 25 / 100);
 		},
 		boosts: {
 			atk: 1,
