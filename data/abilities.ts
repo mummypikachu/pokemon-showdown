@@ -5278,14 +5278,12 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				return null;
 			}
 		},
-		isNonstandard: "CAP",
 		isBreakable: true,
 		name: "Mountaineer",
 		rating: 3,
 		num: 281,
 	},
 	rebound: {
-		isNonstandard: "CAP",
 		name: "Rebound",
 		onTryHitPriority: 1,
 		onTryHit(target, source, move) {
@@ -5318,7 +5316,6 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 280,
 	},
 	persistent: {
-		isNonstandard: "CAP",
 		name: "Persistent",
 			onStart(source) {
 				this.field.addPseudoWeather('trickroom');
