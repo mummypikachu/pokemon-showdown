@@ -1184,6 +1184,21 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3,
 		gen: 8,
 	},
+	fightingaura: {
+		onStart(pokemon) {
+			if (this.suppressingAbility(pokemon)) return;
+			this.add('-ability', pokemon, 'Fighting Aura');
+		},
+		onAnyBasePowerPriority: 20,
+		onAnyBasePower(basePower, source, target, move) {
+			if (target === source || move.category === 'Status' || move.type !== 'Fighting') return;
+			if (!move.auraBooster?.hasAbility('Fighting Aura')) move.auraBooster = this.effectState.target;
+			if (move.auraBooster !== this.effectState.target) return;
+			return this.chainModify([move.hasAuraBreak ? 3072 : 5448, 4096]);
+		},
+		name: "Fighting Aura",
+		rating: 3,
+	},
 	filter: {
 		onSourceModifyDamage(damage, source, target, move) {
 			if (target.getMoveHitData(move).typeMod > 0) {
@@ -4716,6 +4731,21 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3.5,
 		num: 181,
 	},
+	toxicaura: {
+		onStart(pokemon) {
+			if (this.suppressingAbility(pokemon)) return;
+			this.add('-ability', pokemon, 'Toxic Aura');
+		},
+		onAnyBasePowerPriority: 20,
+		onAnyBasePower(basePower, source, target, move) {
+			if (target === source || move.category === 'Status' || move.type !== 'Poison') return;
+			if (!move.auraBooster?.hasAbility('Toxic Aura')) move.auraBooster = this.effectState.target;
+			if (move.auraBooster !== this.effectState.target) return;
+			return this.chainModify([move.hasAuraBreak ? 3072 : 5448, 4096]);
+		},
+		name: "Toxic Aura",
+		rating: 3,
+	},
 	toxicboost: {
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
@@ -4739,6 +4769,26 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Toxic Debris",
 		rating: 3.5,
 		num: 295,
+	},
+	toxicdilemma: {
+		// upokecenter says this is implemented as an added secondary effect
+		onModifyMove(move) {
+			if (!move?.flags['contact'] || move.target === 'self') return;
+			if (!move.ignoreImmunity) move.ignoreImmunity = {};
+			if (move.ignoreImmunity !== true) {
+				move.ignoreImmunity['Steel'] = true;
+			}
+			if (!move.secondaries) {
+				move.secondaries = [];
+			}
+			move.secondaries.push({
+				chance: 30,
+				status: 'psn',
+				ability: this.dex.abilities.get('toxicdilemma'),
+			});
+		},
+		name: "Toxic Dilemma",
+		rating: 2,
 	},
 	trace: {
 		onStart(pokemon) {

@@ -17619,7 +17619,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	snaptrap: {
 		num: 779,
 		accuracy: 100,
-		basePower: 35,
+		basePower: 90,
 		category: "Physical",
 	
 		name: "Snap Trap",
@@ -17629,7 +17629,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		volatileStatus: 'partiallytrapped',
 		secondary: null,
 		target: "normal",
-		type: "Grass",
+		type: "Steel",
 	},
 	snarl: {
 		num: 555,

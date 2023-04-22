@@ -449,6 +449,13 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 
 		start: "  [POKEMON] is radiating a fairy aura!",
 	},
+	fightingaura: {
+		name: "Fighting Aura",
+		desc: "While this Pokemon is active, the power of Fighting-type moves used by active Pokemon is multiplied by 1.33.",
+		shortDesc: "While this Pokemon is active, a Fighting move used by any Pokemon has 1.33x power.",
+
+		start: "  [POKEMON] is radiating a fighting aura!",
+	},
 	filter: {
 		name: "Filter",
 		shortDesc: "This Pokemon receives 3/4 damage from supereffective attacks.",
@@ -1938,6 +1945,13 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Tough Claws",
 		shortDesc: "This Pokemon's contact moves have their power multiplied by 1.3.",
 	},
+	toxicaura: {
+		name: "Toxic Aura",
+		desc: "While this Pokemon is active, the power of Poison-type moves used by active Pokemon is multiplied by 1.33.",
+		shortDesc: "While this Pokemon is active, a Poison move used by any Pokemon has 1.33x power.",
+
+		start: "  [POKEMON]'s Toxic Aura is flaring up!",
+	},
 	toxicboost: {
 		name: "Toxic Boost",
 		desc: "While this Pokemon is poisoned, the power of its physical attacks is multiplied by 1.5.",
@@ -1946,6 +1960,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	toxicdebris: {
 		name: "Toxic Debris",
 		shortDesc: "If this Pokemon is hit by a physical attack, Toxic Spikes are set on the opposing side.",
+	},
+	toxicdilemma: {
+		name: "Toxic Dilemma",
+		desc: "This Pokemon's contact moves have a 30% chance of poisoning and ignores Steel's immunity. This effect comes after a move's inherent secondary effect chance.",
+		shortDesc: "This Pokemon's contact moves have a 30% chance of poisoning. Ignores Steel's immunity",
 	},
 	trace: {
 		name: "Trace",
