@@ -5003,6 +5003,11 @@ export const MovesText: {[k: string]: MoveText} = {
 			desc: "For 5 turns, the weather becomes Rain Dance, even if the current weather is Rain Dance. The damage of Water-type attacks is multiplied by 1.5 and the damage of Fire-type attacks is multiplied by 0.5 during the effect.",
 		},
 	},
+	rancidrainbow: {
+		name: "Rancid Rainbow",
+		desc: "The user uses sludge and trash to make a pretty rainbow. The move has a chance of raising a random stat.",
+		shortDesc: "50% chance to raise a random stat by 1.",
+	},
 	rapidjab: {
 		name: "Rapid Jab",
 		desc: "The user attacks the opponent with a flurry of quick punches. The move has a low chance of raising Speed.",

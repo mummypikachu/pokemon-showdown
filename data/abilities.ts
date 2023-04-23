@@ -3196,8 +3196,9 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			if (target.getAbility().isPermanent || additionalBannedAbilities.includes(target.ability)) return;
 			if (this.effectState.target.setAbility(ability)) {
 				this.add('-ability', this.effectState.target, ability, '[from] ability: Power of Alchemy', '[of] ' + target);
-			}
+			};
 		},
+
 		name: "Power of Alchemy",
 		rating: 0,
 		num: 223,

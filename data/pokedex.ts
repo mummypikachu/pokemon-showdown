@@ -2068,7 +2068,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		forme: "Alola",
 		types: ["Poison", "Dark"],
 		baseStats: {hp: 75, atk: 125, def: 105, spa: 65, spd: 105, spe: 30},
-		abilities: {0: "Poison Touch", 1: "Intimidate", H: "Power of Alchemy"},
+		abilities: {0: "Toxic Dilemma", H: "Intimidate"},
 		heightm: 1,
 		weightkg: 52,
 		color: "Green",

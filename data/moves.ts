@@ -15079,6 +15079,39 @@ export const Moves: {[moveid: string]: MoveData} = {
 		zMove: {boost: {spe: 1}},
 		contestType: "Beautiful",
 	},
+	rancidrainbow: {
+		num: 441,
+		accuracy: 100,
+		basePower: 70,
+		category: "Physical",
+		name: "Rancid Rainbow",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 50,
+			onHit(target) {
+				const stats: BoostID[] = [];
+				let stat: BoostID;
+				for (stat in target.boosts) {
+					if (target.boosts[stat] < 6) {
+						stats.push(stat);
+					}
+				}
+				if (stats.length) {
+					const randomStat = this.sample(stats);
+					const boost: SparseBoostsTable = {};
+					boost[randomStat] = 1;
+					this.boost(boost);
+				} else {
+					return false;
+				}
+			},
+		},
+		target: "normal",
+		type: "Poison",
+		contestType: "Tough",
+	},
 	rapidjab: {
 		num: 901,
 		accuracy: 100,
