@@ -11246,6 +11246,27 @@ export const Moves: {[moveid: string]: MoveData} = {
 		zMove: {boost: {def: 1}},
 		contestType: "Cool",
 	},
+	marvelshot: {
+		num: 908,
+		accuracy: 100,
+		basePower: 100,
+		category: "Special",
+		name: "Marvel Shot",
+		pp: 10,
+		flags: { protect: 1, mirror: 1, distance: 1},
+		onEffectiveness(typeMod, target, type, move) {
+			return typeMod + this.dex.getEffectiveness('Water', type);
+		},
+		priority: 0,
+		secondary: {
+			chance: 20,
+			volatileStatus: 'confusion',
+		},
+		target: "any",
+		type: "Fairy",
+		zMove: {basePower: 170},
+		contestType: "Beautiful",
+	},
 	maxairstream: {
 		num: 766,
 		accuracy: true,
@@ -15080,7 +15101,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		contestType: "Beautiful",
 	},
 	rancidrainbow: {
-		num: 441,
+		num: 907,
 		accuracy: 100,
 		basePower: 70,
 		category: "Physical",

@@ -1300,6 +1300,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Prism Armor",
 		shortDesc: "This Pokemon receives 3/4 damage from supereffective attacks.",
 	},
+	prismaticscales: {
+		name: "Prismatic Scales",
+		shortDesc: "If rain is ongoing, its Defense is multiplied by 2. Removes statuses in rain",
+	},
 	propellertail: {
 		name: "Propeller Tail",
 		shortDesc: "This Pokemon's moves cannot be redirected to a different target by any effect.",

@@ -3272,6 +3272,26 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3,
 		num: 232,
 	},
+	prismaticscales: {
+		onResidualOrder: 5,
+		onResidualSubOrder: 3,
+		onResidual(pokemon) {
+			if (pokemon.status && ['raindance', 'primordialsea'].includes(pokemon.effectiveWeather())) {
+				this.debug('prismaticscales');
+				this.add('-activate', pokemon, 'ability: Prismatic Scales');
+				pokemon.cureStatus();
+			}
+		},
+		onModifyDefPriority: 6,
+		onModifyDef(def, pokemon) {
+			if (['raindance', 'primordialsea'].includes(pokemon.effectiveWeather())) {
+				return this.chainModify(2);
+			}
+		},
+		isBreakable: true,
+		name: "Prismatic Scales",
+		rating: 2.5,
+	},
 	propellertail: {
 		onModifyMovePriority: 1,
 		onModifyMove(move) {

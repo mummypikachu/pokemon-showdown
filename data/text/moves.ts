@@ -3759,6 +3759,11 @@ export const MovesText: {[k: string]: MoveText} = {
 		start: "  [POKEMON] intends to flip up a mat and block incoming attacks!",
 		block: "  [MOVE] was blocked by the kicked-up mat!",
 	},
+	marvelshot: {
+		name: "Marvel Shot",
+		desc: "This move combines Water in its type effectiveness against the target. This move has a chance to confuse.",
+		shortDesc: "Combines Water in its type effectiveness. 20% chance of confusion",
+	},
 	maxairstream: {
 		name: "Max Airstream",
 		desc: "Power is equal to the base move's Max Move power. If this move is successful, the Speed of each Pokemon on the user's side is raised by 1 stage, even if they have a substitute. This effect does not happen if the user is not Dynamaxed. If this move is used as a base move, it deals damage with a power of 0.",
