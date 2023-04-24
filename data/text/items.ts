@@ -70,6 +70,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Altarianite",
 		desc: "If held by an Altaria, this item allows it to Mega Evolve in battle.",
 	},
+	alcremite: {
+		name: "Alcremite",
+		desc: "If held by an Alcremie, this item allows it to Mega Evolve in battle.",
+	},
 	ampharosite: {
 		name: "Ampharosite",
 		desc: "If held by an Ampharos, this item allows it to Mega Evolve in battle.",
@@ -319,6 +323,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 	covertcloak: {
 		name: "Covert Cloak",
 		desc: "Holder is not affected by the secondary effect of another Pokemon's attack.",
+	},
+	corvinite: {
+		name: "Corvinite",
+		desc: "If held by an Corviknight, this item allows it to Mega Evolve in battle.",
 	},
 	crackedpot: {
 		name: "Cracked Pot",
@@ -1176,6 +1184,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 	mistyseed: {
 		name: "Misty Seed",
 		desc: "If the terrain is Misty Terrain, raises holder's Sp. Def by 1 stage. Single use.",
+	},
+	milotite: {
+		name: "Milotite",
+		desc: "If held by an Milotic, this item allows it to Mega Evolve in battle.",
 	},
 	moonball: {
 		name: "Moon Ball",

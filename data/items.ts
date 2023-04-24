@@ -231,6 +231,19 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 6,
 	
 	},
+	alcremite: {
+		name: "Alcremite",
+		spritenum: 617,
+		megaStone: "Alcremie-Mega",
+		megaEvolves: "Alcremie",
+		itemUser: ["Alcremie"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 757,
+		gen: 9,
+	},
 	aloraichiumz: {
 		name: "Aloraichium Z",
 		spritenum: 655,
@@ -1128,6 +1141,19 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 3,
 	
 	},
+	corvinite:{
+		name: "Corvinite",
+		spritenum: 586,
+		megaStone: "Corviknight-Mega",
+		megaEvolves: "Corviknight",
+		itemUser: ["Corviknight"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 678,
+		gen: 6,
+},
 	coverfossil: {
 		name: "Cover Fossil",
 		spritenum: 85,
@@ -3691,6 +3717,19 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 209,
 		gen: 4,
+	},
+	milotite: {
+		name: "Milotite",
+		spritenum: 577,
+		megaStone: "Milotite-Mega",
+		megaEvolves: "Milotic",
+		itemUser: ["Milotic"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -1,
+		gen: 9,
 	},
 	mimikiumz: {
 		name: "Mimikium Z",
