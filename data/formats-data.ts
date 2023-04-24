@@ -2002,6 +2002,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "UU",
 		natDexTier: "RU",
 	},
+	miloticmega: {
+		tier: "OU",
+		natDexTier: "RU",
+	},
 	castform: {
 		tier: "OU",
 		natDexTier: "RU",
@@ -4297,9 +4301,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
 	},
-	corviknightgmax: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+	corviknightmega: {
+		tier: "OU",
 	},
 	blipbug: {
 		tier: "LC",
@@ -4512,9 +4515,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "RU",
 		natDexTier: "RU",
 	},
-	alcremiegmax: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+	alcremiemega: {
+		tier: "OU",
 	},
 	falinks: {
 		tier: "PU",
