@@ -4303,6 +4303,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	corviknightmega: {
 		tier: "OU",
+		natDexTier: "Uber",
 	},
 	blipbug: {
 		tier: "LC",
@@ -4517,6 +4518,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	alcremiemega: {
 		tier: "OU",
+		natDexTier: "RU",
 	},
 	falinks: {
 		tier: "PU",

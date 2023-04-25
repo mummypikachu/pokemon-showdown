@@ -241,8 +241,8 @@ export const Items: {[itemid: string]: ItemData} = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: 757,
-		gen: 9,
+		num: 1237,
+		gen: 8,
 	},
 	aloraichiumz: {
 		name: "Aloraichium Z",
@@ -1151,8 +1151,8 @@ export const Items: {[itemid: string]: ItemData} = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: 678,
-		gen: 6,
+		num: 1376,
+		gen: 8,
 },
 	coverfossil: {
 		name: "Cover Fossil",
@@ -3728,8 +3728,8 @@ export const Items: {[itemid: string]: ItemData} = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -1,
-		gen: 9,
+		num: 1414,
+		gen: 6,
 	},
 	mimikiumz: {
 		name: "Mimikium Z",
