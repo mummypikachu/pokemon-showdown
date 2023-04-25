@@ -12640,6 +12640,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			spite: ["9T"],
 			stoneedge: ["9M", "9M"],
 			substitute: ["9M", "9V", "9M"],
+			suckerpunch: ["9M"],
 			sunnyday: ["9M", "9M"],
 			swagger: ["9M"],
 			swift: ["9M"],
