@@ -3721,7 +3721,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	milotite: {
 		name: "Milotite",
 		spritenum: 577,
-		megaStone: "Milotite-Mega",
+		megaStone: "Milotic-Mega",
 		megaEvolves: "Milotic",
 		itemUser: ["Milotic"],
 		onTakeItem(item, source) {
