@@ -80782,6 +80782,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			metronome: ["9M"],
 			mistyexplosion: ["9T"],
 			mistyterrain: ["9M"],
+			moonblast: ["9M"],
 			mysticalfire: ["9M"],
 			playnice: ["9L1", "9L1"],
 			playrough: ["9M", "9M"],

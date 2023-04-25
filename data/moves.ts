@@ -15111,22 +15111,24 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1},
 		secondary: {
 			chance: 50,
-			onHit(target) {
-				const stats: BoostID[] = [];
-				let stat: BoostID;
-				for (stat in target.boosts) {
-					if (target.boosts[stat] < 6) {
-						stats.push(stat);
+			self: {
+				onHit(target) {
+					const stats: BoostID[] = [];
+					let stat: BoostID;
+					for (stat in target.boosts) {
+						if (target.boosts[stat] < 6) {
+							stats.push(stat);
+						}
 					}
-				}
-				if (stats.length) {
-					const randomStat = this.sample(stats);
-					const boost: SparseBoostsTable = {};
-					boost[randomStat] = 1;
-					this.boost(boost);
-				} else {
-					return false;
-				}
+					if (stats.length) {
+						const randomStat = this.sample(stats);
+						const boost: SparseBoostsTable = {};
+						boost[randomStat] = 1;
+						this.boost(boost);
+					} else {
+						return false;
+					}
+				},
 			},
 		},
 		target: "normal",
