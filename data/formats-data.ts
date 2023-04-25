@@ -1652,7 +1652,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 	},
 	swellow: {
-		tier: "LC",
+		tier: "PU",
 		natDexTier: "RU",
 	},
 	wingull: {
@@ -2832,7 +2832,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 	},
 	swadloon: {
-		tier: "LC",
+		tier: "NFE",
 		natDexTier: "NFE",
 	},
 	leavanny: {
@@ -3188,7 +3188,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	stunfisk: {
-		tier: "LC",
+		tier: "PU",
 		natDexTier: "RU",
 	},
 	stunfiskgalar: {
@@ -3436,8 +3436,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	vivillonpokeball: {
-		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tier: "PU",
 		natDexTier: "RU",
 	},
 	litleo: {
@@ -4458,9 +4457,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "OU",
 		natDexTier: "RU",
 	},
-	centiskorchgmax: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+	centiskorchmega: {
+		tier: "OU",
 	},
 	clobbopus: {
 		tier: "LC",

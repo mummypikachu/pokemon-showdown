@@ -769,6 +769,19 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 546,
 		gen: 5,
 	},
+	centiskite: {
+		name: "Centiskite",
+		spritenum: 586,
+		megaStone: "Centiskorch-Mega",
+		megaEvolves: "Centiskorch",
+		itemUser: ["Centiskorch"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 1322,
+		gen: 9,
+	},
 	charcoal: {
 		name: "Charcoal",
 		spritenum: 61,
@@ -799,7 +812,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	garbodite: {
 		name: "Garbodite",
-		spritenum: 585,
+		spritenum: 588,
 		megaStone: "Garbodor-Mega",
 		megaEvolves: "Garbodor",
 		itemUser: ["Garbodor"],
