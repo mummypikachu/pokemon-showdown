@@ -3744,18 +3744,20 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 24,
 	},
 	runaway: {
+		onModifySpePriority: 5,
+		onModifySpe(spe) {
+			return this.chainModify(2);
+		},
 		name: "Run Away",
-		rating: 0,
+		rating: 4,
 		num: 50,
 	},
 	sandforce: {
 		onBasePowerPriority: 21,
-		onBasePower(basePower, attacker, defender, move) {
+		onModifyDamage(damage, source, target, move) {
 			if (this.field.isWeather('sandstorm')) {
-				if (move.type === 'Rock' || move.type === 'Ground' || move.type === 'Steel') {
 					this.debug('Sand Force boost');
 					return this.chainModify([5325, 4096]);
-				}
 			}
 		},
 		onImmunity(type, pokemon) {

@@ -1467,12 +1467,12 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	runaway: {
 		name: "Run Away",
-		shortDesc: "No competitive use.",
+		shortDesc: "Doubles the Speed stat.",
 	},
 	sandforce: {
 		name: "Sand Force",
-		desc: "If Sandstorm is active, this Pokemon's Ground-, Rock-, and Steel-type attacks have their power multiplied by 1.3. This Pokemon takes no damage from Sandstorm.",
-		shortDesc: "This Pokemon's Ground/Rock/Steel attacks do 1.3x in Sandstorm; immunity to it.",
+		desc: "If Sandstorm is active, this Pokemon's attacks have their power multiplied by 1.3. This Pokemon takes no damage from Sandstorm.",
+		shortDesc: "This Pokemon's attacks do 1.3x in Sandstorm; immunity to it.",
 	},
 	sandrush: {
 		name: "Sand Rush",
