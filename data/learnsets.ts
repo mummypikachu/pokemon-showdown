@@ -64386,6 +64386,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			magiccoat: ["9T", "6T", "5T"],
 			magicroom: ["9T", "6T", "5T"],
 			metronome: ["9M"],
+			moonblast: ["9M"],
 			payback: ["7M", "6M", "5M"],
 			perishsong: ["9L85", "9L85", "6L85", "5L85"],
 			playrough: ["9M"],

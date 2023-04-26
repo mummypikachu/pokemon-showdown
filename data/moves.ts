@@ -15425,7 +15425,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			}
 		},
 		target: "allAdjacentFoes",
-		type: "Normal",
+		type: "Fairy",
 		contestType: "Beautiful",
 	},
 	rest: {
