@@ -710,9 +710,9 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	illusion: {
 		name: "Illusion",
-		desc: "When this Pokemon switches in, it appears as the last unfainted Pokemon in its party until it takes direct damage from another Pokemon's attack. This Pokemon's actual level and HP are displayed instead of those of the mimicked Pokemon.",
-		shortDesc: "This Pokemon appears as the last Pokemon in the party until it takes direct damage.",
-
+		desc: "When this Pokemon switches in, it appears as the last unfainted Pokemon in its party until it takes direct damage from another Pokemon's attack. This Pokemon's actual level and HP are displayed instead of those of the mimicked Pokemon. This Pokemon's moves are given a 1.3x boost when disguised.",
+		shortDesc: "Appears as last Pokemon in party until damaged; 1.3x power when disguised.",
+		
 		end: "  [POKEMON]'s illusion wore off!",
 	},
 	immunity: {

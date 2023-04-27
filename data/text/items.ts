@@ -242,10 +242,6 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Charizardite Y",
 		desc: "If held by a Charizard, this item allows it to Mega Evolve in battle.",
 	},
-	garbodite: {
-		name: "Garbodite",
-		desc: "If held by a Garbodor, this item allows it to Mega Evolve in battle.",
-	},
 	chartiberry: {
 		name: "Charti Berry",
 		desc: "Halves damage taken from a supereffective Rock-type attack. Single use.",
@@ -671,6 +667,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 	ganlonberry: {
 		name: "Ganlon Berry",
 		desc: "Raises holder's Defense by 1 stage when at 1/4 max HP or less. Single use.",
+	},
+	garbodite: {
+		name: "Garbodite",
+		desc: "If held by a Garbodor, this item allows it to Mega Evolve in battle.",
 	},
 	garchompite: {
 		name: "Garchompite",

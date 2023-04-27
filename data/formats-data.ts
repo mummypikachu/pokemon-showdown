@@ -3397,7 +3397,6 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "OU",
 	},
 	greninjaash: {
-		tier: "OU",
 	},
 	bunnelby: {
 		tier: "LC",

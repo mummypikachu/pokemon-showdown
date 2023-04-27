@@ -1950,6 +1950,13 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				}
 			}
 		},
+			onBasePowerPriority: 23,
+			onBasePower(basePower, attacker, defender, move) {
+				if (attacker.illusion) {
+					this.debug('Illusion boost');
+					return this.chainModify([5325, 4096]);
+				}
+			},
 		onDamagingHit(damage, target, source, move) {
 			if (target.illusion) {
 				this.singleEvent('End', this.dex.abilities.get('Illusion'), target.abilityState, target, source, move);
