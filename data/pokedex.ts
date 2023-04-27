@@ -15470,7 +15470,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Bug"],
 		canGigantamax: "G-Max Centiferno",
 	},
-	centiskorchgmax: {
+	centiskorchmega: {
 		num: 851,
 		name: "Centiskorch-Mega",
 		baseSpecies: "Centiskorch",

@@ -10020,7 +10020,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onModifyType(move, pokemon) {
 			if (pokemon.ignoringItem()) return;
 			const item = pokemon.getItem();
-			if (item.id && item.onPlate && !item.zMove) {
+			if (item.id && item.onPlate && !item.zMoveType) {
 				move.type = item.onPlate;
 			}
 		},
