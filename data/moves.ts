@@ -20810,6 +20810,32 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Dragon",
 		contestType: "Cool",
 	},
+	tyrantswrath: {
+		num: 910,
+		accuracy: 100,
+		basePower: 50,
+		basePowerCallback(pokemon, target, move) {
+			return 50 * move.hit;
+		},
+		category: "Physical",
+		name: "Tyrant's Wrath",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1},
+		multihit: 3,
+		multiaccuracy: true,
+		secondary: {
+			chance: 20,
+			self: {
+				boosts: {
+					atk: 1,
+				},
+			},
+		},
+		target: "normal",
+		type: "Fire",
+		contestType: "Tough",
+	},	
 	uturn: {
 		num: 369,
 		accuracy: 100,

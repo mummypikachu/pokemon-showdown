@@ -7058,6 +7058,10 @@ export const MovesText: {[k: string]: MoveText} = {
 			shortDesc: "20% chance to make the target flinch.",
 		},
 	},
+	tyrantswrath: {
+		name: "Tyrant's Wrath",
+		shortDesc: "This move hits 3 times. Move increases in power with each hit. 20% chance to raise Attack by 1.",
+	},
 	uturn: {
 		name: "U-turn",
 		desc: "If this move is successful and the user has not fainted, the user switches out even if it is trapped and is replaced immediately by a selected party member. The user does not switch out if there are no unfainted party members, or if the target switched out using an Eject Button or through the effect of the Emergency Exit or Wimp Out Abilities.",
