@@ -19884,6 +19884,27 @@ export const Moves: {[moveid: string]: MoveData} = {
 		zMove: {basePower: 160},
 		maxMove: {basePower: 130},
 	},
+	theeternalcheckmate: {
+		num: 909,
+		accuracy: true,
+		basePower: 185,
+		category: "Physical",
+		name: "The Eternal Checkmate",
+		pp: 1,
+		priority: 0,
+		flags: {},
+		isZ: "kingamtiumz",
+		secondary: {
+			chance: 100,
+			self: {
+				boosts:{
+					spe: 2,
+				},
+			},
+		},
+		target: "normal",
+		type: "Dark",
+	},
 	thief: {
 		num: 168,
 		accuracy: 100,

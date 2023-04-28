@@ -354,26 +354,6 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 640,
 		gen: 6,
 	},
-	strikervest: {
-		name: "Striker Vest",
-		spritenum: 581,
-		fling: {
-			basePower: 80,
-		},
-		onModifyDefPriority: 1,
-		onModifyDef(def) {
-			return this.chainModify(1.5);
-		},
-		onDisableMove(pokemon) {
-			for (const moveSlot of pokemon.moveSlots) {
-				if (this.dex.moves.get(moveSlot.move).category === 'Status') {
-					pokemon.disableMove(moveSlot.id);
-				}
-			}
-		},
-		num: 1577,
-		gen: 9,
-	},
 	audinite: {
 		name: "Audinite",
 		spritenum: 617,
@@ -2903,6 +2883,17 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 675,
 		gen: 6,
+	
+	},
+	kingamtiumz: {
+		name: "Kingamtium Z",
+		spritenum: 687,
+		onTakeItem: false,
+		zMove: "The Eternal Checkmate",
+		zMoveFrom: "Kowtow Cleave",
+		itemUser: ["Kingambit"],
+		num: 1923,
+		gen: 9,
 	
 	},
 	kingsrock: {
@@ -5682,6 +5673,26 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 1109,
 		gen: 8,
 	
+	},
+	strikervest: {
+		name: "Striker Vest",
+		spritenum: 581,
+		fling: {
+			basePower: 80,
+		},
+		onModifyDefPriority: 1,
+		onModifyDef(def) {
+			return this.chainModify(1.5);
+		},
+		onDisableMove(pokemon) {
+			for (const moveSlot of pokemon.moveSlots) {
+				if (this.dex.moves.get(moveSlot.move).category === 'Status') {
+					pokemon.disableMove(moveSlot.id);
+				}
+			}
+		},
+		num: 1577,
+		gen: 9,
 	},
 	sunstone: {
 		name: "Sun Stone",

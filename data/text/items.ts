@@ -94,10 +94,6 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Assault Vest",
 		desc: "Holder's Sp. Def is 1.5x, but it can only select damaging moves.",
 	},
-	strikervest: {
-		name: "Striker Vest",
-		desc: "Holder's Defense is 1.50x, but it can only select damaging moves.",
-	},
 	audinite: {
 		name: "Audinite",
 		desc: "If held by an Audino, this item allows it to Mega Evolve in battle.",
@@ -226,6 +222,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 	cellbattery: {
 		name: "Cell Battery",
 		desc: "Raises holder's Attack by 1 if hit by an Electric-type attack. Single use.",
+	},
+	centiskite: {
+		name: "Centiskite",
+		desc: "If held by a Centiskorch, this item allows it to Mega Evolve in battle.",
 	},
 	charcoal: {
 		name: "Charcoal",
@@ -1768,6 +1768,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 	strawberrysweet: {
 		name: "Strawberry Sweet",
 		desc: "Evolves Milcery into Alcremie when held and spun around.",
+	},
+	strikervest: {
+		name: "Striker Vest",
+		desc: "Holder's Defense is 1.50x, but it can only select damaging moves.",
 	},
 	sunstone: {
 		name: "Sun Stone",
