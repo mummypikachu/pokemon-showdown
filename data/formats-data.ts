@@ -4488,10 +4488,6 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DUber",
 		natDexTier: "OU",
 	},
-	hatterenegmax: {
-		isNonstandard: "Past",
-		tier: "Illegal",
-	},
 	impidimp: {
 		tier: "LC",
 	},
@@ -4632,8 +4628,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "Uber",
 	},
 	eternatuseternamax: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "Uber",
+		natDexTier: "Uber",
 	},
 	kubfu: {
 		tier: "NFE",
