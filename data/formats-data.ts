@@ -4185,8 +4185,6 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "Uber",
 	},
 	necrozmaultra: {
-		tier: "Uber",
-		natDexTier: "Uber",
 	},
 	magearna: {
 		tier: "Uber",
@@ -4485,6 +4483,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
+	hatterenemega: {
+		tier: "OU",
+		doublesTier: "DUber",
+		natDexTier: "OU",
+	},
 	hatterenegmax: {
 		isNonstandard: "Past",
 		tier: "Illegal",
@@ -4500,9 +4503,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
-	grimmsnarlgmax: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+	grimmsnarlmega: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "OU",
 	},
 	milcery: {
 		tier: "LC",

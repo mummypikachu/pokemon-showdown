@@ -506,6 +506,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 			desc: "No competitive use.",
 		},
 	},
+	eterniaorb:{
+		name: "Eternia Orb",
+		desc: "If held by a Eternatus, this item triggers its Eternalizing in battle.",
+	},
 	eviolite: {
 		name: "Eviolite",
 		desc: "If holder's species can evolve, its Defense and Sp. Def are 1.5x.",
@@ -749,6 +753,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 			desc: "Can only be held by Giratina. Its Ghost- & Dragon-type attacks have 1.2x power.",
 		},
 	},
+	grimmsnarlite: {
+		name: "Grimmsnarlite",
+		desc: "If held by a Grimmsnarl, this item allows it to Mega Evolve in battle.",
+	},
 	groundgem: {
 		name: "Ground Gem",
 		desc: "Holder's first successful Ground-type attack will have 1.3x power. Single use.",
@@ -778,6 +786,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 		gen3: {
 			desc: "Holder's Rock-type attacks have 1.1x power.",
 		},
+	},
+	hatterite: {
+		name: "Hatterite",
+		desc: "If held by a Hatterene, this item allows it to Mega Evolve in battle.",
 	},
 	healball: {
 		name: "Heal Ball",
@@ -898,6 +910,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 	kangaskhanite: {
 		name: "Kangaskhanite",
 		desc: "If held by a Kangaskhan, this item allows it to Mega Evolve in battle.",
+	},
+	kingamtiumz: {
+		name: "Kingamtium Z",
+		desc: "If held by a Kingambit with Kowtow Cleave, it can use The Eternal Checkmate.",
 	},
 	kingsrock: {
 		name: "King's Rock",

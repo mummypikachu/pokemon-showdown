@@ -1693,6 +1693,26 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 208,
 		gen: 3,
 	},
+	eterniaorb: {
+		name: "Eternia Orb",
+		spritenum: 587,
+		onSwitchIn(pokemon) {
+			if (pokemon.isActive && pokemon.baseSpecies.name === 'Eternatus') {
+				this.queue.insertChoice({choice: 'runPrimal', pokemon: pokemon});
+			}
+		},
+		onPrimal(pokemon) {
+			pokemon.formeChange('Eternatus-Eternamax', this.effect, true);
+		},
+		onTakeItem(item, source) {
+			if (source.baseSpecies.baseSpecies === 'Eternatus') return false;
+			return true;
+		},
+		itemUser: ["Eternatus"],
+		num: 1534,
+		gen: 9,
+	
+	},
 	eviolite: {
 		name: "Eviolite",
 		spritenum: 130,
@@ -2409,6 +2429,20 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 112,
 		gen: 4,
 	},
+	grimmsnarlite: {
+		name: "Grimmsnarlite",
+		spritenum: 588,
+		megaStone: "Grimmsnarl-Mega",
+		megaEvolves: "Grimmsnarl",
+		itemUser: ["Grimmsnarl"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 1656,
+		gen: 9,
+	
+	},
 	groundgem: {
 		name: "Ground Gem",
 		spritenum: 182,
@@ -2503,6 +2537,20 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 238,
 		gen: 2,
+	},
+	hatterite: {
+		name: "Hatterite",
+		spritenum: 587,
+		megaStone: "Hatterene-Mega",
+		megaEvolves: "Hatterene",
+		itemUser: ["Hatterene"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 1657,
+		gen: 9,
+	
 	},
 	healball: {
 		name: "Heal Ball",

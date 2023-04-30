@@ -712,7 +712,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Illusion",
 		desc: "When this Pokemon switches in, it appears as the last unfainted Pokemon in its party until it takes direct damage from another Pokemon's attack. This Pokemon's actual level and HP are displayed instead of those of the mimicked Pokemon. This Pokemon's moves are given a 1.3x boost when disguised.",
 		shortDesc: "Appears as last Pokemon in party until damaged; 1.3x power when disguised.",
-		
+
 		end: "  [POKEMON]'s illusion wore off!",
 	},
 	immunity: {
@@ -1724,14 +1724,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	static: {
 		name: "Static",
-		shortDesc: "30% chance a Pokemon making contact with this Pokemon will be paralyzed.",
-		gen4: {
-			desc: "30% chance a Pokemon making contact with this Pokemon will be paralyzed. This effect does not happen if this Pokemon did not lose HP from the attack.",
-		},
-		gen3: {
-			desc: "1/3 chance a Pokemon making contact with this Pokemon will be paralyzed. This effect does not happen if this Pokemon did not lose HP from the attack.",
-			shortDesc: "1/3 chance a Pokemon making contact with this Pokemon will be paralyzed.",
-		},
+		desc: "This Pokemon's contact moves have a 30% chance of paralyzing. This effect comes after a move's inherent secondary effect chance.",
+		shortDesc: "This Pokemon's contact moves have a 30% chance of paralyzing.",
 	},
 	steadfast: {
 		name: "Steadfast",
