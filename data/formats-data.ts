@@ -4185,6 +4185,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "Uber",
 	},
 	necrozmaultra: {
+		tier: "Uber",
+		natDexTier: "Uber",
 	},
 	magearna: {
 		tier: "Uber",
