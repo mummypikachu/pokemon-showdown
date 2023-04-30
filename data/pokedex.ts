@@ -16211,7 +16211,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		num: 890,
 		name: "Eternatus-Eternamax",
 		baseSpecies: "Eternatus",
-		forme: "Eternamax",
+		forme: "Primal",
 		types: ["Poison", "Dragon"],
 		gender: "N",
 		baseStats: {hp: 140, atk: 85, def: 125, spa: 145, spd: 125, spe: 130},
