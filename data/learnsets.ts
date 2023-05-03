@@ -18360,7 +18360,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			megapunch: ["9M"],
 			mudslap: ["4T"],
 			naturalgift: ["4M"],
-			poweruppunch: ["6M"],
+			poweruppunch: ["9M"],
 			protect: ["9M", "9M", "6M", "5M", "4M"],
 			psychic: ["9M", "9M", "6M", "5M", "4M"],
 			quickattack: ["9L1", "9L1", "6L1", "5L1", "4L1"],
@@ -43377,6 +43377,8 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			tackle: ["9L1"],
 			takedown: ["9L1", "6L1", "5L1", "5D", "4L1", "3L1"],
 			zenheadbutt: ["9M", "9T", "6T", "6S0", "5T", "5D", "4T"],
+			earthquake: ["9M"],
+			explosion: ["9M"],
 		},
 		eventData: [
 			{generation: 6, level: 5, shiny: true, moves: ["holdback", "ironhead", "zenheadbutt", "irondefense"], pokeball: "cherishball"},

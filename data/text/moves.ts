@@ -4395,8 +4395,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	octazooka: {
 		name: "Octazooka",
-		desc: "Has a 50% chance to lower the target's accuracy by 1 stage.",
-		shortDesc: "50% chance to lower the target's accuracy by 1.",
+		desc: "Has a 10% chance to lower the target's Special Defense by 1 stage. It will never miss its opponent.",
+		shortDesc: "10% chance to lower the target's Special Defense by 1. It can't miss.",
 	},
 	octolock: {
 		name: "Octolock",

@@ -4296,12 +4296,16 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 176,
 	},
 	static: {
-		onDamagingHit(damage, target, source, move) {
-			if (this.checkMoveMakesContact(move, source, target)) {
-				if (this.randomChance(3, 10)) {
-					source.trySetStatus('par', target);
-				}
+		onModifyMove(move) {
+			if (!move?.flags['contact'] || move.target === 'self') return;
+			if (!move.secondaries) {
+				move.secondaries = [];
 			}
+			move.secondaries.push({
+				chance: 30,
+				status: 'par',
+				ability: this.dex.abilities.get('static'),
+			});
 		},
 		name: "Static",
 		rating: 2,

@@ -12384,7 +12384,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	mistyexplosion: {
 		num: 802,
 		accuracy: 100,
-		basePower: 100,
+		basePower: 300,
 		category: "Special",
 		name: "Misty Explosion",
 		pp: 5,
@@ -13190,8 +13190,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	octazooka: {
 		num: 190,
-		accuracy: 85,
-		basePower: 65,
+		accuracy: true,
+		basePower: 85,
 		category: "Special",
 	
 		name: "Octazooka",
@@ -13199,9 +13199,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {bullet: 1, protect: 1, mirror: 1},
 		secondary: {
-			chance: 50,
+			chance: 5,
 			boosts: {
-				accuracy: -1,
+				spd: -1,
 			},
 		},
 		target: "normal",

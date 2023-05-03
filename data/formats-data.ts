@@ -630,7 +630,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	gastly: {
-		tier: "NFE",
+		tier: "LC Ubers",
 	},
 	haunter: {
 		tier: "NFE",
@@ -1278,7 +1278,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	murkrow: {
-		tier: "NFE",
+		tier: "LC Ubers",
 		doublesTier: "DOU",
 	},
 	honchkrow: {
@@ -1287,7 +1287,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	misdreavus: {
-		tier: "NFE",
+		tier: "LC Ubers",
 	},
 	mismagius: {
 		tier: "RU",
@@ -1307,7 +1307,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	girafarig: {
-		tier: "NFE",
+		tier: "LC Ubers",
 	},
 	farigiraf: {
 		tier: "NU",
@@ -1323,7 +1323,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	dunsparce: {
-		tier: "NFE",
+		tier: "LC Ubers",
 	},
 	dudunsparce: {
 		tier: "NU",
@@ -1371,10 +1371,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	sneasel: {
-		tier: "NFE",
+		tier: "LC Ubers",
 	},
 	sneaselhisui: {
-		tier: "NFE",
+		tier: "LC Ubers",
 	},
 	weavile: {
 		tier: "OU",
@@ -1796,7 +1796,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	meditite: {
-		tier: "NFE",
+		tier: "LC Ubers",
 	},
 	medicham: {
 		tier: "NU",
@@ -3228,7 +3228,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	rufflet: {
-		tier: "NFE",
+		tier: "LC Ubers",
 	},
 	braviary: {
 		tier: "NU",
@@ -4775,7 +4775,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "Uber",
 	},
 	flittle: {
-		tier: "NFE",
+		tier: "LC Ubers",
 	},
 	espathra: {
 		tier: "OU",
