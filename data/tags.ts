@@ -180,6 +180,10 @@ export const Tags: {[id: string]: TagData} = {
 		name: "LC",
 		speciesFilter: species => species.doublesTier === 'LC',
 	},
+	lcubers: {
+		name: "LC Ubers",
+		speciesFilter: species => species.doublesTier === 'LC Ubers',
+	},
 	captier: {
 		name: "CAP Tier",
 		speciesFilter: species => species.isNonstandard === 'CAP',
