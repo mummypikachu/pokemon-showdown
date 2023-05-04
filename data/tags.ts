@@ -182,7 +182,7 @@ export const Tags: {[id: string]: TagData} = {
 	},
 	lcubers: {
 		name: "LC Ubers",
-		speciesFilter: species => species.doublesTier === 'LC Ubers',
+		speciesFilter: species => species.tier === 'LC Ubers',
 	},
 	captier: {
 		name: "CAP Tier",
