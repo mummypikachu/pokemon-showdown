@@ -181,7 +181,7 @@ export const Formats: FormatList = [
 		],
 
 		mod: 'gen9',
-		ruleset: ['Standard NatDex','Obtainable', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause'],
+		ruleset: ['Standard NatDex'],
 	},
 	{
 		name: "[Gen 9] Free-For-All",
@@ -236,7 +236,7 @@ export const Formats: FormatList = [
 
 		mod: 'gen9',
 		gameType: 'doubles',
-		ruleset: ['Standard Doubles', '!Gravity Sleep Clause'],
+		ruleset: ['Standard Doubles'],
 	},
 	{
 		name: "[Gen 9] Doubles UU",
