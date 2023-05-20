@@ -47,6 +47,26 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 4,
 		num: 91,
 	},
+	adaptation: {
+		onModifyMovePriority: 1,
+		onModifyMove(move, attacker, defender) {
+		  if (attacker.species.baseSpecies !== 'Deoxys' || attacker.transformed) return;
+		  if (move.id !== 'protect' && move.id !== 'recover' && move.category !== 'Physical' && move.category !== 'Special' && move.category !== 'Status') return;
+		  let targetForme = 'Deoxys';
+		  if (move.id === 'protect' || move.id === 'recover') {
+			targetForme = 'Deoxys-Defense';
+		  } else if (move.category === 'Physical' || move.category === 'Special') {
+			targetForme = 'Deoxys-Attack';
+		  } else if (move.category === 'Status') {
+			targetForme = 'Deoxys-Speed';
+		  }
+		  if (attacker.species.name !== targetForme) attacker.formeChange(targetForme);
+		},
+		isPermanent: true,
+		name: "Adaptation",
+		rating: 5,
+		num: 4120,
+	},	
 	aerilate: {
 		onModifyTypePriority: -1,
 		onModifyType(move, pokemon) {
@@ -1689,6 +1709,21 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Hadron Engine",
 		rating: 4.5,
 		num: 289,
+	},
+	hailpower: {
+		onBasePowerPriority: 21,
+		onModifyDamage(damage, source, target, move) {
+			if (this.field.isWeather('snow')) {
+					this.debug('Hail Power boost');
+					return this.chainModify([5325, 4096]);
+			}
+		},
+		onImmunity(type, pokemon) {
+			if (type === 'snow') return false;
+		},
+		name: "Hail Power",
+		rating: 3,
+		num: 159,
 	},
 	ampereoverdrive: {
 		onStart(pokemon) {

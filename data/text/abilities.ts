@@ -8,6 +8,13 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "This Pokemon's moves that match one of its types have a same-type attack bonus (STAB) of 2 instead of 1.5.",
 		shortDesc: "This Pokemon's same-type attack bonus (STAB) is 2 instead of 1.5.",
 	},
+	adaptation: {
+		name: "Adaptation",
+		shortDesc: "Allows Deoxys to switch inbetween its formes based on its last attack used.",
+
+		transform: "  [POKEMON] is adapting.",
+		transformEnd: "  [POKEMON] is adapting.",
+	},
 	aerilate: {
 		name: "Aerilate",
 		desc: "This Pokemon's Normal-type moves become Flying-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
@@ -618,6 +625,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 
 		start: "  [POKEMON] turned the ground into Electric Terrain, energizing its futuristic engine!",
 		activate: "  [POKEMON] used the Electric Terrain to energize its futuristic engine!",
+	},
+	hailpower: {
+		name: "Hail Power",
+		shortDesc: "If Hail is active all attacks from this pokemon are boosted by 1.5x",	
 	},
 	harvest: {
 		name: "Harvest",
