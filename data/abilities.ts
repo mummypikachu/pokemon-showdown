@@ -4822,6 +4822,12 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				return this.chainModify(1.5);
 			}
 		},
+		onDamage(damage, target, source, effect) {
+			if (effect.id === 'psn' || effect.id === 'tox') {
+				this.heal(target.baseMaxhp / 100);
+				return false;
+			}
+		},
 		name: "Toxic Boost",
 		rating: 3,
 		num: 137,
