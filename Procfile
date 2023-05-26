@@ -1,1 +1,2 @@
-web: node pokemon-showdown $66642
+web: node pokemon-showdown $PORT
+"worker"
