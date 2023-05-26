@@ -1,1 +1,1 @@
-web: node pokemon-showdown $8000
+web: node pokemon-showdown $6642
