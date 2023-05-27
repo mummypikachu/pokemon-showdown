@@ -506,8 +506,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	blastburn: {
 		name: "Blast Burn",
-		desc: "If this move is successful, the user must recharge on the following turn and cannot select a move.",
-		shortDesc: "User cannot move next turn.",
+		desc: "If this move is successful, the user must recharge on the following turn and cannot select a move,unless the target was knocked out by this move.",
+		shortDesc: "Can't move next turn if target is not KOed.",
 	},
 	blazekick: {
 		name: "Blaze Kick",
@@ -2395,8 +2395,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	gigaimpact: {
 		name: "Giga Impact",
-		desc: "If this move is successful, the user must recharge on the following turn and cannot select a move.",
-		shortDesc: "User cannot move next turn.",
+		desc: "If this move is successful, the user must recharge on the following turn and cannot select a move,unless the target was knocked out by this move.",
+		shortDesc: "Can't move next turn if target is not KOed.",
 	},
 	gigatonhammer: {
 		name: "Gigaton Hammer",
@@ -3084,8 +3084,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	hydrocannon: {
 		name: "Hydro Cannon",
-		desc: "If this move is successful, the user must recharge on the following turn and cannot select a move.",
-		shortDesc: "User cannot move next turn.",
+		desc: "If this move is successful, the user must recharge on the following turn and cannot select a move,unless the target was knocked out by this move.",
+		shortDesc: "Can't move next turn if target is not KOed.",
 	},
 	hydropump: {
 		name: "Hydro Pump",
@@ -3102,8 +3102,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	hyperbeam: {
 		name: "Hyper Beam",
-		desc: "If this move is successful, the user must recharge on the following turn and cannot select a move.",
-		shortDesc: "User cannot move next turn.",
+		desc: "If this move is successful, the user must recharge on the following turn and cannot select a move,unless the target was knocked out by this move.",
+		shortDesc: "Can't move next turn if target is not KOed.",
 		gen1: {
 			desc: "If this move is successful, the user must recharge on the following turn and cannot select a move, unless the target or its substitute was knocked out by this move.",
 			shortDesc: "Can't move next turn if target or sub is not KOed.",
@@ -5227,8 +5227,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	roaroftime: {
 		name: "Roar of Time",
-		desc: "If this move is successful, the user must recharge on the following turn and cannot select a move.",
-		shortDesc: "User cannot move next turn.",
+		desc: "If this move is successful, the user must recharge on the following turn and cannot select a move,unless the target was knocked out by this move.",
+		shortDesc: "Can't move next turn if target is not KOed.",
 	},
 	rockblast: {
 		name: "Rock Blast",

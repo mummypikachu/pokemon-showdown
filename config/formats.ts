@@ -45,7 +45,7 @@ export const Formats: FormatList = [
 		tournamentShow: false,
 		rated: false,
 		ruleset: [
-			'Max Team Size = 3',
+			'Picked Team Size = 3', 'Max Team Size = 6',
 			'Standard', '+CAP'	
 		],
 		banlist: ['Uber', 'AG', 'Moody', 'Sand Veil', 'Snow Cloak', 'King\'s Rock', 'Baton Pass'],
