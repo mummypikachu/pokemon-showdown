@@ -3001,7 +3001,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	highhorsepower: {
 		name: "High Horsepower",
-		shortDesc: "No additional effect.",
+		shortDesc: "Does not lose power in Grassy Terrain.",
 	},
 	highjumpkick: {
 		name: "High Jump Kick",
@@ -4618,6 +4618,11 @@ export const MovesText: {[k: string]: MoveText} = {
 		gen2: {
 			shortDesc: "Poisons the target.",
 		},
+	},
+	poisonhorn: {
+		name: "Poison Horn",
+		desc: "Has a 30% chance to poison the target.",
+		shortDesc: "30% chance to poison the target.",
 	},
 	poisonjab: {
 		name: "Poison Jab",
