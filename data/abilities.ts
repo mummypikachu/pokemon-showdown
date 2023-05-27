@@ -4863,7 +4863,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			});
 		},
 		name: "Toxic Dilemma",
-		rating: 2,
+		rating: 3,
 	},
 	trace: {
 		onStart(pokemon) {
@@ -5408,7 +5408,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		isBreakable: true,
 		name: "Mountaineer",
-		rating: 3,
+		rating: 3.5,
 		num: 281,
 	},
 	rebound: {
@@ -5448,7 +5448,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			onStart(source) {
 				this.field.addPseudoWeather('trickroom');
 			},
-		rating: 3,
+		rating: 3.5,
 		num: 279,
 	},
 	cleanslate: {
@@ -5489,7 +5489,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			this.field.clearTerrain();
 			return success;
 		},
-	rating: 3,
+	rating: 4.5,
 	num: 280,
 	},
 };

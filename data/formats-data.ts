@@ -158,7 +158,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "NFE",
 	},
 	pikachucosplay: {
-		tier: "(PU)",
+		isNonstandard: "Past",
+		tier: "Illegal",
 	},
 	pikachurockstar: {
 		tier: "PU",
