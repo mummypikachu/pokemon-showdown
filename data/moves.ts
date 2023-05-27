@@ -8796,7 +8796,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	hiddenpower: {
 		num: 237,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 70,
 		category: "Special",
 	
 		name: "Hidden Power",
@@ -8814,7 +8814,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	hiddenpowerbug: {
 		num: 237,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 70,
 		category: "Special",
 		realMove: "Hidden Power",
 	
@@ -8830,7 +8830,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	hiddenpowerdark: {
 		num: 237,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 70,
 		category: "Special",
 		realMove: "Hidden Power",
 	
@@ -8846,7 +8846,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	hiddenpowerdragon: {
 		num: 237,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 70,
 		category: "Special",
 		realMove: "Hidden Power",
 	
@@ -8862,7 +8862,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	hiddenpowerelectric: {
 		num: 237,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 70,
 		category: "Special",
 		realMove: "Hidden Power",
 	
@@ -8878,7 +8878,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	hiddenpowerfighting: {
 		num: 237,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 70,
 		category: "Special",
 		realMove: "Hidden Power",
 	
@@ -8894,7 +8894,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	hiddenpowerfire: {
 		num: 237,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 70,
 		category: "Special",
 		realMove: "Hidden Power",
 	
@@ -8910,7 +8910,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	hiddenpowerflying: {
 		num: 237,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 70,
 		category: "Special",
 		realMove: "Hidden Power",
 	
@@ -8926,7 +8926,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	hiddenpowerghost: {
 		num: 237,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 70,
 		category: "Special",
 		realMove: "Hidden Power",
 	
@@ -8942,7 +8942,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	hiddenpowergrass: {
 		num: 237,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 70,
 		category: "Special",
 		realMove: "Hidden Power",
 	
@@ -8958,7 +8958,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	hiddenpowerground: {
 		num: 237,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 70,
 		category: "Special",
 		realMove: "Hidden Power",
 	
@@ -8974,7 +8974,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	hiddenpowerice: {
 		num: 237,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 70,
 		category: "Special",
 		realMove: "Hidden Power",
 	
@@ -8990,7 +8990,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	hiddenpowerpoison: {
 		num: 237,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 70,
 		category: "Special",
 		realMove: "Hidden Power",
 	
@@ -9006,7 +9006,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	hiddenpowerpsychic: {
 		num: 237,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 70,
 		category: "Special",
 		realMove: "Hidden Power",
 	
@@ -9022,7 +9022,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	hiddenpowerrock: {
 		num: 237,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 70,
 		category: "Special",
 		realMove: "Hidden Power",
 	
@@ -9038,7 +9038,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	hiddenpowersteel: {
 		num: 237,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 70,
 		category: "Special",
 		realMove: "Hidden Power",
 	
@@ -9054,7 +9054,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	hiddenpowerwater: {
 		num: 237,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 70,
 		category: "Special",
 		realMove: "Hidden Power",
 	
@@ -9076,7 +9076,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 10,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
-		secondary: null,
+		secondary: {}, //so it's affected by Sheer Force
 		target: "normal",
 		type: "Ground",
 		contestType: "Tough",
@@ -13795,6 +13795,23 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Poison",
 		zMove: {boost: {def: 1}},
 		contestType: "Clever",
+	},
+	poisonhorn: {
+		num: 398,
+		accuracy: 100,
+		basePower: 90,
+		category: "Physical",
+		name: "Poison Horn",
+		pp: 20,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 30,
+			status: 'psn',
+		},
+		target: "normal",
+		type: "Poison",
+		contestType: "Tough",
 	},
 	poisonjab: {
 		num: 398,

@@ -12533,7 +12533,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		baseForme: "Average",
 		types: ["Ghost", "Grass"],
 		baseStats: {hp: 49, atk: 30, def: 70, spa: 45, spd: 55, spe: 51},
-		abilities: {0: "Pickup", 1: "Frisk", H: "Insomnia"},
+		abilities: {0: "Pickup", 1: "Frisk", H: "Wonder Power"},
 		heightm: 0.4,
 		weightkg: 5,
 		color: "Brown",
