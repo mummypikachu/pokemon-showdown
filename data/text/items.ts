@@ -1787,7 +1787,7 @@ export const ItemsText: {[k: string]: ItemText} = {
 	},
 	strikervest: {
 		name: "Striker Vest",
-		desc: "Holder's Defense is 1.50x, but it can only select damaging moves.",
+		desc: "Holder's Defense is 1.5x, but it can only select damaging moves.",
 	},
 	sunstone: {
 		name: "Sun Stone",
