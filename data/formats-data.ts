@@ -163,6 +163,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	pikachurockstar: {
 		tier: "PU",
+		doublesTier: "DOU",
 	},
 	pikachubelle: {
 		tier: "PU",
@@ -358,7 +359,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	dugtrio: {
 		tier: "OU",
-		doublesTier: "(DUU)",
+		doublesTier: "DOU",
 		natDexTier: "RU",
 	},
 	dugtrioalola: {
@@ -453,6 +454,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	alakazammega: {
 		tier: "OU",
+		doublesTier: "DOU",
 		natDexTier: "Uber",
 	},
 	machop: {
@@ -608,7 +610,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	muk: {
 		tier: "NU",
-		doublesTier: "(DUU)",
+		doublesTier: "DOU",
 		natDexTier: "RU",
 	},
 	mukalola: {
@@ -1428,6 +1430,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	octillery: {
 		tier: "PU",
+		doublesTier: "DOU",
 		natDexTier: "RU",
 	},
 	delibird: {
@@ -2174,18 +2177,22 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	kyogre: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexTier: "Uber",
 	},
 	kyogreprimal: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexTier: "Uber",
 	},
 	groudon: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexTier: "Uber",
 	},
 	groudonprimal: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexTier: "Uber",
 	},
 	rayquaza: {
@@ -2198,22 +2205,27 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	jirachi: {
 		tier: "Uber",
+		doublesTier: "DOU",
 		natDexTier: "AG",
 	},
 	deoxys: {
 		tier: "Uber",
+		doublesTier: "DOU",
 		natDexTier: "Uber",
 	},
 	deoxysattack: {
 		tier: "Uber",
+		doublesTier: "DOU",
 		natDexTier: "Uber",
 	},
 	deoxysdefense: {
 		tier: "OU",
+		doublesTier: "DOU",
 		natDexTier: "RU",
 	},
 	deoxysspeed: {
 		tier: "Uber",
+		doublesTier: "DOU",
 		natDexTier: "Uber",
 	},
 	turtwig: {
@@ -3731,6 +3743,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	incineroar: {
 		tier: "OU",
+		doublesTier: "DOU",
 		natDexTier: "RU",
 	},
 	popplio: {

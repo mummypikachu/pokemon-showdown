@@ -88950,6 +88950,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			fling: ["9M"],
 			focusblast: ["9M"],
 			heatwave: ["9M"],
+			healpulse: ["9M"],
 			helpinghand: ["9M"],
 			incinerate: ["9L28"],
 			irondefense: ["9M"],
