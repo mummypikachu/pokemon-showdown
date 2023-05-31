@@ -529,7 +529,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Armor Cannon",
 		pp: 5,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
+		flags: {protect: 1, mirror: 1, bullet: 1},
 		self: {
 			boosts: {
 				def: -1,
@@ -20777,11 +20777,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 	twineedle: {
 		num: 41,
 		accuracy: 100,
-		basePower: 25,
+		basePower: 60,
 		category: "Physical",
 	
 		name: "Twineedle",
-		pp: 20,
+		pp: 10,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
 		multihit: 2,
@@ -20791,7 +20791,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		target: "normal",
 		type: "Bug",
-		maxMove: {basePower: 100},
+		maxMove: {basePower: 180},
 		contestType: "Cool",
 	},
 	twinkletackle: {

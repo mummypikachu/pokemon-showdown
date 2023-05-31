@@ -31,11 +31,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	charizardmegax: {
-		tier: "OU",
+		tier: "UUBL",
 		natDexTier: "UUBL",
 	},
 	charizardmegay: {
 		tier: "OU",
+		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
 	charizardgmax: {
@@ -1429,7 +1430,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 	},
 	octillery: {
-		tier: "PU",
+		tier: "UU",
 		doublesTier: "DOU",
 		natDexTier: "RU",
 	},
@@ -2200,8 +2201,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "Uber",
 	},
 	rayquazamega: {
-		tier: "AG",
-		natDexTier: "AG",
+		tier: "Uber",
+		natDexTier: "Uber",
 	},
 	jirachi: {
 		tier: "Uber",

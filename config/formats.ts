@@ -87,7 +87,7 @@ export const Formats: FormatList = [
 		],
 
 		mod: 'gen9',
-		ruleset: ['Standard'],
+		ruleset: ['Standard NatDex'],
 		banlist: ['AG', 'King\'s Rock', 'Baton Pass'],
 	},
 	{
