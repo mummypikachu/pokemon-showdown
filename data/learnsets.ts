@@ -1049,6 +1049,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			drainingkiss: ["9M"],
 			dreameater: ["9V", "9M", "6M", "5M", "4M", "3T"],
 			dualwingbeat: ["9T"],
+			expandingforce: ["9M"],
 			electroweb: ["9M", "9T", "6T", "5T"],
 			endure: ["9M", "7V", "4M", "3T"],
 			energyball: ["9M", "9M", "6M", "5M", "4M"],

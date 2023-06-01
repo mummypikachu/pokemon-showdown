@@ -7020,7 +7020,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 392,
 		color: "Green",
 		eggGroups: ["Undiscovered"],
-		requiredAbility: "Delta Stream",
+		requiredMove: "Dragon Ascent",
 	},
 	jirachi: {
 		num: 385,
