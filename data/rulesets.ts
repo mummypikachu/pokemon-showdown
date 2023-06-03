@@ -57,7 +57,7 @@ export const Rulesets: {[k: string]: FormatData} = {
 		},
 		ruleset: [
 			'Team Preview', 'Sleep Clause Mod', 'Species Clause', 'Nickname Clause', 'OHKO Clause', 'Evasion Items Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod',
-			'Min Source Gen = 9', 'Obtainable',
+			'Min Source Gen = 9', 'Obtainable', 
 		],
 		
 	},
@@ -1729,6 +1729,7 @@ export const Rulesets: {[k: string]: FormatData} = {
 			}
 		},
 	},
+	
 	forceopenteamsheets: {
 		effectType: 'Rule',
 		name: 'Force Open Team Sheets',

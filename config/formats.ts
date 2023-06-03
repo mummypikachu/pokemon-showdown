@@ -48,7 +48,7 @@ export const Formats: FormatList = [
 			'Picked Team Size = 3', 'Max Team Size = 6',
 			'Standard', '+CAP'	
 		],
-		banlist: ['Uber', 'AG', 'Moody', 'Sand Veil', 'Snow Cloak', 'King\'s Rock', 'Baton Pass'],
+		banlist: ['Uber', 'AG', 'Moody', 'Sand Veil', 'Snow Cloak', 'King\'s Rock', 'Baton Pass', 'Shedinja + Air Balloon'],
 	},
 	{
 		name: "[Gen 9] Unrated Random Battle",
@@ -71,14 +71,14 @@ export const Formats: FormatList = [
 
 		mod: 'gen9',
 		ruleset: ['Standard', '+CAP'],
-		banlist: ['Uber', 'AG', 'Moody', 'Sand Veil', 'Snow Cloak', 'King\'s Rock', 'Baton Pass', 'Gorilla Tactics', 'Last Respects'],
+		banlist: ['Uber', 'AG', 'Moody', 'Sand Veil', 'Snow Cloak', 'King\'s Rock', 'Baton Pass', 'Gorilla Tactics', 'Last Respects', 'Shedinja + Air Balloon'],
 	},
 	{
 		name: "[Gen 9] No Team View OU",
 
 		mod: 'gen9',
 		ruleset: ['Standard No Preview', '+CAP'],
-		banlist: ['Uber', 'AG', 'Moody', 'Sand Veil', 'Snow Cloak', 'King\'s Rock', 'Baton Pass', 'Gorilla Tactics', 'Last Respects'],
+		banlist: ['Uber', 'AG', 'Moody', 'Sand Veil', 'Snow Cloak', 'King\'s Rock', 'Baton Pass', 'Gorilla Tactics', 'Last Respects', 'Shedinja + Air Balloon'],
 	},
 	{
 		name: "[Gen 9] Ubers",
@@ -88,7 +88,7 @@ export const Formats: FormatList = [
 
 		mod: 'gen9',
 		ruleset: ['Standard NatDex'],
-		banlist: ['AG', 'King\'s Rock', 'Baton Pass'],
+		banlist: ['AG', 'King\'s Rock', 'Baton Pass', 'Shedinja + Air Balloon'],
 	},
 	{
 		name: "[Gen 9] UU",

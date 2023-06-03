@@ -3193,8 +3193,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	icespinner: {
 		name: "Ice Spinner",
-		desc: "Ends the effects of Electric Terrain, Grassy Terrain, Misty Terrain, and Psychic Terrain.",
-		shortDesc: "Ends the effects of terrain.",
+		desc: "Ends the effects of Electric Terrain, Grassy Terrain, Misty Terrain, Psychic Terrain, and Weather.",
+		shortDesc: "Ends the effects of terrain. & weather.",
 	},
 	iciclecrash: {
 		name: "Icicle Crash",

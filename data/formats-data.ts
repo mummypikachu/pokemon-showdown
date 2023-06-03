@@ -1720,7 +1720,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	shedinja: {
-		tier: "AG",
+		tier: "RU",
 		natDexTier: "AG",
 	},
 	whismur: {

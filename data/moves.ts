@@ -9633,10 +9633,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
 		onHit() {
-			this.field.clearTerrain();
+			this.field.clearTerrain()
+			this.field.clearWeather();
 		},
 		onAfterSubDamage() {
 			this.field.clearTerrain();
+			this.field.clearWeather();
 		},
 		secondary: null,
 		target: "normal",

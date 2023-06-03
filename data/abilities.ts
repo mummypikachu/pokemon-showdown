@@ -1046,19 +1046,6 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 4,
 		num: 2,
 	},
-	twister: {
-		onStart(source) {
-			for (const action of this.queue) {
-				if (action.choice === 'runPrimal' && action.pokemon === source && source.species.id === 'kyogre') return;
-				if (action.choice !== 'runSwitch' && action.choice !== 'runPrimal') break;
-			}
-			this.field.setWeather('trickroom');
-		},
-		name: "Twister",
-		rating: 4,
-		num: 2,
-	},
-	
 	drought: {
 		onStart(source) {
 			for (const action of this.queue) {
@@ -5470,7 +5457,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				'reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist', 'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge',
 			];
 			const removeAll = [
-				'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge',
+				'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'trickroom', 'safeguard',
 			];
 			for (const targetCondition of removeTarget) {
 				if (pokemon.side.removeSideCondition(targetCondition)) {
