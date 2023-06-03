@@ -1721,6 +1721,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	shedinja: {
 		tier: "RU",
+		doublesTier: "DUber",
 		natDexTier: "AG",
 	},
 	whismur: {
