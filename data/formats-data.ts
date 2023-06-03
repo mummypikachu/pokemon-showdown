@@ -2196,10 +2196,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	rayquaza: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexTier: "Uber",
 	},
 	rayquazamega: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexTier: "AG",
 	},
 	jirachi: {
@@ -2549,18 +2551,22 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	dialga: {
 		tier: "Uber",
+		doublesTier: "DOU",
 		natDexTier: "Uber",
 	},
 	dialgaorigin: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexTier: "Uber",
 	},
 	palkia: {
 		tier: "Uber",
+		doublesTier: "DOU",
 		natDexTier: "Uber",
 	},
 	palkiaorigin: {
 		tier: "Uber",
+		doublesTier: "DOU",
 		natDexTier: "Uber",
 	},
 	heatran: {
@@ -2569,6 +2575,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	regigigas: {
 		tier: "OU",
+		doublesTier: "DOU",
 		natDexTier: "RU",
 	},
 	giratina: {
@@ -2577,10 +2584,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	giratinaorigin: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexTier: "Uber",
 	},
 	cresselia: {
 		tier: "UU",
+		doublesTier: "DOU",
 		natDexTier: "RU",
 	},
 	phione: {
@@ -2593,6 +2602,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	darkrai: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexTier: "Uber",
 	},
 	shaymin: {
@@ -2601,10 +2611,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	shayminsky: {
 		tier: "Uber",
+		doublesTier: "DOU",
 		natDexTier: "Uber",
 	},
 	arceus: {
 		tier: "Uber",
+		doublesTier: "DOU",
 		natDexTier: "Uber",
 	},
 	arceusbug: {
@@ -2643,6 +2655,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	victini: {
 		tier: "OU",
+		doublesTier: "DOU",
 		natDexTier: "UU",
 	},
 	snivy: {
@@ -2655,6 +2668,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	serperior: {
 		tier: "OU",
+		doublesTier: "DOU",
 		natDexTier: "UU",
 	},
 	tepig: {
@@ -2667,6 +2681,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	emboar: {
 		tier: "OU",
+		doublesTier: "DUU",
 		natDexTier: "RU",
 	},
 	oshawott: {
@@ -2679,10 +2694,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	samurott: {
 		tier: "OU",
+		doublesTier: "DUU",
 		natDexTier: "RU",
 	},
 	samurotthisui: {
 		tier: "OU",
+		doublesTier: "DOU",
 	},
 	patrat: {
 		tier: "LC",
@@ -3317,10 +3334,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	landorus: {
 		tier: "Uber",
+		doublesTier: "DUU",
 		natDexTier: "Uber",
 	},
 	landorustherian: {
 		tier: "OU",
+		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
 	kyurem: {
@@ -4121,18 +4140,22 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	tapukoko: {
 		tier: "OU",
+		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
 	tapulele: {
 		tier: "OU",
+		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
 	tapubulu: {
 		tier: "OU",
+		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
 	tapufini: {
 		tier: "OU",
+		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
 	cosmog: {
