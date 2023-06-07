@@ -1259,7 +1259,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	defog: {
 		name: "Defog",
 		desc: "Lowers the target's evasiveness by 1 stage. If this move is successful and whether or not the target's evasiveness was affected, the effects of Reflect, Light Screen, Aurora Veil, Safeguard, Mist, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the target's side, and the effects of Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the user's side. Ignores a target's substitute, although a substitute will still block the lowering of evasiveness. If there is a terrain active and this move is successful, the terrain will be cleared.",
-		shortDesc: "-1 evasion; clears terrain and hazards on both sides.",
+		shortDesc: "-1 evasion; clears terrain and hazards on both sides. & Clears trickroom.",
 		gen7: {
 			desc: "Lowers the target's evasiveness by 1 stage. If this move is successful and whether or not the target's evasiveness was affected, the effects of Reflect, Light Screen, Aurora Veil, Safeguard, Mist, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the target's side, and the effects of Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the user's side. Ignores a target's substitute, although a substitute will still block the lowering of evasiveness.",
 			shortDesc: "-1 evasion; clears user and target side's hazards.",
@@ -4840,6 +4840,11 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Psycho Cut",
 		desc: "Has a higher chance for a critical hit.",
 		shortDesc: "High critical hit ratio.",
+	},
+	psychopunch: {
+		name: "Psycho Punch",
+			desc: "Has a 10% chance to raise the User's Attack by 1 stage.",
+			shortDesc: "10% to raise the User's Attack by 1.",
 	},
 	psychoshift: {
 		name: "Psycho Shift",
