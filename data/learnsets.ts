@@ -24547,6 +24547,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			substitute: ["9M", "6M", "5M", "4M", "3T"],
 			sunnyday: ["9M", "7V", "6M", "5M", "4M", "3M"],
 			supersonic: ["9L1", "7V", "6L1", "5L1", "4L1", "3L1"],
+			superpower: ["9L61"],
 			swagger: ["9M", "7V", "6M", "5M", "4M", "3T"],
 			sweetscent: ["7V"],
 			swift: ["9L1", "7V", "6L41", "5L41", "4T", "4L41", "3T", "3L42"],

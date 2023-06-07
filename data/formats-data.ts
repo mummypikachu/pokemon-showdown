@@ -72,11 +72,13 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "NFE",
 	},
 	butterfree: {
-		tier: "OU",
+		tier: "UU",
+		doublesTier: "DOU",
 		natDexTier: "RU",
 	},
 	butterfreemega: {
 		tier: "OU",
+		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
 	weedle: {
@@ -88,7 +90,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "NFE",
 	},
 	beedrill: {
-		tier: "OU",
+		tier: "UU",
 		natDexTier: "RU",
 	},
 	beedrillmega: {
@@ -104,7 +106,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "NFE",
 	},
 	pidgeot: {
-		tier: "PU",
+		tier: "RU",
 		natDexTier: "RU",
 	},
 	pidgeotmega: {
@@ -120,11 +122,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 	},
 	raticate: {
-		tier: "RU",
+		tier: "PU",
 		natDexTier: "RU",
 	},
 	raticatealola: {
-		tier: "RU",
+		tier: "PU",
 		natDexTier: "RU",
 	},
 	raticatealolatotem: {
@@ -167,16 +169,16 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	},
 	pikachubelle: {
-		tier: "PU",
+		tier: "NU",
 	},
 	pikachupopstar: {
-		tier: "PU",
+		tier: "RU",
 	},
 	pikachuphd: {
 		tier: "PU",
 	},
 	pikachulibre: {
-		tier: "PU",
+		tier: "UU",
 	},
 	pikachuoriginal: {
 		isNonstandard: "Past",
@@ -634,7 +636,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "NFE",
 	},
 	gengar: {
-		tier: "UU",
+		tier: "OU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
@@ -662,7 +664,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "LC",
 	},
 	hypno: {
-		tier: "RU",
+		tier: "UU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
@@ -671,7 +673,6 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 	},
 	kingler: {
-		
 		tier: "PU",
 		natDexTier: "RU",
 	},
@@ -686,7 +687,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "LC",
 	},
 	electrode: {
-		tier: "PU",
+		tier: "RU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
@@ -1154,7 +1155,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 	},
 	ledian: {
-		tier: "OU",
+		tier: "UU",
 		natDexTier: "RU",
 	},
 	spinarak: {
@@ -1286,7 +1287,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "LC Ubers",
 	},
 	mismagius: {
-		tier: "RU",
+		tier: "OU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
