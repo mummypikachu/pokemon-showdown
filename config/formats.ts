@@ -134,8 +134,8 @@ export const Formats: FormatList = [
 		],
 
 		mod: 'gen9',
-		ruleset: ['Little Cup', 'Standard'],
-		banlist: ['Thick Club','Dunsparce', 'Flittle', 'Gastly', 'Girafarig', 'Meditite', 'Misdreavus', 'Murkrow', 'Rufflet', 'Scyther', 'Sneasel', 'Moody', 'Baton Pass'],
+		ruleset: ['[Gen 9] LC Ubers'],
+		banlist: ['LC Ubers'],
 	},
 	{
 		name: "[Gen 9] LC Ubers",
@@ -145,7 +145,7 @@ export const Formats: FormatList = [
 
 		mod: 'gen9',
 		ruleset: ['Little Cup', 'Standard'],
-		banlist: ['Girafarig', 'Scyther', 'Moody', 'Baton Pass'],
+		banlist: ['Moody', 'Baton Pass', 'NFE'],
 	},
 	{
 		name: "[Gen 9] Monotype",

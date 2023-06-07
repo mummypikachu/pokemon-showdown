@@ -1303,7 +1303,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	girafarig: {
-		tier: "LC Ubers",
+		tier: "NFE",
 	},
 	farigiraf: {
 		tier: "NU",
