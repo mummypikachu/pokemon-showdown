@@ -225,7 +225,7 @@ export const Formats: FormatList = [
 
 		mod: 'gen9',
 		gameType: 'doubles',
-		ruleset: ['Standard Doubles', 'Shedinja + Air Balloon'],
+		ruleset: ['Standard Doubles'],
 		banlist: ['DUber', 'Shadow Tag'],
 	},
 	{
@@ -236,7 +236,7 @@ export const Formats: FormatList = [
 
 		mod: 'gen9',
 		gameType: 'doubles',
-		ruleset: ['Standard Doubles', 'Shedinja + Air Balloon'],
+		ruleset: ['Standard Doubles'],
 	},
 	{
 		name: "[Gen 9] Doubles UU",
