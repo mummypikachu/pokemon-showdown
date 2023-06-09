@@ -3704,7 +3704,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 658,
 		onTakeItem: false,
 		zMove: "Genesis Supernova",
-		zMoveFrom: "Psychic",
+		zMoveFrom: "Progenitor Beam",
 		itemUser: ["Mew"],
 		num: 806,
 		gen: 7,

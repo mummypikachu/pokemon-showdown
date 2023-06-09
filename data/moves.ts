@@ -6628,12 +6628,14 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: true,
 		basePower: 185,
 		category: "Special",
-	
 		name: "Genesis Supernova",
 		pp: 1,
 		priority: 0,
 		flags: {},
 		isZ: "mewniumz",
+		onEffectiveness(typeMod, target, type, move) {
+			return 2; // Set typeMod to 1 (normal effectiveness) regardless of type immunities.
+		},
 		secondary: {
 			chance: 100,
 			self: {
@@ -14320,7 +14322,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	progenitorbeam: {
 		num: 902,
 		accuracy: 100,
-		basePower: 85,
+		basePower: 65,
 		name: "Progenitor Beam",
 		category: "Special",
 		pp: 10,
@@ -14331,7 +14333,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		secondary: null,
 		target: "normal",
-		type: "Psychic",
+		type: "???",
 		contestType: "Beauty",
 	},
 	protect: {

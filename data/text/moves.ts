@@ -2372,8 +2372,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	genesissupernova: {
 		name: "Genesis Supernova",
-		desc: "If this move is successful, the terrain becomes Psychic Terrain.",
-		shortDesc: "Summons Psychic Terrain.",
+		desc: "If this move is successful, the terrain becomes Psychic Terrain and Will always hit super-effectifly.",
+		shortDesc: "Summons Psychic Terrain and will always hit super-effectivly.",
 	},
 	geomancy: {
 		name: "Geomancy",

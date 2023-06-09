@@ -1162,7 +1162,7 @@ export const ItemsText: {[k: string]: ItemText} = {
 	},
 	mewniumz: {
 		name: "Mewnium Z",
-		desc: "If held by a Mew with Psychic, it can use Genesis Supernova.",
+		desc: "If held by a Mew with Progenitor Beam, it can use Genesis Supernova.",
 	},
 	mewtwonitex: {
 		name: "Mewtwonite X",
