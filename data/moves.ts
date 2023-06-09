@@ -14305,7 +14305,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 160,
 		category: "Special",
-	
 		name: "Prismatic Laser",
 		pp: 10,
 		priority: 0,
@@ -14317,6 +14316,23 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Psychic",
 		contestType: "Cool",
+	},
+	progenitorbeam: {
+		num: 902,
+		accuracy: 100,
+		basePower: 85,
+		name: "Progenitor Beam",
+		category: "Special",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onEffectiveness(typeMod, target, type, move) {
+			return 2; // Set typeMod to 1 (normal effectiveness) regardless of type immunities.
+		},
+		secondary: null,
+		target: "normal",
+		type: "Psychic",
+		contestType: "Beauty",
 	},
 	protect: {
 		num: 182,
