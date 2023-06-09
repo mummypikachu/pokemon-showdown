@@ -5727,7 +5727,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Flash Cannon",
 		pp: 10,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
+		flags: {protect: 1, mirror: 1, bullet: 1},
 		secondary: {
 			chance: 10,
 			boosts: {
@@ -9252,7 +9252,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Hydro Cannon",
 		pp: 5,
 		priority: 0,
-		flags: {recharge: 1, protect: 1, mirror: 1},
+		flags: {recharge: 1, protect: 1, mirror: 1, bullet: 1},
 		onAfterHit(target, source) {
 			if (target.hp > 0) source.addVolatile('mustrecharge');
 	    },
@@ -20966,7 +20966,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	vcreate: {
 		num: 557,
 		accuracy: 95,
-		basePower: 180,
+		basePower: 175,
 		category: "Physical",
 		name: "V-create",
 		pp: 5,
@@ -20974,7 +20974,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {contact: 1, protect: 1, mirror: 1},
 		self: {
 			boosts: {
-				spe: -1,
 				def: -1,
 				spd: -1,
 			},

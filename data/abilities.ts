@@ -4808,11 +4808,8 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				return this.chainModify(1.5);
 			}
 		},
-		onDamage(damage, target, source, effect) {
-			if (effect.id === 'psn' || effect.id === 'tox') {
-				this.heal(target.baseMaxhp / 100);
-				return false;
-			}
+		onImmunity(type, pokemon) {
+			if (type === 'tox' || type === 'psn') return false;
 		},
 		name: "Toxic Boost",
 		rating: 3,

@@ -82,7 +82,7 @@ const SpeedSetup = [
 const Setup = [
 	'acidarmor', 'agility', 'autotomize', 'bellydrum', 'bulkup', 'calmmind', 'coil', 'curse', 'dragondance', 'flamecharge',
 	'growth', 'honeclaws', 'howl', 'irondefense', 'meditate', 'nastyplot', 'noretreat', 'poweruppunch', 'quiverdance', 'rockpolish',
-	'shellsmash', 'shiftgear', 'swordsdance', 'tailglow', 'tidyup', 'trailblaze', 'workup',
+	'shellsmash', 'shiftgear', 'swordsdance', 'tailglow', 'tidyup', 'trailblaze', 'workup', 'shellsmash',
 ];
 // Moves that shouldn't be the only STAB moves:
 const NoStab = [
@@ -965,7 +965,7 @@ export class RandomTeams {
 		if (abilities.has('Cud Chew') && moves.has('substitute')) return 'Cud Chew';
 		if (abilities.has('Guts') && (moves.has('facade') || moves.has('sleeptalk'))) return 'Guts';
 		if (abilities.has('Harvest') && moves.has('substitute')) return 'Harvest';
-		if (species.id === 'hypno') return 'Insomnia';
+		if (species.id === 'hypno') return 'Persistant';
 		if (abilities.has('Serene Grace') && moves.has('headbutt')) return 'Serene Grace';
 		if (abilities.has('Technician') && counter.get('technician')) return 'Technician';
 		if (abilities.has('Own Tempo') && moves.has('petaldance')) return 'Own Tempo';

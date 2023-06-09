@@ -64,6 +64,16 @@
             }
         ]
     },
+    "blastoisemega": {
+        "level": 80,
+        "sets": [
+            {
+                "role": "Setup Sweeper",
+                "movepool": ["Shell Smash", "Draco Pulse", "Water Pulse", "Flash Cannon", "Aura Sphere", "Dark Pulse", "Water Spout", "Hydro Cannon"],
+                "teraTypes": ["Dragon", "Steel", "Water"]
+            }
+        ]
+    },
     "pikachu": {
         "level": 93,
         "sets": [
@@ -79,7 +89,7 @@
         "sets": [
             {
                 "role": "Fast Support",
-                "movepool": ["Encore", "Focus Blast", "Grass Knot", "Nasty Plot", "Nuzzle", "Surf", "Thunderbolt", "Volt Switch"],
+                "movepool": ["Encore", "Play Rough", "Grass Knot", "Nasty Plot", "Nuzzle", "Surf", "Volt Tackle", "Volt Switch", "Extreme Speed"],
                 "teraTypes": ["Water", "Grass"]
             }
         ]
@@ -115,7 +125,7 @@
         ]
     },
     "dugtrio": {
-        "level": 83,
+        "level": 88,
         "sets": [
             {
                 "role": "Fast Attacker",
@@ -219,6 +229,21 @@
             }
         ]
     },
+    "slowbromega": {
+        "level": 78,
+        "sets": [
+            {
+                "role": "Bulky Attacker",
+                "movepool": ["Calm Mind", "Psyshock", "Slack Off", "Surf", "Thunder Wave"],
+                "teraTypes": ["Water", "Fairy"]
+            },
+            {
+                "role": "AV Pivot",
+                "movepool": ["Body Press", "Fire Blast", "Future Sight", "Ice Beam", "Psychic", "Surf"],
+                "teraTypes": ["Fighting", "Water"]
+            }
+        ]
+    },
     "slowbrogalar": {
         "level": 86,
         "sets": [
@@ -285,11 +310,11 @@
         ]
     },
     "hypno": {
-        "level": 92,
+        "level": 89,
         "sets": [
             {
                 "role": "Bulky Support",
-                "movepool": ["Encore", "Focus Blast", "Foul Play", "Light Screen", "Psychic", "Reflect", "Thunder Wave"],
+                "movepool": ["Encore", "Focus Blast", "Foul Play", "Light Screen", "Psychic", "Reflect", "Thunder Wave", "Thunder Punch", "Psycho Punch","Ice Punch"],
                 "teraTypes": ["Dark", "Steel"]
             }
         ]
@@ -320,7 +345,7 @@
         ]
     },
     "scyther": {
-        "level": 84,
+        "level": 87,
         "sets": [
             {
                 "role": "Fast Attacker",
@@ -429,8 +454,8 @@
         "sets": [
             {
                 "role": "Fast Attacker",
-                "movepool": ["Calm Mind", "Hyper Voice", "Shadow Ball", "Thunderbolt", "Volt Switch"],
-                "teraTypes": ["Electric", "Ghost"]
+                "movepool": ["Calm Mind", "Hyper Voice", "Shadow Ball", "Thunderbolt", "Volt Switch", "Hidden Power Ice", "Thunder"],
+                "teraTypes": ["Electric", "Ghost", "Flying"]
             },
             {
                 "role": "Tera Blast user",
@@ -444,7 +469,7 @@
         "sets": [
             {
                 "role": "Wallbreaker",
-                "movepool": ["Facade", "Flare Blitz", "Quick Attack", "Trailblaze", "Will-O-Wisp"],
+                "movepool": ["Facade", "Flare Blitz", "Trailblaze", "Will-O-Wisp", "Collision Course", "Close Combat", "Play Rough", "Extreme Speed"],
                 "teraTypes": ["Normal"]
             }
         ]
@@ -529,13 +554,31 @@
         "sets": [
             {
                 "role": "Fast Attacker",
-                "movepool": ["Aura Sphere", "Fire Blast", "Nasty Plot", "Psystrike", "Recover", "Shadow Ball"],
+                "movepool": ["Aura Sphere", "Fire Blast", "Nasty Plot", "Psystrike", "Recover", "Shadow Ball", "Hyper Beam"],
                 "teraTypes": ["Psychic", "Fighting", "Fire", "Ghost"]
             }
         ]
     },
+    "mewtwomegax": {
+        "level": 70,
+        "sets": [
+            {
+                "role": "Bulky Attacker",
+                "movepool": ["Psystrike", "Drain Punch", "Ice Punch", "Poison Jab"]
+            }
+        ]    
+    },
+    "mewtwomegay": {
+        "level": 70,
+        "sets": [
+            {
+                "role": "Fast Attacker",
+                "movepool": ["Psystrike", "Aura Sphere", "Ice Beam", "Recover", "Shadow Ball", "Hyper Beam", "Nasty Plot"]
+            }
+        ]    
+    },
     "mew": {
-        "level": 81,
+        "level": 71,
         "sets": [
             {
                 "role": "Bulky Support",
@@ -579,8 +622,8 @@
             }
         ]
     },
-    "ampharos": {
-        "level": 88,
+    "ampharosmega": {
+        "level": 80,
         "sets": [
             {
                 "role": "Wallbreaker",
@@ -1165,6 +1208,16 @@
             {
                 "role": "Fast Attacker",
                 "movepool": ["Dragon Ascent", "Dragon Dance", "Earthquake", "Extreme Speed", "Swords Dance", "U-turn"],
+                "teraTypes": ["Flying", "Normal"]
+            }
+        ]
+    },
+    "rayquazamega": {
+        "level": 68,
+        "sets": [
+            {
+                "role": "Fast Attacker",
+                "movepool": ["Dragon Ascent", "Dragon Dance", "Earthquake", "Extreme Speed", "Swords Dance", "U-turn", "V-Create"],
                 "teraTypes": ["Flying", "Normal"]
             }
         ]

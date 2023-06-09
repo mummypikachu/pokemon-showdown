@@ -24526,7 +24526,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			ominouswind: ["4T"],
 			poweruppunch: ["9M"],
 			protect: ["9M", "7V", "6M", "5M", "4M", "3M"],
-			psychopunch: ["9L1",],
+			psychopunch: ["9L1"],
 			reflect: ["9M", "9L12", "7V", "6M", "6L14", "5M", "5L14", "4M", "4L14", "3M", "3L24"],
 			rest: ["9M", "7V", "6M", "5M", "4M", "3M"],
 			return: ["9M", "7V", "6M", "5M", "4M", "3M"],

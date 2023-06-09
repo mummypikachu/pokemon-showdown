@@ -7114,8 +7114,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	vcreate: {
 		name: "V-create",
-		desc: "Lowers the user's Speed, Defense, and Special Defense by 1 stage.",
-		shortDesc: "Lowers the user's Defense, Sp. Def, Speed by 1.",
+		desc: "Lowers the user's Defense and Special Defense by 1 stage.",
+		shortDesc: "Lowers the user's Defense and Sp. Def by 1.",
 	},
 	veeveevolley: {
 		name: "Veevee Volley",

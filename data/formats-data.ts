@@ -425,7 +425,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	arcaninehisui: {
-		tier: "RU",
+		tier: "UU",
+		doublesTier: "DOU",
 	},
 	poliwag: {
 		tier: "LC",
@@ -436,7 +437,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "NFE",
 	},
 	poliwrath: {
-		tier: "OU",
+		tier: "UU",
 		natDexTier: "RU",
 	},
 	politoed: {
@@ -2506,7 +2507,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	abomasnowmega: {
-		tier: "RU",
+		tier: "UU",
+		doublesTier: "DOU",
 		natDexTier: "RU",
 	},
 	rotom: {
