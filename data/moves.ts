@@ -14322,7 +14322,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	progenitorbeam: {
 		num: 902,
 		accuracy: 100,
-		basePower: 65,
+		basePower: 45,
 		name: "Progenitor Beam",
 		category: "Special",
 		pp: 10,
