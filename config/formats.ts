@@ -128,6 +128,13 @@ export const Formats: FormatList = [
 		banlist: ['NU', 'PUBL'],
 	},
 	{
+		name: "[Gen 9] NFE",
+
+		mod: 'gen9',
+		ruleset: ['[Gen 9] PU', 'Max Level = 50'],
+		banlist: ['PU'],
+	},
+	{
 		name: "[Gen 9] LC",
 		threads: [
 			`&bullet; <a href="https://www.smogon.com/forums/threads/3710868/">Little Cup Metagame Discussion</a>`,
