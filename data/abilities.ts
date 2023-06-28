@@ -2139,7 +2139,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onBasePower(basePower, attacker, defender, move) {
 			if (move.flags['punch']) {
 				this.debug('Iron Fist boost');
-				return this.chainModify([4915, 4096]);
+				return this.chainModify([5325, 4096]);
 			}
 		},
 		name: "Iron Fist",
@@ -4413,6 +4413,18 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Sticky Hold",
 		rating: 1.5,
 		num: 60,
+	},
+	striker: {
+		onBasePowerPriority: 23,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['kick']) {
+				this.debug('Striker boost');
+				return this.chainModify([5325, 4096]);
+			}
+		},
+		name: "Striker",
+		rating: 3,
+		num: 189,
 	},
 	stormdrain: {
 		onTryHit(target, source, move) {

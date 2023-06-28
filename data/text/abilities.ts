@@ -803,8 +803,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	ironfist: {
 		name: "Iron Fist",
-		desc: "This Pokemon's punch-based attacks have their power multiplied by 1.2.",
-		shortDesc: "This Pokemon's punch-based attacks have 1.2x power.",
+		desc: "This Pokemon's punch-based attacks have their power multiplied by 1.3.",
+		shortDesc: "This Pokemon's punch-based attacks have 1.3x power.",
 	},
 	justified: {
 		name: "Justified",
@@ -1785,6 +1785,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		},
 
 		activate: "#lightningrod",
+	},
+	striker: {
+		name: "Striker",
+		desc: "This Pokemon's kick-based attacks have their power multiplied by 1.3.",
+		shortDesc: "This Pokemon's kick-based attacks have 1.3x power.",
 	},
 	strongjaw: {
 		name: "Strong Jaw",
