@@ -2368,7 +2368,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 	},
 	cherrim: {
-		tier: "OU",
+		tier: "UU",
 		natDexTier: "RU",
 	},
 	cherrimsunshine: {
@@ -3274,11 +3274,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	heatmor: {
-		tier: "OU",
+		tier: "UU",
 		natDexTier: "RU",
 	},
 	durant: {
-		tier: "OU",
+		tier: "UU",
 		natDexTier: "RU",
 	},
 	deino: {
