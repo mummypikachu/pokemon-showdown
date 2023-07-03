@@ -5262,20 +5262,11 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 193,
 	},
 	windpower: {
-		onDamagingHitOrder: 1,
-		onDamagingHit(damage, target, source, move) {
-			if (move.flags['wind']) {
-				target.addVolatile('charge');
-			}
-		},
-		onAllySideConditionStart(target, source, sideCondition) {
-			const pokemon = this.effectState.target;
-			if (sideCondition.id === 'tailwind') {
-				pokemon.addVolatile('charge');
-			}
-		},
+		onStart: function (pokemon) {
+            this.field.setWeather('tailwind', pokemon);
+        },
 		name: "Wind Power",
-		rating: 1,
+		rating: 3.5,
 		num: 277,
 	},
 	windrider: {

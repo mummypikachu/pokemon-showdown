@@ -19571,15 +19571,15 @@ export const Moves: {[moveid: string]: MoveData} = {
 		condition: {
 			duration: 4,
 			durationCallback(target, source, effect) {
-				if (source?.hasAbility('persistent')) {
-					this.add('-activate', source, 'ability: Persistent', '[move] Tailwind');
+				if (source?.hasAbility('windpower')) {
+					this.add('-activate', source, 'ability: Wind Power', '[move] Tailwind');
 					return 6;
 				}
 				return 4;
 			},
 			onSideStart(side, source) {
-				if (source?.hasAbility('persistent')) {
-					this.add('-sidestart', side, 'move: Tailwind', '[persistent]');
+				if (source?.hasAbility('windpower')) {
+					this.add('-sidestart', side, 'move: Tailwind', '[windpower]');
 				} else {
 					this.add('-sidestart', side, 'move: Tailwind');
 				}

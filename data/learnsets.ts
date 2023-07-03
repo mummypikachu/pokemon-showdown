@@ -74878,6 +74878,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			grassyterrain: ["9M"],
 			helpinghand: ["9M", "9M", "9T"],
 			hiddenpower: ["7M"],
+			jumpkick: ["9L1"],
 			knockoff: ["9T"],
 			leafstorm: ["9M", "9L46", "9M", "9L52", "9L45"],
 			lightscreen: ["9M", "9M", "7M"],
@@ -74910,6 +74911,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			takedown: ["9M"],
 			teeterdance: ["9L34", "9L34", "9L25"],
 			terablast: ["9M"],
+			tropkick: ["9M"],
 			toxic: ["7M"],
 			trailblaze: ["9M"],
 			tripleaxel: ["9T"],
@@ -77240,6 +77242,9 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 		learnset: {
 			cosmicpower: ["9M", "9L0", "9L1"],
 			teleport: ["9L1", "9L1"],
+			heavyslam: ["9M"],
+			zenheadbutt: ["9L21", "7S0", "7S1", "7S2"],
+			explosion: ["9L30"]
 		},
 	},
 	solgaleo: {

@@ -858,8 +858,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	libero: {
 		name: "Libero",
-		desc: "This Pokemon's type changes to match the type of the move it is about to use. This effect comes after all effects that change a move's type. This effect can only happen once per switch-in, and only if this Pokemon is not Terastallized.",
-		shortDesc: "This Pokemon's type changes to the type of the move it is using. Once per switch-in.",
+		desc: "This Pokemon's type changes to match the type of the move it is about to use. This effect comes after all effects that change a move's type. This effect can only if this Pokemon is not Terastallized.",
+		shortDesc: "This Pokemon's type changes to the type of the move it is using.",
 		gen8: {
 			desc: "This Pokemon's type changes to match the type of the move it is about to use. This effect comes after all effects that change a move's type.",
 			shortDesc: "This Pokemon's type changes to match the type of the move it is about to use.",
@@ -1321,8 +1321,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	protean: {
 		name: "Protean",
-		desc: "This Pokemon's type changes to match the type of the move it is about to use. This effect comes after all effects that change a move's type. This effect can only happen once per switch-in, and only if this Pokemon is not Terastallized.",
-		shortDesc: "This Pokemon's type changes to the type of the move it is using. Once per switch-in.",
+		desc: "This Pokemon's type changes to match the type of the move it is about to use. This effect comes after all effects that change a move's type. This effect can only if this Pokemon is not Terastallized.",
+		shortDesc: "This Pokemon's type changes to the type of the move it is using.",
 		gen8: {
 			desc: "This Pokemon's type changes to match the type of the move it is about to use. This effect comes after all effects that change a move's type.",
 			shortDesc: "This Pokemon's type changes to match the type of the move it is about to use.",
@@ -2135,8 +2135,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	windpower: {
 		name: "Wind Power",
-		desc: "This Pokemon gains the Charge effect when it takes a hit from a wind move or when Tailwind begins on this Pokemon's side.",
-		shortDesc: "This Pokemon gains the Charge effect when hit by a wind move or Tailwind begins.",
+		desc: "On switch-in This Pokemon sets up Tailwind for 6 turns",
+		shortDesc: "On switch-in This Pokemon sets up Tailwind for 6 turns",
 
 		start: "#electromorphosis",
 	},
