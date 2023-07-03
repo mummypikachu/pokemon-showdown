@@ -5262,8 +5262,30 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 193,
 	},
 	windpower: {
-		onStart: function (pokemon) {
-            this.field.setWeather('tailwind', pokemon);
+        condition: {
+            duration: 4,
+            durationCallback(target, source, effect) {
+                if (source?.hasAbility('windpower')) {
+                    this.add('-activate', source, 'ability: Wind Power', '[move] Tailwind');
+                    return 6;
+                }
+                return 4;
+            },
+            onSideStart(side, source) {
+                if (source?.hasAbility('windpower')) {
+                    this.add('-sidestart', side, 'move: Tailwind', '[windpower]');
+                } else {
+                    this.add('-sidestart', side, 'move: Tailwind');
+                }
+            },
+            onModifySpe(spe, pokemon) {
+                return this.chainModify(2);
+            },
+            onSideResidualOrder: 26,
+            onSideResidualSubOrder: 5,
+            onSideEnd(side) {
+                this.add('-sideend', side, 'move: Tailwind');
+            },
         },
 		name: "Wind Power",
 		rating: 3.5,
