@@ -388,6 +388,12 @@ export class TeamValidator {
 				tierSpecies = outOfBattleSpecies;
 			}
 		}
+		if (ability.id === 'warriorresolve' && species.id === 'keldeo') {
+			outOfBattleSpecies = dex.species.get('keldeoresolute');
+			if (ruleTable.has('obtainableformes')) {
+				tierSpecies = outOfBattleSpecies;
+			}
+		}
 		if (ability.id === 'owntempo' && species.id === 'rockruff') {
 			tierSpecies = outOfBattleSpecies = dex.species.get('rockruffdusk');
 		}
