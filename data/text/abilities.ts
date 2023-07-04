@@ -2112,8 +2112,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	warriorresolve: {
 		name: "Warrior Resolve",
-			desc: "If this Pokemon is a Keldeo, it transforms into Resolute-Keldeo if it attacks and knocks out another Pokemon. If this Pokemon is an Resolute-Keldeo, its Secret Sword has 105 power.",
-			shortDesc: "After KOing a Pokemon: becomes Resolute-Keldeo, Secret Sword: 105 power.",
+			desc: "If this Pokemon is a Keldeo, it transforms into Resolute-Keldeo if it attacks and knocks out another Pokemon. If this Pokemon is an Resolute-Keldeo.",
+			shortDesc: "After KOing a Pokemon: becomes Resolute-Keldeo.",
 		activate: "  [POKEMON] was filled with resolve and broken free from its own mental chains!",
 		transform: "[POKEMON] became Resolute-Keldeo!",
 	},

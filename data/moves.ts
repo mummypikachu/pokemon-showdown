@@ -2423,8 +2423,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	chloroblast: {
 		num: 835,
-		accuracy: 95,
-		basePower: 150,
+		accuracy: 100,
+		basePower: 180,
 		category: "Special",
 		name: "Chloroblast",
 		pp: 5,

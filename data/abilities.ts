@@ -455,6 +455,11 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				return this.chainModify(1.5);
 			}
 		},
+		onEffectiveness(typeMod, target, type, move) {
+			if (type === 'Water' && move.type === 'Ice') {
+				return typeMod * 2; // Double the effectiveness against Water-type Pokémon
+			}
+		},
 		name: "Below Zero",
 		rating: 3.5,
 		num: 262,
@@ -5135,12 +5140,9 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 254,
 	},
 	warriorresolve: {
-	 	onSourceAfterFaint(length, target, source, effect) {
-			if (effect?.effectType !== 'Move') {
-				return;
-			}
-			if (source.species.id === 'Keldeo' && source.hp && !source.transformed && source.side.foePokemonLeft()) {
-				this.add('-activate', source, 'ability: Warrior Resolve');
+		onSourceFaint(target, source, effect) {
+			if (effect && effect.effectType === 'Move' && source.species.id === 'keldeo') {
+				this.add('-activate', source, '[POKEMON] is harnessing their Resolute Power');
 				source.formeChange('Keldeo-Resolute', this.effect, true);
 			}
 		},
@@ -5297,9 +5299,11 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 193,
 	},
 	windpower: {
-		onStart(source) {
-			this.field.setWeather('tailwind');
-		},
+			onStart(pokemon) {
+				const move = this.dex.moves.get('tailwind');
+				this.add('-ability', pokemon, 'Wind Power');
+				this.actions.useMove(move, pokemon);
+			},
 		name: "Wind Power",
 		rating: 3.5,
 		num: 277,
