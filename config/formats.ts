@@ -98,7 +98,7 @@ export const Formats: FormatList = [
 
 		mod: 'gen9',
 		ruleset: ['[Gen 9] OU'],
-		banlist: ['OU', 'UUBL'],
+		banlist: ['OU', 'UUBL', 'Keldeo + Warrior Resolve'],
 	},
 	{
 		name: "[Gen 9] RU",

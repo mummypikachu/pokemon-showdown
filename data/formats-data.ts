@@ -3359,11 +3359,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "Uber",
 	},
 	keldeo: {
-		tier: "RU",
+		tier: "UU",
 		natDexTier: "RU",
 	},
 	keldeoresolute: {
-		tier: "OU",
 	},
 	meloetta: {
 		tier: "UU",
