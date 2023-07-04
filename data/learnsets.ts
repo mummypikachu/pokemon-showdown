@@ -64895,6 +64895,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			hydropump: ["9M", "9L63", "9S4", "9L67", "6L67", "6S2", "5L67", "9S1"],
 			hyperbeam: ["9M", "7M", "6M", "5M"],
 			icywind: ["9M", "9T", "6T", "5T"],
+			icebeam: ["9M"],
 			lastresort: ["9T", "6T", "5T"],
 			leer: ["9L1", "9L1", "6L1", "6S2", "6S3", "5L1", "9S0"],
 			liquidation: ["9M", "9T"],

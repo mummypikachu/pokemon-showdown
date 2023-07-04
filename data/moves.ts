@@ -16512,14 +16512,20 @@ export const Moves: {[moveid: string]: MoveData} = {
 	secretsword: {
 		num: 548,
 		accuracy: 100,
-		basePower: 85,
+		basePower: 95,
 		category: "Special",
-	
+		basePowerCallback(pokemon, target, move) {
+			if (pokemon.species.name === 'Keldeo-Resolve' && pokemon.hasAbility('warriorresolve') &&
+				!pokemon.transformed) {
+				return move.basePower + 10;
+			}
+			return move.basePower;
+		},
 		overrideDefensiveStat: 'def',
 		name: "Secret Sword",
 		pp: 10,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
+		flags: {protect: 1, mirror: 1, slicing: 1},
 		secondary: null,
 		target: "normal",
 		type: "Fighting",

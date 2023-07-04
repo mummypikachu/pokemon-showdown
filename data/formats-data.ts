@@ -594,7 +594,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 	},
 	dodrio: {
-		tier: "PU",
+		tier: "RU",
 		natDexTier: "RU",
 	},
 	seel: {
@@ -3363,6 +3363,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	keldeoresolute: {
+		tier: "OU",
 	},
 	meloetta: {
 		tier: "UU",

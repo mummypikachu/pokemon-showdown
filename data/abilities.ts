@@ -440,6 +440,25 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 2,
 		num: 201,
 	},
+	belowzero: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Ice') {
+				this.debug('Transistor boost');
+				return this.chainModify(1.5);
+			}
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Ice') {
+				this.debug('Transistor boost');
+				return this.chainModify(1.5);
+			}
+		},
+		name: "Below Zero",
+		rating: 3.5,
+		num: 262,
+	},
 	bigpecks: {
 		onTryBoost(boost, target, source, effect) {
 			if (source && target === source) return;
@@ -5115,6 +5134,22 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 2.5,
 		num: 254,
 	},
+	warriorresolve: {
+	 	onSourceAfterFaint(length, target, source, effect) {
+			if (effect?.effectType !== 'Move') {
+				return;
+			}
+			if (source.species.id === 'Keldeo' && source.hp && !source.transformed && source.side.foePokemonLeft()) {
+				this.add('-activate', source, 'ability: Warrior Resolve');
+				source.formeChange('Keldeo-Resolute', this.effect, true);
+			}
+		},
+		isNonstandard: null,
+		rating: 4,
+	isPermanent: true,
+	name: "Warrior Resolve",
+	num: 210,
+	},
 	waterabsorb: {
 		onTryHit(target, source, move) {
 			if (target !== source && move.type === 'Water') {
@@ -5263,7 +5298,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	windpower: {
 		onStart(source) {
-			this.field.addPseudoWeather('tailwind');
+			this.field.setWeather('tailwind');
 		},
 		name: "Wind Power",
 		rating: 3.5,

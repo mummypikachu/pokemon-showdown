@@ -171,6 +171,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "This Pokemon's highest stat is raised by 1 stage if it attacks and knocks out another Pokemon. Stat stage changes are not considered. If multiple stats are tied, Attack, Defense, Special Attack, Special Defense, and Speed are prioritized in that order.",
 		shortDesc: "This Pokemon's highest stat is raised by 1 if it attacks and KOes another Pokemon.",
 	},
+	belowzero: {
+		name: "Below Zero",
+		shortDesc: "This Pokemon's offensive stat is multiplied by 1.5 while using an Ice-type attack.",
+	},
 	berserk: {
 		name: "Berserk",
 		desc: "When this Pokemon has more than 1/2 its maximum HP and takes damage from an attack bringing it to 1/2 or less of its maximum HP, its Special Attack is raised by 1 stage. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability.",
@@ -2105,6 +2109,13 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	watercompaction: {
 		name: "Water Compaction",
 		shortDesc: "This Pokemon's Defense is raised 2 stages after it is damaged by a Water-type move.",
+	},
+	warriorresolve: {
+		name: "Warrior Resolve",
+			desc: "If this Pokemon is a Keldeo, it transforms into Resolute-Keldeo if it attacks and knocks out another Pokemon. If this Pokemon is an Resolute-Keldeo, its Secret Sword has 105 power.",
+			shortDesc: "After KOing a Pokemon: becomes Resolute-Keldeo, Secret Sword: 105 power.",
+		activate: "  [POKEMON] was filled with resolve and broken free from its own mental chains!",
+		transform: "[POKEMON] became Resolute-Keldeo!",
 	},
 	waterveil: {
 		name: "Water Veil",
