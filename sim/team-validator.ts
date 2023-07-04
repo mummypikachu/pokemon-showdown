@@ -388,7 +388,7 @@ export class TeamValidator {
 				tierSpecies = outOfBattleSpecies;
 			}
 		}
-		if (ability.id === 'warriorresolve' && species.id === 'keldeo') {
+		if (ability.id === 'warriorsresolve' && species.id === 'keldeo') {
 			outOfBattleSpecies = dex.species.get('keldeoresolute');
 			if (ruleTable.has('obtainableformes')) {
 				tierSpecies = outOfBattleSpecies;

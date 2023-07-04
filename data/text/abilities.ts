@@ -2110,8 +2110,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Water Compaction",
 		shortDesc: "This Pokemon's Defense is raised 2 stages after it is damaged by a Water-type move.",
 	},
-	warriorresolve: {
-		name: "Warrior Resolve",
+	warriorsresolve: {
+		name: "Warrior's Resolve",
 			desc: "If this Pokemon is a Keldeo, it transforms into Resolute-Keldeo if it attacks and knocks out another Pokemon. If this Pokemon is an Resolute-Keldeo.",
 			shortDesc: "After KOing a Pokemon: becomes Resolute-Keldeo.",
 		activate: "  [POKEMON] was filled with resolve and broken free from its own mental chains!",

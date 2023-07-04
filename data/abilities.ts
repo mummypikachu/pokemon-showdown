@@ -5139,17 +5139,17 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 2.5,
 		num: 254,
 	},
-	warriorresolve: {
+	warriorsresolve: {
 		onSourceFaint(target, source, effect) {
 			if (effect && effect.effectType === 'Move' && source.species.id === 'keldeo') {
-				this.add('-activate', source, '[POKEMON] is harnessing their Resolute Power');
+				this.add('-activate', source, 'ability: Warrior\'s Resolve');
 				source.formeChange('Keldeo-Resolute', this.effect, true);
 			}
 		},
 		isNonstandard: null,
 		rating: 4,
 	isPermanent: true,
-	name: "Warrior Resolve",
+	name: "Warrior's Resolve",
 	num: 210,
 	},
 	waterabsorb: {
