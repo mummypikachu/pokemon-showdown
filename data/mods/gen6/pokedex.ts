@@ -110,7 +110,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	},
 	torkoal: {
 		inherit: true,
-		abilities: {0: "White Smoke", H: "Shell Armor"},
+		abilities: {0: "Pure Heart", H: "Shell Armor"},
 	},
 	lunatone: {
 		inherit: true,

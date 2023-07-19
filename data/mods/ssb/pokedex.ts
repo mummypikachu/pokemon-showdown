@@ -231,7 +231,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	pikachulibre: {
 		inherit: true,
 		baseStats: {hp: 60, atk: 85, def: 50, spa: 95, spd: 85, spe: 110},
-		abilities: {0: "White Smoke"},
+		abilities: {0: "Pure Heart"},
 	},
 	pikachupopstar: {
 		inherit: true,

@@ -145,6 +145,18 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				this.boost({atk: 12}, target, target);
 			}
 		},
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, pokemon) {
+			if (pokemon.hp <= pokemon.maxhp / 4) {
+				return this.chainModify(2);
+			}
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(atk, pokemon) {
+			if (pokemon.hp <= pokemon.maxhp / 4) {
+				return this.chainModify(2);
+			}
+		},
 		name: "Anger Point",
 		rating: 1,
 		num: 83,
@@ -5263,7 +5275,8 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3.5,
 		num: 273,
 	},
-	whitesmoke: {
+	pureheart: {
+    // Add any other necessary methods here
 		onTryBoost(boost, target, source, effect) {
 			if (source && target === source) return;
 			let showMsg = false;
@@ -5275,11 +5288,20 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				}
 			}
 			if (showMsg && !(effect as ActiveMove).secondaries && effect.id !== 'octolock') {
-				this.add("-fail", target, "unboost", "[from] ability: White Smoke", "[of] " + target);
+				this.add("-fail", target, "unboost", "[from] ability: Pure Heart", "[of] " + target);
 			}
 		},
+		onDamagingHit: function (damage, target, source, move) {
+        if (move && move.category === "Status" && damage > 0) {
+            // Check if the move would decrease stats
+            if (move.boosts && (move.boosts['atk'] || move.boosts['def'] || move.boosts['spa'] || move.boosts['spd'] || move.boosts['spe'] || move.boosts['accuracy'] || move.boosts['evasion'])) {
+                // Boost Special Attack by one stage
+                this.boost({ spa: 1 }, target);
+            }
+        }
+	},
 		isBreakable: true,
-		name: "White Smoke",
+		name: "Pure Heart",
 		rating: 2,
 		num: 73,
 	},

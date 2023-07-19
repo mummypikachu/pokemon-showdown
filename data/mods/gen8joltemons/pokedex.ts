@@ -816,7 +816,7 @@ export const Pokedex: {[speciesid: string]: ModdedSpeciesData} = {
 	},
 	torkoal: {
 		inherit: true,
-		abilities: {0: "White Smoke", 1: "Drought", H: "Magma Armor"},
+		abilities: {0: "Pure Heart", 1: "Drought", H: "Magma Armor"},
 	},
 	crustle: {
 		inherit: true,

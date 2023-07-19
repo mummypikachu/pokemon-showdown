@@ -1196,7 +1196,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		basePower: 0,
 		basePowerCallback(pokemon, target, move) {
 			const currentSpecies = move.allies!.shift()!.species;
-			const bp = 5 + Math.floor(currentSpecies.baseStats.atk / 10);
+			const bp = 10 + Math.floor(currentSpecies.baseStats.atk / 10);
 			this.debug('BP for ' + currentSpecies.name + ' hit: ' + bp);
 			return bp;
 		},

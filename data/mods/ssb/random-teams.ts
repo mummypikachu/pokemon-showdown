@@ -808,7 +808,7 @@ export const ssbSets: SSBSets = {
 		skip: 'yuki',
 	},
 	'yuki-Ninja': {
-		species: 'Pikachu-Libre', ability: 'White Smoke', item: 'Light Ball', gender: 'F',
+		species: 'Pikachu-Libre', ability: 'Pure Heart', item: 'Light Ball', gender: 'F',
 		moves: ['Water Shuriken', 'Frost Breath', 'Toxic'],
 		signatureMove: 'Class Change',
 		evs: {hp: 4, spa: 252, spe: 252}, ivs: {atk: 0},

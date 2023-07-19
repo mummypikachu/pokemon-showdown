@@ -88,7 +88,7 @@ export const Formats: FormatList = [
 
 		mod: 'gen9',
 		ruleset: ['Standard NatDex'],
-		banlist: ['AG', 'King\'s Rock', 'Baton Pass', 'Shedinja + Air Balloon'],
+		banlist: ['AG', 'King\'s Rock', 'Baton Pass', 'Shedinja + Air Balloon', 'Rayquaza-Mega + Life Orb'],
 	},
 	{
 		name: "[Gen 9] UU",

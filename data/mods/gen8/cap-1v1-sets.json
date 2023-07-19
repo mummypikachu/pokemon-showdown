@@ -277,7 +277,7 @@
 	}],
 	"Pyroak": [{
 		"item": "Choice Specs",
-		"ability": "White Smoke",
+		"ability": "Pure Heart",
 		"evs": {"hp": 248, "spa": 124, "spd": 132},
 		"nature": "Modest",
 		"ivs": {"atk": 0},
