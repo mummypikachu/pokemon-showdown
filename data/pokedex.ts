@@ -8804,7 +8804,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		num: 493,
 		name: "Arceus",
 		baseForme: "Normal",
-		types: ["Normal"],
+		types: ["Almighty"],
 		gender: "N",
 		baseStats: {hp: 135, atk: 135, def: 135, spa: 135, spd: 135, spe: 135},
 		abilities: {0: "Multitype"},
@@ -13754,7 +13754,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	silvally: {
 		num: 773,
 		name: "Silvally",
-		types: ["Normal"],
+		types: ["Almighty"],
 		gender: "N",
 		baseStats: {hp: 115, atk: 115, def: 115, spa: 115, spd: 115, spe: 115},
 		abilities: {0: "RKS System"},

@@ -1004,6 +1004,12 @@ export const MovesText: {[k: string]: MoveText} = {
 			shortDesc: "33% chance to lower the target's Speed by 1.",
 		},
 	},
+	concentrate: {
+		name: "Concentrate",
+		desc: "The user's next attack will have its power doubled; the effect ends when the user is no longer active, or after the user attempts to use any move besides Concentrate, even if it is not successful. Taken from Persona/SMT.",
+		shortDesc: "User's next move 2x power.",
+		start: "  [POKEMON] began concentrating.",
+	},
 	continentalcrush: {
 		name: "Continental Crush",
 		shortDesc: "Power is equal to the base move's Z-Power.",
@@ -1234,6 +1240,11 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Dazzling Gleam",
 		desc: "No additional effect.",
 		shortDesc: "No additional effect. Hits adjacent foes.",
+	},
+	debilitate: {
+		name: "Debilitate",
+		desc: "Lowers all of the target's stats by 1 stage. Taken from Persona/SMT.",
+		shortDesc: "Lowers the target's stats by 1.",
 	},
 	decorate: {
 		name: "Decorate",
@@ -3341,8 +3352,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	judgment: {
 		name: "Judgment",
-		desc: "This move's type depends on the user's held Plate.",
-		shortDesc: "Type varies based on the held Plate.",
+		desc: "This move hits all types. No additional effect.",
+		shortDesc: "This move hits all types. No additional effect.",
 	},
 	jumpkick: {
 		name: "Jump Kick",
@@ -3912,6 +3923,16 @@ export const MovesText: {[k: string]: MoveText} = {
 	megakick: {
 		name: "Mega Kick",
 		shortDesc: "No additional effect.",
+	},
+	megido: {
+		name: "Megido",
+		desc: "A move that always does 80HP of damage. Taken from Persona/SMT.",
+		shortDesc: "Always does 80HP.",
+	},
+	megidolaon: {
+		name: "Megidolaon",
+		desc: "The move does heavy damage to all targets. Taken from Persona/SMT.",
+		shortDesc: "Hits adjacent Pokemon.",
 	},
 	megapunch: {
 		name: "Mega Punch",
