@@ -2783,6 +2783,44 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Normal",
 		contestType: "Tough",
 	},
+	concentrate: {
+		num: 914,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Concentrate",
+		pp: 10,
+		priority: 0,
+		flags: {snatch: 1},
+		volatileStatus: 'concentrate',
+		condition: {
+			onStart(pokemon, source, effect) {
+				this.add('-start', pokemon, 'Concentrate')
+			},
+			onRestart(pokemon, source, effect) {
+				this.add('-start', pokemon, 'Concentrate')
+			},
+			onBasePowerPriority: 9,
+			onBasePower(basePower, attacker, defender, move) {
+				this.debug('concentrate boost')
+				return this.chainModify(2)
+				
+			},
+			onMoveAborted(pokemon, target, move) {
+				pokemon.removeVolatile('concentrate')
+			},
+			onAfterMove(pokemon, target, move) {
+				pokemon.removeVolatile('concentrate')
+			},
+			onEnd(pokemon) {
+				this.add('-end', pokemon, 'concentrate', '[silent]');
+			},
+		},
+		secondary: null,
+		target: "self",
+		type: "Almighty",
+		contestType: "Clever",
+	},
 	continentalcrush: {
 		num: 632,
 		accuracy: true,
@@ -3423,6 +3461,27 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "allAdjacentFoes",
 		type: "Fairy",
 		contestType: "Beautiful",
+	},
+	debilitate: {
+		num: 915,
+		accuracy: 60,
+		basePower: 0,
+		category: "Status",
+		name: "Debilitate",
+		pp: 5,
+		priority: 0,
+		flags: {reflectable: 1, mirror: 1, sound: 1, bypasssub: 1},
+		boosts: {
+			atk: -1,
+			spa: -1,
+			def: -1,
+			spd: -1,
+			spe: -1,
+		},
+		secondary: null,
+		target: "normal",
+		type: "Almighty",
+		contestType: "Cool",
 	},
 	decorate: {
 		num: 777,
@@ -10030,7 +10089,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		secondary: null,
 		target: "normal",
-		type: "Normal",
+		type: "Almighty",
 		contestType: "Beautiful",
 	},
 	jumpkick: {
@@ -11839,6 +11898,39 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Normal",
 		contestType: "Cool",
 	},
+	megido: {
+		num: 912,
+		accuracy: 100,
+		basePower: 0,
+		damage: 80,
+		category: "Special",
+
+		name: "Megido",
+		pp: 10,
+		priority: 0,
+		secondary: null,
+		target: "normal",
+		type: "Almighty",
+		contestType: "Cool",
+		flags: {},
+	},
+	megidolaon: {
+		num: 913,
+		accuracy: 85,
+		basePower: 130,
+		category: "Special",
+		name: "Megidolaon",
+		pp: 5,
+		priority: 0,
+		flags: {recharge: 1},
+		onAfterHit(target, source) {
+			if (target.hp > 0) source.addVolatile('mustrecharge');
+	    },
+		secondary: null,
+		target: "allAdjacent",
+		type: "Almighty",
+		contestType: "Cool",
+	},
 	megapunch: {
 		num: 5,
 		accuracy: 85,
@@ -12760,7 +12852,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		secondary: null,
 		target: "normal",
-		type: "Normal",
+		type: "Almighty",
 		zMove: {basePower: 185},
 		maxMove: {basePower: 95},
 		contestType: "Tough",
