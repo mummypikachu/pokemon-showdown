@@ -22622,7 +22622,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			bulldoze: ["9M", "9M", "9M", "6M", "5M"],
 			calmmind: ["9M", "9M", "9V", "9M", "6M", "5M", "4M", "3M"],
 			chargebeam: ["9M", "6M", "5M", "4M"],
-			chillingwater: ["9M"]
+			chillingwater: ["9M"],
 			confide: ["9M", "6M"],
 			confuseray: ["9M", "9V"],
 			confusion: ["9L1", "9L1", "9V", "9L1", "7V", "6L1", "5L1", "4L1", "3L1"],
