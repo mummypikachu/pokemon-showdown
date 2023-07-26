@@ -55803,6 +55803,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			swordsdance: ["9M", "9L46", "6M", "6L46", "5M", "5L46"],
 			synthesis: ["9T", "6T", "5T"],
 			tackle: ["9L1", "6L1", "5L1"],
+			tropkick: ["9M"],
 			throatchop: ["9T"],
 			toxic: ["9M", "6M", "5M"],
 			worryseed: ["9T", "6T", "5T"],
