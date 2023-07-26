@@ -9762,7 +9762,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	leavanny: {
 		num: 542,
 		name: "Leavanny",
-		types: ["Bug", "Grass"],
+		types: ["Bug", "Grass", "Fighting"],
 		baseStats: {hp: 75, atk: 115, def: 80, spa: 70, spd: 80, spe: 100},
 		abilities: {0: "Striker", 1: "Chlorophyll", H: "No Guard"},
 		heightm: 1.2,
