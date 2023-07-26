@@ -5009,7 +5009,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	explosion: {
 		num: 153,
 		accuracy: 100,
-		basePower: 500,
+		basePower: 250,
 		category: "Physical",
 		name: "Explosion",
 		pp: 5,
@@ -16577,7 +16577,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	selfdestruct: {
 		num: 120,
 		accuracy: 100,
-		basePower: 400,
+		basePower: 150,
 		category: "Physical",
 		name: "Self-Destruct",
 		pp: 5,
