@@ -2355,7 +2355,7 @@ export const MovesText: {[k: string]: MoveText} = {
 		start: "  [POKEMON] foresaw an attack!",
 		activate: "  [TARGET] took the Future Sight attack!",
 	},
-	galvaniacdetonation: {
+	galvanicdetonation: {
 		name: "Galvaniac Detonation",
 	    desc: "This attack charges on the first turn and executes on the second. If the user is holding a Power Herb it or has the ability Photosynthesis it does not require charge-up turn.",
 		shortDesc: "Charges turn 1. Hits turn 2.",
