@@ -2355,6 +2355,13 @@ export const MovesText: {[k: string]: MoveText} = {
 		start: "  [POKEMON] foresaw an attack!",
 		activate: "  [TARGET] took the Future Sight attack!",
 	},
+	galvaniacdetonation: {
+		name: "Galvaniac Detonation",
+	    desc: "This attack charges on the first turn and executes on the second. If the user is holding a Power Herb it or has the ability Photosynthesis it does not require charge-up turn.",
+		shortDesc: "Charges turn 1. Hits turn 2.",
+
+		prepare: "  [POKEMON] gathers a dangerous amount of electro-static and harsh sound.",
+	},
 	gastroacid: {
 		name: "Gastro Acid",
 		desc: "Causes the target's Ability to be rendered ineffective as long as it remains active. If the target uses Baton Pass, the replacement will remain under this effect. If the target's Ability is As One, Battle Bond, Comatose, Commander, Disguise, Gulp Missile, Hadron Engine, Ice Face, Multitype, Orichalcum Pulse, Power Construct, Protosynthesis, Quark Drive, RKS System, Schooling, Shields Down, Stance Change, Zen Mode, or Zero to Hero, this move fails, and receiving the effect through Baton Pass ends the effect immediately.",

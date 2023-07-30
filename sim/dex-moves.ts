@@ -49,6 +49,7 @@ interface MoveFlags {
 	sound?: 1; // Has no effect on Pokemon with the Ability Soundproof.
 	wind?: 1; // Activates the Wind Power and Wind Rider Abilities.
 	kick?: 1; // Power is multiplied by 1.3 when used by a Pokemon with the Ability Striker.
+	explode?: 1; // Power is multiplied by 1.5 when used by a Pokemon with the Ability Detonator.
 }
 
 export interface HitEffect {

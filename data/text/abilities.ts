@@ -378,6 +378,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "On switch-in, the weather becomes Desolate Land, which includes all the effects of Sunny Day and prevents damaging Water-type moves from executing. This weather remains in effect until this Ability is no longer active for any Pokemon, or the weather is changed by the Delta Stream or Primordial Sea Abilities.",
 		shortDesc: "On switch-in, extremely harsh sunlight begins until this Ability is not active in battle.",
 	},
+	detonator: {
+		name: "Detonator",
+		desc: "This Pokemon's explosion-based attacks have their power multiplied by 1.5.",
+		shortDesc: "This Pokemon's explosion-based attacks have 1.5x power.",
+	},
 	disguise: {
 		name: "Disguise",
 		desc: "If this Pokemon is a Mimikyu, the first hit it takes in battle deals 0 neutral damage. Its disguise is then broken, it changes to Busted Form. Confusion damage also breaks the disguise.",
@@ -1198,6 +1203,14 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		shortDesc: "Making contact with this Pokemon starts the Perish Song effect for it and the attacker.",
 
 		start: "  Both Pok\u00E9mon will faint in three turns!",
+	},
+	photosynthesis: {
+		name: "Photosynthesis",
+		desc: "If this User of this ability uses a charge move it automatically charged.",
+		shortDesc: "It the user uses a recharge move it automatically charges.",
+
+		end: "  [POKEMON] became fully charged due to Photosynthesis!",
+
 	},
 	pickpocket: {
 		name: "Pickpocket",

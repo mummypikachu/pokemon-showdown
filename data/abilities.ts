@@ -986,6 +986,18 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 4.5,
 		num: 190,
 	},
+	detonator: {
+		onBasePowerPriority: 23,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['explode']) {
+				this.debug('Detonator boost');
+				return this.chainModify([6144, 4096]);
+			}
+		},
+		name: "Detonator",
+		rating: 3,
+		num: 89,
+	},
 	disguise: {
 		onDamagePriority: 1,
 		onDamage(damage, target, source, effect) {
@@ -3115,6 +3127,19 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Perish Body",
 		rating: 1,
 		num: 253,
+	},
+    photosynthesis: {
+        onChargeMove(pokemon, target, move) {
+            this.debug('power herb - remove charge turn for ' + move.id);
+            this.attrLastMove('[still]');
+            this.addMove('-anim', pokemon, move.name, target);
+            return false; // skip charge turn
+        },
+        name: "Photosynthesis",
+        // Ability ID. Replace "powerherb" with an appropriate ID if needed.
+        // Keep the 'num' and 'gen' properties if needed for compatibility.
+        num: 571,
+		rating: 3,
 	},
 	pickpocket: {
 		onAfterMoveSecondary(target, source, move) {

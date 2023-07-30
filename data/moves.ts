@@ -2806,9 +2806,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 				return this.chainModify(2)
 				
 			},
-			onMoveAborted(pokemon, target, move) {
-				pokemon.removeVolatile('concentrate')
-			},
 			onAfterMove(pokemon, target, move) {
 				pokemon.removeVolatile('concentrate')
 			},
@@ -5073,7 +5070,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Explosion",
 		pp: 5,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
+		flags: {protect: 1, mirror: 1, explode: 1},
 		selfdestruct: "always",
 		secondary: null,
 		target: "allAdjacent",
@@ -12485,7 +12482,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Misty Explosion",
 		pp: 5,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
+		flags: {protect: 1, mirror: 1, explode: 1},
 		selfdestruct: "always",
 		onBasePower(basePower, source) {
 			if (this.field.isTerrain('mistyterrain') && source.isGrounded()) {
@@ -13463,6 +13460,30 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "allAdjacentFoes",
 		type: "Electric",
+	},
+	galvanicdetonation: {
+		num: 153,
+		accuracy: 100,
+		basePower: 120,
+		category: "Special",
+		name: "Galvaniac Detonation",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, sound: 1},
+		onTryMove(attacker, defender, move) {
+			if (attacker.removeVolatile(move.id)) {
+				return;
+			}
+			if (!this.runEvent('ChargeMove', attacker, defender, move)) {
+				return;
+			}
+			attacker.addVolatile('twoturnmove', defender);
+			return null;
+		},
+		secondary: null,
+		target: "allAdjacentFoes",
+		type: "Electric",
+		contestType: "Beautiful",
 	},
 	overheat: {
 		num: 315,
@@ -16674,7 +16695,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Self-Destruct",
 		pp: 5,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
+		flags: {protect: 1, mirror: 1, explode: 1},
 		selfdestruct: "always",
 		secondary: null,
 		target: "allAdjacent",
@@ -19616,7 +19637,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	tailslap: {
 		num: 541,
-		accuracy: 85,
+		accuracy: 100,
 		basePower: 25,
 		category: "Physical",
 		name: "Tail Slap",

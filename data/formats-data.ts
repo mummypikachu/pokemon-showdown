@@ -688,7 +688,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "LC",
 	},
 	electrode: {
-		tier: "RU",
+		tier: "UU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
@@ -1076,7 +1076,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "NFE",
 	},
 	dragonite: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
@@ -1093,7 +1093,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "Uber",
 	},
 	mew: {
-		tier: "OU",
+		tier: "Uber",
 		natDexTier: "UU",
 	},
 	chikorita: {
@@ -1105,7 +1105,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "NFE",
 	},
 	meganium: {
-		tier: "OU",
+		tier: "UU",
 		natDexTier: "RU",
 	},
 	cyndaquil: {
@@ -1148,7 +1148,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 	},
 	noctowl: {
-		tier: "UU",
+		tier: "RU",
 		natDexTier: "RU",
 	},
 	ledyba: {
@@ -1156,7 +1156,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 	},
 	ledian: {
-		tier: "UU",
+		tier: "RU",
 		natDexTier: "RU",
 	},
 	spinarak: {
@@ -1207,7 +1207,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	ampharosmega: {
-		tier: "UU",
+		tier: "RU",
 		natDexTier: "RU",
 	},
 	azurill: {
@@ -1241,7 +1241,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	aipom: {
-		tier: "LC",
+		tier: "LC Ubers",
 		natDexTier: "LC",
 	},
 	ambipom: {
@@ -1252,7 +1252,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "LC",
 	},
 	sunflora: {
-		tier: "PU",
+		tier: "NU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
@@ -1305,7 +1305,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	girafarig: {
-		tier: "NFE",
+		tier: "PU",
 	},
 	farigiraf: {
 		tier: "NU",
