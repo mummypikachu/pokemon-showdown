@@ -1854,6 +1854,12 @@ export class BattleActions {
 	}
 
 	canTerastallize(pokemon: Pokemon) {
+		if (pokemon.species.name === "Shedinja") {
+			// Check for the specific type you want to disallow Terastallization to
+			if (pokemon.teraType === "Almighty") {
+			  return null; // Prevent Terastallization to the "Fire" type
+			}
+		}
 		if (
 			pokemon.species.isMega || pokemon.species.isPrimal || pokemon.species.forme === "Ultra" ||
 			pokemon.getItem().zMove || pokemon.canMegaEvo || pokemon.side.canDynamaxNow() || this.dex.gen !== 9
