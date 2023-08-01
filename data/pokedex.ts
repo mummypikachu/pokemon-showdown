@@ -18105,10 +18105,10 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Undiscovered"],
 	},
 	missingno: {
-		num: 0,
+		num: 10110,
 		name: "MissingNo.",
-		types: ["Bird", "Normal"],
-		baseStats: {hp: 33, atk: 136, def: 0, spa: 6, spd: 6, spe: 29},
+		types: ["Bird", "Almighty"],
+		baseStats: {hp: 33, atk: 176, def: 10, spa: 6, spd: 16, spe: 149},
 		abilities: {0: ""},
 		heightm: 3,
 		weightkg: 1590.8,

@@ -14435,7 +14435,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	progenitorbeam: {
 		num: 902,
 		accuracy: 100,
-		basePower: 45,
+		basePower: 25,
 		name: "Progenitor Beam",
 		category: "Special",
 		pp: 10,
@@ -14446,7 +14446,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		secondary: null,
 		target: "normal",
-		type: "???",
+		type: "Almighty",
 		contestType: "Beauty",
 	},
 	protect: {
