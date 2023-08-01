@@ -544,6 +544,26 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 281,
 		gen: 4,
 	},
+	blankplate: {
+		name: "Blank Plate",
+		spritenum: 105,
+		onPlate: 'Normal',
+		onBasePowerPriority: 15,
+		onBasePower(basePower, user, target, move) {
+			if (move && move.type === 'Normal') {
+				return this.chainModify([4915, 4096]);
+			}
+		},
+		onTakeItem(item, pokemon, source) {
+			if ((source && source.baseSpecies.num === 493) || pokemon.baseSpecies.num === 493) {
+				return false;
+			}
+			return true;
+		},
+		forcedForme: "Arceus-Normal",
+		num: 3113,
+		gen: 9,
+	},
 	blastoisinite: {
 		name: "Blastoisinite",
 		spritenum: 583,
@@ -3999,6 +4019,22 @@ export const Items: {[itemid: string]: ItemData} = {
 		zMoveType: "Normal",
 		num: 776,
 		gen: 7,
+	
+	},
+	normalmemory: {
+		name: "Normal Memory",
+		spritenum: 673,
+		onMemory: 'Normal',
+		onTakeItem(item, pokemon, source) {
+			if ((source && source.baseSpecies.num === 773) || pokemon.baseSpecies.num === 773) {
+				return false;
+			}
+			return true;
+		},
+		forcedForme: "Silvally-Normal",
+		itemUser: ["Silvally-Normal"],
+		num: 9090,
+		gen: 9,
 	
 	},
 	occaberry: {
