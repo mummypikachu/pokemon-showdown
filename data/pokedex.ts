@@ -9015,6 +9015,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	arceusnormal: {
 		num: 493,
 		name: "Arceus-Normal",
+		baseSpecies: "Arceus",
 		forme: "Normal",
 		types: ["Normal"],
 		gender: "N",
