@@ -670,4 +670,16 @@ export const Formats: FormatList = [
 			}
 		},
 	},
+
+	{
+        name: "[Gen 1] OU",
+        threads: [
+            `&bullet; <a href="https://www.smogon.com/forums/threads/3689726/">RBY Sample Teams</a>,`,
+            `&bullet; <a href="https://www.smogon.com/forums/threads/3685861/">RBY OU Viability Rankings</a>,`
+        ],
+
+        mod: 'gen1',
+        ruleset: ['Standard'],
+        banlist: ['Uber'],
+    },
 ];

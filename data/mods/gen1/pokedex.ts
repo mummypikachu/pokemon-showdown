@@ -607,6 +607,29 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	},
 	mew: {
 		inherit: true,
+		types: ["Psychic", "Normal"],
 		baseStats: {hp: 100, atk: 100, def: 100, spa: 100, spd: 100, spe: 100},
+	},
+	gible: {
+		inherit: true,
+		baseStats: {hp: 58, atk: 70, def: 45, spa: 45, spd: 45, spe: 42},
+	},
+	gabite: {
+		inherit: true,
+		baseStats: {hp: 68, atk: 90, def: 65, spa: 55, spd: 55, spe: 82},
+	},
+	garchomp: {
+		inherit: true,
+		baseStats: {hp: 118, atk: 140, def: 105, spa: 90, spd: 90, spe: 112},
+	},
+	sableye: {
+		inherit: true,
+		types: ["Ghost"],
+		baseStats: {hp: 100, atk: 70, def: 85, spa: 85, spd: 85, spe: 50},
+	},
+	mawile: {
+		inherit: true,
+		types: ["Normal"],
+		baseStats: {hp: 100, atk: 100, def: 100, spa: 40, spd: 40, spe: 50},
 	},
 };

@@ -452,6 +452,21 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	mew: {
 		tier: "Uber",
 	},
+	garchomp: {
+		tier: "OU",
+	},
+	gible: {
+		tier: "LC",
+	},
+	gabite: {
+		tier: "NFE",
+	},
+	sableye: {
+		tier: "OU"
+	},
+	mawile: {
+		tier: "OU"
+	},
 	missingno: {
 		isNonstandard: "Unobtainable",
 		tier: "Illegal",

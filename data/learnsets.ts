@@ -22834,7 +22834,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			calmmind: ["9M", "9M", "9V", "9M", "6M", "5M", "4M", "3M"],
 			captivate: ["9M"],
 			chargebeam: ["9M", "9M", "6M", "5M", "4M"],
-			celebrate: ["9V"],
+			celebrate: ["9L100"],
 			charm: ["9M", "9M"],
 			chillingwater: ["9M"],
 			closecombat: ["9M", "9M"],

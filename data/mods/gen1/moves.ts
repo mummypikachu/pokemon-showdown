@@ -296,6 +296,11 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		basePower: 1,
 	},
+	dragonrush: {
+		inherit: true,
+		basePower: 70,
+		accuracy: 100,
+	},
 	explosion: {
 		inherit: true,
 		basePower: 170,
@@ -354,6 +359,9 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 			// This does nothing as it's dealt with on critical hit calculation.
 			onModifyMove() {},
 		},
+	},
+	furycutter: {
+		inherit: true,
 	},
 	glare: {
 		inherit: true,
@@ -489,6 +497,9 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	metronome: {
 		inherit: true,
 		noMetronome: ["Metronome", "Struggle"],
+	},
+	megahorn: {
+		inherit: true,
 	},
 	mimic: {
 		inherit: true,
@@ -705,6 +716,9 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		basePower: 130,
 		target: "normal",
+	},
+	shadowball:{
+		inherit: true,
 	},
 	skullbash: {
 		inherit: true,
