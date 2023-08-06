@@ -2243,6 +2243,26 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3,
 
 	},
+	ledianisunbreakable: {
+		onModifyTypePriority: -1,
+		onModifyType(move, pokemon) {
+			const noModifyType = [
+				'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball',
+			];
+			if (move.type === 'Fighting' && !noModifyType.includes(move.id) &&
+				!(move.isZ && move.category !== 'Status') && !(move.name === 'Tera Blast' && pokemon.terastallized)) {
+				move.type = 'Flying' && 'Fighting'
+				move.typeChangerBoosted = this.effect;
+			}
+		},
+		onBasePowerPriority: 23,
+		onBasePower(basePower, pokemon, target, move) {
+			if (move.typeChangerBoosted === this.effect) return this.chainModify([4915, 4096]);
+		},
+		name: "Ledian Is Unbreakable",
+		rating: 4,
+		num: 994,
+	},
 	leafguard: {
 		onSetStatus(status, target, source, effect) {
 			if (['sunnyday', 'desolateland'].includes(target.effectiveWeather())) {

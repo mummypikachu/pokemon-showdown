@@ -837,6 +837,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Knight's Resolve",
 		shortDesc: "This Pokemon receives 1/2 damage from supereffective attacks.",
 	},
+	ledianisunbreakable: {
+		name: "Ledian Is Unbreakable",
+		shortDesc: "Fighting type moves on Ledian will act like Flying Press. (Both Fighting and Flying)",
+	},
 	leafguard: {
 		name: "Leaf Guard",
 		desc: "If Sunny Day is active, this Pokemon cannot become affected by a non-volatile status condition or Yawn, and Rest will fail for it. This effect is prevented if this Pokemon is holding a Utility Umbrella.",

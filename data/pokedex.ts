@@ -3529,7 +3529,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Ledian",
 		types: ["Bug", "Fighting"],
 		baseStats: {hp: 80, atk: 125, def: 100, spa: 15, spd: 75, spe: 100},
-		abilities: {0: "Swarm", 1: "Iron Fist", H: "Adaptability"},
+		abilities: {0: "Ledian Is Unbreakable", 1: "Iron Fist", H: "Adaptability"},
 		heightm: 1.4,
 		weightkg: 35.6,
 		color: "Red",
