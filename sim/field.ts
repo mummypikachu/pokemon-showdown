@@ -44,7 +44,7 @@ export class Field {
 
 		if (this.weather === status.id) {
 			if (sourceEffect && sourceEffect.effectType === 'Ability') {
-				if (this.battle.gen > 5 || this.weatherState.duration === 0) {
+				if (this.battle.gen > 9 || this.weatherState.duration === 0) {
 					return false;
 				}
 			} else if (this.battle.gen > 2 || status.id === 'sandstorm') {
@@ -132,7 +132,13 @@ export class Field {
 		if (!source && this.battle.event && this.battle.event.target) source = this.battle.event.target;
 		if (source === 'debug') source = this.battle.sides[0].active[0];
 		if (!source) throw new Error(`setting terrain without a source`);
-
+		if (this.terrain === status.id) {
+		if (sourceEffect && sourceEffect.effectType === 'Ability') {
+				if (this.battle.gen > 9 || this.terrainState.duration === 0) {
+					return false;
+				}
+			}
+		}
 		if (this.terrain === status.id) return false;
 		const prevTerrain = this.terrain;
 		const prevTerrainState = this.terrainState;
