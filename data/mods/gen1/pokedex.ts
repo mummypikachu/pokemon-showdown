@@ -622,7 +622,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	},
 	garchomp: {
 		inherit: true,
-		num: 1,
+		num: 151,
 		baseStats: {hp: 118, atk: 140, def: 105, spa: 90, spd: 90, spe: 112},
 	},
 	sableye: {

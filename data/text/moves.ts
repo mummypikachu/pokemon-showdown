@@ -1629,8 +1629,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	dynamicpunch: {
 		name: "Dynamic Punch",
-		desc: "Has a 100% chance to confuse the target.",
-		shortDesc: "100% chance to confuse the target.",
+		desc: "Has a 100% chance to confuse the target. The target's Defense is halved during damage calculation.",
+		shortDesc: "100% chance to confuse the target. The target's Defense is halved during damage calculation.",
 	},
 	earthpower: {
 		name: "Earth Power",
@@ -1823,7 +1823,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	explosion: {
 		name: "Explosion",
-		desc: "The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokemon has the Damp Ability.",
+		desc: "The user faints after using this move, even if this move fails for having no target. The target's Defense is halved during damage calculation. This move is prevented from executing if any active Pokemon has the Damp Ability.",
 		shortDesc: "Hits adjacent Pokemon. The user faints.",
 		gen4: {
 			desc: "The user faints after using this move, unless this move has no target. The target's Defense is halved during damage calculation. This move is prevented from executing if any active Pokemon has the Damp Ability.",
@@ -5563,7 +5563,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	selfdestruct: {
 		name: "Self-Destruct",
-		desc: "The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokemon has the Damp Ability.",
+		desc: "The user faints after using this move, even if this move fails for having no target. The target's Defense is halved during damage calculation. This move is prevented from executing if any active Pokemon has the Damp Ability.",
 		shortDesc: "Hits adjacent Pokemon. The user faints.",
 		gen4: {
 			desc: "The user faints after using this move, unless this move has no target. The target's Defense is halved during damage calculation. This move is prevented from executing if any active Pokemon has the Damp Ability.",

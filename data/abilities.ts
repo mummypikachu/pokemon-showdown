@@ -1412,6 +1412,36 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 0,
 		num: 166,
 	},
+	fluffdrive: {
+		onStart(this: Battle, source: Pokemon) {
+			this.field.setTerrain('electricterrain');
+		},
+		onEnd(this: Battle, pokemon: Pokemon & Side & Field) {
+			if (this.field.terrainState.source !== pokemon) return;
+			for (const target of this.getAllActive()) {
+				if (target === pokemon) continue;
+				if (target.hasAbility('fluffdrive')) {
+					this.field.terrainState.source = target;
+					return;
+				}
+			}
+			this.field.clearTerrain();
+		},
+		onTerrainChange(this: Battle, target: Pokemon, source: Pokemon, sourceEffect: Effect) {
+			if (sourceEffect && sourceEffect.id === 'electricterrain' && source && source.hasAbility('fluffdrive')) {
+				return false;
+			}
+		},
+		onModifyDamage(this: Battle, damage: number, source: Pokemon, target: Pokemon, move: ActiveMove) {
+			if (this.field.isTerrain('electricterrain') && move.type === 'Ground') {
+				this.debug('Electric Terrain weaken Ground');
+				return this.chainModify(0.75);
+			}
+		},
+		name: "Fluff Drive",
+		rating: 4.5,
+		num: 1900,
+	},	
 	fluffy: {
 		onSourceModifyDamage(damage, source, target, move) {
 			let mod = 1;
