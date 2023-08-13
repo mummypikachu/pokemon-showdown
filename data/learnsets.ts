@@ -25652,7 +25652,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			dragonpulse: ["9M", "9L1", "9T", "9L1", "6T", "6L1"],
 			dragontail: ["9M"],
 			dragonrush: ["9M"],
-			dynamicpunch: ["9V", "3T"],
+			dynamicpunch: ["9T", "3T"],
 			drainpunch: ["9M"],
 			echoedvoice: ["9M", "6M", "5M"],
 			eerieimpulse: ["9M"],
