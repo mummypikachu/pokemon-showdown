@@ -38651,7 +38651,6 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			swagger: ["9M", "6M", "5M", "4M"],
 			sweetscent: ["9L1", "9L1", "6L1", "5L1", "4L1"],
 			swift: ["9M", "4T"],
-			swordsdance: ["9M", "9M", "6M", "5M", "4M"],
 			synthesis: ["9L1", "9T", "6T", "5T", "4T"],
 			toxic: ["9L1", "9M", "6M", "5M", "4M"],
 			toxicspikes: ["9M", "9L1"],
