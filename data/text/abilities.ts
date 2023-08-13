@@ -1212,6 +1212,13 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 
 		start: "  Both Pok\u00E9mon will faint in three turns!",
 	},
+	phantomthief: {
+		name: "Phantom Thief",
+		desc: "The user swaps its held item with the target's held item. Fails if either the user or the target is holding a Mail or Z-Crystal, if neither is holding an item, if the user is trying to give or take a Mega Stone to or from the species that can Mega Evolve with it, or if the user is trying to give or take a Blue Orb, a Red Orb, a Griseous Orb, a Plate, a Drive, or a Memory to or from a Kyogre, a Groudon, a Giratina, an Arceus, a Genesect, or a Silvally, respectively.",
+		shortDesc: "User switches its held item with the target's.",
+		
+		activate: "  [POKEMON] switched items with its target!",
+	},
 	photosynthesis: {
 		name: "Photosynthesis",
 		desc: "If this User of this ability uses a charge move it automatically charged.",

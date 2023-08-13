@@ -3178,6 +3178,44 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 1,
 		num: 253,
 	},
+	phantomthief: {
+		onAfterMoveSecondarySelf(source, target, move) {
+			const yourItem = target.takeItem(source);
+			const myItem = source.takeItem();
+			if (target.item || source.item || (!yourItem && !myItem)) {
+				if (yourItem) target.item = yourItem.id;
+				if (myItem) source.item = myItem.id;
+				return false;
+			}
+			if (
+				(myItem && !this.singleEvent('TakeItem', myItem, source.itemState, target, source, move, myItem)) ||
+				(yourItem && !this.singleEvent('TakeItem', yourItem, target.itemState, source, target, move, yourItem))
+			) {
+				if (yourItem) target.item = yourItem.id;
+				if (myItem) source.item = myItem.id;
+				return false;
+			}
+			this.add('-activate', source, 'ability: Phantom Thief', '[of] ' + target);
+			if (myItem) {
+				target.setItem(myItem);
+				this.add('-item', target, myItem, '[from] ability: Phantom Thief');
+			} else {
+				this.add('-enditem', target, yourItem, '[silent]', '[from] ability: Phantom Thief');
+			}
+			if (yourItem) {
+				source.setItem(yourItem);
+				this.add('-item', source, yourItem, '[from] ability: Phantom Thief');
+			} else {
+				this.add('-enditem', source, myItem, '[silent]', '[from] ability: Phantom Thief');
+			}
+		},
+		isPermanent: true,
+		
+		
+		name: "Phantom Thief",
+		rating: 1,
+		num: 996,
+	},
     photosynthesis: {
         onChargeMove(pokemon, target, move) {
             this.debug('power herb - remove charge turn for ' + move.id);

@@ -2064,6 +2064,26 @@ export const Moves: {[moveid: string]: MoveData} = {
 		maxMove: {basePower: 130},
 		contestType: "Cool",
 	},
+	seedstorm: {
+		num: 916,
+		accuracy: 90,
+		basePower: 50,
+		category: "Physical",
+		name: "Seed Storm",
+		pp: 30,
+		priority: 0,
+		flags: {bullet: 1, protect: 1, mirror: 1},
+		multihit: [1, 3],
+		secondary: {
+			chance: 10,
+			volatileStatus: 'flinch',
+		},
+		target: "normal",
+		type: "Grass",
+		zMove: {basePower: 150},
+		maxMove: {basePower: 140},
+		contestType: "Cool",
+	},	
 	burningjealousy: {
 		num: 807,
 		accuracy: 100,
@@ -4456,13 +4476,13 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	dynamicpunch: {
 		num: 223,
-		accuracy: 70,
-		basePower: 125,
+		accuracy: 50,
+		basePower: 100,
 		category: "Physical",
 		name: "Dynamic Punch",
 		pp: 5,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, punch: 1 },
+		flags: {contact: 1, protect: 1, mirror: 1, punch: 1},
 		secondary: {
 			chance: 100,
 			volatileStatus: 'confusion',
@@ -4470,7 +4490,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Fighting",
 		contestType: "Cool",
-	},	
+	},
 	earthpower: {
 		num: 414,
 		accuracy: 100,
@@ -4614,9 +4634,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		condition: {
 			duration: 5,
 			durationCallback(source, effect) {
-				if (source?.hasAbility('Fluff Drive')) {
-					return 0; // Set duration to 0 if the user has Fluff Drive
-				}
 				if (source?.hasItem('terrainextender')) {
 					return 8;
 				}
@@ -4662,7 +4679,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Electric",
 		zMove: {boost: {spe: 1}},
 		contestType: "Clever",
-	},	
+	},
 	electrify: {
 		num: 582,
 		accuracy: true,
