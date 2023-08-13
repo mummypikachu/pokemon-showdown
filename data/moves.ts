@@ -6129,7 +6129,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		category: "Physical",
 		name: "Focus Punch",
 		pp: 20,
-		priority: 0,
+		priority: -3,
 		flags: {contact: 1, protect: 1, punch: 1},
 		priorityChargeCallback(pokemon) {
 			pokemon.addVolatile('focuspunch');
