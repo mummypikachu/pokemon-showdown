@@ -38584,6 +38584,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	roserade: {
 		learnset: {
 			absorb: ["9L1"],
+			acrobatics: ["9M"],
 			aromatherapy: ["9L1"],
 			attract: ["9M", "9M", "6M", "5M", "4M"],
 			bodyslam: ["9M"],
@@ -38619,6 +38620,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			megadrain: ["9L1", "9L1", "6L1", "5L1", "4L1"],
 			mudslap: ["4T"],
 			naturalgift: ["4M"],
+			nastyplot: ["9M"],
 			naturepower: ["9M", "6M"],
 			petalblizzard: ["9L1"],
 			petaldance: ["9L1"],
@@ -38638,6 +38640,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			seedstorm: ["9M"],
 			shadowball: ["9M", "9M", "6M", "5M", "4M"],
 			sleeptalk: ["9M", "9M", "6M", "5T", "4M"],
+			swordsdance: ["9M"],
 			sludgebomb: ["9M", "9M", "6M", "5M", "4M"],
 			snore: ["9M", "9T", "6T", "5T", "4T"],
 			solarbeam: ["9M", "9M", "6M", "5M", "4M"],
