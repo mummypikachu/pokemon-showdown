@@ -4477,7 +4477,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	dynamicpunch: {
 		num: 223,
 		accuracy: 50,
-		basePower: 100,
+		basePower: 190,
 		category: "Physical",
 		name: "Dynamic Punch",
 		pp: 5,
@@ -4634,6 +4634,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 		condition: {
 			duration: 5,
 			durationCallback(source, effect) {
+				if (source?.hasAbility('Fluff Drive')) {
+					return 0; // Set duration to 0 if the user has Fluff Drive
+				}
 				if (source?.hasItem('terrainextender')) {
 					return 8;
 				}
@@ -15328,23 +15331,24 @@ export const Moves: {[moveid: string]: MoveData} = {
 	rapidjab: {
 		num: 901,
 		accuracy: 100,
-		basePower: 90,
+		basePower: 15,
 		category: "Physical",
 		name: "Rapid Jab",
-		pp: 15,
-		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1},
-		ignoreEvasion: true,
-		secondary: {
-			chance: 10,
-			self: {
-				boosts: {
-					spe: 1,
-				},
-			},
+		pp: 5,
+		priority: 1,
+		flags: {contact: 1, protect: 1, mirror: 1, punch: 1},
+		onTry(source, target) {
+			const action = this.queue.willMove(target);
+			const move = action?.choice === 'move' ? action.move : null;
+			if (!move || (move.category === 'Status' && move.id !== 'mefirst') || target.volatiles['mustrecharge']) {
+				return false;
+			}
 		},
+		ignoreEvasion: true,
+		multihit: [2, 5],
+		secondary: null,
 		target: "normal",
-		type: "Normal",
+		type: "Fighting",
 		contestType: "Cool",
 	},
 	rapidspin: {
@@ -18288,14 +18292,20 @@ export const Moves: {[moveid: string]: MoveData} = {
 	spikecannon: {
 		num: 131,
 		accuracy: 100,
-		basePower: 20,
+		basePower: 15,
 		category: "Physical",
-	
+		self: {
+			onHit(source) {
+				for (const side of source.side.foeSidesWithConditions()) {
+					side.addSideCondition('spikes');
+				}
+			},
+		},
 		name: "Spike Cannon",
 		pp: 15,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
-		multihit: [2, 5],
+		multihit: [1, 2],
 		secondary: null,
 		target: "normal",
 		type: "Normal",

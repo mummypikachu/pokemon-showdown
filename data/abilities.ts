@@ -3568,6 +3568,26 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 4,
 		num: 227,
 	},
+	psychosis: {
+		onModifySpAPriority: 1,
+		onModifySpA(spa) {
+			return this.chainModify(1.5);
+		},
+		onModifyAtkPriority: 1,
+		onModifyAtk(atk) {
+			return this.chainModify(1.5);
+		},
+		onDisableMove(pokemon) {
+			for (const moveSlot of pokemon.moveSlots) {
+				if (this.dex.moves.get(moveSlot.move).category === 'Status') {
+					pokemon.disableMove(moveSlot.id);
+				}
+			}
+		},
+		name: "Psychosis",
+		rating: 3,
+		num: 2923,
+	},
 	punkrock: {
 		onBasePowerPriority: 7,
 		onBasePower(basePower, attacker, defender, move) {

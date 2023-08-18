@@ -63818,6 +63818,8 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			confide: ["7M", "6M"],
 			defog: ["9T"],
 			doubleedge: ["9L1", "9L1"],
+			eruption: ["9S2"],
+			earthpower: ["9S3"],
 			doubleteam: ["7M", "6M", "5M"],
 			dualwingbeat: ["9T"],
 			ember: ["9L1", "9L1", "9L1", "6L1", "5L1"],
@@ -63884,7 +63886,9 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 		},
 		eventData: [
 			{generation: 5, level: 35, moves: ["stringshot", "leechlife", "gust", "firespin"]},
-			{generation: 5, level: 77, gender: "M", nature: "Calm", ivs: {hp: 30, atk: 30, def: 30, spa: 30, spd: 30, spe: 30}, moves: ["bugbuzz", "overheat", "hyperbeam", "quiverdance"], pokeball: "cherishball"},
+			{generation: 5, level: 77, gender: "M", nature: "Calm", ivs: {hp: 30, atk: 30, def: 30, spa: 30, spd: 30, spe: 30}, moves: ["bugbuzz", "eruption", "hyperbeam", "quiverdance"], pokeball: "cherishball"},
+			{generation: 9, level: 77, gender: "F", nature: "Serious", ivs: {hp: 31, atk: 1, def: 31, spa: 31, spd: 31, spe: 31}, moves: ["bugbuzz", "fireblast", "earthpower", "quiverdance"], pokeball: "cherishball"},
+
 		],
 		encounters: [
 			{generation: 7, level: 41},

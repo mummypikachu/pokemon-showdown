@@ -3709,7 +3709,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "Uber",
 	},
 	zygarde: {
-		tier: "Uber",
+		tier: "OU",
 		natDexTier: "Uber",
 	},
 	zygarde10: {
