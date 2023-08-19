@@ -979,11 +979,11 @@ export const Conditions: {[k: string]: ConditionData} = {
 		onTypePriority: 1,
 		onType(types, pokemon) {
 			if (pokemon.transformed || pokemon.ability !== 'multitype' && this.gen >= 8) return types;
-			let type: string | undefined = 'Normal';
+			let type: string | undefined = 'Almighty';
 			if (pokemon.ability === 'multitype') {
 				type = pokemon.getItem().onPlate;
 				if (!type) {
-					type = 'Normal';
+					type = 'Almighty';
 				}
 			}
 			return [type];
@@ -994,11 +994,11 @@ export const Conditions: {[k: string]: ConditionData} = {
 		onTypePriority: 1,
 		onType(types, pokemon) {
 			if (pokemon.transformed || pokemon.ability !== 'rkssystem' && this.gen >= 8) return types;
-			let type: string | undefined = 'Normal';
+			let type: string | undefined = 'Almighty';
 			if (pokemon.ability === 'rkssystem') {
 				type = pokemon.getItem().onMemory;
 				if (!type) {
-					type = 'Normal';
+					type = 'Almighty';
 				}
 			}
 			return [type];
