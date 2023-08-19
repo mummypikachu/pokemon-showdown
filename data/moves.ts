@@ -28,6 +28,8 @@ wind: Activates the Wind Power and Wind Rider Abilities.
 
 */
 
+import { type } from "os";
+
 export const Moves: {[moveid: string]: MoveData} = {
 	"10000000voltthunderbolt": {
 		num: 719,
@@ -10101,9 +10103,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
 		onModifyType(move, pokemon) {
-			if (pokemon.ignoringItem()) return;
-			const arceusType = pokemon.getTypes().join(', ');
-			move.type = arceusType;
+			if (pokemon.types && pokemon.types[0]) {
+				move.type = pokemon.types[0];
+			}
 		},
 		secondary: null,
 		target: "normal",
