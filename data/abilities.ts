@@ -999,20 +999,23 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 89,
 	},
 	divinegrace: {
-			onModifyTypePriority: -1,
-			onModifyType(move, pokemon) {
-				// Your logic to determine the best super effective type here
-				return this.dex.getEffectiveness('Rock', move.type) > 0 ? 'Rock' : move.type;
-			},
-			onStart(pokemon) {
-				if (pokemon.item === 'legendplate') {
-					this.add('-ability', pokemon, 'Divine Grace (Legend Plate)');
+		onModifyTypePriority: -1,
+		onModifyType(move, pokemon) {
+			let bestType = move.type;
+			
+			// Loop through all types and find the most effective type against the target's types
+			for (const type of this.dex.types.names()) {
+				if (this.dex.getEffectiveness(type, move.type) > this.dex.getEffectiveness(bestType, move.type)) {
+					bestType = type;
 				}
-			},
-			name: "Divine Grace",
-			rating: 4,
-			num:3935,
+			}
+			
+			return bestType;
 		},
+		name: "Divine Grace",
+		rating: 4,
+		num: 3935,
+	},
 	disguise: {
 		onDamagePriority: 1,
 		onDamage(damage, target, source, effect) {
