@@ -388,7 +388,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "On switch-in, Arceus type changes to the most effective type for the situation. Requires Legend Plate to actually activate.",
 		shortDesc: "On switch-in, Arceus type changes to the most effective type for the situation. Needs the Legend Plate to work.",
 
-		activate: "  [POKEMON]'s type has shifted to the best for this situation",
+		start: "  [POKEMON]'s type has shifted to the best for this situation",
 	},
 	disguise: {
 		name: "Disguise",

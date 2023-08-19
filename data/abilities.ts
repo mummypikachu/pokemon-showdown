@@ -1004,10 +1004,13 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				let bestType = pokemon.types[0]; // Initialize with the current primary type
 				let bestEffectiveness = -Infinity;
 			
+				// Get a reference to the Dex object
+				const dex = this.dex;
+			
 				// Loop through all types and find the most effective type against the opponent's types
-				for (const type of this.dex.types.names()) {
+				for (const type of dex.types.names()) {
 					if (type === bestType) continue; // Skip the current type
-					const effectiveness = this.dex.getEffectiveness(type, pokemon);
+					const effectiveness = dex.getEffectiveness(type, pokemon);
 					if (effectiveness > bestEffectiveness) {
 						bestType = type;
 						bestEffectiveness = effectiveness;
