@@ -10102,10 +10102,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1},
 		onModifyType(move, pokemon) {
 			if (pokemon.ignoringItem()) return;
-			const item = pokemon.getItem();
-			if (item.id && item.onPlate && !item.zMoveType) {
-				move.type = item.onPlate;
-			}
+			const arceusType = pokemon.getTypes().join(', ');
+			move.type = arceusType;
 		},
 		secondary: null,
 		target: "normal",

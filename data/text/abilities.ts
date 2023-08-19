@@ -383,6 +383,13 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "This Pokemon's explosion-based attacks have their power multiplied by 1.5.",
 		shortDesc: "This Pokemon's explosion-based attacks have 1.5x power.",
 	},
+	divinegrace: {
+		name: "Divine Grace",
+		desc: "On switch-in, Arceus type changes to the most effective type for the situation. Requires Legend Plate to actually activate.",
+		shortDesc: "On switch-in, Arceus type changes to the most effective type for the situation. Needs the Legend Plate to work.",
+
+		activate: "  [POKEMON]'s type has shifted to the best for this situation",
+	},
 	disguise: {
 		name: "Disguise",
 		desc: "If this Pokemon is a Mimikyu, the first hit it takes in battle deals 0 neutral damage. Its disguise is then broken, it changes to Busted Form. Confusion damage also breaks the disguise.",
@@ -1373,6 +1380,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	psychicsurge: {
 		name: "Psychic Surge",
 		shortDesc: "On switch-in, this Pokemon summons Psychic Terrain.",
+	},
+	psychosis: {
+		name: "Psychosis",
+		shortDesc: "The user gains a 1.5x increase to its attacking stats but loses the ability to use Status moves.",
 	},
 	punkrock: {
 		name: "Punk Rock",

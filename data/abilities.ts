@@ -998,6 +998,21 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3,
 		num: 89,
 	},
+	divinegrace: {
+			onModifyTypePriority: -1,
+			onModifyType(move, pokemon) {
+				// Your logic to determine the best super effective type here
+				return this.dex.getEffectiveness('Rock', move.type) > 0 ? 'Rock' : move.type;
+			},
+			onStart(pokemon) {
+				if (pokemon.item === 'legendplate') {
+					this.add('-ability', pokemon, 'Divine Grace (Legend Plate)');
+				}
+			},
+			name: "Divine Grace",
+			rating: 4,
+			num:3935,
+		},
 	disguise: {
 		onDamagePriority: 1,
 		onDamage(damage, target, source, effect) {

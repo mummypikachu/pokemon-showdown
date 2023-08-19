@@ -161,6 +161,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 			desc: "Holder's Dark-type attacks have 1.1x power.",
 		},
 	},
+	blankplate: {
+		name: "Blank Plate",
+		desc: "Holder's Normal-type attacks have 1.2x power. Judgment is Normal type.",
+	},
 	blastoisinite: {
 		name: "Blastoisinite",
 		desc: "If held by a Blastoise, this item allows it to Mega Evolve in battle.",
@@ -965,6 +969,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 
 		heal: "  [POKEMON] restored a little HP using its Leftovers!",
 	},
+	legendplate: {
+		name: "Legend Plate",
+		desc: "Allows the user to use the ability Divine Grace.",
+	},
 	leppaberry: {
 		name: "Leppa Berry",
 		desc: "Restores 10 PP to the first of the holder's moves to reach 0 PP. Single use.",
@@ -1258,6 +1266,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 	normaliumz: {
 		name: "Normalium Z",
 		desc: "If holder has a Normal move, this item allows it to use a Normal Z-Move.",
+	},
+	normalmemory: {
+		name: "Normal Memory",
+		desc: "Holder's Multi-Attack is Normal type.",
 	},
 	occaberry: {
 		name: "Occa Berry",

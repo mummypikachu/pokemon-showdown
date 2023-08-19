@@ -8806,7 +8806,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Almighty"],
 		gender: "N",
 		baseStats: {hp: 135, atk: 135, def: 135, spa: 135, spd: 135, spe: 135},
-		abilities: {0: "Multitype"},
+		abilities: {0: "Multitype", H: "Divine Grace",},
 		heightm: 3.2,
 		weightkg: 320,
 		color: "White",
