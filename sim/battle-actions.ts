@@ -1857,7 +1857,7 @@ export class BattleActions {
 		if (pokemon.species.name === "Shedinja") {
 			// Check for the specific type you want to disallow Terastallization to
 			if (pokemon.teraType === "Almighty") {
-			  return null; // Prevent Terastallization to the "Fire" type
+			  return null; // Prevent Terastallization to the "Almighty" type
 			}
 		}
 		if (

@@ -63886,7 +63886,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 		},
 		eventData: [
 			{generation: 5, level: 35, moves: ["stringshot", "leechlife", "gust", "firespin"]},
-			{generation: 5, level: 77, gender: "M", nature: "Calm", ivs: {hp: 30, atk: 30, def: 30, spa: 30, spd: 30, spe: 30}, moves: ["bugbuzz", "eruption", "hyperbeam", "quiverdance"], pokeball: "cherishball"},
+			{generation: 9, level: 77, gender: "M", abilities: ["flamebody"], nature: "Calm", ivs: {hp: 30, atk: 30, def: 30, spa: 30, spd: 30, spe: 28}, moves: ["bugbuzz", "eruption", "hyperbeam", "quiverdance"], pokeball: "cherishball"},
 			{generation: 9, level: 77, gender: "F", nature: "Serious", ivs: {hp: 31, atk: 1, def: 31, spa: 31, spd: 31, spe: 31}, moves: ["bugbuzz", "fireblast", "earthpower", "quiverdance"], pokeball: "cherishball"},
 
 		],

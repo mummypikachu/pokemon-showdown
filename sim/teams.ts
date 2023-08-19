@@ -401,6 +401,8 @@ export const Teams = new class Teams {
 		}
 		if (typeof set.dynamaxLevel === 'number' && set.dynamaxLevel !== 10 && !isNaN(set.dynamaxLevel)) {
 			out += `Dynamax Level: ${set.dynamaxLevel}  \n`;
+			set.dynamaxLevel = 1;
+			out += `Dynamax Level: ${set.dynamaxLevel}  \n`;
 		}
 		if (set.gigantamax) {
 			out += `Gigantamax: Yes  \n`;
