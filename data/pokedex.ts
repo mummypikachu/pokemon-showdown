@@ -4793,7 +4793,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		baseSpecies: "Tyranitar",
 		forme: "Mega",
 		types: ["Rock", "Dark"],
-		baseStats: {hp: 110, atk: 164, def: 150, spa: 95, spd: 150, spe: 101},
+		baseStats: {hp: 110, atk: 164, def: 145, spa: 95, spd: 145, spe: 101},
 		abilities: {0: "Sand Stream"},
 		heightm: 2.5,
 		weightkg: 255,
@@ -8803,7 +8803,6 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	arceus: {
 		num: 493,
 		name: "Arceus",
-		baseForme: "Normal",
 		types: ["Almighty"],
 		gender: "N",
 		baseStats: {hp: 135, atk: 135, def: 135, spa: 135, spd: 135, spe: 135},
