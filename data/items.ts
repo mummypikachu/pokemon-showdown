@@ -564,6 +564,13 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 3113,
 		gen: 9,
 	},
+	legendplate: {
+		name: "Legend Plate",
+		spritenum: 105,
+		itemUser: ["Arceus"],
+		num: 2233,
+		gen: 9,
+	},
 	blastoisinite: {
 		name: "Blastoisinite",
 		spritenum: 583,
