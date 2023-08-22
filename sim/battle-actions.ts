@@ -1862,7 +1862,7 @@ export class BattleActions {
 		}
 		if (
 			pokemon.species.isMega || pokemon.species.isPrimal || pokemon.species.forme === "Ultra" ||
-			pokemon.getItem().zMove || pokemon.canMegaEvo || pokemon.side.canDynamaxNow() || this.dex.gen !== 9
+			pokemon.getItem().zMove || pokemon.canMegaEvo || this.dex.gen !== 9
 		) {
 			return null;
 		}

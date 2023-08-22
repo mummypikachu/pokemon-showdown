@@ -2645,6 +2645,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	arceusground: {
 	},
+	arceusnormal: {
+	},
 	arceusice: {
 	},
 	arceuspoison: {

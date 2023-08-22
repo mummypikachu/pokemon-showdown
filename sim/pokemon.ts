@@ -975,7 +975,7 @@ export class Pokemon {
 			if (!this.side.canDynamaxNow()) return;
 			if (
 				this.species.isMega || this.species.isPrimal || this.species.forme === "Ultra" ||
-				this.getItem().zMove || this.canMegaEvo || this.terastallized
+				this.getItem().zMove || this.canMegaEvo
 			) {
 				return;
 			}
@@ -1967,7 +1967,7 @@ export class Pokemon {
 	setType(newType: string | string[], enforce = false) {
 		if (!enforce) {
 			// First type of Arceus, Silvally cannot be normally changed
-			if ((this.battle.gen >= 5 && (this.species.num === 493 || this.species.num === 773)) ||
+			if ((this.battle.gen >= 5 && (this.species.num === 773)) ||
 				(this.battle.gen === 4 && this.hasAbility('multitype'))) {
 				return false;
 			}

@@ -137,7 +137,7 @@ export class Side {
 		this.faintedThisTurn = null;
 		this.totalFainted = 0;
 		this.zMoveUsed = false;
-		this.dynamaxUsed = this.battle.gen !== 8;
+		this.dynamaxUsed = this.battle.gen !== 9;
 
 		this.sideConditions = {};
 		this.slotConditions = [];
@@ -408,7 +408,7 @@ export class Side {
 	chooseMove(
 		moveText?: string | number,
 		targetLoc = 0,
-		event: 'mega' | 'zmove' | 'ultra' | 'dynamax' | 'terastallize' | '' = ''
+		event: 'mega' | 'zmove' | 'ultra' | 'terastallize' | 'dynamax' | '' = ''
 	) {
 		if (this.requestState !== 'move') {
 			return this.emitChoiceError(`Can't move: You need a ${this.requestState} response`);

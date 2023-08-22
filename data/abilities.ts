@@ -1001,35 +1001,41 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		divinegrace: {
 			onSwitchIn(pokemon) {
 				if (!pokemon.item || pokemon.item !== 'legendplate') return; // Check for the Graceful Orb item
-				let bestType = pokemon.types[0]; // Initialize with the current primary type
-				let bestEffectiveness = -Infinity;
-			
+		
 				// Get a reference to the Dex object
 				const dex = this.dex;
-			
+		
+				const opponent = pokemon.side.foe.active[0]; // Get the opponent's active Pokémon
+				if (!opponent) return; // No opponent active, nothing to do
+		
+				let bestType = pokemon.types[0]; // Initialize with the current primary type
+				let bestEffectiveness = -Infinity;
+		
 				// Loop through all types and find the most effective type against the opponent's types
 				for (const type of dex.types.names()) {
 					if (type === bestType) continue; // Skip the current type
-					const effectiveness = dex.getEffectiveness(type, pokemon);
+					if (type === 'Almighty' && pokemon.hasType('Almighty')) continue; // Skip type if opponent has the same type
+		
+					const effectiveness = this.dex.getEffectiveness(type, opponent);
 					if (effectiveness > bestEffectiveness) {
 						bestType = type;
 						bestEffectiveness = effectiveness;
 					}
 				}
-			
+		
 				// Change the Pokémon's type to the most effective type
 				if (bestType !== pokemon.types[0]) {
 					// Modify the Pokémon's type manually
 					pokemon.types = [bestType];
-			
+		
 					// Notify the type change in the battle log
 					this.add('-start', pokemon, 'typechange', bestType);
 				}
-			},			
+			},
 			name: "Divine Grace",
 			rating: 4,
 			num: 3935,
-		},
+		},		
 	disguise: {
 		onDamagePriority: 1,
 		onDamage(damage, target, source, effect) {
