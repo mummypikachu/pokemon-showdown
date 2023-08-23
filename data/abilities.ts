@@ -1323,6 +1323,22 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				return this.chainModify(1.5);
 			}
 		},
+		onModifySpePriority: 19,
+		onModifySpe(spe, pokemon) {
+			if (pokemon.status === 'brn') {
+				return this.chainModify(1.5);
+			}
+		},
+		onDamagePriority: 1,
+		onDamage(damage, target, source, effect) {
+		    if (target.hasAbility('Flare Boost')) {
+			if (effect.id === 'brn') {
+			  return 0;
+			}
+		  }
+		  // Continue with the regular damage calculation
+		  return damage;
+		},
 		name: "Flare Boost",
 		rating: 2,
 		num: 138,
@@ -5022,13 +5038,13 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	toxicboost: {
 		onBasePowerPriority: 19,
-  onBasePower(basePower, attacker, defender, move) {
-    if (
-      (attacker.status === 'psn' || attacker.status === 'tox') &&
-      move.category === 'Physical' &&
-      attacker.hasAbility('Toxic Boost') // Check for custom "Toxic Boost" ability
-    ) {
-      return this.chainModify(1.5); // Apply the base power boost
+ 		onBasePower(basePower, attacker, defender, move) {
+    		if (
+      		(attacker.status === 'psn' || attacker.status === 'tox') &&
+      		move.category === 'Physical' &&
+      		attacker.hasAbility('Toxic Boost') // Check for custom "Toxic Boost" ability
+    		) {
+      		return this.chainModify(1.5); // Apply the base power boost
     }
   },
   // Prevent the Pokémon from taking damage from poison

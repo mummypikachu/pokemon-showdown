@@ -9715,18 +9715,24 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 15,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
-		onHit() {
-			this.field.clearTerrain()
-			this.field.clearWeather();
+		onHit(target, source, move) {
+			if (this.field.pseudoWeather && this.field.pseudoWeather.trickroom) {
+				this.add('-fieldend', 'move: Trick Room');
+				this.field.removePseudoWeather('trickroom');
+			}
+		this.field.clearTerrain();
 		},
-		onAfterSubDamage() {
-			this.field.clearTerrain();
-			this.field.clearWeather();
+		onAfterSubDamage(target, source, move) {
+			if (this.field.pseudoWeather && this.field.pseudoWeather.trickroom) {
+				this.add('-fieldend', 'move: Trick Room');
+				this.field.removePseudoWeather('trickroom');
+			}
+		this.field.clearTerrain();
 		},
 		secondary: null,
 		target: "normal",
 		type: "Ice",
-	},
+	},	  
 	iciclecrash: {
 		num: 556,
 		accuracy: 90,
@@ -20082,6 +20088,48 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Normal",
 		zMove: {basePower: 160},
 		maxMove: {basePower: 130},
+	},
+	thedrillthatpiercedtheheavens: {
+		num: 919,
+		accuracy: true,
+		basePower: 145,
+		category: "Physical",
+		name: "The Drill That Pierced The Heavens",
+		pp: 1,
+		priority: 0,
+		flags: {},
+		isZ: "excadrilliumz",
+		onAfterHit(target, pokemon) {
+			if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
+				this.add('-end', pokemon, 'Leech Seed', '[from] move: Rapid Spin', '[of] ' + pokemon);
+			}
+			const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'trickroom'];
+			for (const condition of sideConditions) {
+				if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
+					this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Rapid Spin', '[of] ' + pokemon);
+				}
+			}
+			if (pokemon.hp && pokemon.volatiles['partiallytrapped']) {
+				pokemon.removeVolatile('partiallytrapped');
+			}
+		},
+		onAfterSubDamage(damage, target, pokemon) {
+			if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
+				this.add('-end', pokemon, 'Leech Seed', '[from] move: Rapid Spin', '[of] ' + pokemon);
+			}
+			const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'trickroom'];
+			for (const condition of sideConditions) {
+				if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
+					this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Rapid Spin', '[of] ' + pokemon);
+				}
+			}
+			if (pokemon.hp && pokemon.volatiles['partiallytrapped']) {
+				pokemon.removeVolatile('partiallytrapped');
+			}
+		},
+		secondary: null,
+		target: "normal",
+		type: "Steel",
 	},
 	theeternalcheckmate: {
 		num: 909,

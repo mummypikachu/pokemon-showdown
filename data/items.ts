@@ -1499,6 +1499,17 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 5,
 		isPokeball: true,
 	},
+	excadrilliumz: {
+		name: "Excadrillium Z",
+		spritenum: 687,
+		onTakeItem: false,
+		zMove: "The Drill That Pierced The Heavens",
+		zMoveFrom: "Rapid Spin",
+		itemUser: ["Excadrill"],
+		num: 1943,
+		gen: 9,
+	
+	},
 	dubiousdisc: {
 		name: "Dubious Disc",
 		spritenum: 113,

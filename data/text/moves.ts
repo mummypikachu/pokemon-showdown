@@ -3211,8 +3211,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	icespinner: {
 		name: "Ice Spinner",
-		desc: "Ends the effects of Electric Terrain, Grassy Terrain, Misty Terrain, Psychic Terrain, and Weather.",
-		shortDesc: "Ends the effects of terrain. & weather.",
+		desc: "Ends the effects of Electric Terrain, Grassy Terrain, Misty Terrain, Psychic Terrain, and Trick Room.",
+		shortDesc: "Ends the effects of terrain. & trickroom.",
 	},
 	iciclecrash: {
 		name: "Icicle Crash",
@@ -6765,10 +6765,15 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Power doubles if the user is grounded and a terrain is active, and this move's type changes to match. Electric type during Electric Terrain, Grass type during Grassy Terrain, Fairy type during Misty Terrain, and Psychic type during Psychic Terrain.",
 		shortDesc: "User on terrain: power doubles, type varies.",
 	},
+	thedrillthatpiercedtheheavens: {
+		name: "The Drill That Pierced The Heavens",
+		desc: "A rapid spinning drill charged by the Z-Crystal. All hazards are removed off the field.",
+		shortDesc: "A hard hitting move that removes entry hazards."
+	},
 	theeternalcheckmate: {
 		name: "The Eternal Checkmate",
 		desc: "A Super Cleave attack charged by the Z-Crystal. Their speed doubles after the moves usage.",
-		shortDesc: "A Hard Hitting move that doubles speed."
+		shortDesc: "A hard hitting move that doubles speed."
 	},
 	thief: {
 		name: "Thief",
