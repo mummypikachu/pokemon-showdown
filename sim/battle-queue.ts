@@ -179,8 +179,8 @@ export class BattleQueue {
 				runPrimal: 102,
 				switch: 103,
 				megaEvo: 104,
-				runDynamax: 106,
-				terastallize: 105,
+				runDynamax: 104,
+				terastallize: 104,
 				priorityChargeMove: 107,
 
 				shift: 200,
@@ -285,11 +285,16 @@ export class BattleQueue {
 	addChoice(choices: ActionChoice | ActionChoice[]) {
 		if (!Array.isArray(choices)) choices = [choices];
 		for (const choice of choices) {
-			const resolvedChoices = this.resolveAction(choice);
-			this.list.push(...resolvedChoices);
-			for (const resolvedChoice of resolvedChoices) {
-				if (resolvedChoice && resolvedChoice.choice === 'move' && resolvedChoice.move.id !== 'recharge') {
-					resolvedChoice.pokemon.side.lastSelectedMove = resolvedChoice.move.id;
+			if (choice.choice === 'megaEvo' || choice.choice === 'runDynamax' || choice.choice === 'runZMove' || choice.choice === 'terastallize') {
+				// Check if the action is for mega evolution, dynamax, Z-Move, or terastallize
+				this.insertChoice(choice); // Insert the action choice directly into the queue
+			} else {
+				const resolvedChoices = this.resolveAction(choice);
+				this.list.push(...resolvedChoices);
+				for (const resolvedChoice of resolvedChoices) {
+					if (resolvedChoice && resolvedChoice.choice === 'move' && resolvedChoice.move.id !== 'recharge') {
+						resolvedChoice.pokemon.side.lastSelectedMove = resolvedChoice.move.id;
+					}
 				}
 			}
 		}
