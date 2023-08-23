@@ -179,8 +179,8 @@ export class BattleQueue {
 				runPrimal: 102,
 				switch: 103,
 				megaEvo: 104,
-				runDynamax: 104,
-				terastallize: 104,
+				runDynamax: 106,
+				terastallize: 105,
 				priorityChargeMove: 107,
 
 				shift: 200,
