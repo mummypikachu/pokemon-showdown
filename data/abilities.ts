@@ -1668,22 +1668,27 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onDamagePriority: -30,
 		onDamage(damage, target, source, effect) {
 		if (damage >= target.hp && effect && effect.effectType === 'Move') {
-			// Bring HP down to 1 if damage exceeds current HP
-		return target.hp - 1;
+			// Reduce HP to 1 instead of fainting
+			this.add('-activate', target, 'ability: Ghostly Wail');
+			return 1; // Set HP to 1
 		}
 		if (target.hp <= target.maxhp / 2) {
 			// Apply other effects when HP is at or below 50%
-		if (target.hasType('Ghost')) return false;
-		if (!target.addType('Ghost')) return false;
-		this.add('-start', target, 'typeadd', 'Ghost', '[from] ability: Ghostly Wail');
+			if (target.hasType('Ghost')) return false;
 			
-		if (target.side.active.length === 2 && target.position === 1) {
-			  // Curse Glitch
-		const action = this.queue.willMove(target);
-		if (action && action.move.id === 'curse') {
-		action.targetLoc = -1;
-		}
-		}
+			// Debug line for adding Ghost type
+			this.debug('Adding Ghost type to ' + target.name);
+			
+			if (!target.addType('Ghost')) return false;
+			this.add('-start', target, 'typeadd', 'Ghost', '[from] ability: Ghostly Wail');
+			
+			if (target.side.active.length === 2 && target.position === 1) {
+				// Curse Glitch
+				const action = this.queue.willMove(target);
+				if (action && action.move.id === 'curse') {
+					action.targetLoc = -1;
+				}
+			}
 		}
 		},
 		onModifyAtkPriority: 5,
