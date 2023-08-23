@@ -936,6 +936,10 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Clear Smog",
 		shortDesc: "Resets all of the target's stat stages to 0.",
 	},
+	cleansingchime: {
+		name: "Cleansing Chime",
+		shortDesc: "Heals the user for 1/2 of their HP.",
+	},
 	closecombat: {
 		name: "Close Combat",
 		desc: "Lowers the user's Defense and Special Defense by 1 stage.",
@@ -6041,6 +6045,11 @@ export const MovesText: {[k: string]: MoveText} = {
 	soulstealing7starstrike: {
 		name: "Soul-Stealing 7-Star Strike",
 		shortDesc: "No additional effect.",
+	},
+	soullessbellow: {
+		name: "Soulless Bellow",
+		desc: "No additional effect.",
+		shortDesc: "No additional effect. Hits adjacent Pokemon.",
 	},
 	spacialrend: {
 		name: "Spacial Rend",

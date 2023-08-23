@@ -496,8 +496,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	flareboost: {
 		name: "Flare Boost",
-		desc: "While this Pokemon is burned, the power of its special attacks is multiplied by 1.5.",
-		shortDesc: "While this Pokemon is burned, its special attacks have 1.5x power.",
+		desc: "While this Pokemon is burned, the power of its special attacks is multiplied by 1.5. Also the speed of the pokemon is multiplied by 1.5x. It also doesn't take damage from burn.",
+		shortDesc: "While this Pokemon is burned, its special attacks have 1.5x power and speed are multiplied by 1.5x. Does not take burn damage",
 	},
 	flashfire: {
 		name: "Flash Fire",
@@ -597,6 +597,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Gluttony",
 		desc: "When this Pokemon is holding a Berry that usually activates with 1/4 or less of its maximum HP, it is eaten at 1/2 or less of its maximum HP instead.",
 		shortDesc: "This Pokemon eats Berries at 1/2 max HP or less instead of their usual 1/4 max HP.",
+	},
+	ghostlywail: {
+		name: "Ghostly Wail",
+		shortDesc: "The user's Ghost-Type moves increase by 1.5x also when the user reaches 50% they gain the Ghost-Type as another typing to their own.",
 	},
 	goodasgold: {
 		name: "Good as Gold",
@@ -2012,7 +2016,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	toxicboost: {
 		name: "Toxic Boost",
 		desc: "While this Pokemon is poisoned, the power of its physical attacks is multiplied by 1.5.",
-		shortDesc: "While this Pokemon is poisoned, its physical attacks have 1.5x power.",
+		shortDesc: "While this Pokemon is poisoned, its physical attacks have 1.5x power. Also does not take damage from poison.",
 	},
 	toxicdebris: {
 		name: "Toxic Debris",

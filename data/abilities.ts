@@ -1636,7 +1636,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onModifyTypePriority: -1,
 		onModifyType(move, pokemon) {
 			const noModifyType = [
-				'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball',
+				'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball',
 			];
 			if (move.type === 'Normal' && !noModifyType.includes(move.id) &&
 				!(move.isZ && move.category !== 'Status') && !(move.name === 'Tera Blast' && pokemon.terastallized)) {
@@ -1664,6 +1664,45 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 
 	},
+	ghostlywail: {
+		onDamagePriority: -30,
+		onDamage(damage, target, source, effect) {
+		if (damage >= target.hp && effect && effect.effectType === 'Move') {
+			// Bring HP down to 1 if damage exceeds current HP
+		return target.hp - 1;
+		}
+		if (target.hp <= target.maxhp / 2) {
+			// Apply other effects when HP is at or below 50%
+		if (target.hasType('Ghost')) return false;
+		if (!target.addType('Ghost')) return false;
+		this.add('-start', target, 'typeadd', 'Ghost', '[from] ability: Ghostly Wail');
+			
+		if (target.side.active.length === 2 && target.position === 1) {
+			  // Curse Glitch
+		const action = this.queue.willMove(target);
+		if (action && action.move.id === 'curse') {
+		action.targetLoc = -1;
+		}
+		}
+		}
+		},
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Ghost') {
+				this.debug('Ghostly Wail boost');
+				return this.chainModify(1.5);
+			}
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Ghost') {
+				this.debug('Ghostly Wail boost');
+				return this.chainModify(1.5);
+			}
+		},
+		name: "Ghostly Wail",
+		rating: 3,
+	},	  
 	goodasgold: {
 		onTryHit(target, source, move) {
 			if (move.category === 'Status' && target !== source) {

@@ -1259,6 +1259,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Poison",
 		contestType: "Tough",
 	},
+
 	bellydrum: {
 		num: 187,
 		accuracy: true,
@@ -2591,6 +2592,22 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Poison",
 		contestType: "Beautiful",
+	},
+	cleansingchime: {
+		num: 105,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Cleansing Chime",
+		pp: 5,
+		priority: 0,
+		flags: {snatch: 1, heal: 1},
+		heal: [1, 2],
+		secondary: null,
+		target: "self",
+		type: "Psychic",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Clever",
 	},
 	closecombat: {
 		num: 370,
@@ -18136,6 +18153,18 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Ghost",
 		contestType: "Cool",
+	},
+	soullessbellow: {
+		accuracy: 100,
+		basePower: 80,
+		category: "Special",
+		name: "Soulless Bellow",
+		pp: 10,
+		priority: 0,
+		flags: {sound: 1, protect: 1},
+		secondary: null,
+		target: "foeSide",
+		type: "Ghost"
 	},
 	spacialrend: {
 		num: 460,
