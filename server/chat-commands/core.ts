@@ -989,12 +989,12 @@ export const commands: Chat.ChatCommands = {
 	uploadreplay: 'savereplay',
 	async savereplay(target, room, user, connection) {
 		await this.parse('/ssr ' + target);
-		//if (!room?.battle) {
-		//	return this.errorReply(this.tr`You can only save replays for battles.`);
+		// if (!room?.battle) {
+		// 	return this.errorReply(this.tr`You can only save replays for battles.`);
 		// }
 
-		//const options = (target === 'forpunishment' || target === 'silent') ? target : undefined;
-		//await room.uploadReplay(user, connection, options);
+		// const options = (target === 'forpunishment' || target === 'silent') ? target : undefined;
+		// await room.uploadReplay(user, connection, options);
 	},
 	savereplayhelp: [`/savereplay - Saves the replay for the current battle.`],
 
@@ -1007,10 +1007,12 @@ export const commands: Chat.ChatCommands = {
 		if (room.hideReplay) return this.errorReply(this.tr`The replay for this battle is already set to hidden.`);
 		room.hideReplay = true;
 		// If a replay has already been saved, /savereplay again to update the uploaded replay's hidden status
-		if (room.battle.replaySaved) this.parse('/savereplay');
+		// if (room.battle.replaySaved) this.parse('/savereplay');
+		if (room.battle.replaySaved) this.parse('/ssr');
 		this.addModAction(room.tr`${user.name} hid the replay of this battle.`);
 	},
 	hidereplayhelp: [`/hidereplay - Hides the replay of the current battle. Requires: ${Users.PLAYER_SYMBOL} &`],
+
 
 	addplayer: 'invitebattle',
 	invitebattle(target, room, user, connection) {
