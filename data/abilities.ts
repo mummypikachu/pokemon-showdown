@@ -1668,7 +1668,8 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onDamagePriority: -30,
 		onDamage(damage, target, source, effect) {
 			console.log('onDamage function called for ' + target.name);
-			if (target.hp <= target.maxhp / 2 && target.ability === 'ghostlywail') {
+			if (target.hp > target.maxhp / 2 && target.ability === 'ghostlywail') {
+				console.log('took more than 50% ' + target.name);
 				// Apply other effects when HP is at or below 50% and the target has the ability
 				// Debug line for adding Ghost type
 				console.log(target.name + ' is gaining the Ghost typing.');

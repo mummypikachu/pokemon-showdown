@@ -880,6 +880,10 @@ export class RoomBattle extends RoomGames.RoomGame<RoomBattlePlayer> {
 		const p1id = toID(p1name);
 		const p2id = toID(p2name);
 		Chat.runHandlers('onBattleEnd', this, winnerid, [p1id, p2id, this.p3?.id, this.p4?.id].filter(Boolean));
+
+// Always log the battle results
+		void this.logBattle(p1score);
+
 		if (this.room.rated) {
 			this.room.rated = 0;
 
@@ -896,13 +900,6 @@ export class RoomBattle extends RoomGames.RoomGame<RoomBattlePlayer> {
 			const [score, p1rating, p2rating] = await Ladders(this.ladder).updateRating(p1name, p2name, p1score, this.room);
 			void this.logBattle(score, p1rating, p2rating);
 			Chat.runHandlers('onBattleRanked', this, winnerid, [p1rating, p2rating], [p1id, p2id]);
-		} else if (Config.logchallenges) {
-			if (winnerid === p1id) {
-				p1score = 1;
-			} else if (winnerid === p2id) {
-				p1score = 0;
-			}
-			void this.logBattle(p1score);
 		} else {
 			this.logData = null;
 		}
