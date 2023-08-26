@@ -997,6 +997,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 		natDexTier: "RU",
 	},
+	quartzeon: {
+		tier: "UU",
+		doublesTier: "DUU",
+	},
 	porygon: {
 		tier: "LC",
 		natDexTier: "LC",

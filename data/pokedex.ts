@@ -342,7 +342,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		baseSpecies: "Beedrill",
 		forme: "Mega",
 		types: ["Bug", "Poison"],
-		baseStats: {hp: 95, atk: 170, def: 60, spa: 15, spd: 80, spe: 175},
+		baseStats: {hp: 95, atk: 170, def: 70, spa: 15, spd: 90, spe: 155},
 		abilities: {0: "Adaptability"},
 		heightm: 1.4,
 		weightkg: 40.5,
