@@ -7390,7 +7390,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			}
 		},
 		boosts: {
-			atk: 2,
+			atk: 1,
 		},
 		num: 0,
 		gen: 2,
