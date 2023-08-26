@@ -18137,7 +18137,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Undiscovered"],
 	},
 	quartzeon: {
-		num: 470,
+		num: 1011,
 		name: "Quartzeon",
 		types: ["Rock"],
 		genderRatio: {M: 0.875, F: 0.125},
