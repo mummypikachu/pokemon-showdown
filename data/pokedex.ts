@@ -18141,7 +18141,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Quartzeon",
 		types: ["Rock"],
 		genderRatio: {M: 0.875, F: 0.125},
-		baseStats: {hp: 80, atk: 115, def: 125, spa: 30, spd: 96, spe: 80},
+		baseStats: {hp: 80, atk: 115, def: 125, spa: 30, spd: 95, spe: 80},
 		abilities: {0: "Sand Rush", H: "Rocky Payload"},
 		heightm: 1,
 		weightkg: 25.5,

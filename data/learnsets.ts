@@ -89380,7 +89380,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			earthquake: ["9M"],
 			endure: ["9M"],
 			flail: ["9M"],
-			frustraition: ["9M"],
+			frustration: ["9M"],
 			hiddenpower: ["9M"],
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"],
