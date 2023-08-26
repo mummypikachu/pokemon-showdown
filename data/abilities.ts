@@ -4716,6 +4716,25 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3.5,
 		num: 173,
 	},
+	strongspirit: {
+		onStart(pokemon) {
+			let activated = false;
+			for (const target of pokemon.adjacentFoes()) {
+				if (!activated) {
+					this.add('-ability', pokemon, 'Strong Spirit', 'boost');
+					activated = true;
+				}
+				if (target.volatiles['substitute']) {
+					this.add('-immune', target);
+				} else {
+					this.boost({spa: -1}, target, pokemon, null, true);
+				}
+			}
+		},
+		name: "Strong Spirit",
+		rating: 3.5,
+		num: 2200,
+	},
 	sturdy: {
 		onTryHit(pokemon, target, move) {
 			if (move.ohko) {

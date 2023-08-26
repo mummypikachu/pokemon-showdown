@@ -514,6 +514,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Eternia Orb",
 		desc: "If held by a Eternatus, this item triggers its Eternalizing in battle.",
 	},
+	excadrilliumz: {
+		name: "Excadrillium Z",
+		desc: "If held by a Excadrill with Rapid Spin, it can use The Drill That Pierced The Heavens.",
+	},
 	eviolite: {
 		name: "Eviolite",
 		desc: "If holder's species can evolve, its Defense and Sp. Def are 1.5x.",
