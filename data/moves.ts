@@ -4026,6 +4026,46 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Steel",
 		contestType: "Beautiful",
 	},
+	dreamcrusher: {
+		num: 917,
+		accuracy: 100,
+		basePower: 65,
+		basePowerCallback(pokemon, target, move) {
+			if (target.status === 'slp' || target.hasAbility('comatose')) {
+				this.debug('BP doubled on sleeping target');
+				return move.basePower * 2;
+			}
+			return move.basePower;
+		},
+		category: "Physical",
+		name: "Dream Crusher",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1},
+		onHit(target) {
+			if (target.status === 'slp') target.cureStatus();
+		},
+		secondary: null,
+		target: "normal",
+		type: "Dark",
+		contestType: "Beautiful",
+	},
+	dorminrush: {
+		num: 918,
+		accuracy: 100,
+		basePower: 50,
+		category: "Physical",
+		name: "Dormin Rush",
+		pp: 5,
+		priority: 0,
+		flags: {contact: 1, protect: 1},
+		secondary: {
+			chance: 50,
+			status: 'slp',
+		},
+		target: "normal",
+		type: "Normal",
+	},
 	doubleedge: {
 		num: 38,
 		accuracy: 100,

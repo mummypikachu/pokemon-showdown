@@ -1600,6 +1600,17 @@ export const MovesText: {[k: string]: MoveText} = {
 			desc: "The target is unaffected by this move unless it is asleep. The user recovers 1/2 the HP lost by the target, rounded down, but not less than 1 HP. If this move breaks the target's substitute, the user does not recover any HP.",
 		},
 	},
+	dorminrush: {
+		name: "Dormin Rush",
+		desc: "Has a 50% chance to cause the target to fall asleep. Taken from Persona/SMT.",
+		shortDesc: "50% chance to cause the target to fall asleep. Taken from Persona/SMT.",
+	},
+	dreamcrusher: {
+		name: "Dream Crusher",
+		desc: "This move deals double damage to sleeping targets.",
+		shortDesc: "Double damage to sleeping targets.",
+	},
+
 	drillpeck: {
 		name: "Drill Peck",
 		shortDesc: "No additional effect.",
