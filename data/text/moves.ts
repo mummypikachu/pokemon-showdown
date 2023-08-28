@@ -5067,8 +5067,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	rapidjab: {
 		name: "Rapid Jab",
-		desc: "The user attacks the opponent with a flurry of quick punches. The move has a low chance of raising Speed.",
-		shortDesc: "10% chance to raise Speed.",
+		desc: "The user attacks the opponent with a flurry of quick punches. All hits of the move always results in a critical hit.",
+		shortDesc: "All hits always results in a critical hit.",
 	},
 	rapidspin: {
 		name: "Rapid Spin",
@@ -5095,8 +5095,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	razorshell: {
 		name: "Razor Shell",
-		desc: "Has a 50% chance to lower the target's Defense by 1 stage.",
-		shortDesc: "50% chance to lower the target's Defense by 1.",
+		desc: "The move can hit up to 3 times. Has a 20% chance to lower the target's Defense by 1 stage.Has a higher chance for a critical hit.",
+		shortDesc: "Hits 1-3 times in one turn. 20% chance to lower the target's Defense by 1. High crit ratio.",
 	},
 	razorwind: {
 		name: "Razor Wind",

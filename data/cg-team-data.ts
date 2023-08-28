@@ -13,6 +13,9 @@ export const ABILITY_MOVE_BONUSES: {[abilityID: string]: {[moveID: string]: numb
 export const ABILITY_MOVE_TYPE_BONUSES: {[abilityID: string]: {[typeID: string]: number}} = {
 	darkaura: {Dark: 1.33},
 	fairyaura: {Fairy: 1.33},
+	hivemind: {Bug: 1.33},
+	toxicaura: {Poison: 1.33},
+	fightingaura: {Fighting: 1.33},
 
 	// -ate moves
 	pixilate: {Normal: 1.5 * 1.2},

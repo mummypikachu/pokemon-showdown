@@ -15381,9 +15381,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 		basePower: 15,
 		category: "Physical",
 		name: "Rapid Jab",
-		pp: 5,
-		priority: 1,
-		flags: {contact: 1, protect: 1, mirror: 1, punch: 1},
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, punch: 1, mirror: 1},
+		willCrit: true,
 		onTry(source, target) {
 			const action = this.queue.willMove(target);
 			const move = action?.choice === 'move' ? action.move : null;
@@ -15392,7 +15393,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			}
 		},
 		ignoreEvasion: true,
-		multihit: [2, 5],
+		multihit: 3,
 		secondary: null,
 		target: "normal",
 		type: "Fighting",
@@ -15470,9 +15471,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Razor Shell",
 		pp: 10,
 		priority: 0,
+		critRatio: 2,
 		flags: {contact: 1, protect: 1, mirror: 1, slicing: 1},
+		multihit: [1, 3],
 		secondary: {
-			chance: 50,
+			chance: 20,
 			boosts: {
 				def: -1,
 			},
@@ -21133,7 +21136,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			},
 		},
 		target: "normal",
-		type: "Fire",
+		type: "Rock",
 		contestType: "Tough",
 	},	
 	uturn: {
