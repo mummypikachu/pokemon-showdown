@@ -15466,7 +15466,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	razorshell: {
 		num: 534,
 		accuracy: 95,
-		basePower: 75,
+		basePower: 50,
 		category: "Physical",
 		name: "Razor Shell",
 		pp: 10,
