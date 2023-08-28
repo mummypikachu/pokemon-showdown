@@ -8,6 +8,7 @@
 /server/chat-plugins/private
 /server/chat-plugins/private.js
 /server/chat-plugins/*-private.js
+replays/
 npm-debug.log
 .eslintcache
 .eslintcache-no-types
