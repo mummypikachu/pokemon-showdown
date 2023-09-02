@@ -678,7 +678,7 @@ export const Formats: FormatList = [
             `&bullet; <a href="https://www.smogon.com/forums/threads/3685861/">RBY OU Viability Rankings</a>,`
         ],
 
-        mod: 'gen1',
+        mod: 'gen1nat',
         ruleset: ['Standard'],
         banlist: ['Uber'],
     },

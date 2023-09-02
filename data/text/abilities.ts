@@ -893,6 +893,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 			shortDesc: "This Pokemon's type changes to match the type of the move it is about to use.",
 		},
 	},
+	lithiumrise: {
+		name: "Lithium Rise",
+		shortDesc: "The user activates Magnet Rise for 3 turns.",
+	},
 	lightmetal: {
 		name: "Light Metal",
 		desc: "This Pokemon's weight is halved, rounded down to a tenth of a kilogram. This effect is calculated after the effect of Autotomize, and before the effect of Float Stone. A Pokemon's weight will not drop below 0.1 kg.",

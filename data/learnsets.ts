@@ -71779,6 +71779,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			terablast: ["9M"],
 			trailblaze: ["9M"],
 			triplearrows: ["9L0"],
+			tropkick: ["9L40"],
 			uturn: ["9M", "9L1"],
 		},
 	},

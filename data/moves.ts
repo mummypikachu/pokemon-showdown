@@ -11270,6 +11270,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		condition: {
 			duration: 5,
+			durationCallback(source, effect) {
+				if (source?.hasAbility('Lithium Rise')) {
+					return 3; // Set duration to 3 if the user has Lithium Rise
+				}
+			return 5;
+			},
 			onStart(target) {
 				this.add('-start', target, 'Magnet Rise');
 			},

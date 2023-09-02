@@ -1485,6 +1485,9 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			if (sourceEffect && sourceEffect.id === 'electricterrain' && source && source.hasAbility('fluffdrive')) {
 				return false;
 			}
+			if (sourceEffect && ['grassyterrain', 'mistyterrain', 'psychicterrain'].includes(sourceEffect.id) && source && source.hasAbility('fluffdrive')) {
+				return false; // Prevent terrain change for 'grassyterrain' and 'mistyterrain' if the source has 'fluffdrive'.
+			}
 		},
 		onModifyDamage(this: Battle, damage: number, source: Pokemon, target: Pokemon, move: ActiveMove) {
 			if (this.field.isTerrain('electricterrain') && move.type === 'Ground') {
@@ -2418,6 +2421,16 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onSwitchIn() {},
 		rating: 4,
 		num: 236,
+	},
+	lithiumrise: {
+		onStart(pokemon) {
+			const move = this.dex.moves.get('magnetrise');
+			this.add('-ability', pokemon, 'Lithium Rise');
+			this.actions.useMove(move, pokemon);
+		},
+		name: "Lithium Rise",
+		rating: 3,
+		num:3222,
 	},
 	lightmetal: {
 		onModifyWeight(weighthg) {
