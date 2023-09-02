@@ -637,4 +637,14 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		types: ["Normal"],
 		baseStats: {hp: 100, atk: 100, def: 100, spa: 40, spd: 40, spe: 50},
 	},
+	kyorge: {
+		inherit: true,
+		num: 1,
+		baseStats: {hp: 100, atk: 100, def: 90, spa: 140, spd: 140, spe: 90},
+	},
+	groudon: {
+		inherit: true,
+		num: 1,
+		baseStats: {hp: 100, atk: 140, def: 140, spa: 90, spd: 90, spe: 90},
+	},
 };

@@ -12760,8 +12760,5 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			whirlpool: ["2M"],
 			zapcannon: ["2M"],
 		},
-		encounters: [
-			{generation: 1, level: 6},
-		],
 	},
 };
