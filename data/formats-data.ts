@@ -4492,7 +4492,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 	},
 	centiskorch: {
-		tier: "OU",
+		tier: "UU",
 		natDexTier: "RU",
 	},
 	centiskorchmega: {

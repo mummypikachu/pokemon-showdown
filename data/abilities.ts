@@ -2363,16 +2363,44 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	ledianisunbreakable: {
 		onModifyTypePriority: -1,
-		onModifyType(move, pokemon) {
+		onModifyType(move, pokemon, target) {
 			const noModifyType = [
 				'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball',
 			];
-			if (move.type === 'Fighting' && !noModifyType.includes(move.id) &&
-				!(move.isZ && move.category !== 'Status') && !(move.name === 'Tera Blast' && pokemon.terastallized)) {
-				move.type = 'Flying' && 'Fighting'
-				move.typeChangerBoosted = this.effect;
+			if (
+				move.type === 'Fighting' && !noModifyType.includes(move.id) &&
+				!(move.isZ && move.category !== 'Status') && !(move.name === 'Tera Blast' && pokemon.terastallized)
+			) {
+				// Determine the target's weaknesses against 'Fighting' type
+				const targetTypes = target.getTypes();
+				const typeChart = this.dex.data.TypeChart;
+				for (const targetType of targetTypes) {
+					const effectiveness = typeChart[targetType].damageTaken['Fighting'];
+					if (effectiveness > 1) {
+						// If 'Fighting' is super effective against any of the target's types, change the move's type to 'Fighting'
+						move.type = 'Fighting';
+						move.typeChangerBoosted = this.effect;
+						return;
+					}
+				}
+			} else if (
+				move.type === 'Fighting' && !noModifyType.includes(move.id) &&
+				!(move.isZ && move.category !== 'Status') && !(move.name === 'Tera Blast' && pokemon.terastallized)
+			) {
+				// Determine the target's weaknesses against 'Flying' type
+				const targetTypes = target.getTypes();
+				const typeChart = this.dex.data.TypeChart;
+				for (const targetType of targetTypes) {
+					const effectiveness = typeChart[targetType].damageTaken['Flying'];
+					if (effectiveness > 1) {
+						// If 'Flying' is super effective against any of the target's types, change the move's type to 'Flying'
+						move.type = 'Flying';
+						move.typeChangerBoosted = this.effect;
+						return;
+					}
+				}
 			}
-		},
+		},	
 		onBasePowerPriority: 23,
 		onBasePower(basePower, pokemon, target, move) {
 			if (move.typeChangerBoosted === this.effect) return this.chainModify([4915, 4096]);

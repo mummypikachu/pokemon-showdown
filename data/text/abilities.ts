@@ -854,7 +854,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	ledianisunbreakable: {
 		name: "Ledian Is Unbreakable",
-		shortDesc: "Fighting type moves on Ledian will act like Flying Press. (Both Fighting and Flying)",
+		shortDesc: "Fighting type moves on Ledian will switch types to best fit the battle ala Flying Press. (Both Fighting and Flying)",
 	},
 	leafguard: {
 		name: "Leaf Guard",
