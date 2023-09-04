@@ -10056,7 +10056,6 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			facade: ["9M", "9V", "9M", "6M", "5M", "4M", "3M"],
 			fireblast: ["9M", "9V", "9M", "7V", "6M", "5M", "4M", "3M"],
 			firepunch: ["9M", "9V", "9T", "7V", "6T", "5T", "4T", "3T"],
-			fissure: ["7V"],
 			flamethrower: ["9M", "9V", "9M", "6M", "5M", "4M", "3M"],
 			fling: ["9M", "9M", "6M", "5M", "4M"],
 			focusblast: ["9M", "9M", "6M", "5M", "4M"],

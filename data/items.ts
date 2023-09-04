@@ -3431,6 +3431,19 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 3,
 	
 	},
+	machampite: {
+		name: "Machampite",
+		spritenum: 586,
+		megaStone: "Machamp-Mega",
+		megaEvolves: "Machamp",
+		itemUser: ["Machamp"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 1822,
+		gen: 9,
+	},
 	magmarizer: {
 		name: "Magmarizer",
 		spritenum: 272,
@@ -3971,6 +3984,17 @@ export const Items: {[itemid: string]: ItemData} = {
 		onEat: false,
 		num: 166,
 		gen: 3,
+	
+	},
+	necroziumz: {
+		name: "Necrozium Z",
+		spritenum: 687,
+		onTakeItem: false,
+		zMove: "Null: Absence of Light",
+		zMoveFrom: "Photon Geyser",
+		itemUser: ["Necrozma"],
+		num: 1923,
+		gen: 9,
 	
 	},
 	nestball: {

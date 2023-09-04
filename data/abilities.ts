@@ -1226,31 +1226,40 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 2.5,
 		num: 280,
 	},
-		emergencyexit: {
-			onBeforeTurn(pokemon) {
-				pokemon.abilityState.originalHP = pokemon.hp;
-			},
-			onStart(pokemon) {
-				pokemon.abilityState.originalHP = pokemon.hp;
-			},
-			onResidualOrder: 28,
-			onResidualSubOrder: 2,
-			onResidual(pokemon) {
-				if (pokemon.hp <= pokemon.maxhp / 2 && pokemon.abilityState.originalHP > pokemon.maxhp / 2) {
-					if (!this.canSwitch(pokemon.side) || pokemon.forceSwitchFlag || pokemon.switchFlag) return;
-					for (const side of this.sides) {
-						for (const active of side.active) {
-							active.switchFlag = false;
-						}
-					}
-					pokemon.switchFlag = true;
-					this.add('-activate', pokemon, 'ability: Emergency Exit');
-				}
-			},
-			name: "Emergency Exit",
-			rating: 1,
-			num: 194,
+	emergencyexit: {
+		onBeforeTurn(pokemon) {
+		  pokemon.abilityState.originalHP = pokemon.hp;
 		},
+		onStart(pokemon) {
+		  pokemon.abilityState.originalHP = pokemon.hp;
+		},
+		onResidualOrder: 28,
+		onResidualSubOrder: 2,
+		onResidual(pokemon) {
+		  if (pokemon.hp <= pokemon.maxhp / 2 && pokemon.abilityState.originalHP > pokemon.maxhp / 2) {
+			if (!this.canSwitch(pokemon.side) || pokemon.forceSwitchFlag || pokemon.switchFlag) return;
+			for (const side of this.sides) {
+			  for (const active of side.active) {
+				active.switchFlag = false;
+			  }
+			}
+			pokemon.switchFlag = true;
+			this.add('-activate', pokemon, 'ability: Emergency Exit');
+		  }
+		},
+		onSwitchIn(pokemon) {
+			// Check if the switch-in is due to Emergency Exit activation
+			if (pokemon.switchFlag === true && pokemon.hasAbility('emergencyexit')) {
+			  // Apply a +2 Attack boost to the switching-in Pokémon
+			  this.boost({atk: 2}, pokemon);
+			  this.add('-message', `${pokemon.name} is buffed and ready to attack!`);
+			}
+		  },		  
+		name: "Emergency Exit",
+		rating: 1,
+		num: 194,
+	  },
+	  
 	fairyaura: {
 		onStart(pokemon) {
 			if (this.suppressingAbility(pokemon)) return;
@@ -2362,53 +2371,33 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 
 	},
 	ledianisunbreakable: {
-		onModifyTypePriority: -1,
-		onModifyType(move, pokemon, target) {
-			const noModifyType = [
-				'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball',
-			];
-			if (
-				move.type === 'Fighting' && !noModifyType.includes(move.id) &&
-				!(move.isZ && move.category !== 'Status') && !(move.name === 'Tera Blast' && pokemon.terastallized)
-			) {
-				// Determine the target's weaknesses against 'Fighting' type
-				const targetTypes = target.getTypes();
-				const typeChart = this.dex.data.TypeChart;
-				for (const targetType of targetTypes) {
-					const effectiveness = typeChart[targetType].damageTaken['Fighting'];
-					if (effectiveness > 1) {
-						// If 'Fighting' is super effective against any of the target's types, change the move's type to 'Fighting'
-						move.type = 'Fighting';
-						move.typeChangerBoosted = this.effect;
-						return;
-					}
-				}
-			} else if (
-				move.type === 'Fighting' && !noModifyType.includes(move.id) &&
-				!(move.isZ && move.category !== 'Status') && !(move.name === 'Tera Blast' && pokemon.terastallized)
-			) {
-				// Determine the target's weaknesses against 'Flying' type
-				const targetTypes = target.getTypes();
-				const typeChart = this.dex.data.TypeChart;
-				for (const targetType of targetTypes) {
-					const effectiveness = typeChart[targetType].damageTaken['Flying'];
-					if (effectiveness > 1) {
-						// If 'Flying' is super effective against any of the target's types, change the move's type to 'Flying'
-						move.type = 'Flying';
-						move.typeChangerBoosted = this.effect;
-						return;
-					}
-				}
+		onAnyModifyBoost(boosts, pokemon) {
+			const unawareUser = this.effectState.target;
+			if (unawareUser === pokemon) return;
+			if (unawareUser === this.activePokemon && pokemon === this.activeTarget) {
+				// Ignore defensive boosts
+				boosts['def'] = 0;
+				boosts['spd'] = 0;
+				boosts['evasion'] = 0;
 			}
-		},	
+			if (pokemon === this.activePokemon && unawareUser === this.activeTarget) {
+				// Do not ignore offensive boosts
+			}
+		},		
 		onBasePowerPriority: 23,
 		onBasePower(basePower, pokemon, target, move) {
-			if (move.typeChangerBoosted === this.effect) return this.chainModify([4915, 4096]);
+    		if (move.typeChangerBoosted === this.effect) {
+        	// Check if the move is Bug or Fighting type
+        	if (['Flying'].includes(move.type)) {
+            	// Boost the base power for Bug and Fighting type moves
+            	return this.chainModify([4915, 4096]);
+        		}
+    		}
 		},
 		name: "Ledian Is Unbreakable",
 		rating: 4,
 		num: 994,
-	},
+	},	
 	leafguard: {
 		onSetStatus(status, target, source, effect) {
 			if (['sunnyday', 'desolateland'].includes(target.effectiveWeather())) {
@@ -2458,7 +2447,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Lithium Rise",
 		rating: 3,
-		num:3222,
+		num: 3222,
 	},
 	lightmetal: {
 		onModifyWeight(weighthg) {

@@ -13291,6 +13291,55 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Poison",
 	},
+	nullabsenceoflight: {
+		num: 1903,
+		accuracy: true,
+		basePower: 120,
+		category: "Special",
+		name: "Null: Absence of Light",
+		pp: 1,
+		priority: 0,
+		flags: {},
+		onModifyMove(move, pokemon) {
+			// Clear all field conditions, including hazards
+			move.onHitField = function (target, source, move) {
+				this.field.clearWeather();
+				this.field.clearTerrain();
+				for (const side of this.sides) {
+					for (const active of side.active) {
+						if (!active || active.fainted) continue;
+						active.clearBoosts();
+						active.removeVolatile('substitute');
+						active.removeVolatile('protect');
+						active.removeVolatile('banefulbunker');
+						active.removeVolatile('kingsshield');
+						active.removeVolatile('spikyshield');
+						active.removeVolatile('craftyshield');
+					}
+				}
+				// Remove entry hazards
+			};
+			// Check if the user's Attack is greater than Special Attack and change category
+			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) {
+				move.category = 'Physical';
+			}
+		},
+		onHit(target, source, move) {
+			let success = false;
+			if (!target.volatiles['substitute'] || move.infiltrates) success = !!this.boost({evasion: -1});
+			const removeTarget = [
+				'reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist', 'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'glacierstream',
+			];
+			const removeAll = [
+				'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'trickroom', 'safegaurd', 'glacierstream',
+			];
+		},
+		isZ: "necroziumz",
+		secondary: null,
+		target: "normal",
+		type: "Psychic",
+		contestType: "Cool",
+	},	
 	nuzzle: {
 		num: 609,
 		accuracy: 100,
@@ -14550,16 +14599,13 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	progenitorbeam: {
 		num: 902,
-		accuracy: 100,
-		basePower: 25,
+		accuracy: true,
+		basePower: 85,
 		name: "Progenitor Beam",
 		category: "Special",
 		pp: 10,
-		priority: 0,
+		priority: 2,
 		flags: {protect: 1, mirror: 1},
-		onEffectiveness(typeMod, target, type, move) {
-			return 2; // Set typeMod to 1 (normal effectiveness) regardless of type immunities.
-		},
 		secondary: null,
 		target: "normal",
 		type: "Almighty",
@@ -20236,7 +20282,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	theeternalcheckmate: {
 		num: 909,
 		accuracy: true,
-		basePower: 185,
+		basePower: 125,
 		category: "Physical",
 		name: "The Eternal Checkmate",
 		pp: 1,
@@ -20247,7 +20293,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			chance: 100,
 			self: {
 				boosts:{
-					spe: 2,
+					spe: 1,
 				},
 			},
 		},

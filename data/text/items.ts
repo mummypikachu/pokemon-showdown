@@ -1077,6 +1077,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Macho Brace",
 		desc: "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
 	},
+	machampite: {
+		name: "Machampite",
+		desc: "If held by a Machamp, this item allows it to Mega Evolve in battle.",
+	},
 	magmarizer: {
 		name: "Magmarizer",
 		desc: "Evolves Magmar into Magmortar when traded.",
@@ -1240,6 +1244,13 @@ export const ItemsText: {[k: string]: ItemText} = {
 	nanabberry: {
 		name: "Nanab Berry",
 		desc: "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+	},
+	necroziumz: {
+		name: "Necrozium Z",
+		desc: "If held by a Necrozium with Photon Geyser, it can use Null: The Absensce of Light.",
+
+		transform: "  Bright light is about to burst out of [POKEMON]!",
+		activate: "[POKEMON] regained its true power through Ultra Burst!",
 	},
 	nestball: {
 		name: "Nest Ball",

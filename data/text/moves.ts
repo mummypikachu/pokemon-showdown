@@ -4419,6 +4419,11 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Has a 30% chance to poison the target.",
 		shortDesc: "30% chance to poison the target.",
 	},
+	nullabsenceoflight: {
+		name: "Null: Absence of Light",
+		desc: "A shot of Null-Energy that removes all conditions off the field.",
+		shortDesc: "A hard hitting move that removes all conditions."
+	},
 	nuzzle: {
 		name: "Nuzzle",
 		desc: "Has a 100% chance to paralyze the target.",
@@ -4812,8 +4817,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	progenitorbeam: {
 		name: "Progenitor Beam",
-		desc: "This move will always hit the opponent super-effectivly.",
-		shortDesc: "Will always hit the opponent super-effectivly.",
+		desc: "This move will always hit the opponent.",
+		shortDesc: "Will always hit the opponent.",
 	},
 	protect: {
 		name: "Protect",

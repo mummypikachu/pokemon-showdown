@@ -462,8 +462,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	emergencyexit: {
 		name: "Emergency Exit",
-		desc: "At the end of the turn, if this Pokemon has less than 1/2 of its maximum HP, it switches out to a chosen ally.",
-		shortDesc: "If this Pokemon is below 1/2 HP at the end of the turn, it switches out.",
+		desc: "At the end of the turn, if this Pokemon has less than 1/2 of its maximum HP, it switches out to a chosen ally. When it switches back it gains a +2 Attack when switching back.",
+		shortDesc: "If this Pokemon is below 1/2 HP at the end of the turn, it switches out. When it comes back it gets a +2 attack.",
 	},
 	fairyaura: {
 		name: "Fairy Aura",
@@ -854,7 +854,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	ledianisunbreakable: {
 		name: "Ledian Is Unbreakable",
-		shortDesc: "Fighting type moves on Ledian will switch types to best fit the battle ala Flying Press. (Both Fighting and Flying)",
+		shortDesc: "Ledian now ignores defensive stats along with boosting flying type moves by 1.5x",
 	},
 	leafguard: {
 		name: "Leaf Guard",

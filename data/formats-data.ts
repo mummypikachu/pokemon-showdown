@@ -473,9 +473,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "RU",
 		natDexTier: "RU",
 	},
-	machampgmax: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+	machampmega: {
+		tier: "OU",
 	},
 	bellsprout: {
 		tier: "LC",
