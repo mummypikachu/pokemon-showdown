@@ -1626,7 +1626,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 260,
 		color: "Gray",
 		eggGroups: ["Human-Like"],
-		requiredItem: "Machamite",
+		requiredItem: "Machampite",
 	},
 	bellsprout: {
 		num: 69,
