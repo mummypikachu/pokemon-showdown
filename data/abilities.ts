@@ -1679,17 +1679,21 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	ghostlywail: {
 		onDamagePriority: -30,
 		onDamage(damage, target, source, effect) {
-			console.log('onDamage function called for ' + target.name);
-			if (target.hp > target.maxhp / 2 && target.ability === 'ghostlywail') {
-				console.log('took more than 50% ' + target.name);
-				// Apply other effects when HP is at or below 50% and the target has the ability
-				// Debug line for adding Ghost type
-				console.log(target.name + ' is gaining the Ghost typing.');
-	
-					target.addType('Ghost'); // Add Ghost type if not already present
-					this.add('-start', target, 'typeadd', 'Ghost', '[from] ability: Ghostly Wail');			}
+    // Check if the user is terastallized
+    	if (target.terastallized) return;
 
-		},		
+    	console.log('onDamage function called for ' + target.name);
+    	if (target.hp > target.maxhp / 2 && target.ability === 'ghostlywail') {
+        console.log('took more than 50% ' + target.name);
+        // Apply other effects when HP is at or below 50% and the target has the ability
+        // Debug line for adding Ghost type
+        console.log(target.name + ' is gaining the Ghost typing.');
+
+        target.addType('Ghost'); // Add Ghost type if not already present
+        this.add('-start', target, 'typeadd', 'Ghost', '[from] ability: Ghostly Wail');
+    }
+},
+
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, attacker, defender, move) {
 			if (move.type === 'Ghost') {

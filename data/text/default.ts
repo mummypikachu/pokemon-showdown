@@ -32,11 +32,11 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		mega: "  [POKEMON]'s [ITEM] is reacting to the Key Stone!",
 		megaNoItem: "  [POKEMON] is reacting to [TRAINER]'s Key Stone!",
 		megaGen6: "  [POKEMON]'s [ITEM] is reacting to [TRAINER]'s Mega Bracelet!",
-		transformMega: "[POKEMON] has Mega Evolved into Mega [SPECIES]!",
-		primal: "[POKEMON]'s Primal Reversion! It reverted to its primal state!",
-		zPower: "  [POKEMON] surrounded itself with its Z-Power!",
+		transformMega: "[POKEMON] has Mega Evolved into Mega [SPECIES]! It's Mega morphin Time!",
+		primal: "[POKEMON]'s Primal Reversion! It reverted to its primal state! oooh very scary. -Mario 1996.",
+		zPower: "  [POKEMON] surrounded itself with its Z-Power! Aww Yeah! Its ZOVER!",
 		zBroken: "  [POKEMON] couldn't fully protect itself and got hurt!",
-		terastallize: "  [POKEMON] has Terastallized into the [TYPE]-type!", // filler
+		terastallize: "  [POKEMON] has Terastallized into the [TYPE]-type! Get a load of this guy!", // filler
 
 		// in case the different default messages didn't make it obvious, the difference
 		// is that the `cant` message REPLACES "Pokemon used Move!", while the `fail`

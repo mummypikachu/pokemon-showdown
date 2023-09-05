@@ -367,26 +367,36 @@ export class BattleQueue {
 			choice.pokemon.updateSpeed();
 		}
 		const actions = this.resolveAction(choice, midTurn);
-
-		let firstIndex = null;
-		let lastIndex = null;
-		for (const [i, curAction] of this.list.entries()) {
-			const compared = this.battle.comparePriority(actions[0], curAction);
-			if (compared <= 0 && firstIndex === null) {
-				firstIndex = i;
-			}
-			if (compared < 0) {
-				lastIndex = i;
-				break;
-			}
-		}
-
-		if (firstIndex === null) {
-			this.list.push(...actions);
+	
+		// Determine the order for different types of actions
+		if (choice.choice === 'terastallize') {
+			// Insert Terastallize actions first
+			this.list.unshift(...actions);
+		} else if (choice.choice === 'runDynamax') {
+			// Insert Dynamax actions after Terastallize actions
+			this.list.splice(1, 0, ...actions); // Adjust the index as needed
 		} else {
-			if (lastIndex === null) lastIndex = this.list.length;
-			const index = firstIndex === lastIndex ? firstIndex : this.battle.random(firstIndex, lastIndex + 1);
-			this.list.splice(index, 0, ...actions);
+			// Insert other actions as usual (based on priority and speed)
+			let firstIndex = null;
+			let lastIndex = null;
+			for (const [i, curAction] of this.list.entries()) {
+				const compared = this.battle.comparePriority(actions[0], curAction);
+				if (compared <= 0 && firstIndex === null) {
+					firstIndex = i;
+				}
+				if (compared < 0) {
+					lastIndex = i;
+					break;
+				}
+			}
+	
+			if (firstIndex === null) {
+				this.list.push(...actions);
+			} else {
+				if (lastIndex === null) lastIndex = this.list.length;
+				const index = firstIndex === lastIndex ? firstIndex : this.battle.random(firstIndex, lastIndex + 1);
+				this.list.splice(index, 0, ...actions);
+			}
 		}
 	}
 
@@ -404,10 +414,21 @@ export class BattleQueue {
 	}
 
 	sort() {
-		// this.log.push('SORT ' + this.debugQueue());
-		this.battle.speedSort(this.list);
+		this.list.sort((a, b) => {
+			// Custom sorting logic here
+			if (a.choice === 'terastallize' && b.choice === 'runDynamax') {
+				return -1; // Terastallize comes before Dynamax
+			} else if (a.choice === 'runDynamax' && b.choice === 'terastallize') {
+				return 1; // Dynamax comes after Terastallize
+			} else {
+				// Use the default sorting logic for other actions
+				return this.battle.comparePriority(a, b);
+			}
+		});
+	
 		return this;
 	}
+	
 }
 
 export default BattleQueue;
