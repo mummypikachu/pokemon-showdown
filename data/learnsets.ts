@@ -47155,7 +47155,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			hiddenpower: ["9M", "9L20", "6M", "6L20", "5L20", "4L20"],
 			protect: ["9M", "9L1", "6M", "6L1", "5L1", "5D", "4L1"],
 			snore: ["9T", "6T", "5T", "5D", "4T"],
-			stringshot: ["4T"],
+			stickyweb: ["9M"],
 			tackle: ["9L10", "6L10", "5L10", "4L10"],
 		},
 	},

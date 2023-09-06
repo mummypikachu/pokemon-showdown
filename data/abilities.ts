@@ -2806,18 +2806,16 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 141,
 	},
 	motordrive: {
-		onTryHit(target, source, move) {
-			if (target !== source && move.type === 'Electric') {
-				if (!this.boost({spe: 1})) {
-					this.add('-immune', target, '[from] ability: Motor Drive');
+		onDamagingHit(damage, target, source, move) {
+			if (this.checkMoveMakesContact(move, source, target)) {
+				if (this.randomChance(3, 10)) {
+					source.trySetStatus('par', target);
 				}
-				return null;
 			}
 		},
-		isBreakable: true,
 		name: "Motor Drive",
 		rating: 3,
-		num: 78,
+		num: 5743,
 	},
 	moxie: {
 		onSourceAfterFaint(length, target, source, effect) {

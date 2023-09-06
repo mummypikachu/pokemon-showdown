@@ -1067,8 +1067,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	motordrive: {
 		name: "Motor Drive",
-		desc: "This Pokemon is immune to Electric-type moves and raises its Speed by 1 stage when hit by an Electric-type move.",
-		shortDesc: "This Pokemon's Speed is raised 1 stage if hit by an Electric move; Electric immunity.",
+		shortDesc: "30% chance a Pokemon making contact with this Pokemon will be paralyzed.",
 	},
 	moxie: {
 		name: "Moxie",
