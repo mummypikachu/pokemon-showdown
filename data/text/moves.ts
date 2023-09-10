@@ -968,7 +968,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	cometpunch: {
 		name: "Comet Punch",
 		desc: "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
-		shortDesc: "Hits 2-5 times in one turn.",
+		shortDesc: "Hits 2-5 times in one turn. If used by Ledian it becomes a Bug Move",
 		gen4: {
 			desc: "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times. If the target has a Focus Sash and had full HP when this move started, it will not be knocked out regardless of the number of hits.",
 		},
@@ -2152,6 +2152,10 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Floral Healing",
 		desc: "The target restores 1/2 of its maximum HP, rounded half up. If the terrain is Grassy Terrain, the target instead restores 2/3 of its maximum HP, rounded half down.",
 		shortDesc: "Heals the target by 50% of its max HP.",
+	},
+	floralzone: {
+		name: "Floral Zone",
+		shortDesc: "For 3 turns Grass, Bug and Poison type moves do 2x",
 	},
 	flowershield: {
 		name: "Flower Shield",
@@ -6062,6 +6066,10 @@ export const MovesText: {[k: string]: MoveText} = {
 		gen1: {
 			desc: "Deals 20 HP of damage to the target. This move ignores type immunity.",
 		},
+	},
+	soultransfer: {
+		name: "Soul Transfer",
+		shortDesc: "Swaps HP between opponents.",
 	},
 	soulstealing7starstrike: {
 		name: "Soul-Stealing 7-Star Strike",

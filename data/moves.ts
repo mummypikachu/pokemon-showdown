@@ -2707,6 +2707,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 		num: 4,
 		accuracy: 85,
 		basePower: 18,
+		basePowerCallback(pokemon, target, move) {
+			if (pokemon.species.name === 'Ledian') {
+				return move.basePower + 7;
+			}
+			return move.basePower;
+		},
 		category: "Physical",
 	
 		name: "Comet Punch",
@@ -2717,6 +2723,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Normal",
+		onModifyType(move, pokemon, target) {
+			if (pokemon.species.name === 'Ledian') {
+				return move.type = 'Bug';
+			}
+			return move.type;
+		},
 		maxMove: {basePower: 100},
 		contestType: "Tough",
 	},
@@ -6029,6 +6041,49 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Fairy",
 		zMove: {effect: 'clearnegativeboost'},
 		contestType: "Beautiful",
+	},
+	floralzone: {
+		num: 2340,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+	
+		name: "Floral Zone",
+		pp: 15,
+		priority: 0,
+		flags: {nonsky: 1},
+		pseudoWeather: 'floralzone',
+		condition: {
+			duration: 3,
+			onFieldStart(field, source) {
+				this.add('-fieldstart', 'move: Floral Zone', '[of] ' + source);
+			},
+			onBasePowerPriority: 1,
+			onBasePower(basePower, attacker, defender, move) {
+				if (move.type === 'Bug') {
+					this.debug('floral zone boost');
+					return this.chainModify([8192, 4096]);
+				}
+				else if (move.type === 'Poison') {
+					this.debug('floral zone boost');
+					return this.chainModify([8192, 4096]);
+				}
+				else if (move.type === 'Grass') {
+					this.debug('floral zone boost');
+					return this.chainModify([8192, 4096]);
+				}
+			},
+			onFieldResidualOrder: 27,
+			onFieldResidualSubOrder: 4,
+			onFieldEnd() {
+				this.add('-fieldend', 'move: Floral Zone');
+			},
+		},
+		secondary: null,
+		target: "all",
+		type: "Ground",
+		zMove: {boost: {spd: 1}},
+		contestType: "Cute",
 	},
 	flowershield: {
 		num: 579,
@@ -18257,6 +18312,36 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Normal",
 		contestType: "Cool",
 	},
+	soultransfer: {
+		accuracy: 100,
+		basePower: 0, // This move swaps HP, so no base power.
+		category: "Status",
+		pp: 2,
+		noPPBoosts: true,
+		priority: 0,
+		name: "Soul Transfer",
+		shortDesc: "User swaps HP with the target.",
+		flags: { snatch: 1 },
+		onTryMove(pokemon, target) {
+			if (pokemon.hp === 1 || target.hp === 1) {
+				this.add('-fail', pokemon);
+				return null;
+			}
+		},
+		onHit(target, source) {
+			if (source.hp && target.hp) {
+				const sourceHP = source.hp;
+				const targetHP = target.hp;
+				source.sethp(targetHP);
+				target.sethp(sourceHP);
+				this.add('-heal', source, '|[from] move: Soul Transfer', '[silent]');
+				this.add('-heal', target, '|[from] move: Soul Transfer', '[silent]');
+			}
+		},
+		secondary: null,
+		target: "normal",
+		type: "Dark",
+	},	
 	soulstealing7starstrike: {
 		num: 699,
 		accuracy: true,
