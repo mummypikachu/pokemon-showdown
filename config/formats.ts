@@ -51,6 +51,19 @@ export const Formats: FormatList = [
 		banlist: ['Uber', 'AG', 'Moody', 'Sand Veil', 'Snow Cloak', 'King\'s Rock', 'Baton Pass', 'Shedinja + Air Balloon'],
 	},
 	{
+		name: "[Gen 9] Multi Battle AG",
+
+		mod: 'gen9',
+		gameType: 'multi',
+		searchShow: false,
+		tournamentShow: false,
+		rated: false,
+		ruleset: [
+			'Picked Team Size = 3', 'Max Team Size = 6',
+			'Standard', '+CAP'	
+		],
+	},
+	{
 		name: "[Gen 9] Unrated Random Battle",
 
 		mod: 'gen9',
