@@ -16002,7 +16002,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	risingvoltage: {
 		num: 804,
 		accuracy: 100,
-		basePower: 70,
+		basePower: 55,
 		basePowerCallback(source, target, move) {
 			if (this.field.isTerrain('electricterrain') && target.isGrounded()) {
 				if (!source.isAlly(target)) this.hint(`${move.name}'s BP doubled on grounded target.`);

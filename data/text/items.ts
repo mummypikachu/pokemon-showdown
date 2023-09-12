@@ -92,7 +92,7 @@ export const ItemsText: {[k: string]: ItemText} = {
 	},
 	assaultvest: {
 		name: "Assault Vest",
-		desc: "Holder's Sp. Def is 1.5x, but it can only select damaging moves.",
+		desc: "Holder's Sp. Def is 1.3x, but it can only select damaging moves.",
 	},
 	audinite: {
 		name: "Audinite",
@@ -999,9 +999,9 @@ export const ItemsText: {[k: string]: ItemText} = {
 	},
 	lightball: {
 		name: "Light Ball",
-		desc: "If held by a Pikachu, its Attack and Sp. Atk are doubled.",
+		desc: "If held by a Pikachu, its Attack and Sp. Atk are multiplied 1.3x.",
 		gen4: {
-			desc: "If held by a Pikachu, its attacks have their power doubled.",
+			desc: "If held by a Pikachu, its attacks are multiplied 1.3x.",
 		},
 		gen3: {
 			desc: "If held by a Pikachu, its Special Attack is doubled.",
@@ -1814,7 +1814,7 @@ export const ItemsText: {[k: string]: ItemText} = {
 	},
 	strikervest: {
 		name: "Striker Vest",
-		desc: "Holder's Defense is 1.5x, but it can only select damaging moves.",
+		desc: "Holder's Defense is 1.3x, but it can only select damaging moves.",
 	},
 	sunstone: {
 		name: "Sun Stone",

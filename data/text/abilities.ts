@@ -2186,9 +2186,9 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "This Pokemon is immune to Fire-type moves and raises its Defense by 2 stages when hit by a Fire-type move.",
 		shortDesc: "This Pokemon's Defense is raised 2 stages if hit by a Fire move; Fire immunity.",
 	},
-	whitesmoke: {
+	pureheart: {
 		name: "Pure Heart",
-		shortDesc: "Prevents other Pokemon from lowering this Pokemon's stat stages.",
+		shortDesc: "Prevents other Pokemon from lowering this Pokemon's stat stages. If a stat gets dropped +1 SpA.",
 	},
 	wimpout: {
 		name: "Wimp Out",

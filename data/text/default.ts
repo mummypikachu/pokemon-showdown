@@ -32,7 +32,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		mega: "  [POKEMON]'s [ITEM] is reacting to the Key Stone!",
 		megaNoItem: "  [POKEMON] is reacting to [TRAINER]'s Key Stone!",
 		megaGen6: "  [POKEMON]'s [ITEM] is reacting to [TRAINER]'s Mega Bracelet!",
-		transformMega: "[POKEMON] has Mega Evolved into Mega [SPECIES]! It's Mega morphin Time!",
+		transformMega: "[POKEMON] has Mega Evolved into Mega [SPECIES]! It's Mega-Morphin Time!",
 		primal: "[POKEMON]'s Primal Reversion! It reverted to its primal state! oooh very scary. -Mario 1996.",
 		zPower: "  [POKEMON] surrounded itself with its Z-Power! Aww Yeah! Its ZOVER!",
 		zBroken: "  [POKEMON] couldn't fully protect itself and got hurt!",
@@ -112,7 +112,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		superEffectiveSpread: "  It's super effective on [POKEMON]!",
 		resisted: "  It's not very effective...",
 		resistedSpread: "  It's not very effective on [POKEMON].",
-		crit: "  A lucky crit!",
+		crit: "  A lucky crit! (did it mattered?)",
 		critSpread: "  A critical hit on [POKEMON]!",
 		immune: "  Skill issue. It doesn't affect [POKEMON]...",
 		immuneNoPokemon: "  It had no effect!", // old gens

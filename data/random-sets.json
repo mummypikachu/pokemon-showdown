@@ -69,7 +69,7 @@
         "sets": [
             {
                 "role": "Setup Sweeper",
-                "movepool": ["Shell Smash", "Draco Pulse", "Water Pulse", "Flash Cannon", "Aura Sphere", "Dark Pulse", "Water Spout", "Hydro Cannon"],
+                "movepool": ["Shell Smash", "Aura Sphere", "Water Pulse", "Flash Cannon", "Aura Sphere", "Dark Pulse", "Water Spout", "Hydro Cannon"],
                 "teraTypes": ["Dragon", "Steel", "Water"]
             }
         ]
