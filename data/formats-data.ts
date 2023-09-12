@@ -238,7 +238,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 	},
 	sandslash: {
-		tier: "OU",
+		tier: "UU",
 		natDexTier: "RU",
 	},
 	sandslashalola: {
@@ -641,7 +641,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	gengarmega: {
-		tier: "OU",
+		tier: "Uber",
 		natDexTier: "AG",
 	},
 	gengargmax: {
@@ -2165,19 +2165,19 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	latias: {
-		tier: "Uber",
+		tier: "OU",
 		natDexTier: "RU",
 	},
 	latiasmega: {
-		tier: "Uber",
+		tier: "OU",
 		natDexTier: "RU",
 	},
 	latios: {
-		tier: "Uber",
+		tier: "OU",
 		natDexTier: "RUBL",
 	},
 	latiosmega: {
-		tier: "Uber",
+		tier: "OU",
 		natDexTier: "RUBL",
 	},
 	kyogre: {
@@ -2211,7 +2211,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "AG",
 	},
 	jirachi: {
-		tier: "Uber",
+		tier: "OU",
 		doublesTier: "DOU",
 		natDexTier: "AG",
 	},
@@ -4626,7 +4626,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "Uber",
 	},
 	arctovish: {
-		tier: "OU",
+		tier: "UU",
 		natDexTier: "RU",
 	},
 	duraludon: {
@@ -5135,7 +5135,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "NFE",
 	},
 	tinkaton: {
-		tier: "UU",
+		tier: "OU",
 		doublesTier: "DUU",
 		natDexTier: "RU",
 	},

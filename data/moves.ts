@@ -6081,7 +6081,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		secondary: null,
 		target: "all",
-		type: "Ground",
+		type: "Grass",
 		zMove: {boost: {spd: 1}},
 		contestType: "Cute",
 	},

@@ -1390,7 +1390,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	psychosis: {
 		name: "Psychosis",
-		shortDesc: "The user gains a 1.5x increase to its attacking stats but loses the ability to use Status moves.",
+		shortDesc: "The user gains a 1.2x increase to its attacking stats but loses the ability to use Status moves.",
 	},
 	punkrock: {
 		name: "Punk Rock",
@@ -1684,12 +1684,12 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	slowstart: {
 		name: "Slow Start",
-		shortDesc: "On switch-in, this Pokemon's Attack and Speed are halved for 1 turn.",
+		shortDesc: "On switch-in, this Pokemon's Attack and Speed are halved for 3 turns.",
 		gen7: {
-			desc: "On switch-in, this Pokemon's Attack and Speed are halved for 1 turn. During the effect, if this Pokemon uses a generic Z-Move based on a special move, its Special Attack is halved during damage calculation.",
+			desc: "On switch-in, this Pokemon's Attack and Speed are halved for 3 turns. During the effect, if this Pokemon uses a generic Z-Move based on a special move, its Special Attack is halved during damage calculation.",
 		},
 		gen6: {
-			desc: "On switch-in, this Pokemon's Attack and Speed are halved for 1 turns.",
+			desc: "On switch-in, this Pokemon's Attack and Speed are halved for 3 turns.",
 		},
 
 		start: "  [POKEMON] can't get it going!",

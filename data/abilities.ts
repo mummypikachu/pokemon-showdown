@@ -1682,12 +1682,9 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
     // Check if the user is terastallized
     	if (target.terastallized) return;
 
-    	console.log('onDamage function called for ' + target.name);
     	if (target.hp > target.maxhp / 2 && target.ability === 'ghostlywail') {
-        console.log('took more than 50% ' + target.name);
         // Apply other effects when HP is at or below 50% and the target has the ability
         // Debug line for adding Ghost type
-        console.log(target.name + ' is gaining the Ghost typing.');
 
         target.addType('Ghost'); // Add Ghost type if not already present
         this.add('-start', target, 'typeadd', 'Ghost', '[from] ability: Ghostly Wail');
@@ -3688,11 +3685,11 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	psychosis: {
 		onModifySpAPriority: 1,
 		onModifySpA(spa) {
-			return this.chainModify(1.5);
+			return this.chainModify(1.2);
 		},
 		onModifyAtkPriority: 1,
 		onModifyAtk(atk) {
-			return this.chainModify(1.5);
+			return this.chainModify(1.2);
 		},
 		onDisableMove(pokemon) {
 			for (const moveSlot of pokemon.moveSlots) {
@@ -4412,7 +4409,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			this.add('-end', pokemon, 'Slow Start', '[silent]');
 		},
 		condition: {
-			duration: 2,
+			duration: 3,
 			onResidualOrder: 28,
 			onResidualSubOrder: 2,
 			onStart(target) {
