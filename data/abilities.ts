@@ -1876,17 +1876,28 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	hailpower: {
 		onBasePowerPriority: 21,
 		onModifyDamage(damage, source, target, move) {
-			if (this.field.isWeather('snow')) {
+			if (this.field.isWeather(['hail', 'snow'])) {
 					this.debug('Hail Power boost');
 					return this.chainModify([5325, 4096]);
 			}
 		},
 		onImmunity(type, pokemon) {
-			if (type === 'snow') return false;
+			if (type === 'hail') return false;
 		},
 		name: "Hail Power",
 		rating: 3,
 		num: 159,
+	},
+	hailstorm: {
+		onStart(source) {
+			this.field.setWeather('hail');
+		},
+		onImmunity(type, pokemon) {
+			if (type === 'hail') return false;
+		},
+		name: "Hailstorm",
+		rating: 4,
+		num: 117,
 	},
 	ampereoverdrive: {
 		onStart(pokemon) {
@@ -5340,6 +5351,23 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 2,
 		num: 260,
 	},
+	venomous: {
+		// upokecenter says this is implemented as an added secondary effect
+		onModifyMove(move) {
+			if (move.category === 'Special') return;
+			if (!move.secondaries) {
+				move.secondaries = [];
+			}
+			move.secondaries.push({
+				chance: 30,
+				status: 'psn',
+				ability: this.dex.abilities.get('venomous'),
+			});
+		},
+		name: "Venomous",
+		rating: 2,
+		num: 143,
+	},
 	vesselofruin: {
 		onStart(pokemon) {
 			if (this.suppressingAbility(pokemon)) return;
@@ -5632,6 +5660,14 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3.5,
 		// We do not want Brambleghast to get Infiltrator in Randbats
 		num: 274,
+	},
+	windbringer: {
+		name: "Windbringer",
+		onStart(source) {
+			this.field.setWeather('windy');
+			this.add('-ability', source, 'Windbringer');
+		},
+		rating: 3.5,
 	},
 	wonderguard: {
 		onTryHit(target, source, move) {

@@ -864,7 +864,33 @@ export const Conditions: {[k: string]: ConditionData} = {
 			this.add('-weather', 'none');
 		},
 	},
-
+	windy: {
+		name: 'Windy',
+		effectType: 'Weather',
+		duration: 5,
+		onAnyModifyDamage(damage, source, target, move) {
+			if (move.type === 'Rock' || move.type === 'Electric' || move.type === 'Ice') {
+				this.debug('Windy Weather weaken');
+				return this.chainModify(0.75);
+			}
+		},
+		onFieldStart(field, source, effect) {
+			if (effect?.effectType === 'Ability') {
+				if (this.gen <= 9) this.effectState.duration = 0;
+				this.add('-weather', 'Windy', '[from] ability: ' + effect.name, '[of] ' + source);
+			} else {
+				this.add('-weather', 'Windy');
+			}
+		},
+		onFieldResidualOrder: 1,
+		onFieldResidual() {
+			this.add('-weather', 'Windy', '[upkeep]');
+			if (this.field.isWeather('windy')) this.eachEvent('Weather');
+		},
+		onFieldEnd() {
+			this.add('-weather', 'none');
+		},
+	},
 	dynamax: {
 		name: 'Dynamax',
 		noCopy: true,

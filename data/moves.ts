@@ -6819,7 +6819,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	genesissupernova: {
 		num: 703,
 		accuracy: true,
-		basePower: 185,
+		basePower: 135,
 		category: "Special",
 		name: "Genesis Supernova",
 		pp: 1,
@@ -8450,7 +8450,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 35,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, distance: 1, wind: 1},
-		secondary: null,
+		secondary: {
+			chance: 50,
+			weather: 'windy',
+		},
 		target: "any",
 		type: "Flying",
 		contestType: "Clever",
@@ -9454,6 +9457,14 @@ export const Moves: {[moveid: string]: MoveData} = {
 				move.accuracy = 50;
 				break;
 			}
+			// Add a flat 30% chance to summon windy weather
+			if (!move.secondaries) {
+				move.secondaries = [];
+			}
+			move.secondaries.push({
+				chance: 30,
+				weather: 'windy',
+			});
 		},
 		secondary: {
 			chance: 30,
@@ -11246,6 +11257,31 @@ export const Moves: {[moveid: string]: MoveData} = {
 		zMove: {boost: {spd: 1}},
 		contestType: "Clever",
 	},
+	magikarpsrevenge: {
+		accuracy: true,
+		basePower: 250,
+		category: "Special",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1},
+		onTryMove(attacker, defender) {
+			if (!attacker.side.getSideCondition('magikarpsrevenge')) {
+				this.add('-hint', "Magikarp's Revenge can only be used if an ally was knocked out on the previous turn.");
+				return false;
+			}
+		},
+		onHit(target, source) {
+			source.side.removeSideCondition('magikarpsrevenge');
+		},
+		onPrepareHit(target, source) {
+			target.side.addSideCondition('magikarpsrevenge');
+		},
+		secondary: null,
+		target: "normal",
+		type: "Dragon",
+		name: "Magikarp's Revenge",
+		contestType: "Cool",
+	},	
 	magmastorm: {
 		num: 463,
 		accuracy: 75,
@@ -14022,6 +14058,34 @@ export const Moves: {[moveid: string]: MoveData} = {
 		zMove: {basePower: 140},
 		maxMove: {basePower: 130},
 		contestType: "Cool",
+	},
+	plasmaburstshockfists: {
+		accuracy: true,
+		basePower: 190,
+		category: "Physical",
+		name: "Plasmaburst Shockfists",
+		pp: 1,
+		priority: 1,
+		flags: {},
+		secondary: null,
+		target: "normal",
+		type: "Electric",
+		isZ: "zeraoriumz",
+		pseudoWeather: 'plasmaburst',
+		condition: {
+			duration: 1,
+			onFieldStart(target, source, sourceEffect) {
+				this.add('-fieldactivate', 'move: Plasmaburst Shockfists');
+				this.hint(`All moves become Electric-type after using ${sourceEffect}.`);
+			},
+			onModifyTypePriority: -2,
+			onModifyType(move) {
+				if (move.type !== 'Electric') {
+					move.type = 'Electric';
+					this.debug(move.name + "'s type changed to Electric");
+				}
+			},
+		},
 	},
 	plasmafists: {
 		num: 721,
@@ -21284,7 +21348,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1, wind: 1},
 		secondary: {
 			chance: 20,
-			volatileStatus: 'flinch',
+			weather: 'windy',
 		},
 		target: "allAdjacentFoes",
 		type: "Dragon",
@@ -22080,6 +22144,21 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Fire",
 		zMove: {boost: {atk: 1}},
+		contestType: "Beautiful",
+	},
+	windstorm: {
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Windstorm",
+		pp: 5,
+		priority: 0,
+		flags: {},
+		weather: 'windy',
+		secondary: null,
+		target: "all",
+		type: "Flying",
+		zMove: {boost: {spe: 1}},
 		contestType: "Beautiful",
 	},
 	wingattack: {

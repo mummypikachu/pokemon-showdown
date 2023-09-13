@@ -2388,6 +2388,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Zap Plate",
 		desc: "Holder's Electric-type attacks have 1.2x power. Judgment is Electric type.",
 	},
+	zeraoriumz: {
+		name: "Zeraorium Z",
+		desc: "If held by an Zeraora with Plasma Fists, it can use Plasmaburst Shockfists.",
+	},
 	zoomlens: {
 		name: "Zoom Lens",
 		desc: "The accuracy of attacks by the holder is 1.2x if it moves after its target.",

@@ -2789,7 +2789,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	gust: {
 		name: "Gust",
 		desc: "Power doubles if the target is using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop.",
-		shortDesc: "Power doubles during Bounce, Fly, and Sky Drop.",
+		shortDesc: "Power doubles during Bounce, Fly, and Sky Drop also has a chance to summon winds!",
 		gen4: {
 			desc: "Power doubles if the target is using Bounce or Fly.",
 			shortDesc: "Power doubles during Bounce and Fly.",
@@ -3116,7 +3116,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	hurricane: {
 		name: "Hurricane",
 		desc: "Has a 30% chance to confuse the target. This move can hit a target using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop. If the weather is Primordial Sea or Rain Dance, this move does not check accuracy. If the weather is Desolate Land or Sunny Day, this move's accuracy is 50%. If this move is used against a Pokemon holding Utility Umbrella, this move's accuracy remains at 70%.",
-		shortDesc: "30% chance to confuse target. Can't miss in rain.",
+		shortDesc: "30% chance to confuse target. Can't miss in rain. Also has a 30% to summon winds!",
 		gen7: {
 			desc: "Has a 30% chance to confuse the target. This move can hit a target using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop. If the weather is Primordial Sea or Rain Dance, this move does not check accuracy. If the weather is Desolate Land or Sunny Day, this move's accuracy is 50%.",
 		},
@@ -3727,6 +3727,10 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Magic Room",
 		desc: "For 5 turns, the held items of all active Pokemon have no effect. An item's effect of causing forme changes is unaffected, but any other effects from such items are negated. During the effect, Fling and Natural Gift are prevented from being used by all active Pokemon. If this move is used during the effect, the effect ends.",
 		shortDesc: "For 5 turns, all held items have no effect.",
+	},
+	magikarpsrevenge: {
+		name: "Magikarp's Revenge",
+		shortDesc: "Only does damage if an ally was knocked out on the previous turn.",
 	},
 	magmastorm: {
 		name: "Magma Storm",
@@ -7134,8 +7138,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	twister: {
 		name: "Twister",
-		desc: "Has a 20% chance to make the target flinch. Power doubles if the target is using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop.",
-		shortDesc: "20% chance to make the foe(s) flinch.",
+		desc: "Has a 20% chance to summon Winds!. Power doubles if the target is using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop.",
+		shortDesc: "20% chance to summon winds!",
 		gen4: {
 			desc: "Has a 20% chance to make the target flinch. Power doubles if the target is using Bounce or Fly.",
 		},
@@ -7432,6 +7436,10 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Will-O-Wisp",
 		desc: "Burns the target.",
 		shortDesc: "Burns the target.",
+	},
+	windstorm: {
+		name: "Windstorm",
+		shortDesc: "For 5 turns, moves that hit flying types super-effectively are weakened by 25%.",
 	},
 	wingattack: {
 		name: "Wing Attack",

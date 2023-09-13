@@ -7386,6 +7386,16 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 300,
 		gen: 4,
 	},
+	zeraoriumz: {
+		name: "Zeraorium Z",
+		spritenum: 655,
+		onTakeItem: false,
+		zMove: "Plasmaburst Shockfists",
+		zMoveFrom: "Plasma Fists",
+		itemUser: ["Zeraora"],
+		num: 2303,
+		gen: 9,
+	},
 	zoomlens: {
 		name: "Zoom Lens",
 		spritenum: 574,

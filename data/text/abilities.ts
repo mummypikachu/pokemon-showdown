@@ -652,7 +652,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	hailpower: {
 		name: "Hail Power",
-		shortDesc: "If Hail is active all attacks from this pokemon are boosted by 1.5x",	
+		shortDesc: "If Hail/Snow is active all attacks from this pokemon are boosted by 1.5x",	
+	},
+	hailstorm: {
+		name: "Hailstorm",
+		shortDesc: "On switch-in, this Pokemon summons Hail.",	
 	},
 	harvest: {
 		name: "Harvest",
@@ -2114,6 +2118,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Unseen Fist",
 		shortDesc: "This Pokemon's contact moves ignore the target's protection, except Max Guard.",
 	},
+	venomous: {
+		name: "Venomous",
+		shortDesc: "This Pokemon's special moves have a 30% chance of poisoning.",
+	},
 	vesselofruin: {
 		name: "Vessel of Ruin",
 		shortDesc: "Active Pokemon without this Ability have their Special Attack multiplied by 0.75.",
@@ -2194,6 +2202,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Wimp Out",
 		desc: "When this Pokemon has more than 1/2 its maximum HP and takes damage bringing it to 1/2 or less of its maximum HP, it immediately switches out to a chosen ally. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability. This effect applies to both direct and indirect damage, except Curse and Substitute on use, Belly Drum, Pain Split, and confusion damage.",
 		shortDesc: "This Pokemon switches out when it reaches 1/2 or less of its maximum HP.",
+	},
+	windbringer: {
+		name: "Wingbringer",
+		shortDesc: "On switch-in, this Pokemon summons Winds.",
 	},
 	windpower: {
 		name: "Wind Power",
