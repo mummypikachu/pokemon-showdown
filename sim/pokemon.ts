@@ -1180,7 +1180,7 @@ export class Pokemon {
 		const species = pokemon.species;
 		if (pokemon.fainted || this.illusion || pokemon.illusion || (pokemon.volatiles['substitute'] && this.battle.gen >= 5) ||
 			(pokemon.transformed && this.battle.gen >= 2) || (this.transformed && this.battle.gen >= 5) ||
-			species.name === 'Eternatus-Eternamax') {
+			species.name === 'Eternatus-Eternamax' || (species.baseSpecies === 'Ogerpon' && this.terastallized)) {
 			return false;
 		}
 
@@ -1356,7 +1356,10 @@ export class Pokemon {
 						this.battle.add('-primal', this);
 					}
 				} else {
-					this.battle.add('-mega', this, apparentSpecies, species.requiredItem);
+					// So a Mega Evolution message isn't sent while we're waiting on Ogerpon text
+					if (source.megaEvolves) {
+						this.battle.add('-mega', this, apparentSpecies, species.requiredItem);
+					}
 					this.moveThisTurnResult = true; // Mega Evolution counts as an action for Truant
 				}
 			} else if (source.effectType === 'Status') {

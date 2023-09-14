@@ -26,6 +26,10 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	assist: {
+		inherit: true,
+		flags: {},
+	},
 	auroraveil: {
 		inherit: true,
 		onTry() {
@@ -97,6 +101,12 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	chatter: {
+		inherit: true,
+		flags: {
+			protect: 1, mirror: 1, sound: 1, distance: 1, bypasssub: 1,
+		},
+	},
 	conversion: {
 		inherit: true,
 		isNonstandard: null,
@@ -130,11 +140,11 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		},
 		target: "randomNormal",
 	},
-	decorate: {
+	darkvoid: {
 		inherit: true,
-		isNonstandard: null,
+		isNonstandard: "Past",
 	},
-	doomdesire: {
+	decorate: {
 		inherit: true,
 		isNonstandard: null,
 	},
@@ -194,10 +204,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 			attacker.addVolatile('twoturnmove', defender);
 			return null;
 		},
-	},
-	forestscurse: {
-		inherit: true,
-		isNonstandard: null,
 	},
 	freezeshock: {
 		inherit: true,
@@ -503,6 +509,10 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	seedflare: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
 	shadowbone: {
 		inherit: true,
 		isNonstandard: null,
@@ -543,11 +553,11 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	stormthrow: {
+	spiderweb: {
 		inherit: true,
-		isNonstandard: null,
+		isNonstandard: "Past",
 	},
-	strangesteam: {
+	stormthrow: {
 		inherit: true,
 		isNonstandard: null,
 	},
@@ -558,6 +568,10 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	sunsteelstrike: {
 		inherit: true,
 		isNonstandard: null,
+	},
+	tailglow: {
+		inherit: true,
+		isNonstandard: "Past",
 	},
 	technoblast: {
 		inherit: true,
@@ -574,6 +588,10 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	topsyturvy: {
 		inherit: true,
 		isNonstandard: null,
+	},
+	toxicthread: {
+		inherit: true,
+		isNonstandard: "Past",
 	},
 	trickortreat: {
 		inherit: true,

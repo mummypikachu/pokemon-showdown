@@ -1864,10 +1864,14 @@ export class BattleActions {
 			pokemon.species.isMega || pokemon.species.isPrimal || pokemon.species.forme === "Ultra" ||
 			pokemon.getItem().zMove || pokemon.canMegaEvo || this.dex.gen !== 9
 		) {
+		if (pokemon.getItem().zMove || pokemon.canMegaEvo || pokemon.side.canDynamaxNow() ||
+			this.dex.gen !== 9 || (pokemon.species.baseSpecies === 'Ogerpon' && pokemon.transformed) ||
+			pokemon.illusion?.species.baseSpecies === 'Ogerpon') {
 			return null;
 		}
 		return pokemon.teraType;
 	}
+}
 
 	terastallize(pokemon: Pokemon) {
 		const type = pokemon.teraType;
@@ -1880,6 +1884,10 @@ export class BattleActions {
 		pokemon.addedType = '';
 		pokemon.knownType = true;
 		pokemon.apparentType = type;
+		if (pokemon.species.baseSpecies === 'Ogerpon') {
+			const tera = pokemon.species.id === 'ogerpon' ? 'tealtera' : 'tera';
+			pokemon.formeChange(pokemon.species.id + tera, pokemon.getItem(), true);
+		}
 		this.battle.runEvent('AfterTerastallization', pokemon);
 	}
 
