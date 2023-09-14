@@ -9461,10 +9461,13 @@ export const Moves: {[moveid: string]: MoveData} = {
 			if (!move.secondaries) {
 				move.secondaries = [];
 			}
-			move.secondaries.push({
-				chance: 30,
-				weather: 'windy',
-			});
+			
+			if (this.field.isWeather(['rain'])) {
+				move.secondaries.push({
+					chance: 30,
+					weather: 'windy',
+				});
+			}
 		},
 		secondary: {
 			chance: 30,
@@ -11264,17 +11267,19 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1},
-		onTryMove(attacker, defender) {
-			if (!attacker.side.getSideCondition('magikarpsrevenge')) {
+		onTry(source, target, move) {
+			if (source.species.name === 'Magikarp') {
+				return;
+			}
+			this.add('-fail', source, 'move: Magikarp\'s Revenge');
+			this.hint("Only a Pokemon whose form is Magikarp can use this move.");
+			return null;
+		},
+		onTryMove(pokemon, defender) {
+			if (!pokemon.side.faintedLastTurn) {
 				this.add('-hint', "Magikarp's Revenge can only be used if an ally was knocked out on the previous turn.");
 				return false;
 			}
-		},
-		onHit(target, source) {
-			source.side.removeSideCondition('magikarpsrevenge');
-		},
-		onPrepareHit(target, source) {
-			target.side.addSideCondition('magikarpsrevenge');
 		},
 		secondary: null,
 		target: "normal",
@@ -21960,7 +21965,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 			case 'snow':
 				move.type = 'Ice';
 				break;
+			case 'windy': 
+				move.type = 'Flying';
+				break;	
 			}
+			
 		},
 		onModifyMove(move, pokemon) {
 			switch (pokemon.effectiveWeather()) {
