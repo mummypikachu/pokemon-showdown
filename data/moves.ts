@@ -785,7 +785,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 110,
 		category: "Physical",
-		isNonstandard: "Past",
+		
 		name: "Aura Wheel",
 		pp: 10,
 		priority: 0,
@@ -2526,7 +2526,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 110,
 		category: "Special",
-		isNonstandard: "Past",
+		
 		name: "Clanging Scales",
 		pp: 5,
 		priority: 0,
@@ -2546,7 +2546,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 0,
 		category: "Status",
-		isNonstandard: "Past",
+		
 		name: "Clangorous Soul",
 		pp: 5,
 		priority: 0,
@@ -4030,7 +4030,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 140,
 		category: "Special",
-		isNonstandard: "Past",
+		
 		name: "Doom Desire",
 		pp: 5,
 		priority: 0,
@@ -6393,7 +6393,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 0,
 		category: "Status",
-		isNonstandard: "Past",
+		
 		name: "Forest's Curse",
 		pp: 20,
 		priority: 0,
@@ -11540,6 +11540,44 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Fighting",
 		zMove: {boost: {def: 1}},
 		contestType: "Cool",
+	},
+	matchagotcha: {
+		num: 902,
+		accuracy: 90,
+		basePower: 80,
+		category: "Special",
+		name: "Matcha Gotcha",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, defrost: 1},
+		drain: [1, 2],
+		secondary: {
+			chance: 20,
+			status: 'brn',
+		},
+		target: "allAdjacentFoes",
+		type: "Grass",
+	},
+	marvelshot: {
+		num: 908,
+		accuracy: 100,
+		basePower: 100,
+		category: "Special",
+		name: "Marvel Shot",
+		pp: 10,
+		flags: { protect: 1, mirror: 1, distance: 1},
+		onEffectiveness(typeMod, target, type, move) {
+			return typeMod + this.dex.getEffectiveness('Water', type);
+		},
+		priority: 0,
+		secondary: {
+			chance: 20,
+			volatileStatus: 'confusion',
+		},
+		target: "any",
+		type: "Fairy",
+		zMove: {basePower: 170},
+		contestType: "Beautiful",
 	},
 	maxairstream: {
 		num: 766,
@@ -16948,7 +16986,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 85,
 		basePower: 120,
 		category: "Special",
-		isNonstandard: "Past",
+		
 		name: "Seed Flare",
 		pp: 5,
 		priority: 0,
@@ -19299,7 +19337,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 95,
 		basePower: 90,
 		category: "Special",
-		isNonstandard: "Past",
+		
 		name: "Strange Steam",
 		pp: 10,
 		priority: 0,
@@ -19991,7 +20029,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		isNonstandard: "Past",
+		
 		name: "Tail Glow",
 		pp: 20,
 		priority: 0,
@@ -20101,7 +20139,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		isNonstandard: "Past",
+		
 		name: "Take Heart",
 		pp: 15,
 		priority: 0,
@@ -20976,7 +21014,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 0,
 		category: "Status",
-		isNonstandard: "Past",
+		
 		name: "Toxic Thread",
 		pp: 20,
 		priority: 0,

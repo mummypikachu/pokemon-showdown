@@ -1860,18 +1860,13 @@ export class BattleActions {
 			  return null; // Prevent Terastallization to the "Almighty" type
 			}
 		}
-		if (
-			pokemon.species.isMega || pokemon.species.isPrimal || pokemon.species.forme === "Ultra" ||
-			pokemon.getItem().zMove || pokemon.canMegaEvo || this.dex.gen !== 9
-		) {
-		if (pokemon.getItem().zMove || pokemon.canMegaEvo || pokemon.side.canDynamaxNow() ||
-			this.dex.gen !== 9 || (pokemon.species.baseSpecies === 'Ogerpon' && pokemon.transformed) ||
-			pokemon.illusion?.species.baseSpecies === 'Ogerpon') {
-			return null;
+		if (pokemon.getItem().zMove || pokemon.canMegaEvo ||
+		this.dex.gen !== 9 || (pokemon.species.baseSpecies === 'Ogerpon' && pokemon.transformed) ||
+		pokemon.illusion?.species.baseSpecies === 'Ogerpon') {
+		return null;
 		}
 		return pokemon.teraType;
 	}
-}
 
 	terastallize(pokemon: Pokemon) {
 		const type = pokemon.teraType;
