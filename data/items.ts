@@ -585,6 +585,16 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 6,
 	
 	},
+	blastoisiumz: {
+		name: "Blastoisium Z",
+		spritenum: 633,
+		onTakeItem: false,
+		zMove: "Rampant Shell Spinner",
+		zMoveFrom: "Shell Spin",
+		itemUser: ["Blastoise"],
+		gen: 9,
+	
+	},
 	blazikenite: {
 		name: "Blazikenite",
 		spritenum: 584,

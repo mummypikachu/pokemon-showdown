@@ -169,7 +169,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 
 	// statuses
 	brn: {
-		start: "  [POKEMON] was burned!",
+		start: "  [POKEMON] was burned! Rip Physical users.",
 		startFromItem: "  [POKEMON] was burned by the [ITEM]!",
 		alreadyStarted: "  [POKEMON] is already burned!",
 		end: "  [POKEMON]'s burn was healed!",
@@ -177,7 +177,15 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		damage: "  [POKEMON] was hurt by its burn!",
 	},
 	frz: {
-		start: "  [POKEMON] was frozen solid!",
+		start: "  [POKEMON] was frozen solid! Is it over?",
+		alreadyStarted: "  [POKEMON] is already frozen solid!",
+		end: "  [POKEMON] thawed out!",
+		endFromItem: "  [POKEMON]'s [ITEM] defrosted it!",
+		endFromMove: "  [POKEMON]'s [MOVE] melted the ice!",
+		cant: "[POKEMON] is frozen solid!",
+	},
+	frb: {
+		start: "  [POKEMON] caught frosbite! Rip Special users.",
 		alreadyStarted: "  [POKEMON] is already frozen solid!",
 		end: "  [POKEMON] thawed out!",
 		endFromItem: "  [POKEMON]'s [ITEM] defrosted it!",
@@ -199,7 +207,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		damage: "  [POKEMON] was hurt by poison!",
 	},
 	tox: {
-		start: "  [POKEMON] was badly poisoned!",
+		start: "  [POKEMON] was badly poisoned! Its Toxover.",
 		startFromItem: "  [POKEMON] was badly poisoned by the [ITEM]!",
 		end: "#psn",
 		endFromItem: "#psn",
@@ -257,7 +265,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		start: "  [POKEMON] can no longer escape!",
 	},
 	dynamax: {
-		start: "  ([POKEMON]'s Dynamax!)",
+		start: "  ([POKEMON]'s Dynamax!) You won't like it when I shift into MAXIUM OVERDRIVE!!",
 		end: "  ([POKEMON] returned to normal!)",
 		block: "  The move was blocked by the power of Dynamax!",
 		fail: "  [POKEMON] shook its head. It seems like it can't use this move...",
@@ -285,7 +293,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 	},
 	hail: {
 		weatherName: "Hail",
-		start: "  It started to hail! Let the snowstorm begin!",
+		start: "  It started to hail! Sleet is afoot!",
 		end: "  The hail stopped.",
 		upkeep: "  (The hail is crashing down.)",
 		damage: "  [POKEMON] is buffeted by the hail!",
@@ -295,6 +303,12 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		start: "  It started to snow! Let the snowstorm begin!",
 		end: "  The snow stopped.",
 		upkeep: "  (The snow is falling down.)",
+	},
+	windy: {
+		weatherName: "Windy",
+		start: "  Hold on to your hats It's getting windy!",
+		end: "  The Winds stopped.",
+		upkeep: "  (Wind violently blows!)",
 	},
 	desolateland: {
 		weatherName: "Intense Sun",
@@ -370,6 +384,6 @@ export const DefaultText: {[k: string]: DefaultText} = {
 
 	// misc
 	crash: {
-		damage: "  [POKEMON] kept going and crashed!",
+		damage: "  [POKEMON] kept going and crashed! (Womp Womp)",
 	},
 };

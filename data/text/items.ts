@@ -169,6 +169,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Blastoisinite",
 		desc: "If held by a Blastoise, this item allows it to Mega Evolve in battle.",
 	},
+	blastoisiumz: {
+		name: "Blastoisium Z",
+		desc: "If held by a Blastoise, this item allows it to use Rampant Shell Spinner in battle.",
+	},
 	blazikenite: {
 		name: "Blazikenite",
 		desc: "If held by a Blaziken, this item allows it to Mega Evolve in battle.",

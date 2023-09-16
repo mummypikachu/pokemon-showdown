@@ -13124,13 +13124,13 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {contact: 1, protect: 1, mirror: 1},
 		onModifyType(move, pokemon) {
 			if (pokemon.ignoringItem()) return;
-			move.type = this.runEvent('Memory', pokemon, null, move, 'Normal');
+			move.type = this.runEvent('Memory', pokemon, null, move, 'Almighty');
 		},
 		secondary: null,
 		target: "normal",
 		type: "Almighty",
 		zMove: {basePower: 185},
-		maxMove: {basePower: 95},
+		maxMove: {basePower: 185},
 		contestType: "Tough",
 	},
 	mysticalfire: {
@@ -15623,6 +15623,48 @@ export const Moves: {[moveid: string]: MoveData} = {
 		zMove: {boost: {spe: 1}},
 		contestType: "Beautiful",
 	},
+	rampantshellspinner: {
+		num: 919,
+		accuracy: true,
+		basePower: 145,
+		category: "Physical",
+		name: "Rampant Shell Spinner",
+		pp: 1,
+		priority: 0,
+		flags: {},
+		isZ: "blastoisiumz",
+		onAfterHit(target, pokemon) {
+			if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
+				this.add('-end', pokemon, 'Leech Seed', '[from] move: Rapid Spin', '[of] ' + pokemon);
+			}
+			const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'trickroom'];
+			for (const condition of sideConditions) {
+				if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
+					this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Rapid Spin', '[of] ' + pokemon);
+				}
+			}
+			if (pokemon.hp && pokemon.volatiles['partiallytrapped']) {
+				pokemon.removeVolatile('partiallytrapped');
+			}
+		},
+		onAfterSubDamage(damage, target, pokemon) {
+			if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
+				this.add('-end', pokemon, 'Leech Seed', '[from] move: Rapid Spin', '[of] ' + pokemon);
+			}
+			const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'trickroom', 'glacierstream'];
+			for (const condition of sideConditions) {
+				if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
+					this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Rapid Spin', '[of] ' + pokemon);
+				}
+			}
+			if (pokemon.hp && pokemon.volatiles['partiallytrapped']) {
+				pokemon.removeVolatile('partiallytrapped');
+			}
+		},
+		secondary: null,
+		target: "normal",
+		type: "Normal",
+	},
 	rancidrainbow: {
 		num: 907,
 		accuracy: 100,
@@ -17321,6 +17363,23 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		target: "normal",
 		type: "Poison",
+	},
+	shellspin: {
+		accuracy: 100,
+		basePower: 85,
+		category: "Physical",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 50,
+			boosts: {
+				spe: 1,
+			}
+		},
+		target: "normal",
+		type: "Normal",
+		name: "Shell Spin"
 	},
 	shellsmash: {
 		num: 504,

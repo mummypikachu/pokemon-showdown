@@ -3119,7 +3119,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	hurricane: {
 		name: "Hurricane",
-		desc: "Has a 30% chance to confuse the target. This move can hit a target using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop. If the weather is Primordial Sea or Rain Dance, this move does not check accuracy. If the weather is Desolate Land or Sunny Day, this move's accuracy is 50%. If this move is used against a Pokemon holding Utility Umbrella, this move's accuracy remains at 70%.",
+		desc: "Has a 30% chance to confuse the target. This move can hit a target using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop. If the weather is Primordial Sea or Rain Dance, this move does not check accuracy. If the weather is Desolate Land or Sunny Day, this move's accuracy is 50%. If this move is used against a Pokemon holding Utility Umbrella, this move's accuracy remains at 70%. Also has a 30% chance to summon Winds. Windy cannot be summoned if in Rain.",
 		shortDesc: "30% chance to confuse target. Can't miss in rain. Also has a 30% to summon winds!",
 		gen7: {
 			desc: "Has a 30% chance to confuse the target. This move can hit a target using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop. If the weather is Primordial Sea or Rain Dance, this move does not check accuracy. If the weather is Desolate Land or Sunny Day, this move's accuracy is 50%.",
@@ -5701,6 +5701,10 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Has a 20% chance to poison the target. This move becomes a physical attack that makes contact if the value of ((((2 * the user's level / 5 + 2) * 90 * X) / Y) / 50), where X is the user's Attack stat and Y is the target's Defense stat, is greater than the same value where X is the user's Special Attack stat and Y is the target's Special Defense stat. No stat modifiers other than stat stage changes are considered for this purpose. If the two values are equal, this move chooses a damage category at random.",
 		shortDesc: "20% psn. Physical+contact if it would be stronger.",
 	},
+	shellspin: {
+		name: "Shell Spin",
+		shortDesc: "50% to increase Speed by 1 stage."
+	},
 	shellsmash: {
 		name: "Shell Smash",
 		desc: "Lowers the user's Defense and Special Defense by 1 stage. Raises the user's Attack, Special Attack, and Speed by 2 stages.",
@@ -6713,7 +6717,7 @@ export const MovesText: {[k: string]: MoveText} = {
 			shortDesc: "For 3 turns, allies' Speed is doubled.",
 		},
 
-		start: "  The Tailwind blew from behind [TEAM]!",
+		start: "  The Tailwind blew from behind [TEAM]! Let's ride those winds!",
 		end: "  [TEAM]'s Tailwind petered out!",
 	},
 	takedown: {
