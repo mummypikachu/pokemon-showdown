@@ -2637,7 +2637,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	arceus: {
 		tier: "Uber",
-		doublesTier: "DOU",
+		doublesTier: "DUber",
 		natDexTier: "Uber",
 	},
 	arceusbug: {

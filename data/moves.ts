@@ -1581,14 +1581,14 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
 		onDisableMove(pokemon) {
-			if (pokemon.lastMove?.id === 'gigatonhammer') pokemon.disableMove('gigatonhammer');
+			if (pokemon.lastMove?.id === 'bloodmoon') pokemon.disableMove('bloodmoon');
 		},
 		beforeMoveCallback(pokemon) {
-			if (pokemon.lastMove?.id === 'gigatonhammer') pokemon.addVolatile('gigatonhammer');
+			if (pokemon.lastMove?.id === 'bloodmoon') pokemon.addVolatile('bloodmoon');
 		},
 		onAfterMove(pokemon) {
-			if (pokemon.removeVolatile('gigatonhammer')) {
-				this.add('-hint', "Some effects can force a Pokemon to use Gigaton Hammer again in a row.");
+			if (pokemon.removeVolatile('bloodmoon')) {
+				this.add('-hint', "Some effects can force a Pokemon to use Blood Moon again in a row.");
 			}
 		},
 		secondary: null,
@@ -10240,6 +10240,33 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Steel",
 		contestType: "Cool",
+	},
+	ivycudgel: {
+		num: 904,
+		accuracy: 100,
+		basePower: 100,
+		category: "Physical",
+		name: "Ivy Cudgel",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		critRatio: 2,
+		onModifyType(move, pokemon) {
+			switch (pokemon.species.name) {
+			case 'Ogerpon-Wellspring': case 'Ogerpon-Wellspring-Tera':
+				move.type = 'Water';
+				break;
+			case 'Ogerpon-Hearthflame': case 'Ogerpon-Hearthflame-Tera':
+				move.type = 'Fire';
+				break;
+			case 'Ogerpon-Cornerstone': case 'Ogerpon-Cornerstone-Tera':
+				move.type = 'Rock';
+				break;
+			}
+		},
+		secondary: null,
+		target: "normal",
+		type: "Grass",
 	},
 	jawlock: {
 		num: 746,
