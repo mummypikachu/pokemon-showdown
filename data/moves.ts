@@ -12338,9 +12338,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, recharge: 1, mirror: 1},
-		self: {
-			volatileStatus: 'mustrecharge',
-		},
+		onAfterHit(target, source) {
+			if (target.hp > 0) source.addVolatile('mustrecharge');
+	    },
 		secondary: null,
 		target: "normal",
 		type: "Fighting",
@@ -14780,9 +14780,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 10,
 		priority: 0,
 		flags: {recharge: 1, protect: 1, mirror: 1},
-		self: {
-			volatileStatus: 'mustrecharge',
-		},
+		onAfterHit(target, source) {
+			if (target.hp > 0) source.addVolatile('mustrecharge');
+	    },
 		secondary: null,
 		target: "normal",
 		type: "Psychic",
