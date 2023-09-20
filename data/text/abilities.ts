@@ -193,6 +193,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 			shortDesc: "At 1/3 or less of its max HP, this Pokemon's Fire-type attacks have 1.5x power.",
 		},
 	},
+	bleedingedge: {
+		name: "Bleeding Edge",
+		desc: "If the Pokémon uses an contact move on a turn, the targets takes an additional 1/8 of its full health damage by the end of the turn.",	
+	},
 	bulletproof: {
 		name: "Bulletproof",
 		shortDesc: "This Pokemon is immune to bullet moves.",

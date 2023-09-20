@@ -3150,7 +3150,7 @@
             },
             {
                 "role": "Bulky Setup",
-                "movepool": ["Body Press", "Crunch", "Iron Defense", "Iron Head", "Rest", "Stone Edge"],
+                "movepool": ["Body Press", "Crunch", "Iron Defense", "Iron Head", "Slack Off", "Stone Edge"],
                 "teraTypes": ["Fighting"]
             }
         ]
@@ -3160,17 +3160,32 @@
         "sets": [
             {
                 "role": "Bulky Setup",
-                "movepool": ["Behemoth Bash", "Body Press", "Crunch", "Iron Defense", "Psychic Fangs", "Stone Edge"],
+                "movepool": ["Behemoth Bash", "Body Press", "Crunch", "Iron Defense", "Psychic Fangs", "Stone Edge", "Slack Off"],
                 "teraTypes": ["Fighting"]
             }
         ]
     },
     "eternatus": {
-        "level": 70,
+        "level": 72,
         "sets": [
             {
                 "role": "Bulky Attacker",
-                "movepool": ["Dynamax Cannon", "Fire Blast", "Recover", "Sludge Bomb"],
+                "movepool": ["Dynamax Cannon", "Fire Blast", "Recover", "Sludge Bomb", "Eternabeam"],
+                "teraTypes": ["Dragon", "Fire"]
+            },
+            {
+                "role": "Bulky Support",
+                "movepool": ["Dynamax Cannon", "Flamethrower", "Recover", "Toxic", "Toxic Spikes"],
+                "teraTypes": ["Dragon", "Water"]
+            }
+        ]
+    },
+    "eternatuseternamax": {
+        "level": 65,
+        "sets": [
+            {
+                "role": "Bulky Attacker",
+                "movepool": ["Dynamax Cannon", "Fire Blast", "Recover", "Sludge Bomb", "Eternabeam"],
                 "teraTypes": ["Dragon", "Fire"]
             },
             {

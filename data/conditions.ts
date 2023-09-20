@@ -303,6 +303,27 @@ export const Conditions: {[k: string]: ConditionData} = {
 			if (this.effectState.source?.isActive || gmaxEffect) pokemon.tryTrap();
 		},
 	},
+	bleedingedge: {
+		name: 'bleedingedge',
+		duration: 1,
+		onStart(pokemon, source) {
+			this.add('-activate', pokemon, 'move: ' + this.effectState.sourceEffect, '[of] ' + source);
+		},
+		onResidualOrder: 13,
+		onResidual(pokemon) {
+			const source = this.effectState.source;
+			// G-Max Centiferno and G-Max Sandblast continue even after the user leaves the field
+			if (source && (!source.isActive || source.hp <= 0 || !source.activeTurns)) {
+				delete pokemon.volatiles['bleedingedge'];
+				this.add('-end', pokemon, this.effectState.sourceEffect, '[bleedingedge]', '[silent]');
+				return;
+			}
+			this.damage(pokemon.baseMaxhp / 8);
+		},
+		onEnd(pokemon) {
+			this.add('-end', pokemon, this.effectState.sourceEffect, '[bleedingedge]');
+		},
+	},
 	lockedmove: {
 		// Outrage, Thrash, Petal Dance...
 		name: 'lockedmove',

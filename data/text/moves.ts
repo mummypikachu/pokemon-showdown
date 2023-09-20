@@ -138,6 +138,10 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Has a 10% chance to raise the user's Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage.",
 		shortDesc: "10% chance to raise all stats by 1 (not acc/eva).",
 	},
+	angerhit: {
+		name: "Anger Hit",
+		shortDesc: "Inflicts taunt on the opponent.",
+	},
 	appleacid: {
 		name: "Apple Acid",
 		desc: "Has a 100% chance to lower the target's Special Defense by 1 stage.",
@@ -2278,6 +2282,8 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Forest Izuna",
 		desc: "This move can hit Pokemon with Levitate and is stronger on Flying types. It also lower Defence and Sp. Def.",
 		shortDesc: "Removes the target's Ground immunity. Super effective on Flying. Lowers Def and Sp.Def.",
+
+		start: "  [POKEMON] was struck down.",
 	},
 	foulplay: {
 		name: "Foul Play",
@@ -2481,6 +2487,23 @@ export const MovesText: {[k: string]: MoveText} = {
 		gen1: {
 			desc: "Paralyzes the target.",
 		},
+	},
+	glassshatter: {
+		name: "Glass Shatter",
+		desc: "If this attack does not miss, the effects of Reflect, Light Screen, and Aurora Veil end for the target's side of the field before damage is calculated.",
+		shortDesc: "Destroys screens, unless the target is immune.",
+		gen6: {
+			desc: "If this attack does not miss, the effects of Reflect and Light Screen end for the target's side of the field before damage is calculated.",
+		},
+		gen4: {
+			desc: "If this attack does not miss and whether or not the target is immune, the effects of Reflect and Light Screen end for the target's side of the field before damage is calculated.",
+			shortDesc: "Destroys screens, even if the target is immune.",
+		},
+		gen3: {
+			desc: "If this attack does not miss and whether or not the target is immune, the effects of Reflect and Light Screen end for the opponent's side of the field before damage is calculated.",
+		},
+
+		activate: "  [POKEMON] shattered [TEAM]'s protections!",
 	},
 	glitzyglow: {
 		name: "Glitzy Glow",
@@ -5549,6 +5572,10 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Lowers the target's Speed by 2 stages.",
 		shortDesc: "Lowers the target's Speed by 2.",
 	},
+	screenbash: {
+		name: "Screen Bash",
+		desc: "+50 BP for each Screen/Veil/Guard effect on User side, 0% Accuracy if none active, Screens/Veils/Guards: -1 Turn when Lands",
+	},
 	scorchingsands: {
 		name: "Scorching Sands",
 		desc: "Has a 30% chance to burn the target. The target thaws out if it is frozen.",
@@ -7097,6 +7124,11 @@ export const MovesText: {[k: string]: MoveText} = {
 		gen4: {
 			desc: "For 5 turns, all active Pokemon with lower Speed will move before those with higher Speed, within their priority brackets. If this move is used during the effect, the effect ends.",
 		},
+	},
+	trifecta: {
+		name: "Trifecta",
+		desc: "Hits three times. Power increases to 40 for the second hit and 60 for the third. This move checks accuracy for each hit, and the attack ends if the target avoids a hit. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit three times.",
+		shortDesc: "Hits 3 times. Each hit can miss, but power rises.",
 	},
 	triplearrows: {
 		name: "Triple Arrows",

@@ -510,6 +510,20 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 2,
 		num: 66,
 	},
+    bleedingedge: {
+        onBasePowerPriority: 23,
+        onBasePower(basePower, attacker, defender, move) {
+            if (move.flags['slicing']) {
+                // Trigger the "bleedingedge" status condition when using slicing moves
+                this.debug('Bleeding Edge activates');
+                if (attacker.side.foe.active[0]) {
+                    attacker.side.foe.active[0].addVolatile('bleedingedge', attacker);
+                }
+            }
+        },
+        name: "Bleeding Edge",
+        rating: 3,
+    },
 	bulletproof: {
 		onTryHit(pokemon, target, move) {
 			if (move.flags['bullet']) {

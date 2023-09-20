@@ -416,6 +416,48 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Rock",
 		contestType: "Tough",
 	},
+	angerhit: {
+		accuracy: 100,
+		basePower: 40,
+		category: "Physical",
+		name: "Anger Hit",
+		pp: 10,
+		priority: 1,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Normal",
+		contestType: "Cool",
+		volatileStatus: 'taunt',
+		condition: {
+			duration: 3,
+			onStart(target) {
+				if (target.activeTurns && !this.queue.willMove(target)) {
+					this.effectState.duration++;
+				}
+				this.add('-start', target, 'move: Taunt');
+			},
+			onResidualOrder: 15,
+			onEnd(target) {
+				this.add('-end', target, 'move: Taunt');
+			},
+			onDisableMove(pokemon) {
+				for (const moveSlot of pokemon.moveSlots) {
+					const move = this.dex.moves.get(moveSlot.id);
+					if (move.category === 'Status' && move.id !== 'mefirst') {
+						pokemon.disableMove(moveSlot.id);
+					}
+				}
+			},
+			onBeforeMovePriority: 5,
+			onBeforeMove(attacker, defender, move) {
+				if (!move.isZ && !move.isMax && move.category === 'Status' && move.id !== 'mefirst') {
+					this.add('cant', attacker, 'move: Taunt', move);
+					return false;
+				}
+			},
+		},
+	},
 	appleacid: {
 		num: 787,
 		accuracy: 100,
@@ -6067,7 +6109,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		contestType: "Beautiful",
 	},
 	floralzone: {
-		num: 2340,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -7075,6 +7116,25 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Normal",
 		zMove: {boost: {spd: 1}},
 		contestType: "Tough",
+	},
+	glassshatter: {
+		accuracy: 100,
+		basePower: 80,
+		category: "Special",
+		name: "Glass Shatter",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, sound: 1, bypasssub: 1},
+		onTryHit(pokemon) {
+			// will shatter screens through sub, before you hit
+			pokemon.side.removeSideCondition('reflect');
+			pokemon.side.removeSideCondition('lightscreen');
+			pokemon.side.removeSideCondition('auroraveil');
+		},
+		secondary: null,
+		target: "allAdjacentFoes",
+		type: "Normal",
+		contestType: "Cool",
 	},
 	glitzyglow: {
 		num: 736,
@@ -16890,6 +16950,40 @@ export const Moves: {[moveid: string]: MoveData} = {
 		zMove: {boost: {spe: 1}},
 		contestType: "Tough",
 	},
+	screenbash: {
+		accuracy: 100,
+		basePower: 0,
+		category: "Physical",
+		name: "Screen Bash",
+		pp: 10,
+		priority: 1,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Psychic",
+		contestType: "Cool",
+		onHit(target, source, move) {
+			// Implement logic for increasing base power based on screens/veils/guards
+			const screensActive = source.side.getSideCondition('reflect') || source.side.getSideCondition('lightscreen') || source.side.getSideCondition('auroraveil') || source.side.getSideCondition('safeguard') ? 1 : 0;
+			move.basePower += screensActive + 50;
+		},
+		onAfterMove(pokemon) {
+			// Implement logic for reducing the duration of screens/veils/guards
+			if (pokemon.side.getSideCondition('reflect')) {
+				pokemon.side.removeSideCondition('reflect');
+			}
+			else if (pokemon.side.getSideCondition('lightscreen')) {
+				pokemon.side.removeSideCondition('lightscreen');
+			}
+			else if (pokemon.side.getSideCondition('auroraveil')) {
+				pokemon.side.removeSideCondition('auroraveil');
+			}
+			else if (pokemon.side.getSideCondition('safeguard')) {
+				pokemon.side.removeSideCondition('safeguard');
+			}
+			// Implement similar logic for other screens/veils/guards
+		},
+	},
 	scorchingsands: {
 		num: 815,
 		accuracy: 100,
@@ -21300,6 +21394,27 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Psychic",
 		zMove: {boost: {accuracy: 1}},
 		contestType: "Clever",
+	},
+	trifecta: {
+		accuracy: 90,
+		basePower: 20,
+		basePowerCallback(pokemon, target, move) {
+			return 20 * move.hit;
+		},
+		category: "Physical",
+	
+		name: "Trifecta",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, kick: 1},
+		multihit: 3,
+		multiaccuracy: true,
+		secondary: null,
+		target: "normal",
+		type: "Normal",
+		zMove: {basePower: 120},
+		maxMove: {basePower: 140},
+		contestType: "Cool",
 	},
 	triplearrows: {
 		num: 843,
