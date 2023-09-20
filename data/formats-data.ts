@@ -4125,6 +4125,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	mimikyu: {
 		tier: "UU",
 		doublesTier: "DUU",
+		saDexTier: "OU",
 		natDexTier: "RU",
 	},
 	mimikyutotem: {

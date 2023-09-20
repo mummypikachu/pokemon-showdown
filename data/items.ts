@@ -2351,6 +2351,15 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 7,
 	
 	},
+	gholdengiumz: {
+		name: "Gholdengium Z",
+		spritenum: 655,
+		onTakeItem: false,
+		zMove: "One Million Coin Rain",
+		zMoveFrom: "Make It Rain",
+		itemUser: ["Gholdengo"],
+		gen: 9,
+	},
 	glalitite: {
 		name: "Glalitite",
 		spritenum: 623,
@@ -7481,7 +7490,6 @@ export const Items: {[itemid: string]: ItemData} = {
 		zMove: "Plasmaburst Shockfists",
 		zMoveFrom: "Plasma Fists",
 		itemUser: ["Zeraora"],
-		num: 2303,
 		gen: 9,
 	},
 	zoomlens: {

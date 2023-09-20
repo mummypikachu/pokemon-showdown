@@ -4523,6 +4523,10 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Has a 10% chance to raise the user's Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage.",
 		shortDesc: "10% chance to raise all stats by 1 (not acc/eva).",
 	},
+	onemillioncoinrain: {
+		name: "One Million Coin Rain",
+		desc: "Each Sp.Atk boost this pokemon gets , this Z-move has 20 more BP.",
+	},
 	orderup: {
 		name: "Order Up",
 		desc: "If an ally Tatsugiri has activated its Commander Ability, this move raises the user's Attack by 1 stage if the Tatsugiri is Curly Form, Defense by 1 stage if Droopy Form, or Speed by 1 stage if Stretchy Form. The effect happens whether or not this move is successful, and even if the Tatsugiri that activated the effect has since fainted.",

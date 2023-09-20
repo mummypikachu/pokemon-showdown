@@ -255,6 +255,29 @@ export const Tags: {[id: string]: TagData} = {
 		speciesFilter: species => species.natDexTier === 'RU',
 	},
 
+
+	// Sigmatic Dex tiers
+	saou: {
+		name: "SA OU",
+		speciesFilter: species => species.saDexTier === 'OU' || species.saDexTier === '(OU)',
+	},
+	sauubl: {
+		name: "SA UUBL",
+		speciesFilter: species => species.saDexTier === 'UUBL'
+	},
+	sauu: {
+		name: "SA UU",
+		speciesFilter: species => species.saDexTier === 'UU'
+	},
+	sarubl: {
+		name: "SA RUBL",
+		speciesFilter: species => species.saDexTier === 'RUBL'
+	},
+	saru: {
+		name: "SA RU",
+		speciesFilter: species => species.saDexTier === 'RU'
+	},
+
 	// Legality tags
 	past: {
 		name: "Past",

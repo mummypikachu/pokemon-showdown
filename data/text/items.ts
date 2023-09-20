@@ -723,6 +723,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Ghostium Z",
 		desc: "If holder has a Ghost move, this item allows it to use a Ghost Z-Move.",
 	},
+	gholdengiumz: {
+		name: "Gholdengium Z",
+		desc: "If held by an Gholdengo with Make It Rain, it can use One Million Coin Rain.",
+	},
 	glalitite: {
 		name: "Glalitite",
 		desc: "If held by a Glalie, this item allows it to Mega Evolve in battle.",

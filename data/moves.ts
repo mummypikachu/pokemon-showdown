@@ -13771,6 +13771,25 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Ghost",
 		contestType: "Beautiful",
 	},
+	onemillioncoinsrain: {
+		accuracy: 100,
+		basePower: 120,
+		basePowerCallback(pokemon, target, move) {
+			const specialAttackBoosts = Math.max(0, pokemon.boosts.spa || 0); // Get the number of positive special attack boosts (default to 0 if none)
+			const bp = move.basePower + 20 * specialAttackBoosts;
+			this.debug('BP: ' + bp);
+			return bp;
+		},		
+		category: "Special",
+		name: "One Million Coin Rain",
+		pp: 1,
+		priority: 0,
+		flags: {protect: 1},
+		secondary: null,
+		isZ: "gholdengiumz",
+		target: "normal",
+		type: "Steel",
+	},	
 	orderup: {
 		num: 856,
 		accuracy: 100,

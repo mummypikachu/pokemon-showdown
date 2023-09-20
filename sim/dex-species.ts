@@ -28,6 +28,7 @@ export interface SpeciesFormatsData {
 	gmaxUnreleased?: boolean;
 	isNonstandard?: Nonstandard | null;
 	natDexTier?: TierTypes.Singles | TierTypes.Other;
+	saDexTier?: TierTypes.Singles | TierTypes.Other;
 	tier?: TierTypes.Singles | TierTypes.Other;
 }
 
@@ -220,7 +221,11 @@ export class Species extends BasicEffect implements Readonly<BasicEffect & Speci
 	 * National Dex Tier. The Pokemon's location in the Smogon National Dex tier system.
 	 */
 	readonly natDexTier: TierTypes.Singles | TierTypes.Other;
-
+	/**
+	 * Sigmatic Dex Tier. The Pokemon's location in the Smogon National Dex tier system.
+	 */
+	readonly saDexTier: TierTypes.Singles | TierTypes.Other;
+	
 	constructor(data: AnyObject) {
 		super(data);
 		// eslint-disable-next-line @typescript-eslint/no-this-alias
@@ -243,6 +248,7 @@ export class Species extends BasicEffect implements Readonly<BasicEffect & Speci
 		this.tier = data.tier || '';
 		this.doublesTier = data.doublesTier || '';
 		this.natDexTier = data.natDexTier || '';
+		this.saDexTier = data.saDexTier || '';
 		this.evos = data.evos || [];
 		this.evoType = data.evoType || undefined;
 		this.evoMove = data.evoMove || undefined;
