@@ -884,6 +884,16 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3,
 		num: 186,
 	},
+	dauntless: {
+		onModifyType(move, source, target) {
+			if (move.type === 'Psychic' && target.hasType('Dark')) {
+				this.debug('Dauntless: Overriding target\'s Dark typing for Psychic move');
+				move.ignoreImmunity = true;
+			}
+		},
+		name: "Dauntless",
+		rating: 3.5,
+	},	
 	dauntlessshield: {
 		onStart(pokemon) {
 			if (this.effectState.shieldBoost) return;
@@ -1767,14 +1777,22 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 283,
 	},
 	gooey: {
-		onDamagingHit(damage, target, source, move) {
-			if (this.checkMoveMakesContact(move, source, target, true)) {
-				this.add('-ability', target, 'Gooey');
-				this.boost({spe: -1}, source, target, null, true);
+		onStart(pokemon) {
+			let activated = false;
+			for (const target of pokemon.adjacentFoes()) {
+				if (!activated) {
+					this.add('-ability', pokemon, 'Gooey', 'boost');
+					activated = true;
+				}
+				if (target.volatiles['substitute']) {
+					this.add('-immune', target);
+				} else {
+					this.boost({spe: -1}, target, pokemon, null, true);
+				}
 			}
 		},
 		name: "Gooey",
-		rating: 2,
+		rating: 4,
 		num: 183,
 	},
 	gorillatactics: {
@@ -5282,21 +5300,19 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 295,
 	},
 	toxicdilemma: {
-		// upokecenter says this is implemented as an added secondary effect
-		onModifyMove(move) {
-			if (!move?.flags['contact'] || move.target === 'self') return;
-			if (!move.ignoreImmunity) move.ignoreImmunity = {};
-			if (move.ignoreImmunity !== true) {
-				move.ignoreImmunity['Steel'] = true;
+		onModifyType(move, source, target) {
+			if (move.type === 'Poison' && target.hasType('Steel')) {
+				this.debug('Dauntless: Overriding target\'s Steel typing for Poison move');
+				move.ignoreImmunity = true;
 			}
-			if (!move.secondaries) {
-				move.secondaries = [];
+		},
+		onSourceDamagingHit(damage, target, source, move) {
+			// Despite not being a secondary, Shield Dust / Covert Cloak block Toxic Chain's effect
+			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
+
+			if (this.randomChance(3, 10)) {
+				target.trySetStatus('tox', source);
 			}
-			move.secondaries.push({
-				chance: 30,
-				status: 'psn',
-				ability: this.dex.abilities.get('toxicdilemma'),
-			});
 		},
 		name: "Toxic Dilemma",
 		rating: 3,

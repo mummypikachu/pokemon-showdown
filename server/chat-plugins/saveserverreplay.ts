@@ -50,7 +50,7 @@ export const commands: Chat.ChatCommands = {
 				// todo: somehow add seed info here
 				// maybe use room.battle.stream?
 				'<div class="battle"></div><div class="battle-log"></div><div class="replay-controls"></div><div class="replay-controls-2"></div>\n' +
-				`<pre class="urlbox" style="word-wrap: break-word;">http://sigmatic-showdown.win:10000/files/${link}</pre>\n` +
+				`<pre class="urlbox" style="word-wrap: break-word;">http://sigmatic-showdown.win:10000/files/${link}<button id="copyLinkBtn" onclick="copyLink()">Copy Link</button></pre>\n` +
 				`<h1 style="font-weight:normal;text-align:left"><strong>${format}</strong>: <a href="https://pokemonshowdown.com/users/${toID(room.p1?.name)}" class="subtle" target="_blank">${room.p1?.name}</a> vs. <a href="https://pokemonshowdown.com/users/${toID(room.p2?.name)}" class="subtle" target="_blank">${room.p2?.name}</a></h1>\n` +
 				'<p style="padding:0 1em;margin-top:0">' +
 				`<small class="uploaddate" data-timestamp="${Date.now() / 1000}"><em>Uploaded:</em> ${new Date().toDateString().split(" ")[1]} ${new Date().toDateString().split(" ")[2]}, ${new Date().getFullYear()} ${rating ? '| <em>Rating:</em>' + rating : ''}</small>` +
@@ -65,7 +65,20 @@ export const commands: Chat.ChatCommands = {
 		});
 
 		room.battle.replaySaved = true;
-
+		out.write(
+			'<script>\n' +
+			'function copyLink() {\n' +
+			'    var copyText = document.querySelector(".urlbox");\n' +
+			'    var range = document.createRange();\n' +
+			'    range.selectNode(copyText);\n' +
+			'    window.getSelection().removeAllRanges();\n' +
+			'    window.getSelection().addRange(range);\n' +
+			'    document.execCommand("copy");\n' +
+			'    window.getSelection().removeAllRanges();\n' +
+			'    alert("Link copied to clipboard!");\n' +
+			'}\n' +
+			'</script>\n'
+		);
 		// this.connection.popup(`Replay saved! TTTEST_`);
 		if (target !== 'silent') {
 			this.connection.popup(this.tr`Your replay has been uploaded! It's available at: http://sigmatic-showdown.win:10000/files/${link}`);
@@ -82,4 +95,5 @@ export const commands: Chat.ChatCommands = {
 	},
 	saveserverreplayhelp: ["/ssr or /saveserverreplay - Save the replay of the battle to server. (We are not a registered server so saving replays to replay.pokemonshowdown.com won't work.)"],
 	ssrhelp: ["/ssr or /saveserverreplay - Save the replay of the battle to server. (We are not a registered server so saving replays to replay.pokemonshowdown.com won't work.)"],
+	
 };

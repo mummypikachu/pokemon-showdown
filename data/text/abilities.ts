@@ -348,6 +348,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 
 		start: "  [POKEMON] is radiating a dark aura!",
 	},
+	dauntless: {
+		name: "Dauntless",
+		shortDesc: "Makes Psychic types ignore their Dark Immunity."
+	},
 	dauntlessshield: {
 		name: "Dauntless Shield",
 		shortDesc: "On switch-in, this Pokemon's Defense is raised by 1 stage. Once per battle.",
@@ -628,7 +632,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	gooey: {
 		name: "Gooey",
-		shortDesc: "Pokemon making contact with this Pokemon have their Speed lowered by 1 stage.",
+		desc: "On switch-in, this Pokemon lowers the Speed of opposing Pokemon by 1 stage. Pokemon with the Inner Focus, Oblivious, Own Tempo, or Scrappy Abilities and Pokemon behind a substitute are immune.",
+		shortDesc: "On switch-in, this Pokemon lowers the Speed of opponents by 1 stage.",
 	},
 	gorillatactics: {
 		name: "Gorilla Tactics",

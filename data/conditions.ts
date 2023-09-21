@@ -305,7 +305,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 	},
 	bleedingedge: {
 		name: 'bleedingedge',
-		duration: 1,
+		duration: 2,
 		onStart(pokemon, source) {
 			this.add('-activate', pokemon, 'move: ' + this.effectState.sourceEffect, '[of] ' + source);
 		},
