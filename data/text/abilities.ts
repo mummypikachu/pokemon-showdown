@@ -681,7 +681,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	hailstorm: {
 		name: "Hailstorm",
-		shortDesc: "On switch-in, this Pokemon summons Hail.",	
+		shortDesc: "On switch-in, this Pokemon summons Hail. Immune to Hail.",	
 	},
 	harvest: {
 		name: "Harvest",
@@ -1589,7 +1589,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	sandstream: {
 		name: "Sand Stream",
-		shortDesc: "On switch-in, this Pokemon summons Sandstorm.",
+		shortDesc: "On switch-in, this Pokemon summons Sandstorm. Immune to Sandstorm.",
 	},
 	sandveil: {
 		name: "Sand Veil",

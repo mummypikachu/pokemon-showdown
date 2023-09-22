@@ -21666,10 +21666,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	tyrantswrath: {
 		num: 910,
-		accuracy: 100,
-		basePower: 50,
+		accuracy: 80,
+		basePower: 30,
 		basePowerCallback(pokemon, target, move) {
-			return 50 * move.hit;
+			return 30 * move.hit;
 		},
 		category: "Physical",
 		name: "Tyrant's Wrath",
@@ -21678,14 +21678,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {protect: 1},
 		multihit: 3,
 		multiaccuracy: true,
-		secondary: {
-			chance: 20,
-			self: {
-				boosts: {
-					atk: 1,
-				},
-			},
-		},
+		secondary: null,
 		target: "normal",
 		type: "Rock",
 		contestType: "Tough",

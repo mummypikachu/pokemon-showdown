@@ -4205,6 +4205,9 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onDamagingHit(damage, target, source, move) {
 			this.field.setWeather('sandstorm');
 		},
+		onImmunity(type, pokemon) {
+			if (type === 'sandstorm') return false;
+		},
 		name: "Sand Spit",
 		rating: 1,
 		num: 245,
@@ -4212,6 +4215,9 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	sandstream: {
 		onStart(source) {
 			this.field.setWeather('sandstorm');
+		},
+		onImmunity(type, pokemon) {
+			if (type === 'sandstorm') return false;
 		},
 		name: "Sand Stream",
 		rating: 4,
