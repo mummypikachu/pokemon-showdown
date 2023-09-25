@@ -1418,6 +1418,11 @@ export class TeamValidator {
 		const ndTierTag = 'pokemontag:nd' + toID(ndTier);
 		setHas[ndTierTag] = true;
 
+		const saTier = tierSpecies.saDexTier === '(PU)' ? 'ZU' :
+		tierSpecies.saDexTier === '(NU)' ? 'PU' : tierSpecies.saDexTier;
+		const saTierTag = 'pokemontag:sd' + toID(saTier);
+		setHas[saTierTag] = true;
+
 		// Only pokemon that can gigantamax should have the Gmax flag
 		if (!tierSpecies.canGigantamax && set.gigantamax) {
 			return `${tierSpecies.name} cannot Gigantamax but is flagged as being able to.`;

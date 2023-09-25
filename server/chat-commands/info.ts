@@ -602,7 +602,7 @@ export const commands: Chat.ChatCommands = {
 						tierDisplay = 'doubles tiers';
 					} else if (room.battle.format.includes('nationaldex')) {
 						tierDisplay = 'National Dex tiers';
-					}
+					} 
 				}
 				if (!tierDisplay) tierDisplay = 'tiers';
 				const displayedTier = tierDisplay === 'tiers' ? pokemon.tier :

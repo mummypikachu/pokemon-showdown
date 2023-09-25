@@ -23,27 +23,25 @@ export const Rulesets: {[k: string]: FormatData} = {
 	standardsigmadex: {
 		effectType: 'ValidatorRule',
 		name: 'Standard SigmaDex',
-		desc: "The standard ruleset for all offical Smogon singles tiers (Ubers, OU, etc.)",
-		onValidateSet(set) {
+		desc: "The standard ruleset for all offical Sigmatic singles tiers (Ubers, OU, etc.)",
+		onValidateSet(set, obtainable) {
 			const species = this.dex.species.get(set.species);
-			if (species.saDexTier === 'Illegal') {
-				if (this.ruleTable.has(`+pokemon:${species.id}`)) return;
-				return [`${set.name || set.species} does not exist in the National Dex.`];
-			}
 			const requireObtainable = this.ruleTable.has('obtainable');
 			if (requireObtainable) {
-				if (species.saDexTier === "Unreleased") {
+				if (species.saDexTier === 'Illegal') {
 					const basePokemon = this.toID(species.baseSpecies);
+					
 					if (this.ruleTable.has(`+pokemon:${species.id}`) || this.ruleTable.has(`+basepokemon:${basePokemon}`)) {
 						return;
+					
 					}
-					return [`${set.name || set.species} does not exist in the National Dex.`];
-				}
+					return [`${set.name || set.species} does not exist in the Sigmatic Dex.`];
+				};
 				for (const moveid of set.moves) {
 					const move = this.dex.moves.get(moveid);
 					if (move.isNonstandard === 'Unobtainable' && move.gen === this.dex.gen || move.id === 'lightofruin') {
 						if (this.ruleTable.has(`+move:${move.id}`)) continue;
-						const problem = `${set.name}'s move ${move.name} does not exist in the National Dex.`;
+						const problem = `${set.name}'s move ${move.name} does not exist in the Sigmatic Dex.`;
 						if (this.ruleTable.has('omunobtainablemoves')) {
 							const outOfBattleSpecies = this.getValidationSpecies(set)[0];
 							if (!this.omCheckCanLearn(move, outOfBattleSpecies, this.allSources(outOfBattleSpecies), set, problem)) continue;
@@ -66,7 +64,7 @@ export const Rulesets: {[k: string]: FormatData} = {
 			}
 		},
 		ruleset: [
-			'Tera Type Preview', 'Team Preview', 'Sleep Clause Mod', 'Species Clause', 'Nickname Clause', 'OHKO Clause', 'Evasion Items Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod',
+			'Tera Type Preview', 'Team Preview', 'Sleep Clause Mod', 'Species Clause', 'Nickname Clause', 'OHKO Clause', 'Evasion Items Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Obtainable',
 		],
 		
 	},

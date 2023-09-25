@@ -848,7 +848,7 @@ export const Formats: FormatList = [
 		column: 2,
 	},
 	{
-		name: "Sigmatic Dex OU",
+		name: "[Gen 9] Sigmatic Dex OU",
 
 		mod: 'gen9',
 		ruleset: ['Standard SigmaDex', '+CAP'],

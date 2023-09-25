@@ -3018,14 +3018,17 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	archen: {
 		tier: "LC",
 		natDexTier: "LC",
+		saDexTier: "LC",
 	},
 	archeops: {
 		tier: "OU",
 		natDexTier: "RU",
+		saDexTier: "OU",
 	},
 	trubbish: {
 		tier: "LC",
 		natDexTier: "LC",
+		saDexTier: "LC",
 	},
 	garbodor: {
 		tier: "UU",

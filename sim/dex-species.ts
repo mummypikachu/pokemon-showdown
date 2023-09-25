@@ -222,7 +222,7 @@ export class Species extends BasicEffect implements Readonly<BasicEffect & Speci
 	 */
 	readonly natDexTier: TierTypes.Singles | TierTypes.Other;
 	/**
-	 * Sigmatic Dex Tier. The Pokemon's location in the Smogon National Dex tier system.
+	 * Sigmatic Dex Tier. The Pokemon's location in the Sigmatic Dex tier system.
 	 */
 	readonly saDexTier: TierTypes.Singles | TierTypes.Other;
 	
@@ -444,19 +444,22 @@ export class DexSpecies {
 					if (!(key in species)) (species as any)[key] = baseSpeciesStatuses[key];
 				}
 			}
-			if (!species.tier && !species.doublesTier && !species.natDexTier && species.baseSpecies !== species.name) {
+			if (!species.tier && !species.doublesTier && !species.natDexTier && !species.saDexTier && species.baseSpecies !== species.name) {
 				if (species.baseSpecies === 'Mimikyu') {
 					species.tier = this.dex.data.FormatsData[toID(species.baseSpecies)].tier || 'Illegal';
 					species.doublesTier = this.dex.data.FormatsData[toID(species.baseSpecies)].doublesTier || 'Illegal';
 					species.natDexTier = this.dex.data.FormatsData[toID(species.baseSpecies)].natDexTier || 'Illegal';
+					species.saDexTier = this.dex.data.FormatsData[toID(species.baseSpecies)].saDexTier || 'Illegal';
 				} else if (species.id.endsWith('totem')) {
 					species.tier = this.dex.data.FormatsData[species.id.slice(0, -5)].tier || 'Illegal';
 					species.doublesTier = this.dex.data.FormatsData[species.id.slice(0, -5)].doublesTier || 'Illegal';
 					species.natDexTier = this.dex.data.FormatsData[species.id.slice(0, -5)].natDexTier || 'Illegal';
+					species.saDexTier = this.dex.data.FormatsData[species.id.slice(0, -5)].saDexTier || 'Illegal';
 				} else if (species.battleOnly) {
 					species.tier = this.dex.data.FormatsData[toID(species.battleOnly)].tier || 'Illegal';
 					species.doublesTier = this.dex.data.FormatsData[toID(species.battleOnly)].doublesTier || 'Illegal';
 					species.natDexTier = this.dex.data.FormatsData[toID(species.battleOnly)].natDexTier || 'Illegal';
+					species.saDexTier = this.dex.data.FormatsData[toID(species.battleOnly)].saDexTier || 'Illegal';
 				} else {
 					const baseFormatsData = this.dex.data.FormatsData[toID(species.baseSpecies)];
 					if (!baseFormatsData) {
@@ -465,15 +468,18 @@ export class DexSpecies {
 					species.tier = baseFormatsData.tier || 'Illegal';
 					species.doublesTier = baseFormatsData.doublesTier || 'Illegal';
 					species.natDexTier = baseFormatsData.natDexTier || 'Illegal';
+					species.saDexTier = baseFormatsData.saDexTier || 'Illegal';
 				}
 			}
 			if (!species.tier) species.tier = 'Illegal';
 			if (!species.doublesTier) species.doublesTier = species.tier as any;
 			if (!species.natDexTier) species.natDexTier = species.tier;
+			if (!species.saDexTier) species.saDexTier = 'Illegal';
 			if (species.gen > this.dex.gen) {
 				species.tier = 'Illegal';
 				species.doublesTier = 'Illegal';
 				species.natDexTier = 'Illegal';
+				species.saDexTier = 'Illegal';
 				species.isNonstandard = 'Future';
 			}
 			if (this.dex.currentMod === 'gen7letsgo' && !species.isNonstandard) {
@@ -490,6 +496,8 @@ export class DexSpecies {
 					species.id === 'pichuspikyeared') {
 					species.isNonstandard = 'Future';
 					species.tier = species.doublesTier = species.natDexTier = 'Illegal';
+					species.tier = species.doublesTier = species.saDexTier = 'Illegal';
+
 				}
 			}
 			species.nfe = species.evos.some(evo => {
@@ -507,7 +515,7 @@ export class DexSpecies {
 		} else {
 			species = new Species({
 				id, name: id,
-				exists: false, tier: 'Illegal', doublesTier: 'Illegal', natDexTier: 'Illegal', isNonstandard: 'Custom',
+				exists: false, tier: 'Illegal', doublesTier: 'Illegal', natDexTier: 'Illegal', isNonstandard: 'Custom', saDexTier: 'Illegal',
 			});
 		}
 		if (species.exists) this.speciesCache.set(id, species);
