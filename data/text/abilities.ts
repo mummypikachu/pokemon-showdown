@@ -632,7 +632,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	gooey: {
 		name: "Gooey",
-		desc: "On switch-in, this Pokemon lowers the Speed of opposing Pokemon by 1 stage. Pokemon with the Inner Focus, Oblivious, Own Tempo, or Scrappy Abilities and Pokemon behind a substitute are immune.",
+		desc: "On switch-in, this Pokemon lowers the Speed of opposing Pokemon by 1 stage. Pokemon with the Tangled Feet, or Quick Feet Abilities and Pokemon behind a substitute are immune.",
 		shortDesc: "On switch-in, this Pokemon lowers the Speed of opponents by 1 stage.",
 	},
 	gorillatactics: {

@@ -847,4 +847,11 @@ export const Formats: FormatList = [
 		section: "Sigmatic Dex",
 		column: 2,
 	},
+	{
+		name: "Sigmatic Dex OU",
+
+		mod: 'gen9',
+		ruleset: ['Standard SigmaDex', '+CAP'],
+		banlist: ['Moody', 'Sand Veil', 'Snow Cloak', 'King\'s Rock', 'Baton Pass', 'Gorilla Tactics', 'Last Respects', 'Shedinja + Air Balloon', 'Zygarde + Power Construct'],
+	},
 ];

@@ -3975,6 +3975,12 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				return this.chainModify(1.5);
 			}
 		},
+		onTryBoost(boost, target, source, effect) {
+			if (effect.name === 'Gooey' && boost.spe) {
+				delete boost.spe;
+				this.add('-fail', target, 'unboost', 'Speed', '[from] ability: Quick Feet', '[of] ' + target);
+			}
+		},
 		name: "Quick Feet",
 		rating: 2.5,
 		num: 95,
@@ -5099,9 +5105,15 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				return this.chainModify(0.5);
 			}
 		},
+		onTryBoost(boost, target, source, effect) {
+			if (effect.name === 'Gooey' && boost.spe) {
+				delete boost.spe;
+				this.add('-fail', target, 'unboost', 'Speed', '[from] ability: Tangled Feet', '[of] ' + target);
+			}
+		},
 		isBreakable: true,
 		name: "Tangled Feet",
-		rating: 1,
+		rating: 1.5,
 		num: 77,
 	},
 	tanglinghair: {

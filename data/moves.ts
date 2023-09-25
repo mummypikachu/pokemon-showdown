@@ -22208,6 +22208,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 			case 'snow':
 				move.type = 'Ice';
 				break;
+			case 'windy':
+			case 'deltastream': 
+				move.type = 'Flying';
+				break;	
 			}
 		},
 		onModifyMove(move, pokemon) {
@@ -22227,6 +22231,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 			case 'snow':
 				move.basePower *= 2;
 				break;
+			case 'windy':
+			case 'deltastream': 
+				move.basePower *= 2;
+				break;	
 			}
 			this.debug('BP: ' + move.basePower);
 		},
@@ -22263,7 +22271,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 			case 'snow':
 				move.type = 'Ice';
 				break;
-			case 'windy': 
+			case 'windy':
+			case 'deltastream': 
 				move.type = 'Flying';
 				break;	
 			}
@@ -22286,6 +22295,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 			case 'snow':
 				move.basePower *= 2;
 				break;
+			case 'windy':
+			case 'deltastream': 
+				move.basePower *= 2;
+				break;	
 			}
 			this.debug('BP: ' + move.basePower);
 		},
