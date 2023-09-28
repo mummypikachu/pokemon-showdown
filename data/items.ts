@@ -3291,7 +3291,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	loadeddice: {
 		name: "Loaded Dice",
-		spritenum: 0, // TODO
+		spritenum: 566, // TODO
 		// partially implemented in sim/battle-actions.ts:BattleActions#hitStepMoveHitLoop
 		onModifyMove(move) {
 			if (move.multiaccuracy) {
@@ -5869,7 +5869,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	strikervest: {
 		name: "Striker Vest",
-		spritenum: 581,
+		spritenum: 565,
 		fling: {
 			basePower: 80,
 		},
