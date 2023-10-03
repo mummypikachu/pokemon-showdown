@@ -15439,7 +15439,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	hitmonlee: {
 		learnset: {
 			attract: ["9M", "9M", "9V", "6M", "5M", "4M", "3M"],
-			aurasphere: ["9M"],
 			bide: ["9V"],
 			blazekick: ["9M", "9L24", "9L45", "6L45", "5L45", "4L41"],
 			bodyslam: ["9M", "9V", "9T"],
@@ -15524,6 +15523,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			takedown: ["9V"],
 			thief: ["9M", "9M", "9V", "6M", "5M", "4M", "3M"],
 			throatchop: ["9M"],
+			triplekick: ["9M"],
 			toxic: ["9V", "9M", "9V", "6M", "5M", "4M", "3M"],
 			uproar: ["9M"],
 			vacuumwave: ["4T"],
