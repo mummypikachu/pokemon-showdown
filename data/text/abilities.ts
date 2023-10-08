@@ -24,6 +24,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 			shortDesc: "This Pokemon's Normal-type moves become Flying type and have 1.3x power.",
 		},
 	},
+	aerodynamic: {
+		name: "Aerodynamic",
+		shortDesc: "If Wind is active all attacks from this pokemon are boosted by 1.5x",
+	},
 	aftermath: {
 		name: "Aftermath",
 		desc: "If this Pokemon is knocked out with a contact move, that move's user loses 1/4 of its maximum HP, rounded down. If any active Pokemon has the Damp Ability, this effect is prevented.",
@@ -2256,10 +2260,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	windpower: {
 		name: "Wind Power",
-		desc: "On switch-in This Pokemon sets up Tailwind for 6 turns",
-		shortDesc: "On switch-in This Pokemon sets up Tailwind for 6 turns",
-
-		start: "#electromorphosis",
+		desc: "On switch-in This Pokemon sets up Tailwind for 4 turns",
+		shortDesc: "On switch-in This Pokemon sets up Tailwind for 4 turns",
 	},
 	windrider: {
 		name: "Wind Rider",
@@ -2326,7 +2328,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "The duration of Gravity, Heal Block, Magic Room, Safeguard, Tailwind, Trick Room, and Wonder Room is increased by 2 turns if the effect is started by this Pokemon and starts Trick Room.",
 		shortDesc: "When used, Gravity/Heal Block/Safeguard/Tailwind/Room effects last 2 more turns also summons Trick Room.",
 
-		activate: "  [POKEMON] extends [MOVE] by 2 turns!",
+		activate: "  [POKEMON] extends [MOVE] by 6 turns!",
 	},
 	ampereoverdrive: {
 		name: "Ampere Overdrive",

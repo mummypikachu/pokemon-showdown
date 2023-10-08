@@ -143,7 +143,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 				this.add('-activate', source, 'ability: Persistent', '[move] Trick Room');
 				return 6;
 			}
-			return 5;
+			return 4;
 		},
 		onFieldStart(target, source) {
 			if (source?.hasAbility('twister')) {

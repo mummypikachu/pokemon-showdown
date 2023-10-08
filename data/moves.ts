@@ -20307,7 +20307,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			durationCallback(target, source, effect) {
 				if (source?.hasAbility('windpower')) {
 					this.add('-activate', source, 'ability: Wind Power', '[move] Tailwind');
-					return 6;
+					return 4;
 				}
 				return 4;
 			},

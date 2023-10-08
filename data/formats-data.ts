@@ -1004,6 +1004,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "UU",
 		doublesTier: "DUU",
 	},
+	aerileon: {
+		tier: "(OU)",
+		doublesTier: "(DOU)",
+	},
 	porygon: {
 		tier: "LC",
 		natDexTier: "LC",
