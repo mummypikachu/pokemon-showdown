@@ -930,10 +930,10 @@ export const Formats: FormatList = [
 		ruleset: ['Standard OMs', '!Obtainable Abilities', 'Ability Clause = 1', 'Sleep Clause Mod'],
 		banlist: [
 			'Uber', 'Power Construct',
-			'Baton Pass', 'King\'s Rock', 'Arena Trap', 'Comatose', 'Contrary', 'Fur Coat',
+			'King\'s Rock', 'Arena Trap', 'Comatose', 'Contrary', 'Fur Coat',
 			'Good as Gold', 'Gorilla Tactics', 'Huge Power', 'Ice Scales', 'Illusion', 'Imposter', 'Innards Out', 'Magic Bounce', 'Magnet Pull',
 			'Moody', 'Neutralizing Gas', 'Orichalcum Pulse', 'Parental Bond', 'Poison Heal', 'Pure Power', 'Shadow Tag', 'Simple', 'Speed Boost',
-			'Stakeout', 'Unburden', 'Water Bubble', 'Wonder Guard', 'King\'s Rock', 'Baton Pass', 'Revival Blessing', 'Infernal Surge', 'Hadron Engine', 'Ampere Overdrive', 'Last Respects', 'Wonder Power',
+			'Stakeout', 'Unburden', 'Water Bubble', 'Wonder Guard', 'Baton Pass', 'Revival Blessing', 'Infernal Surge', 'Hadron Engine', 'Ampere Overdrive', 'Last Respects', 'Wonder Power',
 		],
 		onValidateSet(set) {
 			const species = this.dex.species.get(set.species);
