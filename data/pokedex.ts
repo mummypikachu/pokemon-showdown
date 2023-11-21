@@ -8385,7 +8385,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Porygon-Z",
 		types: ["Normal"],
 		gender: "N",
-		baseStats: {hp: 85, atk: 20, def: 40, spa: 175, spd: 45, spe: 115},
+		baseStats: {hp: 85, atk: 20, def: 40, spa: 165, spd: 45, spe: 115},
 		abilities: {0: "Adaptability", 1: "Download", H: "Protean"},
 		heightm: 0.9,
 		weightkg: 34,
@@ -19428,7 +19428,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	},
 	// NOTE: PokeStar "formes" are not actually formes and thus do not have a formeOrder
 	pokestarsmeargle: {
-		num: -5000,
+		num: 235,
 		name: "Pokestar Smeargle",
 		types: ["Normal"],
 		baseStats: {hp: 55, atk: 20, def: 35, spa: 20, spd: 45, spe: 75},
@@ -19437,7 +19437,6 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 61,
 		color: "White",
 		eggGroups: ["Field"],
-		gen: 5,
 	},
 	pokestarufo: {
 		num: -5001,

@@ -96153,6 +96153,9 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 		},
 	},
 	pokestarsmeargle: {
+		learnset: {
+			sketch: ["9L1", "9V", "6L1", "6S2", "5L1", "5D", "4L1", "3L1"],
+		},
 		eventData: [
 			{generation: 5, level: 60, gender: "M", abilities: ["owntempo"], moves: ["mindreader", "guillotine", "tailwhip", "gastroacid"]},
 			{generation: 5, level: 30, gender: "M", abilities: ["owntempo"], moves: ["outrage", "magiccoat"]},

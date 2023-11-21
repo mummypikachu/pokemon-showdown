@@ -5975,17 +5975,6 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	cleanslate: {
 		name: "Clean Slate",
 		onStart(pokemon) {
-			let totalspa = 0;
-			let totalatk = 0;
-			for (const target of pokemon.foes()) {
-				totalatk += target.getStat('atk', false, true);
-				totalspa += target.getStat('spa', false, true);
-			}
-			if (totalatk && totalatk >= totalspa) {
-				this.boost({def: 1});
-			} else if (totalspa) {
-				this.boost({spd: 1});
-			}
 			let success = false;
 			if (!pokemon.volatiles['substitute']) success;
 			const removeTarget = [
