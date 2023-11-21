@@ -850,11 +850,7 @@ export const Formats: FormatList = [
 		ruleset: ['Standard OMs','Sleep Clause Mod'],
 		banlist: [
 			'Uber', 'Power Construct',
-			'Baton Pass', 'King\'s Rock',
-			// Moody users
-			'Glalie', 'Octillery', 'Remoraid', 'Snorunt', 'Smeargle', 'Bidoof', 'Scovillian', 'Bibarel', 
-			// Shadow Tag/Arena Trap
-			'Diglett-Base', 'Dugtrio-Base', 'Gothita', 'Gothitelle', 'Gothorita', 'Trapinch', 'Wobbuffet', 'Wynaut', 'Chandelure', 'Gengar-Mega'
+			'Baton Pass', 'King\'s Rock', 'Moody', 'Shadow Tag', 'Arena Trap',
 		],
 		onValidateSet(set) {
 			const species = this.dex.species.get(set.species);
