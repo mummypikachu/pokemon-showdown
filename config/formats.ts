@@ -847,7 +847,7 @@ export const Formats: FormatList = [
 			`&bullet; <a href="https://www.smogon.com/forums/threads/3679692/">Pok&eacute;bilities</a>`,
 		],
 		mod: 'pokebilities',
-		ruleset: ['Standard', 'Sleep Clause Mod'],
+		ruleset: ['Standard OMs','Sleep Clause Mod'],
 		banlist: [
 			'Uber', 'Power Construct',
 			'Baton Pass', 'King\'s Rock',
