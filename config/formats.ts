@@ -1003,6 +1003,35 @@ export const Formats: FormatList = [
 			pokemon.m.innates = undefined;
 		},
 	},
+	{
+		name: "[Gen 9] 40 BP",
+		mod: 'gen9',
+		ruleset: ['Standard', '+CAP'],
+		banlist: [
+			'Leftovers', 'Cud Chew', 'Harvest', 'Mew', 'Arceus', 'Mewtwo-Mega-Y', 'Mewtwo-Mega-X', 'Necrozma-Ultra',
+			'Groudon-Primal', 'Kyogre-Primal', 'Zygarde-Complete', 'Calyrex-Ice', 'Necrozma', 'Zacian', 'Zamazenta',
+			'Rayquaza', 'Deoxys-Defense', 'Toxic Debris', 'Regenerator', 'Poison Heal', 'Black Sludge', 'Fuecoco',
+			'Cheek Pouch', 'Sunkern', 'Gallade-Mega', 'Gengar-Mega', 'Light Ball', 'Wide Lens', 'Technician',
+			'Kangaskhan-Mega', 'Lopunny-Mega', 'Zoroark-Hisui', 'Zen Mode', 'Tyranitar-Mega', 'Altaria-Mega',
+			'Gyarados-Mega', 'Salamence-Mega', 'Suicune', 'Dondozo', 'Assault Vest', 'Diancie-Mega', 'Regirock',
+			'Iron Fist', 'Strong Jaw', 'Iapapa Berry', 'Wiki Berry', 'Rocky Helmet', 'Aguav Berry', 'Lugia',
+			'Garganacl', 'Registeel', 'Regice', 'Aggron-Mega', 'Steelix-Mega', 'Sirfetch\'d', 'Perish Body',
+			'Hariyama', 'Supreme Overlord', 'Palkia', 'Dialga'
+		],
+		onValidateSet(set) {
+			const maxBP = 40; // Set the maximum allowed base power
+	
+			// Check each move in the set
+			for (const moveSlot of set.moves) {
+				const move = this.dex.moves.get(moveSlot);
+	
+				// Check if the move's base power exceeds the allowed maximum
+				if (move.basePower && move.basePower > maxBP) {
+					return [`${set.name}'s move ${move.name} exceeds the maximum allowed base power of ${maxBP}.`];
+				}
+			}
+		},
+	},		
 	// Sigmatic Dex
 	///////////////////////////////////////////////////////////////////
 
