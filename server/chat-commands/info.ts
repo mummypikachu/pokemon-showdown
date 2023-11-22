@@ -602,12 +602,15 @@ export const commands: Chat.ChatCommands = {
 						tierDisplay = 'doubles tiers';
 					} else if (room.battle.format.includes('nationaldex')) {
 						tierDisplay = 'National Dex tiers';
+					} else if (room.battle.format.includes('sigmadex')) {
+						tierDisplay = 'Sigmatic Dex tiers';
 					} 
 				}
 				if (!tierDisplay) tierDisplay = 'tiers';
 				const displayedTier = tierDisplay === 'tiers' ? pokemon.tier :
 					tierDisplay === 'doubles tiers' ? pokemon.doublesTier :
 					tierDisplay === 'National Dex tiers' ? pokemon.natDexTier :
+					tierDisplay === 'Sigmatic Dex tiers' ? pokemon.saDexTier :
 					pokemon.num >= 0 ? String(pokemon.num) : pokemon.tier;
 				buffer += `|raw|${Chat.getDataPokemonHTML(pokemon, dex.gen, displayedTier)}\n`;
 				if (showDetails) {

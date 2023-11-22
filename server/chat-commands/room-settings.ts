@@ -1531,6 +1531,7 @@ export const commands: Chat.ChatCommands = {
 			tiers: 'tiers',
 			doublestiers: 'doubles tiers',
 			nationaldextiers: 'National Dex tiers',
+			sigmaticdextiers: 'Sigmatic Dex tiers',
 			numbers: 'numbers',
 		};
 
@@ -1701,6 +1702,10 @@ export const roomSettings: Chat.SettingsHandler[] = [
 			[
 				`National Dex tiers`,
 				room.settings.dataCommandTierDisplay === 'National Dex tiers' || `roomtierdisplay National Dex tiers`,
+			],
+			[
+				`Sigmatic Dex tiers`,
+				room.settings.dataCommandTierDisplay === 'Sigmatic Dex tiers' || `roomtierdisplay Sigmatic Dex tiers`,
 			],
 			[`numbers`, room.settings.dataCommandTierDisplay === 'numbers' || `roomtierdisplay numbers`],
 		],

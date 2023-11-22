@@ -111,6 +111,7 @@ export const commands: Chat.ChatCommands = {
 			if (dex) target += `, mod=${dex.currentMod}`;
 		}
 		if (cmd === 'nds') target += ', natdex';
+		if (cmd === 'sas') target += ', sadex';
 		const response = await runSearch({
 			target,
 			cmd: 'dexsearch',
@@ -278,6 +279,7 @@ export const commands: Chat.ChatCommands = {
 			if (dex) target += `, mod=${dex.currentMod}`;
 		}
 		if (cmd === 'nms') target += ', natdex';
+		if (cmd === 'sms') target += ', sadex';
 		const response = await runSearch({
 			target,
 			cmd: 'movesearch',
@@ -648,6 +650,8 @@ function runDexsearch(target: string, cmd: string, canAll: boolean, message: str
 				continue;
 			}
 
+
+			
 			if (target === 'unreleased') {
 				if (parameters.length > 1) return {error: "The parameter 'unreleased' cannot have alternative parameters."};
 				unreleasedSearch = true;
