@@ -1006,7 +1006,7 @@ export const Formats: FormatList = [
 	{
 		name: "[Gen 9] 40 BP",
 		mod: 'gen9',
-		ruleset: ['Standard', 'CAP'],
+		ruleset: ['Standard', '+CAP'],
 		banlist: [
 			'Leftovers', 'Cud Chew', 'Harvest', 'Mew', 'Arceus', 'Mewtwo-Mega-Y', 'Mewtwo-Mega-X', 'Necrozma-Ultra',
 			'Groudon-Primal', 'Kyogre-Primal', 'Zygarde-Complete', 'Calyrex-Ice', 'Necrozma', 'Zacian', 'Zamazenta',
