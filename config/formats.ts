@@ -1006,17 +1006,14 @@ export const Formats: FormatList = [
 	{
 		name: "[Gen 9] 40 BP",
 		mod: 'gen9',
-		ruleset: ['Standard', '+CAP'],
+		ruleset: ['Standard', 'CAP'],
 		banlist: [
 			'Leftovers', 'Cud Chew', 'Harvest', 'Mew', 'Arceus', 'Mewtwo-Mega-Y', 'Mewtwo-Mega-X', 'Necrozma-Ultra',
 			'Groudon-Primal', 'Kyogre-Primal', 'Zygarde-Complete', 'Calyrex-Ice', 'Necrozma', 'Zacian', 'Zamazenta',
-			'Rayquaza', 'Deoxys-Defense', 'Toxic Debris', 'Regenerator', 'Poison Heal', 'Black Sludge', 'Fuecoco',
-			'Cheek Pouch', 'Sunkern', 'Gallade-Mega', 'Gengar-Mega', 'Light Ball', 'Wide Lens', 'Technician',
-			'Kangaskhan-Mega', 'Lopunny-Mega', 'Zoroark-Hisui', 'Zen Mode', 'Tyranitar-Mega', 'Altaria-Mega',
-			'Gyarados-Mega', 'Salamence-Mega', 'Suicune', 'Dondozo', 'Assault Vest', 'Diancie-Mega', 'Regirock',
-			'Iron Fist', 'Strong Jaw', 'Iapapa Berry', 'Wiki Berry', 'Rocky Helmet', 'Aguav Berry', 'Lugia',
-			'Garganacl', 'Registeel', 'Regice', 'Aggron-Mega', 'Steelix-Mega', 'Sirfetch\'d', 'Perish Body',
-			'Hariyama', 'Supreme Overlord', 'Palkia', 'Dialga'
+			'Rayquaza', 'Deoxys-Defense', 'Toxic Debris', 'Regenerator', 'Poison Heal', 'Black Sludge', 'Cheek Pouch', 
+			'Bleeding Edge', 'Shadow Tag', 'Light Ball', 'Wide Lens', 'Technician', 'Kangaskhan-Mega', 'Striker',
+			'Assault Vest', 'Diancie-Mega', 'Iron Fist', 'Strong Jaw', 'Iapapa Berry', 'Wiki Berry', 
+			'Rocky Helmet', 'Aguav Berry', 'Lugia', 'Perish Body', 'Supreme Overlord', 'Palkia', 'Dialga', 'Power Trip', 'Stored Power'
 		],
 		onValidateSet(set) {
 			const maxBP = 40; // Set the maximum allowed base power

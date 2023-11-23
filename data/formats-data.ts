@@ -5547,8 +5547,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "CAP",
 	},
 	pokestarsmeargle: {
-		isNonstandard: "Custom",
-		tier: "Illegal",
+		tier: "RU",
 	},
 	pokestarufo: {
 		isNonstandard: "Custom",
