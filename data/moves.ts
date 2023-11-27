@@ -430,7 +430,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		contestType: "Cool",
 		volatileStatus: 'taunt',
 		condition: {
-			duration: 3,
+			duration: 2,
 			onStart(target) {
 				if (target.activeTurns && !this.queue.willMove(target)) {
 					this.effectState.duration++;
@@ -10863,6 +10863,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		heal: [1, 4],
 		secondary: null,
 		target: "allies",
+		zMove: {boost:{def:1}},
 		type: "Water",
 	},
 	lightofruin: {
@@ -14416,7 +14417,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	poisonsting: {
 		num: 40,
 		accuracy: 100,
-		basePower: 15,
+		basePower: 40,
 		category: "Physical",
 		name: "Poison Sting",
 		pp: 35,

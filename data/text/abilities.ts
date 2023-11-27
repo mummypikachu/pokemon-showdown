@@ -372,8 +372,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	defeatist: {
 		name: "Defeatist",
-		desc: "While this Pokemon has 1/4 or less of its maximum HP, its Attack and Special Attack are halved.",
-		shortDesc: "While this Pokemon has 1/4 or less of its max HP, its Attack and Sp. Atk are halved.",
+		desc: "While this Pokemon has 1/4 or less of its maximum HP, its Attack and Special Attack are halved but, Speed is doubled.",
+		shortDesc: "While this Pokemon has 1/4 or less of its max HP, its Attack and Sp. Atk are halved, Speed is doubled.",
 	},
 	defiant: {
 		name: "Defiant",

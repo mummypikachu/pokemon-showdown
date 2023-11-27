@@ -937,6 +937,12 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				return this.chainModify(0.5);
 			}
 		},
+		onModifySpePriority: 5,
+		onModifySpe(atk, pokemon) {
+			if (pokemon.hp <= pokemon.maxhp / 4) {
+				return this.chainModify(2);
+			}
+		},
 		name: "Defeatist",
 		rating: 2,
 		num: 129,

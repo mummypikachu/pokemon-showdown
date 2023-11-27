@@ -1010,24 +1010,36 @@ export const Formats: FormatList = [
 		banlist: [
 			'Leftovers', 'Cud Chew', 'Harvest', 'Mew', 'Arceus', 'Mewtwo-Mega-Y', 'Mewtwo-Mega-X', 'Necrozma-Ultra',
 			'Groudon-Primal', 'Kyogre-Primal', 'Zygarde-Complete', 'Calyrex-Ice', 'Necrozma', 'Zacian', 'Zamazenta',
-			'Rayquaza', 'Deoxys-Defense', 'Toxic Debris', 'Regenerator', 'Poison Heal', 'Black Sludge', 'Cheek Pouch', 
-			'Bleeding Edge', 'Shadow Tag', 'Light Ball', 'Wide Lens', 'Technician', 'Kangaskhan-Mega', 'Striker',
-			'Assault Vest', 'Diancie-Mega', 'Iron Fist', 'Strong Jaw', 'Iapapa Berry', 'Wiki Berry', 
-			'Rocky Helmet', 'Aguav Berry', 'Lugia', 'Perish Body', 'Supreme Overlord', 'Palkia', 'Dialga', 'Power Trip', 'Stored Power'
+			'Rayquaza', 'Deoxys-Defense', 'Toxic Debris', 'Regenerator', 'Poison Heal', 'Black Sludge', 'Cheek Pouch',
+			'Fuecoco', 'Sunkern', 'Gallade-Mega', 'Gengar-Mega', 'Light Ball', 'Wide Lens', 'Technician',
+			'Kangaskhan-Mega', 'Lopunny-Mega', 'Zoroark-Hisui', 'Zen Mode', 'Tyranitar-Mega', 'Altaria-Mega',
+			'Gyarados-Mega', 'Salamence-Mega', 'Suicune', 'Dondozo', 'Assault Vest', 'Diancie-Mega', 'Regirock',
+			'Iron Fist', 'Strong Jaw', 'Iapapa Berry', 'Wiki Berry', 'Rocky Helmet', 'Aguav Berry', 'Lugia',
+			'Garganacl', 'Registeel', 'Regice', 'Aggron-Mega', 'Steelix-Mega', 'Sirfetchd', 'Perish Body',
+			'Hariyama', 'Supreme Overlord', 'Palkia', 'Dialga', 'Guts'
 		],
 		onValidateSet(set) {
-			const maxBP = 40; // Set the maximum allowed base power
-	
+			const allowedMoves = [
+				'Tackle', 'Fake Out', 'Branch Poke', 'Pay Day', 'Pound', 'Fury Cutter', 'Scratch',
+				'Rock Smash', 'Salt Cure', 'Accelerock', 'Bullet Punch', 'Mach Punch', 'Shadow Sneak',
+				'Aqua Jet', 'Dual Wingbeat', 'Ice Shard', 'Hold Back', 'False Swipe', 'Leafage',
+				'Quick Attack', 'Acid', 'Disarming Voice', 'Fairy Wind', 'Mega Drain', 'Ember',
+				'Sand Tomb', 'Gust', 'Water Gun', 'Powder Snow', 'Twister', 'Echoed Voice',
+				'Twin Beam', 'Vacuum Wave', 'Power-up Punch', 'Bubble', 'Thundershock', 'Acid Spray',
+				'Pursuit', 'Dual Chop', 'Mirror Move', 'Transform' , 'Poison Sting' , 'Anger Hit', 
+				'Pressure Chop'
+			];
+		
 			// Check each move in the set
 			for (const moveSlot of set.moves) {
 				const move = this.dex.moves.get(moveSlot);
-	
-				// Check if the move's base power exceeds the allowed maximum
-				if (move.basePower && move.basePower > maxBP) {
-					return [`${set.name}'s move ${move.name} exceeds the maximum allowed base power of ${maxBP}.`];
+		
+				// Check if the move is not in the allowed list
+				if (!allowedMoves.includes(move.id)) {
+					return [`${set.name}'s move ${move.name} is not allowed in this format.`];
 				}
 			}
-		},
+		},		
 	},		
 	// Sigmatic Dex
 	///////////////////////////////////////////////////////////////////
