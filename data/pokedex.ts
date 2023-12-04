@@ -4456,7 +4456,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["Octillery-Excir"],
 		eggGroups: ["Water 1", "Water 2"],
 	},
-	exciroctillery: {
+	octilleryexcir: {
 		num: 224,
 		baseSpecies: "Octillery",
 		forme: "Excir",
