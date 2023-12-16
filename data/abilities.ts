@@ -5192,7 +5192,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			target.abilityState.resisted = true;
 			return -1;
 		},
-		onAfterMove(target, source, move) {
+		onAfterMoveSecondary(target, source, move) {
 			if (target.abilityState.resisted) {
 				delete target.abilityState.resisted;
 			}
