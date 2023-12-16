@@ -281,6 +281,23 @@ export const Formats: FormatList = [
 		banlist: ['Dunsparce', 'Murkrow', 'Scyther', 'Sneasel'],
 	},
 	{
+		name: "[Gen 9] VGC 2024 Reg F",
+
+		mod: 'gen9',
+		gameType: 'doubles',
+		ruleset: ['Flat Rules', '!! Adjust Level = 50', 'Min Source Gen = 9', 'VGC Timer', 'Open Team Sheets'],
+		banlist: [],
+	},
+	{
+		name: "[Gen 9] VGC 2024 Reg F (Bo3)",
+
+		mod: 'gen9',
+		gameType: 'doubles',
+		challengeShow: false,
+		ruleset: ['Flat Rules', '!! Adjust Level = 50', 'Min Source Gen = 9', 'VGC Timer', 'Force Open Team Sheets', 'Best of = 3'],
+		banlist: [],
+	},
+	{
 		name: "[Gen 9] Doubles Custom Game",
 
 		mod: 'gen9',

@@ -1,5 +1,6 @@
 export const Scripts: ModdedBattleScriptsData = {
 	gen: 9,
+	inherit: "gen9dlc1",
 	init() {
 		for (const i in this.data.Items) {
 			if (!this.data.Items[i].megaStone) continue;
@@ -59,8 +60,10 @@ export const Scripts: ModdedBattleScriptsData = {
 		}
 		for (const pokemon of this.getAllPokemon()) {
 			const item = pokemon.getItem();
-			if (['adamantcrystal', 'griseouscore', 'lustrousglobe', 'vilevial'].includes(item.id) &&
-				item.forcedForme !== pokemon.species.name) {
+			if ([
+				'adamantcrystal', 'griseouscore', 'lustrousglobe', 'wellspringmask',
+				'cornerstonemask', 'hearthflamemask', 'vilevial',
+			].includes(item.id) && item.forcedForme !== pokemon.species.name) {
 				// @ts-ignore
 				const rawSpecies = this.actions.getMixedSpecies(pokemon.m.originalSpecies, item.forcedForme!, pokemon);
 				const species = pokemon.setSpecies(rawSpecies);
@@ -68,7 +71,7 @@ export const Scripts: ModdedBattleScriptsData = {
 				pokemon.baseSpecies = rawSpecies;
 				pokemon.details = species.name + (pokemon.level === 100 ? '' : ', L' + pokemon.level) +
 					(pokemon.gender === '' ? '' : ', ' + pokemon.gender) + (pokemon.set.shiny ? ', shiny' : '');
-				pokemon.setAbility(species.abilities['0'], null, true);
+				pokemon.ability = this.toID(species.abilities['0']);
 				pokemon.baseAbility = pokemon.ability;
 			}
 		}
@@ -121,7 +124,7 @@ export const Scripts: ModdedBattleScriptsData = {
 				pokemon.baseSpecies = rawSpecies;
 				pokemon.details = species.name + (pokemon.level === 100 ? '' : ', L' + pokemon.level) +
 					(pokemon.gender === '' ? '' : ', ' + pokemon.gender) + (pokemon.set.shiny ? ', shiny' : '');
-				pokemon.setAbility(species.abilities['0'], null, true);
+				pokemon.ability = this.toID(species.abilities['0']);
 				pokemon.baseAbility = pokemon.ability;
 
 				const behemothMove: {[k: string]: string} = {
@@ -427,13 +430,8 @@ export const Scripts: ModdedBattleScriptsData = {
 			pokemon.canMegaEvo = null;
 			return true;
 		},
-<<<<<<< HEAD
-=======
 		terastallize(pokemon) {
 			if (pokemon.illusion?.species.baseSpecies === 'Ogerpon') {
-				this.battle.singleEvent('End', this.dex.abilities.get('Illusion'), pokemon.abilityState, pokemon);
-			}
-			if (pokemon.illusion?.species.baseSpecies === 'Terapagos') {
 				this.battle.singleEvent('End', this.dex.abilities.get('Illusion'), pokemon.abilityState, pokemon);
 			}
 
@@ -467,12 +465,8 @@ export const Scripts: ModdedBattleScriptsData = {
 					}
 				}
 			}
-			if (pokemon.species.name === 'Terapagos-Terastal' && type === 'Stellar') {
-				pokemon.formeChange('Terapagos-Stellar', null, true);
-			}
 			this.battle.runEvent('AfterTerastallization', pokemon);
 		},
->>>>>>> a0f10ffa5 (Add DLC2 data (#9963))
 		getMixedSpecies(originalForme, megaForme, pokemon) {
 			const originalSpecies = this.dex.species.get(originalForme);
 			const megaSpecies = this.dex.species.get(megaForme);

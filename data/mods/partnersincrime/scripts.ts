@@ -313,7 +313,12 @@ export const Scripts: ModdedBattleScriptsData = {
 			const species = pokemon.species;
 			if (pokemon.fainted || pokemon.illusion || (pokemon.volatiles['substitute'] && this.battle.gen >= 5) ||
 				(pokemon.transformed && this.battle.gen >= 2) || (this.transformed && this.battle.gen >= 5) ||
+<<<<<<< HEAD
 				species.name === 'Eternatus-Eternamax') {
+=======
+				species.name === 'Eternatus-Eternamax' || (['Ogerpon', 'Terapagos'].includes(species.baseSpecies) &&
+				(this.terastallized || pokemon.terastallized))) {
+>>>>>>> a0f10ffa5 (Add DLC2 data (#9963))
 				return false;
 			}
 
@@ -367,7 +372,7 @@ export const Scripts: ModdedBattleScriptsData = {
 				this.boosts[boostName] = pokemon.boosts[boostName];
 			}
 			if (this.battle.gen >= 6) {
-				const volatilesToCopy = ['focusenergy', 'gmaxchistrike', 'laserfocus'];
+				const volatilesToCopy = ['dragoncheer', 'focusenergy', 'gmaxchistrike', 'laserfocus'];
 				for (const volatile of volatilesToCopy) {
 					if (pokemon.volatiles[volatile]) {
 						this.addVolatile(volatile);
@@ -405,6 +410,14 @@ export const Scripts: ModdedBattleScriptsData = {
 				}
 			}
 
+<<<<<<< HEAD
+=======
+			// Pokemon transformed into Ogerpon cannot Terastallize
+			// restoring their ability to tera after they untransform is handled ELSEWHERE
+			if (this.species.baseSpecies === 'Ogerpon' && this.canTerastallize) this.canTerastallize = false;
+			if (this.species.baseSpecies === 'Terapagos' && this.canTerastallize) this.canTerastallize = false;
+
+>>>>>>> a0f10ffa5 (Add DLC2 data (#9963))
 			return true;
 		},
 		deductPP(move, amount, target) {

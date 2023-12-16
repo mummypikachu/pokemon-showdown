@@ -221,11 +221,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 95,
 		basePower: 100,
 		category: "Special",
-	
 		name: "Aeroblast",
 		pp: 5,
 		priority: 0,
-		flags: {protect: 1, mirror: 1, distance: 1},
+		flags: {protect: 1, mirror: 1, distance: 1, wind: 1},
 		critRatio: 2,
 		secondary: null,
 		target: "any",
@@ -322,6 +321,26 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Fighting",
 		contestType: "Cool",
+	},
+	alluringvoice: {
+		num: 914,
+		accuracy: 100,
+		basePower: 80,
+		category: "Special",
+		name: "Alluring Voice",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, sound: 1, bypasssub: 1},
+		secondary: {
+			chance: 100,
+			onHit(target, source, move) {
+				if (target?.statsRaisedThisTurn) {
+					target.addVolatile('confusion', source, move);
+				}
+			},
+		},
+		target: "normal",
+		type: "Fairy",
 	},
 	allyswitch: {
 		num: 502,
@@ -1466,7 +1485,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Bitter Blade",
 		pp: 10,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1, slicing: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, heal: 1, slicing: 1},
 		drain: [1, 2],
 		secondary: null,
 		target: "normal",
@@ -1658,7 +1677,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 85,
 		basePower: 130,
 		category: "Special",
-	
 		name: "Blue Flare",
 		pp: 5,
 		priority: 0,
@@ -1729,7 +1747,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 85,
 		basePower: 130,
 		category: "Physical",
-	
 		name: "Bolt Strike",
 		pp: 5,
 		priority: 0,
@@ -2956,7 +2973,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-	
 		name: "Conversion",
 		pp: 30,
 		priority: 0,
@@ -2977,7 +2993,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-	
 		name: "Conversion 2",
 		pp: 30,
 		priority: 0,
@@ -3434,7 +3449,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 			return bp;
 		},
 		category: "Physical",
-	
 		name: "Crush Grip",
 		pp: 5,
 		priority: 0,
@@ -3556,6 +3570,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			this.hint("Only a Pokemon whose form is Darkrai can use this move.");
 			return null;
 		},
+		noSketch: true,
 		secondary: null,
 		target: "allAdjacentFoes",
 		type: "Dark",
@@ -3602,7 +3617,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-	
 		name: "Decorate",
 		pp: 15,
 		priority: 0,
@@ -4328,6 +4342,38 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Dragon",
 		contestType: "Cool",
 	},
+	dragoncheer: {
+		num: 913,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Dragon Cheer",
+		pp: 15,
+		priority: 0,
+		flags: {bypasssub: 1, allyanim: 1},
+		volatileStatus: 'dragoncheer',
+		condition: {
+			onStart(target, source, effect) {
+				if (target.volatiles['focusenergy']) return false;
+				if (effect && (['costar', 'imposter', 'psychup', 'transform'].includes(effect.id))) {
+					this.add('-start', target, 'move: Dragon Cheer', '[silent]');
+				} else {
+					this.add('-start', target, 'move: Dragon Cheer');
+				}
+				// Store at the start because the boost doesn't change if a Pokemon
+				// Terastallizes into Dragon while having this volatile
+				// Found by DarkFE:
+				// https://www.smogon.com/forums/threads/scarlet-violet-battle-mechanics-research.3709545/post-9894139
+				this.effectState.hasDragonType = target.hasType("Dragon");
+			},
+			onModifyCritRatio(critRatio, source) {
+				return critRatio + (this.effectState.hasDragonType ? 2 : 1);
+			},
+		},
+		secondary: null,
+		target: "adjacentAlly",
+		type: "Dragon",
+	},
 	dragonclaw: {
 		num: 337,
 		accuracy: 100,
@@ -4400,7 +4446,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 90,
 		category: "Physical",
-	
 		name: "Dragon Hammer",
 		pp: 15,
 		priority: 0,
@@ -4896,6 +4941,37 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Electric",
 		contestType: "Cool",
+	},
+	electroshot: {
+		num: 905,
+		accuracy: 100,
+		basePower: 130,
+		category: "Special",
+		name: "Electro Shot",
+		pp: 10,
+		priority: 0,
+		flags: {charge: 1, protect: 1, mirror: 1},
+		onTryMove(attacker, defender, move) {
+			if (attacker.removeVolatile(move.id)) {
+				return;
+			}
+			this.add('-prepare', attacker, move.name);
+			this.boost({spa: 1}, attacker, attacker, move);
+			if (['raindance', 'primordialsea'].includes(attacker.effectiveWeather())) {
+				this.attrLastMove('[still]');
+				this.addMove('-anim', attacker, move.name, defender);
+				return;
+			}
+			if (!this.runEvent('ChargeMove', attacker, defender, move)) {
+				return;
+			}
+			attacker.addVolatile('twoturnmove', defender);
+			return null;
+		},
+		secondary: null,
+		hasSheerForce: true,
+		target: "normal",
+		type: "Electric",
 	},
 	electroweb: {
 		num: 527,
@@ -5486,6 +5562,25 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Bug",
 		contestType: "Cool",
+	},
+	ficklebeam: {
+		num: 907,
+		accuracy: 100,
+		basePower: 80,
+		category: "Special",
+		name: "Fickle Beam",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onBasePower(basePower, pokemon) {
+			if (this.randomChance(3, 10)) {
+				this.add('-activate', pokemon, 'move: Fickle Beam');
+				return this.chainModify(2);
+			}
+		},
+		secondary: null,
+		target: "normal",
+		type: "Dragon",
 	},
 	fierydance: {
 		num: 552,
@@ -6081,7 +6176,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-	
 		name: "Floral Healing",
 		pp: 10,
 		priority: 0,
@@ -6286,6 +6380,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		volatileStatus: 'focusenergy',
 		condition: {
 			onStart(target, source, effect) {
+				if (target.volatiles['dragoncheer']) return false;
 				if (effect?.id === 'zpower') {
 					this.add('-start', target, 'move: Focus Energy', '[zeffect]');
 				} else if (effect && (['costar', 'imposter', 'psychup', 'transform'].includes(effect.id))) {
@@ -6540,7 +6635,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 90,
 		basePower: 140,
 		category: "Physical",
-	
 		name: "Freeze Shock",
 		pp: 5,
 		priority: 0,
@@ -6723,7 +6817,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
-	
 		name: "Fusion Bolt",
 		pp: 5,
 		priority: 0,
@@ -6744,7 +6837,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 100,
 		category: "Special",
-	
 		name: "Fusion Flare",
 		pp: 5,
 		priority: 0,
@@ -7029,7 +7121,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 95,
 		basePower: 65,
 		category: "Special",
-	
 		name: "Glaciate",
 		pp: 10,
 		priority: 0,
@@ -8637,6 +8728,27 @@ export const Moves: {[moveid: string]: MoveData} = {
 		zMove: {boost: {def: 1}},
 		contestType: "Tough",
 	},
+	hardpress: {
+		num: 912,
+		accuracy: 100,
+		basePower: 0,
+		basePowerCallback(pokemon, target) {
+			const hp = target.hp;
+			const maxHP = target.maxhp;
+			// TODO figure out actual BP cap
+			const bp = Math.floor(Math.floor((120 * (100 * Math.floor(hp * 4096 / maxHP)) + 2048 - 1) / 4096) / 100) || 1;
+			this.debug('BP for ' + hp + '/' + maxHP + " HP: " + bp);
+			return bp;
+		},
+		category: "Physical",
+		name: "Hard Press",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Steel",
+	},
 	haze: {
 		num: 114,
 		accuracy: true,
@@ -8763,6 +8875,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 		condition: {
 			duration: 5,
 			durationCallback(target, source, effect) {
+				if (effect?.effectType === "Move") {
+					return 2;
+				}
 				if (source?.hasAbility('persistent')) {
 					this.add('-activate', source, 'ability: Persistent', '[move] Heal Block');
 					return 7;
@@ -9701,6 +9816,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 				def: -1,
 			},
 		},
+		noSketch: true,
 		secondary: null,
 		target: "normal",
 		type: "Dark",
@@ -9844,7 +9960,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 90,
 		basePower: 140,
 		category: "Special",
-	
 		name: "Ice Burn",
 		pp: 5,
 		priority: 0,
@@ -11201,9 +11316,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 	lusterpurge: {
 		num: 295,
 		accuracy: 100,
-		basePower: 70,
+		basePower: 95,
 		category: "Special",
-	
 		name: "Luster Purge",
 		pp: 5,
 		priority: 0,
@@ -11580,6 +11694,23 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Dark",
 		contestType: "Cool",
 	},
+	malignantchain: {
+		num: 919,
+		accuracy: 100,
+		basePower: 100,
+		category: "Special",
+		isNonstandard: "Unobtainable",
+		name: "Malignant Chain",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 50,
+			status: 'tox',
+		},
+		target: "normal",
+		type: "Poison",
+	},
 	matblock: {
 		num: 561,
 		accuracy: true,
@@ -11637,7 +11768,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Matcha Gotcha",
 		pp: 15,
 		priority: 0,
-		flags: {protect: 1, mirror: 1, defrost: 1},
+		flags: {protect: 1, mirror: 1, heal: 1, defrost: 1},
 		drain: [1, 2],
 		secondary: {
 			chance: 20,
@@ -12462,7 +12593,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {},
 		noMetronome: [
-			"After You", "Apple Acid", "Armor Cannon", "Assist", "Astral Barrage", "Aura Wheel", "Baneful Bunker", "Beak Blast", "Behemoth Bash", "Behemoth Blade", "Belch", "Bestow", "Blazing Torque", "Body Press", "Branch Poke", "Breaking Swipe", "Celebrate", "Chatter", "Chilling Water", "Chilly Reception", "Clangorous Soul", "Collision Course", "Combat Torque", "Comeuppance", "Copycat", "Counter", "Covet", "Crafty Shield", "Decorate", "Destiny Bond", "Detect", "Diamond Storm", "Doodle", "Double Iron Bash", "Double Shock", "Dragon Ascent", "Dragon Energy", "Drum Beating", "Dynamax Cannon", "Electro Drift", "Endure", "Eternabeam", "False Surrender", "Feint", "Fiery Wrath", "Fillet Away", "Fleur Cannon", "Focus Punch", "Follow Me", "Freeze Shock", "Freezing Glare", "Glacial Lance", "Grav Apple", "Helping Hand", "Hold Hands", "Hyper Drill", "Hyperspace Fury", "Hyperspace Hole", "Ice Burn", "Instruct", "Jet Punch", "Jungle Healing", "King's Shield", "Life Dew", "Light of Ruin", "Magical Torque", "Make It Rain", "Mat Block", "Me First", "Meteor Assault", "Metronome", "Mimic", "Mind Blown", "Mirror Coat", "Mirror Move", "Moongeist Beam", "Nature Power", "Nature's Madness", "Noxious Torque", "Obstruct", "Order Up", "Origin Pulse", "Overdrive", "Photon Geyser", "Plasma Fists", "Population Bomb", "Pounce", "Power Shift", "Precipice Blades", "Protect", "Pyro Ball", "Quash", "Quick Guard", "Rage Fist", "Rage Powder", "Raging Bull", "Raging Fury", "Relic Song", "Revival Blessing", "Ruination", "Salt Cure", "Secret Sword", "Shed Tail", "Shell Trap", "Silk Trap", "Sketch", "Sleep Talk", "Snap Trap", "Snarl", "Snatch", "Snore", "Snowscape", "Spectral Thief", "Spicy Extract", "Spiky Shield", "Spirit Break", "Spotlight", "Springtide Storm", "Steam Eruption", "Steel Beam", "Strange Steam", "Struggle", "Sunsteel Strike", "Surging Strikes", "Switcheroo", "Techno Blast", "Thief", "Thousand Arrows", "Thousand Waves", "Thunder Cage", "Thunderous Kick", "Tidy Up", "Trailblaze", "Transform", "Trick", "Twin Beam", "V-create", "Wicked Blow", "Wicked Torque", "Wide Guard",
+			"After You", "Apple Acid", "Armor Cannon", "Assist", "Astral Barrage", "Aura Wheel", "Baneful Bunker", "Beak Blast", "Behemoth Bash", "Behemoth Blade", "Belch", "Bestow", "Blazing Torque", "Body Press", "Branch Poke", "Breaking Swipe", "Celebrate", "Chatter", "Chilling Water", "Chilly Reception", "Clangorous Soul", "Collision Course", "Combat Torque", "Comeuppance", "Copycat", "Counter", "Covet", "Crafty Shield", "Decorate", "Destiny Bond", "Detect", "Diamond Storm", "Doodle", "Double Iron Bash", "Double Shock", "Dragon Ascent", "Dragon Energy", "Drum Beating", "Dynamax Cannon", "Electro Drift", "Endure", "Eternabeam", "False Surrender", "Feint", "Fiery Wrath", "Fillet Away", "Fleur Cannon", "Focus Punch", "Follow Me", "Freeze Shock", "Freezing Glare", "Glacial Lance", "Grav Apple", "Helping Hand", "Hold Hands", "Hyper Drill", "Hyperspace Fury", "Hyperspace Hole", "Ice Burn", "Instruct", "Jet Punch", "Jungle Healing", "King's Shield", "Life Dew", "Light of Ruin", "Magical Torque", "Make It Rain", "Mat Block", "Me First", "Meteor Assault", "Metronome", "Mimic", "Mind Blown", "Mirror Coat", "Mirror Move", "Moongeist Beam", "Nature Power", "Nature's Madness", "Noxious Torque", "Obstruct", "Order Up", "Origin Pulse", "Overdrive", "Photon Geyser", "Plasma Fists", "Population Bomb", "Pounce", "Power Shift", "Precipice Blades", "Protect", "Pyro Ball", "Quash", "Quick Guard", "Rage Fist", "Rage Powder", "Raging Bull", "Raging Fury", "Relic Song", "Revival Blessing", "Ruination", "Salt Cure", "Secret Sword", "Shed Tail", "Shell Trap", "Silk Trap", "Sketch", "Sleep Talk", "Snap Trap", "Snarl", "Snatch", "Snore", "Snowscape", "Spectral Thief", "Spicy Extract", "Spiky Shield", "Spirit Break", "Spotlight", "Springtide Storm", "Steam Eruption", "Steel Beam", "Strange Steam", "Struggle", "Sunsteel Strike", "Surging Strikes", "Switcheroo", "Techno Blast", "Tera Starstorm", "Thief", "Thousand Arrows", "Thousand Waves", "Thunder Cage", "Thunderous Kick", "Tidy Up", "Trailblaze", "Transform", "Trick", "Twin Beam", "V-create", "Wicked Blow", "Wicked Torque", "Wide Guard",
 		],
 		onHit(target, source, effect) {
 			const moves = this.dex.moves.all().filter(move => (
@@ -12484,6 +12615,19 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "self",
 		type: "Normal",
 		contestType: "Cute",
+	},
+	mightycleave: {
+		num: 910,
+		accuracy: 100,
+		basePower: 95,
+		category: "Physical",
+		name: "Mighty Cleave",
+		pp: 5,
+		priority: 0,
+		flags: {contact: 1, mirror: 1, slicing: 1},
+		secondary: null,
+		target: "normal",
+		type: "Rock",
 	},
 	milkdrink: {
 		num: 208,
@@ -12797,9 +12941,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 	mistball: {
 		num: 296,
 		accuracy: 100,
-		basePower: 70,
+		basePower: 95,
 		category: "Special",
-	
 		name: "Mist Ball",
 		pp: 5,
 		priority: 0,
@@ -12916,7 +13059,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 100,
 		category: "Special",
-	
 		name: "Moongeist Beam",
 		pp: 5,
 		priority: 0,
@@ -14175,7 +14317,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 100,
 		category: "Special",
-	
 		name: "Photon Geyser",
 		pp: 5,
 		priority: 0,
@@ -15053,6 +15194,22 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Psychic",
 		contestType: "Clever",
 	},
+	psychicnoise: {
+		num: 917,
+		accuracy: 100,
+		basePower: 75,
+		category: "Special",
+		name: "Psychic Noise",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, sound: 1, bypasssub: 1},
+		secondary: {
+			chance: 100,
+			volatileStatus: 'healblock',
+		},
+		target: "normal",
+		type: "Psychic",
+	},
 	psychicterrain: {
 		num: 678,
 		accuracy: true,
@@ -15118,7 +15275,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 90,
 		basePower: 140,
 		category: "Special",
-	
 		name: "Psycho Boost",
 		pp: 5,
 		priority: 0,
@@ -16178,6 +16334,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onModifyType(move, pokemon) {
 			let type = pokemon.getTypes()[0];
 			if (type === "Bird") type = "???";
+			if (type === "Stellar") type = pokemon.getTypes(false, true)[0];
 			move.type = type;
 		},
 		secondary: null,
@@ -16253,7 +16410,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 1,
 		noPPBoosts: true,
 		priority: 0,
-		flags: {},
+		flags: {heal: 1},
 		onTryHit(source) {
 			if (!source.side.pokemon.filter(ally => ally.fainted).length) {
 				return false;
@@ -16268,6 +16425,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			duration: 1,
 			// reviving implemented in side.ts, kind of
 		},
+		noSketch: true,
 		secondary: null,
 		target: "self",
 		type: "Normal",
@@ -16453,7 +16611,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 90,
 		basePower: 150,
 		category: "Physical",
-	
 		name: "Rock Wrecker",
 		pp: 5,
 		priority: 0,
@@ -16711,7 +16868,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 95,
 		basePower: 100,
 		category: "Physical",
-	
 		name: "Sacred Fire",
 		pp: 5,
 		priority: 0,
@@ -17829,17 +17985,15 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-	
 		name: "Sketch",
 		pp: 1,
 		noPPBoosts: true,
 		priority: 0,
 		flags: {bypasssub: 1, allyanim: 1},
 		onHit(target, source) {
-			const disallowedMoves = ['chatter', 'sketch', 'struggle'];
 			const move = target.lastMove;
 			if (source.transformed || !move || source.moves.includes(move.id)) return false;
-			if (disallowedMoves.includes(move.id) || move.isZ || move.isMax) return false;
+			if (move.noSketch || move.isZ || move.isMax) return false;
 			const sketchIndex = source.moves.indexOf('sketch');
 			if (sketchIndex < 0) return false;
 			const sketchedMove = {
@@ -17872,7 +18026,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1, mirror: 1, bypasssub: 1, allyanim: 1},
 		onTryHit(target, source) {
-			const additionalBannedAbilities = ['hungerswitch', 'illusion', 'neutralizinggas', 'wonderguard'];
+			const additionalBannedAbilities = ['hungerswitch', 'illusion', 'neutralizinggas', 'wonderguard', 'terashell'];
 			const targetAbility = target.getAbility();
 			const sourceAbility = source.getAbility();
 			// TODO: research in what order these should be checked
@@ -18731,7 +18885,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 90,
 		category: "Special",
-	
 		name: "Sparkling Aria",
 		pp: 10,
 		priority: 0,
@@ -19852,7 +20005,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
-	
 		name: "Sunsteel Strike",
 		pp: 5,
 		priority: 0,
@@ -19862,6 +20014,23 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Steel",
 		contestType: "Cool",
+	},
+	supercellslam: {
+		num: 916,
+		accuracy: 95,
+		basePower: 100,
+		category: "Physical",
+		name: "Supercell Slam",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		hasCrashDamage: true,
+		onMoveFail(target, source, move) {
+			this.damage(source.baseMaxhp / 2, source, source, this.dex.conditions.get('Supercell Slam'));
+		},
+		secondary: null,
+		target: "normal",
+		type: "Electric",
 	},
 	superfang: {
 		num: 162,
@@ -20224,6 +20393,23 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		target: "normal",
 		type: "Grass",
+	},
+	tachyoncutter: {
+		num: 911,
+		accuracy: true,
+		basePower: 50,
+		category: "Special",
+		name: "Tachyon Cutter",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, slicing: 1},
+		multihit: 2,
+		secondary: null,
+		target: "normal",
+		type: "Steel",
+		zMove: {basePower: 180},
+		maxMove: {basePower: 140},
+		contestType: "Clever",
 	},
 	tackle: {
 		num: 33,
@@ -20615,10 +20801,36 @@ export const Moves: {[moveid: string]: MoveData} = {
 		zMove: {effect: 'heal'},
 		contestType: "Cool",
 	},
+	temperflare: {
+		num: 915,
+		accuracy: 100,
+		basePower: 75,
+		basePowerCallback(pokemon, target, move) {
+			if (pokemon.moveLastTurnResult === false) {
+				this.debug('doubling Temper Flare BP due to previous move failure');
+				return move.basePower * 2;
+			}
+			return move.basePower;
+		},
+		category: "Physical",
+		name: "Temper Flare",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Fire",
+	},
 	terablast: {
 		num: 851,
 		accuracy: 100,
 		basePower: 80,
+		basePowerCallback(pokemon, target, move) {
+			if (pokemon.terastallized === 'Stellar') {
+				return 100;
+			}
+			return 80;
+		},
 		category: "Special",
 		name: "Tera Blast",
 		pp: 10,
@@ -20633,7 +20845,34 @@ export const Moves: {[moveid: string]: MoveData} = {
 			if (pokemon.terastallized && pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) {
 				move.category = 'Physical';
 			}
+			if (pokemon.terastallized === 'Stellar') {
+				move.self = {boosts: {atk: -1, spa: -1}};
+			}
 		},
+		secondary: null,
+		target: "normal",
+		type: "Normal",
+	},
+	terastarstorm: {
+		num: 906,
+		accuracy: 100,
+		basePower: 120,
+		category: "Special",
+		name: "Tera Starstorm",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onModifyType(move, pokemon) {
+			if (pokemon.species.name === 'Terapagos-Stellar') {
+				move.type = 'Stellar';
+			}
+		},
+		onModifyMove(move, pokemon) {
+			if (pokemon.species.name === 'Terapagos-Stellar') {
+				move.target = 'allAdjacentFoes';
+			}
+		},
+		noSketch: true,
 		secondary: null,
 		target: "normal",
 		type: "Normal",
@@ -20944,6 +21183,27 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Electric",
 	},
+	thunderclap: {
+		num: 909,
+		accuracy: 100,
+		basePower: 70,
+		category: "Special",
+		name: "Thunderclap",
+		pp: 5,
+		priority: 1,
+		flags: {protect: 1, mirror: 1},
+		onTry(source, target) {
+			const action = this.queue.willMove(target);
+			const move = action?.choice === 'move' ? action.move : null;
+			if (!move || (move.category === 'Status' && move.id !== 'mefirst') || target.volatiles['mustrecharge']) {
+				return false;
+			}
+		},
+		secondary: null,
+		target: "normal",
+		type: "Electric",
+		contestType: "Clever",
+	},
 	thunderfang: {
 		num: 422,
 		accuracy: 95,
@@ -21090,7 +21350,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-	
 		name: "Topsy-Turvy",
 		pp: 20,
 		priority: 0,
@@ -21517,7 +21776,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 			return 20 * move.hit;
 		},
 		category: "Physical",
-	
 		name: "Triple Kick",
 		pp: 10,
 		priority: 0,
@@ -21698,6 +21956,29 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Bug",
 		contestType: "Cute",
+	},
+	upperhand: {
+		num: 918,
+		accuracy: 100,
+		basePower: 65,
+		category: "Physical",
+		name: "Upper Hand",
+		pp: 15,
+		priority: 3,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		onTryHit(target, pokemon) {
+			const action = this.queue.willMove(target);
+			const move = action?.choice === 'move' ? action.move : null;
+			if (!move || move.priority <= 0.1 || move.category === 'Status') {
+				return false;
+			}
+		},
+		secondary: {
+			chance: 100,
+			volatileStatus: 'flinch',
+		},
+		target: "normal",
+		type: "Fighting",
 	},
 	uproar: {
 		num: 253,
