@@ -95,7 +95,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 			protect: 1, mirror: 1, sound: 1, distance: 1, bypasssub: 1,
 		},
 	},
-<<<<<<< HEAD
 	conversion: {
 		inherit: true,
 		isNonstandard: null,
@@ -103,11 +102,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	conversion2: {
 		inherit: true,
 		isNonstandard: null,
-=======
-	copycat: {
-		inherit: true,
-		flags: {failencore: 1, nosleeptalk: 1, noassist: 1, failcopycat: 1, failinstruct: 1},
->>>>>>> a0f10ffa5 (Add DLC2 data (#9963))
 	},
 	coreenforcer: {
 		inherit: true,
@@ -180,7 +174,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 			return null;
 		},
 	},
-<<<<<<< HEAD
 	freezeshock: {
 		inherit: true,
 		isNonstandard: null,
@@ -192,11 +185,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	fusionflare: {
 		inherit: true,
 		isNonstandard: null,
-=======
-	futuresight: {
-		inherit: true,
-		flags: {futuremove: 1},
->>>>>>> a0f10ffa5 (Add DLC2 data (#9963))
 	},
 	geargrind: {
 		inherit: true,

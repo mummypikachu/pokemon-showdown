@@ -2474,9 +2474,6 @@ export const Rulesets: {[k: string]: FormatData} = {
 			return this.checkCanLearn(move, species, setSources, set);
 		},
 	},
-<<<<<<< HEAD
-};
-=======
 	hackmonsformelegality: {
 		effectType: 'ValidatorRule',
 		name: "Hackmons Forme Legality",
@@ -2644,4 +2641,3 @@ export const Rulesets: {[k: string]: FormatData} = {
 		// implemented in /mods/moderngen1/rulesets.ts
 	},
 };
->>>>>>> a0f10ffa5 (Add DLC2 data (#9963))

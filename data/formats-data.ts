@@ -419,7 +419,6 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	growlithehisui: {
 		tier: "LC",
-		tier: "LC",
 	},
 	arcanine: {
 		tier: "RU",
@@ -2241,13 +2240,9 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	deoxys: {
 		tier: "Uber",
 		doublesTier: "DOU",
-		tier: "Uber",
-		doublesTier: "DOU",
 		natDexTier: "Uber",
 	},
 	deoxysattack: {
-		tier: "Uber",
-		doublesTier: "DOU",
 		tier: "Uber",
 		doublesTier: "DOU",
 		natDexTier: "Uber",
@@ -2612,8 +2607,6 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	regigigas: {
 		tier: "OU",
 		doublesTier: "DOU",
-		tier: "OU",
-		doublesTier: "DOU",
 		natDexTier: "RU",
 	},
 	giratina: {
@@ -2919,8 +2912,6 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 	},
 	whimsicott: {
-		tier: "OU",
-		doublesTier: "DOU",
 		tier: "OU",
 		doublesTier: "DOU",
 		natDexTier: "RU",
@@ -5103,7 +5094,6 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	roaringmoon: {
 		tier: "OU",
-		doublesTier: "DOU",
 		natDexTier: "Uber",
 	},
 	irontreads: {
@@ -5270,6 +5260,55 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "OU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
+	},
+	archaludon: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "OU",
+	},
+	hydrapple: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "OU",
+	},
+	gougingfire: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "OU",
+	},
+	ragingbolt: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "OU",
+	},
+	ironboulder: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "OU",
+	},
+	ironcrown: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "OU",
+	},
+	terapagos: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "OU",
+	},
+	terapagosterastal: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "OU",
+	},
+	terapagosstellar: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "OU",
+	},
+	pecharunt: {
+		tier: "OU",
+		doublesTier: "DOU",
 	},
 	missingno: {
 		isNonstandard: "Custom",
