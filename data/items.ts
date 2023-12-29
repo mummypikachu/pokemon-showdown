@@ -468,7 +468,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 1111,
 		gen: 8,
-		isNonstandard: "Past",
+		
 	},
 	bignugget: {
 		name: "Big Nugget",
@@ -1104,7 +1104,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 1112,
 		gen: 8,
-		isNonstandard: "Past",
+		
 	},
 	cobaberry: {
 		name: "Coba Berry",
@@ -1549,7 +1549,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 324,
 		gen: 4,
-		isNonstandard: "Past",
+		
 	},
 	durinberry: {
 		name: "Durin Berry",
@@ -1673,7 +1673,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 322,
 		gen: 4,
-		isNonstandard: "Past",
+		
 	},
 	electricgem: {
 		name: "Electric Gem",
@@ -2076,7 +2076,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 1113,
 		gen: 8,
-		isNonstandard: "Past",
+		
 	},
 	flyinggem: {
 		name: "Flying Gem",
@@ -3339,7 +3339,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 1110,
 		gen: 8,
-		isNonstandard: "Past",
+		
 	},
 	lucarionite: {
 		name: "Lucarionite",
@@ -3519,7 +3519,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 323,
 		gen: 4,
-		isNonstandard: "Past",
+		
 	},
 	magnet: {
 		name: "Magnet",
@@ -4685,7 +4685,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 321,
 		gen: 4,
-		isNonstandard: "Past",
+		
 	},
 	psychicgem: {
 		name: "Psychic Gem",
@@ -4978,7 +4978,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 1115,
 		gen: 8,
-		isNonstandard: "Past",
+		
 	},
 	rindoberry: {
 		name: "Rindo Berry",
@@ -5753,7 +5753,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 1114,
 		gen: 8,
-		isNonstandard: "Past",
+		
 	},
 	steelixite: {
 		name: "Steelixite",
@@ -5884,7 +5884,28 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 1109,
 		gen: 8,
-		isNonstandard: "Past",
+		
+	},
+	strikervest: {
+		name: "Striker Vest",
+		spritenum: 565,
+		fling: {
+			basePower: 80,
+		},
+		onModifyDefPriority: 1,
+		onModifyDef(def) {
+			return this.chainModify(1.3);
+		},
+		onDisableMove(pokemon) {
+			for (const moveSlot of pokemon.moveSlots) {
+				if (this.dex.moves.get(moveSlot.move).category === 'Status') {
+					pokemon.disableMove(moveSlot.id);
+				}
+			}
+		},
+		num: 1577,
+		gen: 9,
+		
 	},
 	sunstone: {
 		name: "Sun Stone",
@@ -7141,7 +7162,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 252,
 		gen: 2,
-		isNonstandard: "Past",
+		
 	},
 	utilityumbrella: {
 		name: "Utility Umbrella",
