@@ -12667,7 +12667,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			furycutter: ["1T", "3T"],
 			hyperbeam: ["1M"],
 			psychic: ["1M", "1M", "1M", "6M", "5M", "4M", "3M"],
-			recover: ["1E", "9E", "7E", "6E", "6S3", "6S4", "5E", "4E", "3E", "9S1"],
+			recover: ["1E", "9E", "9E", "9E", "6S3", "6S4", "5E", "4E", "3E", "9S1"],
 			shadowball: ["1M", "9L45", "1M", "9L45", "1M", "9L39", "6M", "6L39", "6S3", "5M", "5L57", "4M", "4L53", "3M", "3L41", "9S1"],
 		},
 	},
