@@ -5928,7 +5928,41 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 2,
 		num: 147,
 	},
-		zenmode: {
+	wrathful: {
+		onStart: function (pokemon) {
+            this.add('-ability', pokemon, 'Wrathful');
+            // Apply the 20% boost on the first turn
+            for (let stat in pokemon.storedStats) {
+                // Use type assertion to index the BoostsTable with a string
+                const statName = stat as keyof BoostsTable;
+                pokemon.boosts[statName] = 5; // 20% boost, assuming normal max boost is 6
+            }
+        },
+        onSwitchOut: function (pokemon) {
+            // Reset the boosts when the Pokemon switches out
+            for (let stat in pokemon.storedStats) {
+                // Use type assertion to index the BoostsTable with a string
+                const statName = stat as keyof BoostsTable;
+                pokemon.boosts[statName] = 0;
+            }
+        },
+        onUpdate: function (pokemon) {
+            // After the first turn, set boosts back to normal
+            if (!pokemon.volatiles['wrathfulused']) {
+                // Reset the boosts after the first turn
+                for (let stat in pokemon.storedStats) {
+                    // Use type assertion to index the BoostsTable with a string
+                    const statName = stat as keyof BoostsTable;
+                    pokemon.boosts[statName] = 0;
+                }
+                // Mark that Wrathful has been used to avoid resetting again
+                pokemon.addVolatile('wrathfulused');
+            }
+        },
+		name: "Wrathful",
+		rating: 3,
+	},
+	zenmode: {
 		onStart(pokemon) {
 			if (pokemon.baseSpecies.baseSpecies !== 'Darmanitan' || pokemon.transformed) {
 				return;

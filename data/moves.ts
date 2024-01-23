@@ -4630,7 +4630,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	dualwingbeat: {
 		num: 814,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 40,
 		category: "Physical",
 		name: "Dual Wingbeat",
@@ -4659,7 +4659,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	dynamicpunch: {
 		num: 223,
 		accuracy: 50,
-		basePower: 190,
+		basePower: 150,
 		category: "Physical",
 		name: "Dynamic Punch",
 		pp: 5,
@@ -15394,13 +15394,18 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
 		onModifyMove(move, pokemon) {
-			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
+			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) {
+				move.category = 'Physical';
+				move.overrideDefensiveStat = 'spd'; // Target Special Defense
+			} else {
+				move.overrideDefensiveStat = 'def'; // Target Defense
+			}
 		},
 		secondary: null,
 		target: "normal",
 		type: "Psychic",
 		contestType: "Cool",
-	},
+	},	
 	psywave: {
 		num: 149,
 		accuracy: 100,
@@ -20494,7 +20499,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			durationCallback(target, source, effect) {
 				if (source?.hasAbility('windpower')) {
 					this.add('-activate', source, 'ability: Wind Power', '[move] Tailwind');
-					return 4;
+					return 3;
 				}
 				return 4;
 			},
@@ -21960,7 +21965,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	upperhand: {
 		num: 918,
 		accuracy: 100,
-		basePower: 65,
+		basePower: 60,
 		category: "Physical",
 		name: "Upper Hand",
 		pp: 15,

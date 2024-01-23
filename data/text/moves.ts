@@ -1861,7 +1861,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	eternabeam: {
 		name: "Eternabeam",
 		desc: "If this move is successful, the user must recharge on the following turn and cannot select a move.",
-		shortDesc: "User cannot move next turn.",
+		shortDesc: "Can't move next turn if target is not KOed.",
 	},
 	expandingforce: {
 		name: "Expanding Force",

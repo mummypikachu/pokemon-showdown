@@ -2243,7 +2243,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	warriorsresolve: {
 		name: "Warrior's Resolve",
-			desc: "If this Pokemon is a Keldeo, it transforms into Resolute-Keldeo if it attacks and knocks out another Pokemon. If this Pokemon is an Resolute-Keldeo.",
+			desc: "If this Pokemon is a Keldeo, it transforms into Resolute-Keldeo if it attacks and knocks out another Pokemon.",
 			shortDesc: "After KOing a Pokemon: becomes Resolute-Keldeo.",
 		activate: "  [POKEMON] was filled with resolve and broken free from its own mental chains!",
 		transform: "[POKEMON] became Resolute-Keldeo!",
@@ -2281,8 +2281,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	windpower: {
 		name: "Wind Power",
-		desc: "On switch-in This Pokemon sets up Tailwind for 4 turns",
-		shortDesc: "On switch-in This Pokemon sets up Tailwind for 4 turns",
+		desc: "On switch-in This Pokemon sets up Tailwind for 3 turns",
+		shortDesc: "On switch-in This Pokemon sets up Tailwind for 3 turns",
 	},
 	windrider: {
 		name: "Wind Rider",
@@ -2307,6 +2307,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Wonder Skin",
 		desc: "Non-damaging moves that check accuracy have their accuracy changed to 50% when used against this Pokemon. This effect comes before other effects that modify accuracy.",
 		shortDesc: "Status moves with accuracy checks are 50% accurate when used on this Pokemon.",
+	},
+	wrathful: {
+		name: "Wrathful",
+		desc: "For the first turn all attacks get a 20% boost.",
+		shortDesc: "20% Boost on first turn.",
 	},
 	zenmode: {
 		name: "Zen Mode",
@@ -2347,9 +2352,9 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	persistent: {
 		name: "Persistent",
 		desc: "The duration of Gravity, Heal Block, Magic Room, Safeguard, Tailwind, Trick Room, and Wonder Room is increased by 2 turns if the effect is started by this Pokemon and starts Trick Room.",
-		shortDesc: "When used, Gravity/Heal Block/Safeguard/Tailwind/Room effects last 2 more turns also summons Trick Room.",
+		shortDesc: "When used, Gravity/Heal Block/Safeguard/Tailwind/Room effects last 2 more turns/summons Trick Room.",
 
-		activate: "  [POKEMON] extends [MOVE] by 6 turns!",
+		activate: "  [POKEMON] extends [MOVE] by 2 turns!",
 	},
 	ampereoverdrive: {
 		name: "Ampere Overdrive",
