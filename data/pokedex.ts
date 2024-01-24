@@ -9042,11 +9042,11 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		requiredItems: ["Icicle Plate", "Icium Z"],
 		changesFrom: "Arceus",
 	},
-	arceusnormal: {
+	arceuslimited: {
 		num: 493,
-		name: "Arceus-Normal",
+		name: "Arceus-Limited",
 		baseSpecies: "Arceus",
-		forme: "Normal",
+		forme: "Limited",
 		types: ["Normal"],
 		gender: "N",
 		baseStats: {hp: 130, atk: 130, def: 130, spa: 130, spd: 130, spe: 130},

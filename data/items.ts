@@ -555,7 +555,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	blankplate: {
 		name: "Blank Plate",
-		spritenum: 105,
+		spritenum: 225,
 		onPlate: 'Normal',
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
@@ -569,13 +569,13 @@ export const Items: {[itemid: string]: ItemData} = {
 			}
 			return true;
 		},
-		forcedForme: "Arceus-Normal",
+		forcedForme: "Arceus-Limited",
 		num: 3113,
 		gen: 9,
 	},
 	legendplate: {
 		name: "Legend Plate",
-		spritenum: 105,
+		spritenum: 225,
 		itemUser: ["Arceus"],
 		num: 2233,
 		gen: 9,
