@@ -2266,6 +2266,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "This Pokemon is immune to Fire-type moves and raises its Defense by 2 stages when hit by a Fire-type move.",
 		shortDesc: "This Pokemon's Defense is raised 2 stages if hit by a Fire move; Fire immunity.",
 	},
+	wellrested: {
+		name: "Well Rested",
+		desc: "If this Pokemon is asleep, it restores 1/4 of its maximum HP, rounded down, at the end of each turn instead of losing HP.",
+		shortDesc: "This Pokemon is healed by 1/4 of its max HP each turn when asleep",
+	},
 	pureheart: {
 		name: "Pure Heart",
 		shortDesc: "Prevents other Pokemon from lowering this Pokemon's stat stages. If a stat gets dropped +1 SpA.",

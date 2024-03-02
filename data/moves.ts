@@ -4659,7 +4659,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	dynamicpunch: {
 		num: 223,
 		accuracy: 50,
-		basePower: 150,
+		basePower: 120,
 		category: "Physical",
 		name: "Dynamic Punch",
 		pp: 5,
@@ -12960,7 +12960,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	mistyexplosion: {
 		num: 802,
 		accuracy: 100,
-		basePower: 300,
+		basePower: 150,
 		category: "Special",
 		name: "Misty Explosion",
 		pp: 5,

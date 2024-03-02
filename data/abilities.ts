@@ -4613,6 +4613,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 4,
 		num: 117,
 	},
+	
 	solarpower: {
 		onModifySpAPriority: 5,
 		onModifySpA(spa, pokemon) {
@@ -5787,6 +5788,18 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Well-Baked Body",
 		rating: 3.5,
 		num: 273,
+	},
+	wellrested: {
+		onDamagePriority: 1,
+		onDamage(damage, target, source, effect) {
+			if (effect.id === 'slp') {
+				this.heal(target.baseMaxhp / 4);
+				return false;
+			}
+		},
+		name: "Well Rested",
+		rating: 4,
+		num: 2000,
 	},
 	pureheart: {
     // Add any other necessary methods here
