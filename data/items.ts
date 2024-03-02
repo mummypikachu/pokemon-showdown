@@ -4237,6 +4237,18 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 155,
 		gen: 3,
 	},
+	orbeetite: {
+		name: "Orbeetite",
+		spritenum: 575,
+		megaStone: "Orbeetle-Mega",
+		megaEvolves: "Orbeetle",
+		itemUser: ["Orbeetle"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 2674,
+	},
 	ovalstone: {
 		name: "Oval Stone",
 		spritenum: 321,

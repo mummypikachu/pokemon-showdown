@@ -1330,6 +1330,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Oran Berry",
 		desc: "Restores 10 HP when at 1/2 max HP or less. Single use.",
 	},
+	orbeetite: {
+		name: "Orbeetite",
+		desc: "If held by a Orbeetle, this item allows it to Mega Evolve in battle.",
+	},
 	ovalstone: {
 		name: "Oval Stone",
 		desc: "Evolves Happiny into Chansey when held and leveled up during the day.",

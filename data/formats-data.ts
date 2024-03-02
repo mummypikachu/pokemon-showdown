@@ -4382,9 +4382,9 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "UU",
 		natDexTier: "RU",
 	},
-	orbeetlegmax: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+	orbeetlemega: {
+		tier: "UU",
+		natDexTier: "RU",
 	},
 	nickit: {
 		tier: "LC",
