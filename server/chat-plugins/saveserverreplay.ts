@@ -58,7 +58,7 @@ export const commands: Chat.ChatCommands = {
 				`<script type="text/plain" class="battle-log-data">${data}</script>\n` +
 				'</div>\n' +
 				'<script>\n' +
-				`let daily = Math.floor(Date.now()/1000/60/60/24);document.write('<script src="http://sigmatic-showdown.win:8080/js/replay-embed.js?version'+daily+'"></'+'script>');\n` +
+				`let daily = Math.floor(Date.now()/1000/60/60/24);document.write('<script src="http://99.93.10.109:8080/js/replay-embed.js?version'+daily+'"></'+'script>');\n` +
 				'</script>\n'
 			);
 			out.end();
