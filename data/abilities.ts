@@ -5790,17 +5790,18 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 273,
 	},
 	wellrested: {
-		onDamagePriority: 1,
-		onDamage(damage, target, source, effect) {
-			if (effect.id === 'slp') {
-				this.heal(target.baseMaxhp / 4);
-				return false;
+		onResidualOrder: 28,
+		onResidualSubOrder: 2,
+		onResidual(target, source, effect) {
+			if (target.status === 'slp') { // Check if the target is asleep
+				this.heal(target.baseMaxhp / 4); // Heal 1/4 of maximum HP
+				return false; // Prevent further damage calculations
 			}
 		},
 		name: "Well Rested",
 		rating: 4,
 		num: 2000,
-	},
+	},	
 	pureheart: {
     // Add any other necessary methods here
 		onTryBoost(boost, target, source, effect) {

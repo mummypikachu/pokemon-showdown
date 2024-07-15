@@ -2268,7 +2268,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	wellrested: {
 		name: "Well Rested",
-		desc: "If this Pokemon is asleep, it restores 1/4 of its maximum HP, rounded down, at the end of each turn instead of losing HP.",
+		desc: "If this Pokemon is asleep, it restores 1/4 of its maximum HP, rounded down, at the end of each turn.",
 		shortDesc: "This Pokemon is healed by 1/4 of its max HP each turn when asleep",
 	},
 	pureheart: {

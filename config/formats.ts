@@ -1043,9 +1043,9 @@ export const Formats: FormatList = [
 				'Quick Attack', 'Acid', 'Disarming Voice', 'Fairy Wind', 'Mega Drain', 'Ember',
 				'Sand Tomb', 'Gust', 'Water Gun', 'Powder Snow', 'Twister', 'Echoed Voice',
 				'Twin Beam', 'Vacuum Wave', 'Power-up Punch', 'Bubble', 'Thundershock', 'Acid Spray',
-				'Pursuit', 'Dual Chop', 'Mirror Move', 'Transform' , 'Poison Sting' , 'Anger Hit', 
-				'Pressure Chop'
-			];
+				'Pursuit', 'Dual Chop', 'Mirror Move', 'Transform', 'Poison Sting', 'Anger Hit', 
+				'Pressure Chop', 'Bubble'
+			];			
 		
 			// Check each move in the set
 			for (const moveSlot of set.moves) {
