@@ -2031,12 +2031,20 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	castformsunny: {
+		tier: "OU",
+		natDexTier: "RU",
 	},
 	castformrainy: {
+		tier: "OU",
+		natDexTier: "RU",
 	},
 	castformsnowy: {
+		tier: "OU",
+		natDexTier: "RU",
 	},
 	castformrocky: {
+		tier: "OU",
+		natDexTier: "RU",
 	},
 	kecleon: {
 		tier: "PU",

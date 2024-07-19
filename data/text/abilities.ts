@@ -570,10 +570,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	forecast: {
 		name: "Forecast",
-		desc: "If this Pokemon is a Castform, its type changes to the current weather condition's type, except Sandstorm. This effect is prevented if this Pokemon is holding a Utility Umbrella and the weather is Rain Dance or Sunny Day.",
-		shortDesc: "Castform's type changes to the current weather condition's type, except Sandstorm.",
+		desc: "If this Pokemon is a Castform, its type changes to the current weather condition's type. This effect is prevented if this Pokemon is holding a Utility Umbrella and the weather is Rain Dance or Sunny Day.",
+		shortDesc: "Castform's type changes to the current weather condition's type.",
 		gen7: {
-			desc: "If this Pokemon is a Castform, its type changes to the current weather condition's type, except Sandstorm.",
+			desc: "If this Pokemon is a Castform, its type changes to the current weather condition's type",
 		},
 	},
 	forewarn: {
@@ -2275,6 +2275,12 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Pure Heart",
 		shortDesc: "Prevents other Pokemon from lowering this Pokemon's stat stages. If a stat gets dropped +1 SpA.",
 	},
+	whitesmoke: {
+		name: "White Smoke",
+		shortDesc: "Causes a haze on switch-in.",
+
+		activate: "  Everyone's stats are getting reset! (R.I.P Sweep)",
+	},
 	wimpout: {
 		name: "Wimp Out",
 		desc: "When this Pokemon has more than 1/2 its maximum HP and takes damage bringing it to 1/2 or less of its maximum HP, it immediately switches out to a chosen ally. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability. This effect applies to both direct and indirect damage, except Curse and Substitute on use, Belly Drum, Pain Split, and confusion damage.",
@@ -2336,7 +2342,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Zero to Hero",
 		shortDesc: "If this Pokemon is a Palafin in Zero Form, switching out has it change to Hero Form.",
 
-		activate: "  [POKEMON] underwent a heroic transformation!",
+		activate: "  [POKEMON] underwent a heroic transformation! (Its time to palafin all over the place)",
 	},
 	selfsufficient: {
 		name: "Self Sufficient",
@@ -2356,10 +2362,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	persistent: {
 		name: "Persistent",
-		desc: "The duration of Gravity, Heal Block, Magic Room, Safeguard, Tailwind, Trick Room, and Wonder Room is increased by 2 turns if the effect is started by this Pokemon and starts Trick Room.",
-		shortDesc: "When used, Gravity/Heal Block/Safeguard/Tailwind/Room effects last 2 more turns/summons Trick Room.",
+		desc: "The duration of Gravity, Heal Block, Magic Room, Safeguard, Tailwind, and Wonder Room is increased by 2 turns if the effect is started by this Pokemon and starts Trick Room.",
+		shortDesc: "When used, summons Trick Room.",
 
-		activate: "  [POKEMON] extends [MOVE] by 2 turns!",
+		activate: "  [POKEMON] extends [MOVE] by 2 turns! (Except Trick Room lol)",
 	},
 	ampereoverdrive: {
 		name: "Ampere Overdrive",

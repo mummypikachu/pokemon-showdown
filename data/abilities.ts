@@ -5830,6 +5830,17 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		isBreakable: true,
 		name: "Pure Heart",
 		rating: 2,
+		num: 2004,
+	},
+	whitesmoke: {
+		onStart() {
+			this.add('-clearallboost');
+			for (const pokemon of this.getAllActive()) {
+				pokemon.clearBoosts();
+			}
+		},
+		name: "White Smoke",
+		rating: 3,
 		num: 73,
 	},
 	wimpout: {

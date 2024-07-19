@@ -1252,6 +1252,14 @@ export const Items: {[itemid: string]: ItemData} = {
 	damprock: {
 		name: "Damp Rock",
 		spritenum: 88,
+		onTakeItem(item, pokemon, source) {
+			if (source?.baseSpecies.num === 351 || pokemon.baseSpecies.num === 351) {
+				return false;
+			}
+			return true;
+		},
+		forcedForme: "Castform-Rainy",
+		itemUser: ["Castform"],
 		fling: {
 			basePower: 60,
 		},
@@ -2666,6 +2674,14 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	heatrock: {
 		name: "Heat Rock",
+		onTakeItem(item, pokemon, source) {
+			if (source?.baseSpecies.num === 351 || pokemon.baseSpecies.num === 351) {
+				return false;
+			}
+			return true;
+		},
+		forcedForme: "Castform-Sunny",
+		itemUser: ["Castform"],
 		spritenum: 193,
 		fling: {
 			basePower: 60,
@@ -2839,6 +2855,14 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	icyrock: {
 		name: "Icy Rock",
+		onTakeItem(item, pokemon, source) {
+			if (source?.baseSpecies.num === 351 || pokemon.baseSpecies.num === 351) {
+				return false;
+			}
+			return true;
+		},
+		forcedForme: "Castform-Snowy",
+		itemUser: ["Castform"],
 		spritenum: 221,
 		fling: {
 			basePower: 40,
@@ -5569,6 +5593,14 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	smoothrock: {
 		name: "Smooth Rock",
+		onTakeItem(item, pokemon, source) {
+			if (source?.baseSpecies.num === 351 || pokemon.baseSpecies.num === 351) {
+				return false;
+			}
+			return true;
+		},
+		forcedForme: "Castform-Rocky",
+		itemUser: ["Castform"],
 		spritenum: 453,
 		fling: {
 			basePower: 10,
