@@ -61875,6 +61875,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			secretpower: ["6M"],
 			shockwave: ["9M", "6T"],
 			signalbeam: ["9M", "6T", "5T"],
+			shedtail: ["9L0"],
 			sleeptalk: ["9M", "9M", "6M", "5T"],
 			snore: ["9M", "6T", "5T"],
 			spark: ["9L1", "9L1", "6L1", "5L1"],
