@@ -3160,7 +3160,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	normalize: {
 		onModifyTypePriority: 1,
-		onModifyType(move, pokemon) {
+		onModifyType(move, pokemon, target) {
 			const noModifyType = [
 				'hiddenpower', 'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'struggle', 'technoblast', 'terrainpulse', 'weatherball',
 			];
@@ -3170,10 +3170,15 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				move.type = 'Normal';
 				move.typeChangerBoosted = this.effect;
 			}
+			else if (move.type === 'Normal' && target.hasType('Ghost')) {
+				this.debug('Normalize: Overriding target\'s Ghost typing for Normal move');
+				move.ignoreImmunity = true;
+			}
 		},
+		
 		onBasePowerPriority: 23,
 		onBasePower(basePower, pokemon, target, move) {
-			if (move.typeChangerBoosted === this.effect) return this.chainModify([4915, 4096]);
+			if (move.typeChangerBoosted === this.effect) return this.chainModify([6144, 4096]);
 		},
 		name: "Normalize",
 		rating: 0,
