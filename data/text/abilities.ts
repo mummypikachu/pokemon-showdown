@@ -1280,7 +1280,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	photosynthesis: {
 		name: "Photosynthesis",
 		desc: "If this User of this ability uses a charge move it automatically charged.",
-		shortDesc: "It the user uses a recharge move it automatically charges.",
+		shortDesc: "It the user uses a charge move it automatically charges.",
 
 		end: "  [POKEMON] became fully charged due to Photosynthesis!",
 
