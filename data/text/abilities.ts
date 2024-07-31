@@ -644,6 +644,13 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "This Pokemon's Attack is multiplied by 1.5, but it can only select the first move it executes. These effects are prevented while this Pokemon is Dynamaxed.",
 		shortDesc: "This Pokemon's Attack is 1.5x, but it can only select the first move it executes.",
 	},
+	granitesoul: {
+		name: "Granite Soul",
+		desc: "This Pokemon is immune to Rock-type moves and raises its Attack by 1 stage when hit by a Rock-type move. If this Pokemon is not the target of a single-target Rock-type move used by another Pokemon, this Pokemon redirects that move to itself if it is within the range of that move. If multiple Pokemon could redirect with this Ability, it goes to the one with the highest Speed, or in the case of a tie to the one that has had this Ability active longer.",
+		shortDesc: "This Pokemon draws Rock moves to itself to raise Attack by 1; Rock immunity.",
+
+		activate: "#lightningrod",
+	},
 	grasspelt: {
 		name: "Grass Pelt",
 		shortDesc: "If Grassy Terrain is active, this Pokemon's Defense is multiplied by 1.5.",
@@ -1157,7 +1164,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	myceliummight: {
 		name: "Mycelium Might",
 		desc: "This Pokemon's Status moves ignore certain Abilities of other Pokemon, and go last among Pokemon using the same or greater priority moves.",
-		shortDesc: "This Pokemon's Status moves go last in their priority bracket and ignore Abilities.",
+		shortDesc: "This Pokemon's Status moves go last in their priority bracket and ignore Abilities. +1 Priority for Powder moves over 50%.",
 	},
 	naturalcure: {
 		name: "Natural Cure",
@@ -1243,11 +1250,13 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	owntempo: {
 		name: "Own Tempo",
 		desc: "This Pokemon cannot be confused. Gaining this Ability while confused cures it. This Pokemon is immune to the effect of the Intimidate Ability.",
-		shortDesc: "This Pokemon cannot be confused. Immune to Intimidate.",
+		shortDesc: "Immune to all forms of Speed control.",
 		gen7: {
 			desc: "This Pokemon cannot be confused. Gaining this Ability while confused cures it.",
 			shortDesc: "This Pokemon cannot be confused.",
 		},
+		
+		start: "  [POKEMON] is going at its own pace!",
 	},
 	parentalbond: {
 		name: "Parental Bond",

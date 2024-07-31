@@ -1700,12 +1700,14 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	galewings: {
 		onModifyPriority(priority, pokemon, target, move) {
-			if (move?.type === 'Flying' && pokemon.hp === pokemon.maxhp) return priority + 1;
+			if (move?.type === 'Flying' && pokemon.hp > pokemon.maxhp / 2) {
+				return priority + 1;
+			}
 		},
 		name: "Gale Wings",
 		rating: 2.5,
 		num: 177,
-	},
+	},	
 	galvanize: {
 		onModifyTypePriority: -1,
 		onModifyType(move, pokemon) {
@@ -1842,6 +1844,29 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Gorilla Tactics",
 		rating: 4.5,
 		num: 255,
+	},
+	granitesoul: {
+		onTryHit(target, source, move) {
+			if (target !== source && move.type === 'Rock') {
+				if (!this.boost({atk: 1})) {
+					this.add('-immune', target, '[from] ability: Granite Soul');
+				}
+				return null;
+			}
+		},
+		onAnyRedirectTarget(target, source, source2, move) {
+			if (move.type !== 'Rock' || ['firepledge', 'grasspledge', 'waterpledge'].includes(move.id)) return;
+			const redirectTarget = ['randomNormal', 'adjacentFoe'].includes(move.target) ? 'normal' : move.target;
+			if (this.validTarget(this.effectState.target, source, redirectTarget)) {
+				if (move.smartTarget) move.smartTarget = false;
+				if (this.effectState.target !== target) {
+					this.add('-activate', this.effectState.target, 'ability: Granite Soul');
+				}
+				return this.effectState.target;
+			}
+		},
+		name: "Granite Soul",
+		rating: 3,
 	},
 	grasspelt: {
 		onModifyDefPriority: 6,
@@ -2977,6 +3002,11 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 152,
 	},
 	myceliummight: {
+		onModifyPriority(priority, pokemon, target, move) {
+			if (move.flags['powder'] && pokemon.hp > pokemon.maxhp / 2) {
+					return priority + 1;
+				}
+		},
 		onFractionalPriorityPriority: -1,
 		onFractionalPriority(priority, pokemon, target, move) {
 			if (move.category === 'Status') {
@@ -3170,7 +3200,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				move.type = 'Normal';
 				move.typeChangerBoosted = this.effect;
 			}
-			else if (move.type === 'Normal' && target.hasType('Ghost')) {
+			if (move.type === 'Normal' && target.hasType('Ghost')) {
 				this.debug('Normalize: Overriding target\'s Ghost typing for Normal move');
 				move.ignoreImmunity = true;
 			}
@@ -3309,31 +3339,33 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 65,
 	},
 	owntempo: {
-		onUpdate(pokemon) {
-			if (pokemon.volatiles['confusion']) {
-				this.add('-activate', pokemon, 'ability: Own Tempo');
-				pokemon.removeVolatile('confusion');
+		onSwitchIn(target) {
+			this.add('-start', target, 'ability: Own Tempo');
+		},
+		onFoeTryMove(target, source, move) {
+			const targetAllExceptions = ['perishsong', 'flowershield', 'rototiller'];
+			if (move.target === 'foeSide' || (move.target === 'all' && !targetAllExceptions.includes(move.id))) {
+				return;
+			}
+	
+			const ownTempoHolder = this.effectState.target;
+			if ((source.isAlly(ownTempoHolder) || move.target === 'all') && move.priority > 0.1) {
+				this.attrLastMove('[still]');
+				this.add('cant', ownTempoHolder, 'ability: Own Tempo', move, '[of] ' + target);
+				return false;
 			}
 		},
-		onTryAddVolatile(status, pokemon) {
-			if (status.id === 'confusion') return null;
-		},
-		onHit(target, source, move) {
-			if (move?.volatileStatus === 'confusion') {
-				this.add('-immune', target, 'confusion', '[from] ability: Own Tempo');
-			}
-		},
-		onTryBoost(boost, target, source, effect) {
-			if (effect.name === 'Intimidate' && boost.atk) {
-				delete boost.atk;
-				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Own Tempo', '[of] ' + target);
+		onAnyModifySpe(spe, pokemon) {
+			// Ignore Trick Room and speed boosts
+			if (pokemon.hasAbility('owntempo') && (this.field.getPseudoWeather('trickroom') || pokemon.boosts.spe > 0)) {
+				return this.chainModify(1); // Neutralize the effect of Trick Room and speed boosts
 			}
 		},
 		isBreakable: true,
 		name: "Own Tempo",
-		rating: 1.5,
+		rating: 3,
 		num: 20,
-	},
+	},	
 	parentalbond: {
 		onPrepareHit(source, target, move) {
 			if (move.category === 'Status' || move.selfdestruct || move.multihit) return;
