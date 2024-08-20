@@ -16628,6 +16628,51 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Rock",
 		contestType: "Tough",
 	},
+	rockyblockade: {
+		accuracy: 100,
+		category: "Status",
+		name: "Rocky Blockade",
+		pp: 5,
+		basePower: 0,
+		priority: 3,
+		flags: {snatch: 1},
+		sideCondition: 'rockyblockade',
+		onTry() {
+			return !!this.queue.willAct();
+		},
+		onHitSide(side, source) {
+			source.addVolatile('stall');
+		},
+		condition: {
+			duration: 1,
+			onSideStart(target, source) {
+				this.add('-singleturn', source, 'Rocky Blockade');
+			},
+			onTryHitPriority: 4,
+			onTryHit(target, source, move) {
+				// Rocky Blockade blocks all spread moves
+				if (move?.target !== 'all') {
+					return;
+				}
+				if (move.isZ || move.isMax) {
+					if (['gmaxoneblow', 'gmaxrapidflow'].includes(move.id)) return;
+					target.getMoveHitData(move).zBrokeProtect = true;
+					return;
+				}
+				this.add('-activate', target, 'move: Wide Guard');
+				const lockedmove = source.getVolatile('lockedmove');
+				if (lockedmove) {
+					// Outrage counter is reset
+					if (source.volatiles['lockedmove'].duration === 2) {
+						delete source.volatiles['lockedmove'];
+					}
+				}
+				return this.NOT_FAIL;
+			},
+		},
+		target: "allySide",
+		type: "Rock",
+	},
 	roleplay: {
 		num: 272,
 		accuracy: true,

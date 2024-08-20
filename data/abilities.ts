@@ -389,6 +389,35 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Battle Bond",
 		num: 210,
 	},
+	beachbastion: {
+		onSwitchOut(pokemon) {
+			pokemon.heal(pokemon.baseMaxhp / 3);
+		},
+		onTryHit(target, source, move) {
+			if (target !== source && move.type === 'Water') {
+				if (!this.heal(target.baseMaxhp / 4)) {
+					this.add('-immune', target, '[from] ability: Dry Skin');
+				}
+				return null;
+			}
+		},
+		onSourceBasePowerPriority: 17,
+		onSourceBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'Fire') {
+				return this.chainModify(1.25);
+			}
+		},
+		onWeather(target, source, effect) {
+			if (target.hasItem('utilityumbrella')) return;
+			if (effect.id === 'raindance' || effect.id === 'primordialsea' || effect.id === 'sandstorm') {
+				this.heal(target.baseMaxhp / 8);
+			} else if (effect.id === 'sunnyday' || effect.id === 'desolateland') {
+				this.damage(target.baseMaxhp / 8, target, target);
+			}
+		},
+		name: "Beach Bastion",
+		rating: 4.5,
+	},
 	beadsofruin: {
 		onStart(pokemon) {
 			if (this.suppressingAbility(pokemon)) return;
@@ -2334,6 +2363,30 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 5,
 		num: 150,
 	},
+	impersonator: {
+		onSwitchIn(pokemon) {
+			this.effectState.switchingIn = true;
+		},
+		onStart(pokemon) {
+			// Imposter does not activate when Skill Swapped or when Neutralizing Gas leaves the field
+			if (!this.effectState.switchingIn) return;
+			
+			// Target the partner Pokémon in doubles
+			const partner = pokemon.side.active.find(
+				(ally, index) => ally && ally !== pokemon && index !== pokemon.position
+			);
+	
+			if (partner) {
+				pokemon.transformInto(partner, this.dex.abilities.get('imposter'));
+			}
+	
+			this.effectState.switchingIn = false;
+		},
+		name: "Impersonator",
+		rating: 5,
+		num: 150,
+	},
+	
 	infiltrator: {
 		onModifyMove(move) {
 			move.infiltrates = true;
@@ -3356,8 +3409,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			}
 		},
 		onAnyModifySpe(spe, pokemon) {
-			// Ignore Trick Room and speed boosts
-			if (pokemon.hasAbility('owntempo') && (this.field.getPseudoWeather('trickroom') || pokemon.boosts.spe > 0)) {
+			if (pokemon.hasAbility('owntempo') && (pokemon.boosts.spe > 0)) {
 				return this.chainModify(1); // Neutralize the effect of Trick Room and speed boosts
 			}
 		},
@@ -5149,6 +5201,53 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 4.5,
 		num: 284,
 	},
+	tacticalretreat: {
+		onBeforeTurn(pokemon) {
+			pokemon.abilityState.originalHP = pokemon.hp;
+		},
+		onStart(pokemon) {
+			pokemon.abilityState.originalHP = pokemon.hp;
+		},
+		onResidualOrder: 28,
+		onResidualSubOrder: 2,
+		onResidual(pokemon) {
+			if (pokemon.hp <= pokemon.maxhp / 2 && pokemon.abilityState.originalHP > pokemon.maxhp / 2) {
+				if (!this.canSwitch(pokemon.side) || pokemon.forceSwitchFlag || pokemon.switchFlag) return;
+				for (const side of this.sides) {
+					for (const active of side.active) {
+						active.switchFlag = false;
+					}
+				}
+				pokemon.switchFlag = true;
+				this.add('-activate', pokemon, 'ability: Tactical Retreat');
+	
+				// Create a Substitute without the HP drop
+				if (!pokemon.volatiles['substitute']) {
+					this.add('-start', pokemon, 'Substitute');
+					pokemon.addVolatile('substitute');
+				}
+			}
+		},
+		onTryHit(source: Pokemon) {
+			if (!this.canSwitch(source.side)) {
+				this.add('-fail', source);
+				return this.NOT_FAIL;
+			}
+			if (source.volatiles['substitute']) {
+				this.add('-fail', source, 'move: Shed Tail');
+				return this.NOT_FAIL;
+			}
+			if (source.hp <= Math.ceil(source.maxhp / 2)) {
+				this.add('-fail', source, 'move: Shed Tail', '[weak]');
+				return this.NOT_FAIL;
+			}
+		},
+		onHit(target: Pokemon) {
+			this.directDamage(Math.ceil(target.maxhp / 2));
+		},
+		name: "Tactical Retreat",
+		rating: 4,
+	},	
 	tangledfeet: {
 		onModifyAccuracyPriority: -1,
 		onModifyAccuracy(accuracy, target) {

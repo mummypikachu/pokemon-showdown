@@ -596,11 +596,21 @@ export class Pokemon {
 
 	getActionSpeed() {
 		let speed = this.getStat('spe', false, false);
+		
+		// Check if the Pokémon has the Own Tempo ability
+		if (this.hasAbility('owntempo')) {
+			// Ignore Trick Room effect and speed boosts
+			return this.battle.trunc(speed, 13);
+		}
+	
+		// Apply Trick Room if it's active and the Pokémon doesn't have Own Tempo
 		if (this.battle.field.getPseudoWeather('trickroom')) {
 			speed = 10000 - speed;
 		}
+	
 		return this.battle.trunc(speed, 13);
 	}
+	
 
 	/**
 	 * Gets the Pokemon's best stat.

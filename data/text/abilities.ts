@@ -164,6 +164,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		activate: "  [POKEMON] became fully charged due to its bond with its Trainer!",
 		transform: "[POKEMON] became Ash-Greninja!",
 	},
+	beachbastion: {
+		name: "Beach Bastion",
+		shortDesc: "Dry Skin with Sand healing + Regenerator.",
+	},
 	beadsofruin: {
 		name: "Beads of Ruin",
 		shortDesc: "Active Pokemon without this Ability have their Special Defense multiplied by 0.75.",
@@ -804,6 +808,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Imposter",
 		desc: "On switch-in, this Pokemon Transforms into the opposing Pokemon that is facing it. If there is no Pokemon at that position, this Pokemon does not Transform.",
 		shortDesc: "On switch-in, this Pokemon Transforms into the opposing Pokemon that is facing it.",
+	},
+	impersonator: {
+		name: "Impersonator",
+		desc: "On switch-in, this Pokemon Transforms into the partner Pokemon.",
+		shortDesc: "On switch-in, this Pokemon Transforms into the parter Pokemon.",
 	},
 	infiltrator: {
 		name: "Infiltrator",
@@ -2002,6 +2011,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		shortDesc: "Active Pokemon without this Ability have their Attack multiplied by 0.75.",
 
 		start: "  [POKEMON]'s Tablets of Ruin weakened the Attack of all surrounding Pokémon!",
+	},
+	tacticalretreat: {
+		name: "Tactical Retreat",
+		desc: "At the end of the turn, if this Pokemon has less than 1/2 of its maximum HP, it switches out to a chosen ally, giving a subsitute along with it.",
+		shortDesc: "If this Pokemon is below 1/2 HP at the end of the turn, it switches out. Passes Subsitute.",
 	},
 	tangledfeet: {
 		name: "Tangled Feet",
