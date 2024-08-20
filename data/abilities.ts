@@ -2377,7 +2377,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			);
 	
 			if (partner) {
-				pokemon.transformInto(partner, this.dex.abilities.get('imposter'));
+				pokemon.transformInto(partner, this.dex.abilities.get('impersonator'));
 			}
 	
 			this.effectState.switchingIn = false;
@@ -5213,11 +5213,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onResidual(pokemon) {
 			if (pokemon.hp <= pokemon.maxhp / 2 && pokemon.abilityState.originalHP > pokemon.maxhp / 2) {
 				if (!this.canSwitch(pokemon.side) || pokemon.forceSwitchFlag || pokemon.switchFlag) return;
-				for (const side of this.sides) {
-					for (const active of side.active) {
-						active.switchFlag = false;
-					}
-				}
+	
 				pokemon.switchFlag = true;
 				this.add('-activate', pokemon, 'ability: Tactical Retreat');
 	
@@ -5225,7 +5221,27 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				if (!pokemon.volatiles['substitute']) {
 					this.add('-start', pokemon, 'Substitute');
 					pokemon.addVolatile('substitute');
+	
+					// Store Substitute HP in ability state for passing upon switch
+					const substitute = pokemon.volatiles['substitute'];
+					if (substitute) {
+						pokemon.abilityState.substituteHP = (substitute as { hp: number }).hp;
+					}
 				}
+			}
+		},
+		onSwap(target) {
+			if (target.ability === 'tacticalretreat' && target.abilityState.substituteHP) {
+				this.add('-start', target, 'Substitute');
+				target.addVolatile('substitute');
+	
+				const substitute = target.volatiles['substitute'];
+				if (substitute) {
+					(substitute as { hp: number }).hp = target.abilityState.substituteHP;
+				}
+	
+				// Clear the stored Substitute HP after switching
+				delete target.abilityState.substituteHP;
 			}
 		},
 		onTryHit(source: Pokemon) {
@@ -5243,6 +5259,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			}
 		},
 		onHit(target: Pokemon) {
+			if (target.volatiles['substitute']) return;
 			this.directDamage(Math.ceil(target.maxhp / 2));
 		},
 		name: "Tactical Retreat",
