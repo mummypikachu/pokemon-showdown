@@ -644,27 +644,29 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 13,
 	},
 	colorchange: {
-		onAfterMoveSecondary(target, source, move) {
-			if (!target.hp) return;
-			const type = move.type;
-			if (
-				target.isActive && move.effectType === 'Move' && move.category !== 'Status' &&
-				type !== '???' && !target.hasType(type)
-			) {
-				if (!target.setType(type)) return false;
-				this.add('-start', target, 'typechange', type, '[from] ability: Color Change');
-
-				if (target.side.active.length === 2 && target.position === 1) {
-					// Curse Glitch
-					const action = this.queue.willMove(target);
-					if (action && action.move.id === 'curse') {
-						action.targetLoc = -1;
-					}
+		onFoePrepareHit(source, target, move) {
+			let bestType;
+			let bestTypeMod = 0;
+			let typeMod;
+			for (const type of this.dex.types.all()) {
+				if (!this.dex.getImmunity(move.type, type.id)) {
+					//breaks, as immunity is strongest resistance possible
+					bestType = type.name;
+					break;
 				}
+				typeMod = this.dex.getEffectiveness(move.type, type.name);
+				if (typeMod < bestTypeMod) {
+					bestType = type.name;
+					bestTypeMod = typeMod
+				}
+			}
+			if (source !== target && bestType && !target.getTypes().includes(bestType)) {
+				if (!target.setType(bestType)) return;
+				this.add('-start', target, 'typechange', bestType, '[from] ability: Color Change');
 			}
 		},
 		name: "Color Change",
-		rating: 0,
+		rating: 5,
 		num: 16,
 	},
 	comatose: {
