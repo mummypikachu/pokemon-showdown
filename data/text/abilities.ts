@@ -250,8 +250,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	colorchange: {
 		name: "Color Change",
-		desc: "This Pokemon's type changes to match the type of the last move that hit it, unless that type is already one of its types. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability.",
-		shortDesc: "This Pokemon's type changes to the type of a move it's hit by, unless it has the type.",
+		desc: "This Pokemon's type changes to one that best resists an incoming move, unless that type is already one of its types. This effect applies right before an incoming hit.",
+		shortDesc: "This Pokemon's type changes to the type that best resists an incoming move unless it has that type.",
 		gen4: {
 			desc: "This Pokemon's type changes to match the type of the last move that hit it, unless that type is already one of its types. This effect applies after each hit from a multi-hit move. This effect does not happen if this Pokemon did not lose HP from the attack.",
 		},
@@ -692,7 +692,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	hailpower: {
 		name: "Hail Power",
-		shortDesc: "If Hail/Snow is active all attacks from this pokemon are boosted by 1.5x",	
+		shortDesc: "If Hail/Snow is active all attacks from this pokemon are boosted by 1.2x",	
 	},
 	hailstorm: {
 		name: "Hailstorm",
@@ -1598,8 +1598,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	sandforce: {
 		name: "Sand Force",
-		desc: "If Sandstorm is active, this Pokemon's attacks have their power multiplied by 1.3. This Pokemon takes no damage from Sandstorm.",
-		shortDesc: "This Pokemon's attacks do 1.3x in Sandstorm; immunity to it.",
+		desc: "If Sandstorm is active, this Pokemon's attacks have their power multiplied by 1.2. This Pokemon takes no damage from Sandstorm.",
+		shortDesc: "This Pokemon's attacks do 1.2x in Sandstorm; immunity to it.",
 	},
 	sandrush: {
 		name: "Sand Rush",
@@ -1750,7 +1750,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	slowstart: {
 		name: "Slow Start",
-		shortDesc: "On switch-in, this Pokemon's Attack and Speed are halved for 3 turns.",
+		shortDesc: "On switch-in, this Pokemon's Attack and Speed are halved for 3 turns. Doubled Defenses.",
 		gen7: {
 			desc: "On switch-in, this Pokemon's Attack and Speed are halved for 3 turns. During the effect, if this Pokemon uses a generic Z-Move based on a special move, its Special Attack is halved during damage calculation.",
 		},
@@ -2344,8 +2344,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	wrathful: {
 		name: "Wrathful",
-		desc: "For the first turn all attacks get a 20% boost.",
-		shortDesc: "20% Boost on first turn.",
+		desc: "For the first turn all attacks get a 20% boost and a 50% speed increase.",
+		shortDesc: "20% Dmg boost & 50% Speed boost on the first turn.",
+
+		activate: "  [POKEMON] rage is overflowing!"
 	},
 	zenmode: {
 		name: "Zen Mode",

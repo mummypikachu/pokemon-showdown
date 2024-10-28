@@ -678,9 +678,9 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "PU",
 		natDexTier: "RU",
 	},
-	kinglergmax: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+	kinglermega: {
+		tier: "OU",
+		natDexTier: "OU",
 	},
 	voltorb: {
 		tier: "LC",

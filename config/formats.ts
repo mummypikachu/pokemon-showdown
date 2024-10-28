@@ -221,6 +221,19 @@ export const Formats: FormatList = [
 		],
 	},
 	{
+		name: "[Gen 9] Free-For-All Random Battle",
+		threads: [
+			`&bullet; <a href="https://www.smogon.com/forums/threads/3711724/">Free-For-All</a>`,
+		],
+
+		mod: 'gen9',
+		team: 'random',
+		gameType: 'freeforall',
+		rated: false,
+		tournamentShow: false,
+		ruleset: ['PotD', 'Obtainable', 'Species Clause', 'HP Percentage Mod', 'Cancel Mod', 'Sleep Clause Mod'],
+	},
+	{
 		name: "[Gen 9] Custom Game",
 
 		mod: 'gen9',

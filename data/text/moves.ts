@@ -7701,6 +7701,11 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Has a 100% chance to paralyze the target.",
 		shortDesc: "100% chance to paralyze the target.",
 	},
+	zekromkick: {
+		name: "Zekrom Kick",
+		desc: "Has a 5% chance to paralyze the target.",
+		shortDesc: "5% chance to paralyze the target.",
+	},
 	zenheadbutt: {
 		name: "Zen Headbutt",
 		desc: "Has a 20% chance to make the target flinch.",

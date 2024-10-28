@@ -3073,6 +3073,18 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 9,
 	
 	},
+	kinglerite: {
+		name: "Kinglerite",
+		spritenum: 575,
+		megaStone: "Kingler-Mega",
+		megaEvolves: "Kingler",
+		itemUser: ["Kingler"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 67401,
+	},
 	kingsrock: {
 		name: "King's Rock",
 		spritenum: 236,
@@ -3298,17 +3310,17 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		onModifyAtkPriority: 1,
 		onModifyAtk(atk, pokemon) {
-			if (pokemon.baseSpecies.baseSpecies === 'Pikachu') {
+			if (pokemon.baseSpecies.baseSpecies === 'Pikachu' || (pokemon.baseSpecies.baseSpecies === 'Raichu'))  {
 				return this.chainModify(1.3);
 			}
 		},
 		onModifySpAPriority: 1,
 		onModifySpA(spa, pokemon) {
-			if (pokemon.baseSpecies.baseSpecies === 'Pikachu') {
+			if (pokemon.baseSpecies.baseSpecies === 'Pikachu' || (pokemon.baseSpecies.baseSpecies === 'Raichu')) {
 				return this.chainModify(1.3);
 			}
 		},
-		itemUser: ["Pikachu", "Pikachu-Cosplay", "Pikachu-Rock-Star", "Pikachu-Belle", "Pikachu-Pop-Star", "Pikachu-PhD", "Pikachu-Libre", "Pikachu-Original", "Pikachu-Hoenn", "Pikachu-Sinnoh", "Pikachu-Unova", "Pikachu-Kalos", "Pikachu-Alola", "Pikachu-Partner", "Pikachu-Starter", "Pikachu-World"],
+		itemUser: ["Pikachu", "Pikachu-Cosplay", "Pikachu-Rock-Star", "Pikachu-Belle", "Pikachu-Pop-Star", "Pikachu-PhD", "Pikachu-Libre", "Pikachu-Original", "Pikachu-Hoenn", "Pikachu-Sinnoh", "Pikachu-Unova", "Pikachu-Kalos", "Pikachu-Alola", "Pikachu-Partner", "Pikachu-Starter", "Pikachu-World", "Raichu", "Raichu-Alola"],
 		num: 236,
 		gen: 2,
 	},

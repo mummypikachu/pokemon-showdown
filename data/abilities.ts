@@ -2002,7 +2002,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onModifyDamage(damage, source, target, move) {
 			if (this.field.isWeather(['hail', 'snow'])) {
 					this.debug('Hail Power boost');
-					return this.chainModify([5325, 4096]);
+					return this.chainModify([4915, 4096]);
 			}
 		},
 		onImmunity(type, pokemon) {
@@ -4288,7 +4288,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onModifyDamage(damage, source, target, move) {
 			if (this.field.isWeather('sandstorm')) {
 					this.debug('Sand Force boost');
-					return this.chainModify([5325, 4096]);
+					return this.chainModify([4915, 4096]);
 			}
 		},
 		onImmunity(type, pokemon) {
@@ -4647,6 +4647,12 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			},
 			onModifySpe(spe, pokemon) {
 				return this.chainModify(0.5);
+			},
+			onModifyDef(def, pokemon) {
+				return this.chainModify(2);
+			}, 
+			onModifySpD(spd, pokemon) {
+				return this.chainModify(2);
 			},
 			onEnd(target) {
 				this.add('-end', target, 'Slow Start');
@@ -5204,64 +5210,24 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	tacticalretreat: {
 		onBeforeTurn(pokemon) {
 			pokemon.abilityState.originalHP = pokemon.hp;
-		},
-		onStart(pokemon) {
+		  },
+		  onStart(pokemon) {
 			pokemon.abilityState.originalHP = pokemon.hp;
-		},
-		onResidualOrder: 28,
-		onResidualSubOrder: 2,
-		onResidual(pokemon) {
+		  },
+		  onResidualOrder: 28,
+		  onResidualSubOrder: 2,
+		  onResidual(pokemon) {
 			if (pokemon.hp <= pokemon.maxhp / 2 && pokemon.abilityState.originalHP > pokemon.maxhp / 2) {
-				if (!this.canSwitch(pokemon.side) || pokemon.forceSwitchFlag || pokemon.switchFlag) return;
-	
-				pokemon.switchFlag = true;
-				this.add('-activate', pokemon, 'ability: Tactical Retreat');
-	
-				// Create a Substitute without the HP drop
-				if (!pokemon.volatiles['substitute']) {
-					this.add('-start', pokemon, 'Substitute');
-					pokemon.addVolatile('substitute');
-	
-					// Store Substitute HP in ability state for passing upon switch
-					const substitute = pokemon.volatiles['substitute'];
-					if (substitute) {
-						pokemon.abilityState.substituteHP = (substitute as { hp: number }).hp;
-					}
+			  if (!this.canSwitch(pokemon.side) || pokemon.forceSwitchFlag || pokemon.switchFlag) return;
+			  for (const side of this.sides) {
+				for (const active of side.active) {
+				  active.switchFlag = false;
 				}
+			  }
+			  pokemon.switchFlag = true;
+			  this.add('-activate', pokemon, 'ability: Emergency Exit');
 			}
-		},
-		onSwap(target) {
-			if (target.ability === 'tacticalretreat' && target.abilityState.substituteHP) {
-				this.add('-start', target, 'Substitute');
-				target.addVolatile('substitute');
-	
-				const substitute = target.volatiles['substitute'];
-				if (substitute) {
-					(substitute as { hp: number }).hp = target.abilityState.substituteHP;
-				}
-	
-				// Clear the stored Substitute HP after switching
-				delete target.abilityState.substituteHP;
-			}
-		},
-		onTryHit(source: Pokemon) {
-			if (!this.canSwitch(source.side)) {
-				this.add('-fail', source);
-				return this.NOT_FAIL;
-			}
-			if (source.volatiles['substitute']) {
-				this.add('-fail', source, 'move: Shed Tail');
-				return this.NOT_FAIL;
-			}
-			if (source.hp <= Math.ceil(source.maxhp / 2)) {
-				this.add('-fail', source, 'move: Shed Tail', '[weak]');
-				return this.NOT_FAIL;
-			}
-		},
-		onHit(target: Pokemon) {
-			if (target.volatiles['substitute']) return;
-			this.directDamage(Math.ceil(target.maxhp / 2));
-		},
+		  },
 		name: "Tactical Retreat",
 		rating: 4,
 	},	
@@ -6107,36 +6073,16 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 147,
 	},
 	wrathful: {
-		onStart: function (pokemon) {
-            this.add('-ability', pokemon, 'Wrathful');
-            // Apply the 20% boost on the first turn
-            for (let stat in pokemon.storedStats) {
-                // Use type assertion to index the BoostsTable with a string
-                const statName = stat as keyof BoostsTable;
-                pokemon.boosts[statName] = 5; // 20% boost, assuming normal max boost is 6
-            }
-        },
-        onSwitchOut: function (pokemon) {
-            // Reset the boosts when the Pokemon switches out
-            for (let stat in pokemon.storedStats) {
-                // Use type assertion to index the BoostsTable with a string
-                const statName = stat as keyof BoostsTable;
-                pokemon.boosts[statName] = 0;
-            }
-        },
-        onUpdate: function (pokemon) {
-            // After the first turn, set boosts back to normal
-            if (!pokemon.volatiles['wrathfulused']) {
-                // Reset the boosts after the first turn
-                for (let stat in pokemon.storedStats) {
-                    // Use type assertion to index the BoostsTable with a string
-                    const statName = stat as keyof BoostsTable;
-                    pokemon.boosts[statName] = 0;
-                }
-                // Mark that Wrathful has been used to avoid resetting again
-                pokemon.addVolatile('wrathfulused');
-            }
-        },
+		onModifyAtk(atk, source, target, move) {
+			if (source.activeMoveActions === 0) {
+				return this.chainModify(1.2);
+			}
+		},
+		onModifySpe(spe, source) {
+			if (source.activeMoveActions === 0) {
+				return this.chainModify(1.5);
+			}
+		},
 		name: "Wrathful",
 		rating: 3,
 	},

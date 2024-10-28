@@ -4709,37 +4709,17 @@ export const Moves: {[moveid: string]: MoveData} = {
 	echoedvoice: {
 		num: 497,
 		accuracy: 100,
-		basePower: 40,
+		basePower: 20,
 		basePowerCallback(pokemon, target, move) {
-			let bp = move.basePower;
-			if (this.field.pseudoWeather.echoedvoice) {
-				bp = move.basePower * this.field.pseudoWeather.echoedvoice.multiplier;
-			}
-			this.debug('BP: ' + move.basePower);
-			return bp;
+			return 20 * move.hit;
 		},
 		category: "Special",
 		name: "Echoed Voice",
-		pp: 15,
+		pp: 10,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, sound: 1, bypasssub: 1},
-		onTry() {
-			this.field.addPseudoWeather('echoedvoice');
-		},
-		condition: {
-			duration: 2,
-			onFieldStart() {
-				this.effectState.multiplier = 1;
-			},
-			onFieldRestart() {
-				if (this.effectState.duration !== 2) {
-					this.effectState.duration = 2;
-					if (this.effectState.multiplier < 5) {
-						this.effectState.multiplier++;
-					}
-				}
-			},
-		},
+		multihit: 3,
+		multiaccuracy: true,
 		secondary: null,
 		target: "normal",
 		type: "Normal",
@@ -19234,22 +19214,23 @@ export const Moves: {[moveid: string]: MoveData} = {
 	spitup: {
 		num: 255,
 		accuracy: 100,
-		basePower: 0,
-		basePowerCallback(pokemon) {
-			if (!pokemon.volatiles['stockpile']?.layers) return false;
-			return pokemon.volatiles['stockpile'].layers * 100;
+		basePower: 80,
+		basePowerCallback(pokemon, target, move) {
+			let bp = move.basePower;
+			if (pokemon.volatiles['stockpile']) {
+				bp *= 2;
+			}
+			if (pokemon.ateBerry) {
+				bp *= 2;
+			}
+			this.debug("BP: " + bp);
+			return bp;
 		},
 		category: "Special",
 		name: "Spit Up",
 		pp: 10,
 		priority: 0,
 		flags: {protect: 1},
-		onTry(source) {
-			return !!source.volatiles['stockpile'];
-		},
-		onAfterMove(pokemon) {
-			pokemon.removeVolatile('stockpile');
-		},
 		secondary: null,
 		target: "normal",
 		type: "Normal",
@@ -23114,6 +23095,22 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Electric",
 		contestType: "Cool",
+	},
+	zekromkick: {
+		num: 823,
+		accuracy: 100,
+		basePower: 90,
+		category: "Physical",
+		name: "Zekrom Kick",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, kick: 1},
+		secondary: {
+			chance: 5,
+			status: 'par',
+		},
+		target: "normal",
+		type: "Electric",
 	},
 	zenheadbutt: {
 		num: 428,
