@@ -1063,6 +1063,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Merciless",
 		shortDesc: "This Pokemon's attacks are critical hits if the target is poisoned.",
 	},
+	metallic: {
+		name: "Metallic",
+		shortDesc: "Adds the steel typing."
+	},
 	mimicry: {
 		name: "Mimicry",
 		desc: "This Pokemon's types change to match the active Terrain when this Pokemon acquires this Ability, or whenever a Terrain begins. Electric type during Electric Terrain, Grass type during Grassy Terrain, Fairy type during Misty Terrain, and Psychic type during Psychic Terrain. If this Ability is acquired without an active Terrain, or a Terrain ends, this Pokemon's types become the original types for its species.",
@@ -1413,6 +1417,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		},
 
 		start: "  [POKEMON] is exerting its pressure!",
+	},
+	prettypetals: {
+		name: "Pretty Petals",
+		shortDesc: "This Pokemon is immune to all super-effective moves."
 	},
 	primordialsea: {
 		name: "Primordial Sea",

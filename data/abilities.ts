@@ -2851,6 +2851,16 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 1.5,
 		num: 196,
 	},
+	metallic: {
+		onStart(pokemon) {
+			if (!pokemon.types.includes('Steel')) {
+				if (!pokemon.addType('Steel')) return;
+				this.add('-start', pokemon, 'typeadd', 'Steel', '[from] ability: Metallic');
+
+			}
+		},
+		name: "Metallic",
+	},
 	mimicry: {
 		onStart(pokemon) {
 			this.singleEvent('TerrainChange', this.effect, this.effectState, pokemon);
@@ -3746,6 +3756,22 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Pressure",
 		rating: 2.5,
 		num: 46,
+	},
+	prettypetals: {
+		onTryHit(target, source, move) {
+			if (target === source || move.category === 'Status' || move.id === 'struggle') return;
+			if (move.id === 'skydrop' && !source.volatiles['skydrop']) return;
+			this.debug('Wonder Guard immunity: ' + move.id);
+			if (target.runEffectiveness(move) > 1) {
+			  if (move.smartTarget) {
+				move.smartTarget = false;
+			  } else {
+				this.add('-immune', target, '[from] ability: Wonder Guard');
+			  }
+			  return null;
+			}
+		  },
+		  name: "Pretty Petals"
 	},
 	primordialsea: {
 		onStart(source) {
@@ -6035,10 +6061,6 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			} else {
 			  this.add('-immune', target, '[from] ability: Wonder Guard');
 			}
-			return null;
-		  }
-		  if (move.type === 'Rock' && !target.activeTurns) {
-			this.add('-immune', target, '[from] ability: Wonder Guard');
 			return null;
 		  }
 		},
