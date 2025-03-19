@@ -91548,6 +91548,11 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			closecombat: ["5M, 9M"],
 			agility: ["5M, 9M"],
 			bounce: ["5M, 9M"],
+			suckerpunch: ["5M, 9M"],
+			upperhand: ["5M, 9M"],
+			lowkick: ["5M, 9M"],
+			doublekick: ["5M, 9M"],
+			axekick: ["5M, 9M"],
 		},
 	},
 	quartzeon: {
