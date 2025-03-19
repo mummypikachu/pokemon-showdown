@@ -2398,7 +2398,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "The duration of Gravity, Heal Block, Magic Room, Safeguard, Tailwind, and Wonder Room is increased by 2 turns if the effect is started by this Pokemon and starts Trick Room.",
 		shortDesc: "When used, summons Trick Room.",
 
-		activate: "  [POKEMON] extends [MOVE] by 2 turns! (Except Trick Room lol)",
+		activate: "  [POKEMON] extends rooms by 2 turns! (Except Trick Room lol)",
 	},
 	ampereoverdrive: {
 		name: "Ampere Overdrive",
