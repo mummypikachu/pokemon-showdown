@@ -10592,7 +10592,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 0.5,
 		weightkg: 5.9,
 		color: "Blue",
-		evos: ["Escavalier"],
+		evos: ["Escavalier", "Kaburion"],
 		eggGroups: ["Bug"],
 	},
 	escavalier: {
@@ -18612,6 +18612,19 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		evoType: "other",
 		evoCondition: "Be level 30+ with a Flying Type in the party.",
 		eggGroups: ["Field"],
+	},
+	kaburion: {
+		num: 1511,
+		name: "Kaburion",
+		types: ["Bug"],
+		baseStats: {hp: 60, atk: 120, def: 65, spa: 80, spd: 75, spe: 105},
+		abilities: {0: "Swarm", 1: "No Guard", H: "Sharpness"},
+		heightm: 0.5,
+		weightkg: 10.5,
+		color: "Green",
+		prevo: "Karrablast",
+		evoLevel: 30,
+		eggGroups: ["Bug"],
 	},
 	syclar: {
 		num: -1,

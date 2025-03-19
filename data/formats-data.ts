@@ -5313,6 +5313,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "OU",
 		doublesTier: "DOU",
 	},
+	kaburion: {
+		tier: "OU",
+		doublesTier: "DOU",
+	},
 	missingno: {
 		isNonstandard: "Custom",
 		tier: "Illegal",

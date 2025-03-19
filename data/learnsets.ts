@@ -91542,6 +91542,14 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			yawn: ["9V"],
 		},
 	},
+	kaburion: {
+		learnset: {
+			acrobatics: ["5M, 9M"],
+			closecombat: ["5M, 9M"],
+			agility: ["5M, 9M"],
+			bounce: ["5M, 9M"],
+		},
+	},
 	quartzeon: {
 		learnset: {
 			ancientpower: ["9M"],
