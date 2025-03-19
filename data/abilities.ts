@@ -3759,20 +3759,20 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	prettypetals: {
 		onTryHit(target, source, move) {
-			if (target === source || move.category === 'Status' || move.id === 'struggle') return;
-			if (move.id === 'skydrop' && !source.volatiles['skydrop']) return;
-			this.debug('Wonder Guard immunity: ' + move.id);
-			if (target.runEffectiveness(move) > 1) {
-			  if (move.smartTarget) {
-				move.smartTarget = false;
-			  } else {
-				this.add('-immune', target, '[from] ability: Wonder Guard');
-			  }
-			  return null;
+		  if (target === source || move.category === 'Status' || move.id === 'struggle') return;
+		  if (move.id === 'skydrop' && !source.volatiles['skydrop']) return;
+		  this.debug('Wonder Guard immunity: ' + move.id);
+		  if (target.runEffectiveness(move) > 0) {
+			if (move.smartTarget) {
+			  move.smartTarget = false;
+			} else {
+			  this.add('-immune', target, '[from] ability: Pretty Petals');
 			}
-		  },
-		  name: "Pretty Petals"
-	},
+			return null;
+		  }
+		},
+		name: "Pretty Petals"
+	  },
 	primordialsea: {
 		onStart(source) {
 			this.field.setWeather('primordialsea');

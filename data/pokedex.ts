@@ -9807,7 +9807,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Leavanny",
 		types: ["Bug", "Grass"],
 		baseStats: {hp: 75, atk: 115, def: 80, spa: 70, spd: 80, spe: 100},
-		abilities: {0: "Striker", 1: "Chlorophyll", H: "No Guard"},
+		abilities: {0: "Striker", 1: "Chlorophyll", H: "Overcoat"},
 		heightm: 1.2,
 		weightkg: 20.5,
 		color: "Yellow",
