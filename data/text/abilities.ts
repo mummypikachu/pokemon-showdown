@@ -26,7 +26,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	aerodynamic: {
 		name: "Aerodynamic",
-		shortDesc: "If Wind is active all attacks from this pokemon are boosted by 1.5x",
+		shortDesc: "If Wind is active, all attacks from this pokemon are boosted by 1.5.",
 	},
 	aftermath: {
 		name: "Aftermath",
@@ -48,8 +48,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	angerpoint: {
 		name: "Anger Point",
-		desc: "If this Pokemon, but not its substitute, is struck by a critical hit, its Attack is raised by 12 stages and also if the pokemon is at 1/4 health its attack will double.",
-		shortDesc: "If this Pokemon (not its substitute) takes a critical hit, its Attack is raised 12 stages and also if the pokemon is at 1/4 health its attack will double.",
+		desc: "If this Pokemon, but not its substitute, is struck by a critical hit, its Attack is raised by 12 stages. Doubles pure attack stat if HP is below 25%.",
+		shortDesc: "If this Pokemon (not its substitute) takes a critical hit, its Attack is raised by 12 stages. Double attack if HP below 25%.",
 		gen4: {
 			desc: "If this Pokemon, or its substitute, is struck by a critical hit, its Attack is raised by 12 stages.",
 			shortDesc: "If this Pokemon or its substitute takes a critical hit, its Attack is raised 12 stages.",
@@ -237,6 +237,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		gen7: {
 			desc: "If Sunny Day is active, this Pokemon's Speed is doubled.",
 		},
+	},
+	chargeexpulsion: {
+		name: "Charge Expulsion",
+		shortDesc: "When this Pokemon is hit by an attack, the effect of Electric Terrain begins.",
 	},
 	clearbody: {
 		name: "Clear Body",
@@ -1655,6 +1659,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	screencleaner: {
 		name: "Screen Cleaner",
 		shortDesc: "On switch-in, the effects of Aurora Veil, Light Screen, and Reflect end for both sides.",
+	},
+	seahunter: {
+		name: "Sea Hunter",
+		shortDesc: "This Pokémon has the power of its Water-type moves multiplied by 1.5.",
 	},
 	seedsower: {
 		name: "Seed Sower",

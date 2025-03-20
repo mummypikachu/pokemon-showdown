@@ -669,6 +669,14 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 5,
 		num: 16,
 	},
+	chargeexpulsion: {
+		onDamagingHit(damage, target, source, move) {
+			this.field.setTerrain('electricterrain');
+		},
+		name: "Charge Expulsion",
+		rating: 2.5,
+		num: 30304,
+	},
 	comatose: {
 		onStart(pokemon) {
 			this.add('-ability', pokemon, 'Comatose');
@@ -4470,6 +4478,25 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Screen Cleaner",
 		rating: 2,
 		num: 251,
+	},
+	seahunter: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Water') {
+				this.debug('Sea hunter boost');
+				return this.chainModify(1.5);
+			}
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Water') {
+				this.debug('Sea Hunter boost');
+				return this.chainModify(1.5);
+			}
+		},
+		name: "Sea Hunter",
+		rating: 3.5,
+		num: 30303,
 	},
 	seedsower: {
 		onDamagingHit(damage, target, source, move) {
