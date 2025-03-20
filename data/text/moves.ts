@@ -7723,6 +7723,10 @@ export const MovesText: {[k: string]: MoveText} = {
 		gen7: {
 			desc: "Will always result in a critical hit.",
 			shortDesc: "Nearly always goes first. Always crits.",
-		},
+	}},
+	cherrybomb: {
+		name: "Cherry Bomb",
+		desc: "This attack charges on the first turn and executes on the second. Power is halved if the weather is Hail, Primordial Sea, Rain Dance, or Sandstorm and the user is not holding Utility Umbrella. If the user is holding a Power Herb or the weather is Desolate Land or Sunny Day, the move completes in one turn. If the user is holding Utility Umbrella and the weather is Desolate Land or Sunny Day, the move still requires a turn to charge. Hits both opponents.",
+		shortDesc: "Goes instantly in sun. Hits both opponents.",
 	},
 };
