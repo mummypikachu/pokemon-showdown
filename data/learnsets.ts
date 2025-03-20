@@ -91544,7 +91544,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	},
 	kaburion: {
 		learnset: {
-			acrobatics: ["9M, 5M"],
+			acrobatics: ["9M"],
 			closecombat: ["9M, 5M"],
 			agility: ["9M, 5M"],
 			bounce: ["9M, 5M"],
