@@ -48731,6 +48731,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			toxic: ["9M", "9M", "5M", "4M"],
 			weatherball: ["9M", "9E", "9E", "5E", "4E"],
 			worryseed: ["9L40", "9T", "9L28", "6T", "6L28", "5T", "5L28", "9T", "4L28"],
+			cherrybomb: ["9M"],
 		},
 	},
 	cherrim: {
