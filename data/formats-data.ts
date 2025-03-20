@@ -5327,6 +5327,15 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "OU",
 		doublesTier: "DOU",
 	},
+	awanezumi: {
+		tier: "NU",
+		natDexTier: "RU",
+	},
+	garock: {
+		tier: "OU",
+		natDexTier: "OU",
+		doublesTier: "DOU",
+	},
 	missingno: {
 		isNonstandard: "Custom",
 		tier: "Illegal",

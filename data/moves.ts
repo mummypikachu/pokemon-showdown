@@ -23168,7 +23168,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Cherry Bomb",
 		pp: 10,
 		priority: 0,
-		flags: {contact: 1, charge: 1, protect: 1, mirror: 1, slicing: 1},
+		flags: {charge: 1, protect: 1, mirror: 1},
 		onTryMove(attacker, defender, move) {
 			if (attacker.removeVolatile(move.id)) {
 				return;
