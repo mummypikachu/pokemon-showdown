@@ -5319,6 +5319,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	kaburion: {
 		tier: "OU",
+		natDexTier: "OU",
+		doublesTier: "DOU",
+	},
+	chivalmet: {
+		tier: "OU",
+		natDexTier: "OU",
 		doublesTier: "DOU",
 	},
 	missingno: {
