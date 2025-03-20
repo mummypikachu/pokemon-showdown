@@ -2384,7 +2384,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	// CAP
 	mountaineer: {
 		name: "Mountaineer",
-		shortDesc: "On switch-in, this Pokemon avoids all Rock-type attacks and Stealth Rock.",
+		shortDesc: "Pokemon is immune to all Rock-type attacks and Stealth Rock.",
 	},
 	rebound: {
 		name: "Rebound",
