@@ -91694,6 +91694,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			dracometeor: ["9T", "9T", "6T"],
 			dragonclaw: ["9M", "9L36", "9M", "9L37", "6M", "6L37"],
 			dragondance: ["9M", "9E", "9E"],
+			dynamicpunch: ["9M"]
 			dragonpulse: ["9M", "9T", "6T"],
 			dragontail: ["9L20", "9M", "9L30", "6M", "6L30"],
 			earthpower: ["9M", "9T", "6T"],
@@ -91727,7 +91728,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			round: ["9M", "9M", "6M"],
 			sandstorm: ["9M", "9M", "6M"],
 			scaleshot: ["9T"],
-			superpower: ["9M"],
 			scaryface: ["9M"],
 			secretpower: ["6M"],
 			sleeptalk: ["9M", "9M", "6M"],
