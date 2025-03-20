@@ -871,6 +871,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "PU",
 		natDexTier: "RU",
 	},
+	jynxmega: {
+		tier: "OU",
+		natDexTier: "RU",
+	},
 	elekid: {
 		tier: "LC",
 		natDexTier: "LC",
