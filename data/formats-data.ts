@@ -5336,6 +5336,19 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "OU",
 		doublesTier: "DOU",
 	},
+	tanisu: {
+		tier: "LC",
+		natDexTier: "LC",
+	},
+	tanince: {
+		tier: "NFE",
+		natDexTier: "NFE",
+	},
+	tanking: {
+		tier: "OU",
+		natDexTier: "OU",
+		doublesTier: "DOU",
+	},
 	missingno: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
