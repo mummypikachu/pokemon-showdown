@@ -18625,6 +18625,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		prevo: "Karrablast",
 		evoLevel: 30,
 		eggGroups: ["Bug"],
+		gen: 5,
 	},
 	chivalmet: {
 		num: 1510,
@@ -18638,6 +18639,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		prevo: "Shelmet",
 		evoLevel: 30,
 		eggGroups: ["Bug"],
+		gen: 5,
 	},
 	awanezumi: {
 		num: 1513,
@@ -18649,6 +18651,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 8.4,
 		color: "Blue",
 		eggGroups: ["Field"],
+		gen: 5,
 	},
 	garock: {
 		num: 1514,
@@ -18660,6 +18663,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 109.9,
 		color: "Brown",
 		eggGroups: ["Dragon", "Mineral"],
+		gen: 5,
 	},
 	tanisu: {
 		num: 1515,
@@ -18672,6 +18676,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Blue",
 		evos: ["Tanince"],
 		eggGroups: ["Water1", "Monster"],
+		gen: 5,
 	},
 	tanince: {
 		num: 1516,
@@ -18686,6 +18691,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		evoLevel: 28,
 		evos: ["Tanking"],
 		eggGroups: ["Water1", "Monster"],
+		gen: 5,
 	},
 	tanking: {
 		num: 1517,
@@ -18699,6 +18705,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		prevo: "Tanince",
 		evoLevel: 39,
 		eggGroups: ["Water1", "Monster"],
+		gen: 5,
 	},
 	syclar: {
 		num: -1,
