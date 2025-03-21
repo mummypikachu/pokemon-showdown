@@ -367,11 +367,34 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 4,
 	},
 	barriershield: {
-		onCriticalHit: false, //this is a placeholder for the WaterSnail line. This will not remain a Battle Armor clone.
-		isBreakable: true,
 		name: "Barrier Shield",
-		rating: 1,
-		num: 4,
+		onTryHitPriority: 1,
+		onTryHit(target, source, move) {
+			if (target === source || move.hasBounced || !move.flags['bullet']) {
+				return;
+			}
+			const newMove = this.dex.getActiveMove(move.id);
+			newMove.hasBounced = true;
+			newMove.pranksterBoosted = false;
+			this.actions.useMove(newMove, target, source);
+			return null;
+		},
+		onAllyTryHitSide(target, source, move) {
+			if (target.isAlly(source) || move.hasBounced || !move.flags['bullet']) {
+				return;
+			}
+			const newMove = this.dex.getActiveMove(move.id);
+			newMove.hasBounced = true;
+			newMove.pranksterBoosted = false;
+			this.actions.useMove(newMove, this.effectState.target, source);
+			return null;
+		},
+		condition: {
+			duration: 1,
+		},
+		isBreakable: true,
+		rating: 4,
+		num: 30302,
 	},
 	battlebond: {
 			onSourceAfterFaint(length, target, source, effect) {
