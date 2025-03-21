@@ -149,6 +149,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Ball Fetch",
 		shortDesc: "No competitive use.",
 	},
+	barriershield: {
+		name: "Barrier Shield",
+		desc: "This Pokemon is unaffected by Bullet moves directed at it, and will instead use such moves against the original user. Moves reflected in this way are unable to be reflected again by this.' 'The Lightning Rod and Storm Drain Abilities redirect their respective moves before this Ability takes effect.",
+		shortDesc: "This Pokemon reflects Bullet moves back to the user.",
+	},
 	battery: {
 		name: "Battery",
 		shortDesc: "This Pokemon's allies have the power of their special attacks multiplied by 1.3.",
