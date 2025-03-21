@@ -18670,6 +18670,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 0.3,
 		weightkg: 2.5,
 		color: "Blue",
+		evos: ["Tanking"],
 		eggGroups: ["Water1", "Monster"],
 	},
 	tanince: {
@@ -18681,6 +18682,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 0.7,
 		weightkg: 18.6,
 		color: "Blue",
+		prevo: "Tanisu",
+		evoLevel: 28,
+		evos: ["Tanking"],
 		eggGroups: ["Water1", "Monster"],
 	},
 	tanking: {
@@ -18692,6 +18696,8 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 1.3,
 		weightkg: 79.4,
 		color: "Blue",
+		prevo: "Tanince",
+		evoLevel: 39,
 		eggGroups: ["Water1", "Monster"],
 	},
 	syclar: {
