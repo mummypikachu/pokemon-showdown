@@ -847,6 +847,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Hondew Berry",
 		desc: "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
 	},
+	honey: {
+		name: "Honey",
+		desc: "Restores 1/2 max HP at 1/2 or less. Single use. Disappears after use.",
+	},
 	houndoominite: {
 		name: "Houndoominite",
 		desc: "If held by a Houndoom, this item allows it to Mega Evolve in battle.",
