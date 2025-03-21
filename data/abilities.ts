@@ -366,6 +366,13 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 1,
 		num: 4,
 	},
+	barriershield: {
+		onCriticalHit: false, //this is a placeholder for the WaterSnail line. This will not remain a Battle Armor clone.
+		isBreakable: true,
+		name: "Barrier Shield",
+		rating: 1,
+		num: 4,
+	},
 	battlebond: {
 			onSourceAfterFaint(length, target, source, effect) {
 				if (effect?.effectType !== 'Move') {
