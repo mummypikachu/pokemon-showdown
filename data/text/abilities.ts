@@ -255,7 +255,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	colorchange: {
 		name: "Color Change",
 		desc: "This Pokemon's type changes to one that best resists an incoming move, unless that type is already one of its types. This effect applies right before an incoming hit.",
-		shortDesc: "This Pokemon's type changes to the type that best resists an incoming move unless it has that type.",
+		shortDesc: "This Pokemon's type changes to the type that best resists an incoming move, unless it has that type.",
 		gen4: {
 			desc: "This Pokemon's type changes to match the type of the last move that hit it, unless that type is already one of its types. This effect applies after each hit from a multi-hit move. This effect does not happen if this Pokemon did not lose HP from the attack.",
 		},
