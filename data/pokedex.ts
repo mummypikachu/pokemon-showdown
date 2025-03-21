@@ -18670,7 +18670,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 0.3,
 		weightkg: 2.5,
 		color: "Blue",
-		evos: ["Tanking"],
+		evos: ["Tanince"],
 		eggGroups: ["Water1", "Monster"],
 	},
 	tanince: {
