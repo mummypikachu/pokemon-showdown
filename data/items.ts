@@ -2756,6 +2756,24 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 172,
 		gen: 3,
 	},
+	honey: {
+		name: "Honey",
+		spritenum: 196,
+		onUpdate(pokemon) {
+			if (pokemon.hp <= pokemon.maxhp / 2) {
+				pokemon.useItem();
+			}
+		},
+		onUseItem(item, pokemon) {
+			if (!this.runEvent('TryHeal', pokemon)) return false;
+			this.heal(pokemon.baseMaxhp / 2);
+		},
+		fling: {
+			basePower: 80,
+		},
+		num: 34,
+		gen: 4,
+	},
 	houndoominite: {
 		name: "Houndoominite",
 		spritenum: 591,
@@ -3324,17 +3342,17 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		onModifyAtkPriority: 1,
 		onModifyAtk(atk, pokemon) {
-			if (pokemon.baseSpecies.baseSpecies === 'Pikachu' || (pokemon.baseSpecies.baseSpecies === 'Raichu'))  {
+			if (pokemon.baseSpecies.baseSpecies === 'Pikachu')  {
 				return this.chainModify(1.3);
 			}
 		},
 		onModifySpAPriority: 1,
 		onModifySpA(spa, pokemon) {
-			if (pokemon.baseSpecies.baseSpecies === 'Pikachu' || (pokemon.baseSpecies.baseSpecies === 'Raichu')) {
+			if (pokemon.baseSpecies.baseSpecies === 'Pikachu') {
 				return this.chainModify(1.3);
 			}
 		},
-		itemUser: ["Pikachu", "Pikachu-Cosplay", "Pikachu-Rock-Star", "Pikachu-Belle", "Pikachu-Pop-Star", "Pikachu-PhD", "Pikachu-Libre", "Pikachu-Original", "Pikachu-Hoenn", "Pikachu-Sinnoh", "Pikachu-Unova", "Pikachu-Kalos", "Pikachu-Alola", "Pikachu-Partner", "Pikachu-Starter", "Pikachu-World", "Raichu", "Raichu-Alola"],
+		itemUser: ["Pikachu", "Pikachu-Cosplay", "Pikachu-Rock-Star", "Pikachu-Belle", "Pikachu-Pop-Star", "Pikachu-PhD", "Pikachu-Libre", "Pikachu-Original", "Pikachu-Hoenn", "Pikachu-Sinnoh", "Pikachu-Unova", "Pikachu-Kalos", "Pikachu-Alola", "Pikachu-Partner", "Pikachu-Starter", "Pikachu-World"],
 		num: 236,
 		gen: 2,
 	},

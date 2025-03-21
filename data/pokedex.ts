@@ -3907,7 +3907,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		num: 191,
 		name: "Sunkern",
 		types: ["Grass", "Normal"],
-		baseStats: {hp: 65, atk: 30, def: 70, spa: 80, spd: 70, spe: 70},
+		baseStats: {hp: 45, atk: 30, def: 40, spa: 60, spd: 50, spe: 70},
 		abilities: {0: "Chlorophyll", 1: "Solar Power", H: "Pretty Petals"},
 		weightkg: 1.8,
 		color: "Yellow",

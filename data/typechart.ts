@@ -433,7 +433,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			tox: 3,
 			sandstorm: 3,
 			Bug: 2,
-			Dark: 2,
+			Dark: 0,
 			Dragon: 2,
 			Electric: 0,
 			Fairy: 2,
