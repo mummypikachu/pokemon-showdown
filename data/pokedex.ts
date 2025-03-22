@@ -3517,7 +3517,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	noctowl: {
 		num: 164,
 		name: "Noctowl",
-		types: ["Ghost", "Flying"],
+		types: ["Normal", "Flying"],
 		baseStats: {hp: 95, atk: 55, def: 115, spa: 106, spd: 121, spe: 40},
 		abilities: {0: "Insomnia", 1: "Keen Eye", H: "Tinted Lens"},
 		heightm: 1.6,
