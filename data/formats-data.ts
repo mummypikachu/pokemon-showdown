@@ -5349,6 +5349,19 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "OU",
 		doublesTier: "DOU",
 	},
+	tepigphyor: {
+		tier: "PU",
+		natDexTier: "RU",
+	},
+	snivyfloria: {
+		tier: "PU",
+		natDexTier: "RU",
+	},
+	chimechoexcir: {
+		tier: "OU",
+		natDexTier: "OU",
+		doublesTier: "DOU",
+	},
 	missingno: {
 		isNonstandard: "Custom",
 		tier: "Illegal",

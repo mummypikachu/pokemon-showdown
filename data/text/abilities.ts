@@ -641,7 +641,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	ghostlywail: {
 		name: "Ghostly Wail",
-		shortDesc: "The user's Ghost-Type moves increase by 1.5x also when the gets hit they gain the Ghost-Type as another typing to their own.",
+		shortDesc: "The power of the user's Ghost-Type moves increase by 1.5x. Gains the Ghost type if hit.",
 	},
 	goodasgold: {
 		name: "Good as Gold",
