@@ -2429,7 +2429,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	cleanslate: {
 		name: "Clean Slate",
-		shortDesc: "On switch-in, all hazards are cleared off the field this also includes Trick Room and Safeguard.",
+		shortDesc: "On switch-in, all hazards are cleared off the field. This also includes Trick Room and Safeguard.",
 
 		start: " [POKEMON] cleaned off the field."
 	}
