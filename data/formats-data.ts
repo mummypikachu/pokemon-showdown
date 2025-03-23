@@ -5385,6 +5385,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	electrodehisuinoble: {
 		tier: "OU",
 	},
+	mossmy: {
+		tier: "PU",
+	},
+	kodomin: {
+		tier: "OU",
+	},
 	missingno: {
 		isNonstandard: "Custom",
 		tier: "Illegal",

@@ -18890,6 +18890,18 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Amorphous"],
 		gen: 3,
 	},
+	metang2: {
+		num: 1514,
+		name: "metang2",
+		types: ["Rock", "Psychic"],
+		baseStats: {hp: 80, atk: 95, def: 80, spa: 60, spd: 80, spe: 60},
+		abilities: {0: "Levitate"},
+		heightm: 1.5,
+		weightkg: 109.9,
+		color: "Blue",
+		eggGroups: ["Mineral"],
+		gen: 5,
+	},
 	syclar: {
 		num: -1,
 		name: "Syclar",
