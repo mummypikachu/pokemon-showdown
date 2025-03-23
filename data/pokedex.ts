@@ -1482,6 +1482,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 3.1,
 		weightkg: 217.5,
 		color: "Brown",
+		prevo: "Growlithe-Hisui",
+		evoType: "other",
+		evoCondition: "while being a descendant of five of the ten companions of the ancient hero of legend",
 		eggGroups: ["Field"],
 	},
 	poliwag: {
