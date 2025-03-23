@@ -86141,6 +86141,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			terablast: ["9M"],
 			thief: ["9M"],
 			trailblaze: ["9M"],
+			trufflesearch: ["9M"],
 			uproar: ["9M", "9L32"],
 			workup: ["9L30"],
 			yawn: ["9L24"],

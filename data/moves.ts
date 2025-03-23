@@ -21900,6 +21900,44 @@ export const Moves: {[moveid: string]: MoveData} = {
 		maxMove: {basePower: 130},
 		contestType: "Cool",
 	},
+	trufflesearch: {
+		num: 30300,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Truffle Search",
+		pp: 10,
+		priority: 0,
+		flags: {snatch: 1},
+		onTryImmunity(target) {
+			// Truant and Effect Spore have special treatment; they fail before
+			// checking accuracy and will double Stomping Tantrum's BP
+			if (target.ability === 'truant' || target.ability === 'effectspore') {
+				return false;
+			}
+		},
+		onTryHit(target) {
+			if (target.getAbility().isPermanent) {
+				return false;
+			}
+		},
+		onHit(pokemon) {
+			const oldAbility = pokemon.setAbility('effectspore');
+			if (oldAbility) {
+				this.add('-ability', pokemon, 'Effect Spore', '[from] move: Truffle Search');
+				if (pokemon.status === 'slp') {
+					pokemon.cureStatus();
+				}
+				return;
+			}
+			return oldAbility as false | null;
+		},
+		secondary: null,
+		target: "self",
+		type: "Grass",
+		zMove: {boost: {spe: 1}},
+		contestType: "Clever",
+	},
 	twinbeam: {
 		num: 888,
 		accuracy: 100,

@@ -7258,6 +7258,11 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "The power of this move is based on the amount of PP remaining after normal PP reduction and the Pressure Ability resolve. 200 power for 0 PP, 80 power for 1 PP, 60 power for 2 PP, 50 power for 3 PP, and 40 power for 4 or more PP.",
 		shortDesc: "More power the fewer PP this move has left.",
 	},
+	trufflesearch: {
+		name: "Truffle Search",
+		desc: "Causes the user's Ability to become Effect Spore. Fails if the target's Ability is As One, Battle Bond, Comatose, Commander, Disguise, Gulp Missile, Hadron Engine, Ice Face, Effect Spore, Multitype, Orichalcum Pulse, Power Construct, Protosynthesis, Quark Drive, RKS System, Schooling, Shields Down, Stance Change, Truant, Zen Mode, or Zero to Hero.",
+		shortDesc: "The target's Ability becomes Effect Spore.",
+	},
 	twinbeam: {
 		name: "Twin Beam",
 		desc: "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit.",
