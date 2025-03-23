@@ -531,7 +531,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 	},
 	rapidash: {
-		tier: "UU",
+		tier: "RU",
 		natDexTier: "RU",
 	},
 	rapidashgalar: {
@@ -574,7 +574,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "NFE",
 	},
 	magnezone: {
-		tier: "UU",
+		tier: "RU",
 		doublesTier: "(DUU)",
 		natDexTier: "UU",
 	},
@@ -1119,7 +1119,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "NFE",
 	},
 	meganium: {
-		tier: "UU",
+		tier: "RU",
 		natDexTier: "RU",
 	},
 	cyndaquil: {
