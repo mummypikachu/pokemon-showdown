@@ -877,6 +877,11 @@ export const MovesText: {[k: string]: MoveText} = {
 			shortDesc: "For Chatot, 31% chance to confuse the target.",
 		},
 	},
+	cherrybomb: {
+		name: "Cherry Bomb",
+		desc: "This attack charges on the first turn and executes on the second. Power is halved if the weather is Hail, Primordial Sea, Rain Dance, or Sandstorm and the user is not holding Utility Umbrella. If the user is holding a Power Herb or the weather is Desolate Land or Sunny Day, the move completes in one turn. If the user is holding Utility Umbrella and the weather is Desolate Land or Sunny Day, the move still requires a turn to charge. Hits both opponents.",
+		shortDesc: "Goes instantly in sun. Hits both opponents.",
+	},
 	chillingwater: {
 		name: "Chilling Water",
 		desc: "Has a 100% chance to lower the target's Attack by 1 stage.",
@@ -7724,9 +7729,4 @@ export const MovesText: {[k: string]: MoveText} = {
 			desc: "Will always result in a critical hit.",
 			shortDesc: "Nearly always goes first. Always crits.",
 	}},
-	cherrybomb: {
-		name: "Cherry Bomb",
-		desc: "This attack charges on the first turn and executes on the second. Power is halved if the weather is Hail, Primordial Sea, Rain Dance, or Sandstorm and the user is not holding Utility Umbrella. If the user is holding a Power Herb or the weather is Desolate Land or Sunny Day, the move completes in one turn. If the user is holding Utility Umbrella and the weather is Desolate Land or Sunny Day, the move still requires a turn to charge. Hits both opponents.",
-		shortDesc: "Goes instantly in sun. Hits both opponents.",
-	},
 };
