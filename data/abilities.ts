@@ -1243,6 +1243,18 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 4,
 		num: 70,
 	},
+	drainingmoss: {
+		onDamagingHit(damage, target, source, move) {
+			if (this.checkMoveMakesContact(move, source, target, true)) {
+				this.add('-ability', target, 'Draining Moss');
+				this.boost({ spe: -1 }, source, target, null, true);
+			}
+		},
+		//flags: {}, what do flags do? I copied this from the PS! git from Gooey as i needed it for the ability. commented out by: Duke
+		name: "Draining Moss",
+		rating: 2,
+		num: 183,
+	},
 	dryskin: {
 		onTryHit(target, source, move) {
 			if (target !== source && move.type === 'Water') {
