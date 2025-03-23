@@ -3787,11 +3787,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "NFE",
 	},
 	decidueye: {
-		tier: "OU",
+		tier: "RU",
 		natDexTier: "RU",
 	},
 	decidueyehisui: {
-		tier: "OU",
+		tier: "RU",
 	},
 	litten: {
 		tier: "LC",
