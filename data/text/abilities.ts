@@ -444,6 +444,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Drought",
 		shortDesc: "On switch-in, this Pokemon summons Sun.",
 	},
+	drainingmoss: {
+		name: "Draining Moss",
+		desc: "If the user is hit by a move that makes contact, the opponent's Attack is lowered by 1 stage.",
+		shortDesc: "Lowers Attack on contact with user.",
+	},
 	dryskin: {
 		name: "Dry Skin",
 		desc: "This Pokemon is immune to Water-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Water-type move. The power of Fire-type moves is multiplied by 1.25 when used on this Pokemon. At the end of each turn, this Pokemon restores 1/8 of its maximum HP, rounded down, if the weather is Rain Dance, and loses 1/8 of its maximum HP, rounded down, if the weather is Sunny Day. The weather effects are prevented if this Pokemon is holding a Utility Umbrella.",
