@@ -3726,9 +3726,6 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	avalugghisui: {
 		tier: "NU",
 	},
-	avalugghisuinoble: {
-		tier: "RU",
-	},
 	noibat: {
 		tier: "LC",
 	},
@@ -5372,6 +5369,21 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "OU",
 		natDexTier: "OU",
 		doublesTier: "DOU",
+	},
+	avalugghisuinoble: {
+		tier: "OU",
+	},
+	lilliganthisuinoble: {
+		tier: "OU",
+	},
+	kleavornoble: {
+		tier: "OU",
+	},
+	arcaninehisuinoble: {
+		tier: "OU",
+	},
+	electrodehisuinoble: {
+		tier: "OU",
 	},
 	missingno: {
 		isNonstandard: "Custom",
