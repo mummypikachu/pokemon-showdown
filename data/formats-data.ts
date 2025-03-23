@@ -1162,7 +1162,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 	},
 	noctowl: {
-		tier: "RU",
+		tier: "NU",
 		natDexTier: "RU",
 	},
 	ledyba: {
@@ -1178,7 +1178,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 	},
 	ariados: {
-		tier: "RU",
+		tier: "NU",
 		natDexTier: "RU",
 	},
 	chinchou: {
