@@ -3719,12 +3719,15 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "LC",
 	},
 	avalugg: {
-		tier: "RU",
+		tier: "NU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
 	avalugghisui: {
-		tier: "UU",
+		tier: "NU",
+	},
+	avalugghisuinoble: {
+		tier: "RU",
 	},
 	noibat: {
 		tier: "LC",
