@@ -1865,12 +1865,12 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 5,
 		num: 283,
 	},
-	gooey: {
+	stickyfield: {
 		onStart(pokemon) {
 			let activated = false;
 			for (const target of pokemon.adjacentFoes()) {
 				if (!activated) {
-					this.add('-ability', pokemon, 'Gooey', 'boost');
+					this.add('-ability', pokemon, 'Sticky Field', 'boost');
 					activated = true;
 				}
 				if (target.volatiles['substitute']) {
@@ -1880,8 +1880,19 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				}
 			}
 		},
-		name: "Gooey",
+		name: "Sticky Field",
 		rating: 4,
+		num: 183,
+	},
+	gooey: {
+		onDamagingHit(damage, target, source, move) {
+			if (this.checkMoveMakesContact(move, source, target, true)) {
+				this.add('-ability', target, 'Gooey');
+				this.boost({ spe: -1 }, source, target, null, true);
+			}
+		},
+		name: "Gooey",
+		rating: 2,
 		num: 183,
 	},
 	gorillatactics: {
@@ -4158,7 +4169,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			}
 		},
 		onTryBoost(boost, target, source, effect) {
-			if (effect.name === 'Gooey' && boost.spe) {
+			if (effect.name === 'Sticky Field' && boost.spe) {
 				delete boost.spe;
 				this.add('-fail', target, 'unboost', 'Speed', '[from] ability: Quick Feet', '[of] ' + target);
 			}
@@ -5338,7 +5349,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			}
 		},
 		onTryBoost(boost, target, source, effect) {
-			if (effect.name === 'Gooey' && boost.spe) {
+			if (effect.name === 'Sticky Field' && boost.spe) {
 				delete boost.spe;
 				this.add('-fail', target, 'unboost', 'Speed', '[from] ability: Tangled Feet', '[of] ' + target);
 			}

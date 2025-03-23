@@ -657,6 +657,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "On switch-in, this Pokemon lowers the Speed of opposing Pokemon by 1 stage. Pokemon with the Tangled Feet, or Quick Feet Abilities and Pokemon behind a substitute are immune.",
 		shortDesc: "On switch-in, this Pokemon lowers the Speed of opponents by 1 stage.",
 	},
+	stickyfield: {
+		name: "Sticky Field",
+		desc: "On switch-in, this Pokemon lowers the Speed of opposing Pokemon by 1 stage. Pokemon with the Tangled Feet or Quick Feet Abilities, and Pokemon behind a substitute are immune.",
+		shortDesc: "On switch-in, this Pokemon lowers the Speed of opponents by 1 stage.",
+	},
 	gorillatactics: {
 		name: "Gorilla Tactics",
 		desc: "This Pokemon's Attack is multiplied by 1.5, but it can only select the first move it executes. These effects are prevented while this Pokemon is Dynamaxed.",
