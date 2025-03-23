@@ -5349,6 +5349,14 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "OU",
 		doublesTier: "DOU",
 	},
+	muscklar: {
+		tier: "LC",
+		natDexTier: "LC",
+	},
+	muchabrawn: {
+		tier: "OU",
+		natDexTier: "OU",
+	},
 	tepigphyor: {
 		tier: "PU",
 		natDexTier: "RU",
