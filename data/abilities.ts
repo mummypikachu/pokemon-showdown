@@ -4606,7 +4606,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
 			if (move.flags['slicing']) {
-				this.debug('Shapness boost');
+				this.debug('Sharpness boost');
 				return this.chainModify(1.5);
 			}
 			const basePowerAfterMultiplier = this.modify(basePower, this.event.modifier);
@@ -4621,7 +4621,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				if (boost.atk && boost.atk < 0) {
 					delete boost.atk;
 					if (!(effect as ActiveMove).secondaries) {
-						this.add("-fail", target, "unboost", "Attack", "[from] ability: Hyper Cutter", "[of] " + target);
+						this.add("-fail", target, "unboost", "Attack", "[from] ability: Lord of the Woods", "[of] " + target);
 					}
 				}
 			},
@@ -4633,7 +4633,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
 			if (move.flags['slicing']) {
-				this.debug('Shapness boost');
+				this.debug('Sharpness boost');
 				return this.chainModify(1.5);
 			}
 		},

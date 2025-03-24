@@ -16644,7 +16644,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		forme: "Noble",
 		types: ["Bug", "Rock"],
 		baseStats: {hp: 70, atk: 135, def: 115, spa: 45, spd: 70, spe: 85},
-		abilities: {0: "Bleeding Edge", 1: "Sheer Force", H: "Sharpness"},
+		abilities: {0: "Lord of the Woods"},
 		heightm: 2,
 		weightkg: 99,
 		color: "Brown",
