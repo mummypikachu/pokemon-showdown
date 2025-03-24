@@ -10012,7 +10012,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Grass", "Fighting"],
 		gender: "F",
 		baseStats: {hp: 80, atk: 125, def: 80, spa: 50, spd: 80, spe: 115},
-		abilities: {0: "Chlorophyll", 1: "Hustle", H: "Leaf Guard"},
+		abilities: {0: "Lady of the Ridge"},
 		heightm: 1.4,
 		weightkg: 20.2,
 		color: "Green",

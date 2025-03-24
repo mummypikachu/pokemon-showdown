@@ -2459,8 +2459,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	ladyoftheridge: {
 		name: "Lady of the Ridge",
-		desc: "Striker and Chlorophyll lilligant",
-		shortDesc: "This Pokemon's moves are changed to be Normal type and have 1.5x power with no immunities.",
+		desc: "Boosts the power of kicking moves by 1.5 and multiplies the Speed stat by 2 if under Sunny Day or Desolate Land.",
+		shortDesc: "Boosts power of kicking moves by 1.5. Double speed under sun.",
 	},
 	nobl5: {
 		name: "aval",

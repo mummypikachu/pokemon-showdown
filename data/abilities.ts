@@ -5077,6 +5077,23 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3,
 		num: 189,
 	},
+	ladyoftheridge: {
+		onModifySpe(spe, pokemon) {
+			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
+				return this.chainModify(2);
+			}
+		},
+		onBasePowerPriority: 23,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['kick']) {
+				this.debug('LOTR boost');
+				return this.chainModify([5325, 4096]);
+			}
+		},
+		name: "Lady of the Ridge",
+		rating: 3,
+		num: 1289,
+	},
 	stormdrain: {
 		onTryHit(target, source, move) {
 			if (target !== source && move.type === 'Water') {
