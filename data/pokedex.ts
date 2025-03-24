@@ -1470,7 +1470,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		evoItem: "Fire Stone",
 		eggGroups: ["Field"],
 	},
-	arcaninehisuinoble: {
+	arcaninenoble: {
 		num: 59,
 		name: "Arcanine-Noble",
 		baseSpecies: "Arcanine",
@@ -2329,7 +2329,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		evoItem: "Leaf Stone",
 		eggGroups: ["Mineral"],
 	},
-	electrodehisuinoble: {
+	electrodenoble: {
 		num: 101,
 		name: "Electrode-Noble",
 		baseSpecies: "Electrode",
@@ -10004,7 +10004,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		evoItem: "Sun Stone",
 		eggGroups: ["Grass"],
 	},
-	lilliganthisuinoble: {
+	lilligantnoble: {
 		num: 549,
 		name: "Lilligant-Noble",
 		baseSpecies: "Lilligant",
@@ -12824,7 +12824,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		evoLevel: 37,
 		eggGroups: ["Monster", "Mineral"],
 	},
-	avalugghisuinoble: {
+	avaluggnoble: {
 		num: 713,
 		name: "Avalugg-Noble",
 		baseSpecies: "Avalugg",

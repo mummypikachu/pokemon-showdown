@@ -9167,7 +9167,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			{generation: 7, level: 50, abilities: ["intimidate"], moves: ["flareblitz", "extremespeed", "willowisp", "protect"], pokeball: "cherishball"},
 		],
 	},
-	arcaninehisuinoble: {
+	arcaninenoble: {
 		learnset: {
 			aerialace: ["9M"],
 			agility: ["9M", "9L1"],
@@ -14928,7 +14928,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			wildcharge: ["9M"],
 		},
 	},
-	electrodehisuinoble: {
+	electrodenoble: {
 		learnset: {
 			agility: ["9M"],
 			bulletseed: ["9M", "9L9"],
@@ -57756,7 +57756,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			weatherball: ["9M"],
 		},
 	},
-	lilliganthisuinoble: {
+	lilligantnoble: {
 		learnset: {
 			absorb: ["9L1"],
 			acrobatics: ["9M"],
@@ -72318,7 +72318,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			wideguard: ["9L1"],
 		},
 	},
-	avalugghisuinoble: {
+	avaluggnoble: {
 		learnset: {
 			avalanche: ["9M", "9L18"],
 			bite: ["9L21"],

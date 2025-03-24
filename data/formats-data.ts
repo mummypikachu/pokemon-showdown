@@ -5370,19 +5370,19 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "OU",
 		doublesTier: "DOU",
 	},
-	avalugghisuinoble: {
+	avaluggnoble: {
 		tier: "OU",
 	},
-	lilliganthisuinoble: {
+	lilligantnoble: {
 		tier: "OU",
 	},
 	kleavornoble: {
 		tier: "OU",
 	},
-	arcaninehisuinoble: {
+	arcaninenoble: {
 		tier: "OU",
 	},
-	electrodehisuinoble: {
+	electrodenoble: {
 		tier: "OU",
 	},
 	mossmy: {
