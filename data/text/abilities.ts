@@ -2444,7 +2444,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	nobl1: {
 		name: "Arca",
-		desc: "This Pokemon is immune to all Status conditions. Additionally, this Pokémon will survive any hit from full HP.",
+		desc: "intimidate and rock head",
 		shortDesc: "This Pokemon's moves are changed to be Normal type and have 1.5x power with no immunities.",
 	},
 	nobl2: {
@@ -2457,14 +2457,14 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "This Pokemon's slicing moves have their power multiplied by 1.5. Boosts the power of moves with 60 base power or less by 1.5. Attack cannot be lowered.",
 		shortDesc: "Boosts power of slicing moves, moves at or under 60 base power, and attack cannot lower.",
 	},
-	nobl4: {
-		name: "lilli",
-		desc: "This Pokemon is immune to all Status conditions. Additionally, this Pokémon will survive any hit from full HP.",
+	ladyoftheridge: {
+		name: "Lady of the Ridge",
+		desc: "Striker and Chlorophyll lilligant",
 		shortDesc: "This Pokemon's moves are changed to be Normal type and have 1.5x power with no immunities.",
 	},
 	nobl5: {
 		name: "aval",
-		desc: "This Pokemon is immune to all Status conditions. Additionally, this Pokémon will survive any hit from full HP.",
+		desc: "Sturdy and strong jaw",
 		shortDesc: "This Pokemon's moves are changed to be Normal type and have 1.5x power with no immunities.",
 	},
 };
