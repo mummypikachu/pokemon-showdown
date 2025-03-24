@@ -2452,10 +2452,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "This Pokemon is immune to all Status conditions. Additionally, this Pokémon will survive any hit from full HP.",
 		shortDesc: "This Pokemon's moves are changed to be Normal type and have 1.5x power with no immunities.",
 	},
-	nobl3: {
-		name: "kleavor",
-		desc: "This Pokemon is immune to all Status conditions. Additionally, this Pokémon will survive any hit from full HP.",
-		shortDesc: "This Pokemon's moves are changed to be Normal type and have 1.5x power with no immunities.",
+	lordofthewoods: {
+		name: "Lord of the Woods",
+		desc: "This Pokemon's slicing moves have their power multiplied by 1.5. Boosts the power of moves with 60 base power or less by 1.5. Attack cannot be lowered.",
+		shortDesc: "Boosts power of slicing moves, moves at or under 60 base power, and attack cannot lower.",
 	},
 	nobl4: {
 		name: "lilli",

@@ -4602,6 +4602,33 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 5,
 		num: 23,
 	},
+	lordofthewoods: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['slicing']) {
+				this.debug('Shapness boost');
+				return this.chainModify(1.5);
+			}
+			const basePowerAfterMultiplier = this.modify(basePower, this.event.modifier);
+			this.debug('Base Power: ' + basePowerAfterMultiplier);
+			if (basePowerAfterMultiplier <= 60) {
+				this.debug('Technician boost');
+				return this.chainModify(1.5);
+				}
+			},
+			onTryBoost(boost, target, source, effect) {
+				if (source && target === source) return;
+				if (boost.atk && boost.atk < 0) {
+					delete boost.atk;
+					if (!(effect as ActiveMove).secondaries) {
+						this.add("-fail", target, "unboost", "Attack", "[from] ability: Hyper Cutter", "[of] " + target);
+					}
+				}
+			},
+		name: "Lord of the Woods",
+		rating: 5,
+		num: 9001,
+	},
 	sharpness: {
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
