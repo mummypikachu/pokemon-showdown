@@ -2441,7 +2441,32 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		shortDesc: "On switch-in, all hazards are cleared off the field. This also includes Trick Room and Safeguard.",
 
 		start: " [POKEMON] cleaned off the field."
-	}
+	},
+	nobl1: {
+		name: "Arca",
+		desc: "This Pokemon is immune to all Status conditions. Additionally, this Pokémon will survive any hit from full HP.",
+		shortDesc: "This Pokemon's moves are changed to be Normal type and have 1.5x power with no immunities.",
+	},
+	nobl2: {
+		name: "Elec",
+		desc: "This Pokemon is immune to all Status conditions. Additionally, this Pokémon will survive any hit from full HP.",
+		shortDesc: "This Pokemon's moves are changed to be Normal type and have 1.5x power with no immunities.",
+	},
+	nobl3: {
+		name: "kleavor",
+		desc: "This Pokemon is immune to all Status conditions. Additionally, this Pokémon will survive any hit from full HP.",
+		shortDesc: "This Pokemon's moves are changed to be Normal type and have 1.5x power with no immunities.",
+	},
+	nobl4: {
+		name: "lilli",
+		desc: "This Pokemon is immune to all Status conditions. Additionally, this Pokémon will survive any hit from full HP.",
+		shortDesc: "This Pokemon's moves are changed to be Normal type and have 1.5x power with no immunities.",
+	},
+	nobl5: {
+		name: "aval",
+		desc: "This Pokemon is immune to all Status conditions. Additionally, this Pokémon will survive any hit from full HP.",
+		shortDesc: "This Pokemon's moves are changed to be Normal type and have 1.5x power with no immunities.",
+	},
 };
 
 
