@@ -5723,6 +5723,19 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3.5,
 		num: 295,
 	},
+	brittlecoral: {
+		onDamagingHit(damage, target, source, move) {
+			const side = source.isAlly(target) ? source.side.foe : source.side;
+			const stealthRock = side.sideConditions['stealthrock'];
+			if (move.category === 'Physical' && (!stealthRock || stealthRock.layers < 2)) {
+				this.add('-activate', target, 'ability: Brittle Coral');
+				side.addSideCondition('stealthrock', target);
+			}
+		},
+		name: "Brittle Coral",
+		rating: 3.5,
+		num: 295,
+	},
 	toxicdilemma: {
 		onModifyType(move, source, target) {
 			if (move.type === 'Poison' && target.hasType('Steel')) {
