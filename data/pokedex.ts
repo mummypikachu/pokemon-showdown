@@ -12799,7 +12799,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Avalugg",
 		types: ["Ice"],
 		baseStats: {hp: 95, atk: 117, def: 184, spa: 24, spd: 46, spe: 28},
-		abilities: {0: "Snowscape", 1: "Ice Body", H: "Sturdy"},
+		abilities: {0: "Snow Warning", 1: "Ice Body", H: "Sturdy"},
 		heightm: 2,
 		weightkg: 505,
 		color: "Blue",
