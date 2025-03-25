@@ -6426,33 +6426,35 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 279,
 	},
 	cleanslate: {
-		name: "Clean Slate",
-		onStart(pokemon) {
-			let success = false;
-			if (!pokemon.volatiles['substitute']) success;
-			const removeTarget = [
-				'reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist', 'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge',
-			];
-			const removeAll = [
-				'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'trickroom', 'safeguard',
-			];
-			for (const targetCondition of removeTarget) {
-				if (pokemon.side.removeSideCondition(targetCondition)) {
-					if (!removeAll.includes(targetCondition)) continue;
-					this.add('-sideend', pokemon.side, this.dex.conditions.get(targetCondition).name, '[from] ability: Clean State', '[of] ' + pokemon);
-					success = true;
-				}
-			}
-			for (const sideCondition of removeAll) {
-				if (pokemon.side.removeSideCondition(sideCondition)) {
-					this.add('-sideend', pokemon.side, this.dex.conditions.get(sideCondition).name, '[from] ability: Clean State', '[of] ' + pokemon);
-					success = true;
-				}
-			}
-			this.field.clearTerrain();
-			return success;
-		},
-	rating: 4.5,
-	num: 280,
-	},
+        name: "Clean Slate",
+        onStart(pokemon) {
+            let success = false;
+            if (!pokemon.volatiles['substitute']) success;
+            const removeTarget = [
+                'reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist', 'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge',
+            ];
+            const removeAll = [
+                'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'trickroom', 'safeguard',
+            ];
+            for (const side of [pokemon.side, pokemon.side.foe]) {
+                for (const targetCondition of removeTarget) {
+                    if (side.removeSideCondition(targetCondition)) {
+                        if (!removeAll.includes(targetCondition)) continue;
+                        this.add('-sideend', side, this.dex.conditions.get(targetCondition).name, '[from] ability: Clean Slate', '[of] ' + pokemon);
+                        success = true;
+                    }
+                }
+                for (const sideCondition of removeAll) {
+                    if (side.removeSideCondition(sideCondition)) {
+                        this.add('-sideend', side, this.dex.conditions.get(sideCondition).name, '[from] ability: Clean Slate', '[of] ' + pokemon);
+                        success = true;
+                    }
+                }
+            }
+            this.field.clearTerrain();
+            return success;
+        },
+        rating: 4.5,
+        num: 280,
+    },
 };
