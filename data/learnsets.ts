@@ -66180,6 +66180,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			weatherball: ["9M"],
 			wildcharge: ["9M", "9M", "6M", "5M"],
 			zenheadbutt: ["9M", "9L24", "7T", "9L43", "7S4", "7S5", "6T", "6L43", "6S3", "5T", "5L43", "5S0", "5S1"],
+			zekromkick: ["9M"],
 		},
 		eventData: [
 			{generation: 5, level: 50, moves: ["dragonbreath", "slash", "zenheadbutt", "fusionbolt"]},
