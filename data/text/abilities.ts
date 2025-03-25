@@ -688,7 +688,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	guarddog: {
 		name: "Guard Dog",
-		desc: "This Pokemon is immune to the effect of the Intimidate Ability and raises its Attack by 1 stage instead. This Pokemon cannot be forced to switch out by another Pokemon's attack or item.",
+		desc: "This Pokemon is immune to the effect of the Intimidate Ability and raises its Attack by 1 stage instead. This Pokemon cannot be forced to switch out by another Pokemon's attack or item. This ability does not activate through Lord of the Isles.",
 		shortDesc: "Immune to Intimidate. Intimidated: +1 Attack. Cannot be forced to switch out.",
 	},
 	gulpmissile: {
@@ -2444,8 +2444,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	lordoftheisles: {
 		name: "Lord of the Isles",
-		desc: "intimidate and rock head",
-		shortDesc: "This Pokemon's moves are changed to be Normal type and have 1.5x power with no immunities.",
+		desc: "On switch-in, this Pokemon lowers the Attack of opposing Pokemon by 1 stage. This ignores abilities like Inner Focus, Scrappy etc. and does not activate Guard Dog. This Pokemon does not take recoil damage, except Struggle. Does not affect Life Orb damage or crash damage.",
+		shortDesc: "Lowers opponents their attack by 1 on switch-in. Takes no recoil damage from recoil moves.",
 	},
 	nobl2: {
 		name: "Elec",

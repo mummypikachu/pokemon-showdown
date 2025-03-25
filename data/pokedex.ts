@@ -2337,7 +2337,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Electric", "Grass"],
 		gender: "N",
 		baseStats: {hp: 60, atk: 50, def: 70, spa: 120, spd: 80, spe: 150},
-		abilities: {0: "Detonator", 1: "Solar Power", H: "Photosynthesis"},
+		abilities: {0: "Lord of the Hollow"},
 		heightm: 1.3,
 		weightkg: 73,
 		color: "Red",
