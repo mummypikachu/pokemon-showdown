@@ -2417,11 +2417,12 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	persistent: {
 		name: "Persistent",
-		desc: "The duration of Gravity, Heal Block, Magic Room, Safeguard, Tailwind, and Wonder Room is increased by 2 turns if the effect is started by this Pokemon and starts Trick Room.",
+		desc: "The duration of Gravity, Heal Block, Magic Room, Safeguard, Tailwind, and Wonder Room is increased by 2 turns if the effect is started by this Pokemon, and starts Trick Room.",
 		shortDesc: "When used, summons Trick Room.",
 
-		activate: "  [POKEMON] extends rooms by 2 turns! (Except Trick Room lol)",
+		activate: "  [POKEMON] extends rooms by 2 turns! (Except Trick Room)",
 	},
+	//end cap?
 	ampereoverdrive: {
 		name: "Ampere Overdrive",
 		shortDesc: "On switch-in, summons Electric Terrain. During Electric Terrain, Attack is 1.3333x.",
@@ -2442,27 +2443,27 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 
 		start: " [POKEMON] cleaned off the field."
 	},
-	lordoftheisles: {
+	lordoftheisles: { //Noble Arcanine
 		name: "Lord of the Isles",
 		desc: "On switch-in, this Pokemon lowers the Attack of opposing Pokemon by 1 stage. This ignores abilities like Inner Focus, Scrappy etc. and does not activate Guard Dog. This Pokemon does not take recoil damage, except Struggle. Does not affect Life Orb damage or crash damage.",
 		shortDesc: "Lowers opponents their attack by 1 on switch-in. Takes no recoil damage from recoil moves.",
 	},
-	nobl2: {
-		name: "Elec",
-		desc: "This Pokemon is immune to all Status conditions. Additionally, this Pokémon will survive any hit from full HP.",
-		shortDesc: "This Pokemon's moves are changed to be Normal type and have 1.5x power with no immunities.",
+	lordofthehollow: { //Noble Electrode
+		name: "Lord of the Hollow",
+		desc: "If Grassy Terrain or Electric Terrain is active, this Pokemon's Defense is multiplied by 1.5. Defense is multiplied by 0.25 if Psychic or Misty Terrain is up. On switch-in, this Pokemon summons Grassy Terrain. If this Pokemon is knocked out with a contact move, that move's user loses 1/4 of its maximum HP, rounded down. This ignores Damp.",
+		shortDesc: "Sets Grassy Terrain. Multiplies Defense by 1.5 if Grassy/Electric Terrain, 0.25 if other. Does 25% opponents max HP if KO'd with Contact Move.",
 	},
-	lordofthewoods: {
+	lordofthewoods: { //Noble Kleavor
 		name: "Lord of the Woods",
 		desc: "This Pokemon's slicing moves have their power multiplied by 1.5. Boosts the power of moves with 60 base power or less by 1.5. Attack cannot be lowered.",
 		shortDesc: "Boosts power of slicing moves, moves at or under 60 base power, and attack cannot lower.",
 	},
-	ladyoftheridge: {
+	ladyoftheridge: { //Noble Lilligant
 		name: "Lady of the Ridge",
 		desc: "Boosts the power of kicking moves by 1.5 and multiplies the Speed stat by 2 if under Sunny Day or Desolate Land.",
 		shortDesc: "Boosts power of kicking moves by 1.5. Double speed under sun.",
 	},
-	lordofthetundra: {
+	lordofthetundra: { //Noble Avalugg
 		name: "Lord of the Tundra",
 		desc: "If this Pokemon is at full HP, it survives one hit with at least 1 HP. OHKO moves fail when used against this Pokemon. Biting moves have their power boosted by 1.5.",
 		shortDesc: "Survives any attack from full HP. Immune to OHKO. Biting moves: 1.5x power.",

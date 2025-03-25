@@ -1970,6 +1970,28 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 0.5,
 		num: 179,
 	},
+	lordofthehollow: {
+		onModifyDefPriority: 6,
+		onModifyDef(pokemon) {
+			if (this.field.isTerrain('grassyterrain')) return this.chainModify(1.5);
+			if (this.field.isTerrain('electricterrain')) return this.chainModify(1.5);
+			if (this.field.isTerrain('mistyterrain')) return this.chainModify(0.25);
+			if (this.field.isTerrain('psychicterrain')) return this.chainModify(0.25);
+		},
+		onStart(source) {
+			this.field.setTerrain('grassyterrain');
+		},
+		onDamagingHitOrder: 1,
+		onDamagingHit(damage, target, source, move) {
+			if (!target.hp && this.checkMoveMakesContact(move, source, target, true)) {
+				this.damage(source.baseMaxhp / 4, source, target);
+			}
+		},
+		isBreakable: true,
+		name: "Lord of the Hollow",
+		rating: 5,
+		num: 179,
+	},
 	grassysurge: {
 		onStart(source) {
 			this.field.setTerrain('grassyterrain');
@@ -2545,7 +2567,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			
 		},
 		name: "Lord of the Isles",
-		rating: 3.5,
+		rating: 5,
 		num: 22,
 	},
 	intrepidsword: {
@@ -5117,7 +5139,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			}
 		},
 		name: "Lady of the Ridge",
-		rating: 3,
+		rating: 4,
 		num: 1289,
 	},
 	stormdrain: {
@@ -5203,14 +5225,14 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		onTryHit(pokemon, target, move) {
 			if (move.ohko) {
-				this.add('-immune', pokemon, '[from] ability: Sturdy');
+				this.add('-immune', pokemon, '[from] ability: Lord of the Tundra');
 				return null;
 			}
 		},
 		onDamagePriority: -30,
 		onDamage(damage, target, source, effect) {
 			if (target.hp === target.maxhp && damage >= target.hp && effect && effect.effectType === 'Move') {
-				this.add('-ability', target, 'Sturdy');
+				this.add('-ability', target, 'Lord of the Tundra');
 				return target.hp - 1;
 			}
 		},

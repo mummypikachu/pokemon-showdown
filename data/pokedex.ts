@@ -2302,7 +2302,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Electric"],
 		gender: "N",
 		baseStats: {hp: 60, atk: 50, def: 70, spa: 100, spd: 80, spe: 150},
-		abilities: {0: "Detonator", 1: "Hadron Engine", H: "Aftermath"},
+		abilities: {0: "Detonator", 1: "Electric Surge", H: "Aftermath"},
 		heightm: 1.2,
 		weightkg: 66.6,
 		color: "Red",
