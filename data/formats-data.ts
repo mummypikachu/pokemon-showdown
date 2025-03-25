@@ -5385,7 +5385,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "OU",
 	},
 	arcaninenoble: {
-		tier: "OU",
+		tier: "Uber",
+		doublesTier: "DUber",
 	},
 	electrodenoble: {
 		tier: "OU",

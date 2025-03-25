@@ -10063,7 +10063,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Water 2"],
 		gen: 8,
 	},
-	basculinexcir: { // pov arcanine hisui noble forces you to this
+	basculinexcir: { // Flying Fish-Duke
 		num: 550,
 		name: "Basculin-Excir",
 		baseSpecies: "Basculin",
