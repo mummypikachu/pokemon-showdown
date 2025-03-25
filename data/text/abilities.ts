@@ -2442,8 +2442,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 
 		start: " [POKEMON] cleaned off the field."
 	},
-	nobl1: {
-		name: "Arca",
+	lordoftheisles: {
+		name: "Lord of the Isles",
 		desc: "intimidate and rock head",
 		shortDesc: "This Pokemon's moves are changed to be Normal type and have 1.5x power with no immunities.",
 	},

@@ -2522,6 +2522,32 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3.5,
 		num: 22,
 	},
+	lordoftheisles: {
+		onDamage(damage, target, source, effect) {
+				if (effect.id === 'recoil') {
+					if (!this.activeMove) throw new Error("Battle.activeMove is null");
+					if (this.activeMove.id !== 'struggle') return null;
+				}
+			},
+		onStart(pokemon) {
+			let activated = false;
+			for (const target of pokemon.adjacentFoes()) {
+				if (!activated) {
+					this.add('-ability', pokemon, 'Lord of the Isles', 'boost');
+					activated = true;
+				}
+				if (target.volatiles['substitute']) {
+					this.add('-immune', target);
+				} else {
+					this.boost({atk: -1}, target, pokemon, null, true);
+				}
+			}
+			
+		},
+		name: "Lord of the Isles",
+		rating: 3.5,
+		num: 22,
+	},
 	intrepidsword: {
 		onStart(pokemon) {
 			if (this.effectState.swordBoost) return;
