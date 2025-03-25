@@ -32,11 +32,11 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		mega: "  [POKEMON]'s [ITEM] is reacting to the Key Stone!",
 		megaNoItem: "  [POKEMON] is reacting to [TRAINER]'s Key Stone!",
 		megaGen6: "  [POKEMON]'s [ITEM] is reacting to [TRAINER]'s Mega Bracelet!",
-		transformMega: "[POKEMON] has Mega Evolved into Mega [SPECIES]! It's Mega-Morphin Time!",
+		transformMega: "[POKEMON] has Mega Evolved into Mega [SPECIES]!",
 		primal: "[POKEMON]'s Primal Reversion! It reverted to its primal state! oooh very scary. -Mario 1996.",
-		zPower: "  [POKEMON] surrounded itself with its Z-Power! Aww Yeah! Its ZOVER!",
+		zPower: "  [POKEMON] surrounded itself with its Z-Power!",
 		zBroken: "  [POKEMON] couldn't fully protect itself and got hurt!",
-		terastallize: "  [POKEMON] has Terastallized into the [TYPE]-type! Get a load of this guy!", // filler
+		terastallize: "  [POKEMON] has Terastallized into the [TYPE]-type!", // filler
 
 		// in case the different default messages didn't make it obvious, the difference
 		// is that the `cant` message REPLACES "Pokemon used Move!", while the `fail`
@@ -112,7 +112,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		superEffectiveSpread: "  It's super effective on [POKEMON]!",
 		resisted: "  It's not very effective...",
 		resistedSpread: "  It's not very effective on [POKEMON].",
-		crit: "  A lucky crit! (did it mattered?)",
+		crit: "  A lucky crit!",
 		critSpread: "  A critical hit on [POKEMON]!",
 		immune: "  Skill issue. It doesn't affect [POKEMON]...",
 		immuneNoPokemon: "  It had no effect!", // old gens
@@ -122,7 +122,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 
 		center: "  Automatic center!",
 		noTarget: "  But there was no target...", // gen 5 and earlier
-		ohko: "  NO FUCKING WAY!!! It's a one-hit KO!",
+		ohko: "It's a one-hit KO!",
 		combine: "  The two moves have become one! It's a combined move!",
 		hitCount: "  The Pok\u00E9mon was hit [NUMBER] times!",
 		hitCountSingular: "  The Pok\u00E9mon was hit 1 time!",
@@ -169,7 +169,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 
 	// statuses
 	brn: {
-		start: "  [POKEMON] was burned! Rip Physical users.",
+		start: "  [POKEMON] was burned!",
 		startFromItem: "  [POKEMON] was burned by the [ITEM]!",
 		alreadyStarted: "  [POKEMON] is already burned!",
 		end: "  [POKEMON]'s burn was healed!",
@@ -185,7 +185,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		cant: "[POKEMON] is frozen solid!",
 	},
 	frb: {
-		start: "  [POKEMON] caught frosbite! Rip Special users.",
+		start: "  [POKEMON] caught frosbite!",
 		alreadyStarted: "  [POKEMON] is already frozen solid!",
 		end: "  [POKEMON] thawed out!",
 		endFromItem: "  [POKEMON]'s [ITEM] defrosted it!",
@@ -193,7 +193,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		cant: "[POKEMON] is frozen solid!",
 	},
 	par: {
-		start: "  [POKEMON] is paralyzed! It may be unable to move! Welcome to RNG Hell!",
+		start: "  [POKEMON] is paralyzed! It may be unable to move!",
 		alreadyStarted: "  [POKEMON] is already paralyzed!",
 		end: "  [POKEMON] was cured of paralysis!",
 		endFromItem: "  [POKEMON]'s [ITEM] cured its paralysis!",
@@ -207,7 +207,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		damage: "  [POKEMON] was hurt by poison!",
 	},
 	tox: {
-		start: "  [POKEMON] was badly poisoned! Its Toxover.",
+		start: "  [POKEMON] was badly poisoned!",
 		startFromItem: "  [POKEMON] was badly poisoned by the [ITEM]!",
 		end: "#psn",
 		endFromItem: "#psn",
@@ -306,7 +306,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 	},
 	windy: {
 		weatherName: "Windy",
-		start: "  Hold on to your hats It's getting windy!",
+		start: "  Hold on to your hats! It's getting windy!",
 		end: "  The Winds stopped.",
 		upkeep: "  (Wind violently blows!)",
 	},
@@ -384,6 +384,6 @@ export const DefaultText: {[k: string]: DefaultText} = {
 
 	// misc
 	crash: {
-		damage: "  [POKEMON] kept going and crashed! (Womp Womp)",
+		damage: "  [POKEMON] kept going and crashed!",
 	},
 };
