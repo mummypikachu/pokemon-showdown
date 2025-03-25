@@ -6428,6 +6428,16 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	cleanslate: {
         name: "Clean Slate",
         onStart(pokemon) {
+            this.add('-ability', pokemon, 'Clean Slate'); // Display the ability name when it activates
+
+            // Check if any Pokémon on the field has "Good as Gold"
+            for (const target of this.getAllActive()) {
+                if (target.ability === 'goodasgold') {
+                    this.add('-block', target, 'ability: Good as Gold', '[of] ' + target);
+                    return false; // Block the effect of Clean Slate
+                }
+            }
+
             let success = false;
             if (!pokemon.volatiles['substitute']) success;
             const removeTarget = [

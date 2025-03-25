@@ -2441,7 +2441,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Clean Slate",
 		shortDesc: "On switch-in, all hazards are cleared off the field. This also includes Trick Room and Safeguard.",
 
-		start: " [POKEMON] cleaned off the field."
+		activate: " [POKEMON] cleaned off the field."
 	},
 	lordoftheisles: { //Noble Arcanine. do not hand out to another pokemon.
 		name: "Lord of the Isles",
