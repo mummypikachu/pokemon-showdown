@@ -918,7 +918,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Poison", "Ground"],
 		gender: "F",
 		baseStats: {hp: 90, atk: 70, def: 117, spa: 105, spd: 115, spe: 75},
-		abilities: {0: "Self Sufficient", 1: "Rivalry", H: "Filter", S: "Toxic Debris"},
+		abilities: {0: "Self Sufficient", 1: "Rivalry", H: "Sheer Force"},
 		heightm: 1.3,
 		weightkg: 60,
 		color: "Blue",
