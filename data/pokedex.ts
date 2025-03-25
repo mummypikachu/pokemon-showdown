@@ -12798,7 +12798,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		num: 713,
 		name: "Avalugg",
 		types: ["Ice"],
-		baseStats: {hp: 95, atk: 117, def: 184, spa: 24, spd: 46, spe: 28},
+		baseStats: {hp: 95, atk: 117, def: 184, spa: 34, spd: 46, spe: 38},
 		abilities: {0: "Snow Warning", 1: "Ice Body", H: "Sturdy"},
 		heightm: 2,
 		weightkg: 505,
