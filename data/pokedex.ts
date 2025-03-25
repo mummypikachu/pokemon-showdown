@@ -12831,7 +12831,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		forme: "Noble",
 		types: ["Ice", "Rock"],
 		baseStats: {hp: 95, atk: 127, def: 184, spa: 34, spd: 56, spe: 38},
-		abilities: {0: "Strong Jaw", 1: "Ice Body", H: "Sturdy"},
+		abilities: {0: "Lord of the Tundra"},
 		heightm: 8.4,
 		weightkg: 742.4,
 		color: "Blue",

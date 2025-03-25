@@ -2462,10 +2462,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "Boosts the power of kicking moves by 1.5 and multiplies the Speed stat by 2 if under Sunny Day or Desolate Land.",
 		shortDesc: "Boosts power of kicking moves by 1.5. Double speed under sun.",
 	},
-	nobl5: {
-		name: "aval",
-		desc: "Sturdy and strong jaw",
-		shortDesc: "This Pokemon's moves are changed to be Normal type and have 1.5x power with no immunities.",
+	lordofthetundra: {
+		name: "Lord of the Tundra",
+		desc: "If this Pokemon is at full HP, it survives one hit with at least 1 HP. OHKO moves fail when used against this Pokemon. Biting moves have their power boosted by 1.5.",
+		shortDesc: "Survives any attack from full HP. Immune to OHKO. Biting moves: 1.5x power.",
 	},
 };
 

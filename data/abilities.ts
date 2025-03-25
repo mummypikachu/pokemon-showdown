@@ -5194,6 +5194,31 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3,
 		num: 5,
 	},
+	lordofthetundra: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['bite']) {
+				return this.chainModify(1.5);
+			}
+		},
+		onTryHit(pokemon, target, move) {
+			if (move.ohko) {
+				this.add('-immune', pokemon, '[from] ability: Sturdy');
+				return null;
+			}
+		},
+		onDamagePriority: -30,
+		onDamage(damage, target, source, effect) {
+			if (target.hp === target.maxhp && damage >= target.hp && effect && effect.effectType === 'Move') {
+				this.add('-ability', target, 'Sturdy');
+				return target.hp - 1;
+			}
+		},
+		isBreakable: true,
+		name: "Lord of the Tundra",
+		rating: 3,
+		num: 5,
+	},
 	suctioncups: {
 		onDragOutPriority: 1,
 		onDragOut(pokemon) {
