@@ -4624,7 +4624,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		num: 232,
 		name: "Donphan",
 		types: ["Ground"],
-		baseStats: {hp: 90, atk: 120, def: 120, spa: 60, spd: 60, spe: 100},
+		baseStats: {hp: 90, atk: 120, def: 120, spa: 60, spd: 60, spe: 60},
 		abilities: {0: "Sturdy", H: "Technician"},
 		heightm: 1.1,
 		weightkg: 120,
