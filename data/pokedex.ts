@@ -11056,7 +11056,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Accelgor",
 		types: ["Bug"],
 		baseStats: {hp: 80, atk: 70, def: 40, spa: 100, spd: 60, spe: 145},
-		abilities: {0: "Tatical Retreat", 1: "Sticky Hold", H: "Unburden"},
+		abilities: {0: "Tactical Retreat", 1: "Sticky Hold", H: "Unburden"},
 		heightm: 0.8,
 		weightkg: 25.3,
 		color: "Red",
