@@ -6467,4 +6467,21 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
         rating: 4.5,
         num: 280,
     },
+	unitypower: {
+		name: "Unity Power",
+		onModifyMove(move) {
+			// Ensure the move is not a status move and can hit twice
+			if (move.category !== 'Status' && !move.multihit) {
+				move.multihit = 2; // Makes the move hit twice
+				move.multihitType = 'unitypower'; // Custom multihit type for this ability
+			}
+		},
+		onBasePower(basePower, pokemon, target, move) {
+			if (move.multihitType === 'unitypower') {
+				return this.chainModify(0.55); // Reduce power to 55% for each hit
+			}
+		},
+		rating: 4.5,
+		num: 281, // Unique identifier for the ability
+	},
 };

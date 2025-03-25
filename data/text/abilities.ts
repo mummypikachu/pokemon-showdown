@@ -2232,6 +2232,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "If this Pokemon loses its held item for any reason, its Speed is doubled as long as it remains active, has this Ability, and is not holding an item.",
 		shortDesc: "Speed is doubled on held item loss; boost is lost if it switches, gets new item/Ability.",
 	},
+	unitypower: {
+		name: "Unity Power",
+		desc: "This Pokémon's moves hit twice. Each hit deals 55% of its original power.",
+		shortDesc: "Moves hit twice at 55% power.",
+	},
 	unnerve: {
 		name: "Unnerve",
 		desc: "While this Pokemon is active, it prevents opposing Pokemon from using their Berries. This Ability activates before hazards and other Abilities take effect.",
