@@ -7260,7 +7260,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	trufflesearch: {
 		name: "Truffle Search",
-		desc: "Causes the user's Ability to become Effect Spore. Fails if the target's Ability is As One, Battle Bond, Comatose, Commander, Disguise, Gulp Missile, Hadron Engine, Ice Face, Effect Spore, Multitype, Orichalcum Pulse, Power Construct, Protosynthesis, Quark Drive, RKS System, Schooling, Shields Down, Stance Change, Truant, Zen Mode, or Zero to Hero.",
+		desc: "Causes the user's Ability to become Effect Spore. Fails if the user's Ability is As One, Battle Bond, Comatose, Commander, Disguise, Gulp Missile, Hadron Engine, Ice Face, Effect Spore, Multitype, Orichalcum Pulse, Power Construct, Protosynthesis, Quark Drive, RKS System, Schooling, Shields Down, Stance Change, Truant, Zen Mode, or Zero to Hero.",
 		shortDesc: "The user's Ability becomes Effect Spore.",
 	},
 	twinbeam: {

@@ -4412,9 +4412,9 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 24,
 	},
 	runaway: {
-		onModifySpePriority: 5,
-		onModifySpe(spe) {
-			return this.chainModify(2);
+		onTrapPokemonPriority: -10,
+		onTrapPokemon(pokemon) {
+			pokemon.trapped = pokemon.maybeTrapped = false;
 		},
 		name: "Run Away",
 		rating: 4,

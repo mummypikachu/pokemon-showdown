@@ -1620,7 +1620,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	runaway: {
 		name: "Run Away",
-		shortDesc: "Doubles the Speed stat.",
+		desc: "Allows the user to escape trapping effects caused by Shadow Tag and Arena Trap, or moves such as Whirlpool, Bind, Fire Spin, Mean Look, Spider Web, Block and such.",
+		shortDesc: "Allows the user to escape in scenarios they would be trapped in.",
 	},
 	rusting: { //klang-excir line
 		name: "Rusting",
