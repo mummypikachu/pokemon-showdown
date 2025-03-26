@@ -5333,13 +5333,13 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	},
 	awanezumi: {
-		tier: "NU",
+		tier: "PU",
 		natDexTier: "RU",
 	},
 	garock: {
-		tier: "OU",
-		natDexTier: "OU",
-		doublesTier: "DOU",
+		tier: "UUBL",
+		natDexTier: "UU",
+		doublesTier: "DUU",
 	},
 	tanisu: {
 		tier: "LC",
@@ -5350,8 +5350,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "NFE",
 	},
 	tanking: {
-		tier: "OU",
-		natDexTier: "OU",
+		tier: "UUBL",
+		natDexTier: "UU",
 		doublesTier: "DOU",
 	},
 	muscklar: {
@@ -5359,8 +5359,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 	},
 	muchabrawn: {
-		tier: "OU",
-		natDexTier: "OU",
+		tier: "NU",
+		natDexTier: "RU",
 	},
 	tepigphyor: {
 		tier: "PU",
@@ -5371,12 +5371,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	chimechoexcir: {
-		tier: "OU",
-		natDexTier: "OU",
+		tier: "UU",
+		natDexTier: "UU",
 		doublesTier: "DOU",
 	},
 	avaluggnoble: {
-		tier: "OU",
+		tier: "UU",
 	},
 	lilligantnoble: {
 		tier: "OU",
@@ -5392,10 +5392,19 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "OU",
 	},
 	mossmy: {
-		tier: "PU",
+		tier: "LC",
 	},
 	kodomin: {
 		tier: "OU",
+	},
+	klangexcir: {
+		tier: "NFE",
+		natDexTier: "NFE",
+	},
+	klinklangexcir: {
+		tier: "OU",
+		natDexTier: "UU",
+		doublesTier: "DOU",
 	},
 	missingno: {
 		isNonstandard: "Custom",
