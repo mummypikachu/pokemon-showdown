@@ -4969,6 +4969,9 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				this.boost({def: -1});
 			}
 		},
+		onImmunity(type, pokemon) {
+			if (type === 'saltcure') return false;
+		},
 		name: "Rusting",
 		rating: 4.5,
 		num: 3,
