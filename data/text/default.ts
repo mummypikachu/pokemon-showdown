@@ -32,11 +32,11 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		mega: "  [POKEMON]'s [ITEM] is reacting to the Key Stone!",
 		megaNoItem: "  [POKEMON] is reacting to [TRAINER]'s Key Stone!",
 		megaGen6: "  [POKEMON]'s [ITEM] is reacting to [TRAINER]'s Mega Bracelet!",
-		transformMega: "[POKEMON] has Mega Evolved into Mega [SPECIES]!",
+		transformMega: "[POKEMON] has Mega Evolved into Mega [SPECIES]! It's Mega-Morphin Time!",
 		primal: "[POKEMON]'s Primal Reversion! It reverted to its primal state! oooh very scary. -Mario 1996.",
-		zPower: "  [POKEMON] surrounded itself with its Z-Power!",
+		zPower: "  [POKEMON] surrounded itself with its Z-Power! nah he's just flexing.",
 		zBroken: "  [POKEMON] couldn't fully protect itself and got hurt!",
-		terastallize: "  [POKEMON] has Terastallized into the [TYPE]-type!", // filler
+		terastallize: "  [POKEMON] has Terastallized into the [TYPE]-type! Is it ban worthy?", // filler
 
 		// in case the different default messages didn't make it obvious, the difference
 		// is that the `cant` message REPLACES "Pokemon used Move!", while the `fail`
@@ -112,7 +112,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		superEffectiveSpread: "  It's super effective on [POKEMON]!",
 		resisted: "  It's not very effective...",
 		resistedSpread: "  It's not very effective on [POKEMON].",
-		crit: "  A lucky crit!",
+		crit: "  A lucky crit! (did it matter?)",
 		critSpread: "  A critical hit on [POKEMON]!",
 		immune: "  Skill issue. It doesn't affect [POKEMON]...",
 		immuneNoPokemon: "  It had no effect!", // old gens
@@ -122,7 +122,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 
 		center: "  Automatic center!",
 		noTarget: "  But there was no target...", // gen 5 and earlier
-		ohko: "It's a one-hit KO!",
+		ohko: "  NO WAY!!! It's a one-hit KO!",
 		combine: "  The two moves have become one! It's a combined move!",
 		hitCount: "  The Pok\u00E9mon was hit [NUMBER] times!",
 		hitCountSingular: "  The Pok\u00E9mon was hit 1 time!",
@@ -169,7 +169,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 
 	// statuses
 	brn: {
-		start: "  [POKEMON] was burned!",
+		start: "  [POKEMON] was burned! It's gonna need some ice for that burn!",
 		startFromItem: "  [POKEMON] was burned by the [ITEM]!",
 		alreadyStarted: "  [POKEMON] is already burned!",
 		end: "  [POKEMON]'s burn was healed!",
@@ -185,7 +185,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		cant: "[POKEMON] is frozen solid!",
 	},
 	frb: {
-		start: "  [POKEMON] caught frosbite!",
+		start: "  [POKEMON] caught frosbite! It feels like [POKEMON] is not going to have a good time.",
 		alreadyStarted: "  [POKEMON] is already frozen solid!",
 		end: "  [POKEMON] thawed out!",
 		endFromItem: "  [POKEMON]'s [ITEM] defrosted it!",
@@ -193,7 +193,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		cant: "[POKEMON] is frozen solid!",
 	},
 	par: {
-		start: "  [POKEMON] is paralyzed! It may be unable to move!",
+		start: "  [POKEMON] is paralyzed! It may be unable to move! Welcome to RNG hell!",
 		alreadyStarted: "  [POKEMON] is already paralyzed!",
 		end: "  [POKEMON] was cured of paralysis!",
 		endFromItem: "  [POKEMON]'s [ITEM] cured its paralysis!",
@@ -207,8 +207,8 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		damage: "  [POKEMON] was hurt by poison!",
 	},
 	tox: {
-		start: "  [POKEMON] was badly poisoned!",
-		startFromItem: "  [POKEMON] was badly poisoned by the [ITEM]!",
+		start: "  [POKEMON] was badly poisoned! Goodbye Stall!",
+		startFromItem: "  [POKEMON] was badly poisoned by the [ITEM]! Poison is a good way to go!",
 		end: "#psn",
 		endFromItem: "#psn",
 		alreadyStarted: "#psn",
@@ -220,7 +220,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		alreadyStarted: "  [POKEMON] is already asleep!",
 		end: "  [POKEMON] woke up!",
 		endFromItem: "  [POKEMON]'s [ITEM] woke it up!",
-		cant: "[POKEMON] is fast asleep.",
+		cant: "[POKEMON] is fast asleep. Zzzzz...",
 	},
 
 	// misc effects
@@ -237,7 +237,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		heal: "  [SOURCE] had its energy drained!",
 	},
 	flinch: {
-		cant: "[POKEMON] flinched and couldn't move!",
+		cant: "  [POKEMON] flinched and couldn't move! Skill issue...",
 	},
 	heal: {
 		fail: "  [POKEMON]'s HP is full!",
@@ -334,22 +334,22 @@ export const DefaultText: {[k: string]: DefaultText} = {
 
 	// terrain
 	electricterrain: {
-		start: "  An electric current ran across the battlefield!",
+		start: "  An electric current ran across the battlefield! It's electrifying!",
 		end: "  The electricity disappeared from the battlefield.",
 		block: "  [POKEMON] is protected by the Electric Terrain!",
 	},
 	grassyterrain: {
-		start: "  Grass grew to cover the battlefield!",
+		start: "  Grass grew to cover the battlefield! It's a grassy field!",
 		end: "  The grass disappeared from the battlefield.",
 		heal: "  [POKEMON]'s HP was restored.",
 	},
 	mistyterrain: {
-		start: "  Mist swirled around the battlefield!",
+		start: "  Mist swirled around the battlefield! It's a misty field!",
 		end: "  The mist disappeared from the battlefield.",
 		block: "  [POKEMON] surrounds itself with a protective mist!",
 	},
 	psychicterrain: {
-		start: "  The battlefield got weird!",
+		start: "  The battlefield got weird! It's a psychic terrain!",
 		end: "  The weirdness disappeared from the battlefield!",
 		block: "  [POKEMON] is protected by the Psychic Terrain!",
 	},
@@ -362,7 +362,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		activate: "[POKEMON] fell from the sky due to the gravity!",
 	},
 	magicroom: {
-		start: "  It created a bizarre area in which Pok\u00E9mon's held items lose their effects!",
+		start: "  It created a bizarre area in which Pok\u00E9mon's held items lose their effects! Wait people actually use this?",
 		end: "  Magic Room wore off, and held items' effects returned to normal!",
 	},
 	mudsport: {
@@ -384,6 +384,6 @@ export const DefaultText: {[k: string]: DefaultText} = {
 
 	// misc
 	crash: {
-		damage: "  [POKEMON] kept going and crashed!",
+		damage: "  [POKEMON] kept going and crashed! Yikes!",
 	},
 };
