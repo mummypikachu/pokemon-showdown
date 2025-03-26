@@ -5286,6 +5286,14 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 1.5,
 		num: 105,
 	},
+	supernova: { //placeholder; clone of Super Luck at this point.
+		onModifyCritRatio(critRatio) {
+			return critRatio + 1;
+		},
+		name: "Supernova",
+		rating: 1.5,
+		num: 105,
+	},
 	supersweetsyrup: {
 		onStart(pokemon) {
 			this.add('-ability', pokemon, 'Supersweet Syrup');

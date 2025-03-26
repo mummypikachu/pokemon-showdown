@@ -1980,6 +1980,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Super Luck",
 		shortDesc: "This Pokemon's critical hit ratio is raised by 1 stage.",
 	},
+	supernova: {
+		name: "Supernova",
+		shortDesc: "PLACEHOLDER, CURRENTLY NO COMPETITIVE USE. (SUPERLUCKCLONE)",
+	},
 	supersweetsyrup: {
 		name: "Supersweet Syrup",
 		shortDesc: "On switch-in, this Pokemon lowers the evasiveness of opponents by 1 stage.",
