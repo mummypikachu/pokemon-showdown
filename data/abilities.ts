@@ -5286,13 +5286,16 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 1.5,
 		num: 105,
 	},
-	supernova: { //placeholder; clone of Super Luck at this point.
-		onModifyCritRatio(critRatio) {
-			return critRatio + 1;
-		},
+	supernova: {
 		name: "Supernova",
-		rating: 1.5,
-		num: 105,
+		onDamagingHitOrder: 1,
+		onDamagingHit(damage, target, source, move) {
+			if (!target.hp) {
+				this.damage(source.baseMaxhp * 0.25, source, target);
+			}
+		},
+		rating: 2,
+		num: 106,
 	},
 	supersweetsyrup: {
 		onStart(pokemon) {
