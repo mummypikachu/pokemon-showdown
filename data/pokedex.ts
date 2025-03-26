@@ -18957,6 +18957,18 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Mineral"],
 		gen: 3,
 	},
+	bouldross: {
+		num: 1524,
+		name: "Bouldross",
+		types: ["Rock", "Psychic"],
+		baseStats: {hp: 80, atk: 95, def: 80, spa: 60, spd: 80, spe: 60},
+		abilities: {0: "Levitate", H: "Rock Head"},
+		heightm: 0.4,
+		weightkg: 29.9,
+		color: "Blue",
+		eggGroups: ["Mineral"],
+		gen: 3,
+	},
 	syclar: {
 		num: -1,
 		name: "Syclar",
