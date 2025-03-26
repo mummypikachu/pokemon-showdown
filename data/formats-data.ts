@@ -1131,7 +1131,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "NFE",
 	},
 	typhlosion: {
-		tier: "OU",
+		tier: "Uber",
 		natDexTier: "RU",
 	},
 	typhlosionhisui: {
