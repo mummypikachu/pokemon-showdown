@@ -511,6 +511,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Electrium Z",
 		desc: "If holder has an Electric move, this item allows it to use an Electric Z-Move.",
 	},
+	electromagnet: {
+		name: "Electro Magnet",
+		desc: "If holder is hit by an Electric move, this item allows it to absorb the attack and raises its Special Attack by 1.",
+	},
 	enigmaberry: {
 		name: "Enigma Berry",
 		desc: "Restores 1/4 max HP after holder is hit by a supereffective move. Single use.",

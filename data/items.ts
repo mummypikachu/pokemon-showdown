@@ -1563,6 +1563,25 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 9,
 	
 	},
+	electromagnet: {
+		name: "Electro Magnet",
+		spritenum: 567,
+		onDamagePriority: -40,
+		onDamage(damage, target, source, effect) {
+			if (target !== source && move.type === 'Electric') {
+				if (!this.boost({spa: 1})) {
+					this.add('-immune', target, '[from] ability: Lightning Rod');
+				}
+				return null;
+			}
+		},
+		fling: {
+			basePower: 20,
+			status: 'par',
+		},
+		num: 1944,
+		gen: 9,
+	},
 	dubiousdisc: {
 		name: "Dubious Disc",
 		spritenum: 113,
