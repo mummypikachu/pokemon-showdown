@@ -2471,7 +2471,16 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 5,
 		num: 150,
 	},
-	
+	predeterminedfate: {
+		onStart(pokemon) {
+			const move = this.dex.moves.get('futuresight');
+			this.add('-ability', pokemon, 'Predetermined Fate');
+			this.actions.useMove(move, pokemon);
+		},
+		name: "Predetermined Fate",
+		rating: 5,
+		num: 320,
+	},
 	infiltrator: {
 		onModifyMove(move) {
 			move.infiltrates = true;

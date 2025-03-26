@@ -1422,6 +1422,12 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 			shortDesc: "This Pokemon's non-damaging moves have their priority increased by 1.",
 		},
 	},
+	predeterminedfate: {
+		name: "Predetermined Fate",
+		shortDesc: "Sets up Future Sight on entry.",
+
+		start: "  [POKEMON] has something in store for [TARGET].",
+	},
 	pressure: {
 		name: "Pressure",
 		desc: "If this Pokemon is the target of an opposing Pokemon's move, that move loses one additional PP. Imprison and Snatch also lose one additional PP when used by an opposing Pokemon, but Sticky Web does not.",
