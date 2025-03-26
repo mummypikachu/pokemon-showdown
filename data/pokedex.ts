@@ -10871,7 +10871,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		evoLevel: 49,
 		eggGroups: ["Mineral"],
 	},
-	/* klangexcir: {
+	klangexcir: {
 		num: 600,
 		name: "Klang-Excir",
 		types: ["Steel"],
@@ -10900,7 +10900,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		prevo: "Klang-Excir",
 		evoLevel: 49,
 		eggGroups: ["Mineral"],
-	}, */
+	},
 	tynamo: {
 		num: 602,
 		name: "Tynamo",

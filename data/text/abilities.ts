@@ -1622,6 +1622,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Run Away",
 		shortDesc: "Doubles the Speed stat.",
 	},
+	rusting: { //klang-excir line
+		name: "Rusting",
+		desc: "This Pokemon's Speed is raised by 2 stages, and has its Defense and Special Defense lowered by 1 stage at the end of each full turn it has been on the field.",
+		shortDesc: "This Pokemon's Speed is raised 2 stages and lowers defenses at the end of each full turn on the field.",
+	},
 	sandforce: {
 		name: "Sand Force",
 		desc: "If Sandstorm is active, this Pokemon's attacks have their power multiplied by 1.2. This Pokemon takes no damage from Sandstorm.",

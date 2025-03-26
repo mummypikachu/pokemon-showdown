@@ -4959,6 +4959,20 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 4.5,
 		num: 3,
 	},
+	rusting: {
+		onResidualOrder: 28,
+		onResidualSubOrder: 2,
+		onResidual(pokemon) {
+			if (pokemon.activeTurns) {
+				this.boost({spe: 2});
+				this.boost({spd: -1});
+				this.boost({def: -1});
+			}
+		},
+		name: "Rusting",
+		rating: 4.5,
+		num: 3,
+	},
 	stakeout: {
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, attacker, defender) {
