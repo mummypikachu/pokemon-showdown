@@ -1625,7 +1625,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	rusting: { //klang-excir line
 		name: "Rusting",
 		desc: "This Pokemon's Speed is raised by 2 stages, and has its Defense and Special Defense lowered by 1 stage at the end of each full turn it has been on the field.",
-		shortDesc: "This Pokemon's Speed is raised 2 stages and lowers defenses at the end of each full turn on the field.",
+		shortDesc: "This Pokemon's Speed is raised 2 stages and lowers defenses each turn. Immune to Salt Cure.",
 	},
 	sandforce: {
 		name: "Sand Force",
