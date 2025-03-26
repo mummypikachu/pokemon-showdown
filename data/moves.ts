@@ -16609,13 +16609,17 @@ export const Moves: {[moveid: string]: MoveData} = {
 		contestType: "Tough",
 	},
 	rockyblockade: {
-		accuracy: 100,
+		accuracy: 70,
 		category: "Status",
 		name: "Rocky Blockade",
-		pp: 5,
+		pp: 3,
+		noPPBoosts: true,
 		basePower: 0,
 		priority: 3,
 		flags: {snatch: 1},
+		self: {
+			volatileStatus: 'rockyblockade',
+		},
 		sideCondition: 'rockyblockade',
 		onTry() {
 			return !!this.queue.willAct();
@@ -16648,6 +16652,14 @@ export const Moves: {[moveid: string]: MoveData} = {
 					}
 				}
 				return this.NOT_FAIL;
+			},
+			onSourceModifyDamage() {
+				return this.chainModify(2);
+			},
+			onBeforeMovePriority: 100,
+			onBeforeMove(pokemon) {
+				this.debug('removing Rocky Blockade drawback before attack');
+				pokemon.removeVolatile('rockyblockade');
 			},
 		},
 		target: "allySide",
