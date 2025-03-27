@@ -14522,7 +14522,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	poisonneedle: {
 		num: 398,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 20,
 		category: "Physical",
 		name: "Poison Needle",
 		pp: 20,
