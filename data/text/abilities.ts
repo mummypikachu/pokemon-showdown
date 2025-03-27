@@ -1864,6 +1864,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "This Pokemon's Speed is raised by 1 stage at the end of each full turn it has been on the field.",
 		shortDesc: "This Pokemon's Speed is raised 1 stage at the end of each full turn on the field.",
 	},
+	spherical: {
+		name: "Spherical",
+		shortDesc: "USELESS CURRENTLY: Rollout and Ice Ball raise the user's Defense by 1 stage on each use.",
+	},
 	stakeout: {
 		name: "Stakeout",
 		shortDesc: "This Pokemon's offensive stat is doubled against a target that switched in this turn.",

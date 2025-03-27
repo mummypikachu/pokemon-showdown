@@ -2203,6 +2203,11 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 0,
 		num: 118,
 	},
+	spherical: {
+		name: "Spherical",
+		rating: 0,
+		num: 118,
+	},
 	hospitality: {
 		onStart(pokemon) {
 			for (const ally of pokemon.adjacentAllies()) {
