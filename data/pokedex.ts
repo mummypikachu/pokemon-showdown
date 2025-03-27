@@ -18933,7 +18933,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Amorphous"],
 		gen: 3,
 	},
-	peblum: {
+	/* peblum: { //conv. beldum
 		num: 1522,
 		name: "Peblum",
 		types: ["Rock", "Psychic"],
@@ -18946,7 +18946,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Mineral"],
 		gen: 3,
 	},
-	boultang: {
+	boultang: { //conv. metang
 	num: 1523,
 		name: "Boultang",
 		types: ["Rock", "Psychic"],
@@ -18961,7 +18961,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Mineral"],
 		gen: 3,
 	},
-	bouldross: {
+	bouldross: { //conv. metagross
 		num: 1524,
 		name: "Bouldross",
 		types: ["Rock", "Psychic"],
@@ -18974,7 +18974,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		evoLevel: 58,
 		eggGroups: ["Mineral"],
 		gen: 3,
-	},
+	}, */
 	syclar: {
 		num: -1,
 		name: "Syclar",
