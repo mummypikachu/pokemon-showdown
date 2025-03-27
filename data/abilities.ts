@@ -2208,6 +2208,29 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 0,
 		num: 118,
 	},
+	strongjabs: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['jab']) {
+				return this.chainModify(1.3);
+			}
+		},
+		name: "Strong Jabs",
+		rating: 3,
+		num: 178,
+	},
+	thickhide: {
+			onTryHit(pokemon, target, move) {
+			if (move.flags['jab']) {
+				this.add('-immune', pokemon, '[from] ability: Thick Hide');
+				return null;
+			}
+		},
+		isBreakable: true,
+		name: "Thick Hide",
+		rating: 3,
+		num: 171,
+	},
 	hospitality: {
 		onStart(pokemon) {
 			for (const ally of pokemon.adjacentAllies()) {

@@ -907,6 +907,14 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Justified",
 		shortDesc: "This Pokemon's Attack is raised by 1 stage after it is damaged by a Dark-type move.",
 	},
+	strongjabs: {
+		name: "Strong Jabs",
+		shortDesc: "Increases the power of jabbing moves by 1.3.",
+	},
+	thickhide: {
+		name: "Thick Hide",
+		shortDesc: "The user is immune to jabbing moves.",
+	},
 	keeneye: {
 		name: "Keen Eye",
 		desc: "Prevents other Pokemon from lowering this Pokemon's accuracy stat stage. This Pokemon ignores a target's evasiveness stat stage.",
