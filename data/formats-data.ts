@@ -5397,6 +5397,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	kodomin: {
 		tier: "OU",
 	},
+	kotora: {
+		tier: "LC",
+	},
+	raitora: {
+		tier: "OU",
+	},
 	klangexcir: {
 		tier: "NFE",
 		natDexTier: "NFE",
