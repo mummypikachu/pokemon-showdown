@@ -5534,7 +5534,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Fell Stinger",
 		pp: 25,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, jab: 1},
 		onAfterMoveSecondarySelf(pokemon, target, move) {
 			if (!target || target.fainted || target.hp <= 0) this.boost({atk: 3}, pokemon, pokemon, move);
 		},
@@ -10087,7 +10087,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Icicle Spear",
 		pp: 30,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
+		flags: {protect: 1, mirror: 1, jab: 1},
 		multihit: [2, 5],
 		secondary: null,
 		target: "normal",
@@ -13457,13 +13457,13 @@ export const Moves: {[moveid: string]: MoveData} = {
 	needlearm: {
 		num: 302,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 85,
 		category: "Physical",
 	
 		name: "Needle Arm",
 		pp: 15,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, jab: 1},
 		secondary: {
 			chance: 30,
 			volatileStatus: 'flinch',
@@ -14338,7 +14338,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Pin Missile",
 		pp: 20,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
+		flags: {protect: 1, mirror: 1, jab: 1},
 		multihit: [2, 5],
 		secondary: null,
 		target: "normal",
@@ -14510,9 +14510,26 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Poison Jab",
 		pp: 20,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, jab: 1},
 		secondary: {
 			chance: 30,
+			status: 'psn',
+		},
+		target: "normal",
+		type: "Poison",
+		contestType: "Tough",
+	},
+	poisonneedle: {
+		num: 398,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		name: "Poison Needle",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, bullet: 1, jab: 1},
+		secondary: {
+			chance: 100,
 			status: 'psn',
 		},
 		target: "normal",
@@ -14543,7 +14560,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Poison Sting",
 		pp: 35,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
+		flags: {protect: 1, mirror: 1, jab: 1},
 		secondary: {
 			chance: 30,
 			status: 'psn',
@@ -15944,7 +15961,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Rapid Jab",
 		pp: 10,
 		priority: 0,
-		flags: {contact: 1, protect: 1, punch: 1, mirror: 1},
+		flags: {contact: 1, protect: 1, punch: 1, mirror: 1, jab: 1},
 		willCrit: true,
 		onTry(source, target) {
 			const action = this.queue.willMove(target);
@@ -18516,7 +18533,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Smart Strike",
 		pp: 10,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, jab: 1},
 		secondary: null,
 		target: "normal",
 		type: "Steel",
@@ -21974,7 +21991,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Twineedle",
 		pp: 10,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
+		flags: {protect: 1, mirror: 1, jab: 1},
 		multihit: 2,
 		secondary: {
 			chance: 20,

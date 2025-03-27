@@ -4803,6 +4803,10 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Has a 10% chance to poison the target and a higher chance for a critical hit.",
 		shortDesc: "High critical hit ratio. 10% chance to poison.",
 	},
+	poisonneedle: {
+		name: "Poison Needle",
+		desc: "Has a 100% chance to poison the target.",
+	},
 	pollenpuff: {
 		name: "Pollen Puff",
 		desc: "If the target is an ally, this move restores 1/2 of its maximum HP, rounded down, instead of dealing damage.",
