@@ -19003,7 +19003,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Field"],
 		gen: 2,
 	},
-	manbo1: {
+	manbo1: { // Sunfish
 		num: 1525,
 		name: "Manbo1",
 		types: ["Water"],
@@ -19016,7 +19016,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Field"],
 		gen: 2,
 	},
-	ikari: {
+	ikari: { // Shark anchor
 		num: 1526,
 		name: "Ikari",
 		types: ["Water", "Steel"],
@@ -19030,7 +19030,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Field"],
 		gen: 2,
 	},
-	poke382: {
+	poke382: { // Bagworm
 		num: 1525,
 		name: "poke382",
 		types: ["Bug", "Rock"],
@@ -19043,7 +19043,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Field"],
 		gen: 2,
 	},
-	lustremoth: {
+	lustremoth: { //Moth
 		num: 1526,
 		name: "Lustremoth",
 		types: ["Bug", "Rock"],
