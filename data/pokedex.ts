@@ -19034,7 +19034,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		num: 1525,
 		name: "poke382",
 		types: ["Bug", "Rock"],
-		baseStats: {hp: 50, atk: 55, def: 53, spa: 40, spd: 43, spe: 42},
+		baseStats: {hp: 30, atk: 27, def: 96, spa: 42, spd: 43, spe: 5},
 		abilities: {0: "Cute Charm", 1: "Volt Absorb", H: "Spherical"},
 		heightm: 0.5,
 		weightkg: 16.5,
@@ -19043,11 +19043,11 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Field"],
 		gen: 2,
 	},
-	lustremoth: { //Moth
+	lustremoth: { //Moth. Designed for NU/ZU.
 		num: 1526,
 		name: "Lustremoth",
 		types: ["Bug", "Rock"],
-		baseStats: {hp: 85, atk: 107, def: 96, spa: 77, spd: 73, spe: 65},
+		baseStats: {hp: 75, atk: 52, def: 96, spa: 87, spd: 73, spe: 85},
 		abilities: {0: "Intimidate", 1: "Volt Absorb", H: "Spherical"},
 		heightm: 0.9,
 		weightkg: 98.6,
