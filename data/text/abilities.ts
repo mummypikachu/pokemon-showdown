@@ -1634,8 +1634,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	runaway: {
 		name: "Run Away",
-		desc: "Allows the user to escape trapping effects caused by Shadow Tag and Arena Trap, or moves such as Whirlpool, Bind, Fire Spin, Mean Look, Spider Web, Block and such.",
-		shortDesc: "Allows the user to escape in scenarios they would be trapped in.",
+		shortDesc: "Doubles the Speed stat.",
 	},
 	rusting: { //klang-excir line
 		name: "Rusting",
@@ -1741,7 +1740,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	shedskin: {
 		name: "Shed Skin",
 		desc: "This Pokemon has a 33% chance to have its non-volatile status condition cured at the end of each turn.",
-		shortDesc: "This Pokemon has a 33% chance to have its status cured at the end of each turn.",
+		shortDesc: "Pokemon has a 33% chance to have its status cured at the end of each turn. Allows the user to escape.",
 	},
 	sheerforce: {
 		name: "Sheer Force",

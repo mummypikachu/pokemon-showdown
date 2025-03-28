@@ -4449,9 +4449,9 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 24,
 	},
 	runaway: {
-		onTrapPokemonPriority: -10,
-		onTrapPokemon(pokemon) {
-			pokemon.trapped = pokemon.maybeTrapped = false;
+		onModifySpePriority: 5,
+		onModifySpe(spe) {
+			return this.chainModify(2);
 		},
 		name: "Run Away",
 		rating: 4,
@@ -4735,6 +4735,10 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				this.add('-activate', pokemon, 'ability: Shed Skin');
 				pokemon.cureStatus();
 			}
+		},
+		onTrapPokemonPriority: -10,
+		onTrapPokemon(pokemon) {
+			pokemon.trapped = pokemon.maybeTrapped = false;
 		},
 		name: "Shed Skin",
 		rating: 3,
