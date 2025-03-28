@@ -18992,7 +18992,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		num: 1526,
 		name: "Raitora",
 		types: ["Electric"],
-		baseStats: {hp: 85, atk: 97, def: 96, spa: 77, spd: 73, spe: 65},
+		baseStats: {hp: 85, atk: 107, def: 96, spa: 77, spd: 73, spe: 65},
 		abilities: {0: "Intimidate", 1: "Volt Absorb", H: "Spherical"},
 		heightm: 0.9,
 		weightkg: 98.6,
