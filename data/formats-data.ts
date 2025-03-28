@@ -1154,7 +1154,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 	},
 	furret: {
-		tier: "UU",
+		tier: "RU",
 		natDexTier: "RU",
 	},
 	hoothoot: {
@@ -1351,7 +1351,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "UU",
 	},
 	snubbull: {
-		tier: "LC Ubers",
+		tier: "LC",
 		natDexTier: "LC",
 	},
 	granbull: {
@@ -2385,7 +2385,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	pachirisu: {
-		tier: "UU",
+		tier: "NU",
 		doublesTier: "DUU",
 		natDexTier: "RU",
 	},
