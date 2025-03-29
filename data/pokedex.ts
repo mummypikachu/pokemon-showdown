@@ -18933,7 +18933,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Amorphous"],
 		gen: 3,
 	},
-	/* peblum: { //conv. beldum
+	peblum: { //conv. beldum
 		num: 1522,
 		name: "Peblum",
 		types: ["Rock", "Psychic"],
@@ -18974,7 +18974,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		evoLevel: 58,
 		eggGroups: ["Mineral"],
 		gen: 3,
-	}, */
+	},
 	kotora: {
 		num: 1525,
 		name: "Kotora",
@@ -19078,7 +19078,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		baseStats: {hp: 59, atk: 57, def: 76, spa: 99, spd: 84, spe: 105},
 		abilities: {0: "Limber", 1: "Soundproof", H: "Magic Guard"},
 		heightm: 0.4,
-		weightkg: 12.6,
+		weightkg: 11.6,
 		color: "Black",
 		prevo: "Rinrin",
 		evoLevel: 28,
