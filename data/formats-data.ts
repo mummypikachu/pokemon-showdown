@@ -1154,7 +1154,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 	},
 	furret: {
-		tier: "NU",
+		tier: "RU",
 		natDexTier: "RU",
 	},
 	hoothoot: {
@@ -2385,7 +2385,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	pachirisu: {
-		tier: "PU",
+		tier: "NU",
 		doublesTier: "DUU",
 		natDexTier: "RU",
 	},
@@ -5402,6 +5402,29 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	raitora: {
 		tier: "OU",
+	},
+	heamanbou: {
+		tier: "LC",
+		natDexTier: "LC",
+	},
+	ikari: {
+		tier: "OU",
+		natDexTier: "OU",
+		doublesTier: "DOU",
+	},
+	rockade: {
+		tier: "LC",
+		natDexTier: "LC",
+	},
+	lustremoth: {
+		tier: "NU",
+		natDexTier: "NU",
+		doublesTier: "DOU",
+	},
+	ribura: {
+		tier: "OU",
+		natDexTier: "OU",
+		doublesTier: "DOU",
 	},
 	klangexcir: {
 		tier: "NFE",
