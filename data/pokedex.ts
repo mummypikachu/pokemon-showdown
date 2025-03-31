@@ -19122,6 +19122,18 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Amorphous"],
 		gen: 3,
 	},
+	togepyon: { //name not final. spiked egg shape bouncing guy. UNRELATED TO TOGEPI.
+		num: 1536,
+		name: "Togepyon",
+		types: ["Normal"],
+		baseStats: {hp: 66, atk: 97, def: 66, spa: 82, spd: 66, spe: 125},
+		abilities: {0: "Iron Barbs", H: "Run Away"},
+		heightm: 0.3,
+		weightkg: 11.4,
+		color: "Yellow",
+		eggGroups: ["Field"],
+		gen: 3,
+	},
 	syclar: {
 		num: -1,
 		name: "Syclar",
