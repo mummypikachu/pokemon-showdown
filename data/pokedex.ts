@@ -3198,6 +3198,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["Articuno-Galar"],
 		formeOrder: ["Articuno", "Articuno-Galar"],
 	},
+		//put mega-arti here.
 	articunogalar: {
 		num: 144,
 		name: "Articuno-Galar",
@@ -3227,6 +3228,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["Zapdos-Galar"],
 		formeOrder: ["Zapdos", "Zapdos-Galar"],
 	},
+		//put Zapdos-mega here.
 	zapdosgalar: {
 		num: 145,
 		name: "Zapdos-Galar",
@@ -3256,6 +3258,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["Moltres-Galar"],
 		formeOrder: ["Moltres", "Moltres-Galar"],
 	},
+	//put mega-moltres here.
 	moltresgalar: {
 		num: 146,
 		name: "Moltres-Galar",
@@ -10398,6 +10401,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		evoLevel: 37,
 		eggGroups: ["Flying", "Water 3"],
 	},
+		//put mega-archeops here.
 	trubbish: {
 		num: 568,
 		name: "Trubbish",
