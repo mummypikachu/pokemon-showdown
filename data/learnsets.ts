@@ -1,3 +1,5 @@
+import { RoundRobin } from "../server/tournaments/generator-round-robin";
+
 export const Learnsets: {[k: string]: LearnsetData} = {
 	missingno: {
 		learnset: {
@@ -93122,13 +93124,41 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	},
 	totta: {
 		learnset: {
-			bugbite: ["9T", "9L15", "6T", "6L15", "5T", "5L15", "5D", "9T", "4L15"],
-			electroweb: ["9T", "6T", "5T"],
+			teeterdance: ["9T", "9L15", "6T", "6L15", "5T", "5L15", "5D", "9T", "4L15"],
+			ancientpower: ["9T", "6T", "5T"],
 			hiddenpower: ["9M", "9L20", "9M", "6L20", "5L20", "4L20"],
 			protect: ["9M", "9L1", "9M", "6L1", "5L1", "5D", "4L1"],
-			snore: ["9T", "6T", "5T", "5D", "9T"],
-			stickyweb: ["9M"],
-			tackle: ["9L10", "6L10", "5L10", "4L10"],
+			rockthrow: ["9T", "6T", "5T", "5D", "9T"],
+			psychic: ["9M"],
+			psychicnoise: ["9L10", "6L10", "5L10", "4L10"],
+			rockslide: ["9M"],
+			stealthrock: ["9M"],
+			powergem: ["9M"],
+			thunderwave: ["9M"],
+			magnetrise: ["9M"],
+			calmmind: ["9M"],
+			harden: ["9M"],
+			irondefense: ["9M"],
+			rest: ["9M"],
+			sleeptalk: ["9M"],
+			recover: ["9M"],
+			rototiller: ["9M"],
+			round: ["9M"],
+			leer: ["9M"],
+			flash: ["9M"],
+			rocksmash: ["9M"],
+			rocktomb: ["9M"],
+			magnitude: ["9M"],
+			skillswap: ["9M"],
+			explosion: ["9M"],
+			selfdestruct: ["9M"],
+			rapidspin: ["9M"],
+			haze: ["9M"],
+			mistyterrain: ["9M"],
+			psywave: ["9M"],
+			psychicterrain: ["9M"],
+			sunnyday: ["9M"],
+			flashcannon: ["9M"],
 		},
 	},
 	ribura: {
