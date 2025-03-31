@@ -1664,40 +1664,65 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 218,
 	},
 	forecast: {
-		onStart(pokemon) {
-			this.singleEvent('WeatherChange', this.effect, this.effectState, pokemon);
-		},
-		onWeatherChange(pokemon) {
-			if (pokemon.baseSpecies.baseSpecies !== 'Castform' || pokemon.transformed) return;
-			let forme = null;
-			switch (pokemon.effectiveWeather()) {
-			case 'sunnyday':
-			case 'desolateland':
-				if (pokemon.species.id !== 'castformsunny') forme = 'Castform-Sunny';
-				break;
-			case 'raindance':
-			case 'primordialsea':
-				if (pokemon.species.id !== 'castformrainy') forme = 'Castform-Rainy';
-				break;
-			case 'hail':
-			case 'snow':
-				if (pokemon.species.id !== 'castformsnowy') forme = 'Castform-Snowy';
-				break;
-			case 'sandstorm':
-			    if (pokemon.species.id !== 'castformrocky') forme = 'Castform-Rocky';
-				break;
-			default:
-				if (pokemon.species.id !== 'castform') forme = 'Castform';
-				break;
-			}
-			if (pokemon.isActive && forme) {
-				pokemon.formeChange(forme, this.effect, false, '[msg]');
-			}
-		},
-		name: "Forecast",
-		rating: 2,
-		num: 59,
-	},
+        onStart(pokemon) {
+            this.singleEvent('WeatherChange', this.effect, this.effectState, pokemon);
+        },
+        onWeatherChange(pokemon) {
+            if (pokemon.baseSpecies.baseSpecies !== 'Castform' || pokemon.transformed) return;
+            let forme = null;
+
+            // Check the effective weather
+            switch (pokemon.effectiveWeather()) {
+            case 'sunnyday':
+            case 'desolateland':
+                if (pokemon.species.id !== 'castformsunny') forme = 'Castform-Sunny';
+                break;
+            case 'raindance':
+            case 'primordialsea':
+                if (pokemon.species.id !== 'castformrainy') forme = 'Castform-Rainy';
+                break;
+            case 'hail':
+            case 'snow':
+                if (pokemon.species.id !== 'castformsnowy') forme = 'Castform-Snowy';
+                break;
+            case 'sandstorm':
+                if (pokemon.species.id !== 'castformrocky') forme = 'Castform-Rocky';
+                break;
+            default:
+                if (pokemon.species.id !== 'castform') forme = 'Castform';
+                break;
+            }
+
+            // Check the held weather rock
+            if (!forme) {
+                switch (pokemon.item) {
+                case 'heatrock':
+                    if (pokemon.species.id !== 'castformsunny') forme = 'Castform-Sunny';
+                    break;
+                case 'damprock':
+                    if (pokemon.species.id !== 'castformrainy') forme = 'Castform-Rainy';
+                    break;
+                case 'icyrock':
+                    if (pokemon.species.id !== 'castformsnowy') forme = 'Castform-Snowy';
+                    break;
+                case 'smoothrock':
+                    if (pokemon.species.id !== 'castformrocky') forme = 'Castform-Rocky';
+                    break;
+                default:
+                    if (pokemon.species.id !== 'castform') forme = 'Castform';
+                    break;
+                }
+            }
+
+            // Change the form if necessary
+            if (pokemon.isActive && forme) {
+                pokemon.formeChange(forme, this.effect, false, '[msg]');
+            }
+        },
+        name: "Forecast",
+        rating: 2,
+        num: 59,
+    },
 	forewarn: {
 		onStart(pokemon) {
 			let warnMoves: (Move | Pokemon)[][] = [];
