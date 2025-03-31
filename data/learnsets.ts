@@ -93121,6 +93121,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			darkpulse: ["9M"],
 			bite: ["9M"],
 			crunch: ["9M"],
+			assist: ["9M"],
 			snarl: ["9M"],
 		},
 	},
@@ -93133,6 +93134,9 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			skillswap: ["9T", "6T", "5T", "5D", "9T"],
 			suckerpunch: ["9M"],
 			agility: ["9L10", "6L10", "5L10", "4L10"],
+			firefang: ["9M"],
+			dazzlinggleam: ["9M"],
+			hypervoice: ["9M"],
 		},
 	},
 	totta: {
