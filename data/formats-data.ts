@@ -5426,6 +5426,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "OU",
 		doublesTier: "DOU",
 	},
+	bounspike: {
+		tier: "PU",
+		natDexTier: "PU",
+		doublesTier: "(DUU)",
+	},
 	klangexcir: {
 		tier: "NFE",
 		natDexTier: "NFE",
