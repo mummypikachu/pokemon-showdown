@@ -5309,6 +5309,20 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		evoItem: "Leaf Stone",
 		eggGroups: ["Field", "Grass"],
 	},
+	/*nuzleafmega: {
+		num: 274,
+		name: "Nuzleaf-Mega",
+		baseSpecies: "Nuzleaf",
+		forme: "Mega",
+		types: ["Grass", "Dark"],
+		baseStats: {hp: 70, atk: 170, def: 40, spa: 60, spd: 40, spe: 60},
+		abilities: {0: "Wind Rider"},
+		heightm: 1.1,
+		weightkg: 30,
+		color: "Brown",
+		eggGroups: ["Field", "Grass"],
+		requiredItem: "Nuzleafite", //item does not exist yet
+	}, */
 	taillow: {
 		num: 276,
 		name: "Taillow",
