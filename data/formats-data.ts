@@ -5403,6 +5403,29 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	raitora: {
 		tier: "OU",
 	},
+	heamanbou: {
+		tier: "LC",
+		natDexTier: "LC",
+	},
+	ikari: {
+		tier: "OU",
+		natDexTier: "OU",
+		doublesTier: "DOU",
+	},
+	rockade: {
+		tier: "LC",
+		natDexTier: "LC",
+	},
+	lustremoth: {
+		tier: "NU",
+		natDexTier: "NU",
+		doublesTier: "DOU",
+	},
+	ribura: {
+		tier: "OU",
+		natDexTier: "OU",
+		doublesTier: "DOU",
+	},
 	klangexcir: {
 		tier: "NFE",
 		natDexTier: "NFE",
