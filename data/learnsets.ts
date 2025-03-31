@@ -93089,6 +93089,8 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			sandtomb: ["9M"],
 			rocktomb: ["9M"],
 			swift: ["9M"],
+			mimic: ["9M"],
+			facade: ["9M"],
 			rocksmash: ["9M"],
 			venoshock: ["9M"],
 			spikes: ["9M"],
@@ -93160,6 +93162,8 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			seedbomb: ["9M"],
 			megadrain: ["9M"],
 			gigadrain: ["9M"],
+			mimic: ["9M"],
+			facade: ["9M"],
 			absorb: ["9M"],
 			leer: ["9M"],
 			babydolleyes: ["9M"],
@@ -93177,8 +93181,8 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	},
 	shabo: {
 		learnset: {
-			bugbite: ["9T", "9L15", "6T", "6L15", "5T", "5L15", "5D", "9T", "4L15"],
-			electroweb: ["9T", "6T", "5T"],
+			snarl: ["9T", "9L15", "6T", "6L15", "5T", "5L15", "5D", "9T", "4L15"],
+			screech: ["9T", "6T", "5T"],
 			hiddenpower: ["9M", "9L20", "9M", "6L20", "5L20", "4L20"],
 			protect: ["9M", "9L1", "9M", "6L1", "5L1", "5D", "4L1"],
 			snore: ["9T", "6T", "5T", "5D", "9T"],
@@ -93186,10 +93190,10 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			tackle: ["9L10", "6L10", "5L10", "4L10"],
 		},
 	},
-	togepyon: {
+	bounspike: {
 		learnset: {
-			bugbite: ["9T", "9L15", "6T", "6L15", "5T", "5L15", "5D", "9T", "4L15"],
-			electroweb: ["9T", "6T", "5T"],
+			bounce: ["9T", "9L15", "6T", "6L15", "5T", "5L15", "5D", "9T", "4L15"],
+			splash: ["9T", "6T", "5T"],
 			hiddenpower: ["9M", "9L20", "9M", "6L20", "5L20", "4L20"],
 			protect: ["9M", "9L1", "9M", "6L1", "5L1", "5D", "4L1"],
 			snore: ["9T", "6T", "5T", "5D", "9T"],
