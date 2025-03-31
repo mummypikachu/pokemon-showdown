@@ -92929,7 +92929,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			workup: ["9M", "9M", "5M"],
 			wildcharge: ["9M", "9M", "5M"],
 			thunderwave: ["9M", "9M", "5M"],
-			supercellslam: ["9M", "9M", "5M"],
 		},
 	},
 	raitora: {
