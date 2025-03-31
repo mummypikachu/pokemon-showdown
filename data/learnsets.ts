@@ -93126,13 +93126,13 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	},
 	bererun: {
 		learnset: {
-			bugbite: ["9T", "9L15", "6T", "6L15", "5T", "5L15", "5D", "9T", "4L15"],
-			electroweb: ["9T", "6T", "5T"],
-			hiddenpower: ["9M", "9L20", "9M", "6L20", "5L20", "4L20"],
-			protect: ["9M", "9L1", "9M", "6L1", "5L1", "5D", "4L1"],
-			snore: ["9T", "6T", "5T", "5D", "9T"],
-			stickyweb: ["9M"],
-			tackle: ["9L10", "6L10", "5L10", "4L10"],
+			moonblast: ["9T", "9L15", "6T", "6L15", "5T", "5L15", "5D", "9T", "4L15"],
+			psychic: ["9T", "6T", "5T"],
+			moonlight: ["9M", "9L20", "9M", "6L20", "5L20", "4L20"],
+			chillingwater: ["9M", "9L1", "9M", "6L1", "5L1", "5D", "4L1"],
+			skillswap: ["9T", "6T", "5T", "5D", "9T"],
+			suckerpunch: ["9M"],
+			agility: ["9L10", "6L10", "5L10", "4L10"],
 		},
 	},
 	totta: {
