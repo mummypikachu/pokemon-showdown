@@ -8213,6 +8213,20 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		evoLevel: 31,
 		eggGroups: ["Water 2"],
 	},
+	/*lumineonmega: {
+		num: 457,
+		name: "Lumineon-Mega",
+		baseSpecies: "Lumineon",
+		forme: "Mega",
+		types: ["Water", "Fairy"],
+		baseStats: {hp: 69, atk: 169, def: 76, spa: 99, spd: 86, spe: 91},
+		abilities: {0: "Storm Drain"},
+		heightm: 1.4,
+		weightkg: 24.6,
+		color: "Blue",
+		eggGroups: ["Water 2"],
+		requiredItem: "Luminite", //item does not exist yet
+	}, */
 	mantyke: {
 		num: 458,
 		name: "Mantyke",
