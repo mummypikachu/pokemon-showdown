@@ -92939,6 +92939,39 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			thunderwave: ["9M", "9M", "5M"],
 		},
 	},
+	peblum: {
+		learnset: {
+			bugbite: ["9T", "9L15", "6T", "6L15", "5T", "5L15", "5D", "9T", "4L15"],
+			electroweb: ["9T", "6T", "5T"],
+			hiddenpower: ["9M", "9L20", "9M", "6L20", "5L20", "4L20"],
+			protect: ["9M", "9L1", "9M", "6L1", "5L1", "5D", "4L1"],
+			snore: ["9T", "6T", "5T", "5D", "9T"],
+			stickyweb: ["9M"],
+			tackle: ["9L10", "6L10", "5L10", "4L10"],
+		},
+	},
+	boultang: {
+		learnset: {
+			bugbite: ["9T", "9L15", "6T", "6L15", "5T", "5L15", "5D", "9T", "4L15"],
+			electroweb: ["9T", "6T", "5T"],
+			hiddenpower: ["9M", "9L20", "9M", "6L20", "5L20", "4L20"],
+			protect: ["9M", "9L1", "9M", "6L1", "5L1", "5D", "4L1"],
+			snore: ["9T", "6T", "5T", "5D", "9T"],
+			stickyweb: ["9M"],
+			tackle: ["9L10", "6L10", "5L10", "4L10"],
+		},
+	},
+	bouldross: {
+		learnset: {
+			bugbite: ["9T", "9L15", "6T", "6L15", "5T", "5L15", "5D", "9T", "4L15"],
+			electroweb: ["9T", "6T", "5T"],
+			hiddenpower: ["9M", "9L20", "9M", "6L20", "5L20", "4L20"],
+			protect: ["9M", "9L1", "9M", "6L1", "5L1", "5D", "4L1"],
+			snore: ["9T", "6T", "5T", "5D", "9T"],
+			stickyweb: ["9M"],
+			tackle: ["9L10", "6L10", "5L10", "4L10"],
+		},
+	},
 	heamanbou: {
 		learnset: {
 			bubble: ["9M", "9M", "9M", "5M"],
@@ -93015,6 +93048,94 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			thunderfang: ["9M", "9M", "5M"],
 			poisonfang: ["9M", "9M", "5M"],
 			psychicfangs: ["9M", "9M", "5M"],
+		},
+	},
+	rockade: {
+		learnset: {
+			bugbite: ["9T", "9L15", "6T", "6L15", "5T", "5L15", "5D", "9T", "4L15"],
+			electroweb: ["9T", "6T", "5T"],
+			hiddenpower: ["9M", "9L20", "9M", "6L20", "5L20", "4L20"],
+			protect: ["9M", "9L1", "9M", "6L1", "5L1", "5D", "4L1"],
+			snore: ["9T", "6T", "5T", "5D", "9T"],
+			stickyweb: ["9M"],
+			tackle: ["9L10", "6L10", "5L10", "4L10"],
+		},
+	},
+	lustremoth: {
+		learnset: {
+			bugbite: ["9T", "9L15", "6T", "6L15", "5T", "5L15", "5D", "9T", "4L15"],
+			electroweb: ["9T", "6T", "5T"],
+			hiddenpower: ["9M", "9L20", "9M", "6L20", "5L20", "4L20"],
+			protect: ["9M", "9L1", "9M", "6L1", "5L1", "5D", "4L1"],
+			snore: ["9T", "6T", "5T", "5D", "9T"],
+			stickyweb: ["9M"],
+			tackle: ["9L10", "6L10", "5L10", "4L10"],
+		},
+	},
+	rinrin: {
+		learnset: {
+			bugbite: ["9T", "9L15", "6T", "6L15", "5T", "5L15", "5D", "9T", "4L15"],
+			electroweb: ["9T", "6T", "5T"],
+			hiddenpower: ["9M", "9L20", "9M", "6L20", "5L20", "4L20"],
+			protect: ["9M", "9L1", "9M", "6L1", "5L1", "5D", "4L1"],
+			snore: ["9T", "6T", "5T", "5D", "9T"],
+			stickyweb: ["9M"],
+			tackle: ["9L10", "6L10", "5L10", "4L10"],
+		},
+	},
+	bererun: {
+		learnset: {
+			bugbite: ["9T", "9L15", "6T", "6L15", "5T", "5L15", "5D", "9T", "4L15"],
+			electroweb: ["9T", "6T", "5T"],
+			hiddenpower: ["9M", "9L20", "9M", "6L20", "5L20", "4L20"],
+			protect: ["9M", "9L1", "9M", "6L1", "5L1", "5D", "4L1"],
+			snore: ["9T", "6T", "5T", "5D", "9T"],
+			stickyweb: ["9M"],
+			tackle: ["9L10", "6L10", "5L10", "4L10"],
+		},
+	},
+	totta: {
+		learnset: {
+			bugbite: ["9T", "9L15", "6T", "6L15", "5T", "5L15", "5D", "9T", "4L15"],
+			electroweb: ["9T", "6T", "5T"],
+			hiddenpower: ["9M", "9L20", "9M", "6L20", "5L20", "4L20"],
+			protect: ["9M", "9L1", "9M", "6L1", "5L1", "5D", "4L1"],
+			snore: ["9T", "6T", "5T", "5D", "9T"],
+			stickyweb: ["9M"],
+			tackle: ["9L10", "6L10", "5L10", "4L10"],
+		},
+	},
+	ribura: {
+		learnset: {
+			bugbite: ["9T", "9L15", "6T", "6L15", "5T", "5L15", "5D", "9T", "4L15"],
+			electroweb: ["9T", "6T", "5T"],
+			hiddenpower: ["9M", "9L20", "9M", "6L20", "5L20", "4L20"],
+			protect: ["9M", "9L1", "9M", "6L1", "5L1", "5D", "4L1"],
+			snore: ["9T", "6T", "5T", "5D", "9T"],
+			stickyweb: ["9M"],
+			tackle: ["9L10", "6L10", "5L10", "4L10"],
+		},
+	},
+	shabo: {
+		learnset: {
+			bugbite: ["9T", "9L15", "6T", "6L15", "5T", "5L15", "5D", "9T", "4L15"],
+			electroweb: ["9T", "6T", "5T"],
+			hiddenpower: ["9M", "9L20", "9M", "6L20", "5L20", "4L20"],
+			protect: ["9M", "9L1", "9M", "6L1", "5L1", "5D", "4L1"],
+			snore: ["9T", "6T", "5T", "5D", "9T"],
+			stickyweb: ["9M"],
+			tackle: ["9L10", "6L10", "5L10", "4L10"],
+		},
+	},
+	togepyon: {
+		learnset: {
+			bugbite: ["9T", "9L15", "6T", "6L15", "5T", "5L15", "5D", "9T", "4L15"],
+			electroweb: ["9T", "6T", "5T"],
+			hiddenpower: ["9M", "9L20", "9M", "6L20", "5L20", "4L20"],
+			protect: ["9M", "9L1", "9M", "6L1", "5L1", "5D", "4L1"],
+			snore: ["9T", "6T", "5T", "5D", "9T"],
+			stickyweb: ["9M"],
+			tackle: ["9L10", "6L10", "5L10", "4L10"],
 		},
 	},
 	archaludon: {
