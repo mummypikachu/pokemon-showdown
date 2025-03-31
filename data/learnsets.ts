@@ -1,5 +1,3 @@
-import { RoundRobin } from "../server/tournaments/generator-round-robin";
-
 export const Learnsets: {[k: string]: LearnsetData} = {
 	missingno: {
 		learnset: {
