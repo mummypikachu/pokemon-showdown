@@ -2758,6 +2758,8 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		prevo: "Smoochum",
 		evoLevel: 30,
 		eggGroups: ["Human-Like"],
+		otherFormes: ["Jynx-Mega"],
+		formeOrder: ["Jynx", "Jynx-Mega"],
 	},
 	jynxmega: {
 		num: 124,
@@ -5297,6 +5299,8 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		evoLevel: 14,
 		evos: ["Shiftry"],
 		eggGroups: ["Field", "Grass"],
+		//otherFormes: ["Nuzleaf-Mega"],
+		//formeOrder: ["Nuzleaf", "Nuzleaf-Mega"],
 	},
 	shiftry: {
 		num: 275,
@@ -8229,6 +8233,8 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		prevo: "Finneon",
 		evoLevel: 31,
 		eggGroups: ["Water 2"],
+		//otherFormes: ["Lumineon-Mega"],
+		//formeOrder: ["Lumineon", "Lumineon-Mega"],
 	},
 	/*lumineonmega: {
 		num: 457,
