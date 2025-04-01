@@ -2532,6 +2532,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
+	lumineonmega: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "RU",
+	},
 	snover: {
 		tier: "LC",
 	},

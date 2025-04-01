@@ -55,7 +55,19 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 674,
 		gen: 9,
-
+	},
+	Luminite: {
+		name: "Luminite",
+		spritenum: 575,
+		megaStone: "Lumineon-Mega",
+		megaEvolves: "Lumineon",
+		itemUser: ["Lumineon"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 674,
+		gen: 9,
 	},
 	absolite: {
 		name: "Absolite",
