@@ -3910,9 +3910,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	sudowoodo: {
 		num: 185,
 		name: "Sudowoodo",
-		types: ["Stellar"],
-		baseStats: {hp: 400, atk: 400, def: 400, spa: 400, spd: 400, spe: 400},
-		abilities: {0: "Wonder Guard"},
+		types: ["Rock"],
+		baseStats: {hp: 70, atk: 100, def: 115, spa: 30, spd: 65, spe: 30},
+		abilities: {0: "Sturdy", 1: "Rock Head", H: "Mimicry"},
 		heightm: 1.2,
 		weightkg: 38,
 		color: "Brown",
