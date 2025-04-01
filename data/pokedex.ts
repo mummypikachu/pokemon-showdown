@@ -3200,7 +3200,22 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["Articuno-Galar"],
 		formeOrder: ["Articuno", "Articuno-Galar"],
 	},
-		//put mega-arti here.
+	/*articunomega: {
+		num: 144,
+		name: "Articuno-Mega",
+		baseSpecies: "Articuno",
+		forme: "Mega",
+		types: ["Ice", "Flying"],
+		gender: "N",
+		baseStats: {hp: 90, atk: 185, def: 100, spa: 95, spd: 125, spe: 85},
+		abilities: {0: "Snow Warning"},
+		heightm: 1.1,
+		weightkg: 30,
+		color: "Blue",
+		tags: ["Sub-Legendary"],
+		eggGroups: ["Undiscovered"],
+		requiredItem: "Articunite", //item does not exist yet
+	}, */
 	articunogalar: {
 		num: 144,
 		name: "Articuno-Galar",
@@ -3230,7 +3245,22 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["Zapdos-Galar"],
 		formeOrder: ["Zapdos", "Zapdos-Galar"],
 	},
-		//put Zapdos-mega here.
+	/*zapdosmega: {
+		num: 145,
+		name: "Zapdos-Mega",
+		baseSpecies: "Zapdos",
+		forme: "Mega",
+		types: ["Electric", "Flying"],
+		gender: "N",
+		baseStats: {hp: 90, atk: 185, def: 100, spa: 95, spd: 125, spe: 85},
+		abilities: {0: "Electric Surge"},
+		heightm: 1.1,
+		weightkg: 30,
+		color: "Blue",
+		tags: ["Sub-Legendary"],
+		eggGroups: ["Undiscovered"],
+		requiredItem: "Zapdosite", //item does not exist yet
+	}, */
 	zapdosgalar: {
 		num: 145,
 		name: "Zapdos-Galar",
@@ -3260,7 +3290,22 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["Moltres-Galar"],
 		formeOrder: ["Moltres", "Moltres-Galar"],
 	},
-	//put mega-moltres here.
+	/*moltresmega: {
+		num: 146,
+		name: "Moltres-Mega",
+		baseSpecies: "Moltres",
+		forme: "Mega",
+		types: ["Fire", "Flying"],
+		gender: "N",
+		baseStats: {hp: 90, atk: 185, def: 100, spa: 95, spd: 125, spe: 85},
+		abilities: {0: "Drought"},
+		heightm: 1.1,
+		weightkg: 30,
+		color: "Blue",
+		tags: ["Sub-Legendary"],
+		eggGroups: ["Undiscovered"],
+		requiredItem: "Moltresite", //item does not exist yet
+	}, */
 	moltresgalar: {
 		num: 146,
 		name: "Moltres-Galar",
