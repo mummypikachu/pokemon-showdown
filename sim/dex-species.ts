@@ -150,6 +150,16 @@ export class Species extends BasicEffect implements Readonly<BasicEffect & Speci
 	readonly baseStats: StatsTable;
 	/** Max HP. Overrides usual HP calculations (for Shedinja). */
 	readonly maxHP?: number;
+	/** Max Attack. Made for April Fools */
+	readonly maxAtk?: number;
+	/** Max Defense. Made for April Fools. */
+	readonly maxDef?: number;
+	/** Max Speed. Made for April Fools. */
+	readonly maxSpe?: number;
+	/** Max Special Attack. Made for April Fools. */
+	readonly maxSpa?: number;
+	/** Max Special Defense. Made for April Fools. */
+	readonly maxSpd?: number;
 	/** A Pokemon's Base Stat Total */
 	readonly bst: number;
 	/** Weight (in kg). Not valid for OMs; use weighthg / 10 instead. */
@@ -274,6 +284,11 @@ export class Species extends BasicEffect implements Readonly<BasicEffect & Speci
 		this.unreleasedHidden = data.unreleasedHidden || false;
 		this.maleOnlyHidden = !!data.maleOnlyHidden;
 		this.maxHP = data.maxHP || undefined;
+		this.maxAtk = data.maxAtk || undefined;
+		this.maxDef = data.maxDef || undefined;
+		this.maxSpa = data.maxSpa || undefined;
+		this.maxSpd = data.maxSpd || undefined;
+		this.maxSpe = data.maxSpe || undefined;
 		this.isMega = !!(this.forme && ['Mega', 'Mega-X', 'Mega-Y'].includes(this.forme)) || undefined;
 		this.canGigantamax = data.canGigantamax || undefined;
 		this.gmaxUnreleased = !!data.gmaxUnreleased;

@@ -1253,6 +1253,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 			shortDesc: "This Pokemon cannot be infatuated. Gaining this Ability while infatuated cures it.",
 		},
 	},
+	onehitwonder: {
+		name: "One-Hit Wonder",
+		shortDesc: "its immortal. (thats it) unless its struggle.",
+	},
 	opportunist: {
 		name: "Opportunist",
 		shortDesc: "When an opposing Pokemon has a stat stage raised, this Pokemon copies the effect.",

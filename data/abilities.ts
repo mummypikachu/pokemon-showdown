@@ -3483,6 +3483,40 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 1.5,
 		num: 12,
 	},
+	onehitwonder:{
+		onTryHit(target, source, move) {
+			// Block all moves except Struggle
+			if (target === source || move.id === 'struggle') return;
+			this.add('-immune', target, '[from] ability: One Hit Wonder');
+			return null; // Nullify the move
+		},
+		onDamage(damage, target, source, effect) {
+			// Block all hazard damage and other effects
+			if (effect) {
+				this.add('-immune', target, '[from] ability: One Hit Wonder');
+				return false; // Negate the damage
+			}
+			return damage;
+		},
+		onSetStatus(status, target, source, effect) {
+			// Block all status conditions
+			this.add('-immune', target, '[from] ability: One Hit Wonder');
+			return false; // Prevent status
+		},
+		onTryAddVolatile(status, target, source, effect) {
+			// Block all volatile status conditions (e.g., confusion, Leech Seed)
+			this.add('-immune', target, '[from] ability: One Hit Wonder');
+			return null; // Prevent volatile status
+		},
+		onWeather(target, source, effect) {
+			// Block all weather damage
+			this.add('-immune', target, '[from] ability: One Hit Wonder');
+			return false; // Negate weather effects
+		},
+		  rating: 5,
+		  num: 25,
+		name: "One Hit Wonder",
+	},
 	opportunist: {
 		onFoeAfterBoost(boost, target, source, effect) {
 			if (effect?.name === 'Opportunist' || effect?.name === 'Mirror Herb') return;
