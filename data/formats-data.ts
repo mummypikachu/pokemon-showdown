@@ -94,7 +94,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	beedrillmega: {
-		tier: "OU",
+		tier: "Ubers",
 		natDexTier: "UU",
 	},
 	pidgey: {
