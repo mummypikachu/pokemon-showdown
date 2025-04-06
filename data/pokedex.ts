@@ -19173,7 +19173,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Field"],
 		gen: 2,
 	},
-	totta: {
+	totta: { //totering or sm
 		num: 1533,
 		name: "Totta",
 		types: ["Rock"],
