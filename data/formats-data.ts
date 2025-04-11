@@ -5426,7 +5426,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "NU",
 		doublesTier: "DOU",
 	},
-	ribura: {
+	kolibrary: {
 		tier: "OU",
 		natDexTier: "OU",
 		doublesTier: "DOU",

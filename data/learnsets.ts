@@ -93191,7 +93191,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			flashcannon: ["9M"],
 		},
 	},
-	ribura: {
+	kolibrary: {
 		learnset: {
 			nastyplot: ["9T", "9L15", "6T", "6L15", "5T", "5L15", "5D", "9T", "4L15"],
 			calmmind: ["9T", "6T", "5T"],

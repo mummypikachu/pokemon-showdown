@@ -19186,9 +19186,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Mineral"],
 		gen: 3,
 	},
-	ribura: { //name not final. Book hummingbird.
+	kolibrary: { //Book hummingbird.
 		num: 1534,
-		name: "Ribura",
+		name: "Kolibrary",
 		types: ["Grass", "Flying"],
 		baseStats: {hp: 85, atk: 70, def: 95, spa: 100, spd: 95, spe: 85},
 		abilities: {0: "Trace", H: "Run Away"},
