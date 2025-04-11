@@ -18934,7 +18934,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 2.5,
 		color: "Blue",
 		evos: ["Tanince"],
-		eggGroups: ["Water1", "Monster"],
+		eggGroups: ["Water 1", "Monster"],
 		gen: 5,
 	},
 	tanince: {
@@ -18949,7 +18949,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		prevo: "Tanisu",
 		evoLevel: 28,
 		evos: ["Tanking"],
-		eggGroups: ["Water1", "Monster"],
+		eggGroups: ["Water 1", "Monster"],
 		gen: 5,
 	},
 	tanking: {
@@ -18963,7 +18963,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Blue",
 		prevo: "Tanince",
 		evoLevel: 39,
-		eggGroups: ["Water1", "Monster"],
+		eggGroups: ["Water 1", "Monster"],
 		gen: 5,
 	},
 	muscklar: {
@@ -19232,7 +19232,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 2.5,
 		color: "White",
 		evos: ["Tanince"],
-		eggGroups: ["Water1", "Monster"],
+		eggGroups: ["Water 1", "Monster"],
 		gen: 2,
 	},
 	ballbunny2: { //designed NU/ZU. Yuki Usagi.
@@ -19247,7 +19247,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		prevo: "Tanisu",
 		evoLevel: 28,
 		evos: ["Tanking"],
-		eggGroups: ["Water1", "Monster"],
+		eggGroups: ["Water 1", "Monster"],
 		gen: 2,
 	},
 	mimime: { //Masquerain counterpart. Bulky at the cost of offense and speed.
@@ -19256,12 +19256,12 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Bug", "Flying"],
 		baseStats: {hp: 70, atk: 60, def: 120, spa: 92, spd: 82, spe: 80},
 		abilities: {0: "Intimidate", 1: "Pressure", H: "Unnerve"},
-		heightm: 1.3,
-		weightkg: 79.4,
+		heightm: 0.5,
+		weightkg: 9.4,
 		color: "Brown",
 		//prevo: "Surskit",
 		//evoLevel: 39,
-		eggGroups: ["Water1", "Monster"],
+		eggGroups: ["Bug", "Water 1"],
 		gen: 3,
 	},
 	syclar: {
