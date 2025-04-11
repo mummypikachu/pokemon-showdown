@@ -19222,11 +19222,11 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Field"],
 		gen: 3,
 	},
-	ball1: { //literal snowball. name placeholder.
+	snobal: { //literal snowball. THIS SHOULD ONLY LEARN ICE BALL DEFENSE CURL SNOWSCAPE!
 		num: 1537,
-		name: "ball1",
+		name: "Snobal",
 		types: ["Ice"],
-		baseStats: {hp: 30, atk: 32, def: 40, spa: 50, spd: 63, spe: 40},
+		baseStats: {hp: 30, atk: 52, def: 40, spa: 30, spd: 63, spe: 40},
 		abilities: {0: "Ice Body", 1: "Pickup", H: "Quick Feet"},
 		heightm: 0.3,
 		weightkg: 8.3,
@@ -19235,9 +19235,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Field"],
 		gen: 2,
 	},
-	ballbunny2: { //designed NU/ZU. Yuki Usagi. Name placeholder.
+	bunnicy: { //designed NU/ZU. Yuki Usagi. Name placeholder. Actual movepool.
 		num: 1538,
-		name: "ballbunny2",
+		name: "bunnicy",
 		types: ["Ice", "Grass"],
 		baseStats: {hp: 60, atk: 72, def: 70, spa: 90, spd: 63, spe: 101},
 		abilities: {0: "Ice Body", 1: "Harvest", H: "Quick Feet"},
