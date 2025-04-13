@@ -19284,9 +19284,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Field"],
 		gen: 2,
 	},
-	paotsu: { // name not final at all. Zangoose-like. Counterpart 1543
+	jaggro: { // Zangoose-like. Counterpart 1543. Paotsu
 		num: 1542,
-		name: "Paotsu",
+		name: "Jaggro",
 		types: ["Normal"],
 		baseStats: {hp: 90, atk: 102, def: 70, spa: 81, spd: 102, spe: 110},
 		abilities: {0: "Limber", 1: "Intimidate", H: "Run Away"},
@@ -19296,9 +19296,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Field"],
 		gen: 3,
 	},
-	suiba: { // Name not final. sort of fluid-y steel quadruped. Counterpart 1542
+	ferrasteel: { // sort of fluid-y steel quadruped. Counterpart 1542. Suiba
 		num: 1543,
-		name: "Suiba",
+		name: "Ferrasteel",
 		types: ["Steel"],
 		baseStats: {hp: 90, atk: 102, def: 102, spa: 81, spd: 70, spe: 110},
 		abilities: {0: "Limber", 1: "Defiant", H: "Gooey"},
@@ -19308,9 +19308,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Field"],
 		gen: 3,
 	},
-	wisp: { //hitodama followed-ghost. NAME OBVIOUSLY NOT FINAL.
+	essorism: { // Followed by little wisps. Orb-as-ability mon.
 		num: 1544,
-		name: "Wisp",
+		name: "Essorism",
 		types: ["Ghost"],
 		baseStats: {hp: 84, atk: 24, def: 114, spa: 34, spd: 114, spe: 74},
 		abilities: {0: "Wisped", 1: "Ill Curse", H: "Healer"},
