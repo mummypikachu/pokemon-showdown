@@ -344,7 +344,16 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	ballfetch: { //to adapt
 		name: "Ball Fetch",
-		rating: 0,
+		onTryHit(target, source, move) {
+			if (target !== source && move.flags['bullet']) {
+				if (!this.boost({spe: 1})) {
+					this.add('-immune', target, '[from] ability: Ball Fetch');
+				}
+				return null;
+			}
+		},
+		isBreakable: true,
+		rating: 3,
 		num: 237,
 	},
 	battery: {

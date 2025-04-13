@@ -147,7 +147,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	ballfetch: {
 		name: "Ball Fetch",
-		shortDesc: "No competitive use.",
+		shortDesc: "Immune to Bullet moves. Raises speed by 1 if hit by a Bullet move.",
 	},
 	barriershield: {
 		name: "Barrier Shield",
