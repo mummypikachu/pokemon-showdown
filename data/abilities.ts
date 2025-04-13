@@ -342,7 +342,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 1.5,
 		num: 123,
 	},
-	ballfetch: {
+	ballfetch: { //to adapt
 		name: "Ball Fetch",
 		rating: 0,
 		num: 237,
