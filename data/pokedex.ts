@@ -19320,13 +19320,13 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Amorphous"],
 		gen: 2,
 	},
-	p1545: { //Placeholder to fill 1545
-		num: 1543,
-		name: "Pyreox",
+	hakogame: { // Present Turtle. Placeholder name!
+		num: 1545,
+		name: "Hakogame",
 		types: ["Normal"],
-		baseStats: {hp: 70, atk: 72, def: 70, spa: 110, spd: 82, spe: 81},
+		baseStats: {hp: 70, atk: 70, def: 140, spa: 70, spd: 122, spe: 81},
 		abilities: {0: "Pickup", 1: "Shell Armor", H: "Snow Warning"},
-		heightm: 0.5,
+		heightm: 0.4,
 		weightkg: 34.2,
 		color: "Grey",
 		eggGroups: ["Field"],
