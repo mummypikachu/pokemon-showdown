@@ -19284,6 +19284,18 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Field"],
 		gen: 2,
 	},
+	wisp: { //hitodama followed-ghost. NAME OBVIOUSLY NOT FINAL.
+		num: 1544,
+		name: "Wisp",
+		types: ["Ghost"],
+		baseStats: {hp: 84, atk: 24, def: 114, spa: 34, spd: 114, spe: 74},
+		abilities: {0: "Wisped", 1: "Ill Curse", H: "Healer"},
+		heightm: 0.4,
+		weightkg: 4.4,
+		color: "White",
+		eggGroups: ["Amorphous"],
+		gen: 2,
+	},
 	syclar: {
 		num: -1,
 		name: "Syclar",

@@ -2156,6 +2156,14 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Tinted Lens",
 		shortDesc: "This Pokemon's attacks that are not very effective on a target deal double damage.",
 	},
+	wisped: {
+		name: "Wisped",
+		shortDesc: "At the end of every turn, this Pokémon tries to Burn itself.",
+	},
+	illcurse: {
+		name: "Ill Curse",
+		shortDesc: "At the end of every turn, this Pokémon tries to badly Poison itself.",
+	},
 	torrent: {
 		name: "Torrent",
 		desc: "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its offensive stat is multiplied by 1.5 while using a Water-type attack.",

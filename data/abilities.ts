@@ -6626,4 +6626,24 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 4.5,
 		num: 281, // Unique identifier for the ability
 	},
+	wisped: {
+		name: "Wisped",
+		onResidualOrder: 28,
+		onResidualSubOrder: 3,
+		onResidual(pokemon) {
+			pokemon.trySetStatus('brn', pokemon);
+		},
+		rating: -1,
+		num: 279,
+	},
+	illcurse: {
+		name: "Ill Curse",
+		onResidualOrder: 28,
+		onResidualSubOrder: 3,
+		onResidual(pokemon) {
+			pokemon.trySetStatus('tox', pokemon);
+		},
+		rating: -1,
+		num: 279,
+	},
 };
