@@ -19259,7 +19259,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Bug", "Water 1"],
 		gen: 3,
 	},
-	vertebrawn: { //Skeleton
+	vertebrawn: { //Skeleton.
 		num: 1540,
 		name: "Vertebrawn",
 		gender: "N",
@@ -19321,6 +19321,18 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		gen: 2,
 	},
 	hakogame: { // Present Turtle. Placeholder name!
+		num: 1545,
+		name: "Hakogame",
+		types: ["Normal"],
+		baseStats: {hp: 85, atk: 40, def: 140, spa: 60, spd: 122, spe: 31},
+		abilities: {0: "Shell Armor", 1: "Magic Guard", H: "Snow Warning"},
+		heightm: 0.4,
+		weightkg: 34.2,
+		color: "Grey",
+		eggGroups: ["Field"],
+		gen: 3,
+	},
+	p1547: { // Present Turtle. Placeholder name!
 		num: 1545,
 		name: "Hakogame",
 		types: ["Normal"],
