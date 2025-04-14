@@ -93294,6 +93294,13 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			irontail: ["9M"],
 		},
 	},
+	mimime: {
+		learnset: {
+			quiverdance: ["9M"],
+			glare: ["9M"],
+			hurricane: ["9M"],
+		},
+	},
 	snobal: {
 		learnset: {
 			iceball: ["9M"],
