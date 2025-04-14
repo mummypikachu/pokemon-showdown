@@ -19356,6 +19356,20 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Field"],
 		gen: 3,
 	},
+	//fill 1548 to 1554 here
+	kimairan: { // giratina clone for now
+		num: 1555,
+		name: "Kimairan",
+		types: ["Normal"],
+		baseStats: {hp: 150, atk: 100, def: 120, spa: 100, spd: 120, spe: 90},
+		abilities: {0: "Pressure", H: "Telepathy"},
+		heightm: 4.5,
+		weightkg: 750,
+		color: "Black",
+		eggGroups: ["Undiscovered"],
+		tags: ["Restricted Legendary"],
+		gen: 3,
+	},
 	syclar: {
 		num: -1,
 		name: "Syclar",
