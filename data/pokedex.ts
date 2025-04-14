@@ -19356,7 +19356,19 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Field"],
 		gen: 3,
 	},
-	//fill 1548 to 1554 here
+	//fill 1548 to 1553 here
+	lizargun: { // sableye evo as seperate pokemon. we are NOT giving sableye a evo. EXTREMELY PLACEHOLDER NAME
+		num: 1547,
+		name: "Lizargun",
+		types: ["Dark", "Ghost"],
+		baseStats: {hp: 95, atk: 79, def: 95, spa: 65, spd: 95, spe: 21},
+		abilities: {0: "Pickpocket", 1: "Stall", H: "Magician"},
+		heightm: 0.4,
+		weightkg: 12.4,
+		color: "Purple",
+		eggGroups: ["Field"],
+		gen: 4,
+	},
 	kimairan: { // UBER. "Exiled Pokémon". Do not change name.
 		num: 1555,
 		name: "Kimairan",
