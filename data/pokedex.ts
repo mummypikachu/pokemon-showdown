@@ -19357,18 +19357,18 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		gen: 3,
 	},
 	//fill 1548 to 1554 here
-	kimairan: { // giratina clone for now
+	kimairan: { // UBER. "Exiled Pokémon". Do not change name.
 		num: 1555,
 		name: "Kimairan",
-		types: ["Normal"],
-		baseStats: {hp: 150, atk: 100, def: 120, spa: 100, spd: 120, spe: 90},
+		types: ["Dragon", "Flying"], // Undecided
+		baseStats: {hp: 140, atk: 120, def: 120, spa: 90, spd: 130, spe: 80},
 		abilities: {0: "Pressure", H: "Telepathy"},
-		heightm: 4.5,
-		weightkg: 750,
-		color: "Black",
+		heightm: 3.5,
+		weightkg: 550,
+		color: "Brown",
 		eggGroups: ["Undiscovered"],
 		tags: ["Restricted Legendary"],
-		gen: 3,
+		gen: 4,
 	},
 	syclar: {
 		num: -1,
