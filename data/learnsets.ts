@@ -93422,6 +93422,69 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			uturn: ["9M"],
 		},
 	},
+	kurumi: {
+		learnset: {
+			flamethrower: ["9M"],
+			curse: ["9M"],
+			pinmissile: ["9M"],
+		},
+	},
+	chamin: {
+		learnset: {
+			wish: ["9M"],
+			entrainment: ["9M"],
+			attract: ["9M"],
+		},
+	},
+	uezari: {
+		learnset: {
+			wish: ["9M"],
+			calmmind: ["9M"],
+			moonblast: ["9M"],
+		},
+	},
+	chilleti: {
+		learnset: {
+			crunch: ["9M"],
+			icefang: ["9M"],
+			blizzard: ["9M"],
+		},
+	},
+	toroika: {
+		learnset: {
+			rapidspin: ["9M"],
+			octazooka: ["9M"],
+			bounce: ["9M"],
+		},
+	},
+	komari: {
+		learnset: {
+			perishsong: ["9M"],
+			uproar: ["9M"],
+			healbell: ["9M"],
+		},
+	},
+	facethief: {
+		learnset: {
+			thief: ["9M"],
+			powergem: ["9M"],
+			willowisp: ["9M"],
+		},
+	},
+	kimairan: {
+		learnset: {
+			earthquake: ["9M"],
+			hurricane: ["9M"],
+			steelwing: ["9M"],
+		},
+	},
+	lighli: {
+		learnset: {
+			dracometeor: ["9M"],
+			extremespeed: ["9M"],
+			coil: ["9M"],
+		},
+	},
 	archaludon: {
 		learnset: {
 			aurasphere: ["9M"],
