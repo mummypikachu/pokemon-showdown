@@ -10453,7 +10453,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Flying", "Water 3"],
 	},
 	archeopsmega: {
-		num: 569,
+		num: 567,
 		name: "Archeops-Mega",
 		baseSpecies: "Archeops",
 		forme: "Mega",
