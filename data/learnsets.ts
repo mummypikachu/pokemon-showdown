@@ -93366,6 +93366,55 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			weatherball: ["9L50", "9M", "9E", "9E", "5E", "5D", "4E"],
 		},
 	},
+	pyreox: {
+		learnset: {
+			flamthrower: ["9M"],
+			firecharge: ["9M"],
+			facade: ["9M"],
+		},
+	},
+	vertebrawn: {
+		learnset: {
+			shadowbone: ["9M"],
+			bonemerang: ["9M"],
+			boneclub: ["9M"],
+		},
+	},
+	essorism: {
+		learnset: {
+			psychoshift: ["9M"],
+			entrainment: ["9M"],
+			skillswap: ["9M"],
+		},
+	},
+	jaggro: {
+		learnset: {
+			crushclaw: ["9M"],
+			swordsdance: ["9M"],
+			dynamicpunch: ["9M"],
+		},
+	},
+	ferrasteel: {
+		learnset: {
+			heavyslam: ["9M"],
+			irondefense: ["9M"],
+			bodypress: ["9M"],
+		},
+	},
+	monorabi: {
+		learnset: {
+			yawn: ["9M"],
+			dig: ["9M"],
+			bounce: ["9M"],
+		},
+	},
+	ubausagi: {
+		learnset: {
+			populationbomb: ["9M"],
+			milkdrink: ["9M"],
+			uturn: ["9M"],
+		},
+	},
 	archaludon: {
 		learnset: {
 			aurasphere: ["9M"],
