@@ -19356,13 +19356,24 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Field"],
 		gen: 3,
 	},
-	//fill 1548
-	chamin: { // placeholdername not happiny. evolves to uezari. lc, bad normal type. Baby.
+	bulbasaur: { // not happiny. evolves to uezari. lc, bad normal type. Baby. Keeps early name.
+		num: 1548,
+		name: "Lighli",
+		types: ["Dragon"],
+		baseStats: {hp: 45, atk: 25, def: 35, spa: 55, spd: 35, spe: 15},
+		abilities: {0: "Cute Charm", H: "Healer"},
+		heightm: 0.2,
+		weightkg: 4.6,
+		color: "Pink",
+		eggGroups: ["Undiscovered"],
+		gen: 3,
+	},
+	chamin: { // not happiny. evolves to uezari. lc, bad normal type. Baby. Keeps early name.
 		num: 1549,
 		name: "Chamin",
 		types: ["Normal"],
 		baseStats: {hp: 45, atk: 25, def: 35, spa: 55, spd: 35, spe: 15},
-		abilities: {0: "Cute Charm", H: "Run Away"},
+		abilities: {0: "Cute Charm", H: "Healer"},
 		heightm: 0.2,
 		weightkg: 4.6,
 		color: "Pink",
@@ -19371,7 +19382,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	},
 	uezari: { // placeholdername moonfairy not clefairy
 		num: 1550,
-		name: "Komari",
+		name: "Uezari",
 		types: ["Fairy"],
 		baseStats: {hp: 85, atk: 55, def: 75, spa: 95, spd: 115, spe: 70},
 		abilities: {0: "Clear Body", H: "Magic Bounce"},
@@ -19381,7 +19392,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Human-Like"],
 		gen: 3,
 	},
-	chilleti: { // yeti with feet mouth. placeholdername
+	chilleti: { // yeti with feet mouth. boyatto
 		num: 1551,
 		name: "Chilleti",
 		types: ["Ice"],
@@ -19393,7 +19404,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Monster", "Human-Like"],
 		gen: 3,
 	},
-	toroika: { // squid top with suns on it? placeholdername
+	toroika: { // squid top with suns on it? Keeps early name.
 		num: 1552,
 		name: "Toroika",
 		types: ["Water"],
@@ -19417,9 +19428,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Mineral"],
 		gen: 3,
 	},
-	lizargun: { // sableye evo as seperate pokemon. we are NOT giving sableye a evo. EXTREMELY PLACEHOLDER NAME
+	facethief: { // sableye evo as seperate pokemon. we are NOT giving sableye a evo.
 		num: 1554,
-		name: "Lizargun",
+		name: "Facethief",
 		types: ["Dark", "Ghost"],
 		baseStats: {hp: 105, atk: 79, def: 95, spa: 65, spd: 95, spe: 21},
 		abilities: {0: "Pickpocket", 1: "Stall", H: "Magician"},
@@ -19432,7 +19443,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	kimairan: { // UBER. "Exiled Pokémon". Do not change name.
 		num: 1555,
 		name: "Kimairan",
-		types: ["Dragon", "Flying"], // Undecided
+		types: ["Ground", "Flying"],
 		baseStats: {hp: 140, atk: 120, def: 120, spa: 90, spd: 130, spe: 80},
 		abilities: {0: "Pressure", H: "Telepathy"},
 		heightm: 3.5,
@@ -19441,6 +19452,19 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Undiscovered"],
 		tags: ["Restricted Legendary"],
 		gen: 4,
+	},
+	lighli: { // not happiny. evolves to uezari. lc, bad normal type. Baby. Keeps early name.
+		num: 1556,
+		name: "Lighli",
+		types: ["Dragon", "Flying"],
+		baseStats: {hp: 45, atk: 25, def: 35, spa: 55, spd: 35, spe: 15},
+		abilities: {0: "Pressure", H: "Cloud Nine"},
+		heightm: 0.2,
+		weightkg: 4.6,
+		color: "White",
+		eggGroups: ["Undiscovered"],
+		tags: ["Restricted Legendary"],
+		gen: 3,
 	},
 	syclar: {
 		num: -1,
