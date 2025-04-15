@@ -5436,6 +5436,34 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "PU",
 		doublesTier: "(DUU)",
 	},
+	snobal: {
+		tier: "LC",
+		natDexTier: "LC",
+	},
+	bunnicy: {
+		tier: "PU",
+		doublesTier: "DOU",
+		natDexTier: "RU",
+	},
+	monorabi: {
+		tier: "LC",
+		natDexTier: "LC",
+	},
+	ubausagi: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "RU",
+	},
+	kimairan: {
+		tier: "Uber",
+		doublesTier: "DOU",
+		natDexTier: "Uber",
+	},
+	lighli: {
+		tier: "Uber",
+		doublesTier: "DOU",
+		natDexTier: "Uber",
+	},
 	klangexcir: {
 		tier: "NFE",
 		natDexTier: "NFE",
