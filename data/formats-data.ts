@@ -5436,6 +5436,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "PU",
 		doublesTier: "(DUU)",
 	},
+	mimime: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "RU",
+	},
 	snobal: {
 		tier: "LC",
 		natDexTier: "LC",
