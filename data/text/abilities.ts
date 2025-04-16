@@ -147,7 +147,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	ballfetch: {
 		name: "Ball Fetch",
-		shortDesc: "No competitive use.",
+		shortDesc: "Immune to Bullet moves. Raises speed by 1 if hit by a Bullet move.",
 	},
 	barriershield: {
 		name: "Barrier Shield",
@@ -2155,6 +2155,14 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	tintedlens: {
 		name: "Tinted Lens",
 		shortDesc: "This Pokemon's attacks that are not very effective on a target deal double damage.",
+	},
+	wisped: {
+		name: "Wisped",
+		shortDesc: "At the end of every turn, this Pokémon tries to Burn itself.",
+	},
+	illcurse: {
+		name: "Ill Curse",
+		shortDesc: "At the end of every turn, this Pokémon tries to badly Poison itself.",
 	},
 	torrent: {
 		name: "Torrent",

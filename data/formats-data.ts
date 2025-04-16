@@ -5426,7 +5426,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "NU",
 		doublesTier: "DOU",
 	},
-	ribura: {
+	kolibrary: {
 		tier: "OU",
 		natDexTier: "OU",
 		doublesTier: "DOU",
@@ -5435,6 +5435,39 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "PU",
 		natDexTier: "PU",
 		doublesTier: "(DUU)",
+	},
+	mimime: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "RU",
+	},
+	snobal: {
+		tier: "LC",
+		natDexTier: "LC",
+	},
+	bunnicy: {
+		tier: "PU",
+		doublesTier: "DOU",
+		natDexTier: "RU",
+	},
+	monorabi: {
+		tier: "LC",
+		natDexTier: "LC",
+	},
+	ubausagi: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "RU",
+	},
+	kimairan: {
+		tier: "Uber",
+		doublesTier: "DOU",
+		natDexTier: "Uber",
+	},
+	lighli: {
+		tier: "Uber",
+		doublesTier: "DOU",
+		natDexTier: "Uber",
 	},
 	klangexcir: {
 		tier: "NFE",

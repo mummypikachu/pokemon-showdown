@@ -342,9 +342,18 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 1.5,
 		num: 123,
 	},
-	ballfetch: {
+	ballfetch: { //to adapt
 		name: "Ball Fetch",
-		rating: 0,
+		onTryHit(target, source, move) {
+			if (target !== source && move.flags['bullet']) {
+				if (!this.boost({spe: 1})) {
+					this.add('-immune', target, '[from] ability: Ball Fetch');
+				}
+				return null;
+			}
+		},
+		isBreakable: true,
+		rating: 3,
 		num: 237,
 	},
 	battery: {
@@ -6625,5 +6634,25 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		rating: 4.5,
 		num: 281, // Unique identifier for the ability
+	},
+	wisped: {
+		name: "Wisped",
+		onResidualOrder: 28,
+		onResidualSubOrder: 3,
+		onResidual(pokemon) {
+			pokemon.trySetStatus('brn', pokemon);
+		},
+		rating: -1,
+		num: 279,
+	},
+	illcurse: {
+		name: "Ill Curse",
+		onResidualOrder: 28,
+		onResidualSubOrder: 3,
+		onResidual(pokemon) {
+			pokemon.trySetStatus('tox', pokemon);
+		},
+		rating: -1,
+		num: 279,
 	},
 };
