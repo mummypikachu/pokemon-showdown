@@ -5431,9 +5431,19 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "OU",
 		doublesTier: "DOU",
 	},
+	shabo: {
+		tier: "OU",
+		natDexTier: "OU",
+		doublesTier: "DOU",
+	},
 	bounspike: {
 		tier: "PU",
 		natDexTier: "PU",
+		doublesTier: "(DUU)",
+	},
+	hakogame: {
+		tier: "UU",
+		natDexTier: "UU",
 		doublesTier: "(DUU)",
 	},
 	mimime: {
