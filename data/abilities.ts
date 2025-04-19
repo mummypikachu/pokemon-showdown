@@ -342,7 +342,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 1.5,
 		num: 123,
 	},
-	ballfetch: { //to adapt
+	ballfetch: {
 		name: "Ball Fetch",
 		onTryHit(target, source, move) {
 			if (target !== source && move.flags['bullet']) {
