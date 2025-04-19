@@ -8293,7 +8293,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 24.6,
 		color: "Blue",
 		eggGroups: ["Water 2"],
-		requiredItem: "Luminite", //item does not exist yet
+		requiredItem: "Luminite",
 	}, 
 	mantyke: {
 		num: 458,
@@ -10459,14 +10459,14 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		forme: "Mega",
 		types: ["Rock", "Flying"],
 		genderRatio: {M: 0.875, F: 0.125},
-		baseStats: {hp: 75, atk: 140, def: 65, spa: 112, spd: 65, spe: 110},
+		baseStats: {hp: 75, atk: 165, def: 105, spa: 100, spd: 105, spe: 117},
 		abilities: {0: "Defeatist"},
 		heightm: 1.4,
 		weightkg: 32,
 		color: "Yellow",
 		eggGroups: ["Flying", "Water 3"],
 		changesFrom: "Archeops",
-		requiredItem: "Garbodite", //placeholder
+		requiredItem: "Archeopsite",
 	},
 	trubbish: {
 		num: 568,

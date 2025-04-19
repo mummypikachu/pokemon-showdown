@@ -3052,6 +3052,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 		saDexTier: "OU",
 	},
+	archeopsmega: {
+		tier: "OU",
+		natDexTier: "OU",
+		saDexTier: "OU",
+	},
 	trubbish: {
 		tier: "LC",
 		natDexTier: "LC",
