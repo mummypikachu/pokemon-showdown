@@ -6212,7 +6212,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 82,
 		color: "Green",
 		eggGroups: ["Bug", "Dragon"],
-		requiredItem: "Cameruptite",
+		requiredItem: "Cameruptite", //placeholder
 	},
 	cacnea: {
 		num: 331,
