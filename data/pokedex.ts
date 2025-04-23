@@ -6654,7 +6654,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		num: 357,
 		name: "Tropius",
 		types: ["Grass", "Flying"],
-		baseStats: {hp: 99, atk: 68, def: 83, spa: 72, spd: 87, spe: 51},
+		baseStats: {hp: 99, atk: 68, def: 93, spa: 92, spd: 97, spe: 61},
 		abilities: {0: "Chlorophyll", 1: "Solar Power", H: "Harvest"},
 		heightm: 2,
 		weightkg: 100,

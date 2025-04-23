@@ -4214,6 +4214,55 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Normal",
 	},
+	update: {
+		num: 30302,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Update",
+		pp: 10,
+		priority: -1,
+		flags: {snatch: 1},
+		onTryImmunity(target) {
+			// Truant and Download have special treatment; they fail before
+			// checking accuracy and will double Stomping Tantrum's BP
+			if (target.ability === 'truant' || target.ability === 'download') {
+				return false;
+			}
+		},
+		onTryHit(target) {
+			if (target.getAbility().isPermanent) {
+				return false;
+			}
+		},
+		onHit(pokemon) {
+			const oldAbility = pokemon.setAbility('download');
+			if (oldAbility) {
+				this.add('-ability', pokemon, 'Download', '[from] move: Update');
+				if (pokemon.status === 'slp') {
+					pokemon.cureStatus();
+				}
+				return;
+			}
+			return oldAbility as false | null;
+		},
+		onHit(target, pokemon, move) {
+			if (pokemon.baseSpecies.baseSpecies === 'Meloetta' && !pokemon.transformed) {
+				move.willChangeForme = true;
+			}
+		},
+		onAfterMoveSecondarySelf(pokemon, target, move) {
+			if (move.willChangeForme) {
+				const porygonupdate = pokemon.species.id === 'porygon2' ? '' : '-Fixed';
+				pokemon.formeChange('Porygon-Z' + porygonupdate, this.effect, false, '[msg]');
+			}
+		},
+		secondary: null,
+		target: "self",
+		type: "Electric",
+		zMove: {boost: {spe: 1}},
+		contestType: "Clever",
+	},
 	doubleedge: {
 		num: 38,
 		accuracy: 100,

@@ -7267,6 +7267,11 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Causes the user's Ability to become Effect Spore. Fails if the user's Ability is As One, Battle Bond, Comatose, Commander, Disguise, Gulp Missile, Hadron Engine, Ice Face, Effect Spore, Multitype, Orichalcum Pulse, Power Construct, Protosynthesis, Quark Drive, RKS System, Schooling, Shields Down, Stance Change, Truant, Zen Mode, or Zero to Hero.",
 		shortDesc: "The user's Ability becomes Effect Spore.",
 	},
+	update: {
+		name: "Update",
+		desc: "Causes the user's Ability to become Download. Fails if the user's Ability is As One, Battle Bond, Comatose, Commander, Disguise, Gulp Missile, Hadron Engine, Ice Face, Download, Multitype, Orichalcum Pulse, Power Construct, Protosynthesis, Quark Drive, RKS System, Schooling, Shields Down, Stance Change, Truant, Zen Mode, or Zero to Hero.",
+		shortDesc: "User's Ability becomes Download, transforms Porygon-Z to Porygon2.",
+	},
 	twinbeam: {
 		name: "Twin Beam",
 		desc: "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit.",
