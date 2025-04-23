@@ -21863,6 +21863,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			frustration: ["9M", "9V", "9M", "5M", "4M", "3M"],
 			gigaimpact: ["9M", "9L60", "9M", "9L81", "9M", "6L81", "5M", "5L81", "4M", "4L73"],
 			headbutt: ["9V", "9V", "9T"],
+			headsmash: ["9V", "9V", "9T"],
 			heatwave: ["9M", "9T", "6T", "5T", "9T"],
 			hiddenpower: ["9M", "9V", "9M", "5M", "4M", "3M"],
 			honeclaws: ["9M", "5M"],
