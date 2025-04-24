@@ -1997,7 +1997,9 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	supernova: {
 		name: "Supernova",
-		shortDesc: "PLACEHOLDER, CURRENTLY NO COMPETITIVE USE. (SUPERLUCKCLONE)",
+		shortDesc: "If the user is KOed by any damaging move, that move's user loses 1/2 of its max HP.",
+
+		damage: "  [POKEMON] was blown up on!",
 	},
 	supersweetsyrup: {
 		name: "Supersweet Syrup",
@@ -2441,7 +2443,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Zero to Hero",
 		shortDesc: "If this Pokemon is a Palafin in Zero Form, switching out has it change to Hero Form.",
 
-		activate: "  [POKEMON] underwent a heroic transformation! (Its time to palafin all over the place)",
+		activate: "  [POKEMON] underwent a heroic transformation! (It's time to hero up!)",
 	},
 	selfsufficient: {
 		name: "Self Sufficient",
@@ -2514,7 +2516,13 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	brittlecoral: { // corsola. do not hand out to another pokemon. Reskin this ability at best if you REALLY need it.
 		name: "Brittle Coral",
-		shortDesc: "If this Pokemon is hit by a physical attack, Stealth Rock is set on the opposing side.",
+		shortDesc: "If this Pokemon is hit by a phys. attack, Stealth Rock is set on the opposing side.",
+	},
+	timemanipulation: { // Altered Forme Dialga. do not hand out to another pokemon.
+		name: "Time Manipulation",
+		shortDesc: "User's two-turn moves complete in one turn (except Sky Drop).",
+
+		end: "  [POKEMON] warped time and allowed its move to fire early!",
 	},
 };
 

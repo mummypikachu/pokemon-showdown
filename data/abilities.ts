@@ -5405,7 +5405,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onDamagingHitOrder: 1,
 		onDamagingHit(damage, target, source, move) {
 			if (!target.hp) {
-				this.damage(source.baseMaxhp * 0.25, source, target);
+				this.damage(source.baseMaxhp * 0.5, source, target);
 			}
 		},
 		rating: 2,
@@ -6655,4 +6655,17 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: -1,
 		num: 279,
 	},
+	timemanipulation: { //needs testing
+		name: "Time Manipulation",
+		onChargeMove(pokemon, target, move) {
+			if (pokemon.useItem()) {
+				this.debug('power herb - remove charge turn for ' + move.id);
+				this.attrLastMove('[still]');
+				this.addMove('-anim', pokemon, move.name, target);
+				return false; // skip charge turn
+			}
+		},
+			rating: -1,
+			num: 279,
+		},
 };

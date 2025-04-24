@@ -8778,7 +8778,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Steel", "Dragon"],
 		gender: "N",
 		baseStats: {hp: 100, atk: 120, def: 120, spa: 150, spd: 100, spe: 90},
-		abilities: {0: "Pressure", H: "Telepathy"},
+		abilities: {0: "Pressure", H: "Time Manipulation"},
 		heightm: 5.4,
 		weightkg: 683,
 		tags: ["Restricted Legendary"],
