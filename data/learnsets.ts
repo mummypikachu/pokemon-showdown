@@ -93902,6 +93902,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			doubleedge: ["9M"],
 			megakick: ["9M"],
 			doublekick: ["9M"],
+			meteorbeam: ["9M"],
 		},
 	},
 	monorabi: {
