@@ -1,5 +1,3 @@
-import { chatlogreader } from "../config/config-example";
-
 export const Learnsets: {[k: string]: LearnsetData} = {
 	missingno: {
 		learnset: {
