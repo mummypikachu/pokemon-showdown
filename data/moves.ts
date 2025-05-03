@@ -4200,7 +4200,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	dorminrush: {
 		num: 918,
-		accuracy: 100,
+		accuracy: 70,
 		basePower: 50,
 		category: "Physical",
 		name: "Dormin Rush",
