@@ -93811,6 +93811,9 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			echoedvoice: ["9M"],
 			taunt: ["9M"],
 			leer: ["9M"],
+			hydropump: ["9M"],
+			sheercold: ["9M"],
+			bubble: ["9M"],
 		},
 	},
 	jaggro: {
@@ -94406,6 +94409,9 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			calmmind: ["9M"],
 			firespin: ["9M"],
 			aircutter: ["9M"],
+			hydropump: ["9M"],
+			scaleshot: ["9M"],
+			dragonpulse: ["9M"],
 		},
 	},
 	shiomagune: {
