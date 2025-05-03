@@ -7270,7 +7270,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	update: {
 		name: "Update",
 		desc: "Causes the user's Ability to become Download. Fails if the user's Ability is As One, Battle Bond, Comatose, Commander, Disguise, Gulp Missile, Hadron Engine, Ice Face, Download, Multitype, Orichalcum Pulse, Power Construct, Protosynthesis, Quark Drive, RKS System, Schooling, Shields Down, Stance Change, Truant, Zen Mode, or Zero to Hero.",
-		shortDesc: "User's Ability becomes Download, transforms Porygon-Z to Porygon2.",
+		shortDesc: "User's Ability becomes Download.",
 	},
 	twinbeam: {
 		name: "Twin Beam",
