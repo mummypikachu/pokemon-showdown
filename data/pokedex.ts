@@ -19506,9 +19506,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Water 1", "Mineral"],
 		gen: 3,
 	},
-	shroomish2: { // happy shroomish conv. do not give Spore. name more than obviously not final
+	shroomin: { // happy shroomish conv. do not give Spore. name: Shroomish but more on a playful tone.
 		num: 1558,
-		name: "Shroomish2",
+		name: "Shroomin",
 		types: ["Grass"],
 		baseStats: {hp: 60, atk: 40, def: 60, spa: 40, spd: 60, spe: 35},
 		abilities: {0: "Cute Charm", 1: "Chlorophyll", H: "Effect Spore"},
@@ -19528,7 +19528,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 0.2,
 		weightkg: 11,
 		color: "Green",
-		prevo: "Shroomish2",
+		prevo: "Shroomin",
 		evoLevel: 30,
 		eggGroups: ["Field"],
 		gen: 3,
