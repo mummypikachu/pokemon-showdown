@@ -6658,14 +6658,12 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	timemanipulation: { //needs testing
 		name: "Time Manipulation",
 		onChargeMove(pokemon, target, move) {
-			if (pokemon.useItem()) {
-				this.debug('power herb - remove charge turn for ' + move.id);
-				this.attrLastMove('[still]');
-				this.addMove('-anim', pokemon, move.name, target);
-				return false; // skip charge turn
-			}
-		},
-			rating: -1,
-			num: 279,
+            this.debug('power herb - remove charge turn for ' + move.id);
+            this.attrLastMove('[still]');
+            this.addMove('-anim', pokemon, move.name, target);
+            return false; // skip charge turn
+        },
+		rating: -1,
+		num: 279,
 		},
 };

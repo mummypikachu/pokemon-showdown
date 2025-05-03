@@ -1331,8 +1331,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	photosynthesis: {
 		name: "Photosynthesis",
-		desc: "If this User of this ability uses a charge move it automatically charged.",
-		shortDesc: "It the user uses a charge move it automatically charges.",
+		desc: "Charge moves used by this Pokémon skip the charge turn(except Sky Drop).",
+		shortDesc: "Charge moves skip their charge turn(except Sky Drop).",
 
 		end: "  [POKEMON] became fully charged due to Photosynthesis!",
 
@@ -2520,7 +2520,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	timemanipulation: { // Altered Forme Dialga. do not hand out to another pokemon.
 		name: "Time Manipulation",
-		shortDesc: "User's two-turn moves complete in one turn (except Sky Drop).",
+		desc: "Charge moves used by this Pokémon skip the charge turn(except Sky Drop).",
+		shortDesc: "Charge moves skip their charge turn(except Sky Drop).",
 
 		end: "  [POKEMON] warped time and allowed its move to fire early!",
 	},
