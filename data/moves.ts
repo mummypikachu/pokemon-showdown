@@ -4226,6 +4226,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		onTryImmunity(target) {
 			// Truant and Download have special treatment; they fail before
 			// checking accuracy and will double Stomping Tantrum's BP
+			// give this to computer based mons such as Silvally or Porygon.
 			if (target.ability === 'truant' || target.ability === 'download') {
 				return false;
 			}
