@@ -4246,17 +4246,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 			}
 			return oldAbility as false | null;
 		},
-		onHit(target, pokemon, move) {
-			if (pokemon.baseSpecies.baseSpecies === 'Meloetta' && !pokemon.transformed) {
-				move.willChangeForme = true;
-			}
-		},
-		onAfterMoveSecondarySelf(pokemon, target, move) {
-			if (move.willChangeForme) {
-				const porygonupdate = pokemon.species.id === 'porygon2' ? '' : '-Fixed';
-				pokemon.formeChange('Porygon-Z' + porygonupdate, this.effect, false, '[msg]');
-			}
-		},
 		secondary: null,
 		target: "self",
 		type: "Electric",
