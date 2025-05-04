@@ -19506,7 +19506,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Water 1", "Mineral"],
 		gen: 3,
 	},
-	shroomin: { // happy shroomish conv. do not give Spore. name: Shroomish but more on a playful tone.
+	shroomin: { // happy shroomish conv. do not give Spore. name: Shroomish but more on a playful tone :>
 		num: 1558,
 		name: "Shroomin",
 		types: ["Grass"],
@@ -19516,12 +19516,12 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 31,
 		color: "Yellow",
 		eggGroups: ["Field"],
-		evos: ["Furikusu"],
+		evos: ["Brawloom"],
 		gen: 3,
 	},
-	furikusu: { //bird breloom conv. name not final.
+	brawloom: { //bird breloom conv. name not final. Name: Brawl+Breloom
 		num: 1559,
-		name: "Furikusu",
+		name: "Brawloom",
 		types: ["Grass", "Fighting"],
 		baseStats: {hp: 75, atk: 130, def: 85, spa: 50, spd: 90, spe: 90},
 		abilities: {0: "Strong Jabs", 1: "Chlorophyll", H: "Effect Spore"},

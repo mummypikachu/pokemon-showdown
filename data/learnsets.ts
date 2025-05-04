@@ -94476,7 +94476,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			meanlook: ["9M"],
 		},
 	},
-	shroomish2: { //DO NOT GIVE SPORE, BRELOOM2 HAS 90 SPEED AND THIS LEARNS SPEED BOOSTING MOVES.
+	shroomin: { //DO NOT GIVE SPORE, BRELOOM2 HAS 90 SPEED AND THIS LEARNS SPEED BOOSTING MOVES.
 		learnset: {
 			sleeppowder: ["9M"],
 			bulletseed: ["9M"],
@@ -94524,7 +94524,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			weatherball: ["9M"],
 		},
 	},
-	breloom2: {
+	brawloom: {
 		learnset: {
 			machpunch: ["9M"],
 			poisonjab: ["9M"],
