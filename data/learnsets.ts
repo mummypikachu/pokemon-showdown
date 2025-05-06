@@ -84996,6 +84996,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			focusenergy: ["9M"],
 			gigaimpact: ["9M", "9L88", "9M", "9L88"],
 			guardswap: ["9M"],
+			guardstrike: ["9M"],
 			heavyslam: ["9M"],
 			helpinghand: ["9M", "9M"],
 			howl: ["9L1", "9L1"],

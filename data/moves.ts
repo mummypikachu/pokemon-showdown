@@ -8708,6 +8708,27 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Flying",
 		contestType: "Clever",
 	},
+	guardstrike: {
+		num: 23215,
+		accuracy: 100,
+		basePower: 70,
+		category: "Physical",
+		name: "Guard Strike",
+		pp: 25,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 20,
+			self: {
+				boosts: {
+					def: 1,
+				},
+			},
+		},
+		target: "normal",
+		type: "Fighting",
+		contestType: "Tough",
+	},
 	gyroball: {
 		num: 360,
 		accuracy: 100,

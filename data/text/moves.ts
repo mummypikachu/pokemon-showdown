@@ -2869,6 +2869,11 @@ export const MovesText: {[k: string]: MoveText} = {
 			shortDesc: "No additional effect.",
 		},
 	},
+	guardstrike: {
+		name: "Guard Strike",
+		desc: "Has a 20% chance to raise the user's Defense by 1 stage.",
+		shortDesc: "20% chance to raise the user's Defense by 1.",
+	},
 	gyroball: {
 		name: "Gyro Ball",
 		desc: "Power is equal to (25 * target's current Speed / user's current Speed) + 1, rounded down, but not more than 150. If the user's current Speed is 0, this move's power is 1.",
