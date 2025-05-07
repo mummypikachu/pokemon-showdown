@@ -983,6 +983,15 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3.5,
 		num: 235,
 	},
+	munchies: {
+		onStart(pokemon) {
+			this.boost({def: 1}, pokemon);
+			this.boost({spd: 1}, pokemon);
+			this.add('stockpile' + this.effectState.layers);
+		},
+		name: "Munchies",
+		rating: 3.5,
+	},
 	dazzling: {
 		onFoeTryMove(target, source, move) {
 			const targetAllExceptions = ['perishsong', 'flowershield', 'rototiller'];
@@ -6302,7 +6311,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onResidualSubOrder: 2,
 		onResidual(target, source, effect) {
 			if (target.status === 'slp') { // Check if the target is asleep
-				this.heal(target.baseMaxhp / 4); // Heal 1/4 of maximum HP
+				this.heal(target.baseMaxhp / 16); // Heal 1/16 of maximum HP
 				return false; // Prevent further damage calculations
 			}
 		},

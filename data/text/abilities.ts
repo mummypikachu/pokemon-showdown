@@ -644,6 +644,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "When this Pokemon is holding a Berry that usually activates with 1/4 or less of its maximum HP, it is eaten at 1/2 or less of its maximum HP instead.",
 		shortDesc: "This Pokemon eats Berries at 1/2 max HP or less instead of their usual 1/4 max HP.",
 	},
+	munchies: {
+		name: "Munchies",
+		desc: "Upon switch-in, the effect of the move Stockpile activates.",
+		shortDesc: "User uses Stockpile on switch-in.",
+	},
 	ghostlywail: {
 		name: "Ghostly Wail",
 		shortDesc: "The power of the user's Ghost-Type moves increase by 1.5x. Gains the Ghost type if hit.",
@@ -2367,8 +2372,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	wellrested: {
 		name: "Well Rested",
-		desc: "If this Pokemon is asleep, it restores 1/4 of its maximum HP, rounded down, at the end of each turn.",
-		shortDesc: "This Pokemon is healed by 1/4 of its max HP each turn when asleep",
+		desc: "If this Pokemon is asleep, it restores 1/16 of its maximum HP, rounded down, at the end of each turn.",
+		shortDesc: "This Pokemon is healed by 1/16 of its max HP each turn when asleep",
 	},
 	pureheart: {
 		name: "Pure Heart",

@@ -77878,6 +77878,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			rapidspin: ["9L11", "9L11"],
 			return: ["9M"],
 			reversal: ["9M"],
+			rest: ["9M"],
 			rockslide: ["9M", "9M"],
 			rocktomb: ["9M"],
 			rollout: ["9L1", "9L1"],
