@@ -2146,9 +2146,9 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	luvdisc: {
-		tier: "LC",
+		tier: "PU",
 		doublesTier: "(DUU)",
-		natDexTier: "LC",
+		natDexTier: "RU",
 	},
 	bagon: {
 		tier: "LC",
