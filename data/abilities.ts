@@ -1690,6 +1690,27 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
             let forme = null;
 
             // Check the effective weather
+			// Check the held weather rock
+            if (!forme) {
+                switch (pokemon.item) {
+                case 'heatrock':
+                    if (pokemon.species.id !== 'castformsunny') forme = 'Castform-Sunny';
+                    break;
+                case 'damprock':
+                    if (pokemon.species.id !== 'castformrainy') forme = 'Castform-Rainy';
+                    break;
+                case 'icyrock':
+                    if (pokemon.species.id !== 'castformsnowy') forme = 'Castform-Snowy';
+                    break;
+                case 'smoothrock':
+                    if (pokemon.species.id !== 'castformrocky') forme = 'Castform-Rocky';
+                    break;
+                default:
+                    if (pokemon.species.id !== 'castform') forme = 'Castform';
+                    break;
+                }
+            }
+			
             switch (pokemon.effectiveWeather()) {
             case 'sunnyday':
             case 'desolateland':
@@ -1709,27 +1730,6 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
             default:
                 if (pokemon.species.id !== 'castform') forme = 'Castform';
                 break;
-            }
-
-            // Check the held weather rock
-            if (!forme) {
-                switch (pokemon.item) {
-                case 'heatrock':
-                    if (pokemon.species.id !== 'castformsunny') forme = 'Castform-Sunny';
-                    break;
-                case 'damprock':
-                    if (pokemon.species.id !== 'castformrainy') forme = 'Castform-Rainy';
-                    break;
-                case 'icyrock':
-                    if (pokemon.species.id !== 'castformsnowy') forme = 'Castform-Snowy';
-                    break;
-                case 'smoothrock':
-                    if (pokemon.species.id !== 'castformrocky') forme = 'Castform-Rocky';
-                    break;
-                default:
-                    if (pokemon.species.id !== 'castform') forme = 'Castform';
-                    break;
-                }
             }
 
             // Change the form if necessary

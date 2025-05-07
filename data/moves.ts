@@ -1305,7 +1305,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	belch: {
 		num: 562,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 120,
 		category: "Special",
 		name: "Belch",
@@ -19359,23 +19359,15 @@ export const Moves: {[moveid: string]: MoveData} = {
 	spitup: {
 		num: 255,
 		accuracy: 100,
-		basePower: 80,
-		basePowerCallback(pokemon, target, move) {
-			let bp = move.basePower;
-			if (pokemon.volatiles['stockpile']) {
-				bp *= 2;
-			}
-			if (pokemon.ateBerry) {
-				bp *= 2;
-			}
-			this.debug("BP: " + bp);
-			return bp;
-		},
+		basePower: 120,
 		category: "Special",
 		name: "Spit Up",
 		pp: 10,
 		priority: 0,
 		flags: {protect: 1},
+		onDisableMove(pokemon) {
+			if (!pokemon.ateBerry) pokemon.disableMove('spitup');
+		},
 		secondary: null,
 		target: "normal",
 		type: "Normal",
@@ -20357,15 +20349,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 10,
 		priority: 0,
 		flags: {snatch: 1, heal: 1},
-		onTry(source) {
-			return !!source.volatiles['stockpile'];
-		},
+		heal: [1, 4],
 		onHit(pokemon) {
-			const healAmount = [0.25, 0.5, 1];
-			const success = !!this.heal(this.modify(pokemon.maxhp, healAmount[(pokemon.volatiles['stockpile'].layers - 1)]));
-			if (!success) this.add('-fail', pokemon, 'heal');
-			pokemon.removeVolatile('stockpile');
-			return success || this.NOT_FAIL;
+			if (pokemon.weighthg > 1) {
+				pokemon.weighthg = Math.max(1, pokemon.weighthg * 2);
+				this.add('-start', pokemon, 'Swallow');
+			}
 		},
 		secondary: null,
 		target: "self",
