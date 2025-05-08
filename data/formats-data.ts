@@ -4311,7 +4311,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	meltan: {
-		tier: "PU",
+		tier: "NU",
 		natDexTier: "RU",
 	},
 	melmetal: {
