@@ -5387,12 +5387,18 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	avaluggnoble: {
 		tier: "UU",
+		natDexTier: "UU",
+		doublesTier: "DOU",
 	},
 	lilligantnoble: {
 		tier: "OU",
+		natDexTier: "OU",
+		doublesTier: "DOU",
 	},
 	kleavornoble: {
 		tier: "OU",
+		natDexTier: "OU",
+		doublesTier: "DOU",
 	},
 	arcaninenoble: {
 		tier: "Uber",
@@ -5400,18 +5406,26 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	electrodenoble: {
 		tier: "OU",
+		natDexTier: "OU",
+		doublesTier: "DOU",
 	},
 	mossmy: {
 		tier: "LC",
+		natDexTier: "LC",
 	},
 	kodomin: {
 		tier: "OU",
+		natDexTier: "OU",
+		doublesTier: "DOU",
 	},
 	kotora: {
 		tier: "LC",
+		natDexTier: "LC",
 	},
 	raitora: {
 		tier: "OU",
+		natDexTier: "OU",
+		doublesTier: "DOU",
 	},
 	heamanbou: {
 		tier: "LC",
