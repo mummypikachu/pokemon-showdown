@@ -19368,7 +19368,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Spit Up",
 		pp: 10,
 		priority: 0,
-		flags: { protect: 1, metronome: 1 },
+		flags: { protect: 1},
 		onTry(source) {
 			return !!source.volatiles['stockpile'];
 		},
@@ -20355,7 +20355,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Swallow",
 		pp: 10,
 		priority: 0,
-		flags: { snatch: 1, heal: 1, metronome: 1 },
+		flags: { snatch: 1, heal: 1},
 		onTry(source, target, move) {
 			if (move.sourceEffect === 'snatch') return;
 			return !!source.volatiles['stockpile'];

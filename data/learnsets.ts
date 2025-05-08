@@ -22023,6 +22023,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			snore: ["9M", "9M", "6T", "5T", "9T"],
 			solarbeam: ["9M", "9M", "9M", "5M", "4M"],
 			stockpile: ["9L20", "9L28", "6L28", "5L28", "4L25"],
+			spitup: ["9L20", "9L28", "6L28", "5L28", "4L25"],
 			stompingtantrum: ["9M", "9M"],
 			strength: ["9M", "5M", "4M"],
 			substitute: ["9M", "9M", "9M", "5M", "4M", "4E"],
