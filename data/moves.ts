@@ -19359,14 +19359,21 @@ export const Moves: {[moveid: string]: MoveData} = {
 	spitup: {
 		num: 255,
 		accuracy: 100,
-		basePower: 120,
+		basePower: 0,
+		basePowerCallback(pokemon) {
+			if (!pokemon.volatiles['stockpile']?.layers) return false;
+			return pokemon.volatiles['stockpile'].layers * 100;
+		},
 		category: "Special",
 		name: "Spit Up",
 		pp: 10,
 		priority: 0,
-		flags: {protect: 1},
-		onDisableMove(pokemon) {
-			if (!pokemon.ateBerry) pokemon.disableMove('spitup');
+		flags: { protect: 1, metronome: 1 },
+		onTry(source) {
+			return !!source.volatiles['stockpile'];
+		},
+		onAfterMove(pokemon) {
+			pokemon.removeVolatile('stockpile');
 		},
 		secondary: null,
 		target: "normal",
@@ -20348,18 +20355,23 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Swallow",
 		pp: 10,
 		priority: 0,
-		flags: {snatch: 1, heal: 1},
-		heal: [1, 4],
+		flags: { snatch: 1, heal: 1, metronome: 1 },
+		onTry(source, target, move) {
+			if (move.sourceEffect === 'snatch') return;
+			return !!source.volatiles['stockpile'];
+		},
 		onHit(pokemon) {
-			if (pokemon.weighthg > 1) {
-				pokemon.weighthg = Math.max(1, pokemon.weighthg * 2);
-				this.add('-start', pokemon, 'Swallow');
-			}
+			const layers = pokemon.volatiles['stockpile']?.layers || 1;
+			const healAmount = [0.25, 0.5, 1];
+			const success = !!this.heal(this.modify(pokemon.maxhp, healAmount[layers - 1]));
+			if (!success) this.add('-fail', pokemon, 'heal');
+			pokemon.removeVolatile('stockpile');
+			return success || this.NOT_FAIL;
 		},
 		secondary: null,
 		target: "self",
 		type: "Normal",
-		zMove: {effect: 'clearnegativeboost'},
+		zMove: { effect: 'clearnegativeboost' },
 		contestType: "Tough",
 	},
 	sweetkiss: {
