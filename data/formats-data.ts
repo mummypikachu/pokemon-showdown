@@ -5493,6 +5493,73 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "UU",
 		doublesTier: "DOU",
 	},
+	vertebrawn: {
+		tier: "LC",
+		natDexTier: "LC",
+	},
+	pyreox: {
+		tier: "PU",
+		doublesTier: "DOU",
+		natDexTier: "RU",
+	},
+	jaggro: {
+		tier: "LC",
+		natDexTier: "LC",
+	},
+	ferrasteel: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "RU",
+	},
+	essorism: {
+		tier: "Uber",
+		doublesTier: "DOU",
+		natDexTier: "Uber",
+	},
+	kurumi: {
+		tier: "Uber",
+		doublesTier: "DOU",
+		natDexTier: "Uber",
+	},
+	chamin: {
+		tier: "LC",
+		natDexTier: "LC",
+	},
+	uezari: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "RU",
+	},
+	chilleti: {
+		tier: "Uber",
+		doublesTier: "DOU",
+		natDexTier: "Uber",
+	},
+	toroika: {
+		tier: "Uber",
+		doublesTier: "DOU",
+		natDexTier: "Uber",
+	},
+	komari: {
+		tier: "Uber",
+		doublesTier: "DOU",
+		natDexTier: "Uber",
+	},
+	shiomagune: {
+		tier: "Uber",
+		doublesTier: "DOU",
+		natDexTier: "Uber",
+	},
+	shroomin: {
+		tier: "Uber",
+		doublesTier: "DOU",
+		natDexTier: "Uber",
+	},
+	brawloom: {
+		tier: "Uber",
+		doublesTier: "DOU",
+		natDexTier: "Uber",
+	},
 	missingno: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
