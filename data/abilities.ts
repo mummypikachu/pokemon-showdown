@@ -985,12 +985,12 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	munchies: {
 		onStart(pokemon) {
-			this.boost({def: 1}, pokemon);
-			this.boost({spd: 1}, pokemon);
+			this.add('stockpile' + this.effectState.layers);
+			this.add('stockpile' + this.effectState.layers);
 			this.add('stockpile' + this.effectState.layers);
 		},
 		name: "Munchies",
-		rating: 3.5,
+		rating: 1.5,
 	},
 	dazzling: {
 		onFoeTryMove(target, source, move) {
