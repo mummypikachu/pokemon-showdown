@@ -4371,7 +4371,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Heracross",
 		types: ["Bug", "Fighting"],
 		baseStats: {hp: 80, atk: 125, def: 75, spa: 40, spd: 95, spe: 85},
-		abilities: {0: "Skill Link", 1: "Guts", H: "Moxie"},
+		abilities: {0: "Strong Jabs", 1: "Guts", H: "Moxie"},
 		heightm: 1.5,
 		weightkg: 54,
 		color: "Blue",
