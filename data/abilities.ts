@@ -3590,6 +3590,19 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 4.5,
 		num: 288,
 	},
+	ovalrock: { //do not give to ANYTHING BUT happiny.
+		onModifyDefPriority: 6,
+		onModifySpDPriority: 6,
+		onModifyDef(def) {
+			return this.chainModify(1.5);
+		},
+		onModifySpD(def) {
+			return this.chainModify(1.5);
+		},
+		isBreakable: true,
+		name: "Oval Rock",
+		rating: 5,
+	},
 	overcoat: {
 		onImmunity(type, pokemon) {
 			if (type === 'sandstorm' || type === 'hail' || type === 'powder') return false;

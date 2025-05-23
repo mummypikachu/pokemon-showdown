@@ -1273,6 +1273,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		start: "  [POKEMON] turned the sunlight harsh, sending its ancient pulse into a frenzy!",
 		activate: "  [POKEMON] basked in the sunlight, sending its ancient pulse into a frenzy!",
 	},
+	ovalrock: { //do not give to ANYTHING but happiny.
+		name: "Oval Rock",
+		desc: "This Pokémon's Defense and Sp. Defense are raised by 1.5 after any modifiers.",
+		shortDesc: "This Pokémon's Defense and Sp. Defense are raised by 1.5.",
+	},
 	overcoat: {
 		name: "Overcoat",
 		desc: "This Pokemon is immune to powder moves, damage from Sandstorm, and the effects of Rage Powder and the Effect Spore Ability.",

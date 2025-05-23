@@ -3733,7 +3733,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Cleffa",
 		types: ["Fairy"],
 		genderRatio: {M: 0.25, F: 0.75},
-		baseStats: {hp: 50, atk: 25, def: 28, spa: 45, spd: 55, spe: 15},
+		baseStats: {hp: 50, atk: 25, def: 38, spa: 45, spd: 55, spe: 15},
 		abilities: {0: "Cute Charm", 1: "Magic Guard", H: "Friend Guard"},
 		heightm: 0.3,
 		weightkg: 3,
@@ -8037,7 +8037,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Normal"],
 		gender: "F",
 		baseStats: {hp: 100, atk: 5, def: 5, spa: 15, spd: 65, spe: 30},
-		abilities: {0: "Natural Cure", 1: "Serene Grace", H: "Friend Guard"},
+		abilities: {0: "Natural Cure", 1: "Oval Rock", H: "Friend Guard"},
 		heightm: 0.6,
 		weightkg: 24.4,
 		color: "Pink",
@@ -19400,7 +19400,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Field", "Flying"],
 		gen: 3,
 	},
-	chamin: { // not happiny. evolves to uezari. lc, bad normal type. Baby. Keeps early name.
+	chamin: { // evolves to uezari. lc, bad normal type. Baby. Keeps early name.
 		num: 1549,
 		name: "Chamin",
 		types: ["Normal"],
