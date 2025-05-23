@@ -4311,7 +4311,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	meltan: {
-		tier: "PU",
+		tier: "NU",
 		natDexTier: "RU",
 	},
 	melmetal: {
@@ -5387,12 +5387,18 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	avaluggnoble: {
 		tier: "UU",
+		natDexTier: "UU",
+		doublesTier: "DOU",
 	},
 	lilligantnoble: {
 		tier: "OU",
+		natDexTier: "OU",
+		doublesTier: "DOU",
 	},
 	kleavornoble: {
 		tier: "OU",
+		natDexTier: "OU",
+		doublesTier: "DOU",
 	},
 	arcaninenoble: {
 		tier: "Uber",
@@ -5400,18 +5406,26 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	electrodenoble: {
 		tier: "OU",
+		natDexTier: "OU",
+		doublesTier: "DOU",
 	},
 	mossmy: {
 		tier: "LC",
+		natDexTier: "LC",
 	},
 	kodomin: {
 		tier: "OU",
+		natDexTier: "OU",
+		doublesTier: "DOU",
 	},
 	kotora: {
 		tier: "LC",
+		natDexTier: "LC",
 	},
 	raitora: {
 		tier: "OU",
+		natDexTier: "OU",
+		doublesTier: "DOU",
 	},
 	heamanbou: {
 		tier: "LC",
@@ -5492,6 +5506,74 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "OU",
 		natDexTier: "UU",
 		doublesTier: "DOU",
+	},
+	vertebrawn: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "OU",
+	},
+	pyreox: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "OU",
+	},
+	jaggro: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "OU",
+	},
+	ferrasteel: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "OU",
+	},
+	essorism: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "OU",
+	},
+	kurumi: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "OU",
+	},
+	chamin: {
+		tier: "LC",
+		natDexTier: "LC",
+	},
+	uezari: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "OU",
+	},
+	chilleti: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "OU",
+	},
+	toroika: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "OU",
+	},
+	komari: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "OU",
+	},
+	shiomagune: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "OU",
+	},
+	shroomin: {
+		tier: "LC",
+		natDexTier: "LC",
+	},
+	brawloom: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "OU",
 	},
 	missingno: {
 		isNonstandard: "Custom",

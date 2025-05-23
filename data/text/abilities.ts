@@ -2426,7 +2426,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	wrathful: {
 		name: "Wrathful",
 		desc: "For the first turn all attacks get a 20% boost and a 50% speed increase.",
-		shortDesc: "20% Dmg boost & 50% Speed boost on the first turn.",
+		shortDesc: "20% damage, 50% Speed boost on the first turn.",
 
 		activate: "  [POKEMON] rage is overflowing!"
 	},
