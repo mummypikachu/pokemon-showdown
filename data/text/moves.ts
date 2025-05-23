@@ -1024,8 +1024,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	constrict: {
 		name: "Constrict",
-		desc: "Has a 10% chance to lower the target's Speed by 1 stage.",
-		shortDesc: "10% chance to lower the target's Speed by 1.",
+		desc: "Has a 30% chance to lower the target's Speed by 1 stage.",
+		shortDesc: "30% chance to lower the target's Speed by 1.",
 		gen1: {
 			desc: "Has a 33% chance to lower the target's Speed by 1 stage.",
 			shortDesc: "33% chance to lower the target's Speed by 1.",
