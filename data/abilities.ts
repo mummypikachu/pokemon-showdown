@@ -4803,6 +4803,23 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3,
 		num: 5,
 	},
+	snowcloak: {
+		onImmunity(type, pokemon) {
+			if (type === 'hail') return false;
+		},
+		onModifyAccuracyPriority: -1,
+		onModifyAccuracy(accuracy) {
+			if (typeof accuracy !== 'number') return;
+			if (((this.field.isWeather('snow')) || this.field.isWeather('hail'))) {
+				this.debug('Snow Cloak - decreasing accuracy');
+				return this.chainModify([3277, 4096]);
+			}
+		},
+		isBreakable: true,
+		name: "Snow Cloak",
+		rating: 1.5,
+		num: 8,
+	},
 	suctioncups: {
 		onDragOutPriority: 1,
 		onDragOut(pokemon) {
