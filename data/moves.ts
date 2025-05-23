@@ -2956,7 +2956,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	constrict: {
 		num: 132,
 		accuracy: 100,
-		basePower: 10,
+		basePower: 40,
 		category: "Physical",
 	
 		name: "Constrict",
@@ -2964,7 +2964,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
 		secondary: {
-			chance: 10,
+			chance: 30,
 			boosts: {
 				spe: -1,
 			},
