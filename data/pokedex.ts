@@ -4426,7 +4426,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Teddiursa",
 		types: ["Normal"],
 		baseStats: {hp: 60, atk: 80, def: 50, spa: 50, spd: 50, spe: 40},
-		abilities: {0: "Pickup", 1: "Quick Feet", H: "Honey Gather"},
+		abilities: {0: "Well Rested", 1: "Quick Feet", H: "Honey Gather"},
 		heightm: 0.6,
 		weightkg: 8.8,
 		color: "Brown",
