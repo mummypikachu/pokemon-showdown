@@ -5575,6 +5575,16 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
+	mosquito: {
+		tier: "PU",
+		doublesTier: "DOU",
+		natDexTier: "RU",
+	},
+	arei: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "OU",
+	},
 	missingno: {
 		isNonstandard: "Custom",
 		tier: "Illegal",

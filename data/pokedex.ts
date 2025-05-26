@@ -19549,7 +19549,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Bug"],
 		gen: 2,
 	},
-	arei: { // mermaid. name not final
+	arei: { // mermaid. name final
 		num: 1561,
 		name: "Arei",
 		types: ["Water"],
