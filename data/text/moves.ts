@@ -7614,6 +7614,10 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Windstorm",
 		shortDesc: "For 5 turns, moves that hit flying types super-effectively are weakened by 25%.",
 	},
+	windride: {
+		name: "Wind Ride",
+		shortDesc: "50% chance to set winds.",
+	},
 	wingattack: {
 		name: "Wing Attack",
 		shortDesc: "No additional effect.",

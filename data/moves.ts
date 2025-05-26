@@ -22992,6 +22992,22 @@ export const Moves: {[moveid: string]: MoveData} = {
 		zMove: {boost: {spe: 1}},
 		contestType: "Beautiful",
 	},
+	windride: {
+		accuracy: 90,
+		basePower: 80,
+		category: "Special",
+		name: "Wind Ride",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, distance: 1, wind: 1},
+		secondary: {
+			chance: 50,
+			weather: 'windy',
+		},
+		target: "any",
+		type: "Flying",
+		contestType: "Clever",
+	},
 	wingattack: {
 		num: 17,
 		accuracy: 100,
