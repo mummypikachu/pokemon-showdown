@@ -2855,7 +2855,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	gust: {
 		name: "Gust",
 		desc: "Power doubles if the target is using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop.",
-		shortDesc: "Power doubles during Bounce, Fly, and Sky Drop also has a chance to summon winds!",
+		shortDesc: "Power doubles during Bounce, Fly, and Sky Drop. 5% chance to set winds.",
 		gen4: {
 			desc: "Power doubles if the target is using Bounce or Fly.",
 			shortDesc: "Power doubles during Bounce and Fly.",
@@ -7306,8 +7306,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	twister: {
 		name: "Twister",
-		desc: "Has a 20% chance to summon Winds!. Power doubles if the target is using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop.",
-		shortDesc: "20% chance to summon winds!",
+		desc: "Has a 5% chance to summon winds. Power doubles if the target is using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop.",
+		shortDesc: "5% chance to summon winds. Power doubles against Bounce, Fly, or Sky Drop.",
 		gen4: {
 			desc: "Has a 20% chance to make the target flinch. Power doubles if the target is using Bounce or Fly.",
 		},

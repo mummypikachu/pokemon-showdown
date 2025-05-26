@@ -8701,7 +8701,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1, mirror: 1, distance: 1, wind: 1},
 		secondary: {
-			chance: 50,
+			chance: 5,
 			weather: 'windy',
 		},
 		target: "any",
@@ -22145,7 +22145,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1, mirror: 1, wind: 1},
 		secondary: {
-			chance: 20,
+			chance: 5,
 			weather: 'windy',
 		},
 		target: "allAdjacentFoes",
