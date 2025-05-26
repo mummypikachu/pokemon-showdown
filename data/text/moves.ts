@@ -4613,6 +4613,11 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "No additional effect.",
 		shortDesc: "No additional effect. Hits foe(s).",
 	},
+	overchargedimplosion: {
+		name: "Overcharged Implosion",
+		desc: "The user faints after using this move, even if this move fails for having no target. The target's Defense is halved during damage calculation. This move is prevented from executing if any active Pokemon has the Damp Ability.",
+		shortDesc: "Hits adjacent Pokemon. The user faints.",
+	},
 	overheat: {
 		name: "Overheat",
 		desc: "Lowers the user's Special Attack by 2 stages.",
