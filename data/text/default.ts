@@ -34,7 +34,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		megaGen6: "  [POKEMON]'s [ITEM] is reacting to [TRAINER]'s Mega Bracelet!",
 		transformMega: "[POKEMON] has Mega Evolved into Mega [SPECIES]! What a spectacle!",
 		primal: "[POKEMON]'s Primal Reversion! It reverted to its primal state!",
-		zPower: "  [POKEMON] surrounded itself with its Z-Power! nah he's just flexing.",
+		zPower: "  [POKEMON] surrounded itself with its Z-Power! What incredible moves!",
 		zBroken: "  [POKEMON] couldn't fully protect itself and got hurt!",
 		terastallize: "  [POKEMON] has Terastallized into the [TYPE]-type! Brilliant!", // filler
 
