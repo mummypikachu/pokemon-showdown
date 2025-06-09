@@ -1321,6 +1321,20 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3.5,
 		num: 297,
 	},
+	steeleater: {
+		onTryHit(target, source, move) {
+			if (target !== source && move.type === 'Steel') {
+				if (!this.heal(target.baseMaxhp / 4)) {
+					this.add('-immune', target, '[from] ability: Steel Eater');
+				}
+				return null;
+			}
+		},
+		isBreakable: true,
+		name: "Steel Eater",
+		rating: 3.5,
+		num: 297,
+	},
 	effectspore: {
 		onDamagingHit(damage, target, source, move) {
 			if (this.checkMoveMakesContact(move, source, target) && !source.status && source.runStatusImmunity('powder')) {

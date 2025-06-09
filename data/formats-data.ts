@@ -5575,7 +5575,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
-	mosquito: {
+	culepien: {
 		tier: "PU",
 		doublesTier: "DOU",
 		natDexTier: "RU",
@@ -5584,6 +5584,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "OU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
+	},
+	bararin: {
+		tier: "PU",
+		doublesTier: "DOU",
+		natDexTier: "RU",
 	},
 	missingno: {
 		isNonstandard: "Custom",

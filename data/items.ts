@@ -3486,7 +3486,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			basePower: 40,
 		},
 		onModifyCritRatio(critRatio, user) {
-			if (user.baseSpecies.name === 'Chansey') {
+			if (user.baseSpecies.name === 'Chansey', 'Blissey') {
 				return critRatio + 2;
 			}
 		},

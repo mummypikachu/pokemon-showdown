@@ -468,6 +468,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "This Pokemon is immune to Ground-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Ground-type move.",
 		shortDesc: "This Pokemon heals 1/4 of its max HP when hit by Ground moves; Ground immunity.",
 	},
+	steeleater: {
+		name: "Steel Eater",
+		desc: "This Pokemon is immune to Steel-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Steel-type move.",
+		shortDesc: "This Pokemon heals 1/4 of its max HP when hit by Steel moves; Steel immunity.",
+	},
 	effectspore: {
 		name: "Effect Spore",
 		desc: "30% chance a Pokemon making contact with this Pokemon will be poisoned, paralyzed, or fall asleep.",
@@ -1517,6 +1522,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "This Pokemon's sound-based moves have their power multiplied by 1.3. This Pokemon takes halved damage from sound-based moves.",
 		shortDesc: "This Pokemon receives 1/2 damage from sound moves. Its own have 1.3x power.",
 	},
+	musician: {
+		name: "Musician",
+		desc: "This Pokemon's sound-based moves have their power multiplied by 1.3.",
+		shortDesc: "Sound-based moves have their power multiplied by 1.3.",
+	},
 	purepower: {
 		name: "Pure Power",
 		shortDesc: "This Pokemon's Attack is doubled.",
@@ -2401,8 +2411,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	windpower: {
 		name: "Wind Power",
-		desc: "On switch-in This Pokemon sets up Tailwind for 3 turns",
-		shortDesc: "On switch-in This Pokemon sets up Tailwind for 3 turns",
+		desc: "On switch-in, this Pokemon sets up Tailwind for 3 turns.",
+		shortDesc: "On switch-in, this Pokemon sets up Tailwind for 3 turns.",
 	},
 	windrider: {
 		name: "Wind Rider",

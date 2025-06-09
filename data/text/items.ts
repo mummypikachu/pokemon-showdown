@@ -1064,9 +1064,9 @@ export const ItemsText: {[k: string]: ItemText} = {
 	},
 	luckypunch: {
 		name: "Lucky Punch",
-		desc: "If held by a Chansey, its critical hit ratio is raised by 2 stages.",
+		desc: "If held by a Chansey/Blissey, its critical hit ratio is raised by 2 stages.",
 		gen2: {
-			desc: "If held by a Chansey, its critical hit ratio is always at stage 2. (25% crit rate)",
+			desc: "If held by a Chansey/Blissey, its critical hit ratio is always at stage 2. (25% crit rate)",
 		},
 	},
 	lumberry: {
