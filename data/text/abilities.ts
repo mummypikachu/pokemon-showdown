@@ -720,7 +720,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	hailpower: {
 		name: "Hail Power",
-		shortDesc: "If Hail/Snow is active all attacks from this pokemon are boosted by 1.2x",	
+		shortDesc: "If Hail/Snow is active, all attacks from this pokemon are boosted by 1.2x",	
 	},
 	hailstorm: {
 		name: "Hailstorm",
