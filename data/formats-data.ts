@@ -5333,21 +5333,21 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	},
 	kaburion: {
-		tier: "OU",
+		tier: "New",
 		natDexTier: "OU",
 		doublesTier: "DOU",
 	},
 	chivalmet: {
-		tier: "OU",
+		tier: "New",
 		natDexTier: "OU",
 		doublesTier: "DOU",
 	},
 	awanezumi: {
-		tier: "PU",
+		tier: "New",
 		natDexTier: "RU",
 	},
 	garock: {
-		tier: "UUBL",
+		tier: "New",
 		natDexTier: "UU",
 		doublesTier: "DUU",
 	},
@@ -5360,7 +5360,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "NFE",
 	},
 	tanking: {
-		tier: "UUBL",
+		tier: "New",
 		natDexTier: "UU",
 		doublesTier: "DOU",
 	},
@@ -5369,15 +5369,15 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 	},
 	muchabrawn: {
-		tier: "NU",
+		tier: "New",
 		natDexTier: "RU",
 	},
 	tepigphyor: {
-		tier: "PU",
+		tier: "New",
 		natDexTier: "RU",
 	},
 	snivyfloria: {
-		tier: "PU",
+		tier: "New",
 		natDexTier: "RU",
 	},
 	chimechoexcir: {
@@ -5414,7 +5414,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 	},
 	kodomin: {
-		tier: "OU",
+		tier: "New",
 		natDexTier: "OU",
 		doublesTier: "DOU",
 	},
@@ -5423,7 +5423,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 	},
 	raitora: {
-		tier: "OU",
+		tier: "New",
 		natDexTier: "OU",
 		doublesTier: "DOU",
 	},
@@ -5432,7 +5432,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 	},
 	ikari: {
-		tier: "OU",
+		tier: "New",
 		natDexTier: "OU",
 		doublesTier: "DOU",
 	},
@@ -5441,32 +5441,32 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 	},
 	lustremoth: {
-		tier: "NU",
+		tier: "New",
 		natDexTier: "NU",
 		doublesTier: "DOU",
 	},
 	kolibrary: {
-		tier: "OU",
+		tier: "New",
 		natDexTier: "OU",
 		doublesTier: "DOU",
 	},
 	shabo: {
-		tier: "OU",
+		tier: "New",
 		natDexTier: "OU",
 		doublesTier: "DOU",
 	},
 	bounspike: {
-		tier: "PU",
+		tier: "New",
 		natDexTier: "PU",
 		doublesTier: "(DUU)",
 	},
 	hakogame: {
-		tier: "UU",
+		tier: "New",
 		natDexTier: "UU",
 		doublesTier: "(DUU)",
 	},
 	mimime: {
-		tier: "OU",
+		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "RU",
 	},
@@ -5475,7 +5475,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 	},
 	bunnicy: {
-		tier: "PU",
+		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "RU",
 	},
@@ -5484,7 +5484,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 	},
 	ubausagi: {
-		tier: "OU",
+		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "RU",
 	},
@@ -5503,37 +5503,37 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "NFE",
 	},
 	klinklangexcir: {
-		tier: "OU",
+		tier: "New",
 		natDexTier: "UU",
 		doublesTier: "DOU",
 	},
 	vertebrawn: {
-		tier: "OU",
+		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
 	pyreox: {
-		tier: "OU",
+		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
 	jaggro: {
-		tier: "OU",
+		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
 	ferrasteel: {
-		tier: "OU",
+		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
 	essorism: {
-		tier: "OU",
+		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
 	kurumi: {
-		tier: "OU",
+		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
@@ -5547,22 +5547,22 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "OU",
 	},
 	chilleti: {
-		tier: "OU",
+		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
 	toroika: {
-		tier: "OU",
+		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
 	komari: {
-		tier: "OU",
+		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
 	shiomagune: {
-		tier: "OU",
+		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
@@ -5571,22 +5571,22 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 	},
 	brawloom: {
-		tier: "OU",
+		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
 	culepien: {
-		tier: "PU",
+		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "RU",
 	},
 	arei: {
-		tier: "OU",
+		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
 	bararin: {
-		tier: "PU",
+		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "RU",
 	},

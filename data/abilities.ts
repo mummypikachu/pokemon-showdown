@@ -4777,6 +4777,576 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3.5,
 		num: 32,
 	},
+	lordofthewoods: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['slicing']) {
+				this.debug('Sharpness boost');
+				return this.chainModify(1.5);
+			}
+			const basePowerAfterMultiplier = this.modify(basePower, this.event.modifier);
+			this.debug('Base Power: ' + basePowerAfterMultiplier);
+			if (basePowerAfterMultiplier <= 60) {
+				this.debug('Technician boost');
+				return this.chainModify(1.5);
+				}
+			},
+			onTryBoost(boost, target, source, effect) {
+				if (source && target === source) return;
+				if (boost.atk && boost.atk < 0) {
+					delete boost.atk;
+					if (!(effect as ActiveMove).secondaries) {
+						this.add("-fail", target, "unboost", "Attack", "[from] ability: Lord of the Woods", "[of] " + target);
+					}
+				}
+			},
+		name: "Lord of the Woods",
+		rating: 5,
+		num: 9001,
+	},
+	sharpness: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['slicing']) {
+				this.debug('Sharpness boost');
+				return this.chainModify(1.5);
+			}
+		},
+		name: "Sharpness",
+		rating: 3.5,
+		num: 292,
+	},
+	shedskin: {
+		onResidualOrder: 5,
+		onResidualSubOrder: 3,
+		onResidual(pokemon) {
+			if (pokemon.hp && pokemon.status && this.randomChance(33, 100)) {
+				this.debug('shed skin');
+				this.add('-activate', pokemon, 'ability: Shed Skin');
+				pokemon.cureStatus();
+			}
+		},
+		onTrapPokemonPriority: -10,
+		onTrapPokemon(pokemon) {
+			pokemon.trapped = pokemon.maybeTrapped = false;
+		},
+		name: "Shed Skin",
+		rating: 3,
+		num: 61,
+	},
+	sheerforce: {
+		onModifyMove(move, pokemon) {
+			if (move.secondaries) {
+				delete move.secondaries;
+				// Technically not a secondary effect, but it is negated
+				delete move.self;
+				if (move.id === 'clangoroussoulblaze') delete move.selfBoost;
+				// Actual negation of `AfterMoveSecondary` effects implemented in scripts.js
+				move.hasSheerForce = true;
+			}
+		},
+		onBasePowerPriority: 21,
+		onBasePower(basePower, pokemon, target, move) {
+			if (move.hasSheerForce) return this.chainModify([5325, 4096]);
+		},
+		name: "Sheer Force",
+		rating: 3.5,
+		num: 125,
+	},
+	shellarmor: {
+		onCriticalHit: false,
+		isBreakable: true,
+		name: "Shell Armor",
+		rating: 1,
+		num: 75,
+	},
+	shielddust: {
+		onModifySecondaries(secondaries) {
+			this.debug('Shield Dust prevent secondary');
+			return secondaries.filter(effect => !!(effect.self || effect.dustproof));
+		},
+		isBreakable: true,
+		name: "Shield Dust",
+		rating: 2,
+		num: 19,
+	},
+	shieldsdown: {
+		onStart(pokemon) {
+			if (pokemon.baseSpecies.baseSpecies !== 'Minior' || pokemon.transformed) return;
+			if (pokemon.hp > pokemon.maxhp / 2) {
+				if (pokemon.species.forme !== 'Meteor') {
+					pokemon.formeChange('Minior-Meteor');
+				}
+			} else {
+				if (pokemon.species.forme === 'Meteor') {
+					pokemon.formeChange(pokemon.set.species);
+				}
+			}
+		},
+		onResidualOrder: 29,
+		onResidual(pokemon) {
+			if (pokemon.baseSpecies.baseSpecies !== 'Minior' || pokemon.transformed || !pokemon.hp) return;
+			if (pokemon.hp > pokemon.maxhp / 2) {
+				if (pokemon.species.forme !== 'Meteor') {
+					pokemon.formeChange('Minior-Meteor');
+				}
+			} else {
+				if (pokemon.species.forme === 'Meteor') {
+					pokemon.formeChange(pokemon.set.species);
+				}
+			}
+		},
+		onSetStatus(status, target, source, effect) {
+			if (target.species.id !== 'miniormeteor' || target.transformed) return;
+			if ((effect as Move)?.status) {
+				this.add('-immune', target, '[from] ability: Shields Down');
+			}
+			return false;
+		},
+		onTryAddVolatile(status, target) {
+			if (target.species.id !== 'miniormeteor' || target.transformed) return;
+			if (status.id !== 'yawn') return;
+			this.add('-immune', target, '[from] ability: Shields Down');
+			return null;
+		},
+		isPermanent: true,
+		name: "Shields Down",
+		rating: 3,
+		num: 197,
+	},
+	simple: {
+		onChangeBoost(boost, target, source, effect) {
+			if (effect && effect.id === 'zpower') return;
+			let i: BoostID;
+			for (i in boost) {
+				boost[i]! *= 2;
+			}
+		},
+		isBreakable: true,
+		name: "Simple",
+		rating: 4,
+		num: 86,
+	},
+	skilllink: {
+		onModifyMove(move) {
+			if (move.multihit && Array.isArray(move.multihit) && move.multihit.length) {
+				move.multihit = move.multihit[1];
+			}
+			if (move.multiaccuracy) {
+				delete move.multiaccuracy;
+			}
+		},
+		name: "Skill Link",
+		rating: 3,
+		num: 92,
+	},
+	slowstart: {
+		onStart(pokemon) {
+			pokemon.addVolatile('slowstart');
+		},
+		onEnd(pokemon) {
+			delete pokemon.volatiles['slowstart'];
+			this.add('-end', pokemon, 'Slow Start', '[silent]');
+		},
+		condition: {
+			duration: 3,
+			onResidualOrder: 28,
+			onResidualSubOrder: 2,
+			onStart(target) {
+				this.add('-start', target, 'ability: Slow Start');
+			},
+			onModifyAtkPriority: 5,
+			onModifyAtk(atk, pokemon) {
+				return this.chainModify(0.5);
+			},
+			onModifySpe(spe, pokemon) {
+				return this.chainModify(0.5);
+			},
+			onModifyDef(def, pokemon) {
+				return this.chainModify(2);
+			}, 
+			onModifySpD(spd, pokemon) {
+				return this.chainModify(2);
+			},
+			onEnd(target) {
+				this.add('-end', target, 'Slow Start');
+			},
+		},
+		name: "Slow Start",
+		rating: -1,
+		num: 112,
+	},
+	slushrush: {
+		onModifySpe(spe, pokemon) {
+			if (this.field.isWeather(['hail', 'snow'])) {
+				return this.chainModify(2);
+			}
+		},
+		name: "Slush Rush",
+		rating: 3,
+		num: 202,
+	},
+	sniper: {
+		onModifyDamage(damage, source, target, move) {
+			if (target.getMoveHitData(move).crit) {
+				this.debug('Sniper boost');
+				return this.chainModify(1.5);
+			}
+		},
+		name: "Sniper",
+		rating: 2,
+		num: 97,
+	},
+	snowwarning: {
+		onStart(source) {
+			this.field.setWeather('snow');
+		},
+		name: "Snow Warning",
+		rating: 4,
+		num: 117,
+	},
+	
+	solarpower: {
+		onModifySpAPriority: 5,
+		onModifySpA(spa, pokemon) {
+			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
+				return this.chainModify(1.5);
+			}
+		},
+		onWeather(target, source, effect) {
+			if (target.hasItem('utilityumbrella')) return;
+			if (effect.id === 'sunnyday' || effect.id === 'desolateland') {
+				this.damage(target.baseMaxhp / 8, target, target);
+			}
+		},
+		name: "Solar Power",
+		rating: 2,
+		num: 94,
+	},
+	solidrock: {
+		onSourceModifyDamage(damage, source, target, move) {
+			if (target.getMoveHitData(move).typeMod > 0) {
+				this.debug('Solid Rock neutralize');
+				return this.chainModify(0.75);
+			}
+		},
+		isBreakable: true,
+		name: "Solid Rock",
+		rating: 3,
+		num: 116,
+	},
+	soulheart: {
+		onAnyFaintPriority: 1,
+		onAnyFaint() {
+			this.boost({spa: 1}, this.effectState.target);
+		},
+		name: "Soul-Heart",
+		rating: 3.5,
+		num: 220,
+	},
+	soundproof: {
+		onTryHit(target, source, move) {
+			if (target !== source && move.flags['sound']) {
+				this.add('-immune', target, '[from] ability: Soundproof');
+				return null;
+			}
+		},
+		onAllyTryHitSide(target, source, move) {
+			if (move.flags['sound']) {
+				this.add('-immune', this.effectState.target, '[from] ability: Soundproof');
+			}
+		},
+		isBreakable: true,
+		name: "Soundproof",
+		rating: 2,
+		num: 43,
+	},
+	speedboost: {
+		onResidualOrder: 28,
+		onResidualSubOrder: 2,
+		onResidual(pokemon) {
+			if (pokemon.activeTurns) {
+				this.boost({spe: 1});
+			}
+		},
+		name: "Speed Boost",
+		rating: 4.5,
+		num: 3,
+	},
+	rusting: {
+		onResidualOrder: 28,
+		onResidualSubOrder: 2,
+		onResidual(pokemon) {
+			if (pokemon.activeTurns) {
+				this.boost({spe: 2});
+				this.boost({spd: -1});
+				this.boost({def: -1});
+			}
+		},
+		onImmunity(type, pokemon) {
+			if (type === 'saltcure') return false;
+		},
+		name: "Rusting",
+		rating: 4.5,
+		num: 3,
+	},
+	stakeout: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, attacker, defender) {
+			if (!defender.activeTurns) {
+				this.debug('Stakeout boost');
+				return this.chainModify(2);
+			}
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(atk, attacker, defender) {
+			if (!defender.activeTurns) {
+				this.debug('Stakeout boost');
+				return this.chainModify(2);
+			}
+		},
+		name: "Stakeout",
+		rating: 4.5,
+		num: 198,
+	},
+	stall: {
+		onFractionalPriority: -0.1,
+		name: "Stall",
+		rating: -1,
+		num: 100,
+	},
+	stalwart: {
+		onModifyMovePriority: 1,
+		onModifyMove(move) {
+			// most of the implementation is in Battle#getTarget
+			move.tracksTarget = move.target !== 'scripted';
+		},
+		name: "Stalwart",
+		rating: 0,
+		num: 242,
+	},
+	stamina: {
+		onDamagingHit(damage, target, source, effect) {
+			this.boost({def: 1});
+		},
+		name: "Stamina",
+		rating: 3.5,
+		num: 192,
+	},
+	stancechange: {
+		onModifyMovePriority: 1,
+		onModifyMove(move, attacker, defender) {
+			if (attacker.species.baseSpecies !== 'Aegislash' || attacker.transformed) return;
+			if (move.category === 'Status' && move.id !== 'kingsshield') return;
+			const targetForme = (move.id === 'kingsshield' ? 'Aegislash' : 'Aegislash-Blade');
+			if (attacker.species.name !== targetForme) attacker.formeChange(targetForme);
+		},
+		isPermanent: true,
+		name: "Stance Change",
+		rating: 4,
+		num: 176,
+	},
+	static: {
+		onModifyMove(move) {
+			if (!move?.flags['contact'] || move.target === 'self') return;
+			if (!move.secondaries) {
+				move.secondaries = [];
+			}
+			move.secondaries.push({
+				chance: 30,
+				status: 'par',
+				ability: this.dex.abilities.get('static'),
+			});
+		},
+		name: "Static",
+		rating: 2,
+		num: 9,
+	},
+	steadfast: {
+		onFlinch(pokemon) {
+			this.boost({spe: 1});
+		},
+		name: "Steadfast",
+		rating: 1,
+		num: 80,
+	},
+	steamengine: {
+		onDamagingHit(damage, target, source, move) {
+			if (['Water', 'Fire'].includes(move.type)) {
+				this.boost({spe: 6});
+			}
+		},
+		name: "Steam Engine",
+		rating: 2,
+		num: 243,
+	},
+	steelworker: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Steel') {
+				this.debug('Steelworker boost');
+				return this.chainModify(1.5);
+			}
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Steel') {
+				this.debug('Steelworker boost');
+				return this.chainModify(1.5);
+			}
+		},
+		name: "Steelworker",
+		rating: 3.5,
+		num: 200,
+	},
+	steelyspirit: {
+		onAllyBasePowerPriority: 22,
+		onAllyBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'Steel') {
+				this.debug('Steely Spirit boost');
+				return this.chainModify(1.5);
+			}
+		},
+		name: "Steely Spirit",
+		rating: 3.5,
+		num: 252,
+	},
+	stench: {
+		onModifyMovePriority: -1,
+		onModifyMove(move) {
+			if (move.category !== "Status") {
+				this.debug('Adding Stench flinch');
+				if (!move.secondaries) move.secondaries = [];
+				for (const secondary of move.secondaries) {
+					if (secondary.volatileStatus === 'flinch') return;
+				}
+				move.secondaries.push({
+					chance: 10,
+					volatileStatus: 'flinch',
+				});
+			}
+		},
+		name: "Stench",
+		rating: 0.5,
+		num: 1,
+	},
+	stickyhold: {
+		onTakeItem(item, pokemon, source) {
+			if (!this.activeMove) throw new Error("Battle.activeMove is null");
+			if (!pokemon.hp || pokemon.item === 'stickybarb') return;
+			if ((source && source !== pokemon) || this.activeMove.id === 'knockoff') {
+				this.add('-activate', pokemon, 'ability: Sticky Hold');
+				return false;
+			}
+		},
+		isBreakable: true,
+		name: "Sticky Hold",
+		rating: 1.5,
+		num: 60,
+	},
+	striker: {
+		onBasePowerPriority: 23,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['kick']) {
+				this.debug('Striker boost');
+				return this.chainModify([5325, 4096]);
+			}
+		},
+		name: "Striker",
+		rating: 3,
+		num: 189,
+	},
+	ladyoftheridge: {
+		onModifySpe(spe, pokemon) {
+			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
+				return this.chainModify(2);
+			}
+		},
+		onBasePowerPriority: 23,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['kick']) {
+				this.debug('LOTR boost');
+				return this.chainModify([5325, 4096]);
+			}
+		},
+		name: "Lady of the Ridge",
+		rating: 4,
+		num: 1289,
+	},
+	stormdrain: {
+		onTryHit(target, source, move) {
+			if (target !== source && move.type === 'Water') {
+				if (!this.boost({spa: 1})) {
+					this.add('-immune', target, '[from] ability: Storm Drain');
+				}
+				return null;
+			}
+		},
+		onAnyRedirectTarget(target, source, source2, move) {
+			if (move.type !== 'Water' || ['firepledge', 'grasspledge', 'waterpledge'].includes(move.id)) return;
+			const redirectTarget = ['randomNormal', 'adjacentFoe'].includes(move.target) ? 'normal' : move.target;
+			if (this.validTarget(this.effectState.target, source, redirectTarget)) {
+				if (move.smartTarget) move.smartTarget = false;
+				if (this.effectState.target !== target) {
+					this.add('-activate', this.effectState.target, 'ability: Storm Drain');
+				}
+				return this.effectState.target;
+			}
+		},
+		isBreakable: true,
+		name: "Storm Drain",
+		rating: 3,
+		num: 114,
+	},
+	strongjaw: {
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['bite']) {
+				return this.chainModify(1.5);
+			}
+		},
+		name: "Strong Jaw",
+		rating: 3.5,
+		num: 173,
+	},
+	strongspirit: {
+		onStart(pokemon) {
+			let activated = false;
+			for (const target of pokemon.adjacentFoes()) {
+				if (!activated) {
+					this.add('-ability', pokemon, 'Strong Spirit', 'boost');
+					activated = true;
+				}
+				if (target.volatiles['substitute']) {
+					this.add('-immune', target);
+				} else {
+					this.boost({spa: -1}, target, pokemon, null, true);
+				}
+			}
+		},
+		name: "Strong Spirit",
+		rating: 3.5,
+		num: 2200,
+	},
+	sturdy: {
+		onTryHit(pokemon, target, move) {
+			if (move.ohko) {
+				this.add('-immune', pokemon, '[from] ability: Sturdy');
+				return null;
+			}
+		},
+		onDamagePriority: -30,
+		onDamage(damage, target, source, effect) {
+			if (target.hp === target.maxhp && damage >= target.hp && effect && effect.effectType === 'Move') {
+				this.add('-ability', target, 'Sturdy');
+				return target.hp - 1;
+			}
+		},
+		isBreakable: true,
+		name: "Sturdy",
+		rating: 3,
+		num: 5,
+	},
 	shadowshield: {
 		onSourceModifyDamage(damage, source, target, move) {
 			if (target.hp >= target.maxhp) {
