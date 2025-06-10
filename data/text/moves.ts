@@ -1183,6 +1183,10 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Has a higher chance for a critical hit.",
 		shortDesc: "High critical hit ratio.",
 	},
+	cryobeam: {
+		name: "Cryobeam",
+		shortDesc: "No additional effect.",
+	},
 	craftyshield: {
 		name: "Crafty Shield",
 		desc: "The user and its party members are protected from non-damaging attacks made by other Pokemon, including allies, during this turn. Fails if the user moves last this turn or if this move is already in effect for the user's side.",
