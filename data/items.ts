@@ -1577,17 +1577,17 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 5,
 		isPokeball: true,
 	},
-	excadrilliumz: {
-		name: "Excadrillium Z",
-		spritenum: 687,
-		onTakeItem: false,
-		zMove: "The Drill That Pierced The Heavens",
-		zMoveFrom: "Rapid Spin",
-		itemUser: ["Excadrill"],
-		num: 1943,
-		gen: 9,
+	// excadrilliumz: {
+	// 	name: "Excadrillium Z",
+	// 	spritenum: 687,
+	// 	onTakeItem: false,
+	// 	zMove: "The Drill That Pierced The Heavens",
+	// 	zMoveFrom: "Rapid Spin",
+	// 	itemUser: ["Excadrill"],
+	// 	num: 1943,
+	// 	gen: 9,
 	
-	},
+	// },
 	electromagnet: {
         name: "Electro Magnet",
         spritenum: 567,
@@ -2438,15 +2438,15 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 7,
 	
 	},
-	gholdengiumz: {
-		name: "Gholdengium Z",
-		spritenum: 655,
-		onTakeItem: false,
-		zMove: "One Million Coin Rain",
-		zMoveFrom: "Make It Rain",
-		itemUser: ["Gholdengo"],
-		gen: 9,
-	},
+	// gholdengiumz: {
+	// 	name: "Gholdengium Z",
+	// 	spritenum: 655,
+	// 	onTakeItem: false,
+	// 	zMove: "One Million Coin Rain",
+	// 	zMoveFrom: "Make It Rain",
+	// 	itemUser: ["Gholdengo"],
+	// 	gen: 9,
+	// },
 	glalitite: {
 		name: "Glalitite",
 		spritenum: 623,
@@ -3150,17 +3150,17 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 6,
 	
 	},
-	kingamtiumz: {
-		name: "Kingamtium Z",
-		spritenum: 687,
-		onTakeItem: false,
-		zMove: "The Eternal Checkmate",
-		zMoveFrom: "Kowtow Cleave",
-		itemUser: ["Kingambit"],
-		num: 1923,
-		gen: 9,
+	// kingamtiumz: {
+	// 	name: "Kingamtium Z",
+	// 	spritenum: 687,
+	// 	onTakeItem: false,
+	// 	zMove: "The Eternal Checkmate",
+	// 	zMoveFrom: "Kowtow Cleave",
+	// 	itemUser: ["Kingambit"],
+	// 	num: 1923,
+	// 	gen: 9,
 	
-	},
+	// },
 	kinglerite: {
 		name: "Kinglerite",
 		spritenum: 575,
