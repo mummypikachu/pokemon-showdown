@@ -32,16 +32,10 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		mega: "  [POKEMON]'s [ITEM] is reacting to the Key Stone!",
 		megaNoItem: "  [POKEMON] is reacting to [TRAINER]'s Key Stone!",
 		megaGen6: "  [POKEMON]'s [ITEM] is reacting to [TRAINER]'s Mega Bracelet!",
-<<<<<<< HEAD
-		transformMega: "[POKEMON] has Mega Evolved into Mega [SPECIES]! What a spectacle!",
-		primal: "[POKEMON]'s Primal Reversion! It reverted to its primal state!",
-		zPower: "  [POKEMON] surrounded itself with its Z-Power! What incredible moves!",
-=======
 		transformMega: "[POKEMON] has Mega Evolved into Mega [SPECIES]! It's Mega-Morphin Time!",
 		primal: "[POKEMON]'s Primal Reversion! It reverted to its primal state! oooh very scary. -Mario 1996.",
 		zPower: "  [POKEMON] surrounded itself with its Z-Power! nah he's just flexing.",
->>>>>>> parent of 4ea82f74c (Update close to every single variation of the announcer)
-		zBroken: "  [POKEMON] couldn't fully protect itself and got hurt!",
+		zBroken: "  [POKEMON] couldn't fully protect itself and got hurt! :(",
 		terastallize: "  [POKEMON] has Terastallized into the [TYPE]-type! Is it ban worthy?", // filler
 
 		// in case the different default messages didn't make it obvious, the difference
@@ -175,7 +169,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 
 	// statuses
 	brn: {
-		start: "  [POKEMON] was burned! It's gonna need some ice for that burn!",
+		start: "  [POKEMON] was burned! Physical attackers hitting like a wet noodle now.",
 		startFromItem: "  [POKEMON] was burned by the [ITEM]!",
 		alreadyStarted: "  [POKEMON] is already burned!",
 		end: "  [POKEMON]'s burn was healed!",
@@ -191,7 +185,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		cant: "[POKEMON] is frozen solid!",
 	},
 	frb: {
-		start: "  [POKEMON] caught frosbite! It feels like [POKEMON] is not going to have a good time.",
+		start: "  [POKEMON] caught frostbite! Special attackers crying about this one.",
 		alreadyStarted: "  [POKEMON] is already frozen solid!",
 		end: "  [POKEMON] thawed out!",
 		endFromItem: "  [POKEMON]'s [ITEM] defrosted it!",
@@ -255,7 +249,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		cant: "[POKEMON] used [MOVE]!\n  But there was no PP left for the move!",
 	},
 	recharge: {
-		cant: "[POKEMON] must recharge!",
+		cant: "[POKEMON] must recharge! It did NOT pick up the KO.",
 	},
 	recoil: {
 		damage: "  [POKEMON] was damaged by the recoil!",
@@ -265,10 +259,10 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		failSingular: "  [POKEMON]'s [STAT] was not lowered!",
 	},
 	struggle: {
-		activate: "  [POKEMON] has no moves left!",
+		activate: "  [POKEMON] has no moves left! (PP stalling is a valid strategy.)",
 	},
 	trapped: {
-		start: "  [POKEMON] can no longer escape!",
+		start: "  [POKEMON] can no longer escape! Bye bye, [POKEMON]!",
 	},
 	dynamax: {
 		start: "  ([POKEMON]'s Dynamax!) You won't like it when I shift into MAXIUM OVERDRIVE!!",
@@ -340,29 +334,29 @@ export const DefaultText: {[k: string]: DefaultText} = {
 
 	// terrain
 	electricterrain: {
-		start: "  An electric current ran across the battlefield! It's electrifying!",
+		start: "  An electric current ran across the battlefield! Quark drive merchant.",
 		end: "  The electricity disappeared from the battlefield.",
 		block: "  [POKEMON] is protected by the Electric Terrain!",
 	},
 	grassyterrain: {
-		start: "  Grass grew to cover the battlefield! It's a grassy field!",
+		start: "  Grass grew to cover the battlefield! Rillaboom & friends join the fray!",
 		end: "  The grass disappeared from the battlefield.",
 		heal: "  [POKEMON]'s HP was restored.",
 	},
 	mistyterrain: {
-		start: "  Mist swirled around the battlefield! It's a misty field!",
+		start: "  Mist swirled around the battlefield!",
 		end: "  The mist disappeared from the battlefield.",
 		block: "  [POKEMON] surrounds itself with a protective mist!",
 	},
 	psychicterrain: {
-		start: "  The battlefield got weird! It's a psychic terrain!",
+		start: "  The battlefield got weird! No priority for you!",
 		end: "  The weirdness disappeared from the battlefield!",
 		block: "  [POKEMON] is protected by the Psychic Terrain!",
 	},
 
 	// field effects
 	gravity: {
-		start: "  Gravity intensified!",
+		start: "  Gravity intensified! Cheese 'em up!",
 		end: "  Gravity returned to normal!",
 		cant: "[POKEMON] can't use [MOVE] because of gravity!",
 		activate: "[POKEMON] fell from the sky due to the gravity!",
@@ -384,7 +378,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		end: "  The effects of Water Sport have faded.",
 	},
 	wonderroom: {
-		start: "  It created a bizarre area in which Defense and Sp. Def stats are swapped!",
+		start: "  It created a bizarre area in which Defense and Sp. Def stats are swapped! NO ONE IS USING THIS.",
 		end: "  Wonder Room wore off, and Defense and Sp. Def stats returned to normal!",
 	},
 
