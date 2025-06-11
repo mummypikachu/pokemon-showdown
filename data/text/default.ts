@@ -32,18 +32,24 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		mega: "  [POKEMON]'s [ITEM] is reacting to the Key Stone!",
 		megaNoItem: "  [POKEMON] is reacting to [TRAINER]'s Key Stone!",
 		megaGen6: "  [POKEMON]'s [ITEM] is reacting to [TRAINER]'s Mega Bracelet!",
+<<<<<<< HEAD
 		transformMega: "[POKEMON] has Mega Evolved into Mega [SPECIES]! What a spectacle!",
 		primal: "[POKEMON]'s Primal Reversion! It reverted to its primal state!",
 		zPower: "  [POKEMON] surrounded itself with its Z-Power! What incredible moves!",
+=======
+		transformMega: "[POKEMON] has Mega Evolved into Mega [SPECIES]! It's Mega-Morphin Time!",
+		primal: "[POKEMON]'s Primal Reversion! It reverted to its primal state! oooh very scary. -Mario 1996.",
+		zPower: "  [POKEMON] surrounded itself with its Z-Power! nah he's just flexing.",
+>>>>>>> parent of 4ea82f74c (Update close to every single variation of the announcer)
 		zBroken: "  [POKEMON] couldn't fully protect itself and got hurt!",
-		terastallize: "  [POKEMON] has Terastallized into the [TYPE]-type! Brilliant!", // filler
+		terastallize: "  [POKEMON] has Terastallized into the [TYPE]-type! Is it ban worthy?", // filler
 
 		// in case the different default messages didn't make it obvious, the difference
 		// is that the `cant` message REPLACES "Pokemon used Move!", while the `fail`
 		// message happens AFTER "Pokemon used Move!"
 		cant: "[POKEMON] can't use [MOVE]!",
 		cantNoMove: "[POKEMON] can't move!",
-		fail: "  But it failed! It didn't work!",
+		fail: "  But it failed! Skill issue...",
 
 		// n.b. this is the default message for in-battle forme changes
 		// for the move Transform and ability Imposter, see the entry for the move Transform
@@ -112,17 +118,17 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		superEffectiveSpread: "  It's super effective on [POKEMON]!",
 		resisted: "  It's not very effective...",
 		resistedSpread: "  It's not very effective on [POKEMON].",
-		crit: "  A lucky crit! Devastating!",
+		crit: "  A lucky crit! (did it matter?)",
 		critSpread: "  A critical hit on [POKEMON]!",
-		immune: "  It doesn't affect [POKEMON]! Maybe try something else?",
+		immune: "  Skill issue. It doesn't affect [POKEMON]...",
 		immuneNoPokemon: "  It had no effect!", // old gens
 		immuneOHKO: "  [POKEMON] is unaffected!",
-		miss: "  [POKEMON] avoided the attack! Whoops!",
+		miss: "  [POKEMON] avoided the attack! Blame RNG.",
 		missNoPokemon: "  [SOURCE]'s attack missed!", // old gens
 
 		center: "  Automatic center!",
 		noTarget: "  But there was no target...", // gen 5 and earlier
-		ohko: "  Incredible! It's a one-hit KO!",
+		ohko: "  NO WAY!!! It's a one-hit KO!",
 		combine: "  The two moves have become one! It's a combined move!",
 		hitCount: "  The Pok\u00E9mon was hit [NUMBER] times!",
 		hitCountSingular: "  The Pok\u00E9mon was hit 1 time!",
@@ -169,7 +175,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 
 	// statuses
 	brn: {
-		start: "  [POKEMON] was burned! Can it tough it out?",
+		start: "  [POKEMON] was burned! It's gonna need some ice for that burn!",
 		startFromItem: "  [POKEMON] was burned by the [ITEM]!",
 		alreadyStarted: "  [POKEMON] is already burned!",
 		end: "  [POKEMON]'s burn was healed!",
@@ -185,7 +191,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		cant: "[POKEMON] is frozen solid!",
 	},
 	frb: {
-		start: "  [POKEMON] caught frostbite! It looks like [POKEMON] is feeling chilly...",
+		start: "  [POKEMON] caught frosbite! It feels like [POKEMON] is not going to have a good time.",
 		alreadyStarted: "  [POKEMON] is already frozen solid!",
 		end: "  [POKEMON] thawed out!",
 		endFromItem: "  [POKEMON]'s [ITEM] defrosted it!",
@@ -193,7 +199,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		cant: "[POKEMON] is frozen solid!",
 	},
 	par: {
-		start: "  [POKEMON] is paralyzed! It may be unable to move! What a shock!",
+		start: "  [POKEMON] is paralyzed! It may be unable to move! Welcome to RNG hell!",
 		alreadyStarted: "  [POKEMON] is already paralyzed!",
 		end: "  [POKEMON] was cured of paralysis!",
 		endFromItem: "  [POKEMON]'s [ITEM] cured its paralysis!",
@@ -207,15 +213,15 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		damage: "  [POKEMON] was hurt by poison!",
 	},
 	tox: {
-		start: "  [POKEMON] was badly poisoned! The poison will slowly sap their strength!",
-		startFromItem: "  [POKEMON] was badly poisoned by the [ITEM]!",
+		start: "  [POKEMON] was badly poisoned! Goodbye Stall!",
+		startFromItem: "  [POKEMON] was badly poisoned by the [ITEM]! Poison is a good way to go!",
 		end: "#psn",
 		endFromItem: "#psn",
 		alreadyStarted: "#psn",
 		damage: "#psn",
 	},
 	slp: {
-		start: "  [POKEMON] fell asleep! How will this snooze affect the battle?",
+		start: "  [POKEMON] fell asleep! Honk choooo mimimimimi.",
 		startFromRest: "  [POKEMON] slept and became healthy!",
 		alreadyStarted: "  [POKEMON] is already asleep!",
 		end: "  [POKEMON] woke up!",
@@ -237,7 +243,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		heal: "  [SOURCE] had its energy drained!",
 	},
 	flinch: {
-		cant: "  [POKEMON] flinched and couldn't move! What now?",
+		cant: "  [POKEMON] flinched and couldn't move! Skill issue...",
 	},
 	heal: {
 		fail: "  [POKEMON]'s HP is full!",
@@ -265,7 +271,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		start: "  [POKEMON] can no longer escape!",
 	},
 	dynamax: {
-		start: "  ([POKEMON]'s Dynamax!) That's great!",
+		start: "  ([POKEMON]'s Dynamax!) You won't like it when I shift into MAXIUM OVERDRIVE!!",
 		end: "  ([POKEMON] returned to normal!)",
 		block: "  The move was blocked by the power of Dynamax!",
 		fail: "  [POKEMON] shook its head. It seems like it can't use this move...",
@@ -274,14 +280,14 @@ export const DefaultText: {[k: string]: DefaultText} = {
 	// weather
 	sandstorm: {
 		weatherName: "Sandstorm",
-		start: "  A sandstorm kicked up! Cover your eyes!",
+		start: "  A sandstorm kicked up! Run 'em ragged!",
 		end: "  The sandstorm subsided.",
 		upkeep: "  (The sandstorm is raging.)",
 		damage: "  [POKEMON] is buffeted by the sandstorm!",
 	},
 	sunnyday: {
 		weatherName: "Sun",
-		start: "  The sunlight turned harsh! It's getting heated!",
+		start: "  The sunlight turned harsh! Burn them to ash!",
 		end: "  The harsh sunlight faded.",
 		upkeep: "  (The sunlight is strong.)",
 	},
@@ -307,26 +313,26 @@ export const DefaultText: {[k: string]: DefaultText} = {
 	windy: {
 		weatherName: "Windy",
 		start: "  Hold on to your hats! It's getting windy!",
-		end: "  The winds stopped.",
+		end: "  The Winds stopped.",
 		upkeep: "  (Wind violently blows!)",
 	},
 	desolateland: {
 		weatherName: "Intense Sun",
-		start: "  The sunlight turned extremely harsh! It's dry!",
+		start: "  The sunlight turned extremely harsh! Give 'em hell!",
 		end: "  The extremely harsh sunlight faded.",
 		block: "  The extremely harsh sunlight was not lessened at all!",
 		blockMove: "  The Water-type attack evaporated in the harsh sunlight!",
 	},
 	primordialsea: {
 		weatherName: "Heavy Rain",
-		start: "  A heavy rain began to fall! It is a heavy downpour!",
+		start: "  A heavy rain began to fall! Flush your enemies!",
 		end: "  The heavy rain has lifted!",
 		block: "  There is no relief from this heavy rain!",
 		blockMove: "  The Fire-type attack fizzled out in the heavy rain!",
 	},
 	deltastream: {
 		weatherName: "Strong Winds",
-		start: "  Mysterious strong winds are protecting Flying-type Pok\u00E9mon! Hold on tight!",
+		start: "  Mysterious strong winds are protecting Flying-type Pok\u00E9mon! Can someone kick this guy?",
 		end: "  The mysterious strong winds have dissipated!",
 		activate: "  The mysterious strong winds weakened the attack!",
 		block: "  The mysterious strong winds blow on regardless!",
@@ -339,17 +345,17 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		block: "  [POKEMON] is protected by the Electric Terrain!",
 	},
 	grassyterrain: {
-		start: "  Grass grew to cover the battlefield! Lush and splendid!",
+		start: "  Grass grew to cover the battlefield! It's a grassy field!",
 		end: "  The grass disappeared from the battlefield.",
 		heal: "  [POKEMON]'s HP was restored.",
 	},
 	mistyterrain: {
-		start: "  Mist swirled around the battlefield! It's a miracle!",
+		start: "  Mist swirled around the battlefield! It's a misty field!",
 		end: "  The mist disappeared from the battlefield.",
 		block: "  [POKEMON] surrounds itself with a protective mist!",
 	},
 	psychicterrain: {
-		start: "  The battlefield got weird! Food for thought?",
+		start: "  The battlefield got weird! It's a psychic terrain!",
 		end: "  The weirdness disappeared from the battlefield!",
 		block: "  [POKEMON] is protected by the Psychic Terrain!",
 	},
@@ -362,7 +368,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		activate: "[POKEMON] fell from the sky due to the gravity!",
 	},
 	magicroom: {
-		start: "  It created a bizarre area in which Pok\u00E9mon's held items lose their effects!",
+		start: "  It created a bizarre area in which Pok\u00E9mon's held items lose their effects! Wait people actually use this?",
 		end: "  Magic Room wore off, and held items' effects returned to normal!",
 	},
 	mudsport: {
@@ -370,7 +376,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		end: "  The effects of Mud Sport have faded.",
 	},
 	trickroom: {
-		start: "  [POKEMON] twisted the dimensions! Speed is flipped. How bizarre!",
+		start: "  [POKEMON] twisted the dimensions! Speed is flipped. Turn the tables!",
 		end: "  The twisted dimensions returned to normal! The speed returned to normal.",
 	},
 	watersport: {
