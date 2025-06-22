@@ -5671,9 +5671,19 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		newDexTier: "LC",
 	},
 	swoobatexcir: {
-		tier: "PU",
+		tier: "New",
 		natDexTier: "RU",
 		newDexTier: "RUBL",
+	},
+	ponku: {
+		tier: "LC",
+		natDexTier: "LC",
+		newDexTier: "LC",
+	},
+	tanpu: {
+		tier: "New",
+		natDexTier: "RU",
+		newDexTier: "UUBL",
 	},
 	// Start CAP/Missingno, don't place under this
 	missingno: {

@@ -563,6 +563,19 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 
 		start: "  The power of [POKEMON]'s Fire-type moves rose!",
 	},
+	watercirculation: {
+		name: "Water Circulation",
+		desc: "This Pokemon is immune to Water-type moves. The first time it is hit by a Water-type move, its offensive stat is multiplied by 1.5 while using a Water-type attack as long as it remains active and has this Ability. If this Pokemon is frozen, it cannot be defrosted by Water-type attacks.",
+		shortDesc: "This Pokemon's Water attacks do 1.5x damage if hit by one Water move; Water immunity.",
+		gen4: {
+			desc: "This Pokemon is immune to Water-type moves, as long as it is not frozen. The first time it is hit by a Fire-type move, damage from its Water-type attacks will be multiplied by 1.5 as long as it remains active and has this Ability.",
+		},
+		gen3: {
+			desc: "This Pokemon is immune to Water-type moves, as long as it is not frozen. The first time it is hit by a Fire-type move, damage from its Fire-type attacks will be multiplied by 1.5 as long as it remains active and has this Ability. If this Pokemon has a non-volatile status condition, is a Fire type, or has a substitute, Will-O-Wisp will not activate this Ability.",
+		},
+
+		start: "  The power of [POKEMON]'s Water-type moves rose!",
+	},
 	flowergift: {
 		name: "Flower Gift",
 		desc: "If this Pokemon is a Cherrim and Sunny Day is active, it changes to Sunshine Form and the Attack and Special Defense of it and its allies are multiplied by 1.5. These effects are prevented if the Pokemon is holding a Utility Umbrella.",
