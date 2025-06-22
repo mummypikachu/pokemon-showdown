@@ -604,6 +604,8 @@ export const commands: Chat.ChatCommands = {
 						tierDisplay = 'National Dex tiers';
 					} else if (room.battle.format.includes('sigmadex')) {
 						tierDisplay = 'Sigmatic Dex tiers';
+					} else if (room.battle.format.includes('newdex')) {
+						tierDisplay = 'New Dex tiers';
 					} 
 				}
 				if (!tierDisplay) tierDisplay = 'tiers';
@@ -611,6 +613,7 @@ export const commands: Chat.ChatCommands = {
 					tierDisplay === 'doubles tiers' ? pokemon.doublesTier :
 					tierDisplay === 'National Dex tiers' ? pokemon.natDexTier :
 					tierDisplay === 'Sigmatic Dex tiers' ? pokemon.saDexTier :
+					tierDisplay === 'New Dex tiers' ? pokemon.newDexTier :
 					pokemon.num >= 0 ? String(pokemon.num) : pokemon.tier;
 				buffer += `|raw|${Chat.getDataPokemonHTML(pokemon, dex.gen, displayedTier)}\n`;
 				if (showDetails) {

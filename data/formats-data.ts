@@ -231,19 +231,23 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	sandshrew: {
 		tier: "LC",
 		natDexTier: "LC",
+		newDexTier: "LC",
 	},
 	sandshrewalola: {
 		tier: "LC",
 		natDexTier: "LC",
+		newDexTier: "LC",
 	},
 	sandslash: {
 		tier: "UU",
 		natDexTier: "RU",
+		newDexTier: "RU",
 	},
 	sandslashalola: {
 		tier: "OU",
 		doublesTier: "DOU",
 		natDexTier: "RU",
+		newDexTier: "UU",
 	},
 	nidoranf: {
 		tier: "LC",
@@ -2087,10 +2091,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	chingling: {
 		tier: "LC",
 		natDexTier: "LC",
+		newDexTier: "LC",
 	},
 	chimecho: {
 		tier: "PU",
 		natDexTier: "RU",
+		newDexTier: "RU",
 	},
 	absol: {
 		tier: "RU",
@@ -2706,28 +2712,34 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	snivy: {
 		tier: "LC",
 		natDexTier: "LC",
+		newDexTier: "RU",
 	},
 	servine: {
 		tier: "NFE",
 		natDexTier: "NFE",
+		newDexTier: "UU",
 	},
 	serperior: {
 		tier: "UU",
 		doublesTier: "DOU",
 		natDexTier: "UU",
+		newDexTier: "Uber",
 	},
 	tepig: {
 		tier: "LC",
 		natDexTier: "LC",
+		newDexTier: "LC",
 	},
 	pignite: {
 		tier: "NFE",
 		natDexTier: "NFE",
+		newDexTier: "NFE",
 	},
 	emboar: {
 		tier: "UU",
 		doublesTier: "DUU",
 		natDexTier: "RU",
+		newDexTier: "OU",
 	},
 	oshawott: {
 		tier: "LC",
@@ -2841,10 +2853,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	woobat: {
 		tier: "LC",
 		natDexTier: "LC",
+		newDexTier: "LC",
 	},
 	swoobat: {
 		tier: "PU",
 		natDexTier: "RU",
+		newDexTier: "UU",
 	},
 	drilbur: {
 		tier: "LC",
@@ -2943,25 +2957,31 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "NU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
+		newDexTier: "RU",
 	},
 	basculinbluestriped: {
 		tier: "NU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
+		newDexTier: "RU",
 	},
 	basculinexcir: {
 		tier: "OU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
+		newDexTier: "UU",
 	},
 	basculinwhitestriped: {
 		tier: "NU",
+		newDexTier: "RU",
 	},
 	basculegion: {
 		tier: "OU",
+		newDexTier: "Uber",
 	},
 	basculegionf: {
 		tier: "OU",
+		newDexTier: "Uber",
 	},
 	sandile: {
 		tier: "LC",
@@ -3151,10 +3171,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	karrablast: {
 		tier: "LC",
 		natDexTier: "LC",
+		newDexTier: "LC",
 	},
 	escavalier: {
 		tier: "PU",
 		natDexTier: "RU",
+		newDexTier: "OU",
 	},
 	foongus: {
 		tier: "LC",
@@ -3196,14 +3218,17 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	klink: {
 		tier: "LC",
 		natDexTier: "LC",
+		newDexTier: "LC",
 	},
 	klang: {
 		tier: "NFE",
 		natDexTier: "NFE",
+		newDexTier: "RU",
 	},
 	klinklang: {
 		tier: "RU",
 		natDexTier: "RU",
+		newDexTier: "UUBL",
 	},
 	tynamo: {
 		tier: "LC",
@@ -3263,10 +3288,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	shelmet: {
 		tier: "LC",
 		natDexTier: "LC",
+		newDexTier: "LC",
 	},
 	accelgor: {
 		tier: "PU",
 		natDexTier: "RU",
+		newDexTier: "UUBL",
 	},
 	stunfisk: {
 		tier: "PU",
@@ -5336,33 +5363,40 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "New",
 		natDexTier: "OU",
 		doublesTier: "DOU",
+		newDexTier: "OU",
 	},
 	chivalmet: {
 		tier: "New",
 		natDexTier: "OU",
 		doublesTier: "DOU",
+		newDexTier: "OU",
 	},
 	awanezumi: {
 		tier: "New",
 		natDexTier: "RU",
+		newDexTier: "RU",
 	},
 	garock: {
 		tier: "New",
 		natDexTier: "UU",
 		doublesTier: "DUU",
+		newDexTier: "OU",
 	},
 	tanisu: {
 		tier: "LC",
 		natDexTier: "LC",
+		newDexTier: "LC",
 	},
 	tanince: {
 		tier: "NFE",
 		natDexTier: "NFE",
+		newDexTier: "RU",
 	},
 	tanking: {
 		tier: "New",
 		natDexTier: "UU",
 		doublesTier: "DOU",
+		newDexTier: "OU",
 	},
 	muscklar: {
 		tier: "LC",
@@ -5371,40 +5405,44 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	muchabrawn: {
 		tier: "New",
 		natDexTier: "RU",
+		newDexTier: "UU",
 	},
 	tepigphyor: {
 		tier: "New",
 		natDexTier: "RU",
+		newDexTier: "RU",
 	},
 	snivyfloria: {
 		tier: "New",
 		natDexTier: "RU",
+		newDexTier: "RU",
 	},
 	chimechoexcir: {
 		tier: "UU",
 		natDexTier: "UU",
 		doublesTier: "DOU",
+		newDexTier: "UU",
 	},
-	avaluggnoble: {
+	avaluggnoble: { // do not put in newdex
 		tier: "UU",
 		natDexTier: "UU",
 		doublesTier: "DOU",
 	},
-	lilligantnoble: {
+	lilligantnoble: { // do not put in newdex
 		tier: "OU",
 		natDexTier: "OU",
 		doublesTier: "DOU",
 	},
-	kleavornoble: {
+	kleavornoble: { //do not put in newdex
 		tier: "OU",
 		natDexTier: "OU",
 		doublesTier: "DOU",
 	},
-	arcaninenoble: {
+	arcaninenoble: { //do not put in newdex
 		tier: "Uber",
 		doublesTier: "DUber",
 	},
-	electrodenoble: {
+	electrodenoble: { //do not put in newdex
 		tier: "OU",
 		natDexTier: "OU",
 		doublesTier: "DOU",
@@ -5412,100 +5450,121 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	mossmy: {
 		tier: "LC",
 		natDexTier: "LC",
+		newDexTier: "LC",
 	},
 	kodomin: {
 		tier: "New",
 		natDexTier: "OU",
 		doublesTier: "DOU",
+		newDexTier: "OU",
 	},
 	kotora: {
 		tier: "LC",
 		natDexTier: "LC",
+		newDexTier: "LC",
 	},
 	raitora: {
 		tier: "New",
 		natDexTier: "OU",
 		doublesTier: "DOU",
+		newDexTier: "UUBL",
 	},
 	heamanbou: {
 		tier: "LC",
 		natDexTier: "LC",
+		newDexTier: "LC",
 	},
 	ikari: {
 		tier: "New",
 		natDexTier: "OU",
 		doublesTier: "DOU",
+		newDexTier: "OU",
 	},
 	rockade: {
 		tier: "LC",
 		natDexTier: "LC",
+		newDexTier: "LC",
 	},
 	lustremoth: {
 		tier: "New",
 		natDexTier: "NU",
 		doublesTier: "DOU",
+		newDexTier: "RUBL",
 	},
 	kolibrary: {
 		tier: "New",
 		natDexTier: "OU",
 		doublesTier: "DOU",
+		newDexTier: "UUBL",
 	},
 	shabo: {
 		tier: "New",
 		natDexTier: "OU",
 		doublesTier: "DOU",
+		newDexTier: "UUBL",
 	},
 	bounspike: {
 		tier: "New",
-		natDexTier: "PU",
+		natDexTier: "RU",
 		doublesTier: "(DUU)",
+		newDexTier: "RU",
 	},
 	hakogame: {
 		tier: "New",
 		natDexTier: "UU",
 		doublesTier: "(DUU)",
+		newDexTier: "UU",
 	},
 	mimime: {
 		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "RU",
+		newDexTier: "UU",
 	},
 	snobal: {
 		tier: "LC",
 		natDexTier: "LC",
+		newDexTier: "LC",
 	},
 	bunnicy: {
 		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "RU",
+		newDexTier: "RU",
 	},
 	monorabi: {
 		tier: "LC",
 		natDexTier: "LC",
+		newDexTier: "LC",
 	},
 	ubausagi: {
 		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "RU",
+		newDexTier: "RU",
 	},
 	kimairan: {
 		tier: "Uber",
 		doublesTier: "DOU",
 		natDexTier: "Uber",
+		newDexTier: "Uber",
 	},
 	lighli: {
 		tier: "Uber",
 		doublesTier: "DOU",
 		natDexTier: "Uber",
+		newDexTier: "Uber",
 	},
 	klangexcir: {
 		tier: "NFE",
 		natDexTier: "NFE",
+		newDexTier: "RU",
 	},
 	klinklangexcir: {
 		tier: "New",
 		natDexTier: "UU",
 		doublesTier: "DOU",
+		newDexTier: "UU",
 	},
 	vertebrawn: {
 		tier: "New",
@@ -5516,80 +5575,107 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "OU",
+		newDexTier: "UU",
 	},
 	jaggro: {
 		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "OU",
+		newDexTier: "RUBL",
 	},
 	ferrasteel: {
 		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "OU",
+		newDexTier: "OU",
 	},
 	essorism: {
 		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "OU",
+		newDexTier: "RU",
 	},
 	kurumi: {
 		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "OU",
+		newDexTier: "RUBL",
 	},
 	chamin: {
 		tier: "LC",
 		natDexTier: "LC",
+		newDexTier: "LC",
 	},
 	uezari: {
 		tier: "OU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
+		newDexTier: "OU",
 	},
 	chilleti: {
 		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "OU",
+		newDexTier: "UUBL",
 	},
 	toroika: {
 		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "OU",
+		newDexTier: "Uber",
 	},
 	komari: {
 		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "OU",
+		newDexTier: "UUBL",
 	},
 	shiomagune: {
 		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "OU",
+		newDexTier: "UU",
 	},
 	shroomin: {
 		tier: "LC",
 		natDexTier: "LC",
+		newDexTier: "LC",
 	},
 	brawloom: {
 		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "OU",
+		newDexTier: "OU",
 	},
 	culepien: {
 		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "RU",
+		newDexTier: "RUBL",
 	},
 	arei: {
 		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "OU",
+		newDexTier: "UUBL",
 	},
 	bararin: {
 		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "RU",
+		newDexTier: "RU",
 	},
+	woobatexcir: {
+		tier: "LC",
+		natDexTier: "LC",
+		newDexTier: "LC",
+	},
+	swoobatexcir: {
+		tier: "PU",
+		natDexTier: "RU",
+		newDexTier: "RUBL",
+	},
+	// Start CAP/Missingno, don't place under this
 	missingno: {
 		isNonstandard: "Custom",
 		tier: "Illegal",

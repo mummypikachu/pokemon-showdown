@@ -6700,5 +6700,46 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
         },
 		rating: -1,
 		num: 279,
+	},
+	watercirculation: {
+		onTryHit(target, source, move) {
+			if (target !== source && move.type === 'Water') {
+				move.accuracy = true;
+				if (!target.addVolatile('watercirculation')) {
+					this.add('-immune', target, '[from] ability: Water Circulation');
+				}
+				return null;
+			}
 		},
+		onEnd(pokemon) {
+			pokemon.removeVolatile('watercirculation');
+		},
+		condition: {
+			noCopy: true, // doesn't get copied by Baton Pass
+			onStart(target) {
+				this.add('-start', target, 'ability: Water Circulation');
+			},
+			onModifyAtkPriority: 5,
+			onModifyAtk(atk, attacker, defender, move) {
+				if (move.type === 'Water' && attacker.hasAbility('watercirculation')) {
+					this.debug('Water Circulation boost');
+					return this.chainModify(1.5);
+				}
+			},
+			onModifySpAPriority: 5,
+			onModifySpA(atk, attacker, defender, move) {
+				if (move.type === 'Water' && attacker.hasAbility('watercirculation')) {
+					this.debug('Water Circulation boost');
+					return this.chainModify(1.5);
+				}
+			},
+			onEnd(target) {
+				this.add('-end', target, 'ability: Water Circulation', '[silent]');
+			},
+		},
+		isBreakable: true,
+		name: "Water Circulation",
+		rating: 3.5,
+		num: 18,
+	},
 };

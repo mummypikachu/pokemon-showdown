@@ -282,6 +282,28 @@ export const Tags: {[id: string]: TagData} = {
 		speciesFilter: species => species.saDexTier === 'RU'
 	},
 
+	// New Dex tiers
+	newou: {
+		name: "NewDex OU",
+		speciesFilter: species => species.newDexTier === 'OU' || species.newDexTier === '(OU)',
+	},
+	newuubl: {
+		name: "NewDex UUBL",
+		speciesFilter: species => species.newDexTier === 'UUBL'
+	},
+	newuu: {
+		name: "NewDex UU",
+		speciesFilter: species => species.newDexTier === 'UU'
+	},
+	newrubl: {
+	name: "NewDex RUBL",
+	speciesFilter: species => species.newDexTier === 'RUBL'
+	},
+	newru: {
+		name: "NewDex RU",
+		speciesFilter: species => species.newDexTier === 'RU'
+	},
+
 	// Legality tags
 	past: {
 		name: "Past",

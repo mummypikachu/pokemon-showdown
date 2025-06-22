@@ -29,6 +29,7 @@ export interface SpeciesFormatsData {
 	isNonstandard?: Nonstandard | null;
 	natDexTier?: TierTypes.Singles | TierTypes.Other;
 	saDexTier?: TierTypes.Singles | TierTypes.Other;
+	newDexTier?: TierTypes.Singles | TierTypes.Other;
 	tier?: TierTypes.Singles | TierTypes.Other;
 }
 
@@ -235,6 +236,10 @@ export class Species extends BasicEffect implements Readonly<BasicEffect & Speci
 	 * Sigmatic Dex Tier. The Pokemon's location in the Sigmatic Dex tier system.
 	 */
 	readonly saDexTier: TierTypes.Singles | TierTypes.Other;
+	/**
+	 * new Dex Tier. The Pokemon's location in the New Dex tier system.
+	 */
+	readonly newDexTier: TierTypes.Singles | TierTypes.Other;
 	
 	constructor(data: AnyObject) {
 		super(data);
@@ -259,6 +264,7 @@ export class Species extends BasicEffect implements Readonly<BasicEffect & Speci
 		this.doublesTier = data.doublesTier || '';
 		this.natDexTier = data.natDexTier || '';
 		this.saDexTier = data.saDexTier || '';
+		this.newDexTier = data.newDexTier || '';
 		this.evos = data.evos || [];
 		this.evoType = data.evoType || undefined;
 		this.evoMove = data.evoMove || undefined;
@@ -459,22 +465,25 @@ export class DexSpecies {
 					if (!(key in species)) (species as any)[key] = baseSpeciesStatuses[key];
 				}
 			}
-			if (!species.tier && !species.doublesTier && !species.natDexTier && !species.saDexTier && species.baseSpecies !== species.name) {
+			if (!species.tier && !species.doublesTier && !species.natDexTier && !species.saDexTier && !species.newDexTier && species.baseSpecies !== species.name) {
 				if (species.baseSpecies === 'Mimikyu') {
 					species.tier = this.dex.data.FormatsData[toID(species.baseSpecies)].tier || 'Illegal';
 					species.doublesTier = this.dex.data.FormatsData[toID(species.baseSpecies)].doublesTier || 'Illegal';
 					species.natDexTier = this.dex.data.FormatsData[toID(species.baseSpecies)].natDexTier || 'Illegal';
 					species.saDexTier = this.dex.data.FormatsData[toID(species.baseSpecies)].saDexTier || 'Illegal';
+					species.newDexTier = this.dex.data.FormatsData[toID(species.baseSpecies)].newDexTier || 'Illegal';
 				} else if (species.id.endsWith('totem')) {
 					species.tier = this.dex.data.FormatsData[species.id.slice(0, -5)].tier || 'Illegal';
 					species.doublesTier = this.dex.data.FormatsData[species.id.slice(0, -5)].doublesTier || 'Illegal';
 					species.natDexTier = this.dex.data.FormatsData[species.id.slice(0, -5)].natDexTier || 'Illegal';
 					species.saDexTier = this.dex.data.FormatsData[species.id.slice(0, -5)].saDexTier || 'Illegal';
+					species.newDexTier = this.dex.data.FormatsData[species.id.slice(0, -5)].newDexTier || 'Illegal';
 				} else if (species.battleOnly) {
 					species.tier = this.dex.data.FormatsData[toID(species.battleOnly)].tier || 'Illegal';
 					species.doublesTier = this.dex.data.FormatsData[toID(species.battleOnly)].doublesTier || 'Illegal';
 					species.natDexTier = this.dex.data.FormatsData[toID(species.battleOnly)].natDexTier || 'Illegal';
 					species.saDexTier = this.dex.data.FormatsData[toID(species.battleOnly)].saDexTier || 'Illegal';
+					species.newDexTier = this.dex.data.FormatsData[toID(species.battleOnly)].newDexTier || 'Illegal';
 				} else {
 					const baseFormatsData = this.dex.data.FormatsData[toID(species.baseSpecies)];
 					if (!baseFormatsData) {
@@ -484,12 +493,14 @@ export class DexSpecies {
 					species.doublesTier = baseFormatsData.doublesTier || 'Illegal';
 					species.natDexTier = baseFormatsData.natDexTier || 'Illegal';
 					species.saDexTier = baseFormatsData.saDexTier || 'Illegal';
+					species.newDexTier = baseFormatsData.newDexTier || 'Illegal';
 				}
 			}
 			if (!species.tier) species.tier = 'Illegal';
 			if (!species.doublesTier) species.doublesTier = species.tier as any;
 			if (!species.natDexTier) species.natDexTier = species.tier;
 			if (!species.saDexTier) species.saDexTier = 'Illegal';
+			if (!species.newDexTier) species.newDexTier = 'Illegal';
 			if (species.gen > this.dex.gen) {
 				species.tier = 'Illegal';
 				species.doublesTier = 'Illegal';
@@ -512,6 +523,7 @@ export class DexSpecies {
 					species.isNonstandard = 'Future';
 					species.tier = species.doublesTier = species.natDexTier = 'Illegal';
 					species.tier = species.doublesTier = species.saDexTier = 'Illegal';
+					species.tier = species.doublesTier = species.newDexTier = 'Illegal';
 
 				}
 			}
@@ -530,7 +542,7 @@ export class DexSpecies {
 		} else {
 			species = new Species({
 				id, name: id,
-				exists: false, tier: 'Illegal', doublesTier: 'Illegal', natDexTier: 'Illegal', isNonstandard: 'Custom', saDexTier: 'Illegal',
+				exists: false, tier: 'Illegal', doublesTier: 'Illegal', natDexTier: 'Illegal', isNonstandard: 'Custom', saDexTier: 'Illegal', newDexTier: 'Illegal',
 			});
 		}
 		if (species.exists) this.speciesCache.set(id, species);
