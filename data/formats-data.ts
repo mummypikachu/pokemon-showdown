@@ -5685,6 +5685,16 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 		newDexTier: "UUBL",
 	},
+	rinrin: {
+		tier: "LC",
+		natDexTier: "LC",
+		newDexTier: "LC",
+	},
+	bererun: {
+		tier: "New",
+		natDexTier: "RU",
+		newDexTier: "UUBL",
+	},
 	// Start CAP/Missingno, don't place under this
 	missingno: {
 		isNonstandard: "Custom",
