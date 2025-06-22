@@ -7760,5 +7760,16 @@ export const MovesText: {[k: string]: MoveText} = {
 		gen7: {
 			desc: "Will always result in a critical hit.",
 			shortDesc: "Nearly always goes first. Always crits.",
-	}},
+		}
+	},
+	downpour: {
+		name: "Downpour",
+		desc: "Has a 30% chance to make the target flinch.",
+		shortDesc: "30% chance to make the target flinch.",
+	},
+	masqueradeslash: {
+		name: "Masquerade Slash",
+		desc: "This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armor or Shell Armor Abilities.",
+		shortDesc: "Always results in a critical hit.",
+	},
 };
