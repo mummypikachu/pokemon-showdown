@@ -296,12 +296,20 @@ export const Tags: {[id: string]: TagData} = {
 		speciesFilter: species => species.newDexTier === 'UU'
 	},
 	newrubl: {
-	name: "NewDex RUBL",
-	speciesFilter: species => species.newDexTier === 'RUBL'
+		name: "NewDex RUBL",
+		speciesFilter: species => species.newDexTier === 'RUBL'
 	},
 	newru: {
 		name: "NewDex RU",
 		speciesFilter: species => species.newDexTier === 'RU'
+	},
+	newnubl: {
+		name: "NewDex NUBL",
+		speciesFilter: species => species.newDexTier === 'NUBL'
+	},
+	newnu: {
+		name: "NewDex NU",
+		speciesFilter: species => species.newDexTier === 'NU'
 	},
 
 	// Legality tags

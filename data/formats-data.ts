@@ -2714,7 +2714,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	snivy: {
 		tier: "LC",
 		natDexTier: "LC",
-		newDexTier: "RU",
+		newDexTier: "NU",
 	},
 	servine: {
 		tier: "NFE",

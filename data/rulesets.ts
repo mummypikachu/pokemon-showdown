@@ -70,8 +70,8 @@ export const Rulesets: {[k: string]: FormatData} = {
 	},
 	standardnewdex: {
 		effectType: 'ValidatorRule',
-		name: 'Standard SigmaDex',
-		desc: "The standard ruleset for all offical Sigmatic singles tiers (Ubers, OU, etc.)",
+		name: 'Standard New Dex',
+		desc: "The standard ruleset for all offical New Dex singles tiers (Ubers, OU, etc.)",
 		onValidateSet(set, obtainable) {
 			const species = this.dex.species.get(set.species);
 			const requireObtainable = this.ruleTable.has('obtainable');
@@ -83,13 +83,13 @@ export const Rulesets: {[k: string]: FormatData} = {
 						return;
 					
 					}
-					return [`${set.name || set.species} does not exist in the Sigmatic Dex.`];
+					return [`${set.name || set.species} does not exist in the New Dex.`];
 				};
 				for (const moveid of set.moves) {
 					const move = this.dex.moves.get(moveid);
 					if (move.isNonstandard === 'Unobtainable' && move.gen === this.dex.gen || move.id === 'lightofruin') {
 						if (this.ruleTable.has(`+move:${move.id}`)) continue;
-						const problem = `${set.name}'s move ${move.name} does not exist in the Sigmatic Dex.`;
+						const problem = `${set.name}'s move ${move.name} does not exist in the New Dex.`;
 						if (this.ruleTable.has('omunobtainablemoves')) {
 							const outOfBattleSpecies = this.getValidationSpecies(set)[0];
 							if (!this.omCheckCanLearn(move, outOfBattleSpecies, this.allSources(outOfBattleSpecies), set, problem)) continue;

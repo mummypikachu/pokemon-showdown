@@ -1085,4 +1085,39 @@ export const Formats: FormatList = [
 		ruleset: ['Standard SigmaDex', '+CAP'],
 		banlist: ['Moody', 'Sand Veil', 'Snow Cloak', 'King\'s Rock', 'Baton Pass', 'Gorilla Tactics', 'Last Respects', 'Shedinja + Air Balloon', 'Zygarde + Power Construct'],
 	},
+		// New Dex
+	///////////////////////////////////////////////////////////////////
+
+	{
+		section: "New Dex",
+		column: 2,
+	},
+	{
+		name: "New Dex OU",
+
+		mod: 'gen9',
+		ruleset: ['Standard New Dex'],
+		banlist: ['Uber', 'Moody', 'Sand Veil', 'Snow Cloak', 'King\'s Rock', 'Baton Pass', 'Gorilla Tactics', 'Last Respects', 'Shedinja + Air Balloon', 'Zygarde + Power Construct'],
+	},
+	{
+		name: "New Dex UU",
+
+		mod: 'gen9',
+		ruleset: ['Standard New Dex'],
+		banlist: ['Uber', 'OU', 'UUBL', 'Moody', 'Sand Veil', 'Snow Cloak', 'King\'s Rock', 'Baton Pass', 'Gorilla Tactics', 'Last Respects', 'Shedinja + Air Balloon', 'Zygarde + Power Construct'],
+	},
+	{
+		name: "New Dex RU",
+
+		mod: 'gen9',
+		ruleset: ['Standard New Dex'],
+		banlist: ['Uber', 'OU', 'UUBL', 'UU', 'RUBL', 'Moody', 'Sand Veil', 'Snow Cloak', 'King\'s Rock', 'Baton Pass', 'Gorilla Tactics', 'Last Respects', 'Shedinja + Air Balloon', 'Zygarde + Power Construct'],
+	},
+	{
+		name: "New Dex NU",
+
+		mod: 'gen9',
+		ruleset: ['Standard New Dex'],
+		banlist: ['Uber', 'OU', 'UUBL', 'UU', 'RUBL', 'RU', 'NUBL', 'Moody', 'Sand Veil', 'Snow Cloak', 'King\'s Rock', 'Baton Pass', 'Gorilla Tactics', 'Last Respects', 'Shedinja + Air Balloon', 'Zygarde + Power Construct'],
+	},
 ];
