@@ -1724,11 +1724,13 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	shroomish: {
 		tier: "LC",
+		newDexTier: "NU",
 	},
 	breloom: {
 		tier: "OU",
 		doublesTier: "DUU",
 		natDexTier: "RU",
+		newDexTier: "Uber",
 	},
 	slakoth: {
 		tier: "LC",
@@ -2733,7 +2735,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	pignite: {
 		tier: "NFE",
 		natDexTier: "NFE",
-		newDexTier: "NFE",
+		newDexTier: "NU",
 	},
 	emboar: {
 		tier: "UU",
@@ -5450,7 +5452,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	mossmy: {
 		tier: "LC",
 		natDexTier: "LC",
-		newDexTier: "LC",
+		newDexTier: "NU",
 	},
 	kodomin: {
 		tier: "New",
@@ -5663,7 +5665,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "RU",
-		newDexTier: "RU",
+		newDexTier: "NU",
 	},
 	woobatexcir: {
 		tier: "LC",
@@ -5678,7 +5680,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	ponku: {
 		tier: "LC",
 		natDexTier: "LC",
-		newDexTier: "LC",
+		newDexTier: "NU",
 	},
 	tanpu: {
 		tier: "New",
