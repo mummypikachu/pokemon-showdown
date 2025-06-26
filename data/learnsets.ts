@@ -34445,6 +34445,24 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			{generation: 7, level: 64, gender: "M", abilities: ["intimidate"], moves: ["crunch", "firefang", "icefang", "thunderfang"], pokeball: "cherishball"},
 		],
 	},
+	guardyena: {
+		learnset: {
+			jawlock: ["9M", "9L0", "9L1"],
+			uturn: ["9M"],
+			detect: ["9M"],
+			hyperfang: ["9M"],
+			imprison: ["9M"],
+			wildcharge: ["9M"],
+			zenheadbutt: ["9M"],
+			dig: ["9M"],
+			earthquake: ["9M"],
+			throatchop: ["9M"],
+			rockslide: ["9M"],
+			nightmare: ["9M"],
+			hypnosis: ["9M"],
+			flareblitz: ["9M"],
+		},
+	},
 	zigzagoon: {
 		learnset: {
 			attract: ["9M", "9M", "9M", "5M", "4M", "3M"],

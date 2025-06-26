@@ -1616,10 +1616,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	poochyena: {
 		tier: "LC",
 		natDexTier: "LC",
+		newDexTier: "LC",
 	},
 	mightyena: {
 		tier: "NU",
 		natDexTier: "RU",
+		newDexTier: "RUBL",
 	},
 	zigzagoon: {
 		tier: "LC",
@@ -5713,6 +5715,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "New",
 		natDexTier: "RU",
 		newDexTier: "UU",
+	},
+	guardyena: {
+		tier: "New",
+		natDexTier: "UU",
+		newDexTier: "OU",
 	},
 	// Start CAP/Missingno, don't place under this
 	missingno: {
