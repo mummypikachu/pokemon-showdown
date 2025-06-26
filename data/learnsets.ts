@@ -92817,7 +92817,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			bodyslam: ["9M"],
 			cut: ["9M"],
 			headsmash: ["9M"],
-			heavypress: ["9M"],
+			hardpress: ["9M"],
 			heavyslam: ["9M"],
 			kingsshield: ["9M"],
 			metalburst: ["9M"],

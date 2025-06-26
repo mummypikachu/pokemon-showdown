@@ -19647,7 +19647,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		evoLevel: 42,
 		eggGroups: ["Field"],
 	},
-	ponku: { // water pump pokemon. name placeholder
+	ponku: { // water pump pokemon. name final
 		num: 1564,
 		name: "Ponku",
 		types: ["Water", "Fighting"],
@@ -19655,12 +19655,12 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Water Absorb", 1: "Water Circulation", H: "Iron Fist"},
 		heightm: 0.3,
 		weightkg: 5,
-		color: "Yellow",
+		color: "Red",
 		eggGroups: ["Field"],
-		evos: ["Brawloom"],
+		evos: ["Tanpu"],
 		gen: 3,
 	},
-	tanpu: { // water pump pokemon. name placeholder
+	tanpu: { // water pump pokemon. name final
 		num: 1565,
 		name: "Tanpu",
 		types: ["Water", "Fighting"],
@@ -19668,8 +19668,8 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Water Absorb", 1: "Water Circulation", H: "Iron Fist"},
 		heightm: 1.4,
 		weightkg: 19,
-		color: "Green",
-		prevo: "Shroomin",
+		color: "Blue",
+		prevo: "Ponku",
 		evoLevel: 30,
 		eggGroups: ["Field"],
 		gen: 3,
