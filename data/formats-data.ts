@@ -2163,6 +2163,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	relicanth: {
 		tier: "NU",
 		natDexTier: "RU",
+		newDexTier: "RUBL",
 	},
 	luvdisc: {
 		tier: "PU",
