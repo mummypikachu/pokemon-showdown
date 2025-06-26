@@ -957,6 +957,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	eevee: {
 		tier: "LC",
+		newDexTier: "LC",
 	},
 	eeveestarter: {
 		isNonstandard: "LGPE",
@@ -970,49 +971,59 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "RU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
+		newDexTier: "OU",
 	},
 	jolteon: {
 		tier: "RU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
+		newDexTier: "OU",
 	},
 	flareon: {
 		tier: "UU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
+		newDexTier: "UU",
 	},
 	espeon: {
 		tier: "UU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
+		newDexTier: "OU",
 	},
 	umbreon: {
 		tier: "UU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
+		newDexTier: "UU",
 	},
 	leafeon: {
 		tier: "RU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
+		newDexTier: "UUBL",
 	},
 	glaceon: {
 		tier: "RU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
+		newDexTier: "RU",
 	},
 	sylveon: {
 		tier: "RU",
 		doublesTier: "DOU",
 		natDexTier: "RU",
+		newDexTier: "OU",
 	},
 	quartzeon: {
 		tier: "UU",
 		doublesTier: "DUU",
+		newDexTier: "OU",
 	},
 	aerileon: {
 		tier: "(OU)",
 		doublesTier: "(DOU)",
+		newDexTier: "Uber",
 	},
 	porygon: {
 		tier: "LC",
