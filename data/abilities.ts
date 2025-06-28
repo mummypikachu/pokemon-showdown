@@ -4261,7 +4261,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onTerrainChange(pokemon) {
 			if (pokemon.transformed) return;
 			// Protosynthesis is not affected by Utility Umbrella
-			if (this.field.isWeather('sunnyday')) {
+			if (this.field.isTerrain('electricterrain')) {
 				pokemon.addVolatile('quarkdrive');
 			} else if (!pokemon.volatiles['quarkdrive']?.fromBooster) {
 				pokemon.removeVolatile('quarkdrive');
