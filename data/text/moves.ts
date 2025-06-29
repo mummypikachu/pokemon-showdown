@@ -6670,6 +6670,11 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Lowers the user's Attack and Defense by 1 stage.",
 		shortDesc: "Lowers the user's Attack and Defense by 1.",
 	},
+	zenaurablast: {
+		name: "Zen-Aura Blast",
+		desc: "Lowers the user's Sp.Atk and Sp.Def by 1 stage.",
+		shortDesc: "Lowers the user's Sp.Atk and Sp.Def by 1.",
+	},
 	supersonic: {
 		name: "Supersonic",
 		shortDesc: "Causes the target to become confused.",

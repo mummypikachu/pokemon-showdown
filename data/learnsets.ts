@@ -23620,6 +23620,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			xscissor: ["9M", "9M", "9V", "9M", "9M", "5M", "4M"],
 			zapcannon: ["7V", "3S12", "3S13"],
 			zenheadbutt: ["9M", "9M", "7T", "6T", "5T", "9T"],
+			zenaurablast: ["9M"],
 		},
 		eventData: [
 			{generation: 3, level: 30, shiny: 1, moves: ["pound", "transform", "megapunch", "metronome"]},
@@ -25934,6 +25935,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			uturn: ["9M", "9M", "9M", "5M", "4M"],
 			wish: ["9L48", "9L29", "6L29", "5L30", "4L30", "3L35"],
 			zenheadbutt: ["9M", "9T", "6T", "5T", "9T"],
+			zenaurablast: ["9M"],
 		},
 		encounters: [
 			{generation: 2, level: 15},
@@ -43500,6 +43502,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			trickroom: ["9M", "9M", "9M", "5M", "4M"],
 			willowisp: ["9M", "9L24", "9M", "9L25", "9M", "6L25", "5M", "5L33", "4M", "4L33", "3L41"],
 			wonderroom: ["9M", "9M", "6T", "5T"],
+			zenaurablast: ["9M"],
 		},
 		encounters: [
 			{generation: 4, level: 16},
@@ -50898,6 +50901,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			waterpulse: ["9M", "7T", "6T", "4M", "4S0"],
 			workup: ["9L16", "9M", "9L1", "9M", "9L42", "5M"],
 			zenheadbutt: ["9M", "9M", "7T", "6T", "5T", "9T"],
+			zenaurablast: ["9M"],
 		},
 		eventData: [
 			{generation: 4, level: 50, gender: "M", nature: "Modest", abilities: ["steadfast"], moves: ["aurasphere", "darkpulse", "dragonpulse", "waterpulse"], pokeball: "cherishball"},
@@ -55824,6 +55828,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			uproar: ["9M", "9T", "6T", "5T"],
 			uturn: ["9M", "9M", "9M", "5M"],
 			workup: ["9M", "9M", "5M"],
+			zenaurablast: ["9M"],
 		},
 		encounters: [
 			{generation: 5, level: 22},
@@ -63009,6 +63014,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			uproar: ["9M", "9T", "6T", "5T"],
 			wonderroom: ["9M", "9L60", "9T", "9L1", "6T", "6L1", "5T", "5L68"],
 			zenheadbutt: ["9M", "9L36", "9T", "9L32", "6T", "6L32", "5T", "5L32"],
+			zenaurablast: ["9M"],
 		},
 	},
 	litwick: {
@@ -64108,6 +64114,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			uturn: ["9M", "9L30", "9M", "9L30", "9M", "9L41", "6M", "6L41", "5M", "5L41"],
 			vitalthrow: ["9E", "9E", "9E", "5E"],
 			workup: ["9M", "9M", "5M"],
+			zenaurablast: ["9M"],
 		},
 	},
 	mienshao: {
@@ -64200,6 +64207,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			vacuumwave: ["9M"],
 			wideguard: ["9L20", "9L20", "9L45", "6L45", "5L45"],
 			workup: ["9M", "9M", "5M"],
+			zenaurablast: ["9M"],
 		},
 		eventData: [
 			{generation: 7, level: 65, gender: "M", abilities: ["innerfocus"], moves: ["fakeout", "dualchop", "highjumpkick", "uturn"], pokeball: "cherishball"},
@@ -84273,6 +84281,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			trickroom: ["9M", "9M"],
 			wonderroom: ["9M"],
 			zenheadbutt: ["9M", "9M"],
+			zenaurablast: ["9M"],
 		},
 	},
 	indeedeef: {

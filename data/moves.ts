@@ -20312,6 +20312,26 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Fighting",
 		contestType: "Tough",
 	},
+	zenaurablast: {
+		num: 276,
+		accuracy: 100,
+		basePower: 130,
+		category: "Special",
+		name: "Zen-Aura Blast",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, punch: 1},
+		self: {
+			boosts: {
+				spa: -1,
+				spd: -1,
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Fighting",
+		contestType: "Tough",
+	},
 	supersonic: {
 		num: 48,
 		accuracy: 55,
