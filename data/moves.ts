@@ -14634,6 +14634,30 @@ export const Moves: {[moveid: string]: MoveData} = {
 		zMove: {boost: {def: 1}},
 		contestType: "Clever",
 	},
+	poisonmist: {
+		num: 201204,
+		accuracy: 90,
+		basePower: 50,
+		category: "Special",
+		name: "Poison Mist",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 60,
+			onHit(target, source) {
+				const result = this.random(2);
+				if (result === 0) {
+					target.trySetStatus('psn', source);
+				} else {
+					target.trySetStatus('tox', source);
+				}
+			},
+		},
+		target: "normal",
+		type: "Poison",
+		contestType: "Cool",
+	},
 	poisonhorn: {
 		num: 398,
 		accuracy: 100,
