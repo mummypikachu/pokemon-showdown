@@ -2316,6 +2316,10 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onModifySpe(spe) {
 			return this.chainModify(1.3);
 		},
+		// Item suppression implemented in Pokemon.ignoringItem() within sim/pokemon.js
+		onStart(pokemon) {
+			this.singleEvent('End', pokemon.getItem(), pokemon.itemState, pokemon);
+		},
 		name: "Power Promise",
 		rating: 5,
 		num: 37,

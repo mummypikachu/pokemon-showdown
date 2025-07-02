@@ -788,7 +788,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	powerpromise: {
 		name: "Power Promise",
-		shortDesc: "1.5x Attack, 1.5x Defense, 1.7x Sp. Attack and 1.3x Speed.",
+		shortDesc: "1.5x Attack, 1.5x Defense, 1.7x Sp. Attack and 1.3x Speed. Held item has no effect, can't fling.",
 	},
 	hungerswitch: {
 		name: "Hunger Switch",
