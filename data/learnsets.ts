@@ -6316,6 +6316,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			defensecurl: ["9L1", "9L1", "9L1", "7V", "6L1", "5L1", "4L1", "9T", "3L1"],
 			detect: ["7V"],
 			dig: ["9M", "9M", "9V", "9M", "5M", "4M", "3M"],
+			dinnertime: ["9M"],
 			disable: ["9L1", "9L1", "9L1", "7V", "6L1", "5L1", "4L1", "3L1"],
 			disarmingvoice: ["9M", "9L1", "9L1"],
 			doubleedge: ["9L1", "9L1", "9L1", "7V", "6L1", "9T"],

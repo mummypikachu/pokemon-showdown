@@ -10658,6 +10658,23 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "allies",
 		type: "Grass",
 	},
+	dinnertime: {
+		num: 816,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Dinnertime!",
+		pp: 10,
+		priority: 0,
+		flags: {heal: 1, bypasssub: 1, allyanim: 1},
+		onHit(pokemon) {
+			const success = !!this.heal(this.modify(pokemon.maxhp, 0.25));
+			return pokemon.cureStatus() || success;
+		},
+		secondary: null,
+		target: "allies",
+		type: "Fairy",
+	},
 	karatechop: {
 		num: 2,
 		accuracy: 100,

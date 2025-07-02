@@ -2302,6 +2302,24 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 5,
 		num: 37,
 	},
+	powerpromise: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk) {
+			return this.chainModify(1.5);
+		},
+		onModifyDef(def) {
+			return this.chainModify(1.5);
+		},
+		onModifySpA(spa) {
+			return this.chainModify(1.7);
+		},
+		onModifySpe(spe) {
+			return this.chainModify(1.3);
+		},
+		name: "Power Promise",
+		rating: 5,
+		num: 37,
+	},
 	hungerswitch: {
 		onResidualOrder: 29,
 		onResidual(pokemon) {
