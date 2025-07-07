@@ -1914,7 +1914,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	spherical: {
 		name: "Spherical",
-		shortDesc: "USELESS CURRENTLY: Rollout and Ice Ball raise the user's Defense by 1 stage on each use.",
+		shortDesc: "Raises the power of Bullet moves by 1.5.",
 	},
 	stakeout: {
 		name: "Stakeout",

@@ -7131,6 +7131,13 @@ export const MovesText: {[k: string]: MoveText} = {
 
 		activate: "  Tidying up complete!",
 	},
+	trasheater: {
+		name: "Trash Eater",
+		desc: "Removes subtitutes from all active Pokemon and ends the effects of Spikes, Stealth Rock, Sticky Web, and Toxic Spikes for both sides.",
+		shortDesc: "Clears all substitutes/hazards.",
+
+		activate: "  Trash removed!",
+	},
 	topsyturvy: {
 		name: "Topsy-Turvy",
 		desc: "The target's positive stat stages become negative and vice versa. Fails if all of the target's stat stages are 0.",

@@ -2255,7 +2255,14 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	spherical: {
 		name: "Spherical",
-		rating: 0,
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['bullet']) {
+				this.debug('Sharpness boost');
+				return this.chainModify(1.5);
+			}
+		},
+		rating: 3.5,
 		num: 118,
 	},
 	strongjabs: {
