@@ -21159,6 +21159,36 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Normal",
 	},
+	/*megaburst: {
+		num: 74,
+		accuracy: 100,
+		basePower: 80,
+		category: "Special",
+		name: "Mega Burst",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onModifyType(move, pokemon, target) {
+			if (pokemon.terastallized) { //figure out how this can check if its mega'd or not
+			let type = pokemon.getTypes()[0];
+			if (type === "Bird") type = "???";
+			if (type === "Stellar") type = pokemon.getTypes(false, true)[0];
+			move.type = type;
+		},
+			}
+		},
+		onModifyMove(move, pokemon) {
+			if (pokemon.canMegaEvo && pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) {
+				move.category = 'Physical';
+			}
+			if (pokemon.species.name === 'rayquazamega') {
+				move.self = {boosts: {atk: -1, spa: -1}};
+			}
+		},
+		secondary: null,
+		target: "normal",
+		type: "Normal",
+	},*/
 	terastarstorm: {
 		num: 906,
 		accuracy: 100,
