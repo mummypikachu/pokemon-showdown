@@ -5433,6 +5433,20 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 6,
 	
 	},
+	dragonitite: {
+		name: "Dragonitite",
+		spritenum: 627,
+		megaStone: "Dragonite-Mega",
+		megaEvolves: "Dragonite",
+		itemUser: ["Dragonite"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 739374,
+		gen: 9,
+	
+	},
 	sceptilite: {
 		name: "Sceptilite",
 		spritenum: 613,

@@ -3360,6 +3360,21 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		evoLevel: 55,
 		eggGroups: ["Water 1", "Dragon"],
 	},
+	dragonitemega: {
+		num: 149,
+		name: "Dragonite-Mega",
+		baseSpecies: "Dragonite",
+		forme: "Mega",
+		types: ["Dragon", "Flying"],
+		baseStats: {hp: 91, atk: 154, def: 115, spa: 110, spd: 120, spe: 110}, //PLACEHOLDER. Adjust to Legends Z-A values once game releases
+		abilities: {0: "Aerilate"},
+		heightm: 2.4,
+		weightkg: 199,
+		color: "Brown",
+		tags: ["Sub-Legendary"],
+		eggGroups: ["Undiscovered"],
+		requiredItem: "Dragonitite", //Legends Z-A
+	},
 	mewtwo: {
 		num: 150,
 		name: "Mewtwo",
