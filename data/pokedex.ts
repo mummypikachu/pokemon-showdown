@@ -3371,8 +3371,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 2.4,
 		weightkg: 199,
 		color: "Brown",
-		tags: ["Sub-Legendary"],
-		eggGroups: ["Undiscovered"],
+		eggGroups: ["Water 1", "Dragon"],
 		requiredItem: "Dragonitite", //Legends Z-A
 	},
 	mewtwo: {
