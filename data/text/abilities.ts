@@ -1045,6 +1045,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 
 		damage: "  [POKEMON] sucked up the liquid ooze!",
 	},
+	leecher: {
+		name: "Leecher",
+		desc: "Holder gains 1.3x HP from draining/Aqua Ring/Ingrain/Leech Seed/Strength Sap.",
+		shortDesc: "This Pokemon gains 1.3x HP from draining/Aqua Ring/Ingrain.",
+	},
 	liquidvoice: {
 		name: "Liquid Voice",
 		desc: "This Pokemon's sound-based moves become Water-type moves. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects. There is also a 1.2x Boost to the moves.",
