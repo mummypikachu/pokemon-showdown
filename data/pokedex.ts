@@ -19704,7 +19704,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		gen: 3,
 	},
 	guardyena: {
-		num: 262,
+		num: 1566,
 		name: "Guardyena",
 		types: ["Dark"],
 		baseStats: {hp: 90, atk: 105, def: 100, spa: 70, spd: 85, spe: 105},
