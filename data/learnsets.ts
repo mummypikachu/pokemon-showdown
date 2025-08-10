@@ -39011,6 +39011,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			toxic: ["9M", "9M", "5M", "4M", "3M"],
 			uproar: ["9M", "9T", "9E", "6T", "9E", "5T", "5E", "4E", "3E"],
 			voltswitch: ["9M", "9M", "9M", "5M"],
+			voltmane: ["9M", "9M", "9M", "5M"],
 			wildcharge: ["9M", "9L40", "9M", "9L39", "9M", "6L39", "5M", "5L49"],
 		},
 	},

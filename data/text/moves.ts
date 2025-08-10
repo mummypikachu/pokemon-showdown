@@ -700,8 +700,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	brine: {
 		name: "Brine",
-		desc: "Power doubles if the target has less than or equal to half of its maximum HP remaining.",
-		shortDesc: "Power doubles if the target's HP is 50% or less.",
+		desc: "Power doubles if the target has less than or equal to half of its maximum HP remaining. Power quadruples if the target has less than or equal to a quarter of its maximum HP remaining.",
+		shortDesc: "Power doubles if target's HP is 50%, quadruples if 25% or less.",
 	},
 	brutalswing: {
 		name: "Brutal Swing",
@@ -2131,6 +2131,11 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	flamecharge: {
 		name: "Flame Charge",
+		desc: "Has a 100% chance to raise the user's Speed by 1 stage.",
+		shortDesc: "100% chance to raise the user's Speed by 1.",
+	},
+	voltmane: {
+		name: "Volt Mane",
 		desc: "Has a 100% chance to raise the user's Speed by 1 stage.",
 		shortDesc: "100% chance to raise the user's Speed by 1.",
 	},
@@ -7508,7 +7513,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	watersport: {
 		name: "Water Sport",
 		desc: "For 5 turns, all Fire-type attacks used by any active Pokemon have their power multiplied by 0.33. Fails if this effect is already active.",
-		shortDesc: "For 5 turns, Fire-type attacks have 1/3 power.",
+		shortDesc: "For 5 turns, Fire attacks have 1/3 power. Next Water move 2x power.",
 		gen5: {
 			desc: "While the user is active, all Fire-type attacks used by any active Pokemon have their power multiplied by 0.33. Fails if this effect is already active for any Pokemon.",
 			shortDesc: "Weakens Fire-type attacks to 1/3 their power.",

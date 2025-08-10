@@ -1978,6 +1978,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 			if (target.hp * 2 <= target.maxhp) {
 				return this.chainModify(2);
 			}
+			if (target.hp * 4 <= target.maxhp) {
+				return this.chainModify(4);
+			}
 		},
 		secondary: null,
 		target: "normal",
@@ -22608,6 +22611,27 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Electric",
 		contestType: "Cool",
 	},
+	voltmane: {
+		num: 3735543,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		name: "Volt Mane",
+		pp: 20,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 100,
+			self: {
+				boosts: {
+					spe: 1,
+				},
+			},
+		},
+		target: "normal",
+		type: "Electric",
+		contestType: "Cool",
+	},
 	volttackle: {
 		num: 344,
 		accuracy: 100,
@@ -22803,7 +22827,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 15,
 		priority: 0,
 		flags: {nonsky: 1},
-		pseudoWeather: 'watersport',
+		pseudoWeather: 'watersport',				
+		volatileStatus: 'wsport',
 		condition: {
 			duration: 5,
 			onFieldStart(field, source) {
@@ -22815,11 +22840,42 @@ export const Moves: {[moveid: string]: MoveData} = {
 					this.debug('water sport weaken');
 					return this.chainModify([1352, 4096]);
 				}
+					if (move.type === 'Water') {
+					this.debug('charge boost');
+					return this.chainModify(2);
+				}
 			},
 			onFieldResidualOrder: 27,
 			onFieldResidualSubOrder: 3,
 			onFieldEnd() {
 				this.add('-fieldend', 'move: Water Sport');
+			},
+			onStart(pokemon, source, effect) {
+				if (effect && ['Electromorphosis', 'Wind Power'].includes(effect.name)) {
+					this.add('-start', pokemon, 'wsport', this.activeMove!.name, '[from] ability: ' + effect.name);
+				} else {
+					this.add('-start', pokemon, 'wsport');
+				}
+			},
+			onRestart(pokemon, source, effect) {
+				if (effect && ['Electromorphosis', 'Wind Power'].includes(effect.name)) {
+					this.add('-start', pokemon, 'wsport', this.activeMove!.name, '[from] ability: ' + effect.name);
+				} else {
+					this.add('-start', pokemon, 'wsport');
+				}
+			},
+			onMoveAborted(pokemon, target, move) {
+				if (move.type === 'Water' && move.id !== 'wsport') {
+					pokemon.removeVolatile('wsport');
+				}
+			},
+			onAfterMove(pokemon, target, move) {
+				if (move.type === 'Water' && move.id !== 'wsport') {
+					pokemon.removeVolatile('wsport');
+				}
+			},
+			onEnd(pokemon) {
+				this.add('-end', pokemon, 'Water Sport', '[silent]');
 			},
 		},
 		secondary: null,
