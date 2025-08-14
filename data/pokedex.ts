@@ -11749,7 +11749,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["Reshiram-Weakened"],
 		formeOrder: ["Reshiram", "Reshiram-Weakened"],
 	},
-	reshiramweakened: {
+	/*reshiramweakened: {
 		num: 643,
 		name: "Reshiram-Weakened",
 		baseSpecies: "Reshiram",
@@ -11762,7 +11762,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 300,
 		color: "White",
 		eggGroups: ["Undiscovered"],
-	},
+	},*/
 	zekrom: {
 		num: 644,
 		name: "Zekrom",
@@ -16696,7 +16696,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		baseStats: {hp: 140, atk: 85, def: 125, spa: 145, spd: 125, spe: 130},
 		abilities: {0: "Pressure"},
 		heightm: 100,
-		weightkg: 0,
+		weightkg: 999,
 		color: "Purple",
 		eggGroups: ["Undiscovered"],
 		battleOnly: "Eternatus",
