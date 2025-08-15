@@ -13445,6 +13445,45 @@ export const Moves: {[moveid: string]: MoveData} = {
 		zMove: {boost: {spd: 1}},
 		contestType: "Cute",
 	},
+	emberrain: {
+		num: 300,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+	
+		name: "Ember Rain",
+		pp: 15,
+		priority: 0,
+		flags: {nonsky: 1},
+		pseudoWeather: 'emberrain',
+		condition: {
+			duration: 5,
+			onFieldStart(field, source) {
+				this.add('-fieldstart', 'move: Ember Rain', '[of] ' + source);
+			},
+			onBasePowerPriority: 1,
+			onBasePower(basePower, attacker, defender, move) {
+				if (move.type === 'Grass') {
+					this.debug('emberrain weaken');
+					return this.chainModify([1352, 4096]);
+				}
+				if (move.type === 'Fire') {
+					this.debug('emberrain strengthen');
+					return this.chainModify([6144, 4096]);
+				}
+			},
+			onFieldResidualOrder: 27,
+			onFieldResidualSubOrder: 4,
+			onFieldEnd() {
+				this.add('-fieldend', 'move: Ember Rain');
+			},
+		},
+		secondary: null,
+		target: "all",
+		type: "Fire",
+		zMove: {boost: {spa: 1}},
+		contestType: "Cute",
+	},
 	muddywater: {
 		num: 330,
 		accuracy: 85,
