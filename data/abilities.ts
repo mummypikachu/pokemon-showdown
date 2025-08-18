@@ -6755,7 +6755,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: -1,
 		num: 279,
 	},
-	timemanipulation: { //needs testing
+	timemanipulation: { //needs testing. do not hand to pokemon that don't already have this
 		name: "Time Manipulation",
 		onChargeMove(pokemon, target, move) {
             this.debug('power herb - remove charge turn for ' + move.id);
@@ -6806,5 +6806,62 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Water Circulation",
 		rating: 3.5,
 		num: 18,
+	},
+	principleofmind: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Psychic') {
+				this.debug('Rocky Payload boost');
+				return this.chainModify(1.5);
+			}
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Psychic') {
+				this.debug('Rocky Payload boost');
+				return this.chainModify(1.5);
+			}
+		},
+		name: "Principle of Mind",
+		rating: 3.5,
+		num: 276,
+	},
+	principleofpower: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Fighting') {
+				this.debug('Rocky Payload boost');
+				return this.chainModify(1.5);
+			}
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Fighting') {
+				this.debug('Rocky Payload boost');
+				return this.chainModify(1.5);
+			}
+		},
+		name: "Principle of Power",
+		rating: 3.5,
+		num: 276,
+	},
+	principleofresilience: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Steel') {
+				this.debug('Rocky Payload boost');
+				return this.chainModify(1.5);
+			}
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Steel') {
+				this.debug('Rocky Payload boost');
+				return this.chainModify(1.5);
+			}
+		},
+		name: "Principle of Resilience",
+		rating: 3.5,
+		num: 276,
 	},
 };
