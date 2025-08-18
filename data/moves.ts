@@ -13445,44 +13445,54 @@ export const Moves: {[moveid: string]: MoveData} = {
 		zMove: {boost: {spd: 1}},
 		contestType: "Cute",
 	},
-	emberrain: {
-		num: 300,
+	charredterrain: {
+		num: 604,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-	
-		name: "Ember Rain",
-		pp: 15,
+		name: "Charred Terrain",
+		pp: 10,
 		priority: 0,
 		flags: {nonsky: 1},
-		pseudoWeather: 'emberrain',
+		terrain: 'charredterrain', //Should affect Mimicry and Terrain Pulse. Unique in that it affects flying pokemon too
 		condition: {
 			duration: 5,
-			onFieldStart(field, source) {
-				this.add('-fieldstart', 'move: Ember Rain', '[of] ' + source);
-			},
-			onBasePowerPriority: 1,
-			onBasePower(basePower, attacker, defender, move) {
-				if (move.type === 'Grass') {
-					this.debug('emberrain weaken');
-					return this.chainModify([1352, 4096]);
+			durationCallback(source, effect) {
+				if (source?.hasItem('terrainextender')) {
+					return 8;
 				}
-				if (move.type === 'Fire') {
-					this.debug('emberrain strengthen');
-					return this.chainModify([6144, 4096]);
+				return 5;
+			},
+			onSetStatus(status, target, source, effect) {
+				if (status.id === 'frz' && !target.isSemiInvulnerable()) {
+					return false;
+				}
+			},
+			onBasePowerPriority: 6,
+			onBasePower(basePower, attacker, defender, move) {
+				if (move.type === 'Fire' && !attacker.isSemiInvulnerable()) {
+					this.debug('charring terrain boost');
+					return this.chainModify([5325, 4096]);
+				}
+			},
+			onFieldStart(field, source, effect) {
+				if (effect?.effectType === 'Ability') {
+					this.add('-fieldstart', 'move: Charred Terrain', '[from] ability: ' + effect.name, '[of] ' + source);
+				} else {
+					this.add('-fieldstart', 'move: Charred Terrain');
 				}
 			},
 			onFieldResidualOrder: 27,
-			onFieldResidualSubOrder: 4,
+			onFieldResidualSubOrder: 7,
 			onFieldEnd() {
-				this.add('-fieldend', 'move: Ember Rain');
+				this.add('-fieldend', 'move: Charred Terrain');
 			},
 		},
 		secondary: null,
 		target: "all",
 		type: "Fire",
 		zMove: {boost: {spa: 1}},
-		contestType: "Cute",
+		contestType: "Cool",
 	},
 	muddywater: {
 		num: 330,
@@ -21278,6 +21288,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 				break;
 			case 'psychicterrain':
 				move.type = 'Psychic';
+				break;
+			case 'charredterrain':
+				move.type = 'Fire';
 				break;
 			}
 		},

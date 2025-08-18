@@ -1360,6 +1360,14 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 4,
 		num: 226,
 	},
+	desolation: {
+		onStart(source) {
+			this.field.setTerrain('charredterrain');
+		},
+		name: "Desolation",
+		rating: 4,
+		num: 226,
+	},
 	electromorphosis: {
 		onDamagingHitOrder: 1,
 		onDamagingHit(damage, target, source, move) {
@@ -3135,6 +3143,9 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				break;
 			case 'psychicterrain':
 				types = ['Psychic'];
+				break;
+			case 'charredterrain':
+				types = ['Fire'];
 				break;
 			default:
 				types = pokemon.baseSpecies.types;
