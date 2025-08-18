@@ -13586,7 +13586,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		num: 738,
 		name: "Vikavolt",
 		types: ["Bug", "Electric"],
-		baseStats: {hp: 97, atk: 70, def: 105, spa: 120, spd: 105, spe: 103},
+		baseStats: {hp: 77, atk: 70, def: 90, spa: 120, spd: 105, spe: 103},
 		abilities: {0: "Levitate"},
 		heightm: 1.5,
 		weightkg: 45,
