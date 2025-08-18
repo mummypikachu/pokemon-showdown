@@ -19773,9 +19773,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		evoLevel: 44,
 		eggGroups: ["Field"],
 	},
-	MagicPrincipleSubLeg: { //Placeholder 1
+	toggt: { //thought
 		num: 1567,
-		name: "Magic Sublegend",
+		name: "Toggt",
 		types: ["Almighty"],
 		gender: "N",
 		baseStats: {hp: 100, atk: 75, def: 115, spa: 90, spd: 115, spe: 85},
@@ -19786,9 +19786,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		tags: ["Sub-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
-	PowerPrincipleSubLeg: { //Placeholder 2
+	forzer: { //Name based on Force
 		num: 1568,
-		name: "Power Sublegend",
+		name: "Forzer",
 		types: ["Almighty"],
 		gender: "N",
 		baseStats: {hp: 100, atk: 75, def: 115, spa: 90, spd: 115, spe: 85},
@@ -19799,7 +19799,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		tags: ["Sub-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
-	ResiliencePrincipleSubLeg: { //Placeholder 3
+	resuil: { //Resilience
 		num: 1569,
 		name: "Resilience Sublegend",
 		types: ["Almighty"],
@@ -19812,11 +19812,11 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		tags: ["Sub-Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
-	PrincipleCombination: { // Placeholder 670 BOXART3
+	boxart3: { // boxart3
 		num: 1570,
-		name: "670 Principle Combination Ability",
-		types: ["Almighty"],
-		baseStats: {hp: 100, atk: 100, def: 100, spa: 100, spd: 100, spe: 100},
+		name: "Boxart3",
+		types: ["Water", "Almighty"],
+		baseStats: {hp: 100, atk: 100, def: 170, spa: 100, spd: 100, spe: 100},
 		abilities: {0: "Pressure", H: "Cloud Nine"},
 		heightm: 11.2,
 		weightkg: 145.6,
@@ -19828,7 +19828,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	kimairan: { // UBER. "Exiled Pokémon". Do not change name.
 		num: 1571,
 		name: "Kimairan",
-		types: ["Ground", "Flying"],
+		types: ["Ground", "Almighty"],
 		baseStats: {hp: 110, atk: 120, def: 120, spa: 90, spd: 130, spe: 110},
 		abilities: {0: "Pressure", H: "Sand Stream"},
 		heightm: 3.5,
@@ -19841,7 +19841,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	lighli: { // UBER. final name.
 		num: 1572,
 		name: "Lighli",
-		types: ["Dragon", "Flying"],
+		types: ["Dragon", "Almighty"],
 		baseStats: {hp: 110, atk: 90, def: 130, spa: 120, spd: 120, spe: 110},
 		abilities: {0: "Pressure", H: "Cloud Nine"},
 		heightm: 11.2,
