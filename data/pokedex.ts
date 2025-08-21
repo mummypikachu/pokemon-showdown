@@ -1686,6 +1686,20 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		evoItem: "Leaf Stone",
 		eggGroups: ["Grass"],
 	},
+	victreebelmega: {
+		num: 71,
+		name: "Victreebel-Mega",
+		baseSpecies: "Victreebel",
+		forme: "Mega",
+		types: ["Grass", "Poison"],
+		baseStats: {hp: 80, atk: 105, def: 105, spa: 130, spd: 110, spe: 80}, //PLACEHOLDER. Adjust to Legends Z-A values once game releases
+		abilities: {0: "Corrosion"},
+		heightm: 2.2,
+		weightkg: 100,
+		color: "Green",
+		eggGroups: ["Grass"],
+		requiredItem: "Victreebelite", //Legends Z-A
+	},
 	tentacool: {
 		num: 72,
 		name: "Tentacool",
