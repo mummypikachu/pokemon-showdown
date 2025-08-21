@@ -1694,8 +1694,8 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Grass", "Poison"],
 		baseStats: {hp: 80, atk: 105, def: 105, spa: 130, spd: 110, spe: 80}, //PLACEHOLDER. Adjust to Legends Z-A values once game releases
 		abilities: {0: "Corrosion"},
-		heightm: 2.2,
-		weightkg: 100,
+		heightm: 4.5,
+		weightkg: 125,
 		color: "Green",
 		eggGroups: ["Grass"],
 		requiredItem: "Victreebelite", //Legends Z-A
@@ -3395,10 +3395,10 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		baseSpecies: "Dragonite",
 		forme: "Mega",
 		types: ["Dragon", "Flying"],
-		baseStats: {hp: 91, atk: 154, def: 115, spa: 110, spd: 120, spe: 110}, //PLACEHOLDER. Adjust to Legends Z-A values once game releases
-		abilities: {0: "Aerilate"},
-		heightm: 2.4,
-		weightkg: 199,
+		baseStats: {hp: 91, atk: 134, def: 105, spa: 140, spd: 120, spe: 110}, //PLACEHOLDER. Adjust to Legends Z-A values once game releases
+		abilities: {0: "Cute Charm"},
+		heightm: 2.2,
+		weightkg: 290,
 		color: "Brown",
 		eggGroups: ["Water 1", "Dragon"],
 		requiredItem: "Dragonitite", //Legends Z-A
