@@ -2165,7 +2165,6 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	relicanth: {
 		tier: "NU",
 		natDexTier: "RU",
-		newDexTier: "RUBL",
 	},
 	luvdisc: {
 		tier: "PU",
@@ -5713,7 +5712,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 		newDexTier: "UUBL",
 	},
-	relicanthexcir: {
+	olfin: {
 		tier: "New",
 		natDexTier: "RU",
 		newDexTier: "UU",
@@ -5722,6 +5721,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "New",
 		natDexTier: "UU",
 		newDexTier: "OU",
+	},
+	flyfin: {
+		tier: "LC",
+		natDexTier: "LC",
+		newDexTier: "LC",
 	},
 	// Start CAP/Missingno, don't place under this
 	missingno: {
