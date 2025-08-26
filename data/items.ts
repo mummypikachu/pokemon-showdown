@@ -8022,4 +8022,18 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 9,
 	
 	},
+	hawluchite: {
+		name: "Hawluchite",
+		spritenum: 627,
+		megaStone: "Hawlucha-Mega",
+		megaEvolves: "Hawlucha",
+		itemUser: ["Hawlucha"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 739376,
+		gen: 9,
+	
+	},
 };

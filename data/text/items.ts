@@ -1671,6 +1671,14 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Dragonitite",
 		desc: "If held by a Dragonite, this item allows it to Mega Evolve in battle.",
 	},
+	victreebelite: {
+		name: "Victreebelite",
+		desc: "If held by a Victreebel, this item allows it to Mega Evolve in battle.",
+	},
+	hawluchite: {
+		name: "Hawluchite",
+		desc: "If held by a Hawlucha, this item allows it to Mega Evolve in battle.",
+	},
 	sceptilite: {
 		name: "Sceptilite",
 		desc: "If held by a Sceptile, this item allows it to Mega Evolve in battle.",

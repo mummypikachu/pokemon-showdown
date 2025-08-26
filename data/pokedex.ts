@@ -12845,6 +12845,20 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Green",
 		eggGroups: ["Flying", "Human-Like"],
 	},
+	hawluchamega: {
+		num: 701,
+		name: "Hawlucha-Mega",
+		baseSpecies: "Hawlucha",
+		forme: "Mega",
+		types: ["Fighting", "Flying"],
+		baseStats: {hp: 78, atk: 132, def: 95, spa: 74, spd: 83, spe: 138}, //PLACEHOLDER. Adjust to Legends Z-A values once game releases
+		abilities: {0: "Mold Breaker"},
+		heightm: 0.9,
+		weightkg: 21.5,
+		color: "Green",
+		eggGroups: ["Flying", "Human-Like"],
+		requiredItem: "Hawluchite", //Legends Z-A
+	},
 	dedenne: {
 		num: 702,
 		name: "Dedenne",
