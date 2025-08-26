@@ -1598,6 +1598,14 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 			desc: "If Rain Dance is active, this Pokemon restores 1/16 of its maximum HP, rounded down, at the end of each turn.",
 		},
 	},
+	rapidgrowth: {
+		name: "Rapid Growth",
+		desc: "If Sunny Day is active, this Pokemon restores 1/16 of its maximum HP, rounded down, at the end of each turn. This effect is prevented if this Pokemon is holding a Utility Umbrella.",
+		shortDesc: "If Sunny Day is active, this Pokemon heals 1/16 of its max HP each turn.",
+		gen7: {
+			desc: "If Sunny Day is active, this Pokemon restores 1/16 of its maximum HP, rounded down, at the end of each turn.",
+		},
+	},
 	rattled: {
 		name: "Rattled",
 		desc: "This Pokemon's Speed is raised by 1 stage if hit by a Bug-, Dark-, or Ghost-type attack, or if an opposing Pokemon affected this Pokemon with the Intimidate Ability.",

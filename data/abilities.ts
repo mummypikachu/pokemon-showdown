@@ -6864,4 +6864,15 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3.5,
 		num: 276,
 	},
+	rapidgrowth: {
+		onWeather(target, source, effect) {
+			if (target.hasItem('utilityumbrella')) return;
+			if (effect.id === 'sunnyday' || effect.id === 'desolateland') {
+				this.heal(target.baseMaxhp / 16);
+			}
+		},
+		name: "Rapid Growth",
+		rating: 1.5,
+		num: 50145,
+	},
 };
