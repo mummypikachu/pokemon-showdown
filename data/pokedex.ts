@@ -268,7 +268,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	butterfree: {
 		num: 12,
 		name: "Butterfree",
-		types: ["Bug", "Flying"],
+		types: ["Bug", "Psychic"],
 		baseStats: {hp: 80, atk: 45, def: 80, spa: 110, spd: 80, spe: 100},
 		abilities: {0: "Compound Eyes", H: "Tinted Lens"},
 		heightm: 1.1,

@@ -95216,7 +95216,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			supersonic: ["9M"],
 			agility: ["9M"],
 			trailblaze: ["9M"],
-			wingattack: ["9M"],
 			flail: ["9M"],
 			splash: ["9M"],
 			workup: ["9M"],
