@@ -6940,7 +6940,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		otherFormes: ["Relicanth-Excir"],
 		formeOrder: ["Relicanth", "Relicanth-Excir"],
 	},
-	relicanthexcir: {
+	/*relicanthexcir: {
 		num: 369,
 		name: "Relicanth-Excir",
 		baseSpecies: "Relicanth",
@@ -6952,7 +6952,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 21.4,
 		color: "Purple",
 		eggGroups: ["Water 1", "Water 2"],
-	},
+	},*/
 	luvdisc: {
 		num: 370,
 		name: "Luvdisc",
