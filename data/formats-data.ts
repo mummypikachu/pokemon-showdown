@@ -494,6 +494,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "UU",
 		natDexTier: "RU",
 	},
+	victreebelmega: {
+		tier: "UU",
+		natDexTier: "RU",
+	},
 	tentacool: {
 		tier: "LC",
 		natDexTier: "LC",
@@ -1078,6 +1082,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "NU",
 		natDexTier: "RU",
 	},
+	articunomega: {
+		tier: "UU",
+		natDexTier: "RU",
+	},
 	articunogalar: {
 		tier: "RU",
 		natDexTier: "RU",
@@ -1086,12 +1094,20 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "OU",
 		natDexTier: "OU",
 	},
+	zapdosmega: {
+		tier: "(OU)",
+		natDexTier: "OU",
+	},
 	zapdosgalar: {
 		tier: "OU",
 		natDexTier: "RU",
 	},
 	moltres: {
 		tier: "UU",
+		natDexTier: "RU",
+	},
+	moltresmega: {
+		tier: "OU",
 		natDexTier: "RU",
 	},
 	moltresgalar: {
@@ -3712,6 +3728,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	hawlucha: {
+		tier: "UU",
+		doublesTier: "(DUU)",
+		natDexTier: "UU",
+	},
+	hawluchamega: {
 		tier: "UU",
 		doublesTier: "(DUU)",
 		natDexTier: "UU",

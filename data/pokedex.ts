@@ -12880,7 +12880,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		baseSpecies: "Hawlucha",
 		forme: "Mega",
 		types: ["Fighting", "Flying"],
-		baseStats: {hp: 78, atk: 132, def: 95, spa: 74, spd: 83, spe: 138}, //PLACEHOLDER. Adjust to Legends Z-A values once game releases
+		baseStats: {hp: 78, atk: 137, def: 100, spa: 74, spd: 93, spe: 118}, //PLACEHOLDER. Adjust to Legends Z-A values once game releases
 		abilities: {0: "Mold Breaker"},
 		heightm: 0.9,
 		weightkg: 21.5,
