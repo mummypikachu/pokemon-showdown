@@ -29,6 +29,18 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 674,
 		gen: 9,
 	},
+	articunite: {
+		name: "Articunite",
+		spritenum: 575,
+		megaStone: "Articuno-Mega",
+		megaEvolves: "Articuno",
+		itemUser: ["Articuno"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		gen: 9,
+	},
 	butterfreeite: {
 		name: "Butterfreeite",
 		spritenum: 575,
@@ -4149,6 +4161,17 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 883,
 		gen: 7,
 	},
+	moltresite: {
+		name: "Moltresite",
+		spritenum: 575,
+		megaStone: "Moltres-Mega",
+		megaEvolves: "Moltres",
+		itemUser: ["Moltres"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+	},
 	moonball: {
 		name: "Moon Ball",
 		spritenum: 294,
@@ -8045,6 +8068,20 @@ export const Items: {[itemid: string]: ItemData} = {
 			return true;
 		},
 		num: 739376,
+		gen: 9,
+	
+	},
+	zapdosite: {
+		name: "Zapdosite",
+		spritenum: 627,
+		megaStone: "Zapdos-Mega",
+		megaEvolves: "Zapdos",
+		itemUser: ["Zapdos"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 739377,
 		gen: 9,
 	
 	},

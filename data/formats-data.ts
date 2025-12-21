@@ -1109,6 +1109,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
+	dragonitemega: {
+		tier: "UU",
+		doublesTier: "DOU",
+		natDexTier: "OU",
+	},
 	mewtwo: {
 		tier: "Uber",
 		natDexTier: "Uber",
@@ -1956,6 +1961,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "NFE",
 	},
 	flygon: {
+		tier: "UU",
+		natDexTier: "RU",
+	},
+	flygonmega: {
 		tier: "UU",
 		natDexTier: "RU",
 	},
