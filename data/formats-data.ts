@@ -5046,7 +5046,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	tatsugiri: {
 		tier: "RU",
-		doublesTier: "DUber",
+		doublesTier: "DOU",
+		natDexTier: "RU",
+	},
+	tatsugirimega: {
+		tier: "UU",
+		doublesTier: "DOU",
 		natDexTier: "RU",
 	},
 	cyclizar: {

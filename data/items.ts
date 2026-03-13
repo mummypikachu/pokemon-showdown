@@ -6183,6 +6183,18 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 1117,
 		gen: 8,
 	},
+	tatsugirinite: {
+		name: "Tatsugirinite",
+		spritenum: 612,
+		megaStone: "Tatsugiri-Mega",
+		megaEvolves: "Tatsugiri",
+		itemUser: ["Tatsugiri"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+
+	},
 	terrainextender: {
 		name: "Terrain Extender",
 		spritenum: 662,
