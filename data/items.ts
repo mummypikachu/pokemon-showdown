@@ -8041,8 +8041,8 @@ export const Items: {[itemid: string]: ItemData} = {
 		isNonstandard: "CAP",
 	},
 	// Z-A
-	dragonitite: {
-		name: "Dragonitite",
+	dragoninite: {
+		name: "Dragoninite",
 		spritenum: 627,
 		megaStone: "Dragonite-Mega",
 		megaEvolves: "Dragonite",
@@ -8053,7 +8053,19 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 739374,
 		gen: 9,
-	
+	},
+	malamarite: {
+		name: "Malamarite",
+		spritenum: 627,
+		megaStone: "Malamar-Mega",
+		megaEvolves: "Malamar",
+		itemUser: ["Malamar"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 7324,
+		gen: 9,
 	},
 	victreebelite: {
 		name: "Victreebelite",

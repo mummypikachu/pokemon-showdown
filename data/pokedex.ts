@@ -3403,7 +3403,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 290,
 		color: "Brown",
 		eggGroups: ["Water 1", "Dragon"],
-		requiredItem: "Dragonitite", //Legends Z-A
+		requiredItem: "Dragoninite", //Legends Z-A
 	},
 	mewtwo: {
 		num: 150,
