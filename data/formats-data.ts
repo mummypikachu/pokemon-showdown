@@ -3523,6 +3523,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "RU",
 		natDexTier: "RU",
 	},
+	chesnaughtmega: {
+		tier: "OU",
+		natDexTier: "OU",
+	},
 	fennekin: {
 		tier: "LC",
 		natDexTier: "LC",
@@ -3535,6 +3539,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "RU",
 		natDexTier: "RU",
 	},
+	delphoxmega: {
+		tier: "OU",
+		natDexTier: "OU",
+	},
 	froakie: {
 		tier: "LC",
 	},
@@ -3542,6 +3550,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "NFE",
 	},
 	greninja: {
+		tier: "OU",
+		doublesTier: "DUU",
+		natDexTier: "OU",
+	},
+	greninjamega: {
 		tier: "OU",
 		doublesTier: "DUU",
 		natDexTier: "OU",
