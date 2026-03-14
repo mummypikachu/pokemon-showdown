@@ -403,6 +403,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "On switch-in, the weather becomes Desolate Land, which includes all the effects of Sunny Day and prevents damaging Water-type moves from executing. This weather remains in effect until this Ability is no longer active for any Pokemon, or the weather is changed by the Delta Stream or Primordial Sea Abilities.",
 		shortDesc: "On switch-in, extremely harsh sunlight begins until this Ability is not active in battle.",
 	},
+	desolation: {
+		name: "Desolation",
+		shortDesc: "On switch-in, this Pokemon summons Charred Terrain.",
+	},
 	detonator: {
 		name: "Detonator",
 		desc: "This Pokemon's explosion-based attacks have their power multiplied by 1.5.",
@@ -413,7 +417,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "On switch-in, Arceus type changes to the most effective type for the situation. Requires Legend Plate to actually activate.",
 		shortDesc: "On switch-in, Arceus type changes to the most effective type for the situation. Needs the Legend Plate to work.",
 
-		start: "  [POKEMON]'s type has shifted to the best for this situation",
+		start: "  [POKEMON]'s type has shifted to the best for this situation!",
 	},
 	disguise: {
 		name: "Disguise",
