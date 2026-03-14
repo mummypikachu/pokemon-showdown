@@ -5051,7 +5051,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	tatsugirimega: {
 		tier: "OU",
-		doublesTier: "DUU",
+		doublesTier: "DOU",
 		natDexTier: "UU",
 	},
 	cyclizar: {
