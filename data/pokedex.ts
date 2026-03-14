@@ -18237,9 +18237,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Yellow",
 		eggGroups: ["Water 2"],
 	},
-	tatsugiricurlymega: {
+	tatsugirimega: {
 		num: 978,
-		name: "Tatsugiri-Curly-Mega",
+		name: "Tatsugiri-Mega",
 		baseSpecies: "Tatsugiri",
 		forme: "Curly-Mega",
 		types: ["Dragon", "Water"],

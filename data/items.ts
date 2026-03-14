@@ -6188,7 +6188,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 612,
 		megaStone: "Tatsugiri-Mega",
 		megaEvolves: "Tatsugiri",
-		itemUser: ["Tatsugiri"],
+		itemUser: ["Tatsugiri", "Tatsugiri-Droopy", "Tastugiri-Strechy"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
