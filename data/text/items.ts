@@ -1901,6 +1901,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Tart Apple",
 		desc: "Evolves Applin into Flapple when used.",
 	},
+	tatsugirinite: {
+		name: "Tatsugirinite",
+		desc: "If held by an Tatsugiri, this item allows it to Mega Evolve in battle.",
+	},
 	terrainextender: {
 		name: "Terrain Extender",
 		desc: "Holder's use of Electric/Grassy/Misty/Psychic Terrain lasts 8 turns instead of 5.",
