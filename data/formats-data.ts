@@ -3679,6 +3679,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "RU",
 		natDexTier: "RU",
 	},
+	malamarmega: {
+		tier: "OU",
+		natDexTier: "OU",
+	},
 	binacle: {
 		tier: "LC",
 		natDexTier: "LC",
