@@ -39464,6 +39464,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			grassyglide: ["9T"],
 			growth: ["9L1", "9L4", "6L4", "5L4", "4L4"],
 			hiddenpower: ["9M", "9M", "5M", "4M"],
+			itchypollen: ["9M"],
 			leafstorm: ["9M", "9E", "9E", "5E", "4E"],
 			lifedew: ["9E"],
 			megadrain: ["9L13", "6L13", "5L13", "4L13"],

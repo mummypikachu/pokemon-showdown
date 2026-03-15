@@ -8148,4 +8148,17 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 537104,
 		gen: 9,
 	},
+	chimechite: {
+		name: "Chimechite",
+		spritenum: 627,
+		megaStone: "Chimecho-Mega",
+		megaEvolves: "Chimecho",
+		itemUser: ["Chimecho"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 537104,
+		gen: 9,
+	},
 };

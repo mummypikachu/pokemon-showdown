@@ -3153,6 +3153,27 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Steel",
 		contestType: "Cool",
 	},
+	itchypollen: {
+		num: 15151,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Itchy Pollen",
+		pp: 40,
+		priority: 1,
+		flags: {powder: 1, protect: 1, mirror: 1, allyanim: 1},
+		onHit(target, source) {
+			const item = target.takeItem(source);
+			if (item) {
+				this.add('-enditem', target, item.name, '[from] move: Itchy Pollen', '[of] ' + source);
+			} else {
+				this.add('-fail', target, 'move: Itchy Pollen');
+			}
+		},
+		secondary: null,
+		target: "allAdjacent",
+		type: "Grass",
+	},
 	corrosivegas: {
 		num: 810,
 		accuracy: 100,
