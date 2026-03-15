@@ -2138,6 +2138,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 		newDexTier: "RU",
 	},
+	chimechomega: {
+		tier: "OU",
+		natDexTier: "OU",
+		newDexTier: "OU",
+	},
 	absol: {
 		tier: "RU",
 		natDexTier: "RU",
