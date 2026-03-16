@@ -27,7 +27,7 @@ Ratings and how they work:
 	ex. Adaptability, Magic Bounce
 
  5: Essential
-	  The sort of ability that defines metagames.
+	  The sort of ability that defines metagames. 
 	ex. Imposter, Shadow Tag
 
 */
