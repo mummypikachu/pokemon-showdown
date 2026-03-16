@@ -1683,6 +1683,30 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Malamarite",
 		desc: "If held by a Malamar, this item allows it to Mega Evolve in battle.",
 	},
+	meganiumite: {
+		name: "Meganiumite",
+		desc: "If held by a Meganium, this item allows it to Mega Evolve in battle.",
+	},
+	chesnaughtite: {
+		name: "Chesnaughtite",
+		desc: "If held by a Chesnaught, this item allows it to Mega Evolve in battle.",
+	},
+	emboarite: {
+		name: "Emboarite",
+		desc: "If held by a Emboar, this item allows it to Mega Evolve in battle.",
+	},
+	feraligite: {
+		name: "Malamarite",
+		desc: "If held by a Feraligatr, this item allows it to Mega Evolve in battle.",
+	},
+	greninjite: {
+		name: "Greninjite",
+		desc: "If held by a Greninja, this item allows it to Mega Evolve in battle.",
+	},
+	chimechite: {
+		name: "Chimechite",
+		desc: "If held by a Chimecho, this item allows it to Mega Evolve in battle.",
+	},
 	sceptilite: {
 		name: "Sceptilite",
 		desc: "If held by a Sceptile, this item allows it to Mega Evolve in battle.",
