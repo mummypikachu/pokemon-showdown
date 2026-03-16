@@ -8161,4 +8161,43 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 537104,
 		gen: 9,
 	},
+	meganiumite: {
+		name: "Meganiumite",
+		spritenum: 627,
+		megaStone: "Meganium-Mega",
+		megaEvolves: "Meganium",
+		itemUser: ["Meganium"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 537104,
+		gen: 9,
+	},
+	emboarite: {
+		name: "Emboarite",
+		spritenum: 627,
+		megaStone: "Emboar-Mega",
+		megaEvolves: "Emboar",
+		itemUser: ["Emboar"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 537104,
+		gen: 9,
+	},
+	feraligite: {
+		name: "Feraligite",
+		spritenum: 627,
+		megaStone: "Feraligatr-Mega",
+		megaEvolves: "Feraligatr",
+		itemUser: ["Feraligatr"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 537104,
+		gen: 9,
+	},
 };

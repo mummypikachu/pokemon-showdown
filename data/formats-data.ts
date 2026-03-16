@@ -1158,6 +1158,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "RU",
 		natDexTier: "RU",
 	},
+	meganiummega: {
+		tier: "UU",
+		natDexTier: "RU",
+	},
 	cyndaquil: {
 		tier: "LC",
 		natDexTier: "LC",
@@ -1182,6 +1186,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "NFE",
 	},
 	feraligatr: {
+		tier: "UU",
+		natDexTier: "RU",
+	},
+	feraligatrmega: {
 		tier: "UU",
 		natDexTier: "RU",
 	},
@@ -2781,6 +2789,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		newDexTier: "NU",
 	},
 	emboar: {
+		tier: "UU",
+		doublesTier: "DUU",
+		natDexTier: "RU",
+		newDexTier: "OU",
+	},
+	emboarmega: {
 		tier: "UU",
 		doublesTier: "DUU",
 		natDexTier: "RU",
