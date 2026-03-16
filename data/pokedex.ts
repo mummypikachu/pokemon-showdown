@@ -17535,7 +17535,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		num: 926,
 		name: "Fidough",
 		types: ["Fairy"],
-		baseStats: {hp: 37, atk: 60, def: 70, spa: 30, spd: 60, spe: 65},
+		baseStats: {hp: 37, atk: 55, def: 70, spa: 30, spd: 60, spe: 65},
 		abilities: {0: "Own Tempo", H: "Klutz"},
 		heightm: 0.3,
 		weightkg: 10.9,
