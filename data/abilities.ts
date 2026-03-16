@@ -4278,6 +4278,19 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3.5,
 		num: 244,
 	},
+	musician: {
+		onBasePowerPriority: 7,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['sound']) {
+				this.debug('Musician boost');
+				return this.chainModify([5325, 4096]);
+			}
+		},
+		isBreakable: true,
+		name: "Musician",
+		rating: 3.5,
+		num: 244,
+	},
 	purepower: {
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk) {
