@@ -12145,7 +12145,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Fire", "Psychic"],
 		genderRatio: { M: 0.875, F: 0.125 },
 		baseStats: { hp: 75, atk: 69, def: 72, spa: 114, spd: 100, spe: 104 },
-		abilities: { 0: "Blaze", H: "Magician" },
+		abilities: { 0: "Blaze", H: "Magic Guard" },
 		heightm: 1.5,
 		weightkg: 39,
 		color: "Red",
