@@ -17534,7 +17534,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		num: 927,
 		name: "Dachsbun",
 		types: ["Fairy"],
-		baseStats: {hp: 57, atk: 80, def: 115, spa: 50, spd: 80, spe: 95},
+		baseStats: {hp: 57, atk: 85, def: 125, spa: 50, spd: 85, spe: 95},
 		abilities: {0: "Well-Baked Body", H: "Aroma Veil"},
 		heightm: 0.5,
 		weightkg: 14.9,
