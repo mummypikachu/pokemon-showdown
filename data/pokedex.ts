@@ -9641,8 +9641,8 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	herdier: {
 		num: 507,
 		name: "Herdier",
-		types: ["Normal", "Ground"],
-		baseStats: {hp: 65, atk: 80, def: 65, spa: 35, spd: 65, spe: 100},
+		types: ["Normal"],
+		baseStats: {hp: 65, atk: 80, def: 65, spa: 35, spd: 65, spe: 70},
 		abilities: {0: "Intimidate", 1: "Sand Rush", H: "Scrappy"},
 		heightm: 0.9,
 		weightkg: 14.7,
@@ -9655,7 +9655,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	stoutland: {
 		num: 508,
 		name: "Stoutland",
-		types: ["Normal", "Ground"],
+		types: ["Normal"],
 		baseStats: {hp: 85, atk: 110, def: 100, spa: 45, spd: 100, spe: 80},
 		abilities: {0: "Intimidate", 1: "Sand Rush", H: "Scrappy"},
 		heightm: 1.2,
