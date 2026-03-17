@@ -8081,8 +8081,8 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 9,
 	
 	},
-	hawluchite: {
-		name: "Hawluchite",
+	hawluchanite: {
+		name: "Hawluchanite",
 		spritenum: 627,
 		megaStone: "Hawlucha-Mega",
 		megaEvolves: "Hawlucha",

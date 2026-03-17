@@ -1675,8 +1675,8 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Victreebelite",
 		desc: "If held by a Victreebel, this item allows it to Mega Evolve in battle.",
 	},
-	hawluchite: {
-		name: "Hawluchite",
+	hawluchanite: {
+		name: "Hawluchanite",
 		desc: "If held by a Hawlucha, this item allows it to Mega Evolve in battle.",
 	},
 	malamarite: {

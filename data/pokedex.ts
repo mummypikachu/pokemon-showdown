@@ -1685,6 +1685,8 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		evoType: "useItem",
 		evoItem: "Leaf Stone",
 		eggGroups: ["Grass"],
+		otherFormes: ["Victreebel-Mega"],
+		formeOrder: ["Victreebel", "Victreebel-Mega",]
 	},
 	victreebelmega: {
 		num: 71,
@@ -1692,13 +1694,14 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		baseSpecies: "Victreebel",
 		forme: "Mega",
 		types: ["Grass", "Poison"],
-		baseStats: {hp: 80, atk: 105, def: 105, spa: 130, spd: 110, spe: 80}, //PLACEHOLDER. Adjust to Legends Z-A values once game releases
-		abilities: {0: "Corrosion"},
+		baseStats: { hp: 80, atk: 125, def: 85, spa: 135, spd: 95, spe: 70 },
+		abilities: { 0: "Corrosion" },
 		heightm: 4.5,
-		weightkg: 125,
+		weightkg: 125.5,
 		color: "Green",
 		eggGroups: ["Grass"],
-		requiredItem: "Victreebelite", //Legends Z-A
+		requiredItem: "Victreebelite",
+		gen: 9,
 	},
 	tentacool: {
 		num: 72,
@@ -3397,13 +3400,14 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		baseSpecies: "Dragonite",
 		forme: "Mega",
 		types: ["Dragon", "Flying"],
-		baseStats: {hp: 91, atk: 134, def: 105, spa: 140, spd: 120, spe: 110}, //PLACEHOLDER. Adjust to Legends Z-A values once game releases
-		abilities: {0: "Aerilate"},
+		baseStats: { hp: 91, atk: 124, def: 115, spa: 145, spd: 125, spe: 100 },
+		abilities: { 0: "Inner Focus", H: "Multiscale" },
 		heightm: 2.2,
 		weightkg: 290,
 		color: "Brown",
 		eggGroups: ["Water 1", "Dragon"],
-		requiredItem: "Dragoninite", //Legends Z-A
+		requiredItem: "Dragoninite",
+		gen: 9,
 	},
 	mewtwo: {
 		num: 150,
@@ -12991,6 +12995,8 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 21.5,
 		color: "Green",
 		eggGroups: ["Flying", "Human-Like"],
+		otherFormes: ["Hawlucha-Mega"],
+		formeOrder: ["Hawlucha", "Hawlucha-Mega"],
 	},
 	hawluchamega: {
 		num: 701,
@@ -12998,13 +13004,14 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		baseSpecies: "Hawlucha",
 		forme: "Mega",
 		types: ["Fighting", "Flying"],
-		baseStats: {hp: 78, atk: 137, def: 100, spa: 74, spd: 93, spe: 118}, //PLACEHOLDER. Adjust to Legends Z-A values once game releases
-		abilities: {0: "Mold Breaker"},
-		heightm: 0.9,
-		weightkg: 21.5,
+		baseStats: { hp: 78, atk: 137, def: 100, spa: 74, spd: 93, spe: 118 },
+		abilities: { 0: "Limber", 1: "Unburden", H: "Mold Breaker" },
+		heightm: 1,
+		weightkg: 25,
 		color: "Green",
 		eggGroups: ["Flying", "Human-Like"],
-		requiredItem: "Hawluchite", //Legends Z-A
+		requiredItem: "Hawluchanite",
+		gen: 9,
 	},
 	dedenne: {
 		num: 702,
