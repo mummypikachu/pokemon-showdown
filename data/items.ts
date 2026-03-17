@@ -8214,11 +8214,37 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 9,
 	},
 	dragalgite: {
-		name: "Barbaracite",
+		name: "Dragalgite",
 		spritenum: 627,
 		megaStone: "Dragalge-Mega",
 		megaEvolves: "Dragalge",
 		itemUser: ["Dragalge"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 537104,
+		gen: 9,
+	},
+	falinksite: {
+		name: "Falinksite",
+		spritenum: 627,
+		megaStone: "Falinks-Mega",
+		megaEvolves: "Falinks",
+		itemUser: ["Falinks"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 537104,
+		gen: 9,
+	},
+	drampanite: {
+		name: "Drampanite",
+		spritenum: 627,
+		megaStone: "Drampa-Mega",
+		megaEvolves: "Drampa",
+		itemUser: ["Drampa"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;

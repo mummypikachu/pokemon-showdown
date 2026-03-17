@@ -3724,8 +3724,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	barbaraclemega: {
-		tier: "Uber",
-		natDexTier: "Uber",
+		tier: "OU",
+		natDexTier: "OU",
 	},
 	skrelp: {
 		tier: "LC",
@@ -4295,6 +4295,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "PU",
 		natDexTier: "RU",
 	},
+	drampamega: {
+		tier: "OU",
+		natDexTier: "OU",
+	},
 	dhelmise: {
 		tier: "PU",
 		natDexTier: "RU",
@@ -4735,6 +4739,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "PU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
+	},
+	falinksmega: {
+		tier: "OU",
+		natDexTier: "OU",
 	},
 	pincurchin: {
 		tier: "PU",
