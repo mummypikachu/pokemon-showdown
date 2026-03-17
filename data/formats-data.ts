@@ -3723,6 +3723,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "RU",
 		natDexTier: "RU",
 	},
+	barbaraclemega: {
+		tier: "Uber",
+		natDexTier: "Uber",
+	},
 	skrelp: {
 		tier: "LC",
 	},
@@ -3730,6 +3734,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "RU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
+	},
+	dragalgemega: {
+		tier: "OU",
+		natDexTier: "OU",
 	},
 	clauncher: {
 		tier: "LC",

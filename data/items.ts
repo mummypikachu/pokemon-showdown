@@ -8200,4 +8200,30 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 537104,
 		gen: 9,
 	},
+	barbaracite: {
+		name: "Barbaracite",
+		spritenum: 627,
+		megaStone: "Barbaracle-Mega",
+		megaEvolves: "Barbaracle",
+		itemUser: ["Barbaracle"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 537104,
+		gen: 9,
+	},
+	dragalgite: {
+		name: "Barbaracite",
+		spritenum: 627,
+		megaStone: "Dragalge-Mega",
+		megaEvolves: "Dragalge",
+		itemUser: ["Dragalge"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 537104,
+		gen: 9,
+	},
 };
