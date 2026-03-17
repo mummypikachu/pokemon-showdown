@@ -13427,6 +13427,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			bite: ["9L1", "9V", "9L1"],
 			block: ["9T"],
 			bodyslam: ["9M"],
+			rancidrainbow: ["9M"],
 			brickbreak: ["9M", "9V", "9M"],
 			brutalswing: ["9M"],
 			confide: ["9M"],

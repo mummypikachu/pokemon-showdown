@@ -4567,6 +4567,11 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Has a 100% chance to paralyze the target.",
 		shortDesc: "100% chance to paralyze the target.",
 	},
+	poisonneedle: {
+		name: "Poison Needle",
+		desc: "Has a 100% chance to Poison the target.",
+		shortDesc: "100% chance to Poison the target.",
+	},
 	oblivionwing: {
 		name: "Oblivion Wing",
 		desc: "The user recovers 3/4 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
@@ -5234,8 +5239,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	rancidrainbow: {
 		name: "Rancid Rainbow",
-		desc: "The user uses sludge and trash to make a pretty rainbow. The move has a chance of raising a random stat.",
-		shortDesc: "50% chance to raise a random stat by 1.",
+		desc: "This move has a 20% chance to raise a random stat by 1 stage.",
+		shortDesc: "20% chance to raise a random stat by 1.",
 	},
 	rapidjab: {
 		name: "Rapid Jab",
