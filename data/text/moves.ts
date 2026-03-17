@@ -1645,7 +1645,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	dorminrush: {
 		name: "Dormin Rush",
 		desc: "Has a 50% chance to cause the target to fall asleep. Taken from Persona/SMT.",
-		shortDesc: "50% chance to cause the target to fall asleep. Taken from Persona/SMT.",
+		shortDesc: "50% chance to cause the target to fall asleep.",
 	},
 	dreamcrusher: {
 		name: "Dream Crusher",
@@ -2223,7 +2223,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	floralzone: {
 		name: "Floral Zone",
-		shortDesc: "For 3 turns Grass, Bug and Poison type moves do 2x",
+		shortDesc: "For 3 turns, Grass, Bug, Poison do 2x damage.",
 	},
 	flowershield: {
 		name: "Flower Shield",
@@ -2346,7 +2346,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	forestizuna: {
 		name: "Forest Izuna",
 		desc: "This move can hit Pokemon with Levitate and is stronger on Flying types. It also lower Defence and Sp. Def.",
-		shortDesc: "Removes the target's Ground immunity. Super effective on Flying. Lowers Def and Sp.Def.",
+		shortDesc: "Removes Ground immunity, SE on Flying. -Def, -Sp.Def.",
 
 		start: "  [POKEMON] was struck down.",
 	},
@@ -3846,7 +3846,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	magikarpsrevenge: {
 		name: "Magikarp's Revenge",
-		shortDesc: "Only does damage if an ally was knocked out on the previous turn.",
+		shortDesc: "Only works if an ally was knocked out previous turn.",
 	},
 	magmastorm: {
 		name: "Magma Storm",
@@ -3934,7 +3934,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	marvelshot: {
 		name: "Marvel Shot",
 		desc: "This move combines Water in its type effectiveness against the target. This move has a chance to confuse.",
-		shortDesc: "Combines Water in its type effectiveness. 20% chance of confusion",
+		shortDesc: "Also hits for the Water Type. 20% confusion.",
 	},
 	maxairstream: {
 		name: "Max Airstream",
@@ -5150,7 +5150,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	queensorder: {
 		name: "Queen's Order",
 		desc: "Raises the user's Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage in exchange for the user losing 25% of its maximum HP, rounded down. Fails if the user would faint or if its Attack, Defense, Special Attack, Special Defense, and Speed stat stages would not change. After the move, the user takes double damage from attacks.",
-		shortDesc: "User loses 25% of its max HP. After the move, the user takes double damage from attacks. +1 to all stats.",
+		shortDesc: "User loses 25% of max HP. Takes 2x damage, +1 all stats.",
 	},
 	quickattack: {
 		name: "Quick Attack",
@@ -5690,7 +5690,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	screenbash: {
 		name: "Screen Bash",
-		desc: "+50 BP for each Screen/Veil/Guard effect on User side, 0% Accuracy if none active, Screens/Veils/Guards: -1 Turn when Lands",
+		desc: "+50 BP for each Screen effect of User. Miss if none.",
 	},
 	scorchingsands: {
 		name: "Scorching Sands",
@@ -7674,7 +7674,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	windstorm: {
 		name: "Windstorm",
-		shortDesc: "For 5 turns, moves that hit flying types super-effectively are weakened by 25%.",
+		shortDesc: "For 5 turns, summons Winds.",
 	},
 	windride: {
 		name: "Wind Ride",
