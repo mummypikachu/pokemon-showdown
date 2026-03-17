@@ -5814,6 +5814,21 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 		newDexTier: "LC",
 	},
+	toggt: {
+		tier: "PU",
+		natDexTier: "PU",
+		newDexTier: "PU",
+	},
+	forzer: {
+		tier: "PU",
+		natDexTier: "PU",
+		newDexTier: "PU",
+	},
+	resuil: {
+		tier: "PU",
+		natDexTier: "PU",
+		newDexTier: "PU",
+	},
 	// Start CAP/Missingno, don't place under this
 	missingno: {
 		isNonstandard: "Custom",
