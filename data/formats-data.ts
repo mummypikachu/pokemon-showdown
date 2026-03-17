@@ -286,6 +286,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "OU",
 		natDexTier: "UU",
 	},
+	clefablemega: {
+		tier: "OU",
+		natDexTier: "OU",
+	},
 	vulpix: {
 		tier: "LC",
 		natDexTier: "LC",
@@ -3300,6 +3304,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
+	eelektrossmega: {
+		tier: "OU",
+		natDexTier: "OU",
+	},
 	elgyem: {
 		tier: "LC",
 		natDexTier: "LC",
@@ -3319,6 +3327,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	chandelure: {
 		tier: "OU",
 		natDexTier: "RU",
+	},
+	chandeluremega: {
+		tier: "Uber",
+		natDexTier: "Uber",
 	},
 	axew: {
 		tier: "LC",
@@ -3635,6 +3647,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	floetteeternal: {
 		tier: "RU",
+	},
+	floettemega: {
+		tier: "OU",
+		natDexTier: "OU",
 	},
 	florges: {
 		tier: "RU",

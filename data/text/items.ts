@@ -1723,6 +1723,22 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Falinksite",
 		desc: "If held by a Falinks, this item allows it to Mega Evolve in battle.",
 	},
+	clefablite: {
+		name: "Clefablite",
+		desc: "If held by a Clefable, this item allows it to Mega Evolve in battle.",
+	},
+	chandelurite: {
+		name: "Chandelurite",
+		desc: "If held by a Chandelure, this item allows it to Mega Evolve in battle.",
+	},
+	eelektrossite: {
+		name: "Eeelektrossite",
+		desc: "If held by a Eelektross, this item allows it to Mega Evolve in battle.",
+	},
+	floettite: {
+		name: "Floettite",
+		desc: "If held by a Floette-Eternal, this item allows it to Mega Evolve in battle.",
+	},
 	sceptilite: {
 		name: "Sceptilite",
 		desc: "If held by a Sceptile, this item allows it to Mega Evolve in battle.",

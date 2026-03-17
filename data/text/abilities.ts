@@ -2580,16 +2580,16 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 
 		end: "  [POKEMON] warped time and allowed its move to fire early!",
 	},
-	principleofmind: {
-		name: "Principle Of Mind",
+	mindprinciple: {
+		name: "Mind Principle",
 		shortDesc: "This Pokemon's offense is x1.5 when using Psychic-type attacks. x1.2 Sp.Attack.",
 	},
-	principleofpower: {
-		name: "Principle Of Power",
+	powerprinciple: {
+		name: "Power Principle",
 		shortDesc: "This Pokemon's offense is x1.5 when using Fighting-type attacks. x1.2 Attack.",
 	},
-	principleofresilience: {
-		name: "Principle Of Resilience",
+	resilienceprinciple: {
+		name: "Resilience Principle",
 		shortDesc: "This Pokemon's offense is x1.5 when using a Steel-type attack. x1.2 Defense.",
 	},
 };
