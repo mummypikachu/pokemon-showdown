@@ -14423,7 +14423,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		num: 770,
 		name: "Palossand",
 		types: ["Ghost", "Ground"],
-		baseStats: {hp: 85, atk: 75, def: 110, spa: 100, spd: 75, spe: 35},
+		baseStats: {hp: 85, atk: 95, def: 110, spa: 100, spd: 75, spe: 35},
 		abilities: {0: "Water Compaction", 1: "Beach Bastion", H: "Self Sufficient"},
 		heightm: 1.3,
 		weightkg: 250,
