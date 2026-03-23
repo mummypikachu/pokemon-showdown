@@ -1743,6 +1743,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Palossite",
 		desc: "If held by a Palossand, this item allows it to Mega Evolve in battle.",
 	},
+	mismagite: {
+		name: "Mismagite",
+		desc: "If held by a Mismagius, this item allows it to Mega Evolve in battle.",
+	},
 	sceptilite: {
 		name: "Sceptilite",
 		desc: "If held by a Sceptile, this item allows it to Mega Evolve in battle.",

@@ -8320,6 +8320,18 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 739376,
 		gen: 9,
-	
+	},
+	mismagite: {
+		name: "Mismagite",
+		spritenum: 627,
+		megaStone: "Mismagius-Mega",
+		megaEvolves: "Mismagius",
+		itemUser: ["Mismagius"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 739376,
+		gen: 9,
 	},
 };
