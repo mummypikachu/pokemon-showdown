@@ -4184,6 +4184,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
+	palossandmega: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "OU",
+	},
 	pyukumuku: {
 		isNonstandard: "Past",
 		tier: "Illegal",

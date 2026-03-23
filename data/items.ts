@@ -8308,4 +8308,18 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 9,
 	
 	},
+	palossite: {
+		name: "Palossite",
+		spritenum: 627,
+		megaStone: "Palossand-Mega",
+		megaEvolves: "Palossand",
+		itemUser: ["Palossand"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 739376,
+		gen: 9,
+	
+	},
 };
