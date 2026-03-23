@@ -1350,6 +1350,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "LC Ubers",
 	},
 	mismagius: {
+		tier: "UU",
+		doublesTier: "(DUU)",
+		natDexTier: "RU",
+	},
+	mismagiusmega: {
 		tier: "OU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
