@@ -8334,4 +8334,17 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 739376,
 		gen: 9,
 	},
+	meowsticite: {
+		name: "Meowsticite",
+		spritenum: 627,
+		megaStone: "Meowstic-Mega",
+		megaEvolves: "Meowstic",
+		itemUser: ["Meowstic", "Meowstic-F"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 2643,
+		gen: 9,
+	},
 };

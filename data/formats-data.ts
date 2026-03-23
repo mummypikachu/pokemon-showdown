@@ -3694,6 +3694,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "RU",
 		natDexTier: "RU",
 	},
+	meowsticmega: {
+		tier: "RU",
+		natDexTier: "RU",
+	},
 	honedge: {
 		tier: "LC",
 		natDexTier: "LC",
