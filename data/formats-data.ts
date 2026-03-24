@@ -1147,7 +1147,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "Uber",
 	},
 	mew: {
-		tier: "Uber",
+		tier: "OU",
 		natDexTier: "UU",
 	},
 	chikorita: {
