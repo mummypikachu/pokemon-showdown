@@ -8347,4 +8347,16 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 2643,
 		gen: 9,
 	},
+	zygardite: {
+		name: "Zygardite",
+		spritenum: 568,
+		megaStone: "Zygarde-Mega",
+		itemUser: ["Zygarde-Complete"],
+		onTakeItem(item, source) {
+			return source.baseSpecies.baseSpecies !== 'Zygarde';
+		},
+		num: 2584,
+		gen: 9,
+		isNonstandard: "Future",
+	},
 };

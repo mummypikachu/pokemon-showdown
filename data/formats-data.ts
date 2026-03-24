@@ -842,6 +842,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "OU",
 		natDexTier: "RU",
 	},
+	starmiemega: {
+		tier: "Unreleased",
+		natDexTier: "Uber",
+	},
 	mimejr: {
 		tier: "LC",
 		natDexTier: "LC",
@@ -1163,8 +1167,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	meganiummega: {
-		tier: "UU",
-		natDexTier: "RU",
+		tier: "OU",
+		natDexTier: "OU",
 	},
 	cyndaquil: {
 		tier: "LC",
@@ -1194,7 +1198,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	feraligatrmega: {
-		tier: "UU",
+		tier: "OU",
 		natDexTier: "RU",
 	},
 	sentret: {
@@ -2804,10 +2808,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		newDexTier: "OU",
 	},
 	emboarmega: {
-		tier: "UU",
+		tier: "OU",
 		doublesTier: "DUU",
 		natDexTier: "RU",
-		newDexTier: "OU",
+		newDexTier: "Uber",
 	},
 	oshawott: {
 		tier: "LC",
@@ -3911,6 +3915,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	zygardecomplete: {
+		tier: "Uber",
+		natDexTier: "Uber",
+	},
+	zygardemega: {
 		tier: "Uber",
 		natDexTier: "Uber",
 	},
