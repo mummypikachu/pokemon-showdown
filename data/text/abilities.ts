@@ -440,6 +440,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Dragon's Maw",
 		shortDesc: "This Pokemon's offensive stat is multiplied by 1.5 while using a Dragon-type attack.",
 	},
+	dragonize: {
+		name: "Dragonize",
+		desc: "This Pokemon's Normal-type moves become Dragon-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+		shortDesc: "This Pokemon's Normal-type moves become Dragon type and have 1.2x power.",
+	},
 	drizzle: {
 		name: "Drizzle",
 		shortDesc: "On switch-in, this Pokemon summons Rain.",
