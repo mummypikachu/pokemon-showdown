@@ -3129,6 +3129,11 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	megasol: {
 		onModifyMovePriority: 19,
+		onModifyMove(move, pokemon) {
+        if (move.id === 'weatherball') {
+            move.type = 'Fire';
+        }
+    },
 		onStart(pokemon) {
         // store original
         (pokemon as any)._megasolOriginalWeather = pokemon.effectiveWeather;
@@ -3138,14 +3143,12 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
             return 'sunnyday' as ID;
         };
     },
-
     onEnd(pokemon) {
         const original = (pokemon as any)._megasolOriginalWeather;
         if (original) {
             pokemon.effectiveWeather = original;
         }
     },
-
 		name: "Mega Sol",
 		rating: 3,
 		num: 3513351,
@@ -6724,12 +6727,18 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 280,
 	},
 	persistent: {
-		name: "Persistent",
-			onStart(source) {
-				this.field.addPseudoWeather('trickroom');
-			},
-		rating: 3.5,
-		num: 279,
+    name: "Persistent",
+    rating: 3.5,
+    num: 279,
+
+    onStart(source) {
+        this.field.addPseudoWeather('trickroom');
+
+        const trickroom = this.field.getPseudoWeather('trickroom');
+        if (trickroom) {
+            trickroom.duration = 1;
+        }
+    },
 	},
 	cleanslate: {
         name: "Clean Slate",

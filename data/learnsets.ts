@@ -38325,7 +38325,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			counter: ["9T"],
 			crunch: ["9M", "9L28", "9L29", "6L29", "5L36", "4L36", "3L36"],
 			darkpulse: ["9M", "9M", "9M", "5T", "4M"],
-			doubleironbash: ["9M"],
 			doubleedge: ["9T"],
 			doubleteam: ["9M", "9M", "5M", "4M", "3M"],
 			drainingkiss: ["9M"],

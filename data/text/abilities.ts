@@ -1129,7 +1129,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	megasol: {
 		name: "Mega Sol",
-		shortDesc: "Placeholder.",
+		desc: "This Pokémon's moves utilize the effects they would have under Sunny Day, including Weather Ball becoming Fire type. Other weathers will not overwrite this effect or Weather Ball.",
+		shortDesc: "Moves used by this user will act like they're under Sunny Day.",
 	},
 	merciless: {
 		name: "Merciless",
