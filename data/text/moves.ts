@@ -3277,6 +3277,14 @@ export const MovesText: {[k: string]: MoveText} = {
 		activate: "#shadowforce",
 		fail: "#darkvoid",
 	},
+	nihillight: {
+		name: "Nihil Light",
+		desc: "Super Effective against Fairy type. This move cannot be used successfully unless the user's current form, while considering Transform, is Mega Zygarde.",
+		shortDesc: "Zygarde-Mega: Supereffective against Fairy Type.",
+		
+		activate: "#shadowforce",
+		fail: "#darkvoid",
+	},
 	hyperspacehole: {
 		name: "Hyperspace Hole",
 		desc: "If this move is successful, it breaks through the target's Baneful Bunker, Detect, King's Shield, Protect, or Spiky Shield for this turn, allowing other Pokemon to attack the target normally. If the target's side is protected by Crafty Shield, Mat Block, Quick Guard, or Wide Guard, that protection is also broken for this turn and other Pokemon may attack the target's side normally.",
