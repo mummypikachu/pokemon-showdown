@@ -10532,7 +10532,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 14.5,
 		color: "Red",
 		evos: ["Crustle"],
-		eggGroups: ["Bug", "Field"],
+		eggGroups: ["Bug", "Mineral"],
 	},
 	crustle: {
 		num: 558,
