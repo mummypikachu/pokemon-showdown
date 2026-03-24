@@ -1127,6 +1127,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "This Pokemon's pulse and bullet moves have their power multiplied by 1.5. Heal Pulse restores 3/4 of a target's maximum HP, rounded half down.",
 		shortDesc: "This Pokemon's pulse and bullet moves have 1.5x power. Heal Pulse heals 3/4 target's max HP.",
 	},
+	megasol: {
+		name: "Mega Sol",
+		shortDesc: "Placeholder.",
+	},
 	merciless: {
 		name: "Merciless",
 		shortDesc: "This Pokemon's attacks are critical hits if the target is poisoned.",

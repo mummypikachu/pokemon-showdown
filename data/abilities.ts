@@ -3127,6 +3127,29 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3,
 		num: 178,
 	},
+	megasol: {
+		onModifyMovePriority: 19,
+		onStart(pokemon) {
+        // store original
+        (pokemon as any)._megasolOriginalWeather = pokemon.effectiveWeather;
+
+        // override
+        pokemon.effectiveWeather = function () {
+            return 'sunnyday' as ID;
+        };
+    },
+
+    onEnd(pokemon) {
+        const original = (pokemon as any)._megasolOriginalWeather;
+        if (original) {
+            pokemon.effectiveWeather = original;
+        }
+    },
+
+		name: "Mega Sol",
+		rating: 3,
+		num: 3513351,
+	},
 	merciless: {
 		onModifyCritRatio(critRatio, source, target) {
 			if (target && ['psn', 'tox'].includes(target.status)) return 5;
