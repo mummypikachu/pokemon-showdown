@@ -94359,7 +94359,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			tackle: ["9M"],
 			drillrun: ["9M"],
 			drillpeck: ["9M"],
-			hyperdrill: ["9M"],
 			dig: ["9M"],
 			dive: ["9M"],
 			aquaring: ["9M"],
