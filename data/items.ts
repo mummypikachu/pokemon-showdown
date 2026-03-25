@@ -8386,4 +8386,30 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 739376,
 		gen: 9,
 	},
+    raichunitex: {
+		name: "Raichunite X",
+		spritenum: 585,
+		megaStone: "Raichu-Mega-X",
+		megaEvolves: "Raichu",
+		itemUser: ["Raichu"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 660,
+		gen: 6,
+	},
+    raichunitey: {
+		name: "Raichunite Y",
+		spritenum: 586,
+		megaStone: "Raichu-Mega-Y",
+		megaEvolves: "Raichu",
+		itemUser: ["Raichu"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 678,
+		gen: 6,
+	},
 };
