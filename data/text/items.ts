@@ -2532,6 +2532,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Zoom Lens",
 		desc: "The accuracy of attacks by the holder is 1.2x if it moves after its target.",
 	},
+	zygardite: {
+		name: "Zygardite",
+		desc: "If held by a Zygarde-Complete, this item allows it to Mega Evolve in battle."
+	},
 
 	// Gen 2 items
 

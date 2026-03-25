@@ -8351,9 +8351,11 @@ export const Items: {[itemid: string]: ItemData} = {
 		name: "Zygardite",
 		spritenum: 568,
 		megaStone: "Zygarde-Mega",
+		megaEvolves: "Zygarde-Complete",
 		itemUser: ["Zygarde-Complete"],
 		onTakeItem(item, source) {
-			return source.baseSpecies.baseSpecies !== 'Zygarde';
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
 		},
 		num: 2584,
 		gen: 9,
