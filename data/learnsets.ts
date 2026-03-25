@@ -73088,6 +73088,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			hypervoice: ["9M", "9T", "6T"],
 			irontail: ["9M", "9T", "6T"],
 			landswrath: ["9L48", "9S9", "9L26", "7S2", "7S3", "7S4", "7S5", "7S6", "6L26", "6S1"],
+			nihillight:  ["9M"],
 			outrage: ["9M", "9L88", "9T", "9L80", "7S7", "7S8", "6T", "6L93", "6S1"],
 			painsplit: ["9T", "6T"],
 			payback: ["9M"],

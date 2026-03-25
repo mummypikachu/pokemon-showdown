@@ -8357,6 +8357,5 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 2584,
 		gen: 9,
-		isNonstandard: "Future",
 	},
 };
