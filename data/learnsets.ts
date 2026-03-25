@@ -1405,7 +1405,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			airslash: ["9V", "9L62", "6L62", "5L62", "4L62"],
 			attract: ["9M", "9V", "9M", "5M", "4M", "3M"],
 			bide: ["9V"],
-			boomburst: ["9M", "9V", "9M", "5M"],
 			captivate: ["4M"],
 			confide: ["9M", "9M"],
 			curse: ["9V"],
