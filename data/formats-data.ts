@@ -228,6 +228,16 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "OU",
 		natDexTier: "RU",
 	},
+	raichumegax: {
+		tier: "OU",
+		doublesTier: "(DUU)",
+		natDexTier: "RU",
+	},
+	raichumegay: {
+		tier: "OU",
+		doublesTier: "(DUU)",
+		natDexTier: "RU",
+	},
 	sandshrew: {
 		tier: "LC",
 		natDexTier: "LC",
