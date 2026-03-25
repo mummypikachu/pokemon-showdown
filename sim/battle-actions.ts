@@ -1841,12 +1841,6 @@ export class BattleActions {
 		if (item.megaEvolves === species.baseSpecies && item.megaStone !== species.name) {
 			return item.megaStone;
 		}
-		// Mega Zygarde can only Mega Evolve if it is in Complete form.
-		if (item.megaEvolves === 'Zygarde') {
-			if (pokemon.species.name !== 'Zygarde-Complete') {
-				return null;
-			}
-		}
 		return null;
 	}
 
