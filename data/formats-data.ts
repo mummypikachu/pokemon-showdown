@@ -843,8 +843,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	starmiemega: {
-		tier: "Unreleased",
-		natDexTier: "Uber",
+		tier: "OU",
+		natDexTier: "OU",
 	},
 	mimejr: {
 		tier: "LC",
@@ -2188,6 +2188,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "RU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
+	},
+	froslassmega: {
+		tier: "UUBL",
+		doublesTier: "DOU",
+		natDexTier: "OU",
 	},
 	spheal: {
 		tier: "LC",

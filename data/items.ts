@@ -8360,4 +8360,30 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 2584,
 		gen: 9,
 	},
+	froslassite: {
+		name: "Froslassite",
+		spritenum: 627,
+		megaStone: "Froslass-Mega",
+		megaEvolves: "Froslass",
+		itemUser: ["Froslass"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 739376,
+		gen: 9,
+	},
+	starminite: {
+		name: "Starminite",
+		spritenum: 627,
+		megaStone: "Starmie-Mega",
+		megaEvolves: "Starmie",
+		itemUser: ["Starmie"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 739376,
+		gen: 9,
+	},
 };
