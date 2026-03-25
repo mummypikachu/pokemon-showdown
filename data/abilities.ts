@@ -1237,6 +1237,26 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3.5,
 		num: 263,
 	},
+	dragonize: {
+		onModifyTypePriority: -1,
+		onModifyType(move, pokemon) {
+			const noModifyType = [
+				'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball',
+			];
+			if (move.type === 'Normal' && !noModifyType.includes(move.id) &&
+				!(move.isZ && move.category !== 'Status') && !(move.name === 'Tera Blast' && pokemon.terastallized)) {
+				move.type = 'Dragon';
+				move.typeChangerBoosted = this.effect;
+			}
+		},
+		onBasePowerPriority: 23,
+		onBasePower(basePower, pokemon, target, move) {
+			if (move.typeChangerBoosted === this.effect) return this.chainModify([4915, 4096]);
+		},
+		name: "Dragonize",
+		rating: 4,
+		num: 184,
+	},
 	drizzle: {
 		onStart(source) {
 			for (const action of this.queue) {
@@ -3106,6 +3126,32 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Mega Launcher",
 		rating: 3,
 		num: 178,
+	},
+	megasol: {
+		onModifyMovePriority: 19,
+		onModifyMove(move, pokemon) {
+        if (move.id === 'weatherball') {
+            move.type = 'Fire';
+        }
+    },
+		onStart(pokemon) {
+        // store original
+        (pokemon as any)._megasolOriginalWeather = pokemon.effectiveWeather;
+
+        // override
+        pokemon.effectiveWeather = function () {
+            return 'sunnyday' as ID;
+        };
+    },
+    onEnd(pokemon) {
+        const original = (pokemon as any)._megasolOriginalWeather;
+        if (original) {
+            pokemon.effectiveWeather = original;
+        }
+    },
+		name: "Mega Sol",
+		rating: 3,
+		num: 3513351,
 	},
 	merciless: {
 		onModifyCritRatio(critRatio, source, target) {
@@ -6681,12 +6727,18 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 280,
 	},
 	persistent: {
-		name: "Persistent",
-			onStart(source) {
-				this.field.addPseudoWeather('trickroom');
-			},
-		rating: 3.5,
-		num: 279,
+    name: "Persistent",
+    rating: 3.5,
+    num: 279,
+
+    onStart(source) {
+        this.field.addPseudoWeather('trickroom');
+
+        const trickroom = this.field.getPseudoWeather('trickroom');
+        if (trickroom) {
+            trickroom.duration = 1;
+        }
+    },
 	},
 	cleanslate: {
         name: "Clean Slate",

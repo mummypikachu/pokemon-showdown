@@ -8308,4 +8308,55 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 9,
 	
 	},
+	palossite: {
+		name: "Palossite",
+		spritenum: 627,
+		megaStone: "Palossand-Mega",
+		megaEvolves: "Palossand",
+		itemUser: ["Palossand"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 739376,
+		gen: 9,
+	},
+	mismagite: {
+		name: "Mismagite",
+		spritenum: 627,
+		megaStone: "Mismagius-Mega",
+		megaEvolves: "Mismagius",
+		itemUser: ["Mismagius"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 739376,
+		gen: 9,
+	},
+	meowsticite: {
+		name: "Meowsticite",
+		spritenum: 627,
+		megaStone: "Meowstic-Mega",
+		megaEvolves: "Meowstic",
+		itemUser: ["Meowstic", "Meowstic-F"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 2643,
+		gen: 9,
+	},
+	zygardite: {
+		name: "Zygardite",
+		spritenum: 568,
+		megaStone: "Zygarde-Mega",
+		itemUser: ["Zygarde-Complete"],
+		onTakeItem(item, source) {
+			return source.baseSpecies.baseSpecies !== 'Zygarde';
+		},
+		num: 2584,
+		gen: 9,
+		isNonstandard: "Future",
+	},
 };

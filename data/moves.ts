@@ -3137,6 +3137,49 @@ export const Moves: {[moveid: string]: MoveData} = {
 		zMove: {basePower: 140},
 		contestType: "Tough",
 	},
+	nihillight: {
+		num: 715607,
+		accuracy: true,
+		basePower: 200,
+		category: "Special",
+		name: "Nihil Light",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1},
+		breaksProtect: true,
+		onTry(source) {
+			if (source.species.name === 'Zygarde-Mega') {
+				return;
+			}
+			this.hint("Only a Pokemon whose form is Zygarde Mega can use this move.");
+			if (source.species.name === 'Zygarde-Complete') {
+				this.attrLastMove('[still]');
+				this.add('-fail', source, 'move: Nihil Light', '[forme]');
+				return null;
+			}
+			if (source.species.name === 'Zygarde') {
+				this.attrLastMove('[still]');
+				this.add('-fail', source, 'move: Nihil Light', '[forme]');
+				return null;
+			}
+			if (source.species.name === 'Zygarde-10%') {
+				this.attrLastMove('[still]');
+				this.add('-fail', source, 'move: Nihil Light', '[forme]');
+				return null;
+			}
+			this.attrLastMove('[still]');
+			this.add('-fail', source, 'move: Nihil Light');
+			return null;
+		},
+		onEffectiveness(typeMod, target, type) {
+			if (type === 'Fairy') return 1;
+		},
+		noSketch: true,
+		secondary: null,
+		target: "normal",
+		type: "Dragon",
+		contestType: "Tough",
+	},
 	corkscrewcrash: {
 		num: 638,
 		accuracy: true,
