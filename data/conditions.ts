@@ -137,13 +137,13 @@ export const Conditions: {[k: string]: ConditionData} = {
 	trickroom: {
 		name: 'trickroom',
 		effectType: 'Weather',
-		duration: 4,
+		duration: 5,
 		durationCallback(source, effect) {
 			if (source?.hasAbility('persistent')) {
 				this.add('-activate', source, 'ability: Persistent', '[move] Trick Room');
-				return 6;
+				return 3;
 			}
-			return 4;
+			return 5;
 		},
 		onFieldStart(target, source) {
 			if (source?.hasAbility('twister')) {

@@ -691,7 +691,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	kinglermega: {
-		tier: "OU",
+		tier: "UU",
 		natDexTier: "OU",
 	},
 	voltorb: {
@@ -1415,7 +1415,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "NU",
 	},
 	overqwil: {
-		tier: "OU",
+		tier: "UU",
 	},
 	shuckle: {
 		tier: "NU",
@@ -2762,7 +2762,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	arceuswater: {
 	},
 	victini: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 		natDexTier: "UU",
 	},
@@ -3440,7 +3440,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "NFE",
 	},
 	hydreigon: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 		natDexTier: "UU",
 	},
@@ -3448,7 +3448,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "LC",
 	},
 	volcarona: {
-		tier: "OU",
+		tier: "Uber",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
@@ -4173,7 +4173,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 	},
 	golisopod: {
-		tier: "OU",
+		tier: "UU",
 		natDexTier: "RU",
 	},
 	sandygast: {
@@ -4627,7 +4627,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Illegal",
 	},
 	dipplin: {
-		tier: "OU",
+		tier: "NU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
@@ -5383,7 +5383,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "OU",
 	},
 	ironleaves: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
@@ -5391,22 +5391,22 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "LC",
 	},
 	sinistcha: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
 	okidogi: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
 	munkidori: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
 	fezandipiti: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
@@ -5436,7 +5436,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "OU",
 	},
 	hydrapple: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
@@ -5727,7 +5727,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		newDexTier: "LC",
 	},
 	uezari: {
-		tier: "OU",
+		tier: "NU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 		newDexTier: "OU",
