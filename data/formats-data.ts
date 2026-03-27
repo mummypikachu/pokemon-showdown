@@ -5886,6 +5886,18 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "PU",
 		newDexTier: "PU",
 	},
+	peblum: {
+		tier: "LC",
+		natDexTier: "LC",
+	},
+	boultang: {
+		tier: "NFE",
+		natDexTier: "NFE",
+	},
+	bouldross: {
+		tier: "UU",
+		natDexTier: "RU",
+	},
 	// Start CAP/Missingno, don't place under this
 	missingno: {
 		isNonstandard: "Custom",
