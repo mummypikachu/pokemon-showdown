@@ -8503,4 +8503,17 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 678,
 		gen: 9,
 	},
+	pyroarite: {
+		name: "Pyroarite",
+		spritenum: 627,
+		megaStone: "Pyroar-Mega",
+		megaEvolves: "Pyroar",
+		itemUser: ["Pyroar"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 678,
+		gen: 9,
+	},
 };

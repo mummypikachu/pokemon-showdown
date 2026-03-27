@@ -2251,6 +2251,25 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 2,
 		num: 85,
 	},
+	heatedmane: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Fire') {
+				this.debug('Steelworker boost');
+				return this.chainModify(1.5);
+			}
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Fire') {
+				this.debug('Steelworker boost');
+				return this.chainModify(1.5);
+			}
+		},
+		name: "heated Mane",
+		rating: 3.5,
+		num: 200,
+	},
 	heavymetal: {
 		onModifyWeightPriority: 1,
 		onModifyWeight(weighthg) {
