@@ -5569,12 +5569,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		newDexTier: "UU",
 	},
 	tepigphyor: {
-		tier: "New",
+		tier: "PU",
 		natDexTier: "RU",
 		newDexTier: "RU",
 	},
 	snivyfloria: {
-		tier: "New",
+		tier: "PU",
 		natDexTier: "RU",
 		newDexTier: "RU",
 	},
