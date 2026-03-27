@@ -56,7 +56,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	blastoisemega: {
-		tier: "OU",
+		tier: "Uber",
 		natDexTier: "Uber",
 	},
 	blastoisegmax: {
@@ -1654,7 +1654,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "UU",
 	},
 	blazikenmega: {
-		tier: "OU",
+		tier: "Uber",
 		natDexTier: "Uber",
 	},
 	mudkip: {
