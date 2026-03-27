@@ -1759,6 +1759,18 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Starminite",
 		desc: "If held by a Starmie, this item allows it to Mega Evolve in battle.",
 	},
+	raichunitey: {
+		name: "Raichunite Y",
+		desc: "If held by a Raichu, this item allows it to Mega Evolve in battle.",
+	},
+	raichunitex: {
+		name: "Raichunite X",
+		desc: "If held by a Raichu, this item allows it to Mega Evolve in battle.",
+	},
+	golurkite: {
+		name: "Golurkite",
+		desc: "If held by a Golurk, this item allows it to Mega Evolve in battle.",
+	},
 	sceptilite: {
 		name: "Sceptilite",
 		desc: "If held by a Sceptile, this item allows it to Mega Evolve in battle.",
@@ -2543,10 +2555,6 @@ export const ItemsText: {[k: string]: ItemText} = {
 	zoomlens: {
 		name: "Zoom Lens",
 		desc: "The accuracy of attacks by the holder is 1.2x if it moves after its target.",
-	},
-	zygardite: {
-		name: "Zygardite",
-		desc: "If held by a Zygarde-Complete, this item allows it to Mega Evolve in battle."
 	},
 
 	// Gen 2 items

@@ -3418,12 +3418,16 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "UU",
 		natDexTier: "RU",
 	},
+	golurkmega:{
+		tier: "OU",
+		natDexTier: "UU",
+	},
 	pawniard: {
 		tier: "LC",
 	},
 	bisharp: {
 		tier: "UU",
-		doublesTier: "NFE",
+		doublesTier: "DUU",
 		natDexTier: "NFE",
 	},
 	bouffalant: {

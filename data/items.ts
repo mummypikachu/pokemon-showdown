@@ -8397,7 +8397,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			return true;
 		},
 		num: 660,
-		gen: 6,
+		gen: 9,
 	},
     raichunitey: {
 		name: "Raichunite Y",
@@ -8410,6 +8410,19 @@ export const Items: {[itemid: string]: ItemData} = {
 			return true;
 		},
 		num: 678,
-		gen: 6,
+		gen: 9,
+	},
+	golurkite: {
+		name: "Golurkite",
+		spritenum: 586,
+		megaStone: "Golurk-Mega",
+		megaEvolves: "Golurk",
+		itemUser: ["Golurk"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 678,
+		gen: 9,
 	},
 };
