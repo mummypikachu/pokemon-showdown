@@ -4221,6 +4221,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "UU",
 		natDexTier: "RU",
 	},
+	golisopodmega: {
+		tier: "OU",
+		natDexTier: "RU",
+	},
 	sandygast: {
 		tier: "LC",
 	},
@@ -5111,6 +5115,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	scovillain: {
 		tier: "PU",
+		doublesTier: "(DUU)",
+		natDexTier: "RU",
+	},
+	scovillainmega: {
+		tier: "UU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},

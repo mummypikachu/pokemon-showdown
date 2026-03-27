@@ -5214,6 +5214,25 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 4.5,
 		num: 3,
 	},
+	spicyscales: {
+		name: "Spicy Scales",
+		rating: 4,
+
+		onResidualOrder: 8,
+		onResidual(pokemon) {
+			const target = pokemon.adjacentFoes()[0];
+			if (!target || target.fainted) return;
+
+			if (target.status === 'brn') {
+				this.debug('Spicy scales burn leech effect');
+
+				const damage = this.damage(target.baseMaxhp / 8, target, pokemon);
+				if (damage) {
+					this.heal(damage, pokemon);
+				}
+			}
+		},
+	},
 	stakeout: {
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, attacker, defender) {
