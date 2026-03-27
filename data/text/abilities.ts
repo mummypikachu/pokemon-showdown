@@ -2602,6 +2602,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Resilience Principle",
 		shortDesc: "This Pokemon's offense is x1.5 when using a Steel-type attack. x1.2 Defense.",
 	},
+	spicyscales: {
+		name: "Spicy Scales",
+		desc: "If the opposing Pokémon is burned, this Pokémon steals 1/8 of the opposing Pokemon's maximum HP, rounded down, at the end of each turn. Afterwards, the burned Pokémon will take Burn damage.",
+		shortDesc: "If opposing burned: 1/8 leeched off opponent max HP per turn.",
+	},
 };
 
 
