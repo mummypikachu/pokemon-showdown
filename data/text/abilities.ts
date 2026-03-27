@@ -1703,7 +1703,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	runaway: {
 		name: "Run Away",
-		shortDesc: "Doubles the Speed stat.",
+		desc: "This Pokemon's Speed is raised by 2 stages for each of its stat stages that is lowered by an opposing Pokemon.",
+		shortDesc: "This Pokemon's Speed is raised by 2 for each of its stats that is lowered by a foe.",
 	},
 	rusting: { //klang-excir line
 		name: "Rusting",
