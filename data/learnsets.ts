@@ -93202,6 +93202,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			calmmind: ["9M"],
 			bulkup: ["9L10", "6L10", "5L10", "4L10"],
 			swordsdance: ["9L10", "6L10", "5L10", "4L10"],
+			earthpower: ["9L10", "6L10", "5L10", "4L10"],
 			facade: ["9M"], //universal TMs. ALWAYS INCLUDE UNLESS NOTED OTHERWISE.
 			frustration: ["9M"],
 			return: ["9M"],
@@ -93226,7 +93227,14 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			hiddenpower: ["9M", "9L20", "9M", "6L20", "5L20", "4L20"],
 			protect: ["9M", "9L1", "9M", "6L1", "5L1", "5D", "4L1"],
 			snore: ["9T", "6T", "5T", "5D", "9T"],
-			glare: ["9L10", "6L10", "5L10", "4L10"],
+			rockwrecker: ["9L10", "6L10", "5L10", "4L10"],
+			rockclimb: ["9L10", "6L10", "5L10", "4L10"],
+			rocksmash: ["9L10", "6L10", "5L10", "4L10"],
+			rockthrow: ["9L10", "6L10", "5L10", "4L10"],
+			earthquake: ["9L10", "6L10", "5L10", "4L10"],
+			thrash: ["9L10", "6L10", "5L10", "4L10"],
+			outrage: ["9L10", "6L10", "5L10", "4L10"],
+			magnetrise: ["9L10", "6L10", "5L10", "4L10"],
 		},
 	},
 	heamanbou: {
