@@ -1575,6 +1575,11 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Dragon Claw",
 		shortDesc: "No additional effect.",
 	},
+	draconicjaw: {
+		name: "Draconic Jaw",
+		desc: "Has a 20% chance to paralyze the target.",
+		shortDesc: "20% chance to paralyze the target.",
+	},
 	dragondance: {
 		name: "Dragon Dance",
 		desc: "Raises the user's Attack and Speed by 1 stage.",

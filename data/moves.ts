@@ -4565,6 +4565,23 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Dragon",
 		contestType: "Cool",
 	},
+	draconicjaw: {
+		num: 159751,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		name: "Draconic Jaw",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, bite: 1, contact: 1},
+		secondary: {
+			chance: 20,
+			status: 'par',
+		},
+		target: "normal",
+		type: "Dragon",
+		contestType: "Cool",
+	},
 	dragondance: {
 		num: 349,
 		accuracy: true,
