@@ -6072,6 +6072,11 @@ export const MovesText: {[k: string]: MoveText} = {
 			desc: "One of the user's known moves, besides this move, is selected for use at random. Fails if the user is not asleep. The selected move does not have PP deducted from it, and can currently have 0 PP. This move cannot select Bide, Sleep Talk, or any two-turn move.",
 		},
 	},
+	slowstrike: {
+		name: "Sludge",
+		desc: "-1 Priority. Has a 100% chance to make the target flinch.",
+		shortDesc: "-1 Priority, 100% chance to flinch.",
+	},
 	sludge: {
 		name: "Sludge",
 		desc: "Has a 30% chance to poison the target.",

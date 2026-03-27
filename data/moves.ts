@@ -18747,6 +18747,23 @@ export const Moves: {[moveid: string]: MoveData} = {
 		zMove: {effect: 'crit2'},
 		contestType: "Cute",
 	},
+	slowstrike: {
+		num: 57044,
+		accuracy: 100,
+		basePower: 50,
+		category: "Physical",
+		name: "Slow Strike",
+		pp: 15,
+		priority: -1,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 100,
+			volatileStatus: 'flinch',
+		},
+		target: "normal",
+		type: "Dark",
+		contestType: "Tough",
+	},
 	sludge: {
 		num: 124,
 		accuracy: 100,
