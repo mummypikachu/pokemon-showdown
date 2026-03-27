@@ -2408,6 +2408,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
+	staraptormega: {
+		tier: "OU",
+		doublesTier: "(DUU)",
+		natDexTier: "RU",
+	},
 	bidoof: {
 		tier: "LC",
 		natDexTier: "LC",
