@@ -2555,8 +2555,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	chatot: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "RU",
 		natDexTier: "RU",
 	},
 	spiritomb: {
@@ -3885,26 +3884,32 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 	},
 	pumpkaboosmall: {
-		isNonstandard: "Past",
+		tier: "LC",
+		natDexTier: "LC",
 	},
 	pumpkaboolarge: {
-		isNonstandard: "Past",
+		tier: "LC",
+		natDexTier: "LC",
 	},
 	pumpkaboosuper: {
-		isNonstandard: "Past",
+		tier: "LC",
+		natDexTier: "LC",
 	},
 	gourgeist: {
 		tier: "RU",
 		natDexTier: "RU",
 	},
 	gourgeistsmall: {
-		isNonstandard: "Past",
+		tier: "RU",
+		natDexTier: "RU",
 	},
 	gourgeistlarge: {
-		isNonstandard: "Past",
+		tier: "RU",
+		natDexTier: "RU",
 	},
 	gourgeistsuper: {
-		isNonstandard: "Past",
+		tier: "RU",
+		natDexTier: "RU",
 	},
 	bergmite: {
 		tier: "LC",
@@ -4247,8 +4252,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "OU",
 	},
 	pyukumuku: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "PU",
 		natDexTier: "RU",
 	},
 	typenull: {
@@ -4483,14 +4487,15 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "Uber",
 	},
 	magearnaoriginal: {
+		tier: "Uber",
+		natDexTier: "Uber",
 	},
 	marshadow: {
 		tier: "Uber",
 		natDexTier: "Uber",
 	},
 	poipole: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "NFE",
 		natDexTier: "NFE",
 	},
 	naganadel: {
