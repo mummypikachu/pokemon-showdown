@@ -5247,7 +5247,6 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 
 				// burn ghost
 				if (target.trySetStatus('brn', pokemon)) {
-					this.add('-activate', pokemon, 'ability: Inf. Blaze', target);
 				}
 			}
 		},

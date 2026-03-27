@@ -1166,18 +1166,22 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	chikorita: {
 		tier: "LC",
+		doublesTier: "DOU",
 		natDexTier: "LC",
 	},
 	bayleef: {
 		tier: "NFE",
+		doublesTier: "DOU",
 		natDexTier: "NFE",
 	},
 	meganium: {
 		tier: "RU",
+		doublesTier: "DOU",
 		natDexTier: "RU",
 	},
 	meganiummega: {
 		tier: "OU",
+		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
 	cyndaquil: {
@@ -1190,10 +1194,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	typhlosion: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexTier: "RU",
 	},
 	typhlosionhisui: {
-		tier: "Uber",
+		tier: "OU",
+		doublesTier: "DOU",
 	},
 	totodile: {
 		tier: "LC",
@@ -1205,10 +1211,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	feraligatr: {
 		tier: "UU",
+		doublesTier: "DOU",
 		natDexTier: "RU",
 	},
 	feraligatrmega: {
 		tier: "OU",
+		doublesTier: "DOU",
 		natDexTier: "RU",
 	},
 	sentret: {

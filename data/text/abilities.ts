@@ -2607,6 +2607,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "If the opposing Pokémon is burned, this Pokémon steals 1/8 of the opposing Pokemon's maximum HP, rounded down, at the end of each turn. Afterwards, the burned Pokémon will take Burn damage.",
 		shortDesc: "If opposing burned: 1/8 leeched off opponent max HP per turn.",
 	},
+	infernalblaze: {
+		name: "Infernal Blaze",
+		desc: "If there is a Ghost type on the field, at the end of the turn, they will get Burned, unless the target is immune to the Burn status.",
+		shortDesc: "Burns other Ghost types at end of turn.",
+	},
 };
 
 
