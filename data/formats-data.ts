@@ -4048,7 +4048,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	crabominable: {
-		tier: "PU",
+		tier: "NU",
+		doublesTier: "(DUU)",
+		natDexTier: "RU",
+	},
+	crabominablemega: {
+		tier: "UU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},

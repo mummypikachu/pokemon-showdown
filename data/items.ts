@@ -8351,7 +8351,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		name: "Zygardite",
 		spritenum: 627,
 		megaStone: "Zygarde-Mega",
-		megaEvolves: "Zygarde-Complete",
+		megaEvolves: "Zygarde", //find out a way to make zygarde-complete ONLY mega evolve
 		itemUser: ["Zygarde"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
@@ -8388,7 +8388,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
     raichunitex: {
 		name: "Raichunite X",
-		spritenum: 585,
+		spritenum: 580,
 		megaStone: "Raichu-Mega-X",
 		megaEvolves: "Raichu",
 		itemUser: ["Raichu"],
@@ -8414,10 +8414,36 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	golurkite: {
 		name: "Golurkite",
-		spritenum: 586,
+		spritenum: 627,
 		megaStone: "Golurk-Mega",
 		megaEvolves: "Golurk",
 		itemUser: ["Golurk"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 678,
+		gen: 9,
+	},
+	crabominite: {
+		name: "Crabominite",
+		spritenum: 627,
+		megaStone: "Crabominable-Mega",
+		megaEvolves: "Crabominable",
+		itemUser: ["Crabominable"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 678,
+		gen: 9,
+	},
+	excadrite: {
+		name: "Excadrite",
+		spritenum: 627,
+		megaStone: "Excadrill-Mega",
+		megaEvolves: "Excadrill",
+		itemUser: ["Excadrill"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
