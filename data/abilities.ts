@@ -2266,7 +2266,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				return this.chainModify(1.5);
 			}
 		},
-		name: "heated Mane",
+		name: "Heated Mane",
 		rating: 3.5,
 		num: 200,
 	},
