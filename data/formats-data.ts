@@ -3137,6 +3137,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "UU",
 		natDexTier: "RU",
 	},
+	scraftymega: {
+		tier: "OU",
+		natDexTier: "OU",
+	},
 	sigilyph: {
 		tier: "PU",
 		natDexTier: "RU",
