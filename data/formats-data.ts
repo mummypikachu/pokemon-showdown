@@ -2955,6 +2955,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "OU",
 		natDexTier: "UU",
 	},
+	excadrillmega: {
+		tier: "OU",
+		natDexTier: "UU",
+	},
 	audino: {
 		tier: "PU",
 		natDexTier: "RU",
