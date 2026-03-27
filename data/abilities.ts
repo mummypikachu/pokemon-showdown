@@ -5233,6 +5233,25 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			}
 		},
 	},
+	infernalblaze: {
+		name: "Infernal Blaze",
+		rating: 4,
+
+		onResidualOrder: 8,
+		onResidual(pokemon) {
+			for (const target of this.getAllActive()) {
+				if (target === pokemon) continue; //skipself
+				if (!target || target.fainted) continue;
+				if (!target.hasType('Ghost')) continue;
+				if (target.status) continue;
+
+				// burn ghost
+				if (target.trySetStatus('brn', pokemon)) {
+					this.add('-activate', pokemon, 'ability: Inf. Blaze', target);
+				}
+			}
+		},
+	},
 	stakeout: {
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, attacker, defender) {
