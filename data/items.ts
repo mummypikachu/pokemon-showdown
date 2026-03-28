@@ -8352,7 +8352,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 627,
 		megaStone: "Zygarde-Mega",
 		megaEvolves: "Zygarde", //find out a way to make zygarde-complete ONLY mega evolve
-		itemUser: ["Zygarde"],
+		itemUser: ["Zygarde", "Zygarde-10%", "Zygarde-Complete"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
