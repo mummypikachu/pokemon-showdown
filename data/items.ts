@@ -8383,7 +8383,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: 739376,
+		num: 660,
 		gen: 9,
 	},
     raichunitex: {
