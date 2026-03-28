@@ -1550,6 +1550,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "UU",
 		natDexTier: "UU",
 	},
+	skarmorymega: {
+		tier: "UUBL",
+		natDexTier: "UUBL",
+	},
 	houndour: {
 		tier: "LC",
 	},
@@ -5279,6 +5283,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "LC",
 	},
 	glimmora: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "OU",
+	},
+	glimmoramega: {
 		tier: "OU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
