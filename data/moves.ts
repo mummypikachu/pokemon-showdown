@@ -14020,6 +14020,23 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Electric",
 		contestType: "Cute",
 	},
+	acidicslime: {
+		num: 609,
+		accuracy: 100,
+		basePower: 30,
+		category: "Physical",
+		name: "Acidic Slime",
+		pp: 20,
+		priority: 0,
+		flags: {bullet: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 100,
+			status: 'brn',
+		},
+		target: "normal",
+		type: "Poison",
+		contestType: "Cute",
+	},
 	oblivionwing: {
 		num: 613,
 		accuracy: 100,

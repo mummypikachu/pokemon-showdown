@@ -4580,6 +4580,11 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Has a 100% chance to paralyze the target.",
 		shortDesc: "100% chance to paralyze the target.",
 	},
+	acidicslime: {
+		name: "Acidic Slime",
+		desc: "Has a 100% chance to burn the target.",
+		shortDesc: "100% chance to burn the target.",
+	},
 	poisonneedle: {
 		name: "Poison Needle",
 		desc: "Has a 100% chance to Poison the target.",
