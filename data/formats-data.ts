@@ -3050,6 +3050,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "OU",
 		natDexTier: "RU",
 	},
+	scolipedemega: {
+		tier: "(OU)",
+		natDexTier: "RU",
+	},
 	cottonee: {
 		tier: "LC",
 		natDexTier: "LC",

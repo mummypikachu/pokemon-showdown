@@ -10074,6 +10074,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		num: 527,
 		name: "Woobat-Excir",
 		baseSpecies: "Woobat",
+		forme: "Excir",
 		types: ["Dark", "Flying"],
 		baseStats: {hp: 75, atk: 25, def: 53, spa: 55, spd: 53, spe: 62},
 		abilities: {0: "Unaware", 1: "Fluffy", H: "Simple"},
@@ -10082,6 +10083,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Blue",
 		evos: ["Swoobat-Excir"],
 		eggGroups: ["Flying", "Field"],
+		gen: 9
 	},
 	swoobat: {
 		num: 528,
@@ -10100,7 +10102,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		num: 528,
 		name: "Swoobat-Excir",
 		baseSpecies: "Swoobat",
-		forme: "Alola",
+		forme: "Excir",
 		types: ["Dark", "Flying"],
 		baseStats: {hp: 77, atk: 37, def: 65, spa: 67, spd: 75, spe: 104},
 		abilities: {0: "Unaware", 1: "Psychic Surge", H: "Simple"},
@@ -10110,6 +10112,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		prevo: "Woobat-Excir",
 		evoType: "levelFriendship",
 		eggGroups: ["Flying", "Field"],
+		gen: 9
 	},
 	drilbur: {
 		num: 529,
@@ -10362,21 +10365,24 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		prevo: "Whirlipede",
 		evoLevel: 30,
 		eggGroups: ["Bug"],
+		otherFormes: ["Scolipede-Mega"],
+		formeOrder: ["Scolipede", "Scolipede-Mega"],
 	},
-	/*scolipedemega: {
+	scolipedemega: {
 		num: 545,
 		name: "Scolipede-Mega",
 		baseSpecies: "Scolipede",
 		forme: "Mega",
 		types: ["Bug", "Poison"],
-		baseStats: {hp: 70, atk: 150, def: 89, spa: 55, spd: 89, spe: 142},
-		abilities: {0: "Poison Touch"},
-		heightm: 2.4,
-		weightkg: 199,
-		color: "Purple",
+		baseStats: { hp: 70, atk: 140, def: 149, spa: 75, spd: 99, spe: 62 },
+		abilities: { 0: "Poison Touch" },
+		heightm: 3.2,
+		weightkg: 230.5,
+		color: "Gray",
 		eggGroups: ["Bug"],
-		requiredItem: "Scolipedite", //does not exist
-	}, */
+		requiredItem: "Scolipite",
+		gen: 9,
+	},
 	cottonee: {
 		num: 546,
 		name: "Cottonee",
