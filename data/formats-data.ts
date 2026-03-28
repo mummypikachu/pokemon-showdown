@@ -2752,6 +2752,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DUber",
 		natDexTier: "Uber",
 	},
+	darkraimega: {
+		tier: "Uber",
+		doublesTier: "DUber",
+		natDexTier: "Uber",
+	},
 	shaymin: {
 		tier: "UU",
 		natDexTier: "RU",

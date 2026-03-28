@@ -3704,6 +3704,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 			if (source.species.name === 'Darkrai' || move.hasBounced) {
 				return;
 			}
+			if (source.species.name === 'Darkrai-Mega' || move.hasBounced) {
+				return;
+			}
 			this.add('-fail', source, 'move: Dark Void');
 			this.hint("Only a Pokemon whose form is Darkrai can use this move.");
 			return null;

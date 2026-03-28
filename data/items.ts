@@ -8520,8 +8520,21 @@ export const Items: {[itemid: string]: ItemData} = {
 		name: "Regigigite",
 		spritenum: 627,
 		megaStone: "Regigigas-Mega",
-		megaEvolves: "Regi5",
-		itemUser: ["Regi5gigas"],
+		megaEvolves: "Regigigas",
+		itemUser: ["Regigigas"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 678,
+		gen: 9,
+	},
+	darkranite: {
+		name: "Darkranite",
+		spritenum: 627,
+		megaStone: "Darkrai-Mega",
+		megaEvolves: "Darkrai",
+		itemUser: ["Darkrai"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
