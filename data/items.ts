@@ -8594,4 +8594,17 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 678,
 		gen: 9,
 	},
+	clawitzernite: {
+		name: "Clawitzernite",
+		spritenum: 627,
+		megaStone: "Clawitzer-Mega",
+		megaEvolves: "Clawitzer",
+		itemUser: ["Clawitzer"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 660,
+		gen: 9,
+	},
 };

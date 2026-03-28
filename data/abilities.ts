@@ -6996,4 +6996,15 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 1.5,
 		num: 50145,
 	},
+	forestguardian: {
+		onWeather(target, source, effect) {
+			if (target.hasItem('utilityumbrella')) return;
+			if (effect.id === 'sunnyday' || effect.id === 'desolateland') {
+				this.heal(target.baseMaxhp / 16);
+			}
+		},
+		name: "Forest Guardian",
+		rating: 1.5,
+		num: 50145,
+	},
 };

@@ -33309,6 +33309,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 		learnset: {
 			aerialace: ["9M", "9M", "5M", "4M", "3M"],
 			allyswitch: ["9M", "9T"],
+			alluringvoice: ["9M"],
 			ancientpower: ["9L30", "9L28", "9V", "7S7", "6L28", "5L28", "9T", "4L28", "3L20", "9S1", "9S3"],
 			aurasphere: ["9M"],
 			batonpass: ["9M", "9L20", "9L37", "9V", "6L37", "5L37", "4L37", "3L40", "9S1"],
@@ -33360,6 +33361,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			magicroom: ["9M", "9T", "6T", "5T"],
 			metronome: ["9M", "9T"],
 			mimic: ["9T"],
+			moonblast: ["9M"],
 			mudslap: ["9V", "9T", "9T"],
 			nastyplot: ["9M", "4S4"],
 			naturalgift: ["9L46", "6L46", "5L46", "4M", "4L46"],
