@@ -92459,7 +92459,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			bite: ["9L1"],
 			bodyslam: ["9M"],
 			bounce: ["9L45"],
-			boomburst: ["9M"],
 			calmmind: ["9M"],
 			captivate: ["9M"],
 			celebrate: ["9M"],
