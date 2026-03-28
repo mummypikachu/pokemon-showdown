@@ -3284,8 +3284,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	nihillight: {
 		name: "Nihil Light",
-		desc: "Super Effective against Fairy type. This move cannot be used successfully unless the user's current form, while considering Transform, is Mega Zygarde.",
-		shortDesc: "Zygarde-Mega: Supereffective against Fairy Type.",
+		desc: "Neutral against Fairy type. This move cannot be used successfully unless the user's current form, while considering Transform, is Mega Zygarde.",
+		shortDesc: "Zygarde-Mega: Neutral against Fairy Type.",
 		
 		activate: "#shadowforce",
 		fail: "#darkvoid",
