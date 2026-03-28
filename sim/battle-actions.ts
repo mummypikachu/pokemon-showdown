@@ -1837,10 +1837,6 @@ export class BattleActions {
 			pokemon.baseMoves.includes(toID(altForme.requiredMove)) && !item.zMove) {
 			return altForme.name;
 		}
-		// Mega Zygarde
-		if (item.name === "Zygardite" && pokemon.species.name === "Zygarde") return null;
-        if (item.name === "Zygardite" && pokemon.species.name === "Zygarde-10%") return null;
-        if (item.name === "Zygardite" && pokemon.species.name === "Zygarde-Complete") return "Zygarde-Mega";
 		// a hacked-in Megazard X can mega evolve into Megazard Y, but not into Megazard X
 		if (item.megaEvolves === species.baseSpecies && item.megaStone !== species.name) {
 			return item.megaStone;
