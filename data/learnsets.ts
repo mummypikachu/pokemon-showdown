@@ -43926,7 +43926,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			yawn: ["9L13", "6L13", "5L25", "4L25", "3L25"],
 			zenheadbutt: ["9M", "6T", "5T", "9T"],
 			heatwave: ["9M"],
-			metalsound: ["9M"],
 		},
 		eventData: [
 			{generation: 3, level: 10, gender: "M", moves: ["wrap", "growl", "astonish"], pokeball: "pokeball"},

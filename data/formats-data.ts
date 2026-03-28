@@ -1631,7 +1631,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "UU",
 		natDexTier: "RU",
 	},
-	clawitzermega: {
+	celebimega: {
 		tier: "Uber",
 		natDexTier: "RU",
 	},
