@@ -9084,7 +9084,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		formeOrder: ["Victreebel", "Victreebel-Mega",]
 	},
 	regigigasmega: {
-		num: 71,
+		num: 486,
 		name: "Regigigas-Mega",
 		baseSpecies: "Regigigas",
 		forme: "Mega",
