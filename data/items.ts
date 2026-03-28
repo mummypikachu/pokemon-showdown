@@ -8516,4 +8516,30 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 678,
 		gen: 9,
 	},
+	zeraorite: {
+		name: "NO NO NO NO NO",
+		spritenum: 627,
+		megaStone: "missingno-Mega",
+		megaEvolves: "missingno",
+		itemUser: ["missingno"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 678,
+		gen: 9,
+	},
+	magearnite: {
+		name: "TO UBERS WITH YOU",
+		spritenum: 627,
+		megaStone: "missingno-Mega",
+		megaEvolves: "missingno",
+		itemUser: ["missingno"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 678,
+		gen: 9,
+	},
 };

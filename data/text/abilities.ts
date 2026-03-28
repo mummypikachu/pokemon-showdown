@@ -972,7 +972,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	ledianisunbreakable: {
 		name: "Ledian Is Unbreakable",
-		shortDesc: "Ledian now ignores defensive stats along with boosting flying type moves by 1.5x",
+		shortDesc: "Ignores (Special) Defense Boosts, Flying moves x1.5 power",
 	},
 	leafguard: {
 		name: "Leaf Guard",
