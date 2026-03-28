@@ -5968,6 +5968,9 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "UU",
 		natDexTier: "RU",
 	},
+	alkaslime: {
+		tier: "New",
+	},
 	// Start CAP/Missingno, don't place under this
 	missingno: {
 		isNonstandard: "Custom",
