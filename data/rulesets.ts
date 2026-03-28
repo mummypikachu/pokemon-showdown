@@ -2688,4 +2688,15 @@ export const Rulesets: {[k: string]: FormatData} = {
 		name: 'Useless Moves Clause',
 		// implemented in /mods/moderngen1/rulesets.ts
 	},
+	zygarditeclause: {
+	effectType: 'ValidatorRule',
+    name: "Zygardite Clause",
+	desc: `Bans Zygarde-10% from holding the Zygardite.`,
+		//clause exists to ban Mega Zygarde from all tiers except Ubers.
+    onValidateSet(set) {
+        if (set.species === 'Zygarde-10%' && set.item === 'Zygardite') {
+            return ["Zygarde-10% cannot hold Zygardite."];
+        }
+    },
+},
 };

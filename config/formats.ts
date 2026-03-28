@@ -83,14 +83,14 @@ export const Formats: FormatList = [
 		name: "[Gen 9] OU",
 
 		mod: 'gen9',
-		ruleset: ['Standard', '+CAP'],
+		ruleset: ['Standard', '+CAP', "Zygardite Clause"],
 		banlist: ['Uber', 'AG', 'Moody', 'Sand Veil', 'Snow Cloak', 'King\'s Rock', 'Baton Pass', 'Gorilla Tactics', 'Last Respects', 'Shedinja + Air Balloon', 'Zygarde + Power Construct'],
 	},
 	{
 		name: "[Gen 9] No Team View OU",
 
 		mod: 'gen9',
-		ruleset: ['Standard No Preview', '+CAP'],
+		ruleset: ['Standard No Preview', '+CAP', "Zygardite Clause"],
 		banlist: ['Uber', 'AG', 'Moody', 'Sand Veil', 'Snow Cloak', 'King\'s Rock', 'Baton Pass', 'Gorilla Tactics', 'Last Respects', 'Shedinja + Air Balloon', 'Zygarde + Power Construct'],
 	},
 	{
