@@ -6943,7 +6943,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				return this.chainModify(1.5);
 			}
 		},
-		name: "Principle of Mind",
+		name: "Mind Principle",
 		rating: 3.5,
 		num: 276,
 	},
@@ -6962,7 +6962,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				return this.chainModify(1.5);
 			}
 		},
-		name: "Principle of Power",
+		name: "Power Principle",
 		rating: 3.5,
 		num: 276,
 	},
@@ -6981,7 +6981,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				return this.chainModify(1.5);
 			}
 		},
-		name: "Principle of Resilience",
+		name: "Resilience Principle",
 		rating: 3.5,
 		num: 276,
 	},
