@@ -18445,7 +18445,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Fairy", "Steel"],
 		gender: "F",
 		baseStats: {hp: 85, atk: 65, def: 105, spa: 70, spd: 105, spe: 84},
-		abilities: {0: "Huge Power", 1: "Own Tempo", H: "Pickpocket"},
+		abilities: {0: "Mold Breaker", 1: "Own Tempo", H: "Pickpocket"},
 		heightm: 0.7,
 		weightkg: 112.8,
 		color: "Pink",

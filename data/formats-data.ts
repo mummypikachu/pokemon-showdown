@@ -220,12 +220,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Illegal",
 	},
 	raichu: {
-		tier: "OU",
+		tier: "RU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
 	raichualola: {
-		tier: "OU",
+		tier: "RU",
 		natDexTier: "RU",
 	},
 	raichumegax: {
@@ -792,7 +792,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "NFE",
 	},
 	rhyperior: {
-		tier: "OU",
+		tier: "UU",
 		natDexTier: "RU",
 	},
 	happiny: {
@@ -1736,7 +1736,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "NFE",
 	},
 	ludicolo: {
-		tier: "OU",
+		tier: "RU",
 		natDexTier: "RU",
 	},
 	seedot: {
@@ -2118,23 +2118,23 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	castform: {
-		tier: "OU",
+		tier: "NUBL",
 		natDexTier: "RU",
 	},
 	castformsunny: {
-		tier: "OU",
+		tier: "NUBL",
 		natDexTier: "RU",
 	},
 	castformrainy: {
-		tier: "OU",
+		tier: "NUBL",
 		natDexTier: "RU",
 	},
 	castformsnowy: {
-		tier: "OU",
+		tier: "NUBL",
 		natDexTier: "RU",
 	},
 	castformrocky: {
-		tier: "OU",
+		tier: "NUBL",
 		natDexTier: "RU",
 	},
 	kecleon: {
@@ -3441,7 +3441,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 	},
 	mienshao: {
-		tier: "OU",
+		tier: "UUBL",
 		natDexTier: "RU",
 	},
 	druddigon: {
@@ -4131,7 +4131,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 	},
 	ribombee: {
-		tier: "OU",
+		tier: "UU",
 		natDexTier: "RU",
 	},
 	ribombeetotem: {
@@ -4210,7 +4210,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 	},
 	shiinotic: {
-		tier: "OU",
+		tier: "NU",
 		natDexTier: "RU",
 	},
 	salandit: {
@@ -4445,7 +4445,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "OU",
 	},
 	tapubulu: {
-		tier: "OU",
+		tier: "RUBL",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
