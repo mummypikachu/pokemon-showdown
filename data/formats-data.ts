@@ -4549,6 +4549,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "RU",
 		natDexTier: "RU",
 	},
+	zeraoramega: {
+		tier: "Uber",
+		natDexTier: "Uber",
+	},
 	meltan: {
 		tier: "NU",
 		natDexTier: "RU",
@@ -5970,6 +5974,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	alkaslime: {
 		tier: "New",
+	},
+	movile: {
+		isNonstandard: "Custom",
+		tier: "Illegal",
 	},
 	// Start CAP/Missingno, don't place under this
 	missingno: {

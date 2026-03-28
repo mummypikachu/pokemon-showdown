@@ -8581,4 +8581,17 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 678,
 		gen: 9,
 	},
+	zeraorite: {
+		name: "Zeraorite",
+		spritenum: 627,
+		megaStone: "Zeraora-Mega",
+		megaEvolves: "Zeraora",
+		itemUser: ["Zeraora"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 678,
+		gen: 9,
+	},
 };
