@@ -6997,14 +6997,13 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 50145,
 	},
 	forestguardian: {
-		onWeather(target, source, effect) {
-			if (target.hasItem('utilityumbrella')) return;
-			if (effect.id === 'sunnyday' || effect.id === 'desolateland') {
-				this.heal(target.baseMaxhp / 16);
-			}
+		onSourceModifyDamage(damage, source, target, move) {
+			if (move.flags['contact']) return;
+			this.debug('half power noncontact move');
+			return this.chainModify(0.50);
 		},
 		name: "Forest Guardian",
-		rating: 1.5,
+		rating: 3.5,
 		num: 50145,
 	},
 };

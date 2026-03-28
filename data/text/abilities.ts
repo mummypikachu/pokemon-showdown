@@ -2617,6 +2617,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Heated Mane",
 		shortDesc: "This Pokemon's offensive stat is multiplied by 1.5 while using a Fire-type attack.",
 	},
+	forestguardian: {
+		name: "Forest Guardian",
+		shortDesc: "Non-contact moves used against this pokemon have their power halved.",
+	},
 };
 
 
