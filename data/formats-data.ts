@@ -2720,6 +2720,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 		natDexTier: "RU",
 	},
+	regigigasmega: {
+		tier: "OU",
+		doublesTier: "DUber",
+		natDexTier: "OU",
+	},
 	giratina: {
 		tier: "Uber",
 		natDexTier: "Uber",

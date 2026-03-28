@@ -8542,4 +8542,17 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 678,
 		gen: 9,
 	},
+	regigigite: {
+		name: "Regigigite",
+		spritenum: 627,
+		megaStone: "Regigigas-Mega",
+		megaEvolves: "Regi5",
+		itemUser: ["Regi5gigas"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 678,
+		gen: 9,
+	},
 };

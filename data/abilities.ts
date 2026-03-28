@@ -2251,7 +2251,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 2,
 		num: 85,
 	},
-	heatedmane: {
+	heatedmane: { //mega pyroar
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, attacker, defender, move) {
 			if (move.type === 'Fire') {
