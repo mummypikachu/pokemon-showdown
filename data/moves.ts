@@ -14033,14 +14033,14 @@ export const Moves: {[moveid: string]: MoveData} = {
 			if (source.species.name === 'Alkaslime') {
 				return;
 			}
-			this.hint("Only a Pokemon whose form is Hoopa Unbound can use this move.");
-			if (source.species.name === 'Hoopa') {
+			this.hint("Only Alkaslime can use this move.");
+			if (source.species.name === 'Alkaslime-Mega') {
 				this.attrLastMove('[still]');
-				this.add('-fail', source, 'move: Hyperspace Fury', '[forme]');
+				this.add('-fail', source, 'move: Acidic Slime', '[forme]');
 				return null;
 			}
 			this.attrLastMove('[still]');
-			this.add('-fail', source, 'move: Hyperspace Fury');
+			this.add('-fail', source, 'move: Acidic Slime');
 			return null;
 		},
 		secondary: {
