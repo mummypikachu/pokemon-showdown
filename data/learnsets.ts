@@ -95422,6 +95422,11 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			psychic: ["9L1", "9L1"],
 		},
 	},
+	alkaslime: {
+		learnset: {
+			splash: ["9L1"],
+		},
+	},
 	archaludon: {
 		learnset: {
 			aurasphere: ["9M"],
