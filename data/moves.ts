@@ -14021,7 +14021,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		contestType: "Cute",
 	},
 	acidicslime: {
-		num: 609,
+		num: 59053153,
 		accuracy: 100,
 		basePower: 30,
 		category: "Physical",
@@ -14029,13 +14029,27 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 20,
 		priority: 0,
 		flags: {bullet: 1, protect: 1, mirror: 1},
+		onTry(source) {
+			if (source.species.name === 'Alkaslime') {
+				return;
+			}
+			this.hint("Only a Pokemon whose form is Hoopa Unbound can use this move.");
+			if (source.species.name === 'Hoopa') {
+				this.attrLastMove('[still]');
+				this.add('-fail', source, 'move: Hyperspace Fury', '[forme]');
+				return null;
+			}
+			this.attrLastMove('[still]');
+			this.add('-fail', source, 'move: Hyperspace Fury');
+			return null;
+		},
 		secondary: {
 			chance: 100,
 			status: 'brn',
 		},
 		target: "normal",
 		type: "Poison",
-		contestType: "Cute",
+		contestType: "Tough",
 	},
 	oblivionwing: {
 		num: 613,
