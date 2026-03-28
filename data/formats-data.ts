@@ -1631,6 +1631,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "UU",
 		natDexTier: "RU",
 	},
+	clawitzermega: {
+		tier: "Uber",
+		natDexTier: "RU",
+	},
 	treecko: {
 		tier: "LC",
 		natDexTier: "LC",
