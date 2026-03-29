@@ -616,6 +616,11 @@
                 "teraTypes": ["Ghost"]
             },
             {
+                "role": "Fast Sweeper",
+                "movepool": ["Protect", "Infernal Parade", "Flamethrower", "Calm Mind", "Will-O-Wisp"],
+                "teraTypes": ["Ghost"]
+            },
+            {
                 "role": "Fast Attacker",
                 "movepool": ["Eruption", "Fire Blast", "Focus Blast", "Shadow Ball"],
                 "teraTypes": ["Fire", "Ghost"]
@@ -919,6 +924,36 @@
                 "role": "Bulky Support",
                 "movepool": ["Crunch", "Earthquake", "Fire Blast", "Ice Beam", "Stealth Rock", "Stone Edge", "Thunder Wave"],
                 "teraTypes": ["Rock", "Poison"]
+            }
+        ]
+    },
+    "entei": {
+        "level": 84,
+        "sets": [
+            {
+                "role": "Bulky Support",
+                "movepool": ["Sacred Fire", "Extreme Speed", "Will-O-Wisp", "Stone Edge"],
+                "teraTypes": ["Steel", "Fairy", "Ghost", "Poison"]
+            }
+        ]
+    },
+    "suicune": {
+        "level": 84,
+        "sets": [
+            {
+                "role": "Bulky Setup",
+                "movepool": ["Calm Mind", "Surf", "Rest", "Sleep Talk"],
+                "teraTypes": ["Steel", "Fairy", "Grass", "Poison"]
+            }
+        ]
+    },
+    "raikou": {
+        "level": 84,
+        "sets": [
+            {
+                "role": "Setup Sweeper",
+                "movepool": ["Volt Switch", "Thunderbolt", "Calm Mind", "Scald", "Aura Sphere"],
+                "teraTypes": ["Flying", "Water", "Fighting"]
             }
         ]
     },
@@ -4487,6 +4522,36 @@
                 "role": "Fast Sweeper",
                 "movepool": ["Earth Power", "Shore Up", "Shadow Ball", "Sunny Day"],
                 "teraTypes": ["Normal"]
+            }
+        ]
+    },
+    "regigigasmega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "Bulky Attacker",
+                "movepool": ["Earthquake", "Stone Edge", "Heavy Slam", "Darkest Lariat", "Heat Crash", "Drain Punch"],
+                "teraTypes": ["Normal"]
+            }
+        ]
+    },
+    "awanezumi": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "Fast Sweeper",
+                "movepool": ["Surf", "Nasty Plot", "Blizzard", "Alluring Voice", "U-turn"],
+                "teraTypes": ["Normal"]
+            }
+        ]
+    },
+    "basculinexcir": {
+        "level": 86,
+        "sets": [
+            {
+                "role": "Wallbreaker",
+                "movepool": ["Aqua Jet", "Crunch", "Dual Wingbeat", "Psychic Fangs", "Wave Crash"],
+                "teraTypes": ["Water"]
             }
         ]
     },
