@@ -2267,7 +2267,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RUBL",
 	},
 	salamencemega: {
-		tier: "OU",
+		tier: "Uber",
 		natDexTier: "Uber",
 	},
 	beldum: {
@@ -2283,19 +2283,19 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	metagrossmega: {
-		tier: "OU",
+		tier: "Uber",
 		natDexTier: "Uber",
 	},
 	regirock: {
-		tier: "OU",
+		tier: "RU",
 		natDexTier: "RU",
 	},
 	regice: {
-		tier: "OU",
+		tier: "RU",
 		natDexTier: "RU",
 	},
 	registeel: {
-		tier: "OU",
+		tier: "UUBL",
 		natDexTier: "RU",
 	},
 	latias: {
