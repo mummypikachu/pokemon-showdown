@@ -4264,8 +4264,38 @@
         "level": 79,
         "sets": [
             {
-                "role": "Offensive Stall",
+                "role": "Wallbreaker",
                 "movepool": ["Draco Meteor", "Air Slash", "Aqua Jet", "Dragon Dance"],
+                "teraTypes": ["Dragon"]
+            }
+        ]
+    },
+    "malamarmega": {
+        "level": 90,
+        "sets": [
+            {
+                "role": "Setup Sweeper",
+                "movepool": ["Close Combat", "Superpower", "Psycho Cut", "Night Slash"],
+                "teraTypes": ["Dark"]
+            }
+        ]
+    },
+    "hawluchamega": {
+        "level": 79,
+        "sets": [
+            {
+                "role": "Wallbreaker",
+                "movepool": ["Swords Dance", "Dual Wingbeat", "Flying Press", "U-turn"],
+                "teraTypes": ["Dragon"]
+            }
+        ]
+    },
+    "victreebelmega": {
+        "level": 79,
+        "sets": [
+            {
+                "role": "Bulky Attacker",
+                "movepool": ["Sludge Wave", "Giga Drain", "Strength Sap", "Energy Ball"],
                 "teraTypes": ["Dragon"]
             }
         ]
@@ -4304,7 +4334,7 @@
         "level": 80,
         "sets": [
             {
-                "role": "Offensive Stall",
+                "role": "Wallbreaker",
                 "movepool": ["Thunderbolt", "Volt Switch", "Focus Blast", "Fly"],
                 "teraTypes": ["Fire"]
             }
@@ -4374,7 +4404,7 @@
         "level": 80,
         "sets": [
             {
-                "role": "Offensive Stall",
+                "role": "Bulky Attacker",
                 "movepool": ["Giga Drain", "Will-O-Wisp", "Flamethrower", "Sunny Day"],
                 "teraTypes": ["Fire"]
             }
@@ -4387,6 +4417,16 @@
                 "role": "Fast Sweeper",
                 "movepool": ["Flamethrower", "Work Up", "Hyper Voice", "Earth Power"],
                 "teraTypes": ["Normal"]
+            }
+        ]
+    },
+    "alkaslime": {
+        "level": 81,
+        "sets": [
+            {
+                "role": "Bulky Attacker",
+                "movepool": ["Surf", "Hex", "Charm", "Acidic Slime"],
+                "teraTypes": ["Water"]
             }
         ]
     }

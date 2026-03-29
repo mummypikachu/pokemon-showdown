@@ -70360,6 +70360,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			calmmind: ["9M", "9M", "6M"],
 			confide: ["9M", "6M"],
 			constrict: ["9L1", "6L1"],
+			closecombat: ["9M"],
 			cut: ["9M"],
 			darkpulse: ["9M", "9M", "6M"],
 			doubleteam: ["9M", "6M"],
