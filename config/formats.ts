@@ -83,14 +83,14 @@ export const Formats: FormatList = [
 		name: "[Gen 9] OU",
 
 		mod: 'gen9',
-		ruleset: ['Standard', '+CAP', "Zygardite Clause"],
+		ruleset: ['Standard', '+CAP', 'Form Mega Clause'],
 		banlist: ['Uber', 'AG', 'Moody', 'Sand Veil', 'Snow Cloak', 'King\'s Rock', 'Baton Pass', 'Gorilla Tactics', 'Last Respects', 'Shedinja + Air Balloon', 'Zygarde + Power Construct'],
 	},
 	{
 		name: "[Gen 9] No Team View OU",
 
 		mod: 'gen9',
-		ruleset: ['Standard No Preview', '+CAP', "Zygardite Clause"],
+		ruleset: ['Standard No Preview', '+CAP', 'Form Mega Clause'],
 		banlist: ['Uber', 'AG', 'Moody', 'Sand Veil', 'Snow Cloak', 'King\'s Rock', 'Baton Pass', 'Gorilla Tactics', 'Last Respects', 'Shedinja + Air Balloon', 'Zygarde + Power Construct'],
 	},
 	{
@@ -100,7 +100,7 @@ export const Formats: FormatList = [
 		],
 
 		mod: 'gen9',
-		ruleset: ['Standard NatDex'],
+		ruleset: ['Standard NatDex', 'Form Mega Clause'],
 		banlist: ['AG', 'King\'s Rock', 'Baton Pass', 'Shedinja + Air Balloon', 'Rayquaza-Mega + Life Orb'],
 	},
 	{

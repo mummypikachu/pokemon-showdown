@@ -2688,15 +2688,24 @@ export const Rulesets: {[k: string]: FormatData} = {
 		name: 'Useless Moves Clause',
 		// implemented in /mods/moderngen1/rulesets.ts
 	},
-	zygarditeclause: {
-	effectType: 'ValidatorRule',
-    name: "Zygardite Clause",
-	desc: `Bans Zygarde-10% from holding the Zygardite.`,
-		//clause exists to ban Mega Zygarde from all tiers except Ubers.
-    onValidateSet(set) {
-        if (set.species === 'Zygarde-10%' && set.item === 'Zygardite') {
-            return ["Zygarde-10% cannot hold Zygardite."];
-        }
-    },
-},
+	formmegaclause: {
+		effectType: 'ValidatorRule',
+		name: "Form Mega Clause",
+		desc: `Bans Alternate Formes from holding Mega Stones belonging to their Base species.`,
+		//Clause exists to have second forms (such as Raichu-Alola, Zygarde-10% and Slowbro-Galar) not Mega evolve.
+		onValidateSet(set) {
+			if (set.species === 'Zygarde-10%' && set.item === 'Zygardite') {
+				return ["Zygarde-10% cannot hold Zygardite."];
+			}
+			if (set.species === 'Raichu-Alola' && set.item === 'Raichunite X') {
+				return ["Raichu-Alola cannot hold Raichunite X."];
+			}
+			if (set.species === 'Raichu-Alola' && set.item === 'Raichunite Y') {
+				return ["Raichu-Alola cannot hold Raichunite Y."];
+			}
+			if (set.species === 'Slowbro-Galar' && set.item === 'Slowbronite') {
+				return ["Slowbro-Galar cannot hold Slowbronite."];
+			}
+		},
+	},
 };
