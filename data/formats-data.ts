@@ -640,6 +640,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 		natDexTier: "RU",
 	},
+	mukmega: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "RU",
+	},
 	mukalola: {
 		tier: "RU",
         doublesTier: "(DOU)",
@@ -1576,6 +1581,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
+	donphanmega: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "RU",
+	},
 	stantler: {
 		tier: "PU",
 		doublesTier: "(DUU)",
@@ -2039,6 +2049,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	cacturne: {
 		tier: "PU",
 		doublesTier: "(DUU)",
+		natDexTier: "RU",
+	},
+	cacturnemega: {
+		tier: "OU",
+		doublesTier: "DOU",
 		natDexTier: "RU",
 	},
 	swablu: {

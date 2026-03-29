@@ -2718,8 +2718,8 @@ export const Rulesets: {[k: string]: FormatData} = {
 			if (set.species === 'Chimecho-Excir' && set.item === 'Chimechite') {
 				return ["Chimecho-Excir cannot hold Chimechite."];
 			}
-			if (set.species === 'Chimecho-Excir' && set.item === 'Chimechite') {
-				return ["Chimecho-Excir cannot hold Chimechite."];
+			if (set.species === 'Muk-Alola' && set.item === 'Mukite') {
+				return ["Muk-Alola cannot hold Mukite."];
 			}
 		},
 	},

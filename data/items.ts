@@ -8633,4 +8633,43 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 660,
 		gen: 9,
 	},
+	cacturnite: {
+		name: "Cacturnite",
+		spritenum: 627,
+		megaStone: "Cacturne-Mega",
+		megaEvolves: "Cacturne",
+		itemUser: ["Cacturne"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 678,
+		gen: 9,
+	},
+	donphanite: {
+		name: "Donphanite",
+		spritenum: 627,
+		megaStone: "Donphan-Mega",
+		megaEvolves: "Donphan",
+		itemUser: ["Donphan"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 678,
+		gen: 9,
+	},
+	mukite: {
+		name: "Mukite",
+		spritenum: 627,
+		megaStone: "Muk-Mega",
+		megaEvolves: "Muk",
+		itemUser: ["Muk"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 678,
+		gen: 9,
+	},
 };
