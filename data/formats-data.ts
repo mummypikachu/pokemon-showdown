@@ -2203,9 +2203,9 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		newDexTier: "RU",
 	},
 	chimechomega: {
-		tier: "OU",
+		tier: "UU",
 		natDexTier: "OU",
-		newDexTier: "OU",
+		newDexTier: "Uber",
 	},
 	absol: {
 		tier: "RU",
@@ -2747,7 +2747,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "Uber",
 	},
 	regigigas: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 		natDexTier: "RU",
 	},
@@ -3220,12 +3220,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		saDexTier: "LC",
 	},
 	archeops: {
-		tier: "OU",
+		tier: "UU",
 		natDexTier: "RU",
 		saDexTier: "OU",
 	},
 	archeopsmega: {
-		tier: "OU",
+		tier: "UUBL",
 		natDexTier: "OU",
 		saDexTier: "OU",
 	},
@@ -5707,7 +5707,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		newDexTier: "RU",
 	},
 	chimechoexcir: {
-		tier: "UU",
+		tier: "RU",
 		natDexTier: "UU",
 		doublesTier: "DOU",
 		newDexTier: "UU",
