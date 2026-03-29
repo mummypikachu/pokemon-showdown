@@ -2065,7 +2065,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	altariamega: {
-		tier: "OU",
+		tier: "UU",
 		natDexTier: "RU",
 	},
 	zangoose: {
@@ -2617,7 +2617,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	lucariomega: {
-		tier: "OU",
+		tier: "Uber",
 		natDexTier: "Uber",
 	},
 	hippopotas: {
@@ -2657,7 +2657,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	lumineonmega: {
-		tier: "OU",
+		tier: "RUBL",
 		doublesTier: "DOU",
 		natDexTier: "RU",
 	},
@@ -2876,7 +2876,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		newDexTier: "OU",
 	},
 	emboarmega: {
-		tier: "OU",
+		tier: "UUBL",
 		doublesTier: "DUU",
 		natDexTier: "RU",
 		newDexTier: "Uber",
@@ -3179,11 +3179,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 	},
 	scrafty: {
-		tier: "UU",
+		tier: "RU",
 		natDexTier: "RU",
 	},
 	scraftymega: {
-		tier: "OU",
+		tier: "UU",
 		natDexTier: "OU",
 	},
 	sigilyph: {
