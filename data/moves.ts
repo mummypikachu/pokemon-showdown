@@ -14020,7 +14020,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		num: 59053153,
 		accuracy: 100,
 		basePower: 30,
-		category: "Physical",
+		category: "Special",
 		name: "Acidic Slime",
 		pp: 20,
 		priority: 0,
