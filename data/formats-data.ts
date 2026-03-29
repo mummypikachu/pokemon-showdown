@@ -3114,7 +3114,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		newDexTier: "RU",
 	},
 	basculinexcir: {
-		tier: "OU",
+		tier: "NU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 		newDexTier: "UU",
@@ -3394,7 +3394,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	eelektrossmega: {
-		tier: "OU",
+		tier: "UU",
 		natDexTier: "OU",
 	},
 	elgyem: {
@@ -3414,7 +3414,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "NFE",
 	},
 	chandelure: {
-		tier: "OU",
+		tier: "UUBL",
 		natDexTier: "RU",
 	},
 	chandeluremega: {
@@ -3830,7 +3830,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	malamarmega: {
-		tier: "OU",
+		tier: "RUBL",
 		natDexTier: "OU",
 	},
 	binacle: {
@@ -3854,7 +3854,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	dragalgemega: {
-		tier: "OU",
+		tier: "UU",
 		natDexTier: "OU",
 	},
 	clauncher: {
