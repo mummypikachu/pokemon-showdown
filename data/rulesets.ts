@@ -2692,7 +2692,7 @@ export const Rulesets: {[k: string]: FormatData} = {
 		effectType: 'ValidatorRule',
 		name: "Form Mega Clause",
 		desc: `Bans Alternate Formes from holding Mega Stones belonging to their Base species.`,
-		//Clause exists to have second forms (such as Raichu-Alola, Zygarde-10% and Slowbro-Galar) not Mega evolve.
+		//Clause exists to have second forms (such as Raichu-Alola, Zygarde-10% and Slowbro-Galar) not Mega evolve. Manually updated.
 		onValidateSet(set) {
 			if (set.species === 'Zygarde-10%' && set.item === 'Zygardite') {
 				return ["Zygarde-10% cannot hold Zygardite."];
@@ -2705,6 +2705,21 @@ export const Rulesets: {[k: string]: FormatData} = {
 			}
 			if (set.species === 'Slowbro-Galar' && set.item === 'Slowbronite') {
 				return ["Slowbro-Galar cannot hold Slowbronite."];
+			}
+			if (set.species === 'Moltres-Galar' && set.item === 'Moltresite') {
+				return ["Moltres-Galar cannot hold Moltresite."];
+			}
+			if (set.species === 'Zapdos-Galar' && set.item === 'Zapdosite') {
+				return ["Zapdos-Galar cannot hold Zapdosite."];
+			}
+			if (set.species === 'Articuno-Galar' && set.item === 'Articunite') {
+				return ["Articuno-Galar cannot hold Articunite."];
+			}
+			if (set.species === 'Chimecho-Excir' && set.item === 'Chimechite') {
+				return ["Chimecho-Excir cannot hold Chimechite."];
+			}
+			if (set.species === 'Chimecho-Excir' && set.item === 'Chimechite') {
+				return ["Chimecho-Excir cannot hold Chimechite."];
 			}
 		},
 	},
