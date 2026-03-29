@@ -2365,7 +2365,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	deoxysspeed: {
-		tier: "Uber",
+		tier: "OU",
 		doublesTier: "DOU",
 		natDexTier: "Uber",
 	},
@@ -4923,22 +4923,27 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	dracozolt: {
 		tier: "UU",
 		natDexTier: "RU",
+		doublesTier: "DOU",
 	},
 	arctozolt: {
 		tier: "OU",
 		natDexTier: "RU",
+		doublesTier: "DOU",
 	},
 	dracovish: {
 		tier: "Uber",
 		natDexTier: "Uber",
+		doublesTier: "DOU",
 	},
 	arctovish: {
 		tier: "UU",
 		natDexTier: "RU",
+		doublesTier: "DOU",
 	},
 	duraludon: {
 		tier: "RU",
 		natDexTier: "RU",
+		doublesTier: "DOU",
 	},
 	duraludongmax: {
 		isNonstandard: "Past",
@@ -4958,26 +4963,32 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	zacian: {
 		tier: "Uber",
 		natDexTier: "Uber",
+		doublesTier: "DUber",
 	},
 	zaciancrowned: {
 		tier: "Uber",
 		natDexTier: "Uber",
+		doublesTier: "DUber",
 	},
 	zamazenta: {
 		tier: "Uber",
 		natDexTier: "UUBL",
+		doublesTier: "DUber",
 	},
 	zamazentacrowned: {
 		tier: "Uber",
 		natDexTier: "Uber",
+		doublesTier: "DUber",
 	},
 	eternatus: {
 		tier: "Uber",
 		natDexTier: "Uber",
+		doublesTier: "DUber",
 	},
 	eternatuseternamax: {
 		tier: "Uber",
 		natDexTier: "Uber",
+		doublesTier: "DUber",
 	},
 	kubfu: {
 		tier: "NFE",
@@ -4986,10 +4997,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	urshifu: {
 		tier: "Uber",
 		natDexTier: "Uber",
+		doublesTier: "DOU",
 	},
 	urshifurapidstrike: {
 		tier: "OU",
 		natDexTier: "OU",
+		doublesTier: "DOU",
 	},
 	urshifugmax: {
 		isNonstandard: "Past",
@@ -5002,6 +5015,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	zarude: {
 		tier: "RU",
 		natDexTier: "RU",
+		doublesTier: "DOU",
 	},
 	zarudedada: {
 		isNonstandard: "Unobtainable",
@@ -5009,30 +5023,37 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	regieleki: {
 		tier: "OU",
 		natDexTier: "Uber",
+		doublesTier: "DOU",
 	},
 	regidrago: {
 		tier: "OU",
 		natDexTier: "RU",
+		doublesTier: "DOU",
 	},
 	glastrier: {
 		tier: "UU",
 		natDexTier: "RU",
+		doublesTier: "DOU",
 	},
 	spectrier: {
 		tier: "Uber",
 		natDexTier: "Uber",
+		doublesTier: "DOU",
 	},
 	calyrex: {
 		tier: "UU",
 		natDexTier: "RU",
+		doublesTier: "DOU",
 	},
 	calyrexice: {
 		tier: "Uber",
 		natDexTier: "Uber",
+		doublesTier: "DUber",
 	},
 	calyrexshadow: {
 		tier: "Uber",
 		natDexTier: "AG",
+		doublesTier: "DUber",
 	},
 	enamorus: {
 		tier: "OU",
