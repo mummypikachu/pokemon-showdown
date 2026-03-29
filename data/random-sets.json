@@ -18,5 +18,45 @@
                 "teraTypes": ["Normal"]
             }
         ]
+    },
+    "pachirisu": {
+        "level": 80,
+        "sets": [
+            {
+                "role": "Offensive Stall",
+                "movepool": ["Giga Drain", "Will-O-Wisp", "Flamethrower", "Sunny Day"],
+                "teraTypes": ["Fire"]
+            }
+        ]
+    },
+    "luvdisc": {
+        "level": 87,
+        "sets": [
+            {
+                "role": "Fast Sweeper",
+                "movepool": ["Flamethrower", "Work Up", "Hyper Voice", "Earth Power"],
+                "teraTypes": ["Normal"]
+            }
+        ]
+    },
+    "flygonmega": {
+        "level": 80,
+        "sets": [
+            {
+                "role": "Offensive Stall",
+                "movepool": ["Giga Drain", "Will-O-Wisp", "Flamethrower", "Sunny Day"],
+                "teraTypes": ["Fire"]
+            }
+        ]
+    },
+    "pichu": {
+        "level": 87,
+        "sets": [
+            {
+                "role": "Fast Sweeper",
+                "movepool": ["Flamethrower", "Work Up", "Hyper Voice", "Earth Power"],
+                "teraTypes": ["Normal"]
+            }
+        ]
     }
 }
