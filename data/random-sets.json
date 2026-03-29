@@ -4260,6 +4260,116 @@
             }
         ]
     },
+    "dragonitemega": {
+        "level": 79,
+        "sets": [
+            {
+                "role": "Offensive Stall",
+                "movepool": ["Draco Meteor", "Air Slash", "Aqua Jet", "Dragon Dance"],
+                "teraTypes": ["Dragon"]
+            }
+        ]
+    },
+    "froslassmega": {
+        "level": 76,
+        "sets": [
+            {
+                "role": "Wallbreaker",
+                "movepool": ["Blizzard", "Will-O-Wisp", "Shadow Ball", "Icy Wind"],
+                "teraTypes": ["Ice"]
+            }
+        ]
+    },
+    "flygonmega": {
+        "level": 84,
+        "sets": [
+            {
+                "role": "Setup Sweeper",
+                "movepool": ["Earthquake", "Dragon Dance", "Outrage", "Sandstorm"],
+                "teraTypes": ["Fire"]
+            }
+        ]
+    },
+    "raichumegax": {
+        "level": 80,
+        "sets": [
+            {
+                "role": "Wallbreaker",
+                "movepool": ["Volt Tackle", "Volt Switch", "Surf", "Iron Tail"],
+                "teraTypes": ["Fire"]
+            }
+        ]
+    },
+    "raichumegay": {
+        "level": 80,
+        "sets": [
+            {
+                "role": "Offensive Stall",
+                "movepool": ["Thunderbolt", "Volt Switch", "Focus Blast", "Fly"],
+                "teraTypes": ["Fire"]
+            }
+        ]
+    },
+    "meganiummega": {
+        "level": 89,
+        "sets": [
+            {
+                "role": "Bulky Attacker",
+                "movepool": ["Solar Beam", "Synthesis", "Aromatherapy", "Dazzling Gleam", "Weather Ball"],
+                "teraTypes": ["Fire"]
+            }
+        ]
+    },
+    "emboarmega": {
+        "level": 90,
+        "sets": [
+            {
+                "role": "Wallbreaker",
+                "movepool": ["Flare Blitz", "Trailblaze", "Close Combat", "Poison Jab"],
+                "teraTypes": ["Fire"]
+            }
+        ]
+    },
+    "feraligatrmega": {
+        "level": 88,
+        "sets": [
+            {
+                "role": "Wallbreaker",
+                "movepool": ["Double-Edge", "Waterfall", "Dragon Dance", "Crunch"],
+                "teraTypes": ["Fire"]
+            }
+        ]
+    },
+    "greninjamega": {
+        "level": 76,
+        "sets": [
+            {
+                "role": "Wallbreaker",
+                "movepool": ["Water Shuriken", "Dark Pulse", "Flip Turn", "Ice Beam"],
+                "teraTypes": ["Fire"]
+            }
+        ]
+    },
+    "delphoxmega": {
+        "level": 77,
+        "sets": [
+            {
+                "role": "Wallbreaker",
+                "movepool": ["Flamethrower", "Psyshock", "Nasty Plot", "Shadow Ball"],
+                "teraTypes": ["Fire"]
+            }
+        ]
+    },
+    "chesnaughtmega": {
+        "level": 79,
+        "sets": [
+            {
+                "role": "Bulky Attacker",
+                "movepool": ["Iron Defense", "Wood Hammer", "Body Press", "Leech Seed"],
+                "teraTypes": ["Fire"]
+            }
+        ]
+    },
     "scovillainmega": {
         "level": 80,
         "sets": [

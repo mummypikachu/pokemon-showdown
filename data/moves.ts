@@ -22984,7 +22984,15 @@ export const Moves: {[moveid: string]: MoveData} = {
 				!pokemon.transformed) {
 				return move.basePower + 5;
 			}
+			if (pokemon.species.name === 'Greninja-Mega') {
+				return 90;
+			}
 			return move.basePower;
+		},
+		onModifyMove(move, pokemon) {
+			if (pokemon.species.name === 'Greninja-Mega') {
+				move.multihit = 1;
+			}
 		},
 		category: "Special",
 		name: "Water Shuriken",
