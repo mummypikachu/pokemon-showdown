@@ -1987,7 +1987,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	sharpedomega: {
-		tier: "OU",
+		tier: "UUBL",
 		natDexTier: "RU",
 	},
 	wailmer: {
@@ -2166,7 +2166,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "LC",
 	},
 	banette: {
-		tier: "OU",
+		tier: "RU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
@@ -4895,7 +4895,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	falinksmega: {
-		tier: "OU",
+		tier: "RUBL",
 		natDexTier: "OU",
 	},
 	pincurchin: {
@@ -5352,7 +5352,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "OU",
 	},
 	glimmoramega: {
-		tier: "OU",
+		tier: "(OU)",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
