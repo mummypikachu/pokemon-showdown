@@ -2605,8 +2605,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "OU",
 	},
 	garchompmega: {
-		tier: "OU",
+		tier: "(OU)",
 		natDexTier: "(OU)",
+	},
+	garchompmegaz: {
+		tier: "Uber",
+		natDexTier: "Uber",
 	},
 	riolu: {
 		tier: "LC",
@@ -3074,11 +3078,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "NFE",
 	},
 	scolipede: {
-		tier: "OU",
+		tier: "UU",
 		natDexTier: "RU",
 	},
 	scolipedemega: {
-		tier: "(OU)",
+		tier: "UU",
 		natDexTier: "RU",
 	},
 	cottonee: {
@@ -3086,7 +3090,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "LC",
 	},
 	whimsicott: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 		natDexTier: "RU",
 	},

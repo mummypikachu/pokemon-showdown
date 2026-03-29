@@ -6454,7 +6454,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 180.5,
 		color: "Gray",
 		eggGroups: ["Field"],
-		requiredItem: "Cacturneite",
+		requiredItem: "Cacturnite",
 	},
 	swablu: {
 		num: 333,
