@@ -15634,7 +15634,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 248.1,
 		color: "Red",
 		eggGroups: ["Undiscovered"],
-		requiredItem: "Magearnite-O",
+		requiredItem: "Magearnite",
 		battleOnly: "Magearna-Original",
 		gen: 9,
 	},

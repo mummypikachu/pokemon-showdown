@@ -8625,20 +8625,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 0,
 		megaStone: "Magearna-Mega",
 		megaEvolves: "Magearna",
-		itemUser: ["Magearna"],
-		onTakeItem(item, source) {
-			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
-			return true;
-		},
-		num: 660,
-		gen: 9,
-	},
-	magearniteo: {
-		name: "Magearnite-O",
-		spritenum: 0,
-		megaStone: "Magearna-Original-Mega",
-		megaEvolves: "Magearna-Original",
-		itemUser: ["Magearna-Original"],
+		itemUser: ["Magearna", "Magearna-Original"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
