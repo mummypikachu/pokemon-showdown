@@ -1839,6 +1839,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Magearnite",
 		desc: "If held by a Magearna, this item allows it to Mega Evolve in battle.",
 	},
+	magearniteo: {
+		name: "Magearnite-O",
+		desc: "If held by Magearna-Original, this item allows it to Mega Evolve in battle.",
+	},
 	sceptilite: {
 		name: "Sceptilite",
 		desc: "If held by a Sceptile, this item allows it to Mega Evolve in battle.",

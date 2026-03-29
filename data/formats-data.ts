@@ -2723,7 +2723,13 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	heatran: {
 		tier: "OU",
+		doublesTier: "DOU",
 		natDexTier: "OU",
+	},
+	heatranmega: {
+		tier: "Uber",
+		doublesTier: "DUber",
+		natDexTier: "Uber",
 	},
 	regigigas: {
 		tier: "OU",
@@ -4525,6 +4531,14 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "Uber",
 	},
 	magearnaoriginal: {
+		tier: "Uber",
+		natDexTier: "Uber",
+	},
+	magearnamega: {
+		tier: "Uber",
+		natDexTier: "Uber",
+	},
+	magearnaoriginalmega: {
 		tier: "Uber",
 		natDexTier: "Uber",
 	},
