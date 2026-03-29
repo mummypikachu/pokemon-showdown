@@ -24924,7 +24924,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	},
 	ledyba: {
 		learnset: {
-			victorydance: ["9V"],
 			acrobatics: ["9M", "9M", "5M"],
 			aerialace: ["9M", "9M", "5M", "4M", "3M", "9S0"],
 			agility: ["9L29", "9V", "6L30", "5L30", "4L30", "3L43"],
@@ -79342,7 +79341,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			torment: ["9M"],
 			toxic: ["9M"],
 			whirlwind: ["9L25", "9L1"],
-			victorydance: ["9L0"],
 			withdraw: ["9L5", "9L1"],
 			woodhammer: ["9L60", "9S2", "9L1"],
 			workup: ["9M", "9M"],
@@ -83228,7 +83226,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	},
 	centiskorch: {
 		learnset: {
-			victorydance: ["9M"],
 			attract: ["9M"],
 			bite: ["9L1"],
 			brutalswing: ["9M"],
@@ -90476,7 +90473,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			wildcharge: ["9M"],
 			willowisp: ["9M"],
 			zenheadbutt: ["9M"],
-			victorydance: ["9M"],
 			outrage: ["9M"],
 			dragonrush: ["9M"],
 			dragontail: ["9M"],
