@@ -13126,7 +13126,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 69.8,
 		color: "Blue",
 		eggGroups: ["Water 1", "Water 2"],
-		requiredItem: "Venusaurite",
+		requiredItem: "Malamarite",
 		gen: 9,
 	},
 	binacle: {

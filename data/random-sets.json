@@ -2395,6 +2395,16 @@
             }
         ]
     },
+    "barbaracle": {
+        "level": 84,
+        "sets": [
+            {
+                "role": "Setup Sweeper",
+                "movepool": ["Shell Smash", "Close Combat", "Liquidation", "Stone Edge"],
+                "teraTypes": ["Fighting"]
+            }
+        ]
+    },
     "dragalge": {
         "level": 86,
         "sets": [
@@ -4490,7 +4500,7 @@
         "sets": [
             {
                 "role": "Wallbreaker",
-                "movepool": ["Sludge Wave", "Dragon Pulse", "Draco Meteor", "Flip Turn"],
+                "movepool": ["Draco Meteor", "Focus Blast", "Sludge Bomb", "Thunderbolt"],
                 "teraTypes": ["Normal"]
             }
         ]
@@ -4526,11 +4536,36 @@
         ]
     },
     "regigigasmega": {
-        "level": 100,
+        "level": 80,
         "sets": [
             {
                 "role": "Bulky Attacker",
                 "movepool": ["Earthquake", "Stone Edge", "Heavy Slam", "Darkest Lariat", "Heat Crash", "Drain Punch"],
+                "teraTypes": ["Normal"]
+            }
+        ]
+    },
+    "chimechomega": {
+        "level": 84,
+        "sets": [
+            {
+                "role": "Bulky Support",
+                "movepool": ["Defog", "Psychic Noise", "Recover", "Flash Cannon"],
+                "teraTypes": ["Normal"]
+            },
+            {
+                "role": "Bulky Attacker",
+                "movepool": ["Boomburst", "Psychic", "Recover", "Flash Cannon"],
+                "teraTypes": ["Normal"]
+            }
+        ]
+    },
+    "barbaraclemega": {
+        "level": 77,
+        "sets": [
+            {
+                "role": "Setup Sweeper",
+                "movepool": ["Shell Smash", "Close Combat", "Liquidation", "Stone Edge"],
                 "teraTypes": ["Normal"]
             }
         ]
