@@ -1851,6 +1851,22 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Donphanite",
 		desc: "If held by a Donphan, this item allows it to Mega Evolve in battle.",
 	},
+	hiddenitear: {
+		name: "hiddenitear",
+		desc: "If held by a HIDDENar, this item allows it to Mega Evolve in battle.",
+	},
+	hiddenitecr: {
+		name: "hiddenitecr",
+		desc: "If held by a HIDDENcr, this item allows it to Mega Evolve in battle.",
+	},
+	hiddeniteau: {
+		name: "hiddeniteau",
+		desc: "If held by a HIDDENau, this item allows it to Mega Evolve in battle.",
+	},
+	hiddenitety: {
+		name: "hiddenite",
+		desc: "If held by a HIDDENty, this item allows it to Mega Evolve in battle.",
+	},
 	sceptilite: {
 		name: "Sceptilite",
 		desc: "If held by a Sceptile, this item allows it to Mega Evolve in battle.",
