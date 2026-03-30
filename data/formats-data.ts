@@ -5280,6 +5280,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 		natDexTier: "UU",
 	},
+	baxcaliburmega: {
+		tier: "Uber",
+		doublesTier: "DUber",
+		natDexTier: "UU",
+	},
 	tatsugiri: {
 		tier: "PU",
 		doublesTier: "DUU",

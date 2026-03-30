@@ -209,6 +209,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	bleedingedge: {
 		name: "Bleeding Edge",
 		desc: "If the Pokémon uses an contact move on a turn, the targets takes an additional 1/8 of its full health damage by the end of the turn.",	
+		shortDesc: "If this Pokemon uses a contact move, the target loses 1/8th full HP at end of turn.",
 	},
 	bulletproof: {
 		name: "Bulletproof",
@@ -1490,7 +1491,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Predetermined Fate",
 		shortDesc: "Sets up Future Sight on entry.",
 
-		start: "  [POKEMON] has something in store for [TARGET].",
+		start: "  [POKEMON] sees into the future!",
 	},
 	pressure: {
 		name: "Pressure",
