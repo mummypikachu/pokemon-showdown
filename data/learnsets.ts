@@ -55572,6 +55572,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			defensecurl: ["9L1", "9L1", "6L1", "5L1"],
 			doubleteam: ["9M", "9M", "5M"],
 			dreameater: ["9L44", "9M", "9L41", "7S0", "9M", "6L41", "5M", "5L41"],
+			dreammist: ["9M"],
 			endure: ["9M"],
 			energyball: ["9M", "9M", "9M", "5M"],
 			expandingforce: ["9T"],
