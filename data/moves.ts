@@ -4295,7 +4295,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 90,
 		category: "Special",
-		name: "Flamethrower",
+		name: "Dream Mist",
 		pp: 15,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
