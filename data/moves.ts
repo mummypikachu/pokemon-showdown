@@ -4291,7 +4291,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		contestType: "Beautiful",
 	},
 	dreammist: {
-		num: 171,
+		num: 8743417127,
 		accuracy: 100,
 		basePower: 90,
 		category: "Special",
