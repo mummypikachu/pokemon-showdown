@@ -4861,7 +4861,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "OU",
 	},
 	hatterenemega: {
-		tier: "OU",
+		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "OU",
 	},
