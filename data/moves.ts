@@ -7307,10 +7307,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 			if (!target) return;
 
 			if (target.species.name === 'Corviknight') {
-				return 1;
+				return 0;
 			}
 			if (target.species.name === 'Corviknight-Mega') {
-				return 1;
+				return 0;
 			}
 		},
 
