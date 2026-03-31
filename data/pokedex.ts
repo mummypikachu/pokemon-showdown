@@ -9194,7 +9194,6 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		tags: ["Sub-Legendary"],
 		eggGroups: ["Undiscovered"],
 		requiredItem: "Regigigite",
-		gen: 9,
 	},
 	giratina: {
 		num: 487,
@@ -18766,7 +18765,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		forme: "Mega",
 		types: ["Rock", "Poison"],
 		baseStats: { hp: 83, atk: 90, def: 105, spa: 150, spd: 96, spe: 101 },
-		abilities: { 0: "Toxic Debris" },
+		abilities: { 0: "Levitate" },
 		heightm: 2.8,
 		weightkg: 77,
 		color: "Blue",

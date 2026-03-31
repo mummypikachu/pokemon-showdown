@@ -1982,6 +1982,16 @@
             }
         ]
     },
+    "musharna": {
+        "level": 88,
+        "sets": [
+            {
+                "role": "Bulky Support",
+                "movepool": ["Dream Mist", "Recover", "Haze", "Dazzling Gleam", "Toxic", "Tera Blast"],
+                "teraTypes": ["Flying", "Dark"]
+            }
+        ]
+    },
     "lilligant": {
         "level": 86,
         "sets": [
