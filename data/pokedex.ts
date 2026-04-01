@@ -5802,7 +5802,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		gender: "N",
 		baseStats: {hp: 1, atk: 110, def: 1, spa: 110, spd: 1, spe: 110},
 		maxHP: 1,
-		abilities: {0: "Wonder Guard"},
+		abilities: {0: "One Hit Wonder"},
 		heightm: 0.8,
 		weightkg: 1.2,
 		color: "Brown",
