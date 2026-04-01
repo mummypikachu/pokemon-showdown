@@ -14660,7 +14660,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Bewear",
 		types: ["Normal", "Fighting"],
 		baseStats: {hp: 120, atk: 125, def: 75, spa: 55, spd: 95, spe: 60},
-		abilities: {0: "Fur Coat", 1: "Klutz", H: "Unnerve"},
+		abilities: {0: "Fluffy", 1: "Klutz", H: "Unnerve"},
 		heightm: 2.1,
 		weightkg: 135,
 		color: "Pink",
