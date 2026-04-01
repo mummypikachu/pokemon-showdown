@@ -20624,7 +20624,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Rock", "Fighting"],
 		gender: "N",
 		baseStats: {hp: 87, atk: 255, def: 95, spa: 123, spd: 91, spe: 255},
-		abilities: {0: "Good as Gold"},
+		abilities: {0: "Good as Pyrite"},
 		heightm: 1.2,
 		weightkg: 30,
 		color: "Yellow",

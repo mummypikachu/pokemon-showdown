@@ -1945,6 +1945,64 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 5,
 		num: 283,
 	},
+	goodaspyrite: {
+		onStart(pokemon) {
+            this.add('-ability', pokemon, 'Clean Slate'); // Display the ability name when it activates
+
+            // Check if any Pokémon on the field has "Good as Gold"
+            for (const target of this.getAllActive()) {
+                if (target.ability === 'goodasgold') {
+                    this.add('-block', target, 'ability: Good as Gold', '[of] ' + target);
+                    return false; // Block the effect of Clean Slate
+                }
+            }
+
+            let success = false;
+            if (!pokemon.volatiles['substitute']) success;
+            const removeTarget = [
+                'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge',
+            ];
+            for (const side of [pokemon.side, pokemon.side.foe]) {
+                for (const targetCondition of removeTarget) {
+                    if (side.removeSideCondition(targetCondition)) {
+                        this.add('-sideend', side, this.dex.conditions.get(targetCondition).name, '[from] ability: Clean Slate', '[of] ' + pokemon);
+                        success = true;
+                    }
+                }
+            }
+            this.field.clearWeather();
+            this.field.clearTerrain();
+            return success;
+        },
+		onTryHit(target, source, move) {
+			if (move.category === 'Status' && target !== source) {
+				this.add('-immune', target, '[from] ability: Good as Pyrite');
+				return null;
+			}
+		},
+		onAfterEachBoost(boost, target, source, effect) {
+			if (!source || target.isAlly(source)) {
+				if (effect.id === 'stickyweb') {
+					this.hint("Court Change Sticky Web counts as lowering your own Speed, and Defiant only affects stats lowered by foes.", true, source.side);
+				}
+				return;
+			}
+			let statsLowered = false;
+			let i: BoostID;
+			for (i in boost) {
+				if (boost[i]! < 0) {
+					statsLowered = true;
+				}
+			}
+			if (statsLowered) {
+				this.boost({atk: 2}, target, target, null, false, true);
+			}
+		},
+		isBreakable: true,
+		name: "Good as Pyrite",
+		rating: 5,
+		num: 283,
+	},
 	stickyfield: {
 		onStart(pokemon) {
 			let activated = false;

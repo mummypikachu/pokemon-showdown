@@ -685,6 +685,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Good as Gold",
 		shortDesc: "This Pokemon is immune to Status moves.",
 	},
+	goodaspyrite: {
+		name: "Good as Pyrite",
+		shortDesc: "Good as Gold+Defiant+Clean Slate for opponent.",
+	},
 	gooey: {
 		name: "Gooey",
 		desc: "On contact, this Pokemon lowers the Speed of opposing Pokemon by 1 stage.",
