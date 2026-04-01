@@ -3703,6 +3703,11 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 12,
 	},
 	onehitwonder:{
+		onBeforeMove(pokemon, target, move) {
+		// Prevent ALL moves (including Struggle)
+		this.add('-message', `${pokemon.name} does nothing it's a Molt`);
+		return false;
+	},
 		onTryHit(target, source, move) {
 			// Block all moves except Struggle
 			if (target === source || move.id === 'struggle') return;
