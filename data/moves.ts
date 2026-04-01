@@ -7290,7 +7290,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Gigaton Hammer",
 		pp: 5,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
+		flags: { protect: 1, mirror: 1 },
 		onDisableMove(pokemon) {
 			if (pokemon.lastMove?.id === 'gigatonhammer') pokemon.disableMove('gigatonhammer');
 		},
@@ -7302,6 +7302,18 @@ export const Moves: {[moveid: string]: MoveData} = {
 				this.add('-hint', "Some effects can force a Pokemon to use Gigaton Hammer again in a row.");
 			}
 		},
+
+		onEffectiveness(typeMod, target, type) {
+			if (!target) return;
+
+			if (target.species.name === 'Corviknight') {
+				return 0;
+			}
+			if (target.species.name === 'Corviknight-Mega') {
+				return 0;
+			}
+		},
+
 		condition: {},
 		secondary: null,
 		target: "normal",

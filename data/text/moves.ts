@@ -2522,6 +2522,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	gigatonhammer: {
 		name: "Gigaton Hammer",
+		desc: "Cannot be selected the turn after it has been used, unless the user is forced into using it by Encore. If the target is Corviknight or Corviknight-Mega, this move will always do neutral damage, instead of the normal interaction.",
 		shortDesc: "Cannot be selected the turn after it's used.",
 	},
 	gigavolthavoc: {
