@@ -95583,6 +95583,12 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			poisongas: ["9M"],
 			substitute: ["9M"],
 			swordsdance: ["9M"],
+			stoneedge: ["9M"],
+			thunderpunch: ["9M"],
+			icepunch: ["9M"],
+			hammerarm: ["9M"],
+			doublekick: ["9M"],
+			dig: ["9M"],
 		},
 	},
 	movile: {
