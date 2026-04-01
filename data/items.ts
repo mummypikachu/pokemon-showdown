@@ -8711,4 +8711,17 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 678,
 		gen: 9,
 	},
+	swoobattite: {
+		name: "Swoobattite",
+		spritenum: 627,
+		megaStone: "Swoobat-Mega",
+		megaEvolves: "Swoobat",
+		itemUser: ["Swoobat"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 678,
+		gen: 9,
+	},
 };

@@ -2721,6 +2721,9 @@ export const Rulesets: {[k: string]: FormatData} = {
 			if (set.species === 'Muk-Alola' && set.item === 'Mukite') {
 				return ["Muk-Alola cannot hold Mukite."];
 			}
+			if (set.species === 'Swoobat-Excir' && set.item === 'Swoobattite') {
+				return ["Swoobat-Excir cannot hold Swoobattite."];
+			}
 		},
 	},
 };

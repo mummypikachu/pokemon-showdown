@@ -10175,6 +10175,22 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		prevo: "Woobat",
 		evoType: "levelFriendship",
 		eggGroups: ["Flying", "Field"],
+		otherFormes: ["Swoobat-Mega"],
+		formeOrder: ["Swoobat", "Swoobat-Mega",]
+	},
+	swoobatmega: {
+		num: 528,
+		name: "Swoobat-Mega",
+		baseSpecies: "Swoobat",
+		forme: "Mega",
+		types: ["Psychic", "Flying"],
+		baseStats: {hp: 67, atk: 57, def: 85, spa: 107, spd: 85, spe: 124},
+		abilities: {0: "Fur Coat"},
+		heightm: 0.9,
+		weightkg: 10.5,
+		color: "Blue",
+		eggGroups: ["Flying", "Field"],
+		requiredItem: "Swoobattite",
 	},
 	swoobatexcir: {
 		num: 528,

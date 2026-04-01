@@ -3004,6 +3004,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 		newDexTier: "UU",
 	},
+	swoobatmega: {
+		tier: "RU",
+		natDexTier: "RU",
+		newDexTier: "Uber",
+	},
 	drilbur: {
 		tier: "LC",
 		natDexTier: "LC",
