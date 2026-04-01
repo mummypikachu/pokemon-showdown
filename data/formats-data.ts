@@ -3885,12 +3885,20 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "RU",
 		natDexTier: "RU",
 	},
+	tyrantrummega: {
+		tier: "OU",
+		natDexTier: "RU",
+	},
 	amaura: {
 		tier: "LC",
 		natDexTier: "LC",
 	},
 	aurorus: {
 		tier: "RU",
+		natDexTier: "RU",
+	},
+	aurorusmega: {
+		tier: "OU",
 		natDexTier: "RU",
 	},
 	hawlucha: {

@@ -8682,7 +8682,33 @@ export const Items: {[itemid: string]: ItemData} = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: 7324,
+		num: 678,
+		gen: 9,
+	},
+	tyrantrite: {
+		name: "Tyrantrite",
+		spritenum: 627,
+		megaStone: "Tyrantrum-Mega",
+		megaEvolves: "Tyrantrum",
+		itemUser: ["Tyrantrum"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 678,
+		gen: 9,
+	},
+	aurorusite: {
+		name: "Aurorusite",
+		spritenum: 627,
+		megaStone: "Aurorus-Mega",
+		megaEvolves: "Aurorus",
+		itemUser: ["Aurorus"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 678,
 		gen: 9,
 	},
 };
