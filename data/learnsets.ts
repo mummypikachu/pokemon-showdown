@@ -95536,6 +95536,17 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			surf: ["9M"],
 		},
 	},
+	phyridengo: {
+		learnset: {
+			splash: ["9L1"],
+			raindance: ["9L1"],
+			swordsdance: ["9L1"],
+			falseswipe: ["9L1"],
+			mudsport: ["9L1"],
+			victorydance: ["9L1"],
+			quiverdance: ["9L1"],
+		},
+	},
 	movile: {
 		learnset: {
 			bugbuzz: ["9L1"],

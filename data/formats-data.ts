@@ -5401,8 +5401,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "LC",
 	},
 	gimmighoulroaming: {
-		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tier: "LC",
 	},
 	gholdengo: {
 		tier: "OU",
@@ -6037,6 +6036,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	alkaslime: {
 		tier: "New",
+	},
+	phyridengo: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "OU",
 	},
 	movile: {
 		isNonstandard: "Custom",
