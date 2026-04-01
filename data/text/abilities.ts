@@ -687,7 +687,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	goodaspyrite: {
 		name: "Good as Pyrite",
-		shortDesc: "Good as Gold+Defiant+Clean Slate for opponent.",
+		shortDesc: "Moves without secondary effects: 5% flinch. Cannot be Poisoned.",
 	},
 	gooey: {
 		name: "Gooey",
