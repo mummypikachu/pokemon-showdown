@@ -4522,7 +4522,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	needlearm: {
 		name: "Needle Arm",
-		desc: "Has a 30% chance to make the target flinch.",
+		desc: "Has a 30% chance to make the target flinch. If used by Cacturne-Mega, this move will have 105 power instead.",
 		shortDesc: "30% chance to make the target flinch.",
 		gen3: {
 			desc: "Has a 30% chance to make the target flinch. Damage doubles if the target has used Minimize while active.",

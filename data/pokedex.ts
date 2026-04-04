@@ -6451,7 +6451,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		baseStats: { hp: 80, atk: 140, def: 80, spa: 140, spd: 80, spe: 80 },
 		abilities: {0: "No Guard"},
 		heightm: 1.1,
-		weightkg: 180.5,
+		weightkg: 85.5,
 		color: "Gray",
 		eggGroups: ["Field"],
 		requiredItem: "Cacturnite",

@@ -13807,6 +13807,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 			chance: 30,
 			volatileStatus: 'flinch',
 		},
+		basePowerCallback(pokemon, target, move) {
+			if (pokemon.species.name === 'Cacturne-Mega') {
+				return 105;
+			}
+			return move.basePower;
+		},
 		target: "normal",
 		type: "Grass",
 		contestType: "Clever",
