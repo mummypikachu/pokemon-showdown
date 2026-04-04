@@ -5322,14 +5322,15 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 4,
 
 		onModifyMove(move) {
-			if (move.flags?.contact) {
-				(move as any).ignoreProtect = true;
-			}
+			if (!move.flags?.contact) return;
+
+			(move as any).ignoreProtect = true;
+			(move as any).piercingDrill = true;
 		},
 
 		onBasePower(basePower, source, target, move) {
 			if (
-				move.flags?.contact &&
+				(move as any).piercingDrill &&
 				target &&
 				(target.volatiles['protect'] || target.volatiles['detect'] ||
 					target.volatiles['banefulbunker'] || target.volatiles['spikyshield'] ||
