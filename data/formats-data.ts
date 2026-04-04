@@ -1699,9 +1699,9 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		newDexTier: "LC",
 	},
 	mightyena: {
-		tier: "NU",
-		natDexTier: "RU",
-		newDexTier: "RUBL",
+		tier: "NFE",
+		natDexTier: "NFE",
+		newDexTier: "RU",
 	},
 	zigzagoon: {
 		tier: "LC",
