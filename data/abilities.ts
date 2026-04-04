@@ -5316,28 +5316,29 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 	},
 	piercingdrill: {
-		name: "Piercing Drill",
-		rating: 4,
-
 		onModifyMove(move) {
-			if (!move.flags?.contact) return;
-
-			(move as any).ignoreProtect = true;
-			(move as any).piercingDrill = true;
+			if (move.flags['contact']) delete move.flags['protect'];
 		},
-
 		onBasePower(basePower, source, target, move) {
 			if (
-				(move as any).piercingDrill &&
+				move.flags['contact'] &&
 				target &&
-				(target.volatiles['protect'] || target.volatiles['detect'] ||
-					target.volatiles['banefulbunker'] || target.volatiles['spikyshield'] ||
-					target.volatiles['kingsshield'] || target.volatiles['silktrap'])
+				(
+					target.volatiles['protect'] ||
+					target.volatiles['detect'] ||
+					target.volatiles['banefulbunker'] ||
+					target.volatiles['spikyshield'] ||
+					target.volatiles['kingsshield'] ||
+					target.volatiles['silktrap']
+				)
 			) {
 				this.add('-activate', source, 'ability: Piercing Drill');
 				return this.chainModify(0.25);
 			}
 		},
+		name: "Piercing Drill",
+		rating: 2,
+		num: 260,
 	},
 	infernalblaze: {
 		name: "Infernal Blaze",
