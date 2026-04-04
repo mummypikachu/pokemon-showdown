@@ -20680,6 +20680,18 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Yellow",
 		eggGroups: ["Undiscovered"],
 	},
+	movile: {
+		num: 1575,
+		name: "Movile",
+		types: ["Bug", "Electric"],
+		baseStats: {hp: 65, atk: 53, def: 91, spa: 80, spd: 95, spe: 114},
+		abilities: {0: "Static", H: "Battery"},
+		heightm: 0.4,
+		weightkg: 5,
+		color: "Purple",
+		eggGroups: ["Bug"],
+		gen: -1
+	},
 	syclar: {
 		num: -1,
 		name: "Syclar",

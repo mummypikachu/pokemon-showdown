@@ -6038,26 +6038,32 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	peblum: {
 		tier: "LC",
 		natDexTier: "LC",
+		newDexTier: "LC",
 	},
 	boultang: {
 		tier: "NFE",
 		natDexTier: "NFE",
+		newDexTier: "LC",
+
 	},
 	bouldross: {
 		tier: "UU",
 		natDexTier: "RU",
+		newDexTier: "OU",
 	},
 	alkaslime: {
 		tier: "New",
+		newDexTier: "Uber",
 	},
 	phyridengo: {
 		tier: "OU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
+		newDexTier: "OU",
 	},
 	movile: {
-		isNonstandard: "Custom",
-		tier: "Illegal",
+		tier: "New",
+		newDexTier: "OU",
 	},
 	// Start CAP/Missingno, don't place under this
 	missingno: {
