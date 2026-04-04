@@ -2360,6 +2360,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Unseen Fist",
 		shortDesc: "This Pokemon's contact moves ignore the target's protection, except Max Guard.",
 	},
+	vanilloid: {
+		name: "Vanilloid",
+		shortDesc: "This Pokémon will gain either +1 Atk and -1 SpAtk, or the inverse, each turn.",
+	},
 	venomous: {
 		name: "Venomous",
 		shortDesc: "This Pokemon's special moves have a 30% chance of poisoning.",

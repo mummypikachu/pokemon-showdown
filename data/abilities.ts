@@ -1978,6 +1978,20 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 5,
 		num: 283,
 	},
+	vanilloid: {
+		name: "Vanilloid",
+		rating: 5,
+		onResidualOrder: 8,
+		onResidual(pokemon) {
+			if (this.randomChance(1, 2)) {
+				this.add('-message', `${pokemon.name}'s red head became stronger!`);
+				this.boost({ atk: 1, spa: -1 }, pokemon);
+			} else {
+				this.add('-message', `${pokemon.name}'s green head became stronger!`);
+				this.boost({ atk: -1, spa: 1 }, pokemon);
+			}
+		},
+	},
 	stickyfield: {
 		onStart(pokemon) {
 			let activated = false;

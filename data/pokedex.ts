@@ -18501,7 +18501,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Scovillain",
 		types: ["Grass", "Fire"],
 		baseStats: { hp: 65, atk: 108, def: 65, spa: 108, spd: 65, spe: 75 },
-		abilities: { 0: "Chlorophyll", 1: "Insomnia", H: "Moody" },
+		abilities: { 0: "Chlorophyll", 1: "Insomnia", H: "Vanilloid" },
 		heightm: 0.9,
 		weightkg: 15,
 		color: "Green",
