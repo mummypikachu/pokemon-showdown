@@ -5312,8 +5312,6 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			if (!source || source.fainted) return;
 			if (source.status) return;
 
-			this.add('-activate', target, 'ability: Spicy Spray');
-
 			source.trySetStatus('brn', target);
 		},
 	},
