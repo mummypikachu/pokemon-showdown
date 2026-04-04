@@ -2630,6 +2630,15 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Forest Guardian",
 		shortDesc: "Non-contact moves used against this pokemon have their power halved.",
 	},
+	spicyspray: {
+		name: "Spicy Spray",
+		shortDesc: "If any Pokémon damages this Pokémon, they will get burned.",
+	},
+	piercingdrill: {
+		name: "Piercing Drill",
+		desc: "When the Pokémon uses contact moves, it can hit even targets that are protecting themselves, dealing 1/4 of the damage that the move would otherwise deal. Everything aside from the targets protective effects is still triggered.",
+		shortDesc: "Contact moves: If opponent uses a form of Protect: Bypasses, 1/4 damage.",
+	},
 };
 
 

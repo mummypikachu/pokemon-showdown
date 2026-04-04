@@ -5304,6 +5304,42 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			}
 		},
 	},
+	spicyspray: {
+		name: "Spicy Spray",
+		rating: 4,
+
+		onDamagingHit(damage, target, source, move) {
+			if (!source || source.fainted) return;
+			if (source.status) return;
+
+			this.add('-activate', target, 'ability: Spicy Spray');
+
+			source.trySetStatus('brn', target);
+		},
+	},
+	piercingdrill: {
+		name: "Piercing Drill",
+		rating: 4,
+
+		onModifyMove(move) {
+			if (move.flags?.contact) {
+				(move as any).ignoreProtect = true;
+			}
+		},
+
+		onBasePower(basePower, source, target, move) {
+			if (
+				move.flags?.contact &&
+				target &&
+				(target.volatiles['protect'] || target.volatiles['detect'] ||
+					target.volatiles['banefulbunker'] || target.volatiles['spikyshield'] ||
+					target.volatiles['kingsshield'] || target.volatiles['silktrap'])
+			) {
+				this.add('-activate', source, 'ability: Piercing Drill');
+				return this.chainModify(0.25);
+			}
+		},
+	},
 	infernalblaze: {
 		name: "Infernal Blaze",
 		rating: 4,
