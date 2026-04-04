@@ -5333,6 +5333,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				)
 			) {
 				this.add('-activate', source, 'ability: Piercing Drill');
+				this.add('-message', `The drill pierced through the protection!`);
 				return this.chainModify(0.25);
 			}
 		},
