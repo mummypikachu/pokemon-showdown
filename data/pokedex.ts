@@ -13310,7 +13310,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		formeOrder: ["Tyrantrum", "Tyrantrum-Mega"],
 	},
 	tyrantrummega: {
-		num: 770,
+		num: 697,
 		name: "Tyrantrum-Mega",
 		baseSpecies: "Tyrantrum",
 		forme: "Mega",
@@ -13355,7 +13355,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		formeOrder: ["Aurorus", "Aurorus-Mega"],
 	},
 	aurorusmega: {
-		num: 770,
+		num: 699,
 		name: "Aurorus-Mega",
 		baseSpecies: "Aurorus",
 		forme: "Mega",
