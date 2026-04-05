@@ -68270,6 +68270,9 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			wildcharge: ["9M", "9M", "6M"],
 			workup: ["9M", "9M"],
 		},
+		eventData: [
+			{ generation: 9, level: 50, moves: ["eggbomb", "celebrate", "snatch", "poweruppunch"] },
+		],
 	},
 	fletchling: {
 		learnset: {
