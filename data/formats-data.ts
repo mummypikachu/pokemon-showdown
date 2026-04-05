@@ -6056,10 +6056,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		newDexTier: "Uber",
 	},
 	phyridengo: {
-		tier: "OU",
-		doublesTier: "DOU",
-		natDexTier: "OU",
-		newDexTier: "OU",
+		tier: "RU",
+		doublesTier: "DUU",
+		natDexTier: "RU",
+		newDexTier: "RU",
 	},
 	movile: {
 		tier: "New",

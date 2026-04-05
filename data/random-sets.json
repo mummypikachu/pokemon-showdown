@@ -4600,6 +4600,56 @@
             }
         ]
     },
+    "movile": {
+        "level": 86,
+        "sets": [
+            {
+                "role": "Fast Support",
+                "movepool": ["Thunderbolt", "Bug Buzz", "Thunder Wave", "Sticky Web"],
+                "teraTypes": ["Water"]
+            }
+        ]
+    },
+    "aurorusmega": {
+        "level": 86,
+        "sets": [
+            {
+                "role": "Wallbreaker",
+                "movepool": ["Hyper Beam", "Blizzard", "Power Gem", "Aurora Veil"],
+                "teraTypes": ["Ice"]
+            }
+        ]
+    },
+    "phyridengo": {
+        "level": 85,
+        "sets": [
+            {
+                "role": "Setup Sweeper",
+                "movepool": ["Autotomize", "Close Combat", "Stone Edge", "Earthquake"],
+                "teraTypes": ["Steel"]
+            }
+        ]
+    },
+    "metagross": {
+        "level": 84,
+        "sets": [
+            {
+                "role": "Wallbreaker",
+                "movepool": ["Bullet Punch", "Meteor Mash", "Autotomize", "Psychic Fangs", "Rock Slide"],
+                "teraTypes": ["Flying"]
+            }
+        ]
+    },
+    "tyrantrummega": {
+        "level": 86,
+        "sets": [
+            {
+                "role": "Wallbreaker",
+                "movepool": ["Draconic Jaw", "Crunch", "Earthquake", "Dragon Dance", "Head Smash"],
+                "teraTypes": ["Dragon"]
+            }
+        ]
+    },
     "alkaslime": {
         "level": 81,
         "sets": [
