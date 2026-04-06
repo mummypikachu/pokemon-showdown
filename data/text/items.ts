@@ -1855,13 +1855,13 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Donphanite",
 		desc: "If held by a Donphan, this item allows it to Mega Evolve in battle.",
 	},
-	hiddenitear: {
-		name: "hiddenitear",
-		desc: "If held by a HIDDENar, this item allows it to Mega Evolve in battle.",
+	armaldite: {
+		name: "Armaldite",
+		desc: "If held by a Armaldo, this item allows it to Mega Evolve in battle.",
 	},
-	hiddenitecr: {
-		name: "hiddenitecr",
-		desc: "If held by a HIDDENcr, this item allows it to Mega Evolve in battle.",
+	cradilite: {
+		name: "Cradilite",
+		desc: "If held by a Cradily, this item allows it to Mega Evolve in battle.",
 	},
 	aurorusite: {
 		name: "Aurorusite",

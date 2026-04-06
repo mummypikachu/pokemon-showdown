@@ -2118,12 +2118,20 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "PU",
 		natDexTier: "RU",
 	},
+	cradilymega: {
+		tier: "OU",
+		natDexTier: "RU",
+	},
 	anorith: {
 		tier: "LC",
 		natDexTier: "LC",
 	},
 	armaldo: {
-		tier: "PU",
+		tier: "RU",
+		natDexTier: "RU",
+	},
+	armaldomega: {
+		tier: "OU",
 		natDexTier: "RU",
 	},
 	feebas: {

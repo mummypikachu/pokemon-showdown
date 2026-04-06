@@ -1770,7 +1770,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	seahunter: {
 		name: "Sea Hunter",
-		shortDesc: "This Pokémon has the power of its Water-type moves multiplied by 1.5.",
+		shortDesc: "Power of user's Water-type moves multiplied by 1.5. Cannot be Intimidated.",
 	},
 	seedsower: {
 		name: "Seed Sower",
