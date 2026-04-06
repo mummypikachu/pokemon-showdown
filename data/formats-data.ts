@@ -3166,7 +3166,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	darmanitanzen: {
 	},
 	darmanitangalar: {
-		tier: "OU",
+		tier: "Uber",
 		natDexTier: "Uber",
 	},
 	darmanitangalarzen: {
