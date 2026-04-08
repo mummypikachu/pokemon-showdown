@@ -3435,8 +3435,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 	},
 	chandeluremega: {
-		tier: "Uber",
-		natDexTier: "Uber",
+		tier: "OU",
+		natDexTier: "OU",
 	},
 	axew: {
 		tier: "LC",
