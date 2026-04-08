@@ -20689,7 +20689,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		tags: ["Restricted Legendary"],
 		gen: 3,
 	},
-	alkaslime: {
+	alkaslime: { //by archershaw
 		num: 1573,
 		name: "Alkaslime",
 		types: ["Poison", "Ghost"],
@@ -20711,6 +20711,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Good as Pyrite"},
 		heightm: 1.2,
 		weightkg: 30,
+		gen: 9,
 		color: "Yellow",
 		eggGroups: ["Undiscovered"],
 	},
@@ -20739,7 +20740,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 0.4,
 		weightkg: 6,
 		color: "Purple",
-		gen: 9,
+		gen: 8,
 		eggGroups: ["Bug"],
 		requiredItem: "Movilite",
 	},
