@@ -2358,7 +2358,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	unseenfist: {
 		name: "Unseen Fist",
-		shortDesc: "This Pokemon's contact moves ignore the target's protection, except Max Guard.",
+		shortDesc: "This Pokemon's contact moves ignore target's protection and deal 0.25x damage.",
 	},
 	vanilloid: {
 		name: "Vanilloid",
@@ -2636,8 +2636,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	piercingdrill: {
 		name: "Piercing Drill",
-		desc: "When the Pokémon uses contact moves, it can hit even targets that are protecting themselves, dealing 1/4 of the damage that the move would otherwise deal. Everything aside from the targets protective effects is still triggered.",
-		shortDesc: "Contact moves: If opponent uses a form of Protect: Bypasses, 1/4 damage.",
+		shortDesc: "This Pokemon's contact moves ignore target's protection and deal 0.25x damage.",
 	},
 };
 

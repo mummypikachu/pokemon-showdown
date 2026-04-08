@@ -6376,6 +6376,22 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onModifyMove(move) {
 			if (move.flags['contact']) delete move.flags['protect'];
 		},
+		onBasePower(basePower, source, target, move) {
+			if (
+				move.flags['contact'] &&
+				target &&
+				(
+					target.volatiles['protect'] ||
+					target.volatiles['detect'] ||
+					target.volatiles['banefulbunker'] ||
+					target.volatiles['spikyshield'] ||
+					target.volatiles['kingsshield'] ||
+					target.volatiles['silktrap']
+				)
+			) {
+				return this.chainModify(0.25);
+			}
+		},
 		name: "Unseen Fist",
 		rating: 2,
 		num: 260,
