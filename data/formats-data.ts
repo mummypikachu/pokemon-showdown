@@ -6070,8 +6070,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		newDexTier: "RU",
 	},
 	movile: {
-		tier: "New",
+		tier: "RU",
 		newDexTier: "OU",
+	},
+	movilemega: {
+		tier: "OU",
+		newDexTier: "Uber",
 	},
 	// Start CAP/Missingno, don't place under this
 	missingno: {

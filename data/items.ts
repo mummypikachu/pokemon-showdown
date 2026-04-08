@@ -8738,11 +8738,24 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 9,
 	},
 	cradilite: {
-		name: "cradilite",
+		name: "Cradilite",
 		spritenum: 627,
 		megaStone: "Cradily-Mega",
 		megaEvolves: "Cradily",
 		itemUser: ["Cradily"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 678,
+		gen: 9,
+	},
+	movilite: {
+		name: "Movilite",
+		spritenum: 627,
+		megaStone: "Movile-Mega",
+		megaEvolves: "Movile",
+		itemUser: ["Movile"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
