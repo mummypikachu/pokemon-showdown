@@ -480,7 +480,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	appleacid: {
 		num: 787,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 90,
 		category: "Special",
 		name: "Apple Acid",
 		pp: 10,
@@ -1797,7 +1797,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	bonerush: {
 		num: 198,
 		accuracy: 90,
-		basePower: 25,
+		basePower: 30,
 		category: "Physical",
 		name: "Bone Rush",
 		pp: 10,
@@ -8542,7 +8542,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	gravapple: {
 		num: 788,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 90,
 		category: "Physical",
 		name: "Grav Apple",
 		pp: 10,
@@ -20898,7 +20898,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	syrupbomb: {
 		num: 903,
-		accuracy: 85,
+		accuracy: 95,
 		basePower: 60,
 		category: "Special",
 		name: "Syrup Bomb",
@@ -22090,7 +22090,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, reflectable: 1, mirror: 1},
 		status: 'psn',
 		boosts: {
-			spe: -1,
+			spe: -2,
 		},
 		secondary: null,
 		target: "normal",
@@ -22380,7 +22380,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	tropkick: {
 		num: 688,
 		accuracy: 100,
-		basePower: 70,
+		basePower: 85,
 		category: "Physical",
 		name: "Trop Kick",
 		pp: 15,
