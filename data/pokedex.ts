@@ -20724,7 +20724,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 5,
 		color: "Purple",
 		eggGroups: ["Bug"],
-		gen: -1
+		gen: 11
 	},
 	syclar: {
 		num: -1,
