@@ -6946,6 +6946,8 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	chimechoexcir: {
 		num: 358,
 		name: "Chimecho-Excir",
+		baseSpecies: "Chimecho",
+		forme: "Excir",
 		types: ["Psychic", "Flying"],
 		baseStats: { hp: 75, atk: 50, def: 80, spa: 95, spd: 60, spe: 95 },
 		abilities: {0: "Wind Rider", 1: "Musician", H: "Serene Grace"},
@@ -11546,6 +11548,8 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	klangexcir: {
 		num: 600,
 		name: "Klang-Excir",
+		baseSpecies: "Klang",
+		forme: "Excir",
 		types: ["Steel"],
 		gender: "N",
 		baseStats: {hp: 60, atk: 80, def: 85, spa: 70, spd: 85, spe: 60},
@@ -11562,6 +11566,8 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	klinklangexcir: {
 		num: 601,
 		name: "Klinklang-Excir",
+		baseSpecies: "Klinklang",
+		forme: "Excir",
 		types: ["Steel"],
 		gender: "N",
 		baseStats: {hp: 60, atk: 100, def: 105, spa: 70, spd: 85, spe: 100},
@@ -11630,7 +11636,6 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		requiredItem: "Eelektrossite",
 		gen: 9,
 	},
-	
 	elgyem: {
 		num: 605,
 		name: "Elgyem",
