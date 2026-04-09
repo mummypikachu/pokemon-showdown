@@ -2043,6 +2043,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "UU",
 		natDexTier: "RU",
 	},
+	flygonmegaz: {
+		tier: "OU",
+		natDexTier: "RU",
+	},
 	cacnea: {
 		tier: "LC",
 	},

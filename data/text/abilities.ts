@@ -2640,8 +2640,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	energydepletion: {
 		name: "Energy Depletion",
-		desc: "If this Pokémon is Mega Lucario Z, Mega Absol Z, or Mega Garchomp Z, they will transform back to their base form after 5 turns, starting with the turn of Mega Evolution. During this time, all moves used by these Pokémon will ignore Protect.",
-		shortDesc: "Mega-Z detransforms after 5 turns. All moves ignore protect.",
+		desc: "If this Pokémon is Mega Lucario Z, Mega Absol Z, Mega Flygon Z, or Mega Garchomp Z, they will transform back to their base form after 5 turns, starting with the turn of Mega Evolution. During this time, all moves used by these Pokémon will ignore Protect.",
+		shortDesc: "Mega-Z: Detransforms after 5 turns. All moves ignore protect.",
 	},
 };
 

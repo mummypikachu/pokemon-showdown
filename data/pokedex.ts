@@ -6415,6 +6415,20 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Bug", "Dragon"],
 		requiredItem: "Flygonite", //placeholder
 	},
+	flygonmegaz: {
+		num: 330,
+		name: "Flygon-Mega-Z",
+		baseSpecies: "Flygon",
+		forme: "Mega-Z",
+		types: ["Bug", "Dragon"],
+		baseStats: {hp: 80, atk: 144, def: 80, spa: 105, spd: 80, spe: 151},
+		abilities: {0: "Energy Depletion"},
+		heightm: 2,
+		weightkg: 82,
+		color: "Green",
+		eggGroups: ["Bug", "Dragon"],
+		requiredItem: "Flygonite Z", //placeholder
+	},
 	cacnea: {
 		num: 331,
 		name: "Cacnea",

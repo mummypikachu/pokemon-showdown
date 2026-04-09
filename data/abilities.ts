@@ -7126,7 +7126,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 
 		onUpdate(pokemon) {
-			const validFormes = ['absolmegaz', 'lucariomegaz', 'garchompmegaz'];
+			const validFormes = ['absolmegaz', 'lucariomegaz', 'garchompmegaz', 'flygonmegaz'];
 
 			if (
 				validFormes.includes(pokemon.species.id) &&
@@ -7156,6 +7156,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 					absolmegaz: 'Absol',
 					lucariomegaz: 'Lucario',
 					garchompmegaz: 'Garchomp',
+					flygonmegaz: 'Flygon',
 				};
 
 				const current = pokemon.species.id;
