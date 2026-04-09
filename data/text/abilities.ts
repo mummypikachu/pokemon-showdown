@@ -2638,6 +2638,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Piercing Drill",
 		shortDesc: "This Pokemon's contact moves ignore target's protection and deal 0.25x damage.",
 	},
+	energydepletion: {
+		name: "Energy Depletion",
+		desc: "If this Pokémon is Mega Lucario Z, Mega Absol Z, or Garchomp Z, they will transform back to their base form after 3 turns. During this time, all moves used by these Pokémon will ignore Protect.",
+		shortDesc: "Detransform after 3 turns. All moves ignore protect.",
+	},
 };
 
 
