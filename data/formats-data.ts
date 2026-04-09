@@ -2223,6 +2223,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "OU",
 		natDexTier: "RU",
 	},
+	absolmegaz: {
+		tier: "OU",
+		natDexTier: "OU",
+	},
 	snorunt: {
 		tier: "LC",
 	},
@@ -2631,6 +2635,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	lucariomega: {
 		tier: "Uber",
 		natDexTier: "Uber",
+	},
+	lucariomegaz: {
+		tier: "OU",
+		natDexTier: "OU",
 	},
 	hippopotas: {
 		tier: "LC",
