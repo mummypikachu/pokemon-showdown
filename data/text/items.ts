@@ -1891,6 +1891,34 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Flygonite Z",
 		desc: "If held by a Flygon, this item allows it to Mega Evolve in battle.",
 	},
+	flygonite: {
+		name: "Flygonite",
+		desc: "If held by a Flygon, this item allows it to Mega Evolve in battle.",
+	},
+	luminite: {
+		name: "Luminite",
+		desc: "If held by a Lumineon, this item allows it to Mega Evolve in battle.",
+	},
+	moltresite: {
+		name: "Moltresite",
+		desc: "If held by a Moltres, this item allows it to Mega Evolve in battle.",
+	},
+	zapdosite: {
+		name: "Zapdosite",
+		desc: "If held by a Zapdos, this item allows it to Mega Evolve in battle.",
+	},
+	articunite: {
+		name: "Articunite",
+		desc: "If held by a Articuno, this item allows it to Mega Evolve in battle.",
+	},
+	jynxite: {
+		name: "Jynxite",
+		desc: "If held by a Jynx, this item allows it to Mega Evolve in battle.",
+	},
+	archeopsite: {
+		name: "Archeopsite",
+		desc: "If held by a Archeops, this item allows it to Mega Evolve in battle.",
+	},
 	absolitez: {
 		name: "Absolite Z",
 		desc: "If held by a Absol, this item allows it to Mega Evolve in battle.",
