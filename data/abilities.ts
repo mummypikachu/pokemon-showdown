@@ -7144,11 +7144,11 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			duration: 5,
 
 			onStart(pokemon) {
-				this.add('-start', pokemon, 'Energy Depletion');
+					this.add('-message', `${pokemon.name} started burning up Mega Energy! It may detransform in 5 turns!`);
 			},
 
 			onResidual(pokemon) {
-					this.add('-message', `${pokemon.name} burned up all its Mega Energy and detransformed!`);
+					this.add('-message', `${pokemon.name} is burning up Mega Energy!`);
 			},
 
 			onEnd(pokemon) {

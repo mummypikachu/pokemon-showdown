@@ -50691,6 +50691,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			mudshot: ["9M", "9M"],
 			mudslap: ["9T"],
 			naturalgift: ["9M"],
+			nastyplot: ["9M"],
 			outrage: ["9M", "9M", "9T", "6T", "5T", "9S0", "9S1", "9T"],
 			poisonjab: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			powergem: ["9M"],
