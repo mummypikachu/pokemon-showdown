@@ -7118,58 +7118,54 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 50145,
 	},
 	energydepletion: {
-    name: "Energy Depletion",
-    rating: 4,
+		name: "Energy Depletion",
+		rating: 3,
 
-    onStart(pokemon) {
-        pokemon.addVolatile('energydepletion');
-    },
+		onStart(pokemon) {
+			pokemon.addVolatile('energydepletion');
+		},
 
-    onUpdate(pokemon) {
-        const validFormes = ['absolmegaz', 'lucariomegaz', 'garchompmegaz'];
+		onUpdate(pokemon) {
+			const validFormes = ['absolmegaz', 'lucariomegaz', 'garchompmegaz'];
 
-        if (
-            validFormes.includes(pokemon.species.id) &&
-            !pokemon.volatiles['energydepletion']
-        ) {
-            pokemon.addVolatile('energydepletion');
-        }
-    },
+			if (
+				validFormes.includes(pokemon.species.id) &&
+				!pokemon.volatiles['energydepletion']
+			) {
+				pokemon.addVolatile('energydepletion');
+			}
+		},
 
-    onModifyMove(move, pokemon) {
-        const validFormes = ['absolmegaz', 'lucariomegaz', 'garchompmegaz'];
+		onModifyMove(move) {
+			delete move.flags['protect'];
+		},
 
-        if (validFormes.includes(pokemon.species.id)) {
-            (move as any).ignoreProtect = true;
-        }
-    },
+		condition: {
+			duration: 5,
 
-    condition: {
-        duration: 3,
+			onStart(pokemon) {
+				this.add('-start', pokemon, 'Energy Depletion');
+			},
 
-        onStart(pokemon) {
-            this.add('-start', pokemon, 'Energy Depletion');
-        },
+			onResidual(pokemon) {
+					this.add('-message', `${pokemon.name} burned up all its Mega Energy and detransformed!`);
+			},
 
-        onResidual(pokemon) {
-            this.add('-activate', pokemon, 'Energy Depletion', this.effectState.duration);
-        },
+			onEnd(pokemon) {
+				const baseFormes: { [k: string]: string; } = {
+					absolmegaz: 'Absol',
+					lucariomegaz: 'Lucario',
+					garchompmegaz: 'Garchomp',
+				};
 
-        onEnd(pokemon) {
-            const baseFormes: {[k: string]: string} = {
-                absolmegaz: 'Absol',
-                lucariomegaz: 'Lucario',
-                garchompmegaz: 'Garchomp',
-            };
+				const current = pokemon.species.id;
 
-            const current = pokemon.species.id;
-
-            if (baseFormes[current]) {
-                this.add('-end', pokemon, 'Energy Depletion');
-                this.add('-message', `${pokemon.name} burned up all its Mega Energy and detransformed!`);
-                pokemon.formeChange(baseFormes[current], this.effect, true);
-            }
-        },
-    },
-},
+				if (baseFormes[current]) {
+					this.add('-end', pokemon, 'Energy Depletion');
+					this.add('-message', `${pokemon.name} burned up all its Mega Energy and detransformed!`);
+					pokemon.formeChange(baseFormes[current], this.effect, true);
+				}
+			},
+		},
+	},
 };
