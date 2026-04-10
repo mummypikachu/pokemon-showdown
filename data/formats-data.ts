@@ -3190,6 +3190,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "Uber",
 	},
 	darmanitangalarzen: {
+		tier: "Uber",
+		natDexTier: "Uber",
 	},
 	maractus: {
 		tier: "PU",
