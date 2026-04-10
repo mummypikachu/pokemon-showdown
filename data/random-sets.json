@@ -4610,6 +4610,16 @@
             }
         ]
     },
+    "movilemega": {
+        "level": 81,
+        "sets": [
+            {
+                "role": "Fast Attacker",
+                "movepool": ["Thunderbolt", "Bug Buzz", "Volt Switch", "Dark Pulse"],
+                "teraTypes": ["Water"]
+            }
+        ]
+    },
     "aurorusmega": {
         "level": 86,
         "sets": [
@@ -4637,6 +4647,26 @@
                 "role": "Wallbreaker",
                 "movepool": ["Bullet Punch", "Meteor Mash", "Autotomize", "Psychic Fangs", "Rock Slide"],
                 "teraTypes": ["Flying"]
+            }
+        ]
+    },
+    "excadrillmega": {
+        "level": 80,
+        "sets": [
+            {
+                "role": "Wallbreaker",
+                "movepool": ["Earthquake", "Drill Run", "Iron Head", "Swords Dance"],
+                "teraTypes": ["Dragon"]
+            }
+        ]
+    },
+    "floettemega": {
+        "level": 75,
+        "sets": [
+            {
+                "role": "Bulky Attacker",
+                "movepool": ["Light Of Ruin", "Energy Ball", "Calm Mind", "Aromatherapy"],
+                "teraTypes": ["Fairy"]
             }
         ]
     },
