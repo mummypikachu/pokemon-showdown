@@ -822,7 +822,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	cannonball: {
 		name: "Cannonball",
 		desc: "Has a 10% chance to raise the user's Defense by 12 stages. If this move misses, the user loses 50% of their maximum HP, rounded down.",
-		shortDesc: "10% chance to raise Defense by 12 stages. 50% recoil on miss.",
+		shortDesc: "User loses 50% max HP if miss. 10% to Max Defense.",
 	},
 	captivate: {
 		name: "Captivate",
