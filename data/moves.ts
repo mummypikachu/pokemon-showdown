@@ -1223,7 +1223,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	beakblast: {
 		num: 690,
 		accuracy: 100,
-		basePower: 100,
+		basePower: 120,
 		category: "Physical",
 	
 		name: "Beak Blast",
@@ -5935,7 +5935,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	firelash: {
 		num: 680,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 90,
 		category: "Physical",
 		name: "Fire Lash",
 		pp: 15,
@@ -13484,7 +13484,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	mountaingale: {
 		num: 836,
 		accuracy: 85,
-		basePower: 100,
+		basePower: 120,
 		category: "Physical",
 		name: "Mountain Gale",
 		pp: 10,
@@ -15773,7 +15773,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	psyshieldbash: {
 		num: 828,
 		accuracy: 90,
-		basePower: 70,
+		basePower: 90,
 		category: "Physical",
 		name: "Psyshield Bash",
 		pp: 10,
@@ -19678,7 +19678,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	spiritshackle: {
 		num: 662,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 90,
 		category: "Physical",
 		name: "Spirit Shackle",
 		pp: 10,
