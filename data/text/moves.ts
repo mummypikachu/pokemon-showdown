@@ -819,6 +819,11 @@ export const MovesText: {[k: string]: MoveText} = {
 			desc: "The user's type changes based on the battle terrain. Normal type on the regular Wi-Fi terrain. Fails if the type is one of the user's current types.",
 		},
 	},
+	cannonball: {
+		name: "Cannonball",
+		desc: "Has a 10% chance to raise the user's Defense by 12 stages. If this move misses, the user loses 50% of their maximum HP, rounded down.",
+		shortDesc: "10% chance to raise Defense by 12 stages. 50% recoil on miss.",
+	},
 	captivate: {
 		name: "Captivate",
 		desc: "Lowers the target's Special Attack by 2 stages. The target is unaffected if both the user and the target are the same gender, or if either is genderless. Pokemon with the Oblivious Ability are immune.",

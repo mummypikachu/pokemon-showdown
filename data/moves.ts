@@ -2355,6 +2355,30 @@ export const Moves: {[moveid: string]: MoveData} = {
 		zMove: {boost: {evasion: 1}},
 		contestType: "Clever",
 	},
+	cannonball: {
+		num: 213412341324,
+		accuracy: 97,
+		basePower: 55,
+		category: "Physical",
+		name: "Cannonball",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, bullet: 1},
+		hasCrashDamage: true,
+		onMoveFail(target, source, move) {
+			this.damage(source.baseMaxhp / 2, source, source, this.dex.conditions.get('Cannonball'));
+		},
+		secondary: {
+			chance: 10,
+			self: {
+				boosts: {
+					def: 12,
+				},
+			},
+		},
+		target: "normal",
+		type: "Water",
+	},
 	captivate: {
 		num: 445,
 		accuracy: 100,
