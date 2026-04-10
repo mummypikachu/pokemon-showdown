@@ -4665,7 +4665,7 @@
         "sets": [
             {
                 "role": "Bulky Attacker",
-                "movepool": ["Light Of Ruin", "Energy Ball", "Calm Mind", "Aromatherapy"],
+                "movepool": ["Light Of Ruin", "Giga Drain", "Calm Mind", "Aromatherapy"],
                 "teraTypes": ["Fairy"]
             }
         ]
