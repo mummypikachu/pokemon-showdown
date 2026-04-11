@@ -9953,6 +9953,23 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Flying",
 		contestType: "Tough",
 	},
+	hurricanepunch: {
+		num: 223,
+		accuracy: 80,
+		basePower: 120,
+		category: "Physical",
+		name: "Hurricane Punch",
+		pp: 5,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, punch: 1},
+		secondary: {
+			chance: 30,
+			volatileStatus: 'confusion',
+		},
+		target: "normal",
+		type: "Fighting",
+		contestType: "Cool",
+	},
 	hydrocannon: {
 		num: 308,
 		accuracy: 90,

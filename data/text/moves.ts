@@ -3246,6 +3246,10 @@ export const MovesText: {[k: string]: MoveText} = {
 			desc: "Has a 30% chance to confuse the target. This move can hit a target using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop. If the weather is Rain Dance, this move does not check accuracy. If the weather is Sunny Day, this move's accuracy is 50%.",
 		},
 	},
+	hurricanepunch: {
+		name: "Hurricane Punch",
+		shortDesc: "Has a 30% chance to confuse the target.",
+	},
 	hydrocannon: {
 		name: "Hydro Cannon",
 		desc: "If this move is successful, the user must recharge on the following turn and cannot select a move,unless the target was knocked out by this move.",
