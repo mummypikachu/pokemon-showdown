@@ -7180,7 +7180,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			const ability = target.getAbility();
 			if (!ability || ability.isPermanent) return;
 
-			// supress OnStart abilities until this ability is done
+			// supress other OnStart abilities
 			target.addVolatile('gastroacid');
 
 			this.add('-activate', pokemon, 'ability: Art Robbery', ability.name, '[of] ' + target);
@@ -7190,6 +7190,8 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			if (!stolen) return;
 
 			target.setAbility('noability', pokemon);
+			this.add('-ability', target, 'No Ability');
+			this.add('-message', `${target.name} has No Ability!`);
 
 			target.removeVolatile('gastroacid');
 		},
