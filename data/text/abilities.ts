@@ -2643,8 +2643,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "If this Pokémon is Mega Lucario Z, Mega Absol Z, Mega Flygon Z, or Mega Garchomp Z, they will transform back to their base form after 5 turns, starting with the turn of Mega Evolution. During this time, all moves used by these Pokémon will ignore Protect.",
 		shortDesc: "Mega-Z: Detransforms after 5 turns. All moves ignore protect.",
 	},
-	artrobbery: {
-		name: "Art Robbery",
+	arttheft: {
+		name: "Art Theft",
 		desc: "On switch-in, this Pokémon will copy the ability of the Pokémon across from it. The opponent will then have the ability No Ability. Abilities that cannot be copied are As One, Battle Bond, Comatose, Commander, Disguise, Flower Gift, Forecast, Gulp Missile, Hadron Engine, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Orichalcum Pulse, Power Construct, Power of Alchemy, Protosynthesis, Quark Drive, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, Wonder Guard, Zen Mode, and Zero to Hero.",
 		shortDesc: "Switch in: Steals opponent's ability; leaves opponent with No Ability.",
 	},

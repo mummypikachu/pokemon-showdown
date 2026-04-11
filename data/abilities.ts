@@ -7169,8 +7169,8 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			},
 		},
 	},
-	artrobbery: {
-		name: "Art Robbery",
+	arttheft: {
+		name: "Art Theft",
 		rating: 4,
 
 		onStart(pokemon) {
@@ -7183,7 +7183,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			// supress other OnStart abilities
 			target.addVolatile('gastroacid');
 
-			this.add('-activate', pokemon, 'ability: Art Robbery', ability.name, '[of] ' + target);
+			this.add('-activate', pokemon, 'ability: Art Theft', ability.name, '[of] ' + target);
 			this.add('-message', `${pokemon.name} stole the Ability of ${target.name}!`);
 
 			const stolen = pokemon.setAbility(ability.id, target);

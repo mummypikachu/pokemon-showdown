@@ -8815,7 +8815,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 678,
 		gen: 9,
 	},
-	/* grafainite: {
+	grafainite: {
 		name: "Grafainite",
 		spritenum: 627,
 		megaStone: "Grafaiai-Mega",
@@ -8827,5 +8827,5 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 678,
 		gen: 9,
-	}, */
+	}, 
 };
