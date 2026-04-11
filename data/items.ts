@@ -8815,4 +8815,17 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 678,
 		gen: 9,
 	},
+	grafainite: {
+		name: "Grafainite",
+		spritenum: 627,
+		megaStone: "Grafaiai-Mega",
+		megaEvolves: "Grafaiai",
+		itemUser: ["Grafaiai"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 678,
+		gen: 9,
+	},
 };

@@ -7169,4 +7169,25 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			},
 		},
 	},
+	artrobbery: {
+		name: "Art Robbery",
+		rating: 4,
+
+		onStart(pokemon) {
+			const target = pokemon.adjacentFoes()[0];
+			if (!target || target.fainted) return;
+
+			const ability = target.getAbility();
+
+			// prevent stealing abils such as multitype etc
+			if (!ability || ability.isPermanent) return;
+
+			const stolen = pokemon.setAbility(ability.id, target);
+			if (!stolen) return;
+			target.setAbility('noability', pokemon);
+
+			this.add('-activate', pokemon, 'ability: Art Robbery', ability.name, '[of] ' + target);
+			this.add('-message', `${pokemon.name} stole ${target.name} its ability!`);
+		},
+	},
 };

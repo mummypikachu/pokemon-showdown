@@ -1923,6 +1923,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Absolite Z",
 		desc: "If held by a Absol, this item allows it to Mega Evolve in battle.",
 	},
+	grafainite: {
+		name: "Grafainite",
+		desc: "If held by a Grafaiai, this item allows it to Mega Evolve in battle.",
+	},
 	sceptilite: {
 		name: "Sceptilite",
 		desc: "If held by a Sceptile, this item allows it to Mega Evolve in battle.",
