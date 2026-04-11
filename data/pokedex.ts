@@ -18531,7 +18531,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		baseSpecies: "Grafaiai",
 		forme: "Mega",
 		types: ["Poison", "Normal"],
-		baseStats: {hp: 63, atk: 125, def: 75, spa: 100, spd: 92, spe: 120},
+		baseStats: {hp: 63, atk: 125, def: 75, spa: 110, spd: 92, spe: 120},
 		abilities: {0: "Art Theft"},
 		heightm: 0.8,
 		weightkg: 29.5,
