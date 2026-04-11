@@ -7180,7 +7180,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			const ability = target.getAbility();
 			if (!ability || ability.isPermanent) return;
 
-			// supress other OnStart abilities
+			// supress other OnStart abilities such as intimidate so they don't activate twice
 			target.addVolatile('gastroacid');
 
 			this.add('-activate', pokemon, 'ability: Art Theft', ability.name, '[of] ' + target);
