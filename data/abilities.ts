@@ -5310,6 +5310,25 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			}
 		},
 	},
+	nightmareeater: {
+		name: "Nightmare Eater",
+		rating: 4,
+
+		onResidualOrder: 8,
+		onResidual(pokemon) {
+			const target = pokemon.adjacentFoes()[0];
+			if (!target || target.fainted) return;
+
+			if (target.status === 'slp') {
+				this.debug('nightmare eater sleep leech effect');
+
+				const damage = this.damage(target.baseMaxhp / 8, target, pokemon);
+				if (damage) {
+					this.heal(damage, pokemon);
+				}
+			}
+		},
+	},
 	spicyspray: {
 		name: "Spicy Spray",
 		rating: 4,
