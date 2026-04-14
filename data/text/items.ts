@@ -1927,7 +1927,7 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Grafainite",
 		desc: "If held by a Grafaiai, this item allows it to Mega Evolve in battle.",
 	},
-	melmetalite: {
+	replaceite: {
 		name: "Melmetalite",
 		desc: "If held by a Melmetal, this item allows it to Mega Evolve in battle.",
 	},
