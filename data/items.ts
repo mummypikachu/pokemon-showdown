@@ -8828,4 +8828,17 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 678,
 		gen: 9,
 	}, 
+	melmetalite: {
+		name: "Melmetalite",
+		spritenum: 627,
+		megaStone: "Melmetal-Mega",
+		megaEvolves: "Melmetal",
+		itemUser: ["Melmetal"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 678,
+		gen: 9,
+	},
 };
