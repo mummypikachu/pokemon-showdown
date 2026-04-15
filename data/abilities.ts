@@ -2685,13 +2685,13 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 5,
 		num: 150,
 	},
-	predeterminedfate: {
+	foretoldfate: {
 		onStart(pokemon) {
 			const move = this.dex.moves.get('futuresight');
-			this.add('-ability', pokemon, 'Predetermined Fate');
+			this.add('-ability', pokemon, 'Foretold Fate');
 			this.actions.useMove(move, pokemon);
 		},
-		name: "Predetermined Fate",
+		name: "Foretold Fate",
 		rating: 5,
 		num: 320,
 	},

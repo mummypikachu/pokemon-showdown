@@ -1491,8 +1491,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 			shortDesc: "This Pokemon's non-damaging moves have their priority increased by 1.",
 		},
 	},
-	predeterminedfate: {
-		name: "Predetermined Fate",
+	foretoldfate: {
+		name: "Foretold Fate",
 		shortDesc: "Sets up Future Sight on entry.",
 
 		start: "  [POKEMON] sees into the future!",
