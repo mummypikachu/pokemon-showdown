@@ -93055,7 +93055,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			captivate: ["9M"],
 		},
 	},
-	muchabrawn: {
+	muscules: {
 		learnset: {
 			rototiller: ["9M", "9M", "5M"],
 			fissure: ["9M", "9M", "5M"],

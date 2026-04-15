@@ -5743,10 +5743,14 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "LC",
 		natDexTier: "LC",
 	},
-	muchabrawn: {
-		tier: "New",
+	muscules: {
+		tier: "NU",
 		natDexTier: "RU",
 		newDexTier: "UU",
+	},
+	musculesmega: {
+		tier: "UU",
+		natDexTier: "RU",
 	},
 	tepigphyor: {
 		tier: "PU",
