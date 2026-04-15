@@ -5130,7 +5130,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Psychic", "Grass"],
 		gender: "N",
 		baseStats: {hp: 100, atk: 100, def: 100, spa: 100, spd: 100, spe: 100},
-		abilities: {0: "Predetermined Fate", H: "Photosynthesis"},
+		abilities: {0: "Natural Cure", H: "Photosynthesis"},
 		heightm: 0.6,
 		weightkg: 5,
 		color: "Green",
