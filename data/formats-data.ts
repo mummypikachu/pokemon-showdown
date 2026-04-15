@@ -4634,8 +4634,8 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "Uber",
 	},
 	melmetalmega: {
-		isNonstandard: "Future",
-		tier: "Illegal",
+		tier: "(Uber)",
+		natDexTier: "Uber",
 	},
 	melmetalgmax: {
 		isNonstandard: "Past",
