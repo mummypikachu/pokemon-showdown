@@ -4650,6 +4650,11 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Has a 10% chance to raise the user's Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage.",
 		shortDesc: "10% chance to raise all stats by 1 (not acc/eva).",
 	},
+	ominousblast: {
+		name: "Ominous Blast",
+		desc: "Has a 10% chance to make the target flinch.",
+		shortDesc: "10% chance to make the target flinch.",
+	},
 	onemillioncoinrain: {
 		name: "One Million Coin Rain",
 		desc: "Each Sp.Atk boost this pokemon gets , this Z-move has 20 more BP.",

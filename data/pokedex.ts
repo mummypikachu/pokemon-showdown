@@ -16825,7 +16825,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	grapploct: {
 		num: 853,
 		name: "Grapploct",
-		types: ["Fighting", "Dark"],
+		types: ["Fighting", "Water"],
 		baseStats: {hp: 80, atk: 118, def: 90, spa: 70, spd: 100, spe: 82},
 		abilities: {0: "Limber", H: "Technician"},
 		heightm: 1.6,

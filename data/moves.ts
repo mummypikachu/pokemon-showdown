@@ -14326,6 +14326,23 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Ghost",
 		contestType: "Beautiful",
 	},
+	ominousblast: {
+		num: 123124124,
+		accuracy: 80,
+		basePower: 120,
+		category: "Special",
+		name: "Ominous Blast",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, pulse: 1, mirror: 1, distance: 1},
+		secondary: {
+			chance: 10,
+			volatileStatus: 'flinch',
+		},
+		target: "any",
+		type: "Dark",
+		contestType: "Cool",
+	},
 	onemillioncoinrain: {
 		accuracy: 100,
 		basePower: 120,
