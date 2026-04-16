@@ -8854,4 +8854,17 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 678,
 		gen: 9,
 	},
+	talonflamite: {
+		name: "Talonflamite",
+		spritenum: 627,
+		megaStone: "Talonflame-Mega",
+		megaEvolves: "Talonflame",
+		itemUser: ["Talonflame"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 678,
+		gen: 9,
+	},
 };

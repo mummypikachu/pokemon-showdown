@@ -3735,6 +3735,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DUU",
 		natDexTier: "RU",
 	},
+	talonflamemega: {
+		tier: "OU",
+		doublesTier: "DUber",
+		natDexTier: "OU",
+	},
 	scatterbug: {
 		tier: "LC",
 	},

@@ -1869,6 +1869,16 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 2.5,
 		num: 177,
 	},	
+	megagale: {
+		onModifyPriority(priority, pokemon, target, move) {
+			if (move?.type === 'Fire') {
+				return priority + 1;
+			}
+		},
+		name: "Megagale",
+		rating: 2.5,
+		num: 177,
+	},	
 	galvanize: {
 		onModifyTypePriority: -1,
 		onModifyType(move, pokemon) {
