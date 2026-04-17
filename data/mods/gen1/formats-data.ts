@@ -470,6 +470,9 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	glalie: {
 		tier: "OU"
 	},
+	tanking: {
+		tier: "OU"
+	},
 	missingno: {
 		isNonstandard: "Unobtainable",
 		tier: "Illegal",

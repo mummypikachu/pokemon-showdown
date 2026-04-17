@@ -643,6 +643,12 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		types: ["Ice"],
 		baseStats: {hp: 100, atk: 100, def: 100, spa: 40, spd: 40, spe: 50},
 	},
+	tanking: {
+		inherit: true,
+		num: 1,
+		types: ["Ice"],
+		baseStats: {hp: 100, atk: 100, def: 100, spa: 40, spd: 40, spe: 50},
+	},
 	kyorge: {
 		inherit: true,
 		num: 1,
