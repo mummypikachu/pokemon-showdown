@@ -6045,6 +6045,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "RU",
 		newDexTier: "UUBL",
 	},
+	totta: {
+		tier: "New",
+		natDexTier: "RU",
+		newDexTier: "UUBL",
+	},
 	olfin: {
 		tier: "New",
 		natDexTier: "RU",

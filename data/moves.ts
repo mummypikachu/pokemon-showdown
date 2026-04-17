@@ -14117,7 +14117,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			if (source.species.name === 'Alkaslime') {
 				return;
 			}
-			this.hint("Only Alkaslime can use this move.");
+			;
 			if (source.species.name === 'Alkaslime-Mega') {
 				this.attrLastMove('[still]');
 				this.add('-fail', source, 'move: Acidic Slime', '[forme]');
@@ -14135,6 +14135,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			if (source.species.name === 'Tanking-Mega') {//for barrier shield
 				return;
 			}
+			this.hint("Only Alkaslime can use this move.")
 			this.attrLastMove('[still]');
 			this.add('-fail', source, 'move: Acidic Slime');
 			return null;
