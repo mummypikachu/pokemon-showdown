@@ -29,7 +29,7 @@ export interface SpeciesFormatsData {
 	isNonstandard?: Nonstandard | null;
 	natDexTier?: TierTypes.Singles | TierTypes.Other;
 	saDexTier?: TierTypes.Singles | TierTypes.Other;
-	newDexTier?: TierTypes.Singles | TierTypes.Other;
+	newDexTier?: TierTypes.NewDexSingles | TierTypes.Other;
 	tier?: TierTypes.Singles | TierTypes.Other;
 }
 
