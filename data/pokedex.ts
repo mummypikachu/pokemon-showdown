@@ -1527,7 +1527,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Fire", "Rock"],
 		genderRatio: {M: 0.75, F: 0.25},
 		baseStats: {hp: 95, atk: 125, def: 85, spa: 95, spd: 80, spe: 95},
-		abilities: {0: "Lord of the Isles"},
+		abilities: { 0: "Lord of the Isles" },
 		heightm: 2.3,
 		weightkg: 188.5,
 		color: "Brown",
@@ -1535,6 +1535,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		evoType: "other",
 		evoCondition: "while being a descendant of five of the ten companions of the ancient hero of legend",
 		eggGroups: ["Field"],
+		gen: 8
 	},
 	poliwag: {
 		num: 60,
@@ -2416,8 +2417,8 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		forme: "Noble",
 		types: ["Electric", "Grass"],
 		gender: "N",
-		baseStats: {hp: 60, atk: 50, def: 70, spa: 120, spd: 80, spe: 150},
-		abilities: {0: "Lord of the Hollow"},
+		baseStats: { hp: 60, atk: 50, def: 70, spa: 120, spd: 80, spe: 150 },
+		abilities: { 0: "Lord of the Hollow" },
 		heightm: 1.3,
 		weightkg: 73,
 		color: "Red",
@@ -2425,6 +2426,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		evoType: "other",
 		evoCondition: "while being a descendant of five of the ten companions of the ancient hero of legend",
 		eggGroups: ["Mineral"],
+		gen: 8,
 	},
 	exeggcute: {
 		num: 102,
@@ -10662,6 +10664,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		evoType: "other",
 		evoCondition: "while being a descendant of five of the ten companions of the ancient hero of legend",
 		eggGroups: ["Grass"],
+		gen: 8,
 	},
 	basculin: {
 		num: 550,
@@ -13837,6 +13840,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		evoType: "other",
 		evoCondition: "while being a descendant of five of the ten companions of the ancient hero of legend",
 		eggGroups: ["Monster", "Mineral"],
+		gen: 8,
 	},
 	noibat: {
 		num: 714,
@@ -17825,6 +17829,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		evoType: "other",
 		evoCondition: "while being a descendant of five of the ten companions of the ancient hero of legend",
 		eggGroups: ["Bug"],
+		gen: 8,
 	},
 	ursaluna: {
 		num: 901,

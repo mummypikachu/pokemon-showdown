@@ -637,18 +637,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		types: ["Normal"],
 		baseStats: {hp: 100, atk: 100, def: 100, spa: 40, spd: 40, spe: 50},
 	},
-	glalie: {
-		inherit: true,
-		num: 1,
-		types: ["Ice"],
-		baseStats: {hp: 100, atk: 100, def: 100, spa: 40, spd: 40, spe: 50},
-	},
-	tanking: {
-		inherit: true,
-		num: 1,
-		types: ["Ice"],
-		baseStats: {hp: 100, atk: 100, def: 100, spa: 40, spd: 40, spe: 50},
-	},
 	kyorge: {
 		inherit: true,
 		num: 1,
@@ -658,11 +646,5 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		inherit: true,
 		num: 1,
 		baseStats: {hp: 100, atk: 140, def: 140, spa: 90, spd: 90, spe: 90},
-	},
-	komari: {
-		inherit: true,
-		num: 1,
-		types: ["Ground"],
-		baseStats: {hp: 80, atk: 80, def: 80, spa: 80, spd: 80, spe: 80},
 	},
 };

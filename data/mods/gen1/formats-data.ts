@@ -467,12 +467,6 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	mawile: {
 		tier: "OU"
 	},
-	glalie: {
-		tier: "OU"
-	},
-	tanking: {
-		tier: "OU"
-	},
 	missingno: {
 		isNonstandard: "Unobtainable",
 		tier: "Illegal",
