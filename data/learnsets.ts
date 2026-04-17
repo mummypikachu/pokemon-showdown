@@ -95798,6 +95798,70 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			payback: ["9M", "9M"],
 		},
 	},
+	saikyish: {
+		learnset: {
+			facade: ["9M"], //universal TMs. ALWAYS INCLUDE UNLESS NOTED OTHERWISE.
+			frustration: ["9M"],
+			return: ["9M"],
+			rest: ["9M"],
+			sleeptalk: ["9M"],
+			substitute: ["9M"], 
+			attract: ["9M"],
+			snore: ["9M"],
+			round: ["9M"],
+			hiddenpower: ["9M"],
+			endure: ["9M"],
+			guardstrike: ["9M"],
+			captivate: ["9M"],
+			swagger: ["9M"],
+			doubleteam: ["9M"],
+			confide: ["9M"],
+			toxic: ["9M"],//end Univ. TMs
+			willowisp: ["9M"],
+		},
+	},
+	mentaicod: {
+		learnset: {
+			facade: ["9M"], //universal TMs. ALWAYS INCLUDE UNLESS NOTED OTHERWISE.
+			frustration: ["9M"],
+			return: ["9M"],
+			rest: ["9M"],
+			sleeptalk: ["9M"],
+			substitute: ["9M"], 
+			attract: ["9M"],
+			snore: ["9M"],
+			round: ["9M"],
+			hiddenpower: ["9M"],
+			endure: ["9M"],
+			guardstrike: ["9M"],
+			captivate: ["9M"],
+			swagger: ["9M"],
+			doubleteam: ["9M"],
+			confide: ["9M"],
+			toxic: ["9M"],//end Univ. TMs
+		},
+	},
+	luvscale: {
+		learnset: {
+			facade: ["9M"], //universal TMs. ALWAYS INCLUDE UNLESS NOTED OTHERWISE.
+			frustration: ["9M"],
+			return: ["9M"],
+			rest: ["9M"],
+			sleeptalk: ["9M"],
+			substitute: ["9M"], 
+			attract: ["9M"],
+			snore: ["9M"],
+			round: ["9M"],
+			hiddenpower: ["9M"],
+			endure: ["9M"],
+			guardstrike: ["9M"],
+			captivate: ["9M"],
+			swagger: ["9M"],
+			doubleteam: ["9M"],
+			confide: ["9M"],
+			toxic: ["9M"],//end Univ. TMs
+		},
+	},
 	archaludon: {
 		learnset: {
 			aurasphere: ["9M"],
