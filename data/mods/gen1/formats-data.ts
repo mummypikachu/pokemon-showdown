@@ -467,6 +467,9 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	mawile: {
 		tier: "OU"
 	},
+	komari: {
+		tier: "OU"
+	},
 	missingno: {
 		isNonstandard: "Unobtainable",
 		tier: "Illegal",
