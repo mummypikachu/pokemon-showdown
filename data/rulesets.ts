@@ -70,21 +70,27 @@ export const Rulesets: {[k: string]: FormatData} = {
 	},
 	standardnewdex: {
 		effectType: 'ValidatorRule',
-		name: 'Standard New Dex',
-		desc: "The standard ruleset for all offical New Dex singles tiers (Ubers, OU, etc.)",
-		onValidateSet(set, obtainable) {
+		name: 'Standard newdex',
+		desc: "The standard ruleset for all New Dex tiers",
+		ruleset: [
+			'Obtainable', '+Unobtainable', '+Past', 'Sketch Post-Gen 7 Moves', 'Team Preview', 'Nickname Clause', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause',
+		],
+		unbanlist: ['Adamant Crystal', 'Griseous Core', 'Lustrous Globe', 'Bleakwind Storm', 'Lunar Blessing', 'Mystical Power', 'Sandsear Storm', 'Wildbolt Storm'],
+		onValidateSet(set) {
 			const species = this.dex.species.get(set.species);
+			if (species.newDexTier === 'Illegal') {
+				if (this.ruleTable.has(`+pokemon:${species.id}`)) return;
+				return [`${set.name || set.species} does not exist in the New Dex.`];
+			}
 			const requireObtainable = this.ruleTable.has('obtainable');
 			if (requireObtainable) {
-				if (species.newDexTier === 'Illegal') {
+				if (species.newDexTier === "Unreleased") {
 					const basePokemon = this.toID(species.baseSpecies);
-					
 					if (this.ruleTable.has(`+pokemon:${species.id}`) || this.ruleTable.has(`+basepokemon:${basePokemon}`)) {
 						return;
-					
 					}
 					return [`${set.name || set.species} does not exist in the New Dex.`];
-				};
+				}
 				for (const moveid of set.moves) {
 					const move = this.dex.moves.get(moveid);
 					if (move.isNonstandard === 'Unobtainable' && move.gen === this.dex.gen || move.id === 'lightofruin') {
@@ -102,7 +108,7 @@ export const Rulesets: {[k: string]: FormatData} = {
 			if (!set.item) return;
 			let item = this.dex.items.get(set.item);
 			let gen = this.dex.gen;
-			while (item.isNonstandard && gen >= 5) {
+			while (item.isNonstandard && gen >= 7) {
 				item = this.dex.forGen(gen).items.get(item.id);
 				gen--;
 			}
@@ -111,10 +117,6 @@ export const Rulesets: {[k: string]: FormatData} = {
 				return [`${set.name}'s item ${item.name} does not exist in Gen ${this.dex.gen}.`];
 			}
 		},
-		ruleset: [
-			'Tera Type Preview', 'Team Preview', 'Sleep Clause Mod', 'Species Clause', 'Nickname Clause', 'OHKO Clause', 'Evasion Items Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Obtainable',
-		],
-		
 	},
 	standardnopreview: {
 		effectType: 'ValidatorRule',
