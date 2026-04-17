@@ -1046,7 +1046,7 @@ export const Formats: FormatList = [
 			'Gyarados-Mega', 'Salamence-Mega', 'Suicune', 'Dondozo', 'Assault Vest', 'Diancie-Mega', 'Regirock',
 			'Iron Fist', 'Strong Jaw', 'Iapapa Berry', 'Wiki Berry', 'Rocky Helmet', 'Aguav Berry', 'Lugia',
 			'Garganacl', 'Registeel', 'Regice', 'Aggron-Mega', 'Steelix-Mega', 'Sirfetchd', 'Perish Body',
-			'Hariyama', 'Supreme Overlord', 'Palkia', 'Dialga', 'Guts'
+			'Hariyama', 'Supreme Overlord', 'Palkia', 'Dialga', 'Guts', 'Striker Vest', 'Self-Sufficient', 'Alcremie-Mega', 'Garbodor-Mega'
 		],
 		onValidateSet(set) {
 			const allowedMoves = [
