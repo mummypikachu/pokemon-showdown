@@ -1117,6 +1117,7 @@ export const Formats: FormatList = [
 		name: "New Dex NU",
 
 		mod: 'gen9',
+		gameType: 'doubles',
 		ruleset: ['Standard New Dex'],
 		banlist: ['Uber', 'OU', 'UUBL', 'UU', 'RUBL', 'RU', 'NUBL', 'Moody', 'Sand Veil', 'Snow Cloak', 'King\'s Rock', 'Baton Pass', 'Gorilla Tactics', 'Last Respects', 'Shedinja + Air Balloon', 'Zygarde + Power Construct'],
 	},
