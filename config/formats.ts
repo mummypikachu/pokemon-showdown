@@ -1050,16 +1050,16 @@ export const Formats: FormatList = [
 		],
 		onValidateSet(set) {
 			const allowedMoves = [
-				'Tackle', 'Fake Out', 'Branch Poke', 'Pay Day', 'Pound', 'Fury Cutter', 'Scratch',
-				'Rock Smash', 'Salt Cure', 'Accelerock', 'Bullet Punch', 'Mach Punch', 'Shadow Sneak',
-				'Aqua Jet', 'Dual Wingbeat', 'Ice Shard', 'Hold Back', 'False Swipe', 'Leafage',
-				'Quick Attack', 'Acid', 'Disarming Voice', 'Fairy Wind', 'Mega Drain', 'Ember',
-				'Sand Tomb', 'Gust', 'Water Gun', 'Powder Snow', 'Twister', 'Echoed Voice',
-				'Twin Beam', 'Vacuum Wave', 'Power-up Punch', 'Bubble', 'Thundershock', 'Acid Spray',
-				'Pursuit', 'Dual Chop', 'Mirror Move', 'Transform', 'Poison Sting', 'Anger Hit', 
-				'Pressure Chop', 'Bubble'
-			];			
-		
+				'tackle', 'fakeout', 'branchpoke', 'payday', 'pound', 'furycutter', 'scratch',
+				'rocksmash', 'saltcure', 'accelerock', 'bulletpunch', 'machpunch', 'shadowsneak',
+				'aquajet', 'dualwingbeat', 'iceshard', 'holdback', 'falseswipe', 'leafage',
+				'quickattack', 'acid', 'disarmingvoice', 'fairywind', 'megadrain', 'ember',
+				'sandtomb', 'gust', 'watergun', 'powdersnow', 'twister', 'echoedvoice',
+				'twinbeam', 'vacuumwave', 'poweruppunch', 'bubble', 'thundershock', 'acidspray',
+				'pursuit', 'dualchop', 'mirrormove', 'transform', 'poisonsting', 'angerhit',
+				'pressurechop'
+			];
+
 			// Check each move in the set
 			for (const moveSlot of set.moves) {
 				const move = this.dex.moves.get(moveSlot);
