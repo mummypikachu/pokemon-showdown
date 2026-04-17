@@ -467,7 +467,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	mawile: {
 		tier: "OU"
 	},
-	komari: {
+	glalie: {
 		tier: "OU"
 	},
 	missingno: {
