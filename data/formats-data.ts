@@ -1,4 +1,4 @@
-export const FormatsData: {[k: string]: SpeciesFormatsData} = {
+export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	bulbasaur: {
 		tier: "LC",
 		natDexTier: "LC",
@@ -289,7 +289,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	clefairy: {
 		tier: "NFE",
-        doublesTier: "(DUU)",
+		doublesTier: "(DUU)",
 		natDexTier: "NFE",
 	},
 	clefable: {
@@ -647,7 +647,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	mukalola: {
 		tier: "RU",
-        doublesTier: "(DOU)",
+		doublesTier: "(DOU)",
 		natDexTier: "RU",
 	},
 	shellder: {
@@ -1550,7 +1550,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "PU",
 		natDexTier: "RU",
 	},
-	skarmorust:{
+	skarmorust: {
 		tier: "LC",
 	},
 	skarmory: {
@@ -2285,6 +2285,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "PU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
+		newDexTier: "LC",
 	},
 	bagon: {
 		tier: "LC",
@@ -3514,7 +3515,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "UU",
 		natDexTier: "RU",
 	},
-	golurkmega:{
+	golurkmega: {
 		tier: "OU",
 		natDexTier: "UU",
 	},
@@ -6113,6 +6114,18 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	movilemega: {
 		tier: "OU",
 		newDexTier: "Uber",
+	},
+	saikyish: {
+		tier: "LC",
+		newDexTier: "LC",
+	},
+	mentaicod: {
+		tier: "New",
+		newDexTier: "OU",
+	},
+	luvscale: {
+		tier: "New",
+		newDexTier: "OU",
 	},
 	// Start CAP/Missingno, don't place under this
 	missingno: {
