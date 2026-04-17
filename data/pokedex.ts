@@ -8803,7 +8803,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		num: 465,
 		name: "Tangrowth",
 		types: ["Grass"],
-		baseStats: {hp: 100, atk: 100, def: 100, spa: 100, spd: 100, spe: 50},
+		baseStats: {hp: 100, atk: 100, def: 125, spa: 110, spd: 70, spe: 50},
 		abilities: {0: "Chlorophyll", 1: "Leaf Guard", H: "Regenerator"},
 		heightm: 2,
 		weightkg: 128.6,
