@@ -14123,6 +14123,18 @@ export const Moves: {[moveid: string]: MoveData} = {
 				this.add('-fail', source, 'move: Acidic Slime', '[forme]');
 				return null;
 			}
+			if (source.species.name === 'Tanisu') { //for barrier shield
+				return;
+			}
+			if (source.species.name === 'Tanince') {//for barrier shield
+				return;
+			}
+			if (source.species.name === 'Tanking') {//for barrier shield
+				return;
+			}
+			if (source.species.name === 'Tanking-Mega') {//for barrier shield
+				return;
+			}
 			this.attrLastMove('[still]');
 			this.add('-fail', source, 'move: Acidic Slime');
 			return null;
