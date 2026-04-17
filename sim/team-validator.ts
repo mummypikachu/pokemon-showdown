@@ -1419,9 +1419,14 @@ export class TeamValidator {
 		setHas[ndTierTag] = true;
 
 		const saTier = tierSpecies.saDexTier === '(PU)' ? 'ZU' :
-		tierSpecies.saDexTier === '(NU)' ? 'PU' : tierSpecies.saDexTier;
+			tierSpecies.saDexTier === '(NU)' ? 'PU' : tierSpecies.saDexTier;
 		const saTierTag = 'pokemontag:sd' + toID(saTier);
 		setHas[saTierTag] = true;
+
+		const nwdTier = tierSpecies.newDexTier === '(PU)' ? 'ZU' :
+			tierSpecies.newDexTier === '(NU)' ? 'PU' : tierSpecies.newDexTier;
+		const nwdTierTag = 'pokemontag:nwd' + toID(nwdTier);
+		setHas[nwdTierTag] = true;
 
 		// Only pokemon that can gigantamax should have the Gmax flag
 		if (!tierSpecies.canGigantamax && set.gigantamax) {
