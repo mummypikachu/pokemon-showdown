@@ -2514,8 +2514,16 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "PUBL",
 		natDexTier: "RU",
 	},
+	wormadammega: {
+		tier: "RU",
+		natDexTier: "RU",
+	},
 	mothim: {
 		tier: "PU",
+		natDexTier: "RU",
+	},
+	mothimmega: {
+		tier: "UU",
 		natDexTier: "RU",
 	},
 	combee: {
