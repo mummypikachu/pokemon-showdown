@@ -7225,4 +7225,45 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			target.removeVolatile('gastroacid');
 		},
 	},
+	cloakgather: {
+		name: "Cloak Gather",
+		rating: 4,
+
+		onPrepareHit(source, target, move) {
+			if (!source || source.fainted) return;
+			const typeMap: { [key: string]: string; } = {
+				Dark: 'Dark',
+				Fighting: 'Fighting',
+				Water: 'Water',
+				Fire: 'Fire',
+				Ice: 'Ice',
+				Electric: 'Electric',
+				Grass: 'Grass',
+				Fairy: 'Fairy',
+				Poison: 'Poison',
+				Ground: 'Ground',
+				Flying: 'Flying',
+				Psychic: 'Psychic',
+				Bug: 'Bug',
+				Rock: 'Rock',
+				Ghost: 'Ghost',
+				Dragon: 'Dragon',
+				Steel: 'Steel',
+				Normal: 'Normal',
+			};
+
+			const newType = typeMap[move.type];
+			if (!newType) return;
+
+			const types = source.getTypes();
+
+			if (types.length === 1) {
+				source.setType([types[0], newType]);
+			} else {
+				source.setType([types[0], newType]);
+			}
+
+			this.add('-start', source, 'typechange', source.getTypes().join('/'), '[from] ability: Cloak Gather');
+		},
+	},
 };

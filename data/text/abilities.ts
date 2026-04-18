@@ -2657,6 +2657,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "On switch-in, this Pokémon will copy the ability of the Pokémon across from it. The opponent will then have the ability No Ability. Abilities that cannot be copied are As One, Battle Bond, Comatose, Commander, Disguise, Flower Gift, Forecast, Gulp Missile, Hadron Engine, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Orichalcum Pulse, Power Construct, Power of Alchemy, Protosynthesis, Quark Drive, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, Wonder Guard, Zen Mode, and Zero to Hero.",
 		shortDesc: "Switch in: Steals opponent's ability; leaves opponent with No Ability.",
 	},
+	cloakgather: {
+		name: "Cloak Gather",
+		desc: "Changes the user's secondary Type based on the move it uses. If the user only has one type, they will gain the move as a secondary Type.",
+		shortDesc: "Changes user's secondary Type to match the move they're using.",
+	}
 };
 
 

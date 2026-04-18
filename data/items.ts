@@ -8876,6 +8876,19 @@ export const Items: {[itemid: string]: ItemData} = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-	
+
+	},
+	wormadite: {
+		name: "Wormadite",
+		spritenum: 627,
+		megaStone: "Wormadam-Mega",
+		megaEvolves: "Wormadam",
+		itemUser: ["Wormadam", "Wormadam-Sandy", "Wormadam-Trash"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 2643,
+		gen: 9,
 	},
 };
