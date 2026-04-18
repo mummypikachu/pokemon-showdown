@@ -93639,8 +93639,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			meanlook: ["9M"],
 			miracleeeye: ["9M"],
 			psyshock: ["9M"],
-			psywave: ["9M"],
-			psychic: ["9M"],
 		},
 	},
 	kolibrary: {
