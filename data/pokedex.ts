@@ -8002,7 +8002,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		formeOrder: ["Mothim", "Mothim-Mega"],
 	},
 	mothimmega: {
-		num: 398,
+		num: 414,
 		name: "Mothim-Mega",
 		baseSpecies: "Mothim",
 		forme: "Mega",
