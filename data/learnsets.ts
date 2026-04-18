@@ -93637,7 +93637,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			darkpulse: ["9M"],
 			entrainment: ["9M"],
 			meanlook: ["9M"],
-			miracleeeye: ["9M"],
+			miracleeye: ["9M"],
 			psyshock: ["9M"],
 		},
 	},
