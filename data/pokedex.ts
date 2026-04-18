@@ -12747,7 +12747,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 26.5,
 		color: "Red",
 		eggGroups: ["Flying"],
-		requiredItem: "Talonflameite",
+		requiredItem: "Talonflamite",
 	},
 	scatterbug: {
 		num: 664,
