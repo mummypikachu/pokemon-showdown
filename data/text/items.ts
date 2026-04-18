@@ -1939,6 +1939,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Talonflamite",
 		desc: "If held by a Talonflame, this item allows it to Mega Evolve in battle.",
 	},
+	mothimite: {
+		name: "Mothimite",
+		desc: "If held by a Mothim, this item allows it to Mega Evolve in battle.",
+	},
 	sceptilite: {
 		name: "Sceptilite",
 		desc: "If held by a Sceptile, this item allows it to Mega Evolve in battle.",

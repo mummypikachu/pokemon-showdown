@@ -2178,7 +2178,6 @@ export const Items: {[itemid: string]: ItemData} = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-	
 	},
 	flyinggem: {
 		name: "Flying Gem",
@@ -8866,5 +8865,17 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 678,
 		gen: 9,
+	},
+	mothimite: {
+		name: "Mothimite",
+		spritenum: 625,
+		megaStone: "Mothim-Mega",
+		megaEvolves: "Mothim",
+		itemUser: ["Mothim"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+	
 	},
 };
