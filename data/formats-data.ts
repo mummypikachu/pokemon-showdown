@@ -6098,7 +6098,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		newDexTier: "OU",
 	},
 	alkaslime: {
-		tier: "New",
+		tier: "UUBL",
 		newDexTier: "Uber",
 	},
 	phyridengo: {
@@ -6124,8 +6124,8 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		newDexTier: "OU",
 	},
 	luvscale: {
-		tier: "New",
-		newDexTier: "OU",
+		tier: "UUBL",
+		newDexTier: "Uber",
 	},
 	// Start CAP/Missingno, don't place under this
 	missingno: {
