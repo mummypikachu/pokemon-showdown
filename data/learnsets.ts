@@ -71104,7 +71104,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			electroweb: ["9M", "9T", "6T"],
 			endure: ["9M"],
 			ember: ["9L4"],
-			eruption: ["9L64"],
 			facade: ["9M", "9M", "6M"],
 			fireblast: ["9M"],
 			firepunch: ["9M", "9T", "6T"],
