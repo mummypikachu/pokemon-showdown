@@ -2778,7 +2778,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Cleansing Chime",
 		pp: 5,
 		priority: 0,
-		flags: {snatch: 1, heal: 1},
+		flags: {snatch: 1, sound: 1, heal: 1},
 		heal: [1, 2],
 		secondary: null,
 		target: "self",
@@ -15104,6 +15104,26 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Ghost",
+	},
+	posthaste: {
+		num: 413053,
+		accuracy: 100,
+		basePower: 40,
+		basePowerCallback(pokemon, target, move) {
+			if (pokemon.item === 'mail') {
+				return 80;
+			}
+			return 40;
+		},
+		category: "Physical",
+		name: "Posthaste",
+		pp: 30,
+		priority: 1,
+		flags: { contact: 1, protect: 1, mirror: 1 },
+		secondary: null,
+		target: "normal",
+		type: "Normal",
+		contestType: "Cool",
 	},
 	populationbomb: {
 		num: 860,

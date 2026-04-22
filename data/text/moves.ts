@@ -4902,6 +4902,11 @@ export const MovesText: {[k: string]: MoveText} = {
 
 		activate: "  [POKEMON] is about to be attacked by its [ITEM]!",
 	},
+	posthaste: {
+		name: "Posthaste",
+		desc: "This move's base power will be 80 if this Pokémon is holding Mail.",
+		shortDesc: "Usually goes first. Power is 80 if holding mail.",
+	},
 	populationbomb: {
 		name: "Population Bomb",
 		desc: "Hits ten times. This move checks accuracy for each hit, and the attack ends if the target avoids a hit. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit ten times. If the user is holding Loaded Dice, this move hits four to ten times at random without checking accuracy between hits.",

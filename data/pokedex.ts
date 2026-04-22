@@ -14523,7 +14523,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		num: 745,
 		name: "Lycanroc",
 		baseForme: "Midday",
-		types: ["Rock", "Ground"],
+		types: ["Rock"],
 		baseStats: {hp: 75, atk: 115, def: 65, spa: 55, spd: 65, spe: 112},
 		abilities: {0: "Sand Force", 1: "Sand Rush", H: "Steadfast"},
 		heightm: 0.8,
