@@ -55900,6 +55900,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			airslash: ["9M", "9L42", "9L33", "6L33", "5L33"],
 			attract: ["9M", "9M", "9M", "5M"],
 			bravebird: ["9M"],
+			bulkup: ["9M"],
 			confide: ["9M", "9M"],
 			defog: ["9T"],
 			detect: ["9L36", "9L23", "6L23", "5L23"],
