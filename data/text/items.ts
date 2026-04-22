@@ -853,7 +853,7 @@ export const ItemsText: {[k: string]: ItemText} = {
 	},
 	honey: {
 		name: "Honey",
-		desc: "Restores 1/2 max HP at 1/2 or less. Single use. Disappears after use.",
+		desc: "Signle use, restores 1/2 max HP at 1/2 or less. Only usable by Honey Gather.",
 	},
 	houndoominite: {
 		name: "Houndoominite",
