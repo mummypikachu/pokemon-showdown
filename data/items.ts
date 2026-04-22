@@ -2839,11 +2839,12 @@ export const Items: {[itemid: string]: ItemData} = {
 		name: "Honey",
 		spritenum: 196,
 		onUpdate(pokemon) {
-			if (pokemon.hp <= pokemon.maxhp / 2) {
+			if (pokemon.hp <= pokemon.maxhp / 2 && pokemon.hasAbility('honeygather')) {
 				pokemon.useItem();
 			}
 		},
 		onUseItem(item, pokemon) {
+			if (!pokemon.hasAbility('honeygather')) return false;
 			if (!this.runEvent('TryHeal', pokemon)) return false;
 			this.heal(pokemon.baseMaxhp / 2);
 		},

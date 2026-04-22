@@ -505,7 +505,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	ekans: {
 		num: 23,
 		name: "Ekans",
-		types: ["Poison", "Dark"],
+		types: ["Poison"],
 		baseStats: {hp: 35, atk: 70, def: 44, spa: 40, spd: 54, spe: 75},
 		abilities: {0: "Intimidate", 1: "Shed Skin", H: "Unnerve"},
 		heightm: 2,
@@ -8052,7 +8052,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Bug", "Flying"],
 		gender: "F",
 		baseStats: {hp: 90, atk: 90, def: 108, spa: 90, spd: 108, spe: 70},
-		abilities: {0: "Hivemind", H: "Unnerve"},
+		abilities: {0: "Hivemind", 1: "Honey Gather", H: "Honey Gather"},
 		heightm: 1.2,
 		weightkg: 38.5,
 		color: "Yellow",
@@ -10219,7 +10219,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	zebstrika: {
 		num: 523,
 		name: "Zebstrika",
-		types: ["Electric", "Dark"],
+		types: ["Electric"],
 		baseStats: {hp: 75, atk: 110, def: 63, spa: 80, spd: 83, spe: 116},
 		abilities: {0: "Lightning Rod", 1: "Motor Drive", H: "Sap Sipper"},
 		heightm: 1.6,
@@ -17328,7 +17328,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	morpeko: {
 		num: 877,
 		name: "Morpeko",
-		types: ["Electric", "Fairy"],
+		types: ["Electric", "Dark"],
 		baseStats: {hp: 58, atk: 65, def: 58, spa: 100, spd: 58, spe: 97},
 		abilities: {0: "Hunger Switch"},
 		heightm: 0.3,

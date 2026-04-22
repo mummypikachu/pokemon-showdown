@@ -2406,7 +2406,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "LC",
 	},
 	grotle: {
-		tier: "PU",
+		tier: "NFE",
 		natDexTier: "NFE",
 	},
 	torterra: {
@@ -4640,7 +4640,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "Uber",
 	},
 	meltan: {
-		tier: "NU",
+		tier: "LC",
 		natDexTier: "RU",
 	},
 	melmetal: {

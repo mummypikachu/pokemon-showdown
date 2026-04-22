@@ -792,7 +792,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	honeygather: {
 		name: "Honey Gather",
-		shortDesc: "No competitive use.",
+		shortDesc: "This Pokémon can use the Honey item.",
 	},
 	hospitality: {
 		name: "Hospitality",
