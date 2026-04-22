@@ -477,7 +477,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "RU",
 	},
 	alakazammega: {
-		tier: "OU",
+		tier: "Uber",
 		doublesTier: "DOU",
 		natDexTier: "Uber",
 	},
@@ -2228,8 +2228,8 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "RU",
 	},
 	absolmegaz: {
-		tier: "OU",
-		natDexTier: "OU",
+		tier: "Uber",
+		natDexTier: "Uber",
 	},
 	snorunt: {
 		tier: "LC",
@@ -2650,8 +2650,8 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "Uber",
 	},
 	lucariomegaz: {
-		tier: "OU",
-		natDexTier: "OU",
+		tier: "Uber",
+		natDexTier: "Uber",
 	},
 	hippopotas: {
 		tier: "LC",

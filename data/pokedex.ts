@@ -11194,7 +11194,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Normal"],
 		genderRatio: {M: 0.25, F: 0.75},
 		baseStats: {hp: 55, atk: 50, def: 40, spa: 40, spd: 40, spe: 75},
-		abilities: {0: "Cute Charm", 1: "Technician", H: "Skill Link"},
+		abilities: {0: "Clean Slate", 1: "Technician", H: "Skill Link"},
 		heightm: 0.4,
 		weightkg: 5.8,
 		color: "Gray",
