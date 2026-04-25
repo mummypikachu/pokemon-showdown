@@ -23541,11 +23541,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 		zMove: {boost: {spe: 1}},
 		contestType: "Beautiful",
 	},
-	windride: {
+	airride: {
 		accuracy: 90,
 		basePower: 80,
 		category: "Special",
-		name: "Wind Ride",
+		name: "Air Ride",
 		pp: 15,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, distance: 1, wind: 1},
