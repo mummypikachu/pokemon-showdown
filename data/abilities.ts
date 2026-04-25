@@ -7266,4 +7266,23 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			this.add('-start', source, 'typechange', source.getTypes().join('/'), '[from] ability: Cloak Gather');
 		},
 	},
+	structuralassembly: {
+		name: "Structural Assembly",
+		rating: 4,
+
+		onResidualOrder: 8,
+		onResidual(pokemon) {
+			const nextFormes: { [k: string]: string; } = {
+				scaffixer: 'Scaffixer-Foundations',
+				scaffixerfoundations: 'Scaffixer-Scaffolding',
+				scaffixerscaffolding: 'Scaffixer-Complete',
+			};
+
+			const nextForme = nextFormes[pokemon.species.id];
+			if (!nextForme) return; // no transformation to prevent it from going further
+
+			this.add('-activate', pokemon, 'ability: Structural Assembly');
+			pokemon.formeChange(nextForme, this.effect, true);
+		},
+	},
 };

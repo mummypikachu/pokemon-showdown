@@ -23940,4 +23940,45 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Flying",
 	},
+	structuralcollapse: {
+		num: 14897314,
+		accuracy: 100,
+		basePower: 10,
+		category: "Physical",
+		name: "Structural Collapse",
+		pp: 5,
+		priority: 0,
+		flags: { protect: 1 },
+
+		basePowerCallback(pokemon) {
+			switch (pokemon.species.id) {
+				case 'scaffixerfoundations':
+					return 50;
+				case 'scaffixerscaffolding':
+					return 150;
+				case 'scaffixercomplete':
+					return 250;
+				default:
+					return 10;
+			}
+		},
+
+		onModifyType(move, pokemon) {
+			if (pokemon.types[1]) {
+				move.type = pokemon.types[1];
+			}
+		},
+
+		onAfterMove(source) {
+			if (source.species.id !== 'scaffixer') {
+				this.add('-message', `${source.name}'s structure collapsed!`);
+				source.formeChange('Scaffixer', this.effect, true);
+			}
+		},
+
+		secondary: null,
+		target: "normal",
+		type: "Ground",
+		contestType: "Tough",
+	},
 };

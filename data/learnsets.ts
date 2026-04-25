@@ -95942,6 +95942,28 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			scaleshot: ["9M"],
 		},
 	},
+	scaffixer: {
+		learnset: {
+			structuralcollapse: ["9M"],
+			steelbeam: ["9M"],
+			takedown: ["9M"],
+			recycle: ["9M"],
+			branchpoke: ["9M"],
+			metalsound: ["9M"],
+			screech: ["9M"],
+			barrier: ["9M"],
+			reflect: ["9M"],
+			lightscreen: ["9M"],
+			mirrorshot: ["9M"],
+			protect: ["9M"],
+			rocktomb: ["9M"],
+			sandtomb: ["9M"],
+			mudslap: ["9M"],
+			recover: ["9M"],
+			stealthrock: ["9M"],
+			rest: ["9M"],
+		},
+	},
 	archaludon: {
 		learnset: {
 			aurasphere: ["9M"],

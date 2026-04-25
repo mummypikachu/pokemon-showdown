@@ -6135,6 +6135,9 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "UUBL",
 		newDexTier: "Uber",
 	},
+	scaffixer: {
+		tier: "OU",
+	},
 	// Start CAP/Missingno, don't place under this
 	missingno: {
 		isNonstandard: "Custom",
