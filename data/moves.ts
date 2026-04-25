@@ -23943,7 +23943,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	structuralcollapse: {
 		num: 14897314,
 		accuracy: 100,
-		basePower: 10,
+		basePower: 20,
 		category: "Physical",
 		name: "Structural Collapse",
 		pp: 5,
@@ -23953,13 +23953,13 @@ export const Moves: {[moveid: string]: MoveData} = {
 		basePowerCallback(pokemon) {
 			switch (pokemon.species.id) {
 				case 'scaffixerfoundations':
-					return 50;
+					return 70;
 				case 'scaffixerscaffolding':
 					return 150;
 				case 'scaffixercomplete':
-					return 250;
+					return 300;
 				default:
-					return 10;
+					return 20;
 			}
 		},
 

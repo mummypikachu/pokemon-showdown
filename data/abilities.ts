@@ -7266,8 +7266,8 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			this.add('-start', source, 'typechange', source.getTypes().join('/'), '[from] ability: Cloak Gather');
 		},
 	},
-	structuralassembly: {
-		name: "Structural Assembly",
+	construction: {
+		name: "Construction",
 		rating: 4,
 
 		onResidualOrder: 8,
@@ -7281,7 +7281,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			const nextForme = nextFormes[pokemon.species.id];
 			if (!nextForme) return; // no transformation to prevent it from going further
 
-			this.add('-activate', pokemon, 'ability: Structural Assembly');
+			this.add('-activate', pokemon, 'ability: Construction');
 			pokemon.formeChange(nextForme, this.effect, true);
 		},
 	},

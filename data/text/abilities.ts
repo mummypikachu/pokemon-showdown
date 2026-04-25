@@ -2661,6 +2661,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Cloak Gather",
 		desc: "Changes the user's secondary Type based on the move it uses. If the user only has one type, they will gain the move as a secondary Type.",
 		shortDesc: "Changes user's secondary Type to match the move they're using.",
+	},
+	construction: {
+		name: "Construction",
+		shortDesc: "Transforms Scaffixer into a better form at the end of the turn.",
 	}
 };
 
