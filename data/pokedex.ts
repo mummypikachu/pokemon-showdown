@@ -20968,14 +20968,14 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 108.7,
 		color: "Grey",
 		eggGroups: ["Undiscovered"],
-		otherFormes: ["Scaffixer-Foundations", "Scaffixer-Scaffolding", "Scaffixer-Complete"],
+		otherFormes: ["Scaffixer-Foundation", "Scaffixer-Scaffolding", "Scaffixer-Complete"],
 		gen: 9,
 	},
-	scaffixerfoundations: {
+	scaffixerfoundation: {
 		num: 1579,
-		name: "Scaffixer-Foundations",
+		name: "Scaffixer-Foundation",
 		baseSpecies: "Scaffixer",
-		forme: "Foundations",
+		forme: "Foundation",
 		types: ["Ground", "Normal"],
 		gender: "N",
 		baseStats: { hp: 70, atk: 70, def: 70, spa: 70, spd: 70, spe: 35 },

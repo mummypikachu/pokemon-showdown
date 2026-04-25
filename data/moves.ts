@@ -23952,7 +23952,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 
 		basePowerCallback(pokemon) {
 			switch (pokemon.species.id) {
-				case 'scaffixerfoundations':
+				case 'scaffixerfoundation':
 					return 70;
 				case 'scaffixerscaffolding':
 					return 150;

@@ -7273,8 +7273,8 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onResidualOrder: 8,
 		onResidual(pokemon) {
 			const nextFormes: { [k: string]: string; } = {
-				scaffixer: 'Scaffixer-Foundations',
-				scaffixerfoundations: 'Scaffixer-Scaffolding',
+				scaffixer: 'Scaffixer-Foundation',
+				scaffixerfoundation: 'Scaffixer-Scaffolding',
 				scaffixerscaffolding: 'Scaffixer-Complete',
 			};
 
