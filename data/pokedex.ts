@@ -20960,7 +20960,6 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		num: 1579,
 		name: "Scaffixer",
 		baseSpecies: "Scaffixer",
-		forme: "Base",
 		types: ["Ground"],
 		gender: "N",
 		baseStats: { hp: 70, atk: 50, def: 50, spa: 50, spd: 50, spe: 30 },
@@ -20985,6 +20984,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 108.7,
 		color: "Grey",
 		eggGroups: ["Undiscovered"],
+		battleOnly: "Scaffixer",
 		gen: 9,
 	},
 	scaffixerscaffolding: {
@@ -21000,6 +21000,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 108.7,
 		color: "Grey",
 		eggGroups: ["Undiscovered"],
+		battleOnly: "Scaffixer",
 		gen: 9,
 	},
 	scaffixercomplete: {
@@ -21015,6 +21016,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 108.7,
 		color: "Grey",
 		eggGroups: ["Undiscovered"],
+		battleOnly: "Scaffixer",
 		gen: 9,
 	},
 	// CONSTRUCTION POKEMON FORM END
