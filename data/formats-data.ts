@@ -6135,6 +6135,9 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "UUBL",
 		newDexTier: "Uber",
 	},
+	matriall: {
+		tier: "LC",
+	},
 	scaffixer: {
 		tier: "OU",
 	},
