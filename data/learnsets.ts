@@ -35580,6 +35580,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			aerialace: ["9M", "9M", "5M", "4M", "3M"],
 			aircutter: ["9L1", "9T"],
 			airslash: ["9M"],
+			airride: ["9M"],
 			amnesia: ["9M"],
 			assurance: ["9M"],
 			astonish: ["9L1"],
@@ -89092,6 +89093,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	wattrel: {
 		learnset: {
 			acrobatics: ["9M"],
+			airride: ["9M"],
 			aerialace: ["9M"],
 			agility: ["9M", "9L32"],
 			aircutter: ["9M"],
@@ -90008,6 +90010,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	bramblin: {
 		learnset: {
 			absorb: ["9L5"],
+			airride: ["9M"],
 			astonish: ["9L1"],
 			beatup: ["9E"],
 			block: ["9E"],
@@ -93680,6 +93683,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			hurricane: ["9M"],
 			psychic: ["9M"],
 			psywave: ["9M"],
+			airride: ["9M"],
 			miracleeye: ["9M"],
 			seedbomb: ["9M"],
 			megadrain: ["9M"],
