@@ -86299,6 +86299,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 		learnset: {
 			agility: ["9M"],
 			alluringvoice: ["9M"],
+			airride: ["9M"],
 			astonish: ["9L1"],
 			bodyslam: ["9M"],
 			calmmind: ["9M"],
