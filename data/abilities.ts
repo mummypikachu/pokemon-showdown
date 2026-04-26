@@ -7287,11 +7287,12 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	weatherchu: {
 		name: "Weatherchu",
-		onModifyType(move, pokemon) {
-			const types = pokemon.getTypes();
+		shortDesc: "This Pokémon gains a type based on the current weather.",
+		desc: "While this Pokémon is active, it gains an additional type depending on the weather: Water in rain, Fire in harsh sunlight, Rock in sandstorm, Ice in snow or hail, and Flying in strong winds. This effect ends when the weather changes or this Ability is lost.",
+		onUpdate(pokemon) {
 			const weather = this.field.effectiveWeather();
 
-			let addedType: string | null = null;
+			let addedType = '';
 
 			switch (weather) {
 				case 'raindance':
@@ -7319,8 +7320,12 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 					break;
 			}
 
-			if (addedType && !types.includes(addedType)) {
+			const baseTypes = pokemon.getTypes(false, true);
+
+			if (addedType && !baseTypes.includes(addedType)) {
 				pokemon.addedType = addedType;
+			} else {
+				pokemon.addedType = '';
 			}
 		},
 		rating: 4,

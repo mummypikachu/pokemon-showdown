@@ -1027,9 +1027,9 @@ export const ItemsText: {[k: string]: ItemText} = {
 	},
 	lightball: {
 		name: "Light Ball",
-		desc: "If held by a Pikachu, its Attack and Sp. Atk are multiplied 1.3x.",
+		desc: "If held by a Pikachu, its Attack and Sp. Atk are multiplied 2x.",
 		gen4: {
-			desc: "If held by a Pikachu, its attacks are multiplied 1.3x.",
+			desc: "If held by a Pikachu, its attacks are multiplied 2x.",
 		},
 		gen3: {
 			desc: "If held by a Pikachu, its Special Attack is doubled.",

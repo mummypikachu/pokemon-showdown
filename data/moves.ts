@@ -23250,59 +23250,59 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Weather Ball",
 		pp: 10,
 		priority: 0,
-		flags: {bullet: 1, protect: 1, mirror: 1},
+		flags: { bullet: 1, protect: 1, mirror: 1 },
 		onModifyType(move, pokemon) {
 			switch (pokemon.effectiveWeather()) {
-			case 'sunnyday':
-			case 'desolateland':
-				move.type = 'Fire';
-				break;
-			case 'raindance':
-			case 'primordialsea':
-				move.type = 'Water';
-				break;
-			case 'sandstorm':
-				move.type = 'Rock';
-				break;
-			case 'hail':
-			case 'snow':
-				move.type = 'Ice';
-				break;
-			case 'windy':
-			case 'deltastream': 
-				move.type = 'Flying';
-				break;	
+				case 'sunnyday':
+				case 'desolateland':
+					move.type = 'Fire';
+					break;
+				case 'raindance':
+				case 'primordialsea':
+					move.type = 'Water';
+					break;
+				case 'sandstorm':
+					move.type = 'Rock';
+					break;
+				case 'hail':
+				case 'snow':
+					move.type = 'Ice';
+					break;
+				case 'windy':
+				case 'deltastream':
+					move.type = 'Flying';
+					break;
 			}
 		},
 		onModifyMove(move, pokemon) {
 			switch (pokemon.effectiveWeather()) {
-			case 'sunnyday':
-			case 'desolateland':
-				move.basePower *= 2;
-				break;
-			case 'raindance':
-			case 'primordialsea':
-				move.basePower *= 2;
-				break;
-			case 'sandstorm':
-				move.basePower *= 2;
-				break;
-			case 'hail':
-			case 'snow':
-				move.basePower *= 2;
-				break;
-			case 'windy':
-			case 'deltastream': 
-				move.basePower *= 2;
-				break;	
+				case 'sunnyday':
+				case 'desolateland':
+					move.basePower *= 2;
+					break;
+				case 'raindance':
+				case 'primordialsea':
+					move.basePower *= 2;
+					break;
+				case 'sandstorm':
+					move.basePower *= 2;
+					break;
+				case 'hail':
+				case 'snow':
+					move.basePower *= 2;
+					break;
+				case 'windy':
+				case 'deltastream':
+					move.basePower *= 2;
+					break;
 			}
 			this.debug('BP: ' + move.basePower);
 		},
 		secondary: null,
 		target: "normal",
 		type: "Normal",
-		zMove: {basePower: 160},
-		maxMove: {basePower: 130},
+		zMove: { basePower: 160 },
+		maxMove: { basePower: 130 },
 		contestType: "Beautiful",
 	},
 	weathertail: {
@@ -23313,59 +23313,59 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Weather Tail",
 		pp: 10,
 		priority: 0,
-		flags: {protect: 1, mirror: 1, contact: 1},
+		flags: { protect: 1, mirror: 1, contact: 1 },
 		onModifyType(move, pokemon) {
 			switch (pokemon.effectiveWeather()) {
-			case 'sunnyday':
-			case 'desolateland':
-				move.type = 'Fire';
-				break;
-			case 'raindance':
-			case 'primordialsea':
-				move.type = 'Water';
-				break;
-			case 'sandstorm':
-				move.type = 'Rock';
-				break;
-			case 'hail':
-			case 'snow':
-				move.type = 'Ice';
-				break;
-			case 'windy':
-			case 'deltastream': 
-				move.type = 'Flying';
-				break;	
+				case 'sunnyday':
+				case 'desolateland':
+					move.type = 'Fire';
+					break;
+				case 'raindance':
+				case 'primordialsea':
+					move.type = 'Water';
+					break;
+				case 'sandstorm':
+					move.type = 'Rock';
+					break;
+				case 'hail':
+				case 'snow':
+					move.type = 'Ice';
+					break;
+				case 'windy':
+				case 'deltastream':
+					move.type = 'Flying';
+					break;
 			}
 		},
 		onModifyMove(move, pokemon) {
 			switch (pokemon.effectiveWeather()) {
-			case 'sunnyday':
-			case 'desolateland':
-				move.basePower *= 2;
-				break;
-			case 'raindance':
-			case 'primordialsea':
-				move.basePower *= 2;
-				break;
-			case 'sandstorm':
-				move.basePower *= 2;
-				break;
-			case 'hail':
-			case 'snow':
-				move.basePower *= 2;
-				break;
-			case 'windy':
-			case 'deltastream': 
-				move.basePower *= 2;
-				break;	
+				case 'sunnyday':
+				case 'desolateland':
+					move.basePower *= 2;
+					break;
+				case 'raindance':
+				case 'primordialsea':
+					move.basePower *= 2;
+					break;
+				case 'sandstorm':
+					move.basePower *= 2;
+					break;
+				case 'hail':
+				case 'snow':
+					move.basePower *= 2;
+					break;
+				case 'windy':
+				case 'deltastream':
+					move.basePower *= 2;
+					break;
 			}
 			this.debug('BP: ' + move.basePower);
 		},
 		secondary: null,
 		target: "normal",
 		type: "Normal",
-		zMove: {basePower: 160},
-		maxMove: {basePower: 130},
+		zMove: { basePower: 160 },
+		maxMove: { basePower: 130 },
 		contestType: "Beautiful",
 	},
 	weatherstorm: {
@@ -23376,60 +23376,60 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Weather Storm",
 		pp: 15,
 		priority: 0,
-		flags: {bullet: 1, protect: 1, mirror: 1},
+		flags: { bullet: 1, protect: 1, mirror: 1 },
 		onModifyType(move, pokemon) {
 			switch (pokemon.effectiveWeather()) {
-			case 'sunnyday':
-			case 'desolateland':
-				move.type = 'Fire';
-				break;
-			case 'raindance':
-			case 'primordialsea':
-				move.type = 'Water';
-				break;
-			case 'sandstorm':
-				move.type = 'Rock';
-				break;
-			case 'hail':
-			case 'snow':
-				move.type = 'Ice';
-				break;
-			case 'windy':
-			case 'deltastream': 
-				move.type = 'Flying';
-				break;	
+				case 'sunnyday':
+				case 'desolateland':
+					move.type = 'Fire';
+					break;
+				case 'raindance':
+				case 'primordialsea':
+					move.type = 'Water';
+					break;
+				case 'sandstorm':
+					move.type = 'Rock';
+					break;
+				case 'hail':
+				case 'snow':
+					move.type = 'Ice';
+					break;
+				case 'windy':
+				case 'deltastream':
+					move.type = 'Flying';
+					break;
 			}
-			
+
 		},
 		onModifyMove(move, pokemon) {
 			switch (pokemon.effectiveWeather()) {
-			case 'sunnyday':
-			case 'desolateland':
-				move.basePower *= 2;
-				break;
-			case 'raindance':
-			case 'primordialsea':
-				move.basePower *= 2;
-				break;
-			case 'sandstorm':
-				move.basePower *= 2;
-				break;
-			case 'hail':
-			case 'snow':
-				move.basePower *= 2;
-				break;
-			case 'windy':
-			case 'deltastream': 
-				move.basePower *= 2;
-				break;	
+				case 'sunnyday':
+				case 'desolateland':
+					move.basePower *= 2;
+					break;
+				case 'raindance':
+				case 'primordialsea':
+					move.basePower *= 2;
+					break;
+				case 'sandstorm':
+					move.basePower *= 2;
+					break;
+				case 'hail':
+				case 'snow':
+					move.basePower *= 2;
+					break;
+				case 'windy':
+				case 'deltastream':
+					move.basePower *= 2;
+					break;
 			}
 			this.debug('BP: ' + move.basePower);
 		},
 		secondary: null,
 		target: "normal",
 		type: "Normal",
-		zMove: {basePower: 190},
-		maxMove: {basePower: 160},
+		zMove: { basePower: 190 },
+		maxMove: { basePower: 160 },
 		contestType: "Beautiful",
 	},
 	whirlpool: {
