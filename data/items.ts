@@ -1600,7 +1600,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	// 	gen: 9,
 	
 	// },
-	electromagnet: {
+	/*electromagnet: {
         name: "Electro Magnet",
         spritenum: 567,
 		onTryHit(target, source, move) {
@@ -1630,7 +1630,7 @@ export const Items: {[itemid: string]: ItemData} = {
         },
         num: 1944,
         gen: 9,
-    },
+    },*/
 	dubiousdisc: {
 		name: "Dubious Disc",
 		spritenum: 113,
