@@ -3423,13 +3423,13 @@ export const Items: {[itemid: string]: ItemData} = {
 		onModifyAtkPriority: 1,
 		onModifyAtk(atk, pokemon) {
 			if (pokemon.baseSpecies.baseSpecies === 'Pikachu')  {
-				return this.chainModify(2);
+				return this.chainModify(2.0);
 			}
 		},
 		onModifySpAPriority: 1,
 		onModifySpA(spa, pokemon) {
 			if (pokemon.baseSpecies.baseSpecies === 'Pikachu') {
-				return this.chainModify(2);
+				return this.chainModify(2.0);
 			}
 		},
 		itemUser: ["Pikachu", "Pikachu-Cosplay", "Pikachu-Rock-Star", "Pikachu-Belle", "Pikachu-Pop-Star", "Pikachu-PhD", "Pikachu-Libre", "Pikachu-Original", "Pikachu-Hoenn", "Pikachu-Sinnoh", "Pikachu-Unova", "Pikachu-Kalos", "Pikachu-Alola", "Pikachu-Partner", "Pikachu-Starter", "Pikachu-World", "Pikachu-Windychu", "Pikachu-Wavychu"],
