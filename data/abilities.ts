@@ -7287,8 +7287,6 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	weatherchu: {
 		name: "Weatherchu",
-		shortDesc: "This Pokémon gains a type based on the current weather.",
-		desc: "While this Pokémon is active, it gains an additional type depending on the weather: Water in rain, Fire in harsh sunlight, Rock in sandstorm, Ice in snow or hail, and Flying in strong winds. This effect ends when the weather changes or this Ability is lost.",
 		onUpdate(pokemon) {
 			const weather = this.field.effectiveWeather();
 
