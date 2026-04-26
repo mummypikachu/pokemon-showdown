@@ -20016,7 +20016,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Green",
 		evos: ["Unknown Evo-Browt"],
 		eggGroups: ["Grass"],
-		gen: 10,
+		// gen: 10,
 	},
 	unknownevobrowt: {
 		num: 1026,
@@ -20030,7 +20030,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		prevo: "Browt",
 		evoLevel: 16,
 		eggGroups: ["Undiscovered"],
-		gen: 10,
+		// gen: 10,
 	},
 	pombon: {
 		num: 1029,
@@ -20044,7 +20044,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Orange",
 		evos: ["Unknown Evo-Pombon"],
 		eggGroups: ["Field"],
-		gen: 10,
+		// gen: 10,
 	},
 	unknownevopombon: {
 		num: 1030,
@@ -20058,7 +20058,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		prevo: "Pombon",
 		evoLevel: 16,
 		eggGroups: ["Undiscovered"],
-		gen: 10,
+		// gen: 10,
 	},
 	gecqua: {
 		num: 1032,
@@ -20072,7 +20072,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Blue",
 		evos: ["Unknown Evo-Gecqua"],
 		eggGroups: ["Monster"],
-		gen: 10,
+		// gen: 10,
 	},
 	unknownevogecqua: {
 		num: 1033,
@@ -20086,7 +20086,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		prevo: "Gecqua",
 		evoLevel: 16,
 		eggGroups: ["Undiscovered"],
-		gen: 10,
+		// gen: 10,
 	},
 	missingno: {
 		num: 10110,
