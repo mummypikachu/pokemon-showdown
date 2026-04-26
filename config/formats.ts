@@ -1069,8 +1069,37 @@ export const Formats: FormatList = [
 					return [`${set.name}'s move ${move.name} is not allowed in this format.`];
 				}
 			}
-		},		
-	},		
+		},
+	},
+	{
+		name: "[Gen 9] Gen 10 OU",
+		mod: 'gen9',
+		ruleset: ['Standard'],
+
+		onValidateSet(set) {
+			const allowedPokemon = [
+				'Charmander', 'Charmeleon', 'Charizard', 'Pichu', 'Pikachu', 'Raichu', 'Raichu-Alola',
+				'Oddish', 'Gloom', 'Vileplume', 'Bellossom', 'Krabby', 'Kingler', 'Tangela', 'Tangrowth',
+				'Ledyba', 'Ledian', 'Slugma', 'Magcargo', 'Corsola', 'Taillow', 'Swellow', 'Wingull', 'Pelipper',
+				'Wailmer', 'Wailord', 'Duskull', 'Dusclops', 'Tropius', 'Dusknoir', 'Carnivine', 'Finneon', 'Lumineon',
+				'Carnivine', 'Tympole', 'Palpitoad', 'Seismitoad', 'Frillish', 'Jellicent', 'Tynamo', 'Eelektrik',
+				'Eelektross', 'Mareanie', 'Sandygast', 'Palossand', 'Sizzlipede', 'Centiskorch', 'Nymble',
+				'Lokix', 'Browt', 'Pombon', 'Gecqua',
+			];
+			const dexButBanned = [
+				'Toxapex',
+			];
+
+			const species = this.dex.species.get(set.species);
+
+			if (!allowedPokemon.includes(species.name)) {
+				return [`${species.name} is not allowed in this format.`];
+			}
+			if (dexButBanned.includes(species.name)) {
+				return [`${species.name} is in Generation 10, but is banned.`];
+			}
+		},
+	},
 	// Sigmatic Dex
 	///////////////////////////////////////////////////////////////////
 
