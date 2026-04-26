@@ -7285,4 +7285,45 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			pokemon.formeChange(nextForme, this.effect, true);
 		},
 	},
+	weatherchu: {
+		name: "Weatherchu",
+		onModifyType(move, pokemon) {
+			const types = pokemon.getTypes();
+			const weather = this.field.effectiveWeather();
+
+			let addedType: string | null = null;
+
+			switch (weather) {
+				case 'raindance':
+				case 'primordialsea':
+					addedType = 'Water';
+					break;
+
+				case 'sunnyday':
+				case 'desolateland':
+					addedType = 'Fire';
+					break;
+
+				case 'sandstorm':
+					addedType = 'Rock';
+					break;
+
+				case 'hail':
+				case 'snow':
+					addedType = 'Ice';
+					break;
+
+				case 'windy':
+				case 'deltastream':
+					addedType = 'Flying';
+					break;
+			}
+
+			if (addedType && !types.includes(addedType)) {
+				pokemon.addedType = addedType;
+			}
+		},
+		rating: 4,
+		num: 4181350,
+	},
 };
