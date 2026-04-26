@@ -1083,13 +1083,12 @@ export const Formats: FormatList = [
 
 		onValidateSet(set) {
 			const allowedPokemon = [
-				'Charmander', 'Charmeleon', 'Charizard', 'Squirtle', 'Wartortle', 'Pichu', 'Pikachu',
-				'Windychu', 'Wavychu', 'Raichu', 'Raichu-Alola', 'Oddish', 'Gloom',
-				'Vileplume', 'Bellossom', 'Krabby', 'Kingler', 'Tangela', 'Tangrowth', 'Riolu', 'Lucario',
+				'Charmander', 'Charmeleon', 'Charizard', 'Squirtle', 'Wartortle', 'Pichu', 'Pikachu', 'Raichu', 'Raichu-Alola',
+				'Oddish', 'Gloom', 'Vileplume', 'Bellossom', 'Krabby', 'Kingler', 'Tangela', 'Tangrowth',
 				'Ledyba', 'Ledian', 'Slugma', 'Magcargo', 'Corsola', 'Taillow', 'Swellow', 'Wingull', 'Pelipper',
 				'Wailmer', 'Wailord', 'Duskull', 'Dusclops', 'Tropius', 'Dusknoir', 'Carnivine', 'Finneon', 'Lumineon',
-				'Carnivine', 'Tympole', 'Palpitoad', 'Seismitoad', 'Frillish', 'Jellicent', 'Tynamo', 'Eelektrik',
-				'Eelektross', 'Mareanie', 'Sandygast', 'Palossand', 'Sizzlipede', 'Centiskorch', 'Nymble',
+				'Riolu', 'Lucario', 'Carnivine', 'Tympole', 'Palpitoad', 'Seismitoad', 'Frillish', 'Jellicent', 'Tynamo', 
+				'Eelektrik', 'Eelektross', 'Mareanie', 'Sandygast', 'Palossand', 'Sizzlipede', 'Centiskorch', 'Nymble',
 				'Lokix', 'Browt', 'Pombon', 'Gecqua',
 			];
 			const dexButBanned = [

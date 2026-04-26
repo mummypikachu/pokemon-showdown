@@ -219,12 +219,6 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
-	windychu: {
-		tier: "OU",
-	},
-	wavychu: {
-		tier: "OU",
-	},
 	raichu: {
 		tier: "RU",
 		doublesTier: "(DUU)",

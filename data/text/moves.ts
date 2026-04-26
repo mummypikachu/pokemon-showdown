@@ -7612,14 +7612,8 @@ export const MovesText: {[k: string]: MoveText} = {
 			desc: "Damage doubles if a weather condition is active, and this move's type changes to match. Ice type during Hail, Water type during Rain Dance, Rock type during Sandstorm, and Fire type during Sunny Day.",
 			shortDesc: "Damage doubles and type varies during weather.",
 		},
-		move: "Breakneck Blitz turned into [MOVE] due to the weather!",
-	},
-	weathertail: {
-		name: "Weather Tail",
-		desc: "Power doubles if a weather condition is active, and this move's type changes to match. Ice type during Snow, Water type during Primordial Sea or Rain Dance, Rock type during Sandstorm, and Fire type during Desolate Land or Sunny Day, Flying during Windy or Delta Stream. If the user is holding Utility Umbrella and uses Weather Ball during Primordial Sea, Rain Dance, Desolate Land, or Sunny Day, this move remains Normal type and does not double in power.",
-		shortDesc: "Power doubles and type varies in each weather.",
 
-		move: "Breakneck Blitz turned into [MOVE] due to weather!",
+		move: "Breakneck Blitz turned into [MOVE] due to the weather!",
 	},
 	weatherstorm: {
 		name: "Weather Storm",

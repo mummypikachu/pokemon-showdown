@@ -7285,9 +7285,4 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			pokemon.formeChange(nextForme, this.effect, true);
 		},
 	},
-	weatherchu: {
-		name: "Weatherchu",
-		rating: 0,
-		num: 1,
-	},
 };
