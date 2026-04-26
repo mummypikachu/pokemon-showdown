@@ -1072,7 +1072,7 @@ export const Formats: FormatList = [
 		},
 	},
 	{
-		name: "[Gen 9.5] Gen 10 OU",
+		name: "[Gen 9] Gen 10 OU",
 		mod: 'gen9',
 		ruleset: [
 			'Standard',
