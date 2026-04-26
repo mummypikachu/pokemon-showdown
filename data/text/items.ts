@@ -513,7 +513,7 @@ export const ItemsText: {[k: string]: ItemText} = {
 	},
 	electromagnet: {
 		name: "Electro Magnet",
-		desc: "Redirects Electric, halves damage of Electric and raises holders Sp.Atk by 1. 1 use.",
+		desc: "If holder is hit by an Electric move, this item allows it to absorb the attack and raises its Special Attack by 1.",
 	},
 	enigmaberry: {
 		name: "Enigma Berry",
