@@ -23305,7 +23305,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		maxMove: { basePower: 130 },
 		contestType: "Beautiful",
 	},
-	weathertail: {
+	/* weathertail: {
 		num: 311,
 		accuracy: 100,
 		basePower: 50,
@@ -23367,7 +23367,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		zMove: { basePower: 160 },
 		maxMove: { basePower: 130 },
 		contestType: "Beautiful",
-	},
+	}, */
 	weatherstorm: {
 		num: 911,
 		accuracy: 100,
