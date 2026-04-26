@@ -2835,7 +2835,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 172,
 		gen: 3,
 	},
-	honey: {
+	/*honey: {
 		name: "Honey",
 		spritenum: 196,
 		onUpdate(pokemon) {
@@ -2853,7 +2853,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 34,
 		gen: 4,
-	},
+	},*/
 	houndoominite: {
 		name: "Houndoominite",
 		spritenum: 591,
