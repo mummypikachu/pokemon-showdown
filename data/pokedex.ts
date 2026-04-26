@@ -792,10 +792,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Undiscovered"],
 		gen: 8,
 	},
-	pikachuwindychu: {
+	windychu: {
 		num: 25,
-		name: "Pikachu-Windychu",
-		baseSpecies: "Pikachu",
+		name: "Windychu",
 		forme: "Windychu",
 		types: ["Electric"],
 		gender: "M",
@@ -807,11 +806,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Undiscovered"],
 		gen: 9,
 	},
-	pikachuwavychu: {
+	wavychu: {
 		num: 25,
-		name: "Pikachu-Wavychu",
-		baseSpecies: "Pikachu",
-		forme: "Wavychu",
+		name: "Wavychu",
 		types: ["Electric"],
 		gender: "F",
 		baseStats: { hp: 35, atk: 55, def: 40, spa: 50, spd: 50, spe: 90 },

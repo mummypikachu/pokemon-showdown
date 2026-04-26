@@ -1084,7 +1084,7 @@ export const Formats: FormatList = [
 		onValidateSet(set) {
 			const allowedPokemon = [
 				'Charmander', 'Charmeleon', 'Charizard', 'Squirtle', 'Wartortle', 'Pichu', 'Pikachu',
-				'Pikachu-Windychu', 'Pikachu-Wavychu', 'Raichu', 'Raichu-Alola', 'Oddish', 'Gloom',
+				'Windychu', 'Wavychu', 'Raichu', 'Raichu-Alola', 'Oddish', 'Gloom',
 				'Vileplume', 'Bellossom', 'Krabby', 'Kingler', 'Tangela', 'Tangrowth', 'Riolu', 'Lucario',
 				'Ledyba', 'Ledian', 'Slugma', 'Magcargo', 'Corsola', 'Taillow', 'Swellow', 'Wingull', 'Pelipper',
 				'Wailmer', 'Wailord', 'Duskull', 'Dusclops', 'Tropius', 'Dusknoir', 'Carnivine', 'Finneon', 'Lumineon',
