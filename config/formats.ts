@@ -1076,9 +1076,9 @@ export const Formats: FormatList = [
 		mod: 'gen9',
 		ruleset: [
 			'Standard',
-			'!Dynamax Clause',
-			'!Terastal Clause',
-			'!Z-Move Clause',
+			'Dynamax Clause',
+			'Terastal Clause',
+			'Z-Move Clause',
 		],
 
 		onValidateSet(set) {
