@@ -5714,6 +5714,31 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "OU",
 		doublesTier: "DOU",
 	},
+	browt: {
+		tier: "LC",
+		natDexTier: "LC",
+	},
+	unknownevobrowt: {
+		isNonstandard: "Future",
+		tier: "Illegal",
+	},
+	pombon: {
+		tier: "LC",
+		natDexTier: "LC",
+	},
+	unknownevopombon: {
+		isNonstandard: "Future",
+		tier: "Illegal",
+	}, 
+	gecqua: {
+		tier: "LC",
+		natDexTier: "LC",
+	},
+	unknownevogecqua: {
+		isNonstandard: "Future",
+		tier: "Illegal",
+	},
+	//fakemon
 	kaburion: {
 		tier: "New",
 		natDexTier: "RU",
