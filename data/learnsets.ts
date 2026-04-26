@@ -93285,6 +93285,11 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			knockoff: ["9T"],
 		}
 	},
+	unknownevobrowt: {
+		learnset: {
+			splash: ["9M", "9L0", "9L1"],
+		},
+	},
 	pombon: {
 		learnset: {
 			tackle: ["9L1"],
@@ -93335,6 +93340,11 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			throatchop: ["9T"],
 		}
 	},
+	unknownevopombon: {
+		learnset: {
+			splash: ["9M", "9L0", "9L1"],
+		},
+	},
 	gecqua: {
 		learnset: {
 			pound: ["9L1"],
@@ -93371,6 +93381,11 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			helpinghand: ["9M"],
 			knockoff: ["9T"],
 		}
+	},
+	unknownevogecqua: {
+		learnset: {
+			splash: ["9M", "9L0", "9L1"],
+		},
 	},
 	aerileon: {
 		learnset: {
