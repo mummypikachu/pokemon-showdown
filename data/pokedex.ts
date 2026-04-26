@@ -20061,7 +20061,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Gecqua",
 		types: ["Water"],
 		genderRatio: {M: 0.875, F: 0.125},
-		baseStats: {hp: 55, atk: 49, def: 48, spa: 66, spd: 55, spe: 65},
+		baseStats: {hp: 55, atk: 46, def: 48, spa: 59, spd: 45, spe: 65},
 		abilities: {0: "Torrent", H: "No Ability"},
 		heightm: 0.3,
 		weightkg: 4.3,
