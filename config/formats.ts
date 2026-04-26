@@ -1091,13 +1091,13 @@ export const Formats: FormatList = [
 			];
 
 			const species = this.dex.species.get(set.species);
-
-			if (!allowedPokemon.includes(species.name)) {
-				return [`${species.name} is not allowed in this format.`];
-			}
 			if (dexButBanned.includes(species.name)) {
 				return [`${species.name} is in Generation 10, but is banned.`];
 			}
+			if (!allowedPokemon.includes(species.name)) {
+				return [`${species.name} is not in Generation 10.`];
+			}
+			
 		},
 	},
 	// Sigmatic Dex
