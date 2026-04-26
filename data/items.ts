@@ -1601,16 +1601,12 @@ export const Items: {[itemid: string]: ItemData} = {
 	
 	// },
 	electromagnet: {
-        name: "Electro Magnet",
-        spritenum: 567,
-		onTryHit(target, source, move) {
-			if (target !== source && move.type === 'Electric') {
-				target.useItem();
-				if (!this.boost({spa: 1})) {
-					this.add('-immune', target, '[from] item: Electro Magnet');
-					
-				}
-				return null;
+		name: "Electro Magnet",
+		spritenum: 273,
+
+		onSourceModifyDamage(damage, source, target, move) {
+			if (move.type === 'Electric') {
+				return this.chainModify(0.5);
 			}
 		},
 		onAnyRedirectTarget(target, source, source2, move) {
@@ -1619,18 +1615,20 @@ export const Items: {[itemid: string]: ItemData} = {
 			if (this.validTarget(this.effectState.target, source, redirectTarget)) {
 				if (move.smartTarget) move.smartTarget = false;
 				if (this.effectState.target !== target) {
-					this.add('-activate', this.effectState.target, 'ability: Lightning Rod');
+					this.add('-activate', this.effectState.target, 'item: Electro Magnet');
 				}
 				return this.effectState.target;
 			}
 		},
-        fling: {
-            basePower: 20,
-            status: 'par',
-        },
-        num: 1944,
-        gen: 9,
-    },
+
+		fling: {
+			basePower: 20,
+			status: 'par',
+		},
+
+		num: 1944,
+		gen: 9,
+	},
 	dubiousdisc: {
 		name: "Dubious Disc",
 		spritenum: 113,
