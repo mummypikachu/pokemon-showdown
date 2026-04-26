@@ -1072,8 +1072,8 @@ export const Formats: FormatList = [
 		},
 	},
 	{
-		name: "[Gen 10] OU",
-		mod: 'gen10',
+		name: "[Gen 9.5] Gen 10 OU",
+		mod: 'gen9',
 		ruleset: [
 			'Standard',
 			'Dynamax Clause',
