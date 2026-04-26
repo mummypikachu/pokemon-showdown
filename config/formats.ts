@@ -1094,6 +1094,9 @@ export const Formats: FormatList = [
 			const dexButBanned = [
 				'Toxapex',
 			];
+			const depictedButNotRevealed = [
+				'Slowpoke', 'Slowpoke-Galar', 'Slowbro', 'Slowbro-Galar', 'Slowking', 'Slowking-Galar',
+			];
 
 			if (set.item && this.dex.items.get(set.item).megaStone) {
 				return [`Mega Stones are banned in this format.`];
@@ -1101,6 +1104,9 @@ export const Formats: FormatList = [
 			const species = this.dex.species.get(set.species);
 			if (dexButBanned.includes(species.name)) {
 				return [`${species.name} is in Generation 10, but is banned.`];
+			}
+			if (depictedButNotRevealed.includes(species.name)) {
+				return [`${species.name} or a member of its line is depicted in a trailer, but wasn't shown as itself.`];
 			}
 			if (!allowedPokemon.includes(species.name)) {
 				return [`${species.name} is not in Generation 10.`];
