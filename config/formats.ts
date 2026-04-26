@@ -1074,7 +1074,12 @@ export const Formats: FormatList = [
 	{
 		name: "[Gen 9] Gen 10 OU",
 		mod: 'gen9',
-		ruleset: ['Standard'],
+		ruleset: [
+			'Standard',
+			'!Dynamax Clause',
+			'!Terastal Clause',
+			'!Z-Move Clause',
+		],
 
 		onValidateSet(set) {
 			const allowedPokemon = [
@@ -1090,6 +1095,9 @@ export const Formats: FormatList = [
 				'Toxapex',
 			];
 
+			if (set.item && this.dex.items.get(set.item).megaStone) {
+				return [`Mega Stones are banned in this format.`];
+			}
 			const species = this.dex.species.get(set.species);
 			if (dexButBanned.includes(species.name)) {
 				return [`${species.name} is in Generation 10, but is banned.`];
@@ -1097,7 +1105,7 @@ export const Formats: FormatList = [
 			if (!allowedPokemon.includes(species.name)) {
 				return [`${species.name} is not in Generation 10.`];
 			}
-			
+
 		},
 	},
 	// Sigmatic Dex
