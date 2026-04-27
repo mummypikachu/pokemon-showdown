@@ -293,7 +293,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 0,
 		color: "White",
 		eggGroups: ["Bug"],
-		requiredItem: "Butterfreeite",
+		requiredItem: "Butterfrite",
 	},
 	weedle: {
 		num: 13,
@@ -7856,7 +7856,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	roserade: {
 		num: 407,
 		name: "Roserade",
-		types: ["Grass", "Dark"],
+		types: ["Grass", "Poison"],
 		baseStats: {hp: 60, atk: 90, def: 80, spa: 125, spd: 105, spe: 95},
 		abilities: {0: "Phantom Thief", 1: "Protean", H: "Technician"},
 		heightm: 0.9,

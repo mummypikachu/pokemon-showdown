@@ -9,8 +9,8 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Abomasite",
 		desc: "If held by an Abomasnow, this item allows it to Mega Evolve in battle.",
 	},
-	butterfreeite: {
-		name: "Butterfreeite",
+	butterfrite: {
+		name: "Butterfrite",
 		desc: "If held by an Butterfree, this item allows it to Mega Evolve in battle.",
 	},
 	absolite: {
@@ -1946,6 +1946,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 	wormadite: {
 		name: "Wormadite",
 		desc: "If held by any Wormadam, this item allows it to Mega Evolve in battle.",
+	},
+	kinglerite: {
+		name: "Kinglerite",
+		desc: "If held by a Kingler, this item allows it to Mega Evolve in battle.",
 	},
 	sceptilite: {
 		name: "Sceptilite",

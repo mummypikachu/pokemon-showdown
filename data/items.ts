@@ -41,8 +41,8 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		gen: 9,
 	},
-	butterfreeite: {
-		name: "Butterfreeite",
+	butterfrite: {
+		name: "Butterfrite",
 		spritenum: 575,
 		megaStone: "Butterfree-Mega",
 		megaEvolves: "Butterfree",
