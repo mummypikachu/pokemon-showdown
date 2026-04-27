@@ -1354,11 +1354,16 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	owntempo: {
 		name: "Own Tempo",
 		desc: "This Pokemon cannot be confused. Gaining this Ability while confused cures it. This Pokemon is immune to the effect of the Intimidate Ability.",
-		shortDesc: "Immune to all forms of Speed control.",
+		shortDesc: "This Pokemon cannot be confused. Immune to Intimidate.",
 		gen7: {
 			desc: "This Pokemon cannot be confused. Gaining this Ability while confused cures it.",
 			shortDesc: "This Pokemon cannot be confused.",
 		},
+	},
+	speedcontrol: {
+		name: "Speed Control",
+		desc: "This Pokemon cannot have its speed changed, including Trick Room.",
+		shortDesc: "Immune to all forms of Speed control.",
 		
 		start: "  [POKEMON] is going at its own pace!",
 	},

@@ -118,6 +118,12 @@ export const Aliases: {[alias: string]: string} = {
 	zardy: "Charizard-Mega-Y",
 	mrx: "Raichu-Mega-X",
 	mry: "Raichu-Mega-Y",
+	raichux: "Raichu-Mega-X",
+	raichuy: "Raichu-Mega-Y",
+	flygonz: "Flygon-Mega-Z",
+	absolz: "Absol-Mega-Z",
+	garchompz: "Garchomp-Mega-Z",
+	lucarioz: "Lucario-Mega-Z",
 
 	// Pokéstar Studios
 	blackdoor: "Pokestar Black-Door",

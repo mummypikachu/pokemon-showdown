@@ -3845,8 +3845,34 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 65,
 	},
 	owntempo: {
+		onUpdate(pokemon) {
+			if (pokemon.volatiles['confusion']) {
+				this.add('-activate', pokemon, 'ability: Own Tempo');
+				pokemon.removeVolatile('confusion');
+			}
+		},
+		onTryAddVolatile(status, pokemon) {
+			if (status.id === 'confusion') return null;
+		},
+		onHit(target, source, move) {
+			if (move?.volatileStatus === 'confusion') {
+				this.add('-immune', target, 'confusion', '[from] ability: Own Tempo');
+			}
+		},
+		onTryBoost(boost, target, source, effect) {
+			if (effect.name === 'Intimidate' && boost.atk) {
+				delete boost.atk;
+				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Own Tempo', `[of] ${target}`);
+			}
+		},
+		isBreakable: true,
+		name: "Own Tempo",
+		rating: 1.5,
+		num: 20,
+	},
+	speedcontrol: {
 		onSwitchIn(target) {
-			this.add('-start', target, 'ability: Own Tempo');
+			this.add('-start', target, 'ability: Speed Control');
 		},
 		onFoeTryMove(target, source, move) {
 			const targetAllExceptions = ['perishsong', 'flowershield', 'rototiller'];
@@ -3854,22 +3880,22 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				return;
 			}
 	
-			const ownTempoHolder = this.effectState.target;
-			if ((source.isAlly(ownTempoHolder) || move.target === 'all') && move.priority > 0.1) {
+			const speedControlHolder = this.effectState.target;
+			if ((source.isAlly(speedControlHolder) || move.target === 'all') && move.priority > 0.1) {
 				this.attrLastMove('[still]');
-				this.add('cant', ownTempoHolder, 'ability: Own Tempo', move, '[of] ' + target);
+				this.add('cant', speedControlHolder, 'ability: Speed Control', move, '[of] ' + target);
 				return false;
 			}
 		},
 		onAnyModifySpe(spe, pokemon) {
-			if (pokemon.hasAbility('owntempo') && (pokemon.boosts.spe > 0)) {
+			if (pokemon.hasAbility('speedcontrol') && (pokemon.boosts.spe > 0)) {
 				return this.chainModify(1); // Neutralize the effect of Trick Room and speed boosts
 			}
 		},
 		isBreakable: true,
-		name: "Own Tempo",
+		name: "Speed Control",
 		rating: 3,
-		num: 20,
+		num: 517154,
 	},	
 	parentalbond: {
 		onPrepareHit(source, target, move) {
