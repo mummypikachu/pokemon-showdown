@@ -1097,9 +1097,20 @@ export const Formats: FormatList = [
 			const depictedButNotRevealed = [
 				'Slowpoke', 'Slowpoke-Galar', 'Slowbro', 'Slowbro-Galar', 'Slowking', 'Slowking-Galar',
 			];
+			const removedMoves = [
+				'terablast', 'hiddenpower', 'return', 'frustration', 'pursuit'
+			];
 
 			if (set.item && this.dex.items.get(set.item).megaStone) {
 				return [`Mega Stones are banned in this format.`];
+			}
+			for (const moveSlot of set.moves) {
+				const move = this.dex.moves.get(moveSlot);
+		
+				// Check if the move is not in the allowed list
+				if (removedMoves.includes(move.id)) {
+					return [`${set.name}'s move ${move.name} is not in Generation 10.`];
+				}
 			}
 			const species = this.dex.species.get(set.species);
 			if (dexButBanned.includes(species.name)) {

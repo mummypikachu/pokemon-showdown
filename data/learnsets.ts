@@ -30795,6 +30795,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sleeptalk: ["9M", "9M", "9M", "5T", "4M", "9T"],
 			smog: ["9L1", "9M", "6L1", "5L1", "4L1", "3L1"],
 			smokescreen: ["9E", "9E", "5E", "4E"],
+			solarbeam: ["9M"],
 			snore: ["9M", "9M", "6T", "5T", "9T", "9T"],
 			spitup: ["9E", "9E", "5E", "4E"],
 			stockpile: ["9E", "9E", "5E", "4E"],
@@ -30803,7 +30804,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "9M", "9M", "5M", "4M", "9T"],
 			swallow: ["9E", "9E", "5E", "4E"],
 			takedown: ["9M"],
-
 			toxic: ["9M", "7V", "9M", "5M", "4M", "3M"],
 			willowisp: ["9M", "9M", "9M", "5M", "4M"],
 			yawn: ["9L1", "9L1", "6L1", "5L1", "4L1", "3L1"],
