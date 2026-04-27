@@ -1084,15 +1084,17 @@ export const Formats: FormatList = [
 		onValidateSet(set) {
 			const allowedPokemon = [
 				'Charmander', 'Charmeleon', 'Charizard', 'Squirtle', 'Wartortle', 'Pichu', 'Pikachu', 'Raichu', 'Raichu-Alola',
-				'Oddish', 'Gloom', 'Vileplume', 'Bellossom', 'Krabby', 'Kingler', 'Tangela', 'Tangrowth',
-				'Ledyba', 'Ledian', 'Slugma', 'Magcargo', 'Corsola', 'Taillow', 'Swellow', 'Wingull', 'Pelipper',
-				'Wailmer', 'Wailord', 'Duskull', 'Dusclops', 'Tropius', 'Dusknoir', 'Carnivine', 'Finneon', 'Lumineon',
-				'Riolu', 'Lucario', 'Carnivine', 'Tympole', 'Palpitoad', 'Seismitoad', 'Frillish', 'Jellicent', 'Tynamo', 
-				'Eelektrik', 'Eelektross', 'Mareanie', 'Sandygast', 'Palossand', 'Sizzlipede', 'Centiskorch', 'Nymble',
-				'Lokix', 'Browt', 'Pombon', 'Gecqua',
+				'Oddish', 'Gloom', 'Vileplume', 'Bellossom', 'Krabby', 'Kingler', 'Magikarp', 'Tangela', 'Tangrowth',
+				'Gastly', 'Haunter', 'Ledyba', 'Ledian', 'Slugma', 'Magcargo', 'Corsola',
+				'Taillow', 'Swellow', 'Wingull', 'Pelipper', 'Shinx', 'Luxio', 'Luxray',
+				'Wailmer', 'Wailord', 'Duskull', 'Dusclops', 'Dusknoir', 'Tropius', 'Tympole', 'Palpitoad', 'Seismitoad',
+				'Carnivine', 'Finneon', 'Lumineon', 'Riolu', 'Lucario', 'Carnivine',
+				'Frillish', 'Jellicent', 'Tynamo', 'Eelektrik', 'Eelektross', 'Mareanie', 'Sandygast', 'Palossand',
+				'Sizzlipede', 'Centiskorch', 'Cufant', 'Copperajah', 'Snom', 'Frosmoth',
+				'Nymble', 'Lokix', 'Browt', 'Pombon', 'Gecqua',
 			];
 			const dexButBanned = [
-				'Toxapex', 'Blastoise',
+				'Toxapex', 'Blastoise', 'Gyarados', 'Gengar'
 			];
 			const depictedButNotRevealed = [
 				'Slowpoke', 'Slowpoke-Galar', 'Slowbro', 'Slowbro-Galar', 'Slowking', 'Slowking-Galar',
