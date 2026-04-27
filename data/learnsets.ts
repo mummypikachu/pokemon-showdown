@@ -28551,7 +28551,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 	},
 	wynaut: {
 		learnset: {
-			terablast: ["9M"],
 			amnesia: ["9M", "9L1"],
 			charm: ["9M", "9L1", "9L1", "6L1", "5L1", "4L1", "3L1", "9S0"],
 			counter: ["9L1", "9L15", "6L15", "5L15", "4L15", "3L15"],
@@ -28568,7 +28567,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 	},
 	wobbuffet: {
 		learnset: {
-			terablast: ["9M"],
 			amnesia: ["9M", "9L1"],
 			charm: ["9M", "9L1", "5D"],
 			counter: ["9L0", "9L1", "9M", "6L1", "6S2", "6S3", "5L1", "4L1", "3L1", "9S0", "9S1"],
@@ -78746,7 +78744,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 	},
 	pyukumuku: {
 		learnset: {
-			terablast: ["9M"],
 			attract: ["9M", "9M"],
 			batonpass: ["9M", "9L1", "9L1"],
 			bestow: ["9E"],
@@ -80461,7 +80458,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 	},
 	cosmog: {
 		learnset: {
-			terablast: ["9M"],
 			splash: ["9L1", "8S1", "9L1", "7S0"],
 			teleport: ["9L1", "8S1", "9L23"],
 		},
@@ -80473,7 +80469,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 	},
 	cosmoem: {
 		learnset: {
-			terablast: ["9M"],
 			cosmicpower: ["9M", "9L0", "9L1"],
 			teleport: ["9L1", "9L1"],
 		},
