@@ -6164,6 +6164,9 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "LC",
 	},
 	scaffixer: {
+		tier: "UUBL",
+	},
+	megawattrel: { //not a mega
 		tier: "OU",
 	},
 	// Start CAP/Missingno, don't place under this

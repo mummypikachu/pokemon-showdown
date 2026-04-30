@@ -20583,7 +20583,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 	},
 	ditto: {
 		learnset: {
-			terablast: ["9M"],
 			transform: ["9L1", "9L1", "9M", "9L1", "9M", "7S0", "6L1", "5L1", "4L1", "3L1"],
 		},
 		eventData: [
@@ -97852,6 +97851,21 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			recover: ["9M"],
 			stealthrock: ["9M"],
 			rest: ["9M"],
+		},
+	},
+	megawattrel: {
+		learnset: {
+			dive: ["9M"],
+			surf: ["9M"],
+			tailwind: ["9M"],
+			astonish: ["9M"],
+			heatwave: ["9M"],
+			ominouswind: ["9M"],
+			quickattack: ["9M"],
+			watergun: ["9M"],
+			pluck: ["9M"],
+			risingvoltage: ["9M"],
+			chargebeam: ["9M"],
 		},
 	},
 	syclar: {

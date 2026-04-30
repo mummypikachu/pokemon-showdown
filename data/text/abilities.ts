@@ -2475,6 +2475,13 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	windpower: {
 		name: "Wind Power",
+		desc: "This Pokemon gains the Charge effect when it takes a hit from a wind move or when Tailwind begins on this Pokemon's side.",
+		shortDesc: "This Pokemon gains the Charge effect when hit by a wind move or Tailwind begins.",
+
+		start: "#electromorphosis",
+	},
+	updraft: {
+		name: "Updraft",
 		desc: "On switch-in, this Pokemon sets up Tailwind for 3 turns.",
 		shortDesc: "On switch-in, this Pokemon sets up Tailwind for 3 turns.",
 	},

@@ -6749,12 +6749,29 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 193,
 	},
 	windpower: {
+		onDamagingHitOrder: 1,
+		onDamagingHit(damage, target, source, move) {
+			if (move.flags['wind']) {
+				target.addVolatile('charge');
+			}
+		},
+		onAllySideConditionStart(target, source, sideCondition) {
+			const pokemon = this.effectState.target;
+			if (sideCondition.id === 'tailwind') {
+				pokemon.addVolatile('charge');
+			}
+		},
+		name: "Wind Power",
+		rating: 1,
+		num: 277,
+	},
+	updraft: {
 			onStart(pokemon) {
 				const move = this.dex.moves.get('tailwind');
 				this.add('-ability', pokemon, 'Wind Power');
 				this.actions.useMove(move, pokemon);
 			},
-		name: "Wind Power",
+		name: "Updraft",
 		rating: 3.5,
 		num: 277,
 	},
