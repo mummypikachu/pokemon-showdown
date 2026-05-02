@@ -291,8 +291,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	airslash: {
 		num: 403,
-		accuracy: 95,
-		basePower: 85,
+		accuracy: 100,
+		basePower: 80,
 		category: "Special",
 		name: "Air Slash",
 		pp: 15,
