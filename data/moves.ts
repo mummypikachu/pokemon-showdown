@@ -21053,7 +21053,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		
 		name: "Tail Glow",
 		pp: 20,
 		priority: 0,
