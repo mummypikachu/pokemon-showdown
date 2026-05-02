@@ -21124,7 +21124,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		gen: 9,
 	},
 	// CONSTRUCTION POKEMON FORM END
-	megawattrel: { // this is NOT! a mega, name is a pun on "Megawatt". (Watt, Kilowatt, Megawatt)
+	megawattrel: { // this is !!NOT!! a mega
 		num: 1581,
 		name: "Megawattrel",
 		types: ["Electric", "Flying"],
