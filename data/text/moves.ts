@@ -7874,4 +7874,9 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "This move will be the same type as its users secondary type. If used by Scaffixer-Foundation, this move will be 70 Base Power. If used by Scaffixer-Scaffolding, this move will be 150 base power. Scaffixer-Complete, this move will be 300 base power. Else, its base power will be 20. Upon use, this Pokémon will transform into Scaffixer's base form if it is a form of Scaffixer.",
 		shortDesc: "Scaffixer: stronger on forms, changes to Scaffixer.",
 	},
+	infect: {
+		name: "Worry Seed",
+		desc: "Causes the target's Ability to become Infective. Fails if the target's Ability is As One, Battle Bond, Comatose, Commander, Disguise, Gulp Missile, Hadron Engine, Ice Face, Infective, Multitype, Orichalcum Pulse, Power Construct, Protosynthesis, Quark Drive, RKS System, Schooling, Shields Down, Stance Change, Truant, Zen Mode, or Zero to Hero.",
+		shortDesc: "The target's Ability becomes Infective.",
+	},
 };

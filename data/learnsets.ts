@@ -13333,7 +13333,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swallow: ["9E", "9E", "9E", "5E", "4E"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
-
+			infect: ["9M"],
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunder: ["9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
@@ -13443,7 +13443,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M"],
-
+			infect: ["9M"],
 			thief: ["9M", "9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
@@ -16527,7 +16527,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9M", "9L1", "7V", "6L1", "5L1", "4L1", "3L1"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
-
+			infect: ["9M"],
 			thief: ["9M", "9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			thunder: ["9M", "9M", "9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "7V", "9M", "5M", "4M", "3M"],
@@ -60799,6 +60799,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			toxicspikes: ["9M", "9L15", "9L7", "6L7", "5L7"],
 			venomdrench: ["9M"],
 			venoshock: ["9M", "9M", "6M", "5M"],
+			infect: ["9M"],
 		},
 	},
 	garbodor: {
@@ -64408,6 +64409,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			icefang: ["9M", "9M"],
 			icepunch: ["9M", "9M", "9M", "9E", "6T", "9E", "5T", "5E"],
 			icywind: ["9M", "9L9", "9M", "9L9", "9M", "9L13", "6T", "6L13", "5T", "5L13", "5S0"],
+			infect: ["9M"],
 			liquidation: ["9M"],
 			lowkick: ["9M", "9M", "9T", "6T", "5T"],
 			megakick: ["9M"],

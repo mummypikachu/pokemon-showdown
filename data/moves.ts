@@ -23980,4 +23980,42 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Ground",
 		contestType: "Tough",
 	},
+	infect: {
+		num: 13513153,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Infect",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1, allyanim: 1},
+		onTryImmunity(target) {
+			// Truant and Insomnia have special treatment; they fail before
+			// checking accuracy and will double Stomping Tantrum's BP
+			if (target.ability === 'truant' || target.ability === 'infective') {
+				return false;
+			}
+		},
+		onTryHit(target) {
+			if (target.getAbility().isPermanent) {
+				return false;
+			}
+		},
+		onHit(pokemon) {
+			const oldAbility = pokemon.setAbility('infective');
+			if (oldAbility) {
+				this.add('-ability', pokemon, 'Infective', '[from] move: Infect');
+				if (pokemon.status === 'slp') {
+					pokemon.cureStatus();
+				}
+				return;
+			}
+			return oldAbility as false | null;
+		},
+		secondary: null,
+		target: "normal",
+		type: "Poison",
+		zMove: {boost: {def: 1}},
+		contestType: "Clever",
+	},
 };

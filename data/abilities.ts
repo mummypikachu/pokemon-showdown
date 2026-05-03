@@ -7328,4 +7328,25 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			pokemon.formeChange(nextForme, this.effect, true);
 		},
 	},
+	infective: { // ONLY USE ON MOVE "INFECTION"
+	name: "Infective",
+	rating: -1,
+	num: 158135,
+
+	onResidual(pokemon) {
+		if (!pokemon.hasType('Poison')) {
+			this.damage(pokemon.baseMaxhp / 8, pokemon);
+		}
+	},
+
+	onDamagingHit(damage, target, source, move) {
+		if (!move.flags['contact']) return;
+		if (!source || source.hasType('Poison')) return;
+		if (source.ability === 'infective') return;
+
+		this.add('-ability', source, 'Infective', '[from] ability: Infective', '[of] ' + target);
+
+		source.setAbility('infective', target);
+	},
+},
 };
