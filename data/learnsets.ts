@@ -97981,6 +97981,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			powerwhip: ["9M"],
 			slash: ["9M"],
 			nightslash: ["9M"],
+			firelash: ["9M"],
 			cut: ["9M"],
 			bind: ["9M"],
 			quickattack: ["9M"],

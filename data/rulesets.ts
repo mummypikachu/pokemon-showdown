@@ -2726,6 +2726,9 @@ export const Rulesets: {[k: string]: FormatData} = {
 			if (set.species === 'Swoobat-Excir' && set.item === 'Swoobattite') {
 				return ["Swoobat-Excir cannot hold Swoobattite."];
 			}
+			if (set.species === 'Pyroar-Wildfire' && set.item === 'Pyroarite') {
+				return ["Pyroar-Wildfire cannot hold Pyroarite."];
+			}
 		},
 	},
 };
