@@ -24018,4 +24018,31 @@ export const Moves: {[moveid: string]: MoveData} = {
 		zMove: {boost: {def: 1}},
 		contestType: "Clever",
 	},
+	manelash: {
+		num: 75317135,
+		accuracy: 100,
+		basePower: 140,
+		category: "Physical",
+		name: "Mane Lash",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onDisableMove(pokemon) {
+			if (pokemon.lastMove?.id === 'manelash') pokemon.disableMove('manelash');
+		},
+		beforeMoveCallback(pokemon) {
+			if (pokemon.lastMove?.id === 'manelash') pokemon.addVolatile('manelash');
+		},
+		onAfterMove(pokemon) {
+			if (pokemon.removeVolatile('manelash')) {
+				this.add('-hint', "Some effects can force a Pokemon to use Mane Lash again in a row.");
+			}
+		},
+		secondary: {
+			chance: 30,
+			status: 'brn',
+		},
+		target: "normal",
+		type: "Fire",
+	},
 };

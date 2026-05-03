@@ -3782,6 +3782,11 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
+	pyroarwildfire: {
+		tier: "OU",
+		doublesTier: "(DUU)",
+		natDexTier: "RU",
+	},
 	flabebe: {
 		tier: "LC",
 	},

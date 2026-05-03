@@ -7879,4 +7879,8 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Causes the target's Ability to become Infective. Fails if the target's Ability is As One, Battle Bond, Comatose, Commander, Disguise, Gulp Missile, Hadron Engine, Ice Face, Infective, Multitype, Orichalcum Pulse, Power Construct, Protosynthesis, Quark Drive, RKS System, Schooling, Shields Down, Stance Change, Truant, Zen Mode, or Zero to Hero.",
 		shortDesc: "The target's Ability becomes Infective.",
 	},
+	manelash: {
+		name: "Mane Lash",
+		shortDesc: "Can't be selected turn after use. 30% burn.",
+	},
 };
