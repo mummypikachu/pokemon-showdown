@@ -232,6 +232,62 @@ export const Formats: FormatList = [
 		rated: false,
 		tournamentShow: false,
 		ruleset: ['PotD', 'Obtainable', 'Species Clause', 'HP Percentage Mod', 'Cancel Mod', 'Sleep Clause Mod'],
+	}, 
+	{
+		name: "[Gen 9] Gen 10 OU",
+		mod: 'gen9',
+		ruleset: [
+			'Standard',
+			'Dynamax Clause',
+			'Terastal Clause',
+			'Z-Move Clause',
+		],
+
+		onValidateSet(set) {
+			const allowedPokemon = [
+				'Charmander', 'Charmeleon', 'Charizard', 'Squirtle', 'Wartortle', 'Pichu', 'Pikachu', 'Raichu', 'Raichu-Alola',
+				'Oddish', 'Gloom', 'Vileplume', 'Bellossom', 'Krabby', 'Kingler', 'Magikarp', 'Tangela', 'Tangrowth',
+				'Gastly', 'Haunter', 'Ledyba', 'Ledian', 'Slugma', 'Magcargo', 'Corsola',
+				'Taillow', 'Swellow', 'Wingull', 'Pelipper', 'Shinx', 'Luxio', 'Luxray',
+				'Wailmer', 'Wailord', 'Duskull', 'Dusclops', 'Dusknoir', 'Tropius', 'Tympole', 'Palpitoad', 'Seismitoad',
+				'Carnivine', 'Finneon', 'Lumineon', 'Riolu', 'Lucario', 'Carnivine',
+				'Frillish', 'Jellicent', 'Tynamo', 'Eelektrik', 'Eelektross', 'Mareanie', 'Sandygast', 'Palossand',
+				'Sizzlipede', 'Centiskorch', 'Cufant', 'Copperajah', 'Snom', 'Frosmoth',
+				'Nymble', 'Lokix', 'Browt', 'Pombon', 'Gecqua',
+			];
+			const dexButBanned = [
+				'Toxapex', 'Blastoise', 'Gyarados', 'Gengar'
+			];
+			const depictedButNotRevealed = [
+				'Slowpoke', 'Slowpoke-Galar', 'Slowbro', 'Slowbro-Galar', 'Slowking', 'Slowking-Galar',
+			];
+			const removedMoves = [
+				'terablast', 'hiddenpower', 'return', 'frustration', 'pursuit'
+			];
+
+			if (set.item && this.dex.items.get(set.item).megaStone) {
+				return [`Mega Stones are banned in this format.`];
+			}
+			for (const moveSlot of set.moves) {
+				const move = this.dex.moves.get(moveSlot);
+
+				// Check if the move is not in the allowed list
+				if (removedMoves.includes(move.id)) {
+					return [`${set.name}'s move ${move.name} is not in Generation 10.`];
+				}
+			}
+			const species = this.dex.species.get(set.species);
+			if (dexButBanned.includes(species.name)) {
+				return [`${species.name} is in Generation 10, but is banned.`];
+			}
+			if (depictedButNotRevealed.includes(species.name)) {
+				return [`${species.name} or a member of its line is depicted in a trailer, but wasn't shown as itself.`];
+			}
+			if (!allowedPokemon.includes(species.name)) {
+				return [`${species.name} is not in Generation 10.`];
+			}
+
+		},
 	},
 	{
 		name: "[Gen 9] Custom Game",
@@ -1069,62 +1125,6 @@ export const Formats: FormatList = [
 					return [`${set.name}'s move ${move.name} is not allowed in this format.`];
 				}
 			}
-		},
-	},
-	{
-		name: "[Gen 9] Gen 10 OU",
-		mod: 'gen9',
-		ruleset: [
-			'Standard',
-			'Dynamax Clause',
-			'Terastal Clause',
-			'Z-Move Clause',
-		],
-
-		onValidateSet(set) {
-			const allowedPokemon = [
-				'Charmander', 'Charmeleon', 'Charizard', 'Squirtle', 'Wartortle', 'Pichu', 'Pikachu', 'Raichu', 'Raichu-Alola',
-				'Oddish', 'Gloom', 'Vileplume', 'Bellossom', 'Krabby', 'Kingler', 'Magikarp', 'Tangela', 'Tangrowth',
-				'Gastly', 'Haunter', 'Ledyba', 'Ledian', 'Slugma', 'Magcargo', 'Corsola',
-				'Taillow', 'Swellow', 'Wingull', 'Pelipper', 'Shinx', 'Luxio', 'Luxray',
-				'Wailmer', 'Wailord', 'Duskull', 'Dusclops', 'Dusknoir', 'Tropius', 'Tympole', 'Palpitoad', 'Seismitoad',
-				'Carnivine', 'Finneon', 'Lumineon', 'Riolu', 'Lucario', 'Carnivine',
-				'Frillish', 'Jellicent', 'Tynamo', 'Eelektrik', 'Eelektross', 'Mareanie', 'Sandygast', 'Palossand',
-				'Sizzlipede', 'Centiskorch', 'Cufant', 'Copperajah', 'Snom', 'Frosmoth',
-				'Nymble', 'Lokix', 'Browt', 'Pombon', 'Gecqua',
-			];
-			const dexButBanned = [
-				'Toxapex', 'Blastoise', 'Gyarados', 'Gengar'
-			];
-			const depictedButNotRevealed = [
-				'Slowpoke', 'Slowpoke-Galar', 'Slowbro', 'Slowbro-Galar', 'Slowking', 'Slowking-Galar',
-			];
-			const removedMoves = [
-				'terablast', 'hiddenpower', 'return', 'frustration', 'pursuit'
-			];
-
-			if (set.item && this.dex.items.get(set.item).megaStone) {
-				return [`Mega Stones are banned in this format.`];
-			}
-			for (const moveSlot of set.moves) {
-				const move = this.dex.moves.get(moveSlot);
-		
-				// Check if the move is not in the allowed list
-				if (removedMoves.includes(move.id)) {
-					return [`${set.name}'s move ${move.name} is not in Generation 10.`];
-				}
-			}
-			const species = this.dex.species.get(set.species);
-			if (dexButBanned.includes(species.name)) {
-				return [`${species.name} is in Generation 10, but is banned.`];
-			}
-			if (depictedButNotRevealed.includes(species.name)) {
-				return [`${species.name} or a member of its line is depicted in a trailer, but wasn't shown as itself.`];
-			}
-			if (!allowedPokemon.includes(species.name)) {
-				return [`${species.name} is not in Generation 10.`];
-			}
-
 		},
 	},
 	// Sigmatic Dex

@@ -43555,6 +43555,11 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			waterpulse: ["9T", "6T", "5D", "4M", "3M"],
 			weatherball: ["9L25", "6L25", "5L40", "4L30", "3L30"],
 			workup: ["9M", "5M"],
+			iciclecrash: ["9M"],
+			flamewheel: ["9M"],
+			liquidation: ["9M"],
+			aerialace: ["9M"],
+			rapidspin: ["9M"],
 		},
 	},
 	kecleon: {
