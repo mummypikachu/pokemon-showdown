@@ -20859,7 +20859,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		num: 1566,
 		name: "Guardyena",
 		types: ["Dark"],
-		baseStats: {hp: 90, atk: 105, def: 100, spa: 70, spd: 85, spe: 105},
+		baseStats: {hp: 90, atk: 115, def: 90, spa: 60, spd: 75, spe: 105},
 		abilities: {0: "Intimidate", 1: "Moxie", H: "Strong Jaw"},
 		heightm: 1,
 		weightkg: 37,
