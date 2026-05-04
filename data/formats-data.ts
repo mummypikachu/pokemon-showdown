@@ -3783,7 +3783,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "RU",
 	},
 	pyroarwildfire: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
@@ -5972,7 +5972,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "OU",
 		newDexTier: "RUBL",
 	},
-	ferrasteel: {
+	suiba: {
 		tier: "New",
 		doublesTier: "DOU",
 		natDexTier: "OU",
@@ -6169,7 +6169,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "LC",
 	},
 	scaffixer: {
-		tier: "UUBL",
+		tier: "UU",
 	},
 	megawattrel: { //not a mega
 		tier: "OU",
