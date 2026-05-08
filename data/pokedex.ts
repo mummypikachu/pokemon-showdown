@@ -3883,7 +3883,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Undiscovered"],
 		gen: 4,
 	},
-	pichuspikyearedmega: {
+	pichumega: {
 		num: 172,
 		name: "Pichu-Mega",
 		baseSpecies: "Pichu",
