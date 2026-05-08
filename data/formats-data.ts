@@ -156,6 +156,10 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	pichumega: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	pikachu: {
 		tier: "NFE",
 	},

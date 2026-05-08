@@ -8892,4 +8892,17 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 2643,
 		gen: 9,
 	},
+	pichunite: {
+		name: "Pichunite",
+		spritenum: 627,
+		megaStone: "Pichu-Mega",
+		megaEvolves: "Pichu-Spiky-eared",
+		itemUser: ["Pichu-Spiky-eared"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 2643,
+		gen: 9,
+	},
 };
