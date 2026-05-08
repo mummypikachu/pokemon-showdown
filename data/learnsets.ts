@@ -18714,6 +18714,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			uproar: ["9M"],
 			wonderroom: ["9M"],
 			zenheadbutt: ["9M"],
+			screenbash: ["9M"],
 		},
 		eventData: [
 			{ generation: 8, level: 15, isHidden: true, moves: ["copycat", "encore", "iceshard", "confusion"], pokeball: "cherishball" },
@@ -32678,6 +32679,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			uproar: ["9M"],
 			wildcharge: ["9M"],
 			zenheadbutt: ["9M", "9L37"],
+			screenbash: ["9M"],
 		},
 	},
 	smeargle: {
