@@ -6178,6 +6178,9 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	megawattrel: { //not a mega
 		tier: "OU",
 	},
+	possaho: {
+		tier: "NU",
+	},
 	// Start CAP/Missingno, don't place under this
 	missingno: {
 		isNonstandard: "Custom",

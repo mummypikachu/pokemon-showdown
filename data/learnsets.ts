@@ -98063,6 +98063,15 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			playrough: ["9M"],
 		},
 	},
+	possaho: {
+		learnset: {
+			stockpile: ["9M"],
+			spitup: ["9M"],
+			swallow: ["9M"],
+			belch: ["9M"],
+		},
+	},
+	//capmons
 	syclar: {
 		learnset: {
 			terablast: ["9M"],
