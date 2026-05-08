@@ -2287,6 +2287,11 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 					allyActive.cureStatus();
 				}
 			}
+			if (pokemon.hp && pokemon.status && this.randomChance(33, 100)) {
+				this.debug('healer');
+				this.add('-activate', pokemon, 'ability: Healer');
+				pokemon.cureStatus();
+			}
 		},
 		rating: 0,
 		num: 131,
