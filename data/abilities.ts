@@ -7354,9 +7354,15 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			source.setAbility('infective', target);
 		},
 	},
-	dynamo: { //placeholder
+	dynamo: {
+		onModifySpAPriority: 3,
+		onModifySpA(pokemon) {
+			if (this.field.isTerrain('electricterrain')) {
+				return this.chainModify(2);
+			}
+		},
 		name: "Dynamo",
-		rating: 1,
-		num: 251251251,
+		rating: 3,
+		num: 21552151,
 	},
 };
