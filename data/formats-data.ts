@@ -153,12 +153,12 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "LC",
 	},
 	pichuspikyeared: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "NU",
+		natDexTier: "RU",
 	},
 	pichumega: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "UU",
+		natDexTier: "RU",
 	},
 	pikachu: {
 		tier: "NFE",
