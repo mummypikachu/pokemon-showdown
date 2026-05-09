@@ -98151,6 +98151,8 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			calmmind: ["9M"],
 			eerieimpulse: ["9M"],
 			foresight: ["9M"],
+			wingattack: ["9M"],
+			dualwingbeat: ["9M"],
 		},
 	},
 	//capmons
