@@ -1639,7 +1639,6 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 324,
 		gen: 4,
-		
 	},
 	durinberry: {
 		name: "Durin Berry",
@@ -8904,5 +8903,15 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 2643,
 		gen: 9,
+	},
+	securitydisc: {
+		name: "Security Disc",
+		spritenum: 113,
+		fling: {
+			basePower: 50,
+		},
+		num: 324,
+		gen: 4,
+		
 	},
 };

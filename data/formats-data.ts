@@ -6181,6 +6181,9 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	possaho: {
 		tier: "NU",
 	},
+	porygon3: {
+		tier: "(OU)",
+	},
 	// Start CAP/Missingno, don't place under this
 	missingno: {
 		isNonstandard: "Custom",

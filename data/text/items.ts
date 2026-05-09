@@ -2736,6 +2736,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Zoom Lens",
 		desc: "The accuracy of attacks by the holder is 1.2x if it moves after its target.",
 	},
+	securitydisc: {
+		name: "Security Disc",
+		desc: "Evolves Porygon2 into Porygon3 when traded.",
+	},
 
 	// Gen 2 items
 

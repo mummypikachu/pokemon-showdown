@@ -98144,6 +98144,15 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			captivate: ["9M"],
 		},
 	},
+	porygon3: {
+		learnset: {
+			laserfocus: ["9M"],
+			nastyplot: ["9M"],
+			calmmind: ["9M"],
+			eerieimpulse: ["9M"],
+			foresight: ["9M"],
+		},
+	},
 	//capmons
 	syclar: {
 		learnset: {
