@@ -14123,16 +14123,13 @@ export const Moves: {[moveid: string]: MoveData} = {
 				this.add('-fail', source, 'move: Acidic Slime', '[forme]');
 				return null;
 			}
-			if (source.species.name === 'Tanisu') { //for barrier shield
+			if (source.ability === 'Barrier Shield') { // Barrier Shield mons can deflect this back.
 				return;
 			}
-			if (source.species.name === 'Tanince') {//for barrier shield
+			if (source.species.name === 'Ditto') {// transform
 				return;
 			}
-			if (source.species.name === 'Tanking') {//for barrier shield
-				return;
-			}
-			if (source.species.name === 'Tanking-Mega') {//for barrier shield
+			if (source.species.name === 'Mew') {// transform
 				return;
 			}
 			this.hint("Only Alkaslime can use this move.")
