@@ -3118,6 +3118,53 @@ export const Moves: {[moveid: string]: MoveData} = {
 		zMove: {effect: 'heal'},
 		contestType: "Beautiful",
 	},
+	conversion3: {
+		num: 13153176,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Conversion 3",
+		pp: 30,
+		priority: 1,
+		flags: { bypasssub: 1 },
+		onHit(target, source) {
+			const types = new Set<string>();
+
+			for (const moveSlot of source.moveSlots) {
+				const move = this.dex.moves.get(moveSlot.id);
+
+				// ignored moves
+				if (move.id === 'conversion3') continue;
+				if (move.id === 'conversion2') continue;
+				if (move.id === 'conversion') continue;
+				if (move.id === 'hiddenpower') continue;
+				if (move.id === 'terablast') continue;
+				if (move.id === 'weatherball') continue;
+				if (move.id === 'revelationdance') continue;
+
+				types.add(move.type);
+			}
+
+			const newTypes = [...types];
+
+			// fail if all moves are ignored ones
+			if (!newTypes.length) {
+				return false;
+			}
+
+			// sets user types
+			if (!source.setType(newTypes)) {
+				return false;
+			}
+
+			this.add('-start', source, 'typechange', newTypes.join('/'));
+		},
+		secondary: null,
+		target: "self",
+		type: "Normal",
+		zMove: { effect: 'heal' },
+		contestType: "Beautiful",
+	},
 	copycat: {
 		num: 383,
 		accuracy: true,

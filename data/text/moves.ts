@@ -1083,6 +1083,11 @@ export const MovesText: {[k: string]: MoveText} = {
 			shortDesc: "Changes user's type to resist the foe's last move.",
 		},
 	},
+	conversion3: {
+		name: "Conversion 3",
+		desc: "The user's type changes to match all types that this Pokémon has, including third types. The types this Pokémon obtains are the same as this Pokémon's moves. This move ignores the moves Conversion, Conversion 2, Conversion 3, Revelation Dance, Tera Blast, Hidden Power and Weather Ball, and will not turn into the types of these moves. This move fails if its movepool consists entirely of those moves, or already has the types it would turn into.",
+		shortDesc: "Changes user's type to match all of its moves.",
+	},
 	copycat: {
 		name: "Copycat",
 		desc: "The user uses the last move used by any Pokemon, including itself. The base move of Max and G-Max Moves is considered for this purpose. Fails if no move has been used, or if the last move used was Assist, Baneful Bunker, Beak Blast, Behemoth Bash, Behemoth Blade, Belch, Bestow, Celebrate, Chatter, Circle Throw, Copycat, Counter, Covet, Crafty Shield, Destiny Bond, Detect, Dragon Tail, Dynamax Cannon, Endure, Feint, Focus Punch, Follow Me, Helping Hand, Hold Hands, King's Shield, Mat Block, Me First, Metronome, Mimic, Mirror Coat, Mirror Move, Nature Power, Obstruct, Protect, Rage Powder, Roar, Shell Trap, Sketch, Sleep Talk, Snatch, Spiky Shield, Spotlight, Struggle, Switcheroo, Thief, Transform, Trick, or Whirlwind.",
