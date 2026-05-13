@@ -98215,6 +98215,9 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			doubleteam: ["9M"],
 			confide: ["9M"],
 			toxic: ["9M"],//end Univ. TMs
+			solarbeam: ["9M"],
+			sunnyday: ["9M"],
+			mirrormove: ["9M"],
 		},
 	},
 	mireflekt: {
@@ -98222,6 +98225,17 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			hyperbeam: ["9M"],
 			curse: ["9M"],
 			mirrorshot: ["9M"],
+			solarbeam: ["9M"],
+			sunnyday: ["9M"],
+			mirrormove: ["9M"],
+			slam: ["9M"],
+			screech: ["9M"],
+			block: ["9M"],
+			disable: ["9M"],
+			flail: ["9M"],
+			bodyslam: ["9M"],
+			heatwave: ["9M"],
+			slash: ["9M"],
 		},
 	},
 	//capmons
