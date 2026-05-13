@@ -6184,6 +6184,12 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	porygon3: {
 		tier: "(OU)",
 	},
+	hanmiror: {
+		tier: "LC",
+	},
+	mireflekt: {
+		tier: "OU",
+	},
 	// Start CAP/Missingno, don't place under this
 	missingno: {
 		isNonstandard: "Custom",

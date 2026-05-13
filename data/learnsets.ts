@@ -98183,6 +98183,47 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			conversion3: ["9M"],
 		},
 	},
+	hanmiror: {
+		learnset: {
+			mirrorshot: ["9M"],
+			mirrorcoat: ["9M"],
+			reflect: ["9M"],
+			flash: ["9M"],
+			psybeam: ["9M"],
+			psychic: ["9M"],
+			copycat: ["9M"],
+			curse: ["9M"],
+			psywave: ["9M"],
+			sonicboom: ["9M"],
+			lightscreen: ["9M"],
+			spotlight: ["9M"],
+			facade: ["9M"], //universal TMs. ALWAYS INCLUDE UNLESS NOTED OTHERWISE.
+			frustration: ["9M"],
+			return: ["9M"],
+			rest: ["9M"],
+			protect: ["9M"],
+			sleeptalk: ["9M"],
+			substitute: ["9M"],
+			attract: ["9M"],
+			snore: ["9M"],
+			round: ["9M"],
+			hiddenpower: ["9M"],
+			endure: ["9M"],
+			terablast: ["9M"],
+			captivate: ["9M"],
+			swagger: ["9M"],
+			doubleteam: ["9M"],
+			confide: ["9M"],
+			toxic: ["9M"],//end Univ. TMs
+		},
+	},
+	mireflekt: {
+		learnset: {
+			hyperbeam: ["9M"],
+			curse: ["9M"],
+			mirrorshot: ["9M"],
+		},
+	},
 	//capmons
 	syclar: {
 		learnset: {
