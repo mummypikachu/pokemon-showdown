@@ -2679,7 +2679,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		shortDesc: "Transforms Scaffixer into a better form at the end of the turn.",
 	},
 	infective: {
-		name: "Construction",
+		name: "Infective",
 		shortDesc: "Loses 1/8 max HP each turn; spreads to contacters unless they are Poison-type.",
 		desc: "This Pokémon loses 1/8 of its maximum HP at the end of each turn unless it is Poison-type. If another Pokémon makes contact with this Pokémon, that Pokémon's Ability becomes Infective unless it is Poison-type.",
 	},
