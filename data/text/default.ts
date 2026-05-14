@@ -43,7 +43,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		// message happens AFTER "Pokemon used Move!"
 		cant: "[POKEMON] can't use [MOVE]!",
 		cantNoMove: "[POKEMON] can't move!",
-		fail: "  But it failed! Skill issue...",
+		fail: "  But it failed! What a shame...",
 
 		// n.b. this is the default message for in-battle forme changes
 		// for the move Transform and ability Imposter, see the entry for the move Transform
@@ -207,7 +207,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		damage: "  [POKEMON] was hurt by poison!",
 	},
 	tox: {
-		start: "  [POKEMON] was badly poisoned! Goodbye Stall!",
+		start: "  [POKEMON] was badly poisoned! Hope it gets cured soon!",
 		startFromItem: "  [POKEMON] was badly poisoned by the [ITEM]! Poison is a good way to go!",
 		end: "#psn",
 		endFromItem: "#psn",
@@ -215,7 +215,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		damage: "#psn",
 	},
 	slp: {
-		start: "  [POKEMON] fell asleep! Honk choooo mimimimimi.",
+		start: "  [POKEMON] fell asleep! Rest easy!",
 		startFromRest: "  [POKEMON] slept and became healthy!",
 		alreadyStarted: "  [POKEMON] is already asleep!",
 		end: "  [POKEMON] woke up!",
@@ -231,16 +231,16 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		endFromItem: "  [POKEMON]'s [ITEM] snapped it out of its confusion!",
 		alreadyStarted: "  [POKEMON] is already confused!",
 		activate: "  [POKEMON] is confused!",
-		damage: "It hurt itself in its confusion!",
+		damage: "It hurt itself in its confusion! Yeowch!",
 	},
 	drain: {
 		heal: "  [SOURCE] had its energy drained!",
 	},
 	flinch: {
-		cant: "  [POKEMON] flinched and couldn't move! Skill issue...",
+		cant: "  [POKEMON] flinched and couldn't move! What a shame...",
 	},
 	heal: {
-		fail: "  [POKEMON]'s HP is full!",
+		fail: "  [POKEMON]'s HP is full! It can't heal any more!",
 	},
 	healreplacement: {
 		activate: "  [POKEMON] will restore its replacement's HP using its Z-Power!",
@@ -353,6 +353,11 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		end: "  The weirdness disappeared from the battlefield!",
 		block: "  [POKEMON] is protected by the Psychic Terrain!",
 	},
+	charredterrain: {
+		start: "  The battlefield got hot! Fire may be stronger!",
+		end: "  The battlefield cooled down!",
+		block: "  [POKEMON] can't be frozen in this terrain!",
+	},
 
 	// field effects
 	gravity: {
@@ -362,7 +367,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		activate: "[POKEMON] fell from the sky due to the gravity!",
 	},
 	magicroom: {
-		start: "  It created a bizarre area in which Pok\u00E9mon's held items lose their effects! Wait people actually use this?",
+		start: "  It created a bizarre area in which Pok\u00E9mon's held items lose their effects!",
 		end: "  Magic Room wore off, and held items' effects returned to normal!",
 	},
 	mudsport: {
@@ -378,7 +383,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		end: "  The effects of Water Sport have faded.",
 	},
 	wonderroom: {
-		start: "  It created a bizarre area in which Defense and Sp. Def stats are swapped! NO ONE IS USING THIS.",
+		start: "  It created a bizarre area in which Defense and Sp. Def stats are swapped!",
 		end: "  Wonder Room wore off, and Defense and Sp. Def stats returned to normal!",
 	},
 
