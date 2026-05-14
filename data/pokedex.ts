@@ -20745,7 +20745,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Human-Like"],
 		gen: 4,
 	},
-	flyfin: { // Replacement Kimairan
+	flyfin: {
 		num: 1555,
 		name: "Flyfin",
 		types: ["Water", "Flying"],
@@ -20758,7 +20758,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		evos: ["Olfin"],
 		gen: 3,
 	},
-	olfin: { // replacement lighli
+	olfin: {
 		num: 1556,
 		name: "Olfin",
 		types: ["Water", "Poison"],
@@ -21222,6 +21222,32 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		evoCondition: "Level up next to a reflective surface",
 		color: "Yellow",
 		eggGroups: ["Mineral"],
+	},
+	psyppy: {
+		num: 1582,
+		name: "Psyppy",
+		types: ["Psychic"],
+		baseStats: {hp: 44, atk: 68, def: 57, spa: 54, spd: 45, spe: 56},
+		abilities: {0: "Limber", H: "Cursed Body"},
+		heightm: 0.3,
+		evos: ["Psychound"],
+		weightkg: 2,
+		color: "Blue",
+		eggGroups: ["Field"],
+	},
+	psychound: {
+		num: 1583,
+		name: "Psychound",
+		types: ["Psychic", "Dark"],
+		gender: "N",
+		baseStats: {hp: 85, atk: 104, def: 86, spa: 94, spd: 81, spe: 108},
+		abilities: {0: "Limber", 1: "Intimidate", H: "Cursed Body"},
+		heightm: 1.3,
+		weightkg: 15,
+		prevo: "Psyppy",
+		evoLevel: 33,
+		color: "Blue",
+		eggGroups: ["Field"],
 	},
 	//cap
 	syclar: {

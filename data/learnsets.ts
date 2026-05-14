@@ -96729,6 +96729,23 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			dragonbreath: ["9M"],
 		},
 	},
+	boxart3: {
+		learnset: {
+			bite: ["9L1", "8S1", "9L1", "7S0"],
+			crunch: ["9L1", "8S1", "9L23"],
+			flamecharge: ["9M"],
+			zenheadbutt: ["9M"],
+			psychic: ["9M"],
+			psyshock: ["9M"],
+			nightslash: ["9M"],
+			quickattack: ["9M"],
+			extremespeed: ["9M"],
+			surf: ["9M"],
+			waterpulse: ["9M"],
+			psychicfangs: ["9M"],
+			slash: ["9M"],
+		},
+	},
 	shiomagune: {
 		learnset: {
 			terablast: ["9M"],
@@ -98236,6 +98253,23 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			bodyslam: ["9M"],
 			heatwave: ["9M"],
 			slash: ["9M"],
+		},
+	},
+	psyppy: {
+		learnset: {
+			lick: ["9L1"],
+			teleport: ["9L1"],
+			psychic: ["9L1"],
+			psywave: ["9L1"],
+			psyshock: ["9L1"],
+			calmmind: ["9L1"],
+			
+		},
+	},
+	psychound: {
+		learnset: {
+			bite: ["9L1", "8S1", "9L1", "7S0"],
+			crunch: ["9L1", "8S1", "9L23"],
 		},
 	},
 	//capmons

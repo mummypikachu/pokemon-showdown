@@ -5948,6 +5948,10 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "Uber",
 		newDexTier: "Uber",
 	},
+	boxart3: {
+		isNonstandard: "Future",
+		tier: "Illegal",
+	},
 	klangexcir: {
 		tier: "NFE",
 		natDexTier: "NFE",
@@ -6189,6 +6193,14 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	mireflekt: {
 		tier: "OU",
+	},
+	psyppy: {
+		isNonstandard: "Future",
+		tier: "Illegal",
+	},
+	psychound: {
+		isNonstandard: "Future",
+		tier: "Illegal",
 	},
 	// Start CAP/Missingno, don't place under this
 	missingno: {
