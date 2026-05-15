@@ -24089,4 +24089,66 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Fire",
 	},
+	prayer: {
+		num: 1298912598135,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Prayer",
+		pp: 5,
+		priority: 0,
+		flags: { snatch: 1 },
+		onHit(target, source) {
+			this.add('-message', `${source.name} did a Prayer to Arceus...`);
+			const roll = this.random(100);
+
+			// 20% dud
+			if (roll < 20) {
+				this.add('-message', `${source.name}'s Prayer went unanswered!`);
+				return;
+			}
+
+			// 20%
+			if (roll < 40) {
+				this.add('-message', `The Prayer manifested into a wish!`);
+				return this.actions.useMove('Wish', source);
+			}
+
+			// 20%
+			if (roll < 60) {
+				this.add('-message', `${source.name} was safeguarded by the Prayer!`);
+				return this.actions.useMove('Safeguard', source);
+			}
+
+			// 20%
+			if (roll < 80) {
+				this.add('-message', `The Prayer came true for a fallen ally!`);
+				return this.actions.useMove('Revival Blessing', source);
+			}
+
+			// 15%
+			if (roll < 95) {
+				this.add('-message', `The Prayer called a Judgment!`);
+				return this.actions.useMove('Judgment', source, target);
+			}
+
+			// 5%
+			this.add('-message', `The prayer boosted ${source.name} its stats!`);
+			this.boost({
+				atk: 2,
+				def: 2,
+				spa: 2,
+				spd: 2,
+				spe: 2,
+				accuracy: 2,
+				evasion: 2,
+			}, source);
+
+			return;
+		},
+		secondary: null,
+		target: "self",
+		type: "Almighty",
+		contestType: "Cute",
+	},
 };

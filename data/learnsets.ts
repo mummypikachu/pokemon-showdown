@@ -25863,6 +25863,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			yawn: ["9L20", "9L13", "6L13", "5L13", "4L15", "3L13", "9S0"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M", "9T", "6T", "5T", "9T"],
+			prayer: ["9M"],
 		},
 		eventData: [
 			{ generation: 3, level: 20, gender: "F", abilities: ["serenegrace"], moves: ["metronome", "charm", "sweetkiss", "yawn"], pokeball: "pokeball" },
@@ -36551,7 +36552,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			taunt: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			telekinesis: ["9T", "5M"],
 			teleport: ["9L15", "9L15", "9L9", "6L9", "5L12", "4L12", "3L16"],
-
+			prayer: ["9M"],
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderpunch: ["9M", "9M", "9T", "6T", "5T", "9T", "9T"],
@@ -38326,7 +38327,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "6L1", "5L1", "4L1", "3L1"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
+			prayer: ["9M"],
 			thief: ["9M"],
 			throatchop: ["9T"],
 			thunderpunch: ["9M", "7T", "6T", "5T", "9T", "9T"],
@@ -39343,7 +39344,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			takedown: ["9M"],
 			taunt: ["9M"],
 			telekinesis: ["9T", "5M"],
-
+			prayer: ["9M"],
 			thief: ["9M"],
 			thunderpunch: ["9M", "9E", "9T", "9E", "6T", "9E", "5T", "5E", "9T", "4E", "9T", "3E"],
 			toxic: ["9M", "9M", "5M", "4M", "3M"],
@@ -44408,6 +44409,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			wrap: ["9L1", "6L1", "5L1", "4L1"],
 			yawn: ["9L13", "6L13"],
 			zenheadbutt: ["9M", "6T", "5T", "9T"],
+			prayer: ["9M"],
 		},
 	},
 	chimecho: {
@@ -44509,6 +44511,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			yawn: ["9L13", "6L13", "5L25", "4L25", "3L25"],
 			zenheadbutt: ["9M", "6T", "5T", "9T"],
 			heatwave: ["9M"],
+			prayer: ["9M"],
 		},
 		eventData: [
 			{ generation: 3, level: 10, gender: "M", moves: ["wrap", "growl", "astonish"], pokeball: "pokeball" },
@@ -47051,6 +47054,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			waterpulse: ["9M", "6T", "4M", "3M"],
 			wish: ["9L1", "8S23", "9L1", "7S22", "6L1", "6S17", "6S18", "6S19", "6S20", "6S21", "5L1", "5S14", "5S15", "5S16", "4L1", "4S11", "4S12", "3L1", "3S0", "3S1", "3S2", "3S3", "3S4", "3S5", "3S6", "3S7", "3S8", "3S9"],
 			zenheadbutt: ["9M", "9L28", "9M", "9L35", "6T", "6L35", "5T", "5L35", "9T", "4L35"],
+			prayer: ["9M"],
 		},
 		eventData: [
 			{ generation: 3, level: 5, moves: ["wish", "confusion", "rest"], pokeball: "pokeball" },
@@ -57357,6 +57361,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			workup: ["9M", "9M", "5M"],
 			yawn: ["9E", "9E", "9E", "5E", "5D"],
 			zenheadbutt: ["9M", "9L20", "9T", "6T", "5T"],
+			prayer: ["9M"],
 		},
 		eventData: [
 			{ generation: 5, level: 30, gender: "F", nature: "Calm", abilities: ["healer"], moves: ["healpulse", "helpinghand", "refresh", "doubleslap"], pokeball: "cherishball" },
@@ -59442,6 +59447,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			workup: ["9M", "9L16", "9M", "9L25", "6L25", "5M", "5L25"],
 			yawn: ["9E", "9E", "9E", "5E"],
 			zenheadbutt: ["9M", "9T", "6T", "5T"],
+			prayer: ["9M"],
 		},
 	},
 	darumakagalar: {
@@ -60250,6 +60256,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			willowisp: ["9M", "9L16", "9M", "9L21", "6M", "6L21", "5M", "5L21"],
 			wonderroom: ["9M", "9T", "6T", "5T"],
 			zenheadbutt: ["9M", "9T", "6T"],
+			prayer: ["9M"],
 		},
 	},
 	yamaskgalar: {
@@ -88487,7 +88494,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M"],
 			tackle: ["9L1"],
 			takedown: ["9M", "9L24"],
-
+			prayer: ["9M"],
 			thief: ["9M"],
 			trick: ["9M"],
 			trickroom: ["9M"],
@@ -95991,6 +95998,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			raindance: ["9M"],
 			sunnyday: ["9M"],
 			ominouswind: ["9M"],
+			prayer: ["9M"],
 		},
 	},
 	hakogame: {
@@ -97868,7 +97876,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			worryseed: ["9M"],
 			solarbeam: ["9M"],
 			leafage: ["9M"],
-			tailwhip: ["9M"],
 		},
 	},
 	mentaicod: {

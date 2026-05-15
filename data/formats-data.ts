@@ -5285,12 +5285,12 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "LC",
 	},
 	scovillain: {
-		tier: "PU",
+		tier: "RU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
 	scovillainmega: {
-		tier: "UU",
+		tier: "OU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},

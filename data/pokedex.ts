@@ -20607,7 +20607,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Mineral"],
 		gen: 3,
 	},
-	essorism: { // Followed by little wisps. Orb-as-ability mon.
+	essorism: { // Orb-as-ability mon.
 		num: 1544,
 		name: "Essorism",
 		types: ["Ghost"],
