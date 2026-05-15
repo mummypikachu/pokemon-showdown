@@ -8876,7 +8876,6 @@ export const Items: {[itemid: string]: ItemData} = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-
 	},
 	wormadite: {
 		name: "Wormadite",
@@ -8893,7 +8892,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	pichunite: {
 		name: "Pichunite",
-		spritenum: 627,
+		spritenum: 580,
 		megaStone: "Pichu-Mega",
 		megaEvolves: "Pichu-Spiky-eared",
 		itemUser: ["Pichu-Spiky-eared"],
@@ -8912,6 +8911,55 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 324,
 		gen: 4,
-		
+	},
+	/*simisagite: {
+		name: "Simisagite",
+		spritenum: 627,
+		megaStone: "Simisage-Mega",
+		megaEvolves: "Simisage",
+		itemUser: ["Simisage"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 2643,
+		gen: 9,
+	},
+	simipourite: {
+		name: "Simipourite",
+		spritenum: 627,
+		megaStone: "Simipour-Mega",
+		megaEvolves: "Simipour",
+		itemUser: ["Simipour"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 2643,
+		gen: 9,
+	},
+	simisearite: {
+		name: "Simisearite",
+		spritenum: 627,
+		megaStone: "Simisear-Mega",
+		megaEvolves: "Simisear",
+		itemUser: ["Simisear"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 2643,
+		gen: 9,
+	},*/
+	vikavoltite: {
+		name: "Vikavoltite",
+		spritenum: 625,
+		megaStone: "Vikavolt-Mega",
+		megaEvolves: "Vikavolt",
+		itemUser: ["Vikavolt"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
 	},
 };
