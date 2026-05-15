@@ -6374,7 +6374,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		num: 327,
 		name: "Spinda",
 		types: ["Normal"],
-		baseStats: {hp: 85, atk: 75, def: 85, spa: 75, spd: 85, spe: 75},
+		baseStats: {hp: 88, atk: 88, def: 88, spa: 88, spd: 88, spe: 88},
 		abilities: {0: "Own Tempo", 1: "Tangled Feet", H: "Contrary"},
 		heightm: 1.1,
 		weightkg: 5,

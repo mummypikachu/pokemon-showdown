@@ -41319,6 +41319,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			snore: ["9T", "6T", "5T", "9T", "9T"],
 			spotlight: ["9E"],
 			stompingtantrum: ["9T"],
+			spinout: ["9M"],
 			strength: ["9M", "5M", "4M", "3M"],
 			substitute: ["9M", "9M", "5M", "4M", "9T"],
 			suckerpunch: ["9L28", "6L28", "5L32", "9T", "4L32"],
