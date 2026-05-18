@@ -21224,7 +21224,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Mineral"],
 	},
 	psyppy: {
-		num: 1582,
+		num: 1584,
 		name: "Psyppy",
 		types: ["Psychic"],
 		baseStats: {hp: 44, atk: 68, def: 57, spa: 54, spd: 45, spe: 56},
@@ -21236,7 +21236,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Field"],
 	},
 	psychound: {
-		num: 1583,
+		num: 1585,
 		name: "Psychound",
 		types: ["Psychic", "Dark"],
 		gender: "N",
