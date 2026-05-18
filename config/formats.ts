@@ -46,7 +46,7 @@ export const Formats: FormatList = [
 		rated: false,
 		ruleset: [
 			'Picked Team Size = 3', 'Max Team Size = 6',
-			'Standard', '+CAP'	
+			'Standard', '+CAP'
 		],
 		banlist: ['Uber', 'AG', 'Moody', 'Sand Veil', 'Snow Cloak', 'King\'s Rock', 'Baton Pass', 'Shedinja + Air Balloon'],
 	},
@@ -60,7 +60,7 @@ export const Formats: FormatList = [
 		rated: false,
 		ruleset: [
 			'Picked Team Size = 3', 'Max Team Size = 6',
-			'Standard', '+CAP'	
+			'Standard', '+CAP'
 		],
 	},
 	{
@@ -232,7 +232,7 @@ export const Formats: FormatList = [
 		rated: false,
 		tournamentShow: false,
 		ruleset: ['PotD', 'Obtainable', 'Species Clause', 'HP Percentage Mod', 'Cancel Mod', 'Sleep Clause Mod'],
-	}, 
+	},
 	{
 		name: "[Gen 9] Gen 10 OU",
 		mod: 'gen9',
@@ -264,7 +264,16 @@ export const Formats: FormatList = [
 			const removedMoves = [
 				'terablast', 'hiddenpower', 'return', 'frustration', 'pursuit'
 			];
+			const fanItems = [
+				'strikervest', 'bronzebrick', 'securitydisc', 'electromagnet', 'eterniaorb',
+			];
 
+			const item = this.dex.items.get(set.item);
+
+			// Check if the item is banned
+			if (fanItems.includes(item.id)) {
+				return [`${set.name}'s item ${item.name} is a fan item and not allowed in Gen 10 OU.`];
+			}
 			if (set.item && this.dex.items.get(set.item).megaStone) {
 				return [`Mega Stones are banned in this format.`];
 			}
@@ -295,7 +304,7 @@ export const Formats: FormatList = [
 		mod: 'gen9',
 		searchShow: false,
 		debug: true,
-		battle: {trunc: Math.trunc},
+		battle: { trunc: Math.trunc },
 		// no restrictions, for serious (other than team preview)
 		ruleset: ['Team Preview', 'Cancel Mod', 'Max Team Size = 24', 'Max Move Count = 24', 'Max Level = 9999', 'Default Level = 100'],
 	},
@@ -372,7 +381,7 @@ export const Formats: FormatList = [
 		mod: 'gen9',
 		gameType: 'doubles',
 		searchShow: false,
-		battle: {trunc: Math.trunc},
+		battle: { trunc: Math.trunc },
 		debug: true,
 		// no restrictions, for serious (other than team preview)
 		ruleset: ['Team Preview', 'Cancel Mod', 'Max Team Size = 24', 'Max Move Count = 24', 'Max Level = 9999', 'Default Level = 100'],
@@ -423,7 +432,7 @@ export const Formats: FormatList = [
 			if (this.ruleTable.isRestricted(`move:${move.id}`) ||
 				((accuracyLoweringMove || move.ohko || move.multihit || move.id === 'beatup' || move.flags['charge'] ||
 					move.priority > 0 || move.damageCallback || flinchMove || freezeMove || move.selfSwitch) &&
-				!this.ruleTable.has(`+move:${move.id}`))) {
+					!this.ruleTable.has(`+move:${move.id}`))) {
 				problems.push(`The move ${move.name} can't be used as an item.`);
 			}
 			return problems.length ? problems : null;
@@ -441,7 +450,7 @@ export const Formats: FormatList = [
 		onModifyMove(move, pokemon, target) {
 			const forte: ActiveMove = pokemon.m.forte;
 			if (move.category !== 'Status' && forte) {
-				move.flags = {...move.flags, ...forte.flags};
+				move.flags = { ...move.flags, ...forte.flags };
 				if (forte.self) {
 					if (forte.self.onHit && move.self?.onHit) {
 						for (const i in forte.self) {
@@ -449,11 +458,11 @@ export const Formats: FormatList = [
 							(move.self as any)[i] = (forte.self as any)[i];
 						}
 					} else {
-						move.self = {...(move.self || {}), ...forte.self};
+						move.self = { ...(move.self || {}), ...forte.self };
 					}
 				}
 				if (forte.selfBoost?.boosts) {
-					if (!move.selfBoost?.boosts) move.selfBoost = {boosts: {}};
+					if (!move.selfBoost?.boosts) move.selfBoost = { boosts: {} };
 					let boostid: BoostID;
 					for (boostid in forte.selfBoost.boosts) {
 						if (!move.selfBoost.boosts![boostid]) move.selfBoost.boosts![boostid] = 0;
@@ -765,22 +774,22 @@ export const Formats: FormatList = [
 			if (!target.m.hasBounty) return;
 			if (source) {
 				this.add('-message', `${source.name} received the bounty!`);
-				this.boost({atk: 1, def: 1, spa: 1, spd: 1, spe: 1}, source, target, effect);
+				this.boost({ atk: 1, def: 1, spa: 1, spd: 1, spe: 1 }, source, target, effect);
 			}
 		},
 	},
 
 	{
-        name: "[Gen 1] OU",
-        threads: [
-            `&bullet; <a href="https://www.smogon.com/forums/threads/3689726/">RBY Sample Teams</a>,`,
-            `&bullet; <a href="https://www.smogon.com/forums/threads/3685861/">RBY OU Viability Rankings</a>,`
-        ],
+		name: "[Gen 1] OU",
+		threads: [
+			`&bullet; <a href="https://www.smogon.com/forums/threads/3689726/">RBY Sample Teams</a>,`,
+			`&bullet; <a href="https://www.smogon.com/forums/threads/3685861/">RBY OU Viability Rankings</a>,`
+		],
 
-        mod: 'gen1nat',
-        ruleset: ['Standard'],
-        banlist: ['Uber'],
-    },
+		mod: 'gen1nat',
+		ruleset: ['Standard'],
+		banlist: ['Uber'],
+	},
 	{
 		name: "[Gen 9] Partners in Crime",
 		desc: `Doubles-based metagame where both active ally Pok&eacute;mon share abilities and moves.`,
@@ -818,14 +827,14 @@ export const Formats: FormatList = [
 				if (!pokemon.m.innate && !BAD_ABILITIES.includes(this.toID(ally.ability))) {
 					pokemon.m.innate = 'ability:' + ally.ability;
 					if (!ngas || ally.getAbility().isPermanent || pokemon.hasItem('Ability Shield')) {
-						pokemon.volatiles[pokemon.m.innate] = {id: pokemon.m.innate, target: pokemon};
+						pokemon.volatiles[pokemon.m.innate] = { id: pokemon.m.innate, target: pokemon };
 						pokemon.m.startVolatile = true;
 					}
 				}
 				if (!ally.m.innate && !BAD_ABILITIES.includes(this.toID(pokemon.ability))) {
 					ally.m.innate = 'ability:' + pokemon.ability;
 					if (!ngas || pokemon.getAbility().isPermanent || ally.hasItem('Ability Shield')) {
-						ally.volatiles[ally.m.innate] = {id: ally.m.innate, target: ally};
+						ally.volatiles[ally.m.innate] = { id: ally.m.innate, target: ally };
 						ally.m.startVolatile = true;
 					}
 				}
@@ -889,14 +898,14 @@ export const Formats: FormatList = [
 				if (!pokemon.m.innate && !BAD_ABILITIES.includes(this.toID(ally.ability))) {
 					pokemon.m.innate = 'ability:' + ally.ability;
 					if (!ngas || ally.getAbility().isPermanent || pokemon.hasItem('Ability Shield')) {
-						pokemon.volatiles[pokemon.m.innate] = {id: pokemon.m.innate, target: pokemon};
+						pokemon.volatiles[pokemon.m.innate] = { id: pokemon.m.innate, target: pokemon };
 						pokemon.m.startVolatile = true;
 					}
 				}
 				if (!ally.m.innate && !BAD_ABILITIES.includes(this.toID(pokemon.ability))) {
 					ally.m.innate = 'ability:' + pokemon.ability;
 					if (!ngas || pokemon.getAbility().isPermanent || ally.hasItem('Ability Shield')) {
-						ally.volatiles[ally.m.innate] = {id: ally.m.innate, target: ally};
+						ally.volatiles[ally.m.innate] = { id: ally.m.innate, target: ally };
 						ally.m.startVolatile = true;
 					}
 				}
@@ -933,7 +942,7 @@ export const Formats: FormatList = [
 			`&bullet; <a href="https://www.smogon.com/forums/threads/3679692/">Pok&eacute;bilities</a>`,
 		],
 		mod: 'pokebilities',
-		ruleset: ['Standard OMs','Sleep Clause Mod'],
+		ruleset: ['Standard OMs', 'Sleep Clause Mod'],
 		banlist: [
 			'Uber', 'Power Construct',
 			'Baton Pass', 'King\'s Rock', 'Moody', 'Shadow Tag', 'Arena Trap',
@@ -1119,7 +1128,7 @@ export const Formats: FormatList = [
 			// Check each move in the set
 			for (const moveSlot of set.moves) {
 				const move = this.dex.moves.get(moveSlot);
-		
+
 				// Check if the move is not in the allowed list
 				if (!allowedMoves.includes(move.id)) {
 					return [`${set.name}'s move ${move.name} is not allowed in this format.`];
@@ -1141,7 +1150,7 @@ export const Formats: FormatList = [
 		ruleset: ['Standard SigmaDex', '+CAP'],
 		banlist: ['Moody', 'Sand Veil', 'Snow Cloak', 'King\'s Rock', 'Baton Pass', 'Gorilla Tactics', 'Last Respects', 'Shedinja + Air Balloon', 'Zygarde + Power Construct'],
 	},
-		// New Dex
+	// New Dex
 	///////////////////////////////////////////////////////////////////
 
 	{

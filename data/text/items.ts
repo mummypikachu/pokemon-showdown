@@ -1,4 +1,4 @@
-export const ItemsText: {[k: string]: ItemText} = {
+export const ItemsText: { [k: string]: ItemText; } = {
 	abilityshield: {
 		name: "Ability Shield",
 		desc: "Holder's Ability cannot be changed by any effect.",
@@ -522,7 +522,7 @@ export const ItemsText: {[k: string]: ItemText} = {
 			desc: "No competitive use.",
 		},
 	},
-	eterniaorb:{
+	eterniaorb: {
 		name: "Eternia Orb",
 		desc: "If held by a Eternatus, this item triggers its Eternalizing in battle.",
 	},
@@ -2747,6 +2747,10 @@ export const ItemsText: {[k: string]: ItemText} = {
 	securitydisc: {
 		name: "Security Disc",
 		desc: "Evolves Porygon2 into Porygon3 when traded.",
+	},
+	bronzebrick: {
+		name: "Bronze Brick",
+		desc: "If held by a Hoopa, its will always get Critical hits.",
 	},
 
 	// Gen 2 items

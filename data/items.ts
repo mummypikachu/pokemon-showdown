@@ -3516,7 +3516,6 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Chansey"],
 		num: 256,
 		gen: 2,
-	
 	},
 	lumberry: {
 		name: "Lum Berry",
@@ -8961,5 +8960,20 @@ export const Items: {[itemid: string]: ItemData} = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
+	},
+	bronzebrick: {
+		name: "Bronze Brick",
+		spritenum: 23,
+		fling: {
+			basePower: 100,
+		},
+		onModifyCritRatio(critRatio, user) {
+			if (user.baseSpecies.name === 'Hoopa', 'Hoopa-Unbound') {
+				return critRatio + 3;
+			}
+		},
+		itemUser: ["Hoopa", "Hoopa-Unbound"],
+		num: 256622662,
+		gen: 6,
 	},
 };
