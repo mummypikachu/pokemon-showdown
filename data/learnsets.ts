@@ -95656,6 +95656,16 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M"],
 			doubleteam: ["9M"],
 			confide: ["9M"],//end Univ. TMs
+			moonblast: ["9M"],
+			moonlight: ["9M"],
+			meteormash: ["9M"],
+			leer: ["9M"],
+			lashout: ["9M"],
+			nastyplot: ["9M"],
+			bulkup: ["9M"],
+			hyperfang: ["9M"],
+			megapunch: ["9M"],
+			hypervoice: ["9M"],
 		},
 	},
 	bounspike: {

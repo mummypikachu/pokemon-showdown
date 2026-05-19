@@ -4590,6 +4590,16 @@
             }
         ]
     },
+    "shabo": {
+        "level": 88,
+        "sets": [
+            {
+                "role": "Fast Sweeper",
+                "movepool": ["Dark Pulse", "Nasty Plot", "Moonblast", "Hyper Voice"],
+                "teraTypes": ["Fairy"]
+            }
+        ]
+    },
     "basculinexcir": {
         "level": 86,
         "sets": [

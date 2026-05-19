@@ -5738,7 +5738,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	unknownevopombon: {
 		isNonstandard: "Future",
 		tier: "Illegal",
-	}, 
+	},
 	gecqua: {
 		tier: "LC",
 		natDexTier: "LC",
@@ -6195,10 +6195,12 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "OU",
 	},
 	psyppy: {
-		isNonstandard: "Future",
-		tier: "Illegal",
+		tier: "LC",
 	},
 	psychound: {
+		tier: "OU",
+	},
+	caizhi: {
 		isNonstandard: "Future",
 		tier: "Illegal",
 	},

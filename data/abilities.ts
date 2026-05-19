@@ -2852,6 +2852,16 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 2.5,
 		num: 154,
 	},
+	unjustified: {
+		onDamagingHit(damage, target, source, move) {
+			if (move.type === 'Fairy') {
+				this.boost({atk: 1});
+			}
+		},
+		name: "Unjustified",
+		rating: 2.5,
+		num: 154154,
+	},
 	keeneye: {
 		onTryBoost(boost, target, source, effect) {
 			if (source && target === source) return;

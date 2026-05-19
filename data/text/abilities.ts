@@ -953,6 +953,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Justified",
 		shortDesc: "This Pokemon's Attack is raised by 1 stage after it is damaged by a Dark-type move.",
 	},
+	unjustified: {
+		name: "Unjustified",
+		shortDesc: "This Pokemon's Attack is raised by 1 stage after it is damaged by a Fairy-type move.",
+	},
 	strongjabs: {
 		name: "Strong Jabs",
 		shortDesc: "Increases the power of jabbing moves by 1.3.",
