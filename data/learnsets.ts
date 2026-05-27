@@ -97681,7 +97681,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			substitute: ["9M"],
 			round: ["9M"],
 			naturalgift: ["9M"],
-			trickroom: ["9M"],
 			fling: ["9M"],
 			surf: ["9M"],
 			attract: ["9M"],
