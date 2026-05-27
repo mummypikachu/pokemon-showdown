@@ -24122,8 +24122,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 
 			// 20%
 			if (roll < 80) {
-				this.add('-message', `The Prayer came true for a fallen ally!`);
-				return this.actions.useMove('Revival Blessing', source);
+				this.add('-message', `The Prayer made ${source.name} be enveloped in a protective mist!`);
+				return this.actions.useMove('Mist', source);
 			}
 
 			// 15%
@@ -24135,13 +24135,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 			// 5%
 			this.add('-message', `The prayer boosted ${source.name} its stats!`);
 			this.boost({
-				atk: 2,
-				def: 2,
-				spa: 2,
-				spd: 2,
-				spe: 2,
-				accuracy: 2,
-				evasion: 2,
+				atk: 1,
+				def: 1,
+				spa: 1,
+				spd: 1,
+				spe: 1,
 			}, source);
 
 			return;

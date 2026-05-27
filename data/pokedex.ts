@@ -21250,7 +21250,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Field"],
 	},
 	caizhi: { // by @rhipuyo
-		num: 1581,
+		num: 1586,
 		name: "Cai-zhi",
 		types: ["Fairy", "Psychic"],
 		baseStats: {hp: 110, atk: 95, def: 85, spa: 95, spd: 85, spe: 80},
@@ -21259,6 +21259,17 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 91,
 		color: "White",
 		eggGroups: ["Field", "Dragon"],
+	},
+	ourobothon: {
+		num: 1587,
+		name: "Ourobothon",
+		types: ["Dragon"],
+		baseStats: {hp: 88, atk: 96, def: 88, spa: 96, spd: 88, spe: 96},
+		abilities: {0: "Infinity"},
+		heightm: 8,
+		weightkg: 88,
+		color: "Red",
+		eggGroups: ["Dragon"],
 	},
 	//cap
 	syclar: {

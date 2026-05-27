@@ -6204,6 +6204,10 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		isNonstandard: "Future",
 		tier: "Illegal",
 	},
+	ourobothon: {
+		isNonstandard: "Future",
+		tier: "Illegal",
+	},
 	// Start CAP/Missingno, don't place under this
 	missingno: {
 		isNonstandard: "Custom",
