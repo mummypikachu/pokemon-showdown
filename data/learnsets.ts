@@ -98474,6 +98474,11 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			firstimpression: ["9M"],
 		},
 	},
+	kricketude: {
+		learnset: {
+			bis: ["9L1"],
+		},
+	},
 	//capmons
 	syclar: {
 		learnset: {

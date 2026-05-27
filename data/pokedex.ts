@@ -7815,6 +7815,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 25.5,
 		color: "Red",
 		prevo: "Kricketot",
+		evos: ["Kricketude"],
 		evoLevel: 10,
 		eggGroups: ["Bug"],
 	},
@@ -21270,6 +21271,19 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 88,
 		color: "Red",
 		eggGroups: ["Dragon"],
+	},
+	kricketude: {
+		num: 1588,
+		name: "Kricketude",
+		types: ["Bug"],
+		baseStats: {hp: 87, atk: 75, def: 81, spa: 95, spd: 81, spe: 75},
+		abilities: {0: "Swarm", 1: "Musician", H: "Technician"},
+		heightm: 1.5,
+		weightkg: 25.5,
+		color: "Red",
+		prevo: "Kricketune",
+		evoLevel: 30,
+		eggGroups: ["Bug"],
 	},
 	//cap
 	syclar: {

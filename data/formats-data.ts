@@ -6201,10 +6201,13 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "OU",
 	},
 	caizhi: {
+		tier: "OU",
+	},
+	ourobothon: {
 		isNonstandard: "Future",
 		tier: "Illegal",
 	},
-	ourobothon: {
+	kricketude: {
 		isNonstandard: "Future",
 		tier: "Illegal",
 	},
