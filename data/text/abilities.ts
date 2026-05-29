@@ -2691,6 +2691,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Dynamo",
 		shortDesc: "If Electric Terrain is active, this Pokemon's Sp.atk is doubled.",
 	},
+	infinity: {
+		name: "Infinity",
+		shortDesc: "PLACEHOLDER If one of this Pokémon's moves hits 0 PP, it will regain 1 PP to that move.",
+	},
 };
 
 

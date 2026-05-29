@@ -7375,7 +7375,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	trumpcard: {
 		name: "Trump Card",
-		desc: "The power of this move is based on the amount of PP remaining after normal PP reduction and the Pressure Ability resolve. 200 power for 0 PP, 80 power for 1 PP, 60 power for 2 PP, 50 power for 3 PP, and 40 power for 4 or more PP.",
+		desc: "The power of this move is based on the amount of PP remaining after normal PP reduction and the Pressure Ability resolve. 200 power for 0 PP, 100 power for 1 PP, 80 power for 2 PP, 60 power for 3 PP, and 50 power for 4 or more PP.",
 		shortDesc: "More power the fewer PP this move has left.",
 	},
 	trufflesearch: {

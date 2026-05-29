@@ -98471,6 +98471,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			gravity: ["9M"],
 			yawn: ["9M"],
 			firstimpression: ["9M"],
+			trumpcard: ["9M"],
 		},
 	},
 	kricketude: {

@@ -7375,4 +7375,9 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3,
 		num: 21552151,
 	},
+	infinity: {
+		name: "Honey Gather",
+		rating: 0,
+		num: 118,
+	},
 };

@@ -22546,16 +22546,16 @@ export const Moves: {[moveid: string]: MoveData} = {
 					bp = 200;
 					break;
 				case 1:
-					bp = 80;
+					bp = 100;
 					break;
 				case 2:
-					bp = 60;
+					bp = 80;
 					break;
 				case 3:
-					bp = 50;
+					bp = 60;
 					break;
 				default:
-					bp = 40;
+					bp = 50;
 					break;
 				}
 			}
