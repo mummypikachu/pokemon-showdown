@@ -847,7 +847,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		forme: "Mega-Y",
 		types: ["Electric"],
 		baseStats: { hp: 60, atk: 100, def: 55, spa: 160, spd: 80, spe: 130 },
-		abilities: { 0: "Lightning Rod" },
+		abilities: { 0: "No Guard" },
 		heightm: 1,
 		weightkg: 26,
 		color: "Yellow",

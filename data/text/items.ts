@@ -2752,6 +2752,10 @@ export const ItemsText: { [k: string]: ItemText; } = {
 		name: "Bronze Brick",
 		desc: "If held by a Hoopa, its will always get Critical hits.",
 	},
+	heartlocket: {
+		name: "Bronze Brick",
+		desc: "If held by a Hoopa, its will always get Critical hits.",
+	},
 
 	// Gen 2 items
 

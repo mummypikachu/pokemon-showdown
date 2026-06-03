@@ -238,9 +238,9 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "RU",
 	},
 	raichumegay: {
-		tier: "OU",
-		doublesTier: "(DUU)",
-		natDexTier: "RU",
+		tier: "Uber",
+		doublesTier: "DUber",
+		natDexTier: "Uber",
 	},
 	sandshrew: {
 		tier: "LC",
