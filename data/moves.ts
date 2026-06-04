@@ -24149,32 +24149,94 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Almighty",
 		contestType: "Cute",
 	},
-	scaletip: { //placeholder
+	scaletip: {
 		num: 31351351533,
 		accuracy: 100,
-		basePower: 40,
+		basePower: 80,
 		category: "Physical",
 		name: "Scale Tip",
 		pp: 35,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
+		flags: { protect: 1, mirror: 1 },
+		onTryHit(target, source, move) {
+			if (target.hasAbility('justified')) {
+				this.add('-immune', target, '[from] ability: Justified');
+				this.hint('Justified Pokémon are immune to Scale Tip.');
+				return null;
+			}
+		},
+
+		onModifyMove(move, source, target) {
+			if (!target) return;
+
+			const physicalTypes = [
+				'Normal',
+				'Fighting',
+				'Flying',
+				'Poison',
+				'Ground',
+				'Rock',
+				'Bug',
+				'Ghost',
+				'Steel',
+			];
+			const specialTypes = [
+				'Fire',
+				'Water',
+				'Grass',
+				'Electric',
+				'Psychic',
+				'Ice',
+				'Dragon',
+				'Dark',
+				'Fairy',
+			];
+
+			const primaryType = target.getTypes()[0];
+
+			if (physicalTypes.includes(primaryType)) {
+				move.category = 'Physical';
+			} else if (specialTypes.includes(primaryType)) {
+				move.category = 'Special';
+			} else {
+				// if type not in a table (almighty or terastellar)
+				move.category = 'Physical';
+			}
+		},
 		secondary: null,
 		target: "normal",
 		type: "Fairy",
 		contestType: "Tough",
 	},
-	bis: { //placeholder
+	bis: {
 		num: 15315135135,
 		accuracy: 100,
 		basePower: 40,
 		category: "Physical",
 		name: "Bis",
-		pp: 35,
+		pp: 10,
 		priority: 0,
-		flags: {sound: 1, protect: 1, mirror: 1},
-		secondary: null,
+		flags: { sound: 1, protect: 1, mirror: 1 },
+		secondary: {
+			chance: 100,
+			volatileStatus: 'encore',
+		},
 		target: "normal",
 		type: "Bug",
+		contestType: "Smart",
+	},
+	clawslash: {
+		num: 6354751458,
+		accuracy: 100,
+		basePower: 85,
+		category: "Physical",
+		name: "Claw Slash",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Steel",
 		contestType: "Tough",
 	},
 };

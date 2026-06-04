@@ -32011,6 +32011,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			counter: ["9T"],
 			curse: ["9E", "9E", "9M", "9E", "5E", "4E", "3E"],
 			cut: ["9M", "9M", "5M", "4M", "3M"],
+			clawslash:  ["9M"],
 			darkpulse: ["9M", "9M", "9M", "5T", "4M"],
 			defog: ["9T", "4M"],
 			detect: ["9M"],

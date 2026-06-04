@@ -7890,10 +7890,16 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	scaletip: {
 		name: "Scale Tip",
-		shortDesc: " PLACEHOLDER Category based on primary type of opponent in gen 3.",
+		desc: "The target is hit for Physical damage if their first type is Normal, Fighting, Ground, Rock, Steel, Flying, Bug, Ghost or Poison, and for Special damage if their type is Water, Grass, Fire, Electric, Psychic, Fairy, Dark, Ice or Dragon. Types such as Stellar or Bird will make this move Physical. Pokémon with the ability Justified are immune to this move.",
+		shortDesc: "Move category based on the opponent's primary type.",
 	},
 	bis: {
 		name: "Bis",
-		shortDesc: " PLACEHOLDER Encores the target into their last used move.",
+		desc: "If this move hits the target, the target will be affected by Encore.",
+		shortDesc: "Encores the target into their last used move.",
+	},
+	clawslash: {
+		name: "Claw Slash",
+		shortDesc: "No secondary effect.",
 	},
 };
