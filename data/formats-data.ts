@@ -5113,9 +5113,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DOU",
 	},
 	zarudedada: {
-		tier: "RU",
-		natDexTier: "RU",
-		doublesTier: "DOU",
+		isNonstandard: "Unobtainable",
 	},
 	regieleki: {
 		tier: "OU",
