@@ -8950,17 +8950,6 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 2643,
 		gen: 9,
 	},*/
-	// vikavoltite: {
-	// 	name: "Vikavoltite",
-	// 	spritenum: 625,
-	// 	megaStone: "Vikavolt-Mega",
-	// 	megaEvolves: "Vikavolt",
-	// 	itemUser: ["Vikavolt"],
-	// 	onTakeItem(item, source) {
-	// 		if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
-	// 		return true;
-	// 	},
-	// },
 	bronzebrick: {
 		name: "Bronze Brick",
 		spritenum: 23,

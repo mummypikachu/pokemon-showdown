@@ -18923,7 +18923,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Varoom",
 		types: ["Steel", "Poison"],
 		baseStats: {hp: 45, atk: 70, def: 63, spa: 30, spd: 45, spe: 47},
-		abilities: {0: "Overcoat", H: "Slow Start"},
+		abilities: {0: "Overcoat", 1: "Speed Control", H: "Slow Start"},
 		heightm: 1,
 		weightkg: 35,
 		color: "Gray",
