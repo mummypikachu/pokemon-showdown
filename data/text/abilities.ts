@@ -2693,7 +2693,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	infinity: {
 		name: "Infinity",
-		shortDesc: "PLACEHOLDER If one of this Pokémon's moves hits 0 PP, it will regain 1 PP to that move.",
+		shortDesc: "If one of this Pokémon's moves hits 0 PP, it will regain 1 PP to that move.",
+	},
+	eelevate: {
+		name: "Eelevate",
+		shortDesc: "This Pokémon is levitating. If the user KO's a Pokémon, raises highest stat by 1.",
 	},
 };
 
