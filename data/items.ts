@@ -1,4 +1,4 @@
-export const Items: {[itemid: string]: ItemData} = {
+export const Items: { [itemid: string]: ItemData; } = {
 	abilityshield: {
 		name: "Ability Shield",
 		spritenum: 0, // TODO
@@ -196,7 +196,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 672,
 		gen: 6,
-	
+
 	},
 	aggronite: {
 		name: "Aggronite",
@@ -210,7 +210,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 667,
 		gen: 6,
-	
+
 	},
 	aguavberry: {
 		name: "Aguav Berry",
@@ -222,7 +222,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		onUpdate(pokemon) {
 			if (pokemon.hp <= pokemon.maxhp / 4 || (pokemon.hp <= pokemon.maxhp / 2 &&
-					pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
+				pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
 				pokemon.eatItem();
 			}
 		},
@@ -253,7 +253,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onDamagingHit(damage, target, source, move) {
 			this.add('-enditem', target, 'Air Balloon');
 			target.item = '';
-			target.itemState = {id: '', target};
+			target.itemState = { id: '', target };
 			this.runEvent('AfterUseItem', target, null, null, this.dex.items.get('airballoon'));
 		},
 		onAfterSubDamage(damage, target, source, effect) {
@@ -261,7 +261,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			if (effect.effectType === 'Move') {
 				this.add('-enditem', target, 'Air Balloon');
 				target.item = '';
-				target.itemState = {id: '', target};
+				target.itemState = { id: '', target };
 				this.runEvent('AfterUseItem', target, null, null, this.dex.items.get('airballoon'));
 			}
 		},
@@ -280,7 +280,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 679,
 		gen: 6,
-	
+
 	},
 	alcremite: {
 		name: "Alcremite",
@@ -304,7 +304,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Raichu-Alola"],
 		num: 803,
 		gen: 7,
-	
+
 	},
 	altarianite: {
 		name: "Altarianite",
@@ -318,7 +318,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 755,
 		gen: 6,
-	
+
 	},
 	ampharosite: {
 		name: "Ampharosite",
@@ -332,7 +332,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 658,
 		gen: 6,
-	
+
 	},
 	apicotberry: {
 		name: "Apicot Berry",
@@ -344,12 +344,12 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		onUpdate(pokemon) {
 			if (pokemon.hp <= pokemon.maxhp / 4 || (pokemon.hp <= pokemon.maxhp / 2 &&
-					pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
+				pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
 				pokemon.eatItem();
 			}
 		},
 		onEat(pokemon) {
-			this.boost({spd: 1});
+			this.boost({ spd: 1 });
 		},
 		num: 205,
 		gen: 3,
@@ -362,7 +362,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 104,
 		gen: 4,
-	
+
 	},
 	aspearberry: {
 		name: "Aspear Berry",
@@ -492,7 +492,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onEat: false,
 		num: 183,
 		gen: 3,
-	
+
 	},
 	berryjuice: {
 		name: "Berry Juice",
@@ -509,7 +509,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 43,
 		gen: 2,
-	
+
 	},
 	berrysweet: {
 		name: "Berry Sweet",
@@ -519,7 +519,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 1111,
 		gen: 8,
-		
+
 	},
 	bignugget: {
 		name: "Big Nugget",
@@ -643,7 +643,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 661,
 		gen: 6,
-	
+
 	},
 	blastoisiumz: {
 		name: "Blastoisium Z",
@@ -653,7 +653,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		zMoveFrom: "Shell Spin",
 		itemUser: ["Blastoise"],
 		gen: 9,
-	
+
 	},
 	blazikenite: {
 		name: "Blazikenite",
@@ -667,14 +667,14 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 664,
 		gen: 6,
-	
+
 	},
 	blueorb: {
 		name: "Blue Orb",
 		spritenum: 41,
 		onSwitchIn(pokemon) {
 			if (pokemon.isActive && pokemon.baseSpecies.name === 'Kyogre') {
-				this.queue.insertChoice({choice: 'runPrimal', pokemon: pokemon});
+				this.queue.insertChoice({ choice: 'runPrimal', pokemon: pokemon });
 			}
 		},
 		onPrimal(pokemon) {
@@ -687,7 +687,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Kyogre"],
 		num: 535,
 		gen: 6,
-	
+
 	},
 	blukberry: {
 		name: "Bluk Berry",
@@ -700,7 +700,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onEat: false,
 		num: 165,
 		gen: 3,
-	
+
 	},
 	blunderpolicy: {
 		name: "Blunder Policy",
@@ -769,7 +769,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 558,
 		gen: 5,
-	
+
 	},
 	bugmemory: {
 		name: "Bug Memory",
@@ -785,7 +785,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Silvally-Bug"],
 		num: 909,
 		gen: 7,
-	
+
 	},
 	buginiumz: {
 		name: "Buginium Z",
@@ -797,7 +797,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		forcedForme: "Arceus-Bug",
 		num: 787,
 		gen: 7,
-	
+
 	},
 	burndrive: {
 		name: "Burn Drive",
@@ -813,7 +813,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Genesect-Burn"],
 		num: 118,
 		gen: 5,
-	
+
 	},
 	cameruptite: {
 		name: "Cameruptite",
@@ -827,7 +827,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 767,
 		gen: 6,
-	
+
 	},
 	cellbattery: {
 		name: "Cell Battery",
@@ -1011,7 +1011,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Genesect-Chill"],
 		num: 119,
 		gen: 5,
-	
+
 	},
 	chippedpot: {
 		name: "Chipped Pot",
@@ -1125,7 +1125,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 100,
 		gen: 3,
-	
+
 	},
 	clearamulet: {
 		name: "Clear Amulet",
@@ -1155,7 +1155,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 1112,
 		gen: 8,
-		
+
 	},
 	cobaberry: {
 		name: "Coba Berry",
@@ -1228,9 +1228,9 @@ export const Items: {[itemid: string]: ItemData} = {
 		onEat: false,
 		num: 175,
 		gen: 3,
-	
+
 	},
-	corvinite:{
+	corvinite: {
 		name: "Corvinite",
 		spritenum: 586,
 		megaStone: "Corviknight-Mega",
@@ -1242,7 +1242,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 1376,
 		gen: 8,
-},
+	},
 	coverfossil: {
 		name: "Cover Fossil",
 		spritenum: 85,
@@ -1251,7 +1251,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 572,
 		gen: 5,
-	
+
 	},
 	covertcloak: {
 		name: "Covert Cloak",
@@ -1288,7 +1288,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			if (
 				priority <= 0 &&
 				(pokemon.hp <= pokemon.maxhp / 4 || (pokemon.hp <= pokemon.maxhp / 2 &&
-				pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony))
+					pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony))
 			) {
 				if (pokemon.eatItem()) {
 					this.add('-activate', pokemon, 'item: Custap Berry', '[consumed]');
@@ -1329,7 +1329,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 562,
 		gen: 5,
-	
+
 	},
 	darkmemory: {
 		name: "Dark Memory",
@@ -1345,7 +1345,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Silvally-Dark"],
 		num: 919,
 		gen: 7,
-	
+
 	},
 	darkiniumz: {
 		name: "Darkinium Z",
@@ -1357,7 +1357,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		forcedForme: "Arceus-Dark",
 		num: 791,
 		gen: 7,
-	
+
 	},
 	dawnstone: {
 		name: "Dawn Stone",
@@ -1377,7 +1377,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Decidueye"],
 		num: 798,
 		gen: 7,
-	
+
 	},
 	deepseascale: {
 		name: "Deep Sea Scale",
@@ -1394,7 +1394,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Clamperl"],
 		num: 227,
 		gen: 3,
-	
+
 	},
 	deepseatooth: {
 		name: "Deep Sea Tooth",
@@ -1411,7 +1411,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Clamperl"],
 		num: 226,
 		gen: 3,
-	
+
 	},
 	destinyknot: {
 		name: "Destiny Knot",
@@ -1440,7 +1440,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 764,
 		gen: 6,
-	
+
 	},
 	diveball: {
 		name: "Dive Ball",
@@ -1457,7 +1457,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 102,
 		gen: 3,
-	
+
 	},
 	dousedrive: {
 		name: "Douse Drive",
@@ -1473,7 +1473,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Genesect-Douse"],
 		num: 116,
 		gen: 5,
-	
+
 	},
 	dracoplate: {
 		name: "Draco Plate",
@@ -1522,7 +1522,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 561,
 		gen: 5,
-	
+
 	},
 	dragonmemory: {
 		name: "Dragon Memory",
@@ -1538,7 +1538,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Silvally-Dragon"],
 		num: 918,
 		gen: 7,
-	
+
 	},
 	dragonscale: {
 		name: "Dragon Scale",
@@ -1548,7 +1548,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 235,
 		gen: 2,
-	
+
 	},
 	dragoniumz: {
 		name: "Dragonium Z",
@@ -1560,7 +1560,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		forcedForme: "Arceus-Dragon",
 		num: 790,
 		gen: 7,
-	
+
 	},
 	dreadplate: {
 		name: "Dread Plate",
@@ -1598,11 +1598,11 @@ export const Items: {[itemid: string]: ItemData} = {
 	// 	itemUser: ["Excadrill"],
 	// 	num: 1943,
 	// 	gen: 9,
-	
+
 	// },
 	/*electromagnet: {
-        name: "Electro Magnet",
-        spritenum: 567,
+		name: "Electro Magnet",
+		spritenum: 567,
 		onTryHit(target, source, move) {
 			if (target !== source && move.type === 'Electric') {
 				target.useItem();
@@ -1624,13 +1624,13 @@ export const Items: {[itemid: string]: ItemData} = {
 				return this.effectState.target;
 			}
 		},
-        fling: {
-            basePower: 20,
-            status: 'par',
-        },
-        num: 1944,
-        gen: 9,
-    },*/
+		fling: {
+			basePower: 20,
+			status: 'par',
+		},
+		num: 1944,
+		gen: 9,
+	},*/
 	dubiousdisc: {
 		name: "Dubious Disc",
 		spritenum: 113,
@@ -1651,7 +1651,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onEat: false,
 		num: 182,
 		gen: 3,
-	
+
 	},
 	duskball: {
 		name: "Dusk Ball",
@@ -1698,7 +1698,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Eevee"],
 		num: 805,
 		gen: 7,
-	
+
 	},
 	ejectbutton: {
 		name: "Eject Button",
@@ -1762,7 +1762,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 322,
 		gen: 4,
-		
+
 	},
 	electricgem: {
 		name: "Electric Gem",
@@ -1777,7 +1777,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 550,
 		gen: 5,
-	
+
 	},
 	electricmemory: {
 		name: "Electric Memory",
@@ -1793,7 +1793,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Silvally-Electric"],
 		num: 915,
 		gen: 7,
-	
+
 	},
 	electricseed: {
 		name: "Electric Seed",
@@ -1827,7 +1827,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		forcedForme: "Arceus-Electric",
 		num: 779,
 		gen: 7,
-	
+
 	},
 	enigmaberry: {
 		name: "Enigma Berry",
@@ -1856,7 +1856,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 587,
 		onSwitchIn(pokemon) {
 			if (pokemon.isActive && pokemon.baseSpecies.name === 'Eternatus') {
-				this.queue.insertChoice({choice: 'runPrimal', pokemon: pokemon});
+				this.queue.insertChoice({ choice: 'runPrimal', pokemon: pokemon });
 			}
 		},
 		onPrimal(pokemon) {
@@ -1869,7 +1869,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Eternatus"],
 		num: 1534,
 		gen: 9,
-	
+
 	},
 	eviolite: {
 		name: "Eviolite",
@@ -1916,7 +1916,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		forcedForme: "Arceus-Fairy",
 		num: 793,
 		gen: 7,
-	
+
 	},
 	fairyfeather: {
 		name: "Fairy Feather",
@@ -1945,7 +1945,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 715,
 		gen: 6,
-	
+
 	},
 	fairymemory: {
 		name: "Fairy Memory",
@@ -1961,7 +1961,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Silvally-Fairy"],
 		num: 920,
 		gen: 7,
-	
+
 	},
 	fastball: {
 		name: "Fast Ball",
@@ -1982,7 +1982,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 553,
 		gen: 5,
-	
+
 	},
 	fightingmemory: {
 		name: "Fighting Memory",
@@ -1998,7 +1998,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Silvally-Fighting"],
 		num: 904,
 		gen: 7,
-	
+
 	},
 	fightiniumz: {
 		name: "Fightinium Z",
@@ -2010,7 +2010,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		forcedForme: "Arceus-Fighting",
 		num: 782,
 		gen: 7,
-	
+
 	},
 	figyberry: {
 		name: "Figy Berry",
@@ -2022,7 +2022,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		onUpdate(pokemon) {
 			if (pokemon.hp <= pokemon.maxhp / 4 || (pokemon.hp <= pokemon.maxhp / 2 &&
-					pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
+				pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
 				pokemon.eatItem();
 			}
 		},
@@ -2051,7 +2051,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 548,
 		gen: 5,
-	
+
 	},
 	firememory: {
 		name: "Fire Memory",
@@ -2067,7 +2067,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Silvally-Fire"],
 		num: 912,
 		gen: 7,
-	
+
 	},
 	firestone: {
 		name: "Fire Stone",
@@ -2088,7 +2088,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		forcedForme: "Arceus-Fire",
 		num: 777,
 		gen: 7,
-	
+
 	},
 	fistplate: {
 		name: "Fist Plate",
@@ -2165,7 +2165,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 1113,
 		gen: 8,
-		
+
 	},
 	flygonite: {
 		name: "Flygonite",
@@ -2190,7 +2190,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 556,
 		gen: 5,
-	
+
 	},
 	flyingmemory: {
 		name: "Flying Memory",
@@ -2206,7 +2206,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Silvally-Flying"],
 		num: 905,
 		gen: 7,
-	
+
 	},
 	flyiniumz: {
 		name: "Flyinium Z",
@@ -2218,7 +2218,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		forcedForme: "Arceus-Flying",
 		num: 785,
 		gen: 7,
-	
+
 	},
 	focusband: {
 		name: "Focus Band",
@@ -2261,7 +2261,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 1105,
 		gen: 8,
-	
+
 	},
 	fossilizeddino: {
 		name: "Fossilized Dino",
@@ -2271,7 +2271,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 1108,
 		gen: 8,
-	
+
 	},
 	fossilizeddrake: {
 		name: "Fossilized Drake",
@@ -2281,7 +2281,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 1107,
 		gen: 8,
-	
+
 	},
 	fossilizedfish: {
 		name: "Fossilized Fish",
@@ -2291,7 +2291,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 1106,
 		gen: 8,
-	
+
 	},
 	friendball: {
 		name: "Friend Ball",
@@ -2309,7 +2309,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onFractionalPriority: -0.1,
 		num: 316,
 		gen: 4,
-	
+
 	},
 	galaricacuff: {
 		name: "Galarica Cuff",
@@ -2341,7 +2341,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 756,
 		gen: 6,
-	
+
 	},
 	ganlonberry: {
 		name: "Ganlon Berry",
@@ -2353,12 +2353,12 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		onUpdate(pokemon) {
 			if (pokemon.hp <= pokemon.maxhp / 4 || (pokemon.hp <= pokemon.maxhp / 2 &&
-					pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
+				pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
 				pokemon.eatItem();
 			}
 		},
 		onEat(pokemon) {
-			this.boost({def: 1});
+			this.boost({ def: 1 });
 		},
 		num: 202,
 		gen: 3,
@@ -2388,7 +2388,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 683,
 		gen: 6,
-	
+
 	},
 	gardevoirite: {
 		name: "Gardevoirite",
@@ -2402,7 +2402,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 657,
 		gen: 6,
-	
+
 	},
 	gengarite: {
 		name: "Gengarite",
@@ -2416,7 +2416,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 656,
 		gen: 6,
-	
+
 	},
 	ghostgem: {
 		name: "Ghost Gem",
@@ -2430,7 +2430,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 560,
 		gen: 5,
-	
+
 	},
 	ghostmemory: {
 		name: "Ghost Memory",
@@ -2446,7 +2446,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Silvally-Ghost"],
 		num: 910,
 		gen: 7,
-	
+
 	},
 	ghostiumz: {
 		name: "Ghostium Z",
@@ -2458,7 +2458,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		forcedForme: "Arceus-Ghost",
 		num: 789,
 		gen: 7,
-	
+
 	},
 	// gholdengiumz: {
 	// 	name: "Gholdengium Z",
@@ -2481,7 +2481,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 763,
 		gen: 6,
-	
+
 	},
 	goldbottlecap: {
 		name: "Gold Bottle Cap",
@@ -2505,7 +2505,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 551,
 		gen: 5,
-	
+
 	},
 	grassmemory: {
 		name: "Grass Memory",
@@ -2521,7 +2521,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Silvally-Grass"],
 		num: 914,
 		gen: 7,
-	
+
 	},
 	grassiumz: {
 		name: "Grassium Z",
@@ -2533,7 +2533,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		forcedForme: "Arceus-Grass",
 		num: 780,
 		gen: 7,
-	
+
 	},
 	grassyseed: {
 		name: "Grassy Seed",
@@ -2634,7 +2634,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 1656,
 		gen: 9,
-	
+
 	},
 	groundgem: {
 		name: "Ground Gem",
@@ -2648,7 +2648,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 555,
 		gen: 5,
-	
+
 	},
 	groundmemory: {
 		name: "Ground Memory",
@@ -2664,7 +2664,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Silvally-Ground"],
 		num: 907,
 		gen: 7,
-	
+
 	},
 	groundiumz: {
 		name: "Groundium Z",
@@ -2676,7 +2676,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		forcedForme: "Arceus-Ground",
 		num: 784,
 		gen: 7,
-	
+
 	},
 	gyaradosite: {
 		name: "Gyaradosite",
@@ -2690,7 +2690,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 676,
 		gen: 6,
-	
+
 	},
 	habanberry: {
 		name: "Haban Berry",
@@ -2743,7 +2743,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 1657,
 		gen: 9,
-	
+
 	},
 	healball: {
 		name: "Heal Ball",
@@ -2806,7 +2806,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 101,
 		gen: 3,
-	
+
 	},
 	heracronite: {
 		name: "Heracronite",
@@ -2820,7 +2820,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 680,
 		gen: 6,
-	
+
 	},
 	hondewberry: {
 		name: "Hondew Berry",
@@ -2865,7 +2865,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 666,
 		gen: 6,
-	
+
 	},
 	iapapaberry: {
 		name: "Iapapa Berry",
@@ -2877,7 +2877,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		onUpdate(pokemon) {
 			if (pokemon.hp <= pokemon.maxhp / 4 || (pokemon.hp <= pokemon.maxhp / 2 &&
-					pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
+				pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
 				pokemon.eatItem();
 			}
 		},
@@ -2905,7 +2905,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 552,
 		gen: 5,
-	
+
 	},
 	icememory: {
 		name: "Ice Memory",
@@ -2921,7 +2921,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Silvally-Ice"],
 		num: 917,
 		gen: 7,
-	
+
 	},
 	icestone: {
 		name: "Ice Stone",
@@ -2962,7 +2962,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		forcedForme: "Arceus-Ice",
 		num: 781,
 		gen: 7,
-	
+
 	},
 	icyrock: {
 		name: "Icy Rock",
@@ -2990,7 +2990,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Incineroar"],
 		num: 799,
 		gen: 7,
-	
+
 	},
 	insectplate: {
 		name: "Insect Plate",
@@ -3077,7 +3077,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 710,
 		gen: 6,
-	
+
 	},
 	kasibberry: {
 		name: "Kasib Berry",
@@ -3142,7 +3142,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			}
 		},
 		onEat(pokemon) {
-			this.boost({def: 1});
+			this.boost({ def: 1 });
 		},
 		num: 687,
 		gen: 6,
@@ -3171,7 +3171,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 675,
 		gen: 6,
-	
+
 	},
 	// kingamtiumz: {
 	// 	name: "Kingamtium Z",
@@ -3182,7 +3182,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	// 	itemUser: ["Kingambit"],
 	// 	num: 1923,
 	// 	gen: 9,
-	
+
 	// },
 	kinglerite: {
 		name: "Kinglerite",
@@ -3228,7 +3228,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Kommo-o", "Kommo-o-Totem"],
 		num: 926,
 		gen: 7,
-	
+
 	},
 	laggingtail: {
 		name: "Lagging Tail",
@@ -3250,7 +3250,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		onUpdate(pokemon) {
 			if (pokemon.hp <= pokemon.maxhp / 4 || (pokemon.hp <= pokemon.maxhp / 2 &&
-					pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
+				pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
 				pokemon.eatItem();
 			}
 		},
@@ -3272,7 +3272,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 684,
 		gen: 6,
-	
+
 	},
 	latiosite: {
 		name: "Latiosite",
@@ -3286,7 +3286,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 685,
 		gen: 6,
-	
+
 	},
 	laxincense: {
 		name: "Lax Incense",
@@ -3302,7 +3302,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 255,
 		gen: 3,
-	
+
 	},
 	leafstone: {
 		name: "Leaf Stone",
@@ -3327,7 +3327,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Farfetch\u2019d", "Farfetch\u2019d-Galar", "Sirfetch\u2019d"],
 		num: 259,
 		gen: 8,
-	
+
 	},
 	leftovers: {
 		name: "Leftovers",
@@ -3385,12 +3385,12 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		onUpdate(pokemon) {
 			if (pokemon.hp <= pokemon.maxhp / 4 || (pokemon.hp <= pokemon.maxhp / 2 &&
-					pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
+				pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
 				pokemon.eatItem();
 			}
 		},
 		onEat(pokemon) {
-			this.boost({atk: 1});
+			this.boost({ atk: 1 });
 		},
 		num: 201,
 		gen: 3,
@@ -3469,7 +3469,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 768,
 		gen: 6,
-	
+
 	},
 	loveball: {
 		name: "Love Ball",
@@ -3486,7 +3486,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 1110,
 		gen: 8,
-		
+
 	},
 	lucarionite: {
 		name: "Lucarionite",
@@ -3500,7 +3500,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 673,
 		gen: 6,
-	
+
 	},
 	luckypunch: {
 		name: "Lucky Punch",
@@ -3567,7 +3567,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Lunala", "Necrozma-Dawn-Wings"],
 		num: 922,
 		gen: 7,
-	
+
 	},
 	lureball: {
 		name: "Lure Ball",
@@ -3628,7 +3628,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Lycanroc", "Lycanroc-Midnight", "Lycanroc-Dusk"],
 		num: 925,
 		gen: 7,
-	
+
 	},
 	machobrace: {
 		name: "Macho Brace",
@@ -3642,7 +3642,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 215,
 		gen: 3,
-	
+
 	},
 	machampite: {
 		name: "Machampite",
@@ -3665,7 +3665,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 323,
 		gen: 4,
-		
+
 	},
 	magnet: {
 		name: "Magnet",
@@ -3692,7 +3692,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		onUpdate(pokemon) {
 			if (pokemon.hp <= pokemon.maxhp / 4 || (pokemon.hp <= pokemon.maxhp / 2 &&
-					pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
+				pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
 				pokemon.eatItem();
 			}
 		},
@@ -3719,7 +3719,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onEat: false,
 		num: 176,
 		gen: 3,
-	
+
 	},
 	mail: {
 		name: "Mail",
@@ -3730,7 +3730,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 137,
 		gen: 2,
-	
+
 	},
 	maliciousarmor: {
 		name: "Malicious Armor",
@@ -3750,7 +3750,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 682,
 		gen: 6,
-	
+
 	},
 	marangaberry: {
 		name: "Maranga Berry",
@@ -3766,7 +3766,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			}
 		},
 		onEat(pokemon) {
-			this.boost({spd: 1});
+			this.boost({ spd: 1 });
 		},
 		num: 688,
 		gen: 6,
@@ -3780,7 +3780,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Marshadow"],
 		num: 802,
 		gen: 7,
-	
+
 	},
 	masterball: {
 		name: "Master Ball",
@@ -3843,7 +3843,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 665,
 		gen: 6,
-	
+
 	},
 	mentalherb: {
 		name: "Mental Herb",
@@ -3895,7 +3895,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 758,
 		gen: 6,
-	
+
 	},
 	// TODO - Sprite & Fling Base Power
 	metalalloy: {
@@ -3937,7 +3937,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Ditto"],
 		num: 257,
 		gen: 2,
-	
+
 	},
 	metronome: {
 		name: "Metronome",
@@ -3991,7 +3991,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Mew"],
 		num: 806,
 		gen: 7,
-	
+
 	},
 	mewtwonitex: {
 		name: "Mewtwonite X",
@@ -4005,7 +4005,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 662,
 		gen: 6,
-	
+
 	},
 	mewtwonitey: {
 		name: "Mewtwonite Y",
@@ -4019,7 +4019,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 663,
 		gen: 6,
-	
+
 	},
 	micleberry: {
 		name: "Micle Berry",
@@ -4031,7 +4031,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		onResidual(pokemon) {
 			if (pokemon.hp <= pokemon.maxhp / 4 || (pokemon.hp <= pokemon.maxhp / 2 &&
-					pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
+				pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
 				pokemon.eatItem();
 			}
 		},
@@ -4074,7 +4074,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		zMoveFrom: "Play Rough",
 		itemUser: ["Mimikyu", "Mimikyu-Busted", "Mimikyu-Totem", "Mimikyu-Busted-Totem"],
 		num: 924,
-	
+
 		gen: 7,
 	},
 	mindplate: {
@@ -4227,7 +4227,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onEat: false,
 		num: 166,
 		gen: 3,
-	
+
 	},
 	necroziumz: {
 		name: "Necrozium Z",
@@ -4238,7 +4238,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Necrozma"],
 		num: 1923,
 		gen: 9,
-	
+
 	},
 	nestball: {
 		name: "Nest Ball",
@@ -4280,7 +4280,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onEat: false,
 		num: 178,
 		gen: 3,
-	
+
 	},
 	normalgem: {
 		name: "Normal Gem",
@@ -4304,7 +4304,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		zMoveType: "Normal",
 		num: 776,
 		gen: 7,
-	
+
 	},
 	normalmemory: {
 		name: "Normal Memory",
@@ -4320,7 +4320,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Silvally-Normal"],
 		num: 9090,
 		gen: 9,
-	
+
 	},
 	occaberry: {
 		name: "Occa Berry",
@@ -4360,7 +4360,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 314,
 		gen: 4,
-	
+
 	},
 	oldamber: {
 		name: "Old Amber",
@@ -4370,7 +4370,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 103,
 		gen: 3,
-	
+
 	},
 	oranberry: {
 		name: "Oran Berry",
@@ -4426,7 +4426,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onEat: false,
 		num: 180,
 		gen: 3,
-	
+
 	},
 	parkball: {
 		name: "Park Ball",
@@ -4533,12 +4533,12 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		onUpdate(pokemon) {
 			if (pokemon.hp <= pokemon.maxhp / 4 || (pokemon.hp <= pokemon.maxhp / 2 &&
-					pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
+				pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
 				pokemon.eatItem();
 			}
 		},
 		onEat(pokemon) {
-			this.boost({spa: 1});
+			this.boost({ spa: 1 });
 		},
 		num: 204,
 		gen: 3,
@@ -4555,7 +4555,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 762,
 		gen: 6,
-	
+
 	},
 	pikaniumz: {
 		name: "Pikanium Z",
@@ -4566,7 +4566,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Pikachu"],
 		num: 794,
 		gen: 7,
-	
+
 	},
 	pikashuniumz: {
 		name: "Pikashunium Z",
@@ -4576,7 +4576,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		zMoveFrom: "Thunderbolt",
 		itemUser: ["Pikachu-Original", "Pikachu-Hoenn", "Pikachu-Sinnoh", "Pikachu-Unova", "Pikachu-Kalos", "Pikachu-Alola", "Pikachu-Partner"],
 		num: 836,
-	
+
 		gen: 7,
 	},
 	pinapberry: {
@@ -4590,7 +4590,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onEat: false,
 		num: 168,
 		gen: 3,
-	
+
 	},
 	pinsirite: {
 		name: "Pinsirite",
@@ -4604,7 +4604,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 671,
 		gen: 6,
-	
+
 	},
 	pixieplate: {
 		name: "Pixie Plate",
@@ -4634,7 +4634,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 573,
 		gen: 5,
-	
+
 	},
 	poisonbarb: {
 		name: "Poison Barb",
@@ -4664,7 +4664,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 554,
 		gen: 5,
-	
+
 	},
 	poisonmemory: {
 		name: "Poison Memory",
@@ -4680,7 +4680,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Silvally-Poison"],
 		num: 906,
 		gen: 7,
-	
+
 	},
 	poisoniumz: {
 		name: "Poisonium Z",
@@ -4692,7 +4692,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		forcedForme: "Arceus-Poison",
 		num: 783,
 		gen: 7,
-	
+
 	},
 	pokeball: {
 		name: "Poke Ball",
@@ -4824,7 +4824,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Primarina"],
 		num: 800,
 		gen: 7,
-	
+
 	},
 	prismscale: {
 		name: "Prism Scale",
@@ -4834,7 +4834,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 537,
 		gen: 5,
-	
+
 	},
 	protectivepads: {
 		name: "Protective Pads",
@@ -4854,7 +4854,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 321,
 		gen: 4,
-		
+
 	},
 	psychicgem: {
 		name: "Psychic Gem",
@@ -4868,7 +4868,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 557,
 		gen: 5,
-	
+
 	},
 	psychicmemory: {
 		name: "Psychic Memory",
@@ -4884,7 +4884,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Silvally-Psychic"],
 		num: 916,
 		gen: 7,
-	
+
 	},
 	psychicseed: {
 		name: "Psychic Seed",
@@ -4918,7 +4918,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		forcedForme: "Arceus-Psychic",
 		num: 786,
 		gen: 7,
-	
+
 	},
 	punchingglove: {
 		name: "Punching Glove",
@@ -4986,7 +4986,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Ditto"],
 		num: 274,
 		gen: 4,
-	
+
 	},
 	rabutaberry: {
 		name: "Rabuta Berry",
@@ -4999,7 +4999,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onEat: false,
 		num: 177,
 		gen: 3,
-	
+
 	},
 	rarebone: {
 		name: "Rare Bone",
@@ -5065,7 +5065,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 327,
 		gen: 4,
-	
+
 	},
 	razzberry: {
 		name: "Razz Berry",
@@ -5078,7 +5078,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onEat: false,
 		num: 164,
 		gen: 3,
-	
+
 	},
 	reapercloth: {
 		name: "Reaper Cloth",
@@ -5088,7 +5088,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 325,
 		gen: 4,
-	
+
 	},
 	redcard: {
 		name: "Red Card",
@@ -5117,7 +5117,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 390,
 		onSwitchIn(pokemon) {
 			if (pokemon.isActive && pokemon.baseSpecies.name === 'Groudon') {
-				this.queue.insertChoice({choice: 'runPrimal', pokemon: pokemon});
+				this.queue.insertChoice({ choice: 'runPrimal', pokemon: pokemon });
 			}
 		},
 		onPrimal(pokemon) {
@@ -5130,7 +5130,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Groudon"],
 		num: 534,
 		gen: 6,
-	
+
 	},
 	repeatball: {
 		name: "Repeat Ball",
@@ -5147,7 +5147,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 1115,
 		gen: 8,
-		
+
 	},
 	rindoberry: {
 		name: "Rindo Berry",
@@ -5195,7 +5195,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 559,
 		gen: 5,
-	
+
 	},
 	rockincense: {
 		name: "Rock Incense",
@@ -5211,7 +5211,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 315,
 		gen: 4,
-	
+
 	},
 	rockmemory: {
 		name: "Rock Memory",
@@ -5227,7 +5227,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Silvally-Rock"],
 		num: 908,
 		gen: 7,
-	
+
 	},
 	rockiumz: {
 		name: "Rockium Z",
@@ -5239,7 +5239,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		forcedForme: "Arceus-Rock",
 		num: 788,
 		gen: 7,
-	
+
 	},
 	rockyhelmet: {
 		name: "Rocky Helmet",
@@ -5287,7 +5287,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 99,
 		gen: 3,
-	
+
 	},
 	roseincense: {
 		name: "Rose Incense",
@@ -5303,7 +5303,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 318,
 		gen: 4,
-	
+
 	},
 	roseliberry: {
 		name: "Roseli Berry",
@@ -5395,7 +5395,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 647,
 		gen: 6,
-	
+
 	},
 	safariball: {
 		name: "Safari Ball",
@@ -5430,7 +5430,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 711,
 		gen: 6,
-	
+
 	},
 	salacberry: {
 		name: "Salac Berry",
@@ -5442,12 +5442,12 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		onUpdate(pokemon) {
 			if (pokemon.hp <= pokemon.maxhp / 4 || (pokemon.hp <= pokemon.maxhp / 2 &&
-					pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
+				pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
 				pokemon.eatItem();
 			}
 		},
 		onEat(pokemon) {
-			this.boost({spe: 1});
+			this.boost({ spe: 1 });
 		},
 		num: 203,
 		gen: 3,
@@ -5464,7 +5464,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 769,
 		gen: 6,
-	
+
 	},
 	sceptilite: {
 		name: "Sceptilite",
@@ -5478,7 +5478,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 753,
 		gen: 6,
-	
+
 	},
 	scizorite: {
 		name: "Scizorite",
@@ -5492,7 +5492,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 670,
 		gen: 6,
-	
+
 	},
 	scopelens: {
 		name: "Scope Lens",
@@ -5520,7 +5520,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 254,
 		gen: 3,
-	
+
 	},
 	sharpbeak: {
 		name: "Sharp Beak",
@@ -5549,7 +5549,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 759,
 		gen: 6,
-	
+
 	},
 	shedshell: {
 		name: "Shed Shell",
@@ -5602,7 +5602,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Genesect-Shock"],
 		num: 117,
 		gen: 5,
-	
+
 	},
 	shucaberry: {
 		name: "Shuca Berry",
@@ -5688,7 +5688,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 105,
 		gen: 4,
-	
+
 	},
 	skyplate: {
 		name: "Sky Plate",
@@ -5722,7 +5722,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 760,
 		gen: 6,
-	
+
 	},
 	smoothrock: {
 		name: "Smooth Rock",
@@ -5750,7 +5750,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Snorlax"],
 		num: 804,
 		gen: 7,
-	
+
 	},
 	snowball: {
 		name: "Snowball",
@@ -5793,7 +5793,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Solgaleo", "Necrozma-Dusk-Mane"],
 		num: 921,
 		gen: 7,
-	
+
 	},
 	souldew: {
 		name: "Soul Dew",
@@ -5813,7 +5813,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Latios", "Latias"],
 		num: 225,
 		gen: 3,
-	
+
 	},
 	spelltag: {
 		name: "Spell Tag",
@@ -5841,7 +5841,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onEat: false,
 		num: 179,
 		gen: 3,
-	
+
 	},
 	splashplate: {
 		name: "Splash Plate",
@@ -5900,7 +5900,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		onUpdate(pokemon) {
 			if (pokemon.hp <= pokemon.maxhp / 4 || (pokemon.hp <= pokemon.maxhp / 2 &&
-					pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
+				pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
 				pokemon.eatItem();
 			}
 		},
@@ -5930,7 +5930,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 1114,
 		gen: 8,
-		
+
 	},
 	steelixite: {
 		name: "Steelixite",
@@ -5944,7 +5944,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 761,
 		gen: 6,
-	
+
 	},
 	steelgem: {
 		name: "Steel Gem",
@@ -5958,7 +5958,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 563,
 		gen: 5,
-	
+
 	},
 	steelmemory: {
 		name: "Steel Memory",
@@ -5974,7 +5974,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Silvally-Steel"],
 		num: 911,
 		gen: 7,
-	
+
 	},
 	steeliumz: {
 		name: "Steelium Z",
@@ -5986,7 +5986,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		forcedForme: "Arceus-Steel",
 		num: 792,
 		gen: 7,
-	
+
 	},
 	stick: {
 		name: "Stick",
@@ -6002,7 +6002,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Farfetch\u2019d"],
 		num: 259,
 		gen: 2,
-	
+
 	},
 	stickybarb: {
 		name: "Sticky Barb",
@@ -6061,7 +6061,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 1109,
 		gen: 8,
-		
+
 	},
 	strikervest: {
 		name: "Striker Vest",
@@ -6082,7 +6082,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 1577,
 		gen: 9,
-		
+
 	},
 	sunstone: {
 		name: "Sun Stone",
@@ -6105,7 +6105,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 752,
 		gen: 6,
-	
+
 	},
 	sweetapple: {
 		name: "Sweet Apple",
@@ -6170,7 +6170,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Tapu Koko", "Tapu Lele", "Tapu Bulu", "Tapu Fini"],
 		num: 801,
 		gen: 7,
-	
+
 	},
 	tartapple: {
 		name: "Tart Apple",
@@ -6217,7 +6217,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Marowak", "Marowak-Alola", "Marowak-Alola-Totem", "Cubone"],
 		num: 258,
 		gen: 2,
-	
+
 	},
 	throatspray: {
 		name: "Throat Spray",
@@ -6295,7 +6295,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 721,
 		num: 1130,
 		gen: 8,
-	
+
 	},
 	tr01: {
 		name: "TR01",
@@ -6305,7 +6305,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 721,
 		num: 1131,
 		gen: 8,
-	
+
 	},
 	tr02: {
 		name: "TR02",
@@ -6315,7 +6315,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 730,
 		num: 1132,
 		gen: 8,
-	
+
 	},
 	tr03: {
 		name: "TR03",
@@ -6325,7 +6325,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 731,
 		num: 1133,
 		gen: 8,
-	
+
 	},
 	tr04: {
 		name: "TR04",
@@ -6335,7 +6335,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 731,
 		num: 1134,
 		gen: 8,
-	
+
 	},
 	tr05: {
 		name: "TR05",
@@ -6345,7 +6345,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 735,
 		num: 1135,
 		gen: 8,
-	
+
 	},
 	tr06: {
 		name: "TR06",
@@ -6355,7 +6355,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 735,
 		num: 1136,
 		gen: 8,
-	
+
 	},
 	tr07: {
 		name: "TR07",
@@ -6365,7 +6365,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 722,
 		num: 1137,
 		gen: 8,
-	
+
 	},
 	tr08: {
 		name: "TR08",
@@ -6375,7 +6375,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 733,
 		num: 1138,
 		gen: 8,
-	
+
 	},
 	tr09: {
 		name: "TR09",
@@ -6385,7 +6385,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 733,
 		num: 1139,
 		gen: 8,
-	
+
 	},
 	tr10: {
 		name: "TR10",
@@ -6395,7 +6395,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 725,
 		num: 1140,
 		gen: 8,
-	
+
 	},
 	tr11: {
 		name: "TR11",
@@ -6405,7 +6405,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 734,
 		num: 1141,
 		gen: 8,
-	
+
 	},
 	tr12: {
 		name: "TR12",
@@ -6415,7 +6415,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 734,
 		num: 1142,
 		gen: 8,
-	
+
 	},
 	tr13: {
 		name: "TR13",
@@ -6425,7 +6425,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 721,
 		num: 1143,
 		gen: 8,
-	
+
 	},
 	tr14: {
 		name: "TR14",
@@ -6435,7 +6435,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 721,
 		num: 1144,
 		gen: 8,
-	
+
 	},
 	tr15: {
 		name: "TR15",
@@ -6445,7 +6445,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 730,
 		num: 1145,
 		gen: 8,
-	
+
 	},
 	tr16: {
 		name: "TR16",
@@ -6455,7 +6455,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 731,
 		num: 1146,
 		gen: 8,
-	
+
 	},
 	tr17: {
 		name: "TR17",
@@ -6465,7 +6465,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 734,
 		num: 1147,
 		gen: 8,
-	
+
 	},
 	tr18: {
 		name: "TR18",
@@ -6475,7 +6475,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 727,
 		num: 1148,
 		gen: 8,
-	
+
 	},
 	tr19: {
 		name: "TR19",
@@ -6485,7 +6485,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 721,
 		num: 1149,
 		gen: 8,
-	
+
 	},
 	tr20: {
 		name: "TR20",
@@ -6495,7 +6495,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 721,
 		num: 1150,
 		gen: 8,
-	
+
 	},
 	tr21: {
 		name: "TR21",
@@ -6505,7 +6505,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 722,
 		num: 1151,
 		gen: 8,
-	
+
 	},
 	tr22: {
 		name: "TR22",
@@ -6515,7 +6515,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 724,
 		num: 1152,
 		gen: 8,
-	
+
 	},
 	tr23: {
 		name: "TR23",
@@ -6525,7 +6525,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 725,
 		num: 1153,
 		gen: 8,
-	
+
 	},
 	tr24: {
 		name: "TR24",
@@ -6535,7 +6535,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 736,
 		num: 1154,
 		gen: 8,
-	
+
 	},
 	tr25: {
 		name: "TR25",
@@ -6545,7 +6545,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 734,
 		num: 1155,
 		gen: 8,
-	
+
 	},
 	tr26: {
 		name: "TR26",
@@ -6555,7 +6555,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 721,
 		num: 1156,
 		gen: 8,
-	
+
 	},
 	tr27: {
 		name: "TR27",
@@ -6565,7 +6565,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 721,
 		num: 1157,
 		gen: 8,
-	
+
 	},
 	tr28: {
 		name: "TR28",
@@ -6575,7 +6575,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 727,
 		num: 1158,
 		gen: 8,
-	
+
 	},
 	tr29: {
 		name: "TR29",
@@ -6585,7 +6585,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 721,
 		num: 1159,
 		gen: 8,
-	
+
 	},
 	tr30: {
 		name: "TR30",
@@ -6595,7 +6595,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 721,
 		num: 1160,
 		gen: 8,
-	
+
 	},
 	tr31: {
 		name: "TR31",
@@ -6605,7 +6605,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 729,
 		num: 1161,
 		gen: 8,
-	
+
 	},
 	tr32: {
 		name: "TR32",
@@ -6615,7 +6615,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 737,
 		num: 1162,
 		gen: 8,
-	
+
 	},
 	tr33: {
 		name: "TR33",
@@ -6625,7 +6625,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 728,
 		num: 1163,
 		gen: 8,
-	
+
 	},
 	tr34: {
 		name: "TR34",
@@ -6635,7 +6635,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 734,
 		num: 1164,
 		gen: 8,
-	
+
 	},
 	tr35: {
 		name: "TR35",
@@ -6645,7 +6645,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 721,
 		num: 1165,
 		gen: 8,
-	
+
 	},
 	tr36: {
 		name: "TR36",
@@ -6655,7 +6655,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 730,
 		num: 1166,
 		gen: 8,
-	
+
 	},
 	tr37: {
 		name: "TR37",
@@ -6665,7 +6665,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 737,
 		num: 1167,
 		gen: 8,
-	
+
 	},
 	tr38: {
 		name: "TR38",
@@ -6675,7 +6675,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 734,
 		num: 1168,
 		gen: 8,
-	
+
 	},
 	tr39: {
 		name: "TR39",
@@ -6685,7 +6685,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 722,
 		num: 1169,
 		gen: 8,
-	
+
 	},
 	tr40: {
 		name: "TR40",
@@ -6695,7 +6695,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 734,
 		num: 1170,
 		gen: 8,
-	
+
 	},
 	tr41: {
 		name: "TR41",
@@ -6705,7 +6705,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 730,
 		num: 1171,
 		gen: 8,
-	
+
 	},
 	tr42: {
 		name: "TR42",
@@ -6715,7 +6715,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 721,
 		num: 1172,
 		gen: 8,
-	
+
 	},
 	tr43: {
 		name: "TR43",
@@ -6725,7 +6725,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 730,
 		num: 1173,
 		gen: 8,
-	
+
 	},
 	tr44: {
 		name: "TR44",
@@ -6735,7 +6735,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 734,
 		num: 1174,
 		gen: 8,
-	
+
 	},
 	tr45: {
 		name: "TR45",
@@ -6745,7 +6745,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 731,
 		num: 1175,
 		gen: 8,
-	
+
 	},
 	tr46: {
 		name: "TR46",
@@ -6755,7 +6755,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 729,
 		num: 1176,
 		gen: 8,
-	
+
 	},
 	tr47: {
 		name: "TR47",
@@ -6765,7 +6765,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 736,
 		num: 1177,
 		gen: 8,
-	
+
 	},
 	tr48: {
 		name: "TR48",
@@ -6775,7 +6775,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 722,
 		num: 1178,
 		gen: 8,
-	
+
 	},
 	tr49: {
 		name: "TR49",
@@ -6785,7 +6785,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 734,
 		num: 1179,
 		gen: 8,
-	
+
 	},
 	tr50: {
 		name: "TR50",
@@ -6795,7 +6795,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 732,
 		num: 1180,
 		gen: 8,
-	
+
 	},
 	tr51: {
 		name: "TR51",
@@ -6805,7 +6805,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 736,
 		num: 1181,
 		gen: 8,
-	
+
 	},
 	tr52: {
 		name: "TR52",
@@ -6815,7 +6815,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 729,
 		num: 1182,
 		gen: 8,
-	
+
 	},
 	tr53: {
 		name: "TR53",
@@ -6825,7 +6825,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 722,
 		num: 1183,
 		gen: 8,
-	
+
 	},
 	tr54: {
 		name: "TR54",
@@ -6835,7 +6835,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 724,
 		num: 1184,
 		gen: 8,
-	
+
 	},
 	tr55: {
 		name: "TR55",
@@ -6845,7 +6845,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 730,
 		num: 1185,
 		gen: 8,
-	
+
 	},
 	tr56: {
 		name: "TR56",
@@ -6855,7 +6855,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 722,
 		num: 1186,
 		gen: 8,
-	
+
 	},
 	tr57: {
 		name: "TR57",
@@ -6865,7 +6865,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 724,
 		num: 1187,
 		gen: 8,
-	
+
 	},
 	tr58: {
 		name: "TR58",
@@ -6875,7 +6875,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 737,
 		num: 1188,
 		gen: 8,
-	
+
 	},
 	tr59: {
 		name: "TR59",
@@ -6885,7 +6885,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 732,
 		num: 1189,
 		gen: 8,
-	
+
 	},
 	tr60: {
 		name: "TR60",
@@ -6895,7 +6895,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 727,
 		num: 1190,
 		gen: 8,
-	
+
 	},
 	tr61: {
 		name: "TR61",
@@ -6905,7 +6905,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 727,
 		num: 1191,
 		gen: 8,
-	
+
 	},
 	tr62: {
 		name: "TR62",
@@ -6915,7 +6915,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 736,
 		num: 1192,
 		gen: 8,
-	
+
 	},
 	tr63: {
 		name: "TR63",
@@ -6925,7 +6925,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 726,
 		num: 1193,
 		gen: 8,
-	
+
 	},
 	tr64: {
 		name: "TR64",
@@ -6935,7 +6935,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 722,
 		num: 1194,
 		gen: 8,
-	
+
 	},
 	tr65: {
 		name: "TR65",
@@ -6945,7 +6945,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 732,
 		num: 1195,
 		gen: 8,
-	
+
 	},
 	tr66: {
 		name: "TR66",
@@ -6955,7 +6955,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 723,
 		num: 1196,
 		gen: 8,
-	
+
 	},
 	tr67: {
 		name: "TR67",
@@ -6965,7 +6965,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 725,
 		num: 1197,
 		gen: 8,
-	
+
 	},
 	tr68: {
 		name: "TR68",
@@ -6975,7 +6975,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 737,
 		num: 1198,
 		gen: 8,
-	
+
 	},
 	tr69: {
 		name: "TR69",
@@ -6985,7 +6985,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 734,
 		num: 1199,
 		gen: 8,
-	
+
 	},
 	tr70: {
 		name: "TR70",
@@ -6995,7 +6995,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 729,
 		num: 1200,
 		gen: 8,
-	
+
 	},
 	tr71: {
 		name: "TR71",
@@ -7005,7 +7005,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 732,
 		num: 1201,
 		gen: 8,
-	
+
 	},
 	tr72: {
 		name: "TR72",
@@ -7015,7 +7015,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 732,
 		num: 1202,
 		gen: 8,
-	
+
 	},
 	tr73: {
 		name: "TR73",
@@ -7025,7 +7025,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 724,
 		num: 1203,
 		gen: 8,
-	
+
 	},
 	tr74: {
 		name: "TR74",
@@ -7035,7 +7035,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 729,
 		num: 1204,
 		gen: 8,
-	
+
 	},
 	tr75: {
 		name: "TR75",
@@ -7045,7 +7045,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 726,
 		num: 1205,
 		gen: 8,
-	
+
 	},
 	tr76: {
 		name: "TR76",
@@ -7055,7 +7055,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 726,
 		num: 1206,
 		gen: 8,
-	
+
 	},
 	tr77: {
 		name: "TR77",
@@ -7065,7 +7065,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 732,
 		num: 1207,
 		gen: 8,
-	
+
 	},
 	tr78: {
 		name: "TR78",
@@ -7075,7 +7075,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 724,
 		num: 1208,
 		gen: 8,
-	
+
 	},
 	tr79: {
 		name: "TR79",
@@ -7085,7 +7085,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 729,
 		num: 1209,
 		gen: 8,
-	
+
 	},
 	tr80: {
 		name: "TR80",
@@ -7095,7 +7095,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 733,
 		num: 1210,
 		gen: 8,
-	
+
 	},
 	tr81: {
 		name: "TR81",
@@ -7105,7 +7105,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 737,
 		num: 1211,
 		gen: 8,
-	
+
 	},
 	tr82: {
 		name: "TR82",
@@ -7115,7 +7115,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 734,
 		num: 1212,
 		gen: 8,
-	
+
 	},
 	tr83: {
 		name: "TR83",
@@ -7125,7 +7125,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 734,
 		num: 1213,
 		gen: 8,
-	
+
 	},
 	tr84: {
 		name: "TR84",
@@ -7135,7 +7135,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 731,
 		num: 1214,
 		gen: 8,
-	
+
 	},
 	tr85: {
 		name: "TR85",
@@ -7145,7 +7145,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 721,
 		num: 1215,
 		gen: 8,
-	
+
 	},
 	tr86: {
 		name: "TR86",
@@ -7155,7 +7155,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 733,
 		num: 1216,
 		gen: 8,
-	
+
 	},
 	tr87: {
 		name: "TR87",
@@ -7165,7 +7165,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 725,
 		num: 1217,
 		gen: 8,
-	
+
 	},
 	tr88: {
 		name: "TR88",
@@ -7175,7 +7175,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 730,
 		num: 1218,
 		gen: 8,
-	
+
 	},
 	tr89: {
 		name: "TR89",
@@ -7185,7 +7185,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 723,
 		num: 1219,
 		gen: 8,
-	
+
 	},
 	tr90: {
 		name: "TR90",
@@ -7195,7 +7195,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 738,
 		num: 1220,
 		gen: 8,
-	
+
 	},
 	tr91: {
 		name: "TR91",
@@ -7205,7 +7205,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 724,
 		num: 1221,
 		gen: 8,
-	
+
 	},
 	tr92: {
 		name: "TR92",
@@ -7215,7 +7215,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 738,
 		num: 1222,
 		gen: 8,
-	
+
 	},
 	tr93: {
 		name: "TR93",
@@ -7225,7 +7225,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 737,
 		num: 1223,
 		gen: 8,
-	
+
 	},
 	tr94: {
 		name: "TR94",
@@ -7235,7 +7235,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 725,
 		num: 1224,
 		gen: 8,
-	
+
 	},
 	tr95: {
 		name: "TR95",
@@ -7245,7 +7245,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 737,
 		num: 1225,
 		gen: 8,
-	
+
 	},
 	tr96: {
 		name: "TR96",
@@ -7255,7 +7255,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 727,
 		num: 1226,
 		gen: 8,
-	
+
 	},
 	tr97: {
 		name: "TR97",
@@ -7265,7 +7265,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 734,
 		num: 1227,
 		gen: 8,
-	
+
 	},
 	tr98: {
 		name: "TR98",
@@ -7275,7 +7275,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 731,
 		num: 1228,
 		gen: 8,
-	
+
 	},
 	tr99: {
 		name: "TR99",
@@ -7285,7 +7285,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		spritenum: 722,
 		num: 1229,
 		gen: 8,
-	
+
 	},
 	twistedspoon: {
 		name: "Twisted Spoon",
@@ -7314,7 +7314,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 669,
 		gen: 6,
-	
+
 	},
 	ultraball: {
 		name: "Ultra Ball",
@@ -7332,7 +7332,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Necrozma-Ultra"],
 		num: 923,
 		gen: 7,
-	
+
 	},
 	unremarkableteacup: {
 		name: "Unremarkable Teacup",
@@ -7351,7 +7351,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 252,
 		gen: 2,
-		
+
 	},
 	utilityumbrella: {
 		name: "Utility Umbrella",
@@ -7394,7 +7394,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 659,
 		gen: 6,
-	
+
 	},
 	wacanberry: {
 		name: "Wacan Berry",
@@ -7432,7 +7432,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 549,
 		gen: 5,
-	
+
 	},
 	watermemory: {
 		name: "Water Memory",
@@ -7448,7 +7448,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		itemUser: ["Silvally-Water"],
 		num: 913,
 		gen: 7,
-	
+
 	},
 	waterstone: {
 		name: "Water Stone",
@@ -7469,7 +7469,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		forcedForme: "Arceus-Water",
 		num: 778,
 		gen: 7,
-	
+
 	},
 	watmelberry: {
 		name: "Watmel Berry",
@@ -7482,7 +7482,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onEat: false,
 		num: 181,
 		gen: 3,
-	
+
 	},
 	waveincense: {
 		name: "Wave Incense",
@@ -7498,7 +7498,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 317,
 		gen: 4,
-	
+
 	},
 	weaknesspolicy: {
 		name: "Weakness Policy",
@@ -7541,7 +7541,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onEat: false,
 		num: 167,
 		gen: 3,
-	
+
 	},
 	whippeddream: {
 		name: "Whipped Dream",
@@ -7551,7 +7551,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 646,
 		gen: 6,
-	
+
 	},
 	whiteherb: {
 		name: "White Herb",
@@ -7617,7 +7617,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		onUpdate(pokemon) {
 			if (pokemon.hp <= pokemon.maxhp / 4 || (pokemon.hp <= pokemon.maxhp / 2 &&
-					pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
+				pokemon.hasAbility('gluttony') && pokemon.abilityState.gluttony)) {
 				pokemon.eatItem();
 			}
 		},
@@ -7733,7 +7733,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 0,
 		gen: 2,
-	
+
 	},
 	berry: {
 		name: "Berry",
@@ -7757,7 +7757,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 155,
 		gen: 2,
-	
+
 	},
 	bitterberry: {
 		name: "Bitter Berry",
@@ -7777,7 +7777,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 156,
 		gen: 2,
-	
+
 	},
 	burntberry: {
 		name: "Burnt Berry",
@@ -7799,7 +7799,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 153,
 		gen: 2,
-	
+
 	},
 	goldberry: {
 		name: "Gold Berry",
@@ -7823,7 +7823,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 158,
 		gen: 2,
-	
+
 	},
 	iceberry: {
 		name: "Ice Berry",
@@ -7845,7 +7845,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 152,
 		gen: 2,
-	
+
 	},
 	mintberry: {
 		name: "Mint Berry",
@@ -7867,7 +7867,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 150,
 		gen: 2,
-	
+
 	},
 	miracleberry: {
 		name: "Miracle Berry",
@@ -7888,7 +7888,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 157,
 		gen: 2,
-	
+
 	},
 	mysteryberry: {
 		name: "Mystery Berry",
@@ -7927,7 +7927,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 154,
 		gen: 2,
-	
+
 	},
 	pinkbow: {
 		name: "Pink Bow",
@@ -7939,7 +7939,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 251,
 		gen: 2,
-	
+
 	},
 	polkadotbow: {
 		name: "Polkadot Bow",
@@ -7951,7 +7951,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 251,
 		gen: 2,
-	
+
 	},
 	przcureberry: {
 		name: "PRZ Cure Berry",
@@ -7973,7 +7973,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 149,
 		gen: 2,
-	
+
 	},
 	psncureberry: {
 		name: "PSN Cure Berry",
@@ -7995,7 +7995,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 151,
 		gen: 2,
-	
+
 	},
 
 	// CAP items
@@ -8077,7 +8077,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 739375,
 		gen: 9,
-	
+
 	},
 	hawluchanite: {
 		name: "Hawluchanite",
@@ -8091,7 +8091,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 739376,
 		gen: 9,
-	
+
 	},
 	zapdosite: {
 		name: "Zapdosite",
@@ -8105,7 +8105,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 739377,
 		gen: 9,
-	
+
 	},
 	delphoxite: {
 		name: "Delphoxite",
@@ -8262,7 +8262,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 739376,
 		gen: 9,
-	
+
 	},
 	clefablite: {
 		name: "Clefablite",
@@ -8276,7 +8276,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 739376,
 		gen: 9,
-	
+
 	},
 	chandelurite: {
 		name: "Chandelurite",
@@ -8290,7 +8290,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 739376,
 		gen: 9,
-	
+
 	},
 	floettite: {
 		name: "Floettite",
@@ -8304,7 +8304,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 739376,
 		gen: 9,
-	
+
 	},
 	palossite: {
 		name: "Palossite",
@@ -8384,7 +8384,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 660,
 		gen: 9,
 	},
-    raichunitex: {
+	raichunitex: {
 		name: "Raichunite X",
 		spritenum: 580,
 		megaStone: "Raichu-Mega-X",
@@ -8397,7 +8397,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 660,
 		gen: 9,
 	},
-    raichunitey: {
+	raichunitey: {
 		name: "Raichunite Y",
 		spritenum: 586,
 		megaStone: "Raichu-Mega-Y",
@@ -8825,7 +8825,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 678,
 		gen: 9,
-	}, 
+	},
 	melmetalite: {
 		name: "Melmetalite",
 		spritenum: 627,
@@ -8950,17 +8950,17 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 2643,
 		gen: 9,
 	},*/
-	// vikavoltite: {
-	// 	name: "Vikavoltite",
-	// 	spritenum: 625,
-	// 	megaStone: "Vikavolt-Mega",
-	// 	megaEvolves: "Vikavolt",
-	// 	itemUser: ["Vikavolt"],
-	// 	onTakeItem(item, source) {
-	// 		if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
-	// 		return true;
-	// 	},
-	// },
+	vikavoltite: {
+		name: "Vikavoltite",
+		spritenum: 625,
+		megaStone: "Vikavolt-Mega",
+		megaEvolves: "Vikavolt",
+		itemUser: ["Vikavolt"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+	},
 	bronzebrick: {
 		name: "Bronze Brick",
 		spritenum: 23,
