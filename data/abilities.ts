@@ -2313,7 +2313,7 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 		rating: 2,
 		num: 85,
 	},
-	heatedmane: { //mega pyroar
+	firemane: { //mega pyroar
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, attacker, defender, move) {
 			if (move.type === 'Fire') {
@@ -2328,7 +2328,7 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 				return this.chainModify(1.5);
 			}
 		},
-		name: "Heated Mane",
+		name: "Fire Mane",
 		rating: 3.5,
 		num: 200,
 	},
@@ -2955,6 +2955,19 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 		name: "Levitate",
 		rating: 3.5,
 		num: 26,
+	},
+	eelevate: { // mega eelektross
+		// airborneness implemented in sim/pokemon.js:Pokemon#isGrounded
+		onSourceAfterFaint(length, target, source, effect) {
+			if (effect && effect.effectType === 'Move') {
+				const bestStat = source.getBestStat(true, true);
+				this.boost({ [bestStat]: length }, source);
+			}
+		},
+		isBreakable: true,
+		name: "Eelevate",
+		rating: 3.5,
+		num: 3373574055,
 	},
 	libero: {
 		onPrepareHit(source, target, move) {

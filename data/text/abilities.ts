@@ -2647,8 +2647,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "If there is a Ghost type on the field, at the end of the turn, they will get Burned, unless the target is immune to the Burn status.",
 		shortDesc: "Burns other Ghost types at end of turn.",
 	},
-	heatedmane: {
-		name: "Heated Mane",
+	firemane: {
+		name: "Fire Mane",
 		shortDesc: "This Pokemon's offensive stat is multiplied by 1.5 while using a Fire-type attack.",
 	},
 	forestguardian: {
