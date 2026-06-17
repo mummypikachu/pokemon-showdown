@@ -14378,8 +14378,8 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		evoType: "useItem",
 		evoItem: "Thunder Stone",
 		eggGroups: ["Bug"],
-		otherFormes: ["Vikavolt-Totem", "Vikavolt-Mega"],
-		formeOrder: ["Vikavolt", "Vikavolt-Totem", "Vikavolt-Mega"]],
+		otherFormes: ["Vikavolt-Totem"],
+		formeOrder: ["Vikavolt", "Vikavolt-Totem"],
 	},
 	vikavolttotem: {
 		num: 738,
