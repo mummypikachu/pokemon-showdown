@@ -1224,4 +1224,34 @@ export const Formats: FormatList = [
 			}
 		},
 	},
+	{
+		name: "[Gen 9] Infinite Fusion Fakemon OU",
+		mod: 'gen9',
+		ruleset: [
+			'Standard',
+			'Dynamax Clause',
+			'Terastal Clause',
+			'Z-Move Clause',
+		],
+
+		onValidateSet(set) {
+			const allowedPokemon = [
+				'Movile', 'Cai-Zhi', 'Charizard', 'Possaho', 'Han-miror', 'Mi-reflekt', 'Saikyish', 'Mentaicod'
+			];
+			const dexButBanned = [
+				'Scaffixer', 'Movile-Mega', 'Forzer', 'Toggt', 'Resuil'
+			];
+			
+			const item = this.dex.items.get(set.item);
+
+			const species = this.dex.species.get(set.species);
+			if (dexButBanned.includes(species.name)) {
+				return [`${species.name} is banned.`];
+			}
+			if (!allowedPokemon.includes(species.name)) {
+				return [`${species.name} is not entirely brand-new. This tier only allows Pokémon that are purely original and don't evolve from a pre-existing mon, aren't convergent, and aren't a Betamon.`];
+			}
+
+		},
+	},
 ];
