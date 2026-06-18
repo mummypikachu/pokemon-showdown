@@ -1225,7 +1225,7 @@ export const Formats: FormatList = [
 		},
 	},
 	{
-		name: "[Gen 9] Infinite Fusion Fakemon OU",
+		name: "[Gen 9] Complete Fakemon OU",
 		mod: 'gen9',
 		ruleset: [
 			'Standard',
@@ -1239,7 +1239,7 @@ export const Formats: FormatList = [
 				'Movile', 'Cai-Zhi', 'Ourobothon', 'Possaho', 'Han-miror', 'Mi-reflekt', 'Saikyish', 'Mentaicod'
 			];
 			const dexButBanned = [
-				'Scaffixer', 'Movile-Mega', 'Forzer', 'Toggt', 'Resuil'
+				'Scaffixer', 'Movile-Mega', 'Forzer', 'Toggt', 'Resuil', 'Alkaslime'
 			];
 			
 			const item = this.dex.items.get(set.item);
@@ -1249,7 +1249,7 @@ export const Formats: FormatList = [
 				return [`${species.name} is banned.`];
 			}
 			if (!allowedPokemon.includes(species.name)) {
-				return [`${species.name} is not entirely brand-new. This tier only allows Pokémon that are purely original and don't evolve from a pre-existing mon, aren't convergent, and aren't a Betamon.`];
+				return [`${species.name} is not entirely a fakemon. This tier only allows Pokémon that are purely original and don't evolve from a pre-existing mon, aren't convergent, and aren't a Betamon.`];
 			}
 
 		},
