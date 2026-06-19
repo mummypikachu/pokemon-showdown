@@ -6213,6 +6213,12 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		isNonstandard: "Future",
 		tier: "Illegal",
 	},
+	panspark: {
+		tier: "LC",
+	},
+	simispark: {
+		tier: "OU",
+	},
 	// Start CAP/Missingno, don't place under this
 	missingno: {
 		isNonstandard: "Custom",

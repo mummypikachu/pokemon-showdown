@@ -1236,7 +1236,7 @@ export const Formats: FormatList = [
 
 		onValidateSet(set) {
 			const allowedPokemon = [
-				'Movile', 'Cai-Zhi', 'Ourobothon', 'Possaho', 'Han-miror', 'Mi-reflekt', 'Saikyish', 'Mentaicod'
+				'Movile', 'Cai-Zhi', 'Ourobothon', 'Possaho', 'Han-miror', 'Mi-reflekt', 'Saikyish', 'Mentaicod', 'Panspark', 'Simispark'
 			];
 			const dexButBanned = [
 				'Scaffixer', 'Movile-Mega', 'Forzer', 'Toggt', 'Resuil', 'Alkaslime'
