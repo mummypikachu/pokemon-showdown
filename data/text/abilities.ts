@@ -2699,6 +2699,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Eelevate",
 		shortDesc: "This Pokémon is levitating. If the user KO's a Pokémon, raises highest stat by 1.",
 	},
+	reservebattery: {
+		name: "Reserve Battery",
+		desc: "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its offensive stat is multiplied by 1.5 while using a Electric-type attack.",
+		shortDesc: "At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5x with Electric attacks.",
+	},
 };
 
 

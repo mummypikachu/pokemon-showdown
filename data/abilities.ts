@@ -7410,4 +7410,23 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 		rating: 0,
 		num: 1234131218,
 	},
+	reservebattery: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Electric' && attacker.hp <= attacker.maxhp / 3) {
+				this.debug('Reserve Battery boost');
+				return this.chainModify(1.5);
+			}
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Electric' && attacker.hp <= attacker.maxhp / 3) {
+				this.debug('Reserve Battery boost');
+				return this.chainModify(1.5);
+			}
+		},
+		name: "Reserve Battery",
+		rating: 2,
+		num: 752725,
+	},
 };
