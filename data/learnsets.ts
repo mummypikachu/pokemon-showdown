@@ -43234,6 +43234,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			falseswipe: ["9M", "9M", "9M", "5M", "4M"],
 			frustration: ["9M", "9M", "5M", "4M", "3M"],
 			furycutter: ["9L1", "9L10", "6L10", "5L37", "9T", "4L37", "9T", "3L43"],
+			firstimpression: ["9M"],
 			harden: ["9L1", "9L1", "6L1", "5L1", "9S0", "4L1", "3L7"],
 			headbutt: ["9T"],
 			hiddenpower: ["9M", "9M", "5M", "4M", "3M"],
