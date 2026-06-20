@@ -21309,7 +21309,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		baseStats: {hp: 50, atk: 53, def: 48, spa: 53, spd: 48, spe: 64},
 		abilities: {0: "Gluttony", H: "Reserve Battery"},
 		heightm: 0.6,
-		weightkg: 10.5,
+		weightkg: 9.5,
 		color: "Yellow",
 		evos: ["Simispark"],
 		eggGroups: ["Field"],
@@ -21326,7 +21326,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Yellow",
 		prevo: "Panspark",
 		evoType: "useItem",
-		evoItem: "Leaf Stone",
+		evoItem: "Thunder Stone",
 		eggGroups: ["Field"],
 	},
 	//cap

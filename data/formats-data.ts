@@ -6206,8 +6206,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "OU",
 	},
 	ourobothon: {
-		isNonstandard: "Future",
-		tier: "Illegal",
+		tier: "OU",
 	},
 	kricketude: {
 		isNonstandard: "Future",
@@ -6217,7 +6216,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "LC",
 	},
 	simispark: {
-		tier: "OU",
+		tier: "UU",
 	},
 	// Start CAP/Missingno, don't place under this
 	missingno: {
