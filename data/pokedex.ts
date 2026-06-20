@@ -21280,7 +21280,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	ourobothon: {
 		num: 1587,
 		name: "Ourobothon",
-		types: ["Dragon"],
+		types: ["Dragon", "Normal"],
 		baseStats: {hp: 88, atk: 96, def: 88, spa: 96, spd: 88, spe: 96},
 		abilities: {0: "Infinity"},
 		heightm: 8,
