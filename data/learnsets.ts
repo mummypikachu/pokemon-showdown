@@ -67994,6 +67994,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			bugbite: ["9T", "6T", "5T"],
 			bugbuzz: ["9M", "9L56", "9L55", "6L55", "5L55"],
 			chargebeam: ["9M", "6M", "5M"],
+			clawslash: ["9M"],
 			confide: ["9M", "6M"],
 			darkpulse: ["9M", "9M", "6M", "5T"],
 			doubleteam: ["9M", "6M", "5M"],
@@ -68919,7 +68920,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "6M"],
-
+			clawslash: ["9M"],
 			thief: ["9M", "9M", "6M"],
 			toxic: ["9M", "6M"],
 			toxicspikes: ["9M"],
