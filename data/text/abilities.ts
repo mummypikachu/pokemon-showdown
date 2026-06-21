@@ -2704,6 +2704,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its offensive stat is multiplied by 1.5 while using a Electric-type attack.",
 		shortDesc: "At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5x with Electric attacks.",
 	},
+	oppositeday: {
+		name: "Opposite Day",
+		shortDesc: "All Pokémon on the field are under the effect of Contrary.",
+	},
 };
 
 

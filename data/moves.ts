@@ -3537,7 +3537,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	cryobeam: {
 		num: 58,
-		accuracy: 110,
+		accuracy: 100,
 		basePower: 100,
 		category: "Special",
 		name: "Cryobeam",
