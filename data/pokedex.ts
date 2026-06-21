@@ -21329,6 +21329,17 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		evoItem: "Thunder Stone",
 		eggGroups: ["Field"],
 	},
+	/*screamstone: { // by @mystora
+		num: 1591,
+		name: "Screamstone",
+		types: ["Rock", "Bug"],
+		baseStats: {hp: 88, atk: 96, def: 88, spa: 96, spd: 88, spe: 96},
+		abilities: {0: "Punk Rock"},
+		heightm: 8,
+		weightkg: 88,
+		color: "Gray",
+		eggGroups: ["Mineral"],
+	},*/
 	//cap
 	syclar: {
 		num: -1,
