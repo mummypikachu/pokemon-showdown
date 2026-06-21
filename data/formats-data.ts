@@ -6209,8 +6209,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "OU",
 	},
 	kricketude: {
-		isNonstandard: "Future",
-		tier: "Illegal",
+		tier: "OU",
 	},
 	panspark: {
 		tier: "LC",
