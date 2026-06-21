@@ -1,4 +1,4 @@
-export const MovesText: {[k: string]: MoveText} = {
+export const MovesText: { [k: string]: MoveText; } = {
 	"10000000voltthunderbolt": {
 		name: "10,000,000 Volt Thunderbolt",
 		desc: "Has a very high chance for a critical hit.",
@@ -2471,7 +2471,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	galvanicdetonation: {
 		name: "Galvanic Detonation",
-	    desc: "This attack charges on the first turn and executes on the second. If the user is holding a Power Herb it or has the ability Photosynthesis it does not require charge-up turn.",
+		desc: "This attack charges on the first turn and executes on the second. If the user is holding a Power Herb it or has the ability Photosynthesis it does not require charge-up turn.",
 		shortDesc: "Charges turn 1. Hits turn 2.",
 
 		prepare: "  [POKEMON] gathers a dangerous amount of electro-static and harsh sound.",
@@ -3306,7 +3306,7 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Nihil Light",
 		desc: "Neutral against Fairy type. This move cannot be used successfully unless the user's current form, while considering Transform, is Mega Zygarde.",
 		shortDesc: "Zygarde-Mega: Neutral against Fairy Type.",
-		
+
 		activate: "#shadowforce",
 		fail: "#darkvoid",
 	},
@@ -5106,8 +5106,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	psychopunch: {
 		name: "Psycho Punch",
-			desc: "Has a 10% chance to raise the User's Attack by 1 stage.",
-			shortDesc: "10% to raise the User's Attack by 1.",
+		desc: "Has a 10% chance to raise the User's Attack by 1 stage.",
+		shortDesc: "10% to raise the User's Attack by 1.",
 	},
 	psychoshift: {
 		name: "Psycho Shift",
@@ -7891,7 +7891,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	scaletip: {
 		name: "Scale Tip",
 		desc: "The target is hit for Physical damage if their first type is Normal, Fighting, Ground, Rock, Steel, Flying, Bug, Ghost or Poison, and for Special damage if their type is Water, Grass, Fire, Electric, Psychic, Fairy, Dark, Ice or Dragon. Types such as Stellar or Bird will make this move Physical. Pokémon with the ability Justified are immune to this move.",
-		shortDesc: "Move category based on the opponent's primary type.",
+		shortDesc: "Move category based on the opponent's first type.",
 	},
 	bis: {
 		name: "Bis",
@@ -7901,5 +7901,9 @@ export const MovesText: {[k: string]: MoveText} = {
 	clawslash: {
 		name: "Claw Slash",
 		shortDesc: "No secondary effect.",
+	},
+	prayer: {
+		name: "Prayer",
+		shortDesc: "Selects a random move from a select list."
 	},
 };

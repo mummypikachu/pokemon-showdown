@@ -98484,6 +98484,8 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 	kricketude: {
 		learnset: {
 			bis: ["9L1"],
+			boomburst: ["9M"],
+			moonlight: ["9M"],
 		},
 	},
 	panspark: {
