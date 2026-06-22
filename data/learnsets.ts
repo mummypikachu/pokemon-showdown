@@ -94462,7 +94462,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			leer: ["9L1", "9L1", "6L1", "5L1"],
 			lowkick: ["9M", "9L4", "9M", "9L12", "6T", "6L12", "5T", "5L12"],
 			lowsweep: ["9M", "9M", "9M", "5M"],
-			machpunch: ["9E", "9E", "9E", "5E"],
+			vacuumwave: ["9E", "9E", "9E", "5E"],
 			megakick: ["9M"],
 			payback: ["9M", "9M", "9M", "5M"],
 			tailwhip: ["9M", "9M", "9M", "5M"],
