@@ -7462,9 +7462,20 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 		},
 
 		onEnd(pokemon) {
-			if (this.field.pseudoWeather['contraryfield']) {
-				this.field.removePseudoWeather('contraryfield');
+			for (const side of this.sides) {
+				for (const active of side.active) {
+					if (
+						active &&
+						active !== pokemon &&
+						!active.fainted &&
+						active.hasAbility('oppositeday')
+					) {
+						return;
+					}
+				}
 			}
+
+			this.field.removePseudoWeather('contraryfield');
 		},
 		num: 3330333,
 	},
