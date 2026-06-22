@@ -96383,6 +96383,8 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			acrobatics: ["9M"],
 			aerialace: ["9M"],
 			dualwingbeat: ["9M"],
+			fellstinger: ["9M"],
+			supersonic: ["9M"],
 		},
 	},
 	arei: {

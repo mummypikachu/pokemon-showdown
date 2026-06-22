@@ -5989,13 +5989,13 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		newDexTier: "OU",
 	},
 	essorism: {
-		tier: "New",
+		tier: "PU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 		newDexTier: "RU",
 	},
 	kurumi: {
-		tier: "New",
+		tier: "NUBL",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 		newDexTier: "RUBL",
@@ -6047,7 +6047,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		newDexTier: "OU",
 	},
 	culepien: {
-		tier: "New",
+		tier: "NU",
 		doublesTier: "DOU",
 		natDexTier: "RU",
 		newDexTier: "RUBL",
@@ -6059,7 +6059,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		newDexTier: "UUBL",
 	},
 	bararin: {
-		tier: "New",
+		tier: "PU",
 		doublesTier: "DOU",
 		natDexTier: "RU",
 		newDexTier: "NU",
