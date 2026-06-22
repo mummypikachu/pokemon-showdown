@@ -14054,7 +14054,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Green",
 		eggGroups: ["Undiscovered"],
 		requiredItem: "Zygardite",
-		battleOnly: ["Zygarde", "Zygarde-10%"],
+		battleOnly: ["Zygarde-Complete"],
 		gen: 9,
 	},
 	diancie: {
