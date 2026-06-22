@@ -1,4 +1,4 @@
-export const AbilitiesText: {[k: string]: AbilityText} = {
+export const AbilitiesText: { [k: string]: AbilityText; } = {
 	noability: {
 		name: "No Ability",
 		shortDesc: "Does nothing.",
@@ -164,8 +164,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	battlebond: {
 		name: "Battle Bond",
-			desc: "If this Pokemon is a Greninja, it transforms into Ash-Greninja if it attacks and knocks out another Pokemon. If this Pokemon is an Ash-Greninja, its Water Shuriken has 20 power and always hits three times.",
-			shortDesc: "After KOing a Pokemon: becomes Ash-Greninja, Water Shuriken: 20 power, hits 3x.",
+		desc: "If this Pokemon is a Greninja, it transforms into Ash-Greninja if it attacks and knocks out another Pokemon. If this Pokemon is an Ash-Greninja, its Water Shuriken has 20 power and always hits three times.",
+		shortDesc: "After KOing a Pokemon: becomes Ash-Greninja, Water Shuriken: 20 power, hits 3x.",
 		activate: "  [POKEMON] became fully charged due to its bond with its Trainer!",
 		transform: "[POKEMON] became Ash-Greninja!",
 	},
@@ -208,7 +208,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	bleedingedge: {
 		name: "Bleeding Edge",
-		desc: "If the Pokémon uses an contact move on a turn, the targets takes an additional 1/8 of its full health damage by the end of the turn.",	
+		desc: "If the Pokémon uses an contact move on a turn, the targets takes an additional 1/8 of its full health damage by the end of the turn.",
 		shortDesc: "If this Pokemon uses a contact move, the target loses 1/8th full HP at end of turn.",
 	},
 	bulletproof: {
@@ -751,11 +751,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	hailpower: {
 		name: "Hail Power",
-		shortDesc: "If Hail/Snow is active, all attacks from this pokemon are boosted by 1.2x",	
+		shortDesc: "If Hail/Snow is active, all attacks from this pokemon are boosted by 1.2x",
 	},
 	hailstorm: {
 		name: "Hailstorm",
-		shortDesc: "On switch-in, this Pokemon summons Hail. Immune to Hail.",	
+		shortDesc: "On switch-in, this Pokemon summons Hail. Immune to Hail.",
 	},
 	harvest: {
 		name: "Harvest",
@@ -1368,7 +1368,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Speed Control",
 		desc: "This Pokemon cannot have its speed changed, including Trick Room.",
 		shortDesc: "Immune to all forms of Speed control.",
-		
+
 		start: "  [POKEMON] is going at its own pace!",
 	},
 	parentalbond: {
@@ -1396,7 +1396,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Phantom Thief",
 		desc: "The user swaps its held item with the target's held item. Fails if either the user or the target is holding a Mail or Z-Crystal, if neither is holding an item, if the user is trying to give or take a Mega Stone to or from the species that can Mega Evolve with it, or if the user is trying to give or take a Blue Orb, a Red Orb, a Griseous Orb, a Plate, a Drive, or a Memory to or from a Kyogre, a Groudon, a Giratina, an Arceus, a Genesect, or a Silvally, respectively.",
 		shortDesc: "User switches its held item with the target's.",
-		
+
 		activate: "  [POKEMON] switched items with its target!",
 	},
 	photosynthesis: {
@@ -2430,8 +2430,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	warriorsresolve: {
 		name: "Warrior's Resolve",
-			desc: "If this Pokemon is a Keldeo, it transforms into Resolute-Keldeo if it attacks and knocks out another Pokemon.",
-			shortDesc: "After KOing a Pokemon: becomes Resolute-Keldeo.",
+		desc: "If this Pokemon is a Keldeo, it transforms into Resolute-Keldeo if it attacks and knocks out another Pokemon.",
+		shortDesc: "After KOing a Pokemon: becomes Resolute-Keldeo.",
 		activate: "  [POKEMON] was filled with resolve and broken free from its own mental chains!",
 		transform: "[POKEMON] became Resolute-Keldeo!",
 	},
@@ -2707,6 +2707,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	oppositeday: {
 		name: "Opposite Day",
 		shortDesc: "All Pokémon on the field are under the effect of Contrary.",
+	},
+	petrificate: {
+		name: "Petrificate",
+		desc: "This Pokemon's Normal-type moves become Rock-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+		shortDesc: "This Pokemon's Normal-type moves become Rock type and have 1.2x power.",
 	},
 };
 

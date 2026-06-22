@@ -20295,7 +20295,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		forme: "Mega",
 		types: ["Fighting", "Rock"],
 		baseStats: {hp: 70, atk: 132, def: 120, spa: 40, spd: 93, spe: 80},
-		abilities: { 0: "Levitate" },
+		abilities: { 0: "Petrificate" },
 		heightm: 1.4,
 		weightkg: 125.5,
 		color: "Yellow",
