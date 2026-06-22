@@ -24155,7 +24155,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		basePower: 80,
 		category: "Physical",
 		name: "Scale Tip",
-		pp: 35,
+		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
 		onTryHit(target, source, move) {
@@ -24214,7 +24214,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		basePower: 40,
 		category: "Physical",
 		name: "Bis",
-		pp: 10,
+		pp: 5,
 		priority: 0,
 		flags: { sound: 1, protect: 1, mirror: 1 },
 		secondary: {
