@@ -6194,28 +6194,28 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "LC",
 	},
 	mireflekt: {
-		tier: "OU",
+		tier: "RU",
 	},
 	psyppy: {
 		tier: "LC",
 	},
 	psychound: {
-		tier: "OU",
+		tier: "UU",
 	},
 	caizhi: {
-		tier: "OU",
+		tier: "UUBL",
 	},
 	ourobothon: {
-		tier: "OU",
+		tier: "RU",
 	},
 	kricketude: {
-		tier: "OU",
+		tier: "(OU)",
 	},
 	panspark: {
 		tier: "LC",
 	},
 	simispark: {
-		tier: "UU",
+		tier: "RU",
 	},
 	// Start CAP/Missingno, don't place under this
 	missingno: {
