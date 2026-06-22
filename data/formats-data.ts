@@ -3636,7 +3636,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "OU",
 	},
 	kyurem: {
-		tier: "OU",
+		tier: "Uber",
 		natDexTier: "UU",
 	},
 	kyuremblack: {
