@@ -20856,7 +20856,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		num: 1562,
 		name: "Bararin",
 		types: ["Fairy"],
-		baseStats: {hp: 75, atk: 33, def: 93, spa: 53, spd: 103, spe: 20},
+		baseStats: {hp: 75, atk: 53, def: 93, spa: 53, spd: 103, spe: 50},
 		abilities: {0: "Healer", H: "Power Spot"},
 		heightm: 0.4,
 		weightkg: 9.3,
