@@ -1085,7 +1085,7 @@ export const MovesText: { [k: string]: MoveText; } = {
 	},
 	conversion3: {
 		name: "Conversion 3",
-		desc: "The user's type changes to match all types that this Pokémon has, including third types. The types this Pokémon obtains are the same as this Pokémon's moves. This move ignores the moves Conversion, Conversion 2, Conversion 3, Revelation Dance, Tera Blast, Hidden Power and Weather Ball, and will not turn into the types of these moves. This move fails if its movepool consists entirely of those moves, or already has the types it would turn into.",
+		desc: "The user's type changes to match all types that this Pokémon has, including third types. The types this Pokémon obtains are the same as this Pokémon's moves. This move ignores the moves Conversion, Conversion 2, Conversion 3, Revelation Dance, Tera Blast, Hidden Power and Weather Ball, and will not turn into the types of these moves. This move fails if its movepool consists entirely of those moves, or already has the types it would turn into. This move fails if the user is Terastalized.",
 		shortDesc: "Changes user's type to match all of its moves.",
 	},
 	copycat: {

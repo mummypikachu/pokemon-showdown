@@ -6215,9 +6215,12 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "LC",
 	},
 	simispark: {
-		tier: "RU",
+		tier: "NU",
 	},
-	// Start CAP/Missingno, don't place under this
+	screamstone: {
+		tier: "New",
+	},
+	// Start CAP/Missingno, don't place new mons under this
 	missingno: {
 		isNonstandard: "Custom",
 		tier: "Illegal",
