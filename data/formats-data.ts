@@ -6203,7 +6203,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "UU",
 	},
 	caizhi: {
-		tier: "UUBL",
+		tier: "UU",
 	},
 	ourobothon: {
 		tier: "RU",
