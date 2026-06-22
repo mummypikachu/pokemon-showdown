@@ -7447,6 +7447,23 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 		},
 		name: "Petrificate",
 		rating: 4,
-		num: 184,
+		num: 43741713,
+	},
+	oppositeday: {
+		name: "Opposite Day",
+		rating: 2,
+		onStart(pokemon) {
+			this.add('-ability', pokemon, 'Opposite Day');
+			this.add('-message', `${pokemon.name} rewrites all stat changes on the field!`);
+		},
+		onChangeBoost(boost, target, source, effect) {
+			if (effect?.id === 'zpower') return;
+
+			let i: BoostID;
+			for (i in boost) {
+				boost[i]! *= -1;
+			}
+		},
+		num: 3330333,
 	},
 };

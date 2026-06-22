@@ -13336,7 +13336,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		forme: "Mega",
 		types: ["Dark", "Psychic"],
 		baseStats: { hp: 86, atk: 102, def: 88, spa: 98, spd: 120, spe: 88 },
-		abilities: { 0: "Contrary"},
+		abilities: { 0: "Opposite Day"},
 		heightm: 2.9,
 		weightkg: 69.8,
 		color: "Blue",

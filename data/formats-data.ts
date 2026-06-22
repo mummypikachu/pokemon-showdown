@@ -572,12 +572,12 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "LC",
 	},
 	slowbro: {
-		tier: "RU",
+		tier: "OU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
 	slowbromega: {
-		tier: "OU",
+		tier: "(OU)",
 		natDexTier: "RU",
 	},
 	slowbrogalar: {
@@ -2127,7 +2127,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "RU",
 	},
 	cradilymega: {
-		tier: "OU",
+		tier: "UU",
 		natDexTier: "RU",
 	},
 	anorith: {
@@ -3462,7 +3462,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "RU",
 	},
 	chandeluremega: {
-		tier: "OU",
+		tier: "UUBL",
 		natDexTier: "OU",
 	},
 	axew: {
@@ -3884,7 +3884,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "RU",
 	},
 	malamarmega: {
-		tier: "RUBL",
+		tier: "OU",
 		natDexTier: "OU",
 	},
 	binacle: {
@@ -6156,11 +6156,11 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		newDexTier: "RU",
 	},
 	movile: {
-		tier: "RU",
+		tier: "NU",
 		newDexTier: "OU",
 	},
 	movilemega: {
-		tier: "OU",
+		tier: "RU",
 		newDexTier: "Uber",
 	},
 	saikyish: {
