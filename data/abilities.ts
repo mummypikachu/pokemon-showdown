@@ -7455,13 +7455,15 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 		onStart(pokemon) {
 			this.add('-ability', pokemon, 'Opposite Day');
 			this.add('-message', `${pokemon.name} rewrites all stat changes on the field!`);
-		},
-		onChangeBoost(boost, target, source, effect) {
-			if (effect?.id === 'zpower') return;
 
-			let i: BoostID;
-			for (i in boost) {
-				boost[i]! *= -1;
+			if (!this.field.pseudoWeather['contraryfield']) {
+				this.field.addPseudoWeather('contraryfield', pokemon);
+			}
+		},
+
+		onEnd(pokemon) {
+			if (this.field.pseudoWeather['contraryfield']) {
+				this.field.removePseudoWeather('contraryfield');
 			}
 		},
 		num: 3330333,

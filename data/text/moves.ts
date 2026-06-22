@@ -7906,4 +7906,8 @@ export const MovesText: { [k: string]: MoveText; } = {
 		name: "Prayer",
 		shortDesc: "Selects a random move from a select list."
 	},
+	contraryfield: {
+		name: "Contrary Field",
+		shortDesc: "Applies Contrary to all Pokémon. For Opposite Day ability."
+	},
 };

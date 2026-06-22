@@ -1,4 +1,4 @@
-export const Conditions: {[k: string]: ConditionData} = {
+export const Conditions: { [k: string]: ConditionData; } = {
 	brn: {
 		name: 'brn',
 		effectType: 'Status',
@@ -152,7 +152,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 				this.add('-fieldstart', 'move: Trick Room', '[of] ' + source);
 			}
 		},
-		
+
 		onFieldRestart(target, source) {
 			this.field.removePseudoWeather('trickroom');
 		},
@@ -163,33 +163,33 @@ export const Conditions: {[k: string]: ConditionData} = {
 			this.add('-fieldend', 'move: Trick Room');
 		},
 	},
-	tailwind:{
+	tailwind: {
 		name: 'tailwind',
 		effectType: 'Weather',
 		duration: 4,
 		durationCallback(target, source, effect) {
-				if (source?.hasAbility('windpower')) {
-					this.add('-activate', source, 'ability: Wind Power', '[move] Tailwind');
-					return 6;
-				}
-				return 4;
-			},
-			onSideStart(side, source) {
-				if (source?.hasAbility('windpower')) {
-					this.add('-sidestart', side, 'move: Tailwind', '[windpower]');
-				} else {
-					this.add('-sidestart', side, 'move: Tailwind');
-				}
-			},
-			onModifySpe(spe, pokemon) {
-				return this.chainModify(2);
-			},
-			onSideResidualOrder: 26,
-			onSideResidualSubOrder: 5,
-			onSideEnd(side) {
-				this.add('-sideend', side, 'move: Tailwind');
-			},
+			if (source?.hasAbility('windpower')) {
+				this.add('-activate', source, 'ability: Wind Power', '[move] Tailwind');
+				return 6;
+			}
+			return 4;
 		},
+		onSideStart(side, source) {
+			if (source?.hasAbility('windpower')) {
+				this.add('-sidestart', side, 'move: Tailwind', '[windpower]');
+			} else {
+				this.add('-sidestart', side, 'move: Tailwind');
+			}
+		},
+		onModifySpe(spe, pokemon) {
+			return this.chainModify(2);
+		},
+		onSideResidualOrder: 26,
+		onSideResidualSubOrder: 5,
+		onSideEnd(side) {
+			this.add('-sideend', side, 'move: Tailwind');
+		},
+	},
 	tox: {
 		name: 'tox',
 		effectType: 'Status',
@@ -245,7 +245,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 			this.activeTarget = pokemon;
 			const damage = this.actions.getConfusionDamage(pokemon, 40);
 			if (typeof damage !== 'number') throw new Error("Confusion damage not dealt");
-			const activeMove = {id: this.toID('confused'), effectType: 'Move', type: '???'};
+			const activeMove = { id: this.toID('confused'), effectType: 'Move', type: '???' };
 			this.damage(damage, pokemon, pokemon, activeMove as ActiveMove);
 			return false;
 		},
@@ -442,9 +442,9 @@ export const Conditions: {[k: string]: ConditionData} = {
 			pokemon.removeVolatile('truant');
 			return null;
 		},
-		onStart() {},
+		onStart() { },
 		onLockMove: 'recharge',
-		
+
 	},
 	futuremove: {
 		// this is a slot condition
@@ -974,7 +974,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 		name: "Commanded",
 		noCopy: true,
 		onStart(pokemon) {
-			this.boost({atk: 2, spa: 2, spe: 2, def: 2, spd: 2}, pokemon);
+			this.boost({ atk: 2, spa: 2, spe: 2, def: 2, spd: 2 }, pokemon);
 		},
 		onDragOutPriority: 2,
 		onDragOut() {
@@ -1059,6 +1059,17 @@ export const Conditions: {[k: string]: ConditionData} = {
 			}
 			source.removeVolatile('rolloutstorage');
 			return bp;
+		},
+	},
+	contraryfield: {
+		name: 'contraryfield',
+		onChangeBoost(boost, target, source, effect) {
+			if (effect?.id === 'zpower') return;
+
+			let i: BoostID;
+			for (i in boost) {
+				boost[i]! *= -1;
+			}
 		},
 	},
 };
