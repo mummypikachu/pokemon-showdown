@@ -7908,6 +7908,6 @@ export const MovesText: { [k: string]: MoveText; } = {
 	},
 	contraryfield: {
 		name: "Contrary Field",
-		shortDesc: "Applies Contrary to all Pokémon. For Opposite Day ability."
+		shortDesc: "Opposite Day ability. All mons=contrary effect."
 	},
 };
