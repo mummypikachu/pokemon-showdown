@@ -2715,7 +2715,7 @@ export const AbilitiesText: { [k: string]: AbilityText; } = {
 	},
 	curseeater: {
 		name: "Curse Eater",
-		shortDesc: "Cures burn, freeze, paralysis, poisoning at end of turn for other Pokémon. Heals 10% per cure.",
+		shortDesc: "Cures burn, freeze, paralysis, poison at end of turn for other Pokémon. Heals 10% per cure.",
 	},
 };
 
