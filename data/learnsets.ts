@@ -415,7 +415,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M", "7V", "9T", "9T"],
 			swordsdance: ["9M", "9M", "9M", "7V", "9M", "5M", "4M", "4E", "9T", "3E"],
 			takedown: ["9M", "7V"],
-
 			thunderpunch: ["9M", "9M", "9M", "9M", "6T", "5T", "9T"],
 			toxic: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			weatherball: ["9M"],
@@ -530,7 +529,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M", "7V", "9T", "9T"],
 			swordsdance: ["9M", "9M", "9M", "7V", "9M", "5M", "4M", "9T"],
 			takedown: ["9M", "7V"],
-
 			thunderpunch: ["9M", "9M", "9M", "9M", "6T", "5T", "9T"],
 			toxic: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			weatherball: ["9M"],
@@ -661,7 +659,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M", "9M", "7V", "9M", "5M", "4M", "9T"],
 			tailwind: ["9T", "6T", "5T", "9T"],
 			takedown: ["9M", "7V"],
-
 			thunderpunch: ["9M", "9M", "9M", "9T", "6T", "5T", "9T"],
 			toxic: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			twister: ["9T"],
@@ -2140,7 +2137,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swallow: ["9L25", "9L25", "6L25", "5L25", "4L25", "3L37"],
 			switcheroo: ["9E", "9E", "9E", "5E", "4E"],
 			takedown: ["9M", "7V"],
-
 			thief: ["9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			torment: ["9M", "9M", "5M", "4M", "3M"],
 			toxic: ["9M", "9M", "9M", "7V", "9M", "5M", "4M", "3M"],
@@ -2247,7 +2243,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "7V", "9M", "5M", "4M", "9T"],
 			swallow: ["9L27", "9L27", "6L27", "5L27", "4L28", "3L46"],
 			takedown: ["9M", "7V"],
-
 			thief: ["9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			throatchop: ["9T"],
 			thunderfang: ["9M", "9L1", "9L1", "6L1", "5L1", "4L1"],
@@ -2341,7 +2336,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1", "9L1", "9L5", "9M", "6L5", "5L5", "4L5", "3L6"],
 			takedown: ["9M"],
 			teeterdance: ["9S2"],
-
 			thunder: ["9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "5M", "4M", "4S4", "3M"],
 			thunderpunch: ["9M", "9M", "9T", "9E", "6T", "9E", "5E", "4E"],
@@ -2567,7 +2561,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1", "9S53", "9L1", "9M", "9L1", "9M", "6L1", "6S38", "5L5", "9S28", "4L5", "4S9", "4S12", "4S15", "4S17", "4S20", "4S22", "3L6", "9S1", "9S2", "9S3", "9S4", "9S10"],
 			takedown: ["9M", "9M"],
 			teeterdance: ["7S45", "6S38", "9S23"],
-
 			thief: ["9M", "9M"],
 			thunder: ["9M", "9L44", "9S54", "9M", "9L44", "9M", "9M", "9L58", "9M", "9M", "6L50", "6S35", "5M", "5L50", "9S25", "4M", "4L45", "4S14", "4S16", "3M", "3L41", "9S0", "9S6", "9S7", "9S8"],
 			thunderbolt: ["9M", "9L36", "9M", "9L36", "9M", "9S51", "9M", "9L42", "9M", "7S49", "9M", "6L29", "6S33", "6S34", "6S37", "5M", "5L29", "9S26", "9S27", "9S30", "4M", "4L26", "4S11", "4S13", "4S18", "4S21", "3M", "3L26", "9S0", "9S6", "9S7", "9S8"],
@@ -2815,7 +2808,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1", "9S53", "9L1", "9M", "9L1", "9M", "6L1", "6S38", "5L5", "9S28", "4L5", "4S9", "4S12", "4S15", "4S17", "4S20", "4S22", "3L6", "9S1", "9S2", "9S3", "9S4", "9S10"],
 			takedown: ["9M", "9M"],
 			teeterdance: ["7S45", "6S38", "9S23"],
-
 			thief: ["9M", "9M"],
 			thunder: ["9M", "9L44", "9S54", "9M", "9L44", "9M", "9M", "9L58", "9M", "9M", "6L50", "6S35", "5M", "5L50", "9S25", "4M", "4L45", "4S14", "4S16", "3M", "3L41", "9S0", "9S6", "9S7", "9S8"],
 			thunderbolt: ["9M", "9L36", "9M", "9L36", "9M", "9S51", "9M", "9L42", "9M", "7S49", "9M", "6L29", "6S33", "6S34", "6S37", "5M", "5L29", "9S26", "9S27", "9S30", "4M", "4L26", "4S11", "4S13", "4S18", "4S21", "3M", "3L26", "9S0", "9S6", "9S7", "9S8"],
@@ -2944,7 +2936,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1", "9S53", "9L1", "9M", "9L1", "9M", "6L1", "6S38", "5L5", "9S28", "4L5", "4S9", "4S12", "4S15", "4S17", "4S20", "4S22", "3L6", "9S1", "9S2", "9S3", "9S4", "9S10"],
 			takedown: ["9M", "9M"],
 			teeterdance: ["7S45", "6S38", "9S23"],
-
 			thief: ["9M", "9M"],
 			thunder: ["9M", "9L44", "9S54", "9M", "9L44", "9M", "9M", "9L58", "9M", "9M", "6L50", "6S35", "5M", "5L50", "9S25", "4M", "4L45", "4S14", "4S16", "3M", "3L41", "9S0", "9S6", "9S7", "9S8"],
 			thunderbolt: ["9M", "9L36", "9M", "9L36", "9M", "9S51", "9M", "9L42", "9M", "7S49", "9M", "6L29", "6S33", "6S34", "6S37", "5M", "5L29", "9S26", "9S27", "9S30", "4M", "4L26", "4S11", "4S13", "4S18", "4S21", "3M", "3L26", "9S0", "9S6", "9S7", "9S8"],
@@ -3072,7 +3063,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1", "9S53", "9L1", "9M", "9L1", "9M", "6L1", "6S38", "5L5", "9S28", "4L5", "4S9", "4S12", "4S15", "4S17", "4S20", "4S22", "3L6", "9S1", "9S2", "9S3", "9S4", "9S10"],
 			takedown: ["9M", "9M"],
 			teeterdance: ["7S45", "6S38", "9S23"],
-
 			thief: ["9M", "9M"],
 			thunder: ["9M", "9L44", "9S54", "9M", "9L44", "9M", "9M", "9L58", "9M", "9M", "6L50", "6S35", "5M", "5L50", "9S25", "4M", "4L45", "4S14", "4S16", "3M", "3L41", "9S0", "9S6", "9S7", "9S8"],
 			thunderbolt: ["9M", "9L36", "9M", "9L36", "9M", "9S51", "9M", "9L42", "9M", "7S49", "9M", "6L29", "6S33", "6S34", "6S37", "5M", "5L29", "9S26", "9S27", "9S30", "4M", "4L26", "4S11", "4S13", "4S18", "4S21", "3M", "3L26", "9S0", "9S6", "9S7", "9S8"],
@@ -3165,7 +3155,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M"],
 			tailwhip: ["9L1", "9L1", "9L1"],
 			takedown: ["9M"],
-
 			thief: ["9M", "9M"],
 			thunder: ["9M", "9L44", "9M", "9L44", "9M", "9L58", "7S0"],
 			thunderbolt: ["9M", "9L36", "9M", "9L36", "9S1", "9M", "9L42", "7S0"],
@@ -3293,7 +3282,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1", "9S53", "9L1", "9M", "9L1", "9M", "6L1", "6S38", "5L5", "9S28", "4L5", "4S9", "4S12", "4S15", "4S17", "4S20", "4S22", "3L6", "9S1", "9S2", "9S3", "9S4", "9S10"],
 			takedown: ["9M", "9M"],
 			teeterdance: ["7S45", "6S38", "9S23"],
-
 			thief: ["9M", "9M"],
 			thunder: ["9M", "9L44", "9S54", "9M", "9L44", "9M", "9M", "9L58", "9M", "9M", "6L50", "6S35", "5M", "5L50", "9S25", "4M", "4L45", "4S14", "4S16", "3M", "3L41", "9S0", "9S6", "9S7", "9S8"],
 			thunderbolt: ["9M", "9L36", "9M", "9L36", "9M", "9S51", "9M", "9L42", "9M", "7S49", "9M", "6L29", "6S33", "6S34", "6S37", "5M", "5L29", "9S26", "9S27", "9S30", "4M", "4L26", "4S11", "4S13", "4S18", "4S21", "3M", "3L26", "9S0", "9S6", "9S7", "9S8"],
@@ -3387,7 +3375,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M"],
 			tailwhip: ["9L1", "9L1", "9L1"],
 			takedown: ["9M"],
-
 			thief: ["9M", "9M"],
 			thunder: ["9M", "9L44", "9M", "9L44", "9M", "9L58", "7S0"],
 			thunderbolt: ["9M", "9L36", "9M", "9L36", "9S1", "9M", "9L42", "7S0"],
@@ -3480,7 +3467,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M"],
 			tailwhip: ["9L1", "9L1", "9L1"],
 			takedown: ["9M"],
-
 			thief: ["9M", "9M"],
 			thunder: ["9M", "9L44", "9M", "9L44", "9M", "9L58", "7S0"],
 			thunderbolt: ["9M", "9L36", "9M", "9L36", "9S1", "9M", "9L42", "7S0"],
@@ -3573,7 +3559,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M"],
 			tailwhip: ["9L1", "9L1", "9L1"],
 			takedown: ["9M"],
-
 			thief: ["9M", "9M"],
 			thunder: ["9M", "9L44", "9M", "9L44", "9M", "9L58"],
 			thunderbolt: ["9M", "9L36", "9M", "9L36", "9S1", "9M", "9L42", "7S0"],
@@ -3666,7 +3651,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M"],
 			tailwhip: ["9L1", "9L1", "9L1"],
 			takedown: ["9M"],
-
 			thief: ["9M", "9M"],
 			thunder: ["9M", "9L44", "9M", "9L44", "9M", "9L58"],
 			thunderbolt: ["9M", "9L36", "9M", "9L36", "9S1", "9M", "9L42", "7S0"],
@@ -3759,7 +3743,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M"],
 			tailwhip: ["9L1", "9L1", "9L1"],
 			takedown: ["9M"],
-
 			thief: ["9M", "9M"],
 			thunder: ["9M", "9L44", "9M", "9L44", "9M", "9L58"],
 			thunderbolt: ["9M", "9L36", "9M", "9L36", "9S1", "9M", "9L42", "7S0"],
@@ -3852,7 +3835,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M"],
 			tailwhip: ["9L1", "9L1", "9L1"],
 			takedown: ["9M"],
-
 			thief: ["9M", "9M"],
 			thunder: ["9M", "9L44", "9M", "9L44", "9M", "9L58"],
 			thunderbolt: ["9M", "9L36", "9M", "9L36", "9S1", "9M", "9L42", "7S0"],
@@ -3945,7 +3927,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M"],
 			tailwhip: ["9L1", "9L1", "9L1"],
 			takedown: ["9M"],
-
 			thief: ["9M", "9M"],
 			thunder: ["9M", "9L44", "9M", "9L44", "9M", "9L58", "7S0"],
 			thunderbolt: ["9M", "9L36", "9M", "9L36", "9S1", "9M", "9L42", "7S0"],
@@ -4065,7 +4046,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M"],
 			tailwhip: ["9L1", "9L1"],
 			takedown: ["9M"],
-
 			thief: ["9M", "9M"],
 			thunder: ["9M", "9L44", "9M", "9L44"],
 			thunderbolt: ["9M", "9L36", "9M", "9L36", "9S1", "9S0"],
@@ -4182,7 +4162,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M", "9M", "9T", "9T"],
 			tailwhip: ["9L1", "9L1", "9M", "9L1", "9M", "6L1", "5L1", "4L1", "3L1"],
 			takedown: ["9M", "9M"],
-
 			thunderclap: ["9M"],
 			thief: ["9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunder: ["9M", "9L1", "9M", "9L1", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
@@ -4287,7 +4266,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			takedown: ["9M"],
 			telekinesis: ["9T"],
 			teleport: ["9M"],
-
 			thief: ["9M", "9M", "9M"],
 			thunder: ["9M", "9L1", "9M", "9L1", "9M", "9M"],
 			thunderbolt: ["9M", "9L5", "9M", "9L1", "9M", "9M", "9L1"],
@@ -4397,7 +4375,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9L21", "9M", "9L21", "9M", "9L17", "7V", "6L11", "5L15", "9T", "4L15", "9T", "3L30"],
 			swordsdance: ["9M", "9L39", "9M", "9L39", "9M", "9M", "9L38", "7V", "9M", "6L38", "5M", "5L38", "4M", "4E", "9T", "3E"],
 			takedown: ["9M", "7V"],
-
 			thief: ["9M", "9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			throatchop: ["9M"],
 			toxic: ["9M", "9M", "7V", "9M", "5M", "4M", "3M"],
@@ -4496,7 +4473,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9L21", "9M", "9L21", "9M", "9L17"],
 			swordsdance: ["9M", "9L39", "9M", "9L39", "9M", "9M", "9L38"],
 			takedown: ["9M"],
-
 			thief: ["9M", "9M", "9M"],
 			throatchop: ["9M", "7T"],
 			toxic: ["9M", "9M"],
@@ -4604,7 +4580,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9L21", "9M", "9L21", "9M", "9L17", "7V", "6L11", "5L15", "9T", "4L15", "9T", "3L33"],
 			swordsdance: ["9M", "9L51", "9M", "9L51", "9M", "9M", "9L43", "7V", "9M", "6L38", "5M", "5L38", "4M", "9T"],
 			takedown: ["9M", "7V"],
-
 			thief: ["9M", "9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			throatchop: ["9M"],
 			toxic: ["9M", "9M", "7V", "9M", "5M", "4M", "3M"],
@@ -4704,7 +4679,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9L1", "9M", "9L1"],
 			swordsdance: ["9M", "9L1", "9M", "9L1", "9M"],
 			takedown: ["9M"],
-
 			thief: ["9M", "9M", "9M"],
 			throatchop: ["9M", "7T"],
 			toxic: ["9M", "9M"],
@@ -6135,7 +6109,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailslap: ["9M"],
 			tailwhip: ["9L1", "9L1", "9M"],
 			takedown: ["9M"],
-
 			toxic: ["9M", "9M"],
 			tripleaxel: ["9T"],
 			weatherball: ["9M", "9M"],
@@ -6231,7 +6204,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sweetkiss: ["9L8", "9L8", "9L9", "9M", "6L9", "5L13", "4L13", "3L14"],
 			swift: ["9M"],
 			takedown: ["9M"],
-
 			thunderwave: ["9M", "9M", "9M", "9M", "5M", "4M", "9T"],
 			tickle: ["9S0"],
 			toxic: ["9M", "9M", "9M", "5M", "4M", "3M"],
@@ -6380,7 +6352,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			taunt: ["9M"],
 			telekinesis: ["9T"],
 			teleport: ["9M", "9M"],
-
 			thief: ["9M"],
 			thunder: ["9M", "9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
@@ -6543,7 +6514,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			taunt: ["9M"],
 			telekinesis: ["9T"],
 			teleport: ["9M", "9M"],
-
 			thief: ["9M"],
 			thunder: ["9M", "9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
@@ -7404,7 +7374,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M", "9T", "9T"],
 			tackle: ["9L1", "9M", "9L1", "9M", "6L1", "5L1", "4L1", "3L1"],
 			takedown: ["9M", "9M"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			toxic: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			toxicspikes: ["9M", "9E", "9E", "9E", "5E", "4E"],
@@ -7499,7 +7468,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwind: ["9T", "6T", "5T", "9T"],
 			takedown: ["9M", "9M"],
 			teleport: ["9M", "9M"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			toxic: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			toxicspikes: ["9M"],
@@ -7596,7 +7564,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "9M", "9M", "5M", "4M", "9T"],
 			swordsdance: ["9M"],
 			takedown: ["9M", "9M"],
-
 			thief: ["9M", "9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			toxic: ["9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			uproar: ["9M", "9M", "9E", "9E", "5T", "5E", "4E", "3E"],
@@ -7681,7 +7648,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M"],
 			swordsdance: ["9M"],
 			takedown: ["9M"],
-
 			thief: ["9M", "9M", "9M"],
 			thrash: ["9E", "9E", "9E"],
 			toxic: ["9M", "9M"],
@@ -7771,7 +7737,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "7V", "9M", "5M", "4M", "9T"],
 			swordsdance: ["9M"],
 			takedown: ["9M", "9M"],
-
 			thief: ["9M", "9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			toxic: ["9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			triattack: ["9L1", "9M", "9L1", "9M", "9L1", "7V", "6L1", "5L1", "4L1", "3L1", "3S0"],
@@ -7861,7 +7826,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M"],
 			swordsdance: ["9M"],
 			takedown: ["9M"],
-
 			thief: ["9M", "9M", "9M"],
 			toxic: ["9M", "9M"],
 			triattack: ["9L1", "9M", "9L1", "9M", "9L1"],
@@ -7967,7 +7931,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9E", "9E", "9E", "9E", "5E", "4E"],
 			takedown: ["9M", "9M"],
 			taunt: ["9M", "9L20", "9M", "9L20", "9M", "9M", "9L25", "9M", "6L25", "5M", "5L25", "4M", "4L25", "3M"],
-
 			thief: ["9M", "9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			throatchop: ["9M", "7T"],
 			thunder: ["9M", "9M", "9M", "9M", "7V", "9M", "5M", "4M", "3M"],
@@ -8080,7 +8043,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L20", "9M", "9L20", "9M", "9M", "9L25"],
-
 			thief: ["9M", "9M", "9M"],
 			throatchop: ["9M", "7T"],
 			thunder: ["9M", "9M", "9M", "9M"],
@@ -8163,7 +8125,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L20", "9M", "9L20"],
-
 			thief: ["9M", "9M"],
 			thrash: ["9L44", "9L44"],
 			throatchop: ["9M"],
@@ -8275,7 +8236,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			switcheroo: ["9L1", "9L1", "9L1", "6L1", "5L1", "4L1"],
 			takedown: ["9M", "9M"],
 			taunt: ["9M", "9L20", "9M", "9L20", "9M", "9M", "9L25", "9M", "6L25", "5M", "5L25", "4M", "4L25", "3M"],
-
 			thief: ["9M", "9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			throatchop: ["9M", "7T"],
 			thunder: ["9M", "9M", "9M", "9M", "7V", "9M", "5M", "4M", "3M"],
@@ -8381,7 +8341,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			switcheroo: ["9L1", "9L1", "9L1"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L20", "9M", "9L20", "9M", "9M", "9L25"],
-
 			thief: ["9M", "9M", "9M"],
 			throatchop: ["9M", "7T"],
 			thunder: ["9M", "9M", "9M", "9M"],
@@ -8463,7 +8422,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L20", "9M", "9L20"],
-
 			thief: ["9M", "9M"],
 			thrash: ["9L54", "9L54"],
 			throatchop: ["9M"],
@@ -8583,7 +8541,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			takedown: ["9M", "9M"],
 			taunt: ["9M"],
 			telekinesis: ["9T", "5M"],
-
 			thief: ["9M"],
 			toxic: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			trailblaze: ["9M"],
@@ -8713,7 +8670,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			takedown: ["9M", "9M"],
 			taunt: ["9M"],
 			telekinesis: ["9T", "5M"],
-
 			thief: ["9M"],
 			toxic: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			trailblaze: ["9M"],
@@ -8848,7 +8804,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M", "9T", "9T"],
 			takedown: ["9M", "9M"],
 			taunt: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
-
 			thief: ["9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			thrash: ["9L29", "9M", "9L33", "7V", "6L41", "5L41", "4L41", "3L46"],
 			thunder: ["9M", "9M", "7V", "9M", "5M", "4M", "3M"],
@@ -8970,7 +8925,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M", "9T", "9T"],
 			takedown: ["9M", "9M"],
 			taunt: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
-
 			thief: ["9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			thrash: ["9L30", "9M", "9L35", "7V", "6L47", "5L47", "4L47", "3L62"],
 			throatchop: ["9T"],
@@ -9062,7 +9016,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			thief: ["9M"],
 			thrash: ["9L30"],
 			throatchop: ["9M"],
@@ -9150,7 +9103,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "7V", "9M", "5M", "4M", "9T"],
 			swift: ["9M", "9M", "7V", "9T", "9T"],
 			takedown: ["9M", "9L36", "9L36", "9M", "9L23", "7V", "6L23", "5L34", "4L31", "3L25", "3S0", "3S2"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thrash: ["9E", "9E", "9E", "9M", "9E", "5E", "4E", "3E"],
 			thunderfang: ["9M"],
@@ -9219,7 +9171,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M"],
 			takedown: ["9M", "9L36"],
 			temperflare: ["9M"],
-
 			thrash: ["9E"],
 			thunderfang: ["9M"],
 			wildcharge: ["9M"],
@@ -9312,7 +9263,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M", "7V", "9T", "9T"],
 			takedown: ["9M", "9L1", "9L1", "7V"],
 			teleport: ["9M", "7V"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderfang: ["9M", "9M", "9L1", "6L1", "5L1", "4L1", "4S0"],
 			toxic: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
@@ -9385,7 +9335,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M"],
 			takedown: ["9M", "9L1"],
 			temperflare: ["9M"],
-
 			thief: ["9M"],
 			thunderfang: ["9M"],
 			wildcharge: ["9M"],
@@ -9453,7 +9402,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M"],
 			takedown: ["9M", "9L1"],
 			temperflare: ["9M"],
-
 			thief: ["9M"],
 			thunderfang: ["9M"],
 			wildcharge: ["9M"],
@@ -9532,7 +9480,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sweetkiss: ["3S0"],
 			swift: ["9M"],
 			takedown: ["9M", "7V"],
-
 			thief: ["9M", "9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			toxic: ["9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			wakeupslap: ["9L35", "6L35", "5L35", "4L35"],
@@ -9633,7 +9580,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "7V", "9M", "5M", "4M", "9T"],
 			swift: ["9M"],
 			takedown: ["9M", "7V"],
-
 			thief: ["9M", "9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			toxic: ["9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			wakeupslap: ["9L43", "6L43", "5L43", "4L43"],
@@ -9755,7 +9701,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M"],
 			takedown: ["9M", "7V"],
 			taunt: ["9M"],
-
 			thief: ["9M", "9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			throatchop: ["9M", "7T"],
 			toxic: ["9M", "9M", "7V", "9M", "5M", "4M", "3M"],
@@ -9853,7 +9798,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9L1", "9L1", "9M", "9L27", "7V", "9M", "6L27", "5M", "5L27", "4M", "4L27", "9T", "3L51"],
 			swift: ["9M"],
 			takedown: ["9M"],
-
 			tyrantswrath: ["9M"],
 			thief: ["9M", "9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			toxic: ["9M", "7V", "9M", "5M", "4M", "3M"],
@@ -9943,7 +9887,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			signalbeam: ["9T", "6T", "5T", "9T"],
 			skillswap: ["9M", "9T", "9E", "6T", "9E", "5T", "5E", "5D", "4M", "3M"],
 			skullbash: ["9M"],
-
 			sleeptalk: ["9M", "9M", "9M", "9M", "5T", "4M", "9T"],
 			snatch: ["9T", "6T", "5T", "4M", "3M"],
 			snore: ["9M", "9T", "9M", "6T", "5T", "9T", "9T"],
@@ -10058,7 +10001,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			snatch: ["9T", "6T", "5T", "4M", "3M"],
 			snore: ["9M", "9T", "9M", "6T", "5T", "9T", "9T"],
 			speedswap: ["9M"],
-
 			submission: ["9M"],
 			substitute: ["9M", "9M", "9M", "9M", "9M", "5M", "4M", "9T"],
 			sunnyday: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
@@ -10178,7 +10120,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sleeptalk: ["9M", "9M", "9M", "9M", "5T", "4M", "9T"],
 			snatch: ["9T", "6T", "5T", "4M", "3M"],
 			snore: ["9M", "9T", "9M", "6T", "5T", "9T", "9T"],
-
 			speedswap: ["9M"],
 			storedpower: ["9M"],
 			submission: ["9M"],
@@ -10762,7 +10703,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M", "9M", "7V", "9M", "5M", "4M", "9T"],
 			synthesis: ["9T", "6T", "5T", "9T"],
 			takedown: ["9M"],
-
 			thief: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			toxic: ["9M", "9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			trailblaze: ["9M"],
@@ -11120,7 +11060,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M"],
 			tackle: ["9L1", "9M", "9L1"],
 			takedown: ["9M", "9M"],
-
 			thunder: ["9M", "9M", "9M"],
 			thunderbolt: ["9M", "9M", "9M"],
 			thunderpunch: ["9M", "9L22", "9M", "7T", "9L22"],
@@ -11296,7 +11235,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M"],
 			tackle: ["9L1", "9M", "9L1"],
 			takedown: ["9M", "9M"],
-
 			thunder: ["9M", "9M", "9M"],
 			thunderbolt: ["9M", "9M", "9M"],
 			thunderpunch: ["9M", "9L22", "9M", "7T", "9L22"],
@@ -11479,7 +11417,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M"],
 			tackle: ["9L1", "9M", "9L1"],
 			takedown: ["9M", "9M"],
-
 			thunder: ["9M", "9M", "9M"],
 			thunderbolt: ["9M", "9M", "9M"],
 			thunderpunch: ["9M", "9L22", "9M", "7T", "9L22"],
@@ -11870,7 +11807,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			takedown: ["9M", "9M"],
 			telekinesis: ["9T", "5M"],
 			teleport: ["9M", "9M"],
-
 			thunderwave: ["9M", "9M", "9M", "9M", "9M", "9M", "5M", "4M", "9T"],
 			toxic: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			triattack: ["9M", "9M", "9M"],
@@ -11965,7 +11901,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M"],
 			tackle: ["9L1", "9L1"],
 			takedown: ["9M"],
-
 			thunderwave: ["9M", "9M"],
 			triattack: ["9M"],
 			trick: ["9M", "9M"],
@@ -12100,7 +12035,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			takedown: ["9M", "9M"],
 			telekinesis: ["9T", "5M"],
 			teleport: ["9M", "9M"],
-
 			thunderwave: ["9M", "9M", "9M", "9M", "9M", "9M", "5M", "4M", "9T"],
 			toxic: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			triattack: ["9M", "9M", "9M"],
@@ -12223,7 +12157,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M"],
 			tackle: ["9L1", "9L1"],
 			takedown: ["9M"],
-
 			thunderwave: ["9M", "9M"],
 			triattack: ["9M"],
 			trick: ["9M", "9M"],
@@ -12360,7 +12293,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9L1", "9M", "6L1", "5L1", "4L1", "3L1"],
 			takedown: ["9M"],
 			telekinesis: ["9T", "5M"],
-
 			thunderpunch: ["9M"],
 			thunderwave: ["9M", "9M", "9M", "9M", "5M", "4M", "9T"],
 			toxic: ["9M", "9M", "9M", "5M", "4M", "3M"],
@@ -12473,7 +12405,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			thunderpunch: ["9M"],
 			thunderwave: ["9M", "9M"],
 			toxic: ["9L1"],
@@ -12561,7 +12492,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9M", "9L1", "9M", "6L1", "5L1", "4L1", "3L1"],
 			takedown: ["9M", "9M"],
 			teleport: ["9M", "9M"],
-
 			thunder: ["9M", "9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thundershock: ["9L1", "9L1", "9M", "9L5", "9M", "6L7", "5L6", "5D", "4L6", "3L6"],
@@ -12645,7 +12575,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9M", "9L1", "9M", "6L1", "5L1", "4L1", "3L1"],
 			takedown: ["9M", "9M"],
 			teleport: ["9M", "9M"],
-
 			thunder: ["9M", "9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M", "9S0"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thundershock: ["9L1", "9L1", "9M", "9L1", "9M", "6L1", "5L1", "4L1", "3L1"],
@@ -12737,7 +12666,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M", "9T"],
 			tackle: ["9L1", "9L1", "9L1", "6L1", "5L1", "4L1"],
 			takedown: ["9M"],
-
 			thunder: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			thundershock: ["9L1", "9L1", "9L1", "6L1", "5L1", "4L1"],
@@ -13600,7 +13528,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunder: ["9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
@@ -13712,7 +13639,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M"],
-
 			thief: ["9M", "9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
@@ -13794,7 +13720,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9M", "9L1", "9M", "6L1", "5L1", "4L1", "3L1", "9S1"],
 			takedown: ["9M", "9E", "9M", "9E", "5E", "4E", "3E", "9S2"],
 			teleport: ["9M", "9M"],
-
 			toxic: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			toxicspikes: ["9M"],
 			triattack: ["9M", "9M", "9M"],
@@ -13894,7 +13819,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9M"],
 			takedown: ["9M", "9M"],
 			teleport: ["9M", "9M"],
-
 			torment: ["9M", "9M", "5M", "4M", "3M"],
 			toxic: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			toxicspikes: ["9M", "9L1", "9M", "9L1", "9L1", "6L1", "5L1", "4L1"],
@@ -13997,7 +13921,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "7V", "9M", "5M", "4M", "9T"],
 			taunt: ["9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			telekinesis: ["9T", "5M"],
-
 			thief: ["9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunder: ["9M", "9M", "9M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
@@ -14101,7 +14024,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "7V", "9M", "5M", "4M", "9T"],
 			taunt: ["9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			telekinesis: ["9T", "5M"],
-
 			thief: ["9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunder: ["9M", "9M", "9M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
@@ -14237,7 +14159,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			telekinesis: ["9T", "5M"],
-
 			thief: ["9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunder: ["9M", "9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
@@ -14564,7 +14485,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			taunt: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			telekinesis: ["9T", "5M"],
 			teleport: ["9M", "9M"],
-
 			thief: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderpunch: ["9M", "9E", "9M", "9M", "9E", "9M", "6T", "9E", "5T", "5E", "9T", "4E", "9T", "3E"],
 			thunderwave: ["9M", "9M", "9M", "9M", "9M", "5M", "4M", "9T"],
@@ -14691,7 +14611,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			taunt: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			telekinesis: ["9T", "5M"],
 			teleport: ["9M", "9M"],
-
 			thief: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderpunch: ["9M", "9M", "9M", "9M", "6T", "5T", "9T", "9T"],
 			thunderwave: ["9M", "9M", "9M", "9M", "9M", "5M", "4M", "9T"],
@@ -14958,7 +14877,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			takedown: ["9M", "9M"],
 			taunt: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			teleport: ["9M", "9M"],
-
 			thief: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			thunder: ["9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
@@ -15020,7 +14938,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			thief: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
@@ -15092,7 +15009,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			taunt: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			telekinesis: ["9T"],
 			teleport: ["9M", "7V"],
-
 			thief: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			thunder: ["9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
@@ -15157,7 +15073,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			thief: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
@@ -15213,7 +15128,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			thief: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
@@ -16658,7 +16572,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9M", "9L1", "7V", "6L1", "5L1", "4L1", "3L1"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
-
 			thief: ["9M", "9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			thunder: ["9M", "9M", "9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "7V", "9M", "5M", "4M", "3M"],
@@ -16737,7 +16650,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M"],
-
 			thief: ["9M", "9M"],
 			thunder: ["9M", "9M"],
 			thunderbolt: ["9M", "9M"],
@@ -17202,7 +17114,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "9M", "5M", "4M"],
 			sweetkiss: ["9L8", "9L8", "9L12", "6L12", "5L12", "4L12"],
 			takedown: ["9M"],
-
 			thunderwave: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			toxic: ["9M", "9M", "5M", "4M"],
 			uproar: ["9M", "9T", "6T", "5T", "9T"],
@@ -17340,7 +17251,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			takedown: ["9M", "9L24", "9L24", "9M", "9L27", "9M", "6L27", "5L27"],
 			telekinesis: ["9T"],
 			teleport: ["9M", "9M"],
-
 			thief: ["9M"],
 			thunder: ["9M", "9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M", "9S2"],
@@ -17486,7 +17396,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L4", "9L4", "9L5", "9M", "6L5", "5L5", "9S0", "4L5", "3L4"],
 			takedown: ["9M", "9L24", "9L24", "9L27", "6L27", "5L27"],
 			telekinesis: ["9T"],
-
 			thief: ["9M"],
 			thunder: ["9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
@@ -18942,7 +18851,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9L44", "9M", "9L48", "9M", "9M", "9L57", "9M", "9M", "6L57", "5M", "5L57", "4M", "4L57", "9T", "3L36"],
 			tailwind: ["9M", "9T", "6T", "5T", "5D", "9T"],
 			takedown: ["9M", "9M"],
-
 			thief: ["9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			toxic: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			trailblaze: ["9M"],
@@ -19049,7 +18957,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9L44", "9M", "9L48", "9M", "9L57", "9M", "9M", "6L57", "6S7", "5M", "5L57", "9S2", "4M", "4L57", "4S1", "9T", "3L36", "9S0"],
 			tailwind: ["9M", "9T", "6T", "5T", "9T"],
 			takedown: ["9M"],
-
 			thief: ["9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			toxic: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			trailblaze: ["9M"],
@@ -19123,7 +19030,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9L44"],
 			tailwind: ["9M"],
 			takedown: ["9M"],
-
 			thief: ["9M"],
 			trailblaze: ["9M"],
 			uturn: ["9M"],
@@ -19184,7 +19090,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9L44"],
 			tailwind: ["9M"],
 			takedown: ["9M"],
-
 			thief: ["9M"],
 			trailblaze: ["9M"],
 			uturn: ["9M"],
@@ -20168,7 +20073,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9M", "9L1", "9M", "6L1", "5L1", "4L1", "3L1", "9S1"],
 			tailwhip: ["9L1", "9L1", "9M", "9L3", "9M", "6L3", "5L3", "4L3", "3L1", "9S1", "9S2"],
 			takedown: ["9M", "9L35", "9M", "9L35", "9M", "6L41", "5L41", "4L35", "3L53"],
-
 			thief: ["9M"],
 			thrash: ["9L50", "9L50", "9M", "9L50", "7V", "6L50", "5L55", "4L48", "3L43"],
 			throatchop: ["9M"],
@@ -20240,7 +20144,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1"],
 			tailwhip: ["9L1"],
 			takedown: ["9M"],
-
 			thief: ["9M"],
 			thrash: ["9L50"],
 			throatchop: ["9M"],
@@ -20302,7 +20205,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1"],
 			takedown: ["9M"],
 			temperflare: ["9M"],
-
 			thief: ["9M"],
 			thrash: ["9L50"],
 			trailblaze: ["9M"],
@@ -20361,7 +20263,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1"],
 			tailwhip: ["9L1"],
 			takedown: ["9M"],
-
 			thief: ["9M"],
 			thrash: ["9L50"],
 			trailblaze: ["9M"],
@@ -20487,7 +20388,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "7V"],
 			takedown: ["9M", "7V"],
 			taunt: ["9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
-
 			thrash: ["9L48", "9L48", "9M", "9L1", "7V", "6L1", "5L1", "4L1", "3L1"],
 			thunder: ["9M", "9M", "9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "7V", "9M", "5M", "4M", "3M"],
@@ -20713,7 +20613,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9M", "9S6", "9L1", "9M", "6L1", "5L1", "4L1", "3L1"],
 			tailwhip: ["9L1", "9L1", "9M", "9L1", "9M", "6L1", "5L1", "4L1", "3L1"],
 			takedown: ["9M", "9L40", "9L40", "9M", "9L25", "9M", "6L25", "5L43", "4L43", "3L42"],
-
 			tickle: ["9E", "9E", "9E", "9E", "5E", "4E", "3E"],
 			toxic: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			trailblaze: ["9M"],
@@ -20866,7 +20765,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9M", "9L1", "9M", "6L1", "5L1", "9S0", "4L1", "3L1"],
 			tailwhip: ["9L1", "9L1", "9M", "9L1", "9M", "6L1", "6S1", "5L1", "9S0", "4L1", "3L1"],
 			takedown: ["9M", "9L1", "9L1", "9M"],
-
 			toxic: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			trailblaze: ["9M"],
 			waterfall: ["9M", "9M", "9M", "9M", "7V", "9M", "5M", "4M", "3M"],
@@ -20967,7 +20865,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9M", "9L1", "9M", "6L1", "5L1", "9S0", "4L1", "3L1"],
 			tailwhip: ["9L1", "9L1", "9M", "9L1", "9M", "6L1", "6S1", "5L1", "9S0", "4L1", "3L1"],
 			takedown: ["9M", "9L1", "9L1", "9M"],
-
 			thunder: ["9M", "9L50", "9M", "9L50", "9M", "9M", "9L45", "9M", "9M", "6L45", "5M", "5L71", "4M", "4L71", "3M", "3L52"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "9M", "7S2", "9M", "5M", "4M", "3M"],
 			thunderfang: ["9M", "9L30", "9M", "9L30", "9L20", "6L20", "5L43", "4L43"],
@@ -21076,7 +20973,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9M", "9L1", "7V", "6L1", "5L1", "5S0", "4L1", "3L1"],
 			tailwhip: ["9L1", "9L1", "9M", "9L1", "7V", "6L1", "6S1", "5L1", "5S0", "4L1", "3L1"],
 			takedown: ["9M", "9L1", "9L1", "7V"],
-
 			toxic: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			trailblaze: ["9M"],
 			weatherball: ["9M"],
@@ -21188,7 +21084,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1", "9L1", "9L1", "9M", "6L1", "6S2", "5L1", "9S1", "4L1", "3L1"],
 			takedown: ["9M", "9L1", "9L1"],
 			telekinesis: ["9T", "5M"],
-
 			thunderwave: ["9M"],
 			toxic: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			trailblaze: ["9M"],
@@ -21295,7 +21190,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1", "9L1", "9L1", "9M", "6L1", "6S2", "5L1", "9S1", "4L1", "3L1"],
 			takedown: ["9M", "9L1", "9L1"],
 			taunt: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
-
 			thief: ["9M", "9M"],
 			throatchop: ["9M", "7T"],
 			thunderwave: ["9M"],
@@ -21398,7 +21292,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9L1", "6L1", "5L1", "9S0", "4L1"],
 			tailwhip: ["9L1", "9L1", "9L1", "6L1", "6S1", "5L1", "9S0", "4L1"],
 			takedown: ["9M", "9L1", "9L1"],
-
 			toxic: ["9M", "9M", "5M", "4M"],
 			trailblaze: ["9M"],
 			weatherball: ["9M"],
@@ -21493,7 +21386,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9L1", "6L1", "5L1", "9S0", "4L1"],
 			tailwhip: ["9L1", "9L1", "9L1", "6L1", "6S1", "5L1", "9S0", "4L1"],
 			takedown: ["9M", "9L1", "9L1"],
-
 			toxic: ["9M", "9M", "5M", "4M"],
 			trailblaze: ["9M"],
 			tripleaxel: ["9T"],
@@ -22501,7 +22393,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swallow: ["9L1", "9L1"],
 			tackle: ["9L1", "9L1", "9M", "9L1", "7V", "6L1", "5L1", "4L1", "3L1"],
 			takedown: ["9M", "7V"],
-
 			terrainpulse: ["9T"],
 			thunder: ["9M", "9M", "9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "7V", "9M", "5M", "4M", "3M"],
@@ -22610,7 +22501,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M", "9M", "9T", "9T"],
 			tailwind: ["9M", "9L30", "9L30", "9T", "9L64", "6T", "6L1", "6S5", "5T", "5L64", "9T", "4L64"],
 			takedown: ["9M", "9M"],
-
 			toxic: ["9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			tripleaxel: ["9T"],
 			twister: ["9T"],
@@ -22692,7 +22582,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M"],
 			tailwind: ["9M", "9L30", "9L30"],
 			takedown: ["9M"],
-
 			trick: ["9M"],
 			trickroom: ["9M", "9L70", "9M", "9L70"],
 			uturn: ["9M", "9M"],
@@ -22780,7 +22669,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M", "7V", "9T", "9T"],
 			tailwind: ["9M", "7T", "6T", "5T", "9T"],
 			takedown: ["9M", "7V"],
-
 			thunder: ["9M", "9L55", "9M", "9L55", "9M", "9S8", "9M", "9L78", "9M", "9M", "6L78", "5M", "5L78", "4M", "4L78", "3M", "3L85"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M", "9S2"],
 			thundershock: ["9L5", "9L5", "9M", "9L1", "9M", "6L1", "6S6", "5L1", "4L1", "3L1"],
@@ -22867,7 +22755,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwind: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M"],
-
 			throatchop: ["9M"],
 			thunderouskick: ["9L45", "9L45", "8S0", "8S1"],
 			trailblaze: ["9M"],
@@ -22958,7 +22845,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M", "7V", "9T", "9T"],
 			tailwind: ["9M", "7T", "6T", "5T", "9T"],
 			takedown: ["9M", "7V"],
-
 			toxic: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			twister: ["9T"],
 			uturn: ["9M", "9M", "9M", "9M", "9M", "5M", "4M"],
@@ -23034,7 +22920,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwind: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M"],
-
 			thief: ["9M"],
 			uturn: ["9M", "9M"],
 			wingattack: ["9L15", "9L15"],
@@ -23121,7 +23006,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "9M", "9M", "5M", "4M", "9T"],
 			swift: ["9M", "9M", "9M", "9T", "9T"],
 			takedown: ["9M", "9M"],
-
 			thunder: ["9M", "9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderwave: ["9M", "9L10", "9M", "9L10", "9M", "9M", "9L5", "9M", "9M", "6L5", "5M", "5L5", "5D", "4M", "4L5", "9T", "3L8"],
@@ -23211,7 +23095,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "9M", "9M", "5M", "4M", "9T"],
 			swift: ["9M", "9M", "9M", "9T", "9T"],
 			takedown: ["9M", "9M"],
-
 			thunder: ["9M", "9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderwave: ["9M", "9L1", "9M", "9L1", "9M", "9M", "9L1", "9M", "9M", "6L1", "5M", "5L1", "4M", "4L1", "9T", "3L1"],
@@ -23358,7 +23241,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M", "9M", "9T", "9T"],
 			tailwind: ["9M", "9T", "6T", "5T", "9T"],
 			takedown: ["9M", "9M"],
-
 			thunder: ["9M", "9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "9M", "9M", "5M", "4M", "4S2", "3M"],
 			thunderpunch: ["9M", "9L1", "9M", "9L1", "9M", "9T", "9L1", "9M", "6T", "6L1", "5T", "5L1", "9S4", "9T", "4L1", "9T"],
@@ -23532,7 +23414,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			storedpower: ["9M", "9M"],
 			strength: ["9M", "9M", "5M", "4M", "3M"],
 			submission: ["9M"],
-
 			substitute: ["9M", "9M", "9M", "9M", "9M", "9M", "5M", "4M", "9T"],
 			sunnyday: ["9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			swagger: ["9M", "9M", "9M", "5M", "4M", "9T"],
@@ -23541,7 +23422,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			taunt: ["9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			telekinesis: ["9T", "5M"],
 			teleport: ["9M", "9M"],
-
 			thunder: ["9M", "9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderpunch: ["9M", "9M", "9M", "9T", "9M", "6T", "5T", "9T", "9T"],
@@ -23910,7 +23790,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			taunt: ["9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			telekinesis: ["9T", "5M"],
 			teleport: ["9M", "7V", "4S14", "4S15", "4S16", "4S17", "4S18", "4S19", "4S20"],
-
 			terrainpulse: ["9T"],
 			thief: ["9M", "9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			throatchop: ["9M", "7T"],
@@ -24049,7 +23928,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "7V", "9M", "5M", "4M", "9T"],
 			synthesis: ["9T", "9L12", "7V", "6T", "6L12", "5T", "5L12", "9T", "4L12", "3L22"],
 			tackle: ["9L1", "7V", "6L1", "6S2", "5L1", "4L1", "3L1", "3S0", "3S1"],
-
 			toxic: ["9M", "7V", "9M", "5M", "4M", "3M"],
 			vinewhip: ["9E", "7V", "9E", "5E", "4E", "3E"],
 			workup: ["9M"],
@@ -24283,7 +24161,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9M", "6L1", "6S2", "5L1", "4L1", "3L1", "9S0", "9S1"],
 			takedown: ["9M"],
 			temperflare: ["9M"],
-
 			thrash: ["9E", "9M", "9E", "5E", "4E", "3E"],
 			toxic: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			wildcharge: ["9M", "9M", "9M", "5M"],
@@ -24366,7 +24243,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9M", "6L1", "5L1", "4L1", "3L1"],
 			takedown: ["9M"],
 			temperflare: ["9M"],
-
 			toxic: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			wildcharge: ["9M", "9M", "9M", "5M"],
 			willowisp: ["9M", "9M", "9M", "5M", "4M"],
@@ -24473,7 +24349,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9M", "6L1", "5L1", "4L1", "3L1"],
 			takedown: ["9M"],
 			temperflare: ["9M"],
-
 			throatchop: ["9T"],
 			thunderpunch: ["9M", "7T", "7V", "6T", "5T", "9T", "9T"],
 			toxic: ["9M", "7V", "9M", "5M", "4M", "3M"],
@@ -24555,7 +24430,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1"],
 			takedown: ["9M"],
 			temperflare: ["9M"],
-
 			thunderpunch: ["9M"],
 			wildcharge: ["9M"],
 			willowisp: ["9M"],
@@ -24646,7 +24520,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "7V", "9M", "5M", "4M", "9T"],
 			swordsdance: ["9M", "9M", "5M", "4M", "9T"],
 			thrash: ["9L41", "9E", "7V", "6L41", "9E", "5L41", "5E", "4L22", "4E", "3E"],
-
 			toxic: ["9M", "7V", "9M", "5M", "4M", "3M"],
 			uproar: ["9T", "6T", "5T", "9T"],
 			waterfall: ["9M", "9M", "5M", "4M", "3M"],
@@ -25500,7 +25373,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			suckerpunch: ["9L26", "9L26", "6L26", "5L26", "9T", "4L26"],
 			sunnyday: ["9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			swagger: ["9M", "7V", "9M", "5M", "4M", "9T"],
-
 			thief: ["9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			toxic: ["9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			toxicspikes: ["9M", "9E", "9E", "5E", "4E"],
@@ -25584,7 +25456,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			swagger: ["9M", "7V", "9M", "5M", "4M", "9T"],
 			swordsdance: ["9M", "9L0", "9M", "9L1"],
-
 			thief: ["9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			throatchop: ["9T"],
 			toxic: ["9M", "9M", "7V", "9M", "5M", "4M", "3M"],
@@ -26381,7 +26252,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9T", "9T"],
 			tackle: ["9L1", "9L1", "9M", "6L1", "6S3", "5L1", "4L1", "3L1", "9S1"],
 			takedown: ["9M", "9L18", "9L18", "9E", "9M", "6L18", "9E", "5L18", "5E", "4E", "3E"],
-
 			thunder: ["9M", "9L46", "9M", "9L46", "9M", "9M", "6L46", "5M", "5L55", "4M", "4L46", "3M", "3L37", "9S0"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thundershock: ["9L8", "9L8", "9M", "6L8", "6S3", "5L10", "5D", "4L10", "3L9", "9S0", "9S1", "9S2"],
@@ -26472,7 +26342,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M", "9T", "9T"],
 			tackle: ["9L1", "9L1", "9M", "6L1", "5L1", "4L1", "3L1"],
 			takedown: ["9M", "9L20", "9L20", "6L20", "5L20"],
-
 			thunder: ["9M", "9L56", "9M", "9L56", "9M", "9M", "6L56", "5M", "5L65", "4M", "4L53", "3M", "3L45"],
 			thunderbolt: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderpunch: ["9M", "9T", "9M", "6T", "5T", "9T", "9T"],
@@ -26576,7 +26445,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "7V", "9T", "9T"],
 			tackle: ["9L1", "9L1", "7V", "6L1", "5L1", "4L1", "3L1"],
 			takedown: ["9M", "9L20", "9L20", "6L20", "5L20"],
-
 			thunder: ["9M", "9L62", "9M", "9L62", "9M", "9M", "6L62", "5M", "5L79", "4M", "4L68", "3M", "3L57"],
 			thunderbolt: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderpunch: ["9M", "9L0", "9T", "9L1", "9M", "6T", "6L30", "5T", "5L30", "9T", "4L30", "9T", "3L30"],
@@ -26655,7 +26523,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9T", "9T"],
 			tailwhip: ["9L1", "9L1", "9L2", "6L2", "5L7", "4L7", "3L6"],
 			takedown: ["9M"],
-
 			tickle: ["9E", "9E", "9E", "9E", "5E", "4E", "3E"],
 			toxic: ["9M", "9M", "5M", "4M", "3M"],
 			uproar: ["9M", "9T", "6T", "5T", "9T"],
@@ -26766,7 +26633,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9L1", "9M", "6L1", "5L1", "4L1", "3L1"],
 			tailwhip: ["9L1", "9L1", "9L2", "9M", "6L2", "5L7", "4L7", "3L6"],
 			takedown: ["9M"],
-
 			tickle: ["9E"],
 			toxic: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			trailblaze: ["9M"],
@@ -26870,7 +26736,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9L1", "9M", "6L1", "5L1", "4L1", "3L1"],
 			tailwhip: ["9L1", "9L1", "9L1", "9M", "6L1", "5L1", "4L1", "3L1"],
 			takedown: ["9M"],
-
 			toxic: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			trailblaze: ["9M"],
 			uproar: ["9M"],
@@ -26959,7 +26824,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "9M", "5M", "4M"],
 			takedown: ["9M"],
 			tearfullook: ["9L24", "9L24", "9L22"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			toxic: ["9M", "9M", "5M", "4M"],
 			trailblaze: ["9M"],
@@ -27059,7 +26923,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			tearfullook: ["9L24", "9L24", "9L22"],
-
 			thief: ["9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderpunch: ["9M", "9M", "9T", "9M", "6T", "5T", "9T", "9T"],
 			torment: ["9M", "9M", "5M", "4M"],
@@ -27149,7 +27012,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L4", "9L6", "9M", "6L6", "5L7", "4L7", "3L5"],
 			tailwind: ["9M"],
 			takedown: ["9M"],
-
 			thief: ["9M"],
 			toxic: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			trailblaze: ["9M"],
@@ -27232,7 +27094,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1", "9L1", "9M", "6L1", "5L1", "4L1", "3L1"],
 			tailwind: ["9M"],
 			takedown: ["9M"],
-
 			thief: ["9M"],
 			toxic: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			trailblaze: ["9M"],
@@ -27320,7 +27181,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1", "9L1", "9M", "6L1", "5L1", "4L1", "3L1"],
 			tailwind: ["9M"],
 			takedown: ["9M"],
-
 			thief: ["9M"],
 			toxic: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			trailblaze: ["9M"],
@@ -27428,7 +27288,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1", "9L1", "7V", "6L1", "5L1", "4L1", "3L1", "3S0"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "5M", "4M", "3M"],
-
 			thief: ["9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			thunder: ["9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			thunderbolt: ["9M", "9M", "9M", "5M", "4M", "3M"],
@@ -27524,7 +27383,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1", "9L1", "6L1", "5L1", "4L1"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "5M", "4M"],
-
 			thief: ["9M", "9M", "9M", "5M", "4M"],
 			thunder: ["9M", "9M", "9M", "5M", "4M"],
 			thunderbolt: ["9M", "9M", "9M", "5M", "4M"],
@@ -27599,7 +27457,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			synthesis: ["9L28", "9T", "9L28", "9M", "6T", "6L28", "5T", "5L33", "9T", "4L33", "3L37"],
 			tackle: ["9L1"],
 			takedown: ["9M"],
-
 			toxic: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			trailblaze: ["9M"],
 			uproar: ["9M", "6T", "5T", "9T"],
@@ -27678,7 +27535,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			synthesis: ["9T", "6T", "5T", "9T"],
 			tackle: ["9L1"],
 			takedown: ["9M"],
-
 			toxic: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			trailblaze: ["9M"],
 			uproar: ["9M", "6T", "5T", "9T"],
@@ -27916,7 +27772,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swallow: ["9E", "9E", "9E", "9E", "5E", "4E", "3E"],
 			tailwhip: ["9L1", "9L1", "9L1", "9M", "6L1", "5L1", "4L1", "3L1"],
 			takedown: ["9M"],
-
 			toxic: ["9L36", "9L36", "9M", "9M", "9M", "5M", "4M", "3M"],
 			trailblaze: ["9M"],
 			waterfall: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
@@ -27984,7 +27839,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L4"],
 			tailwhip: ["9L1"],
 			takedown: ["9M"],
-
 			toxic: ["9M", "9L36"],
 			toxicspikes: ["9M", "9L12"],
 			trailblaze: ["9M"],
@@ -28089,7 +27943,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "9M", "9M", "5M", "4M", "9T"],
 			tailwhip: ["9L1", "9L1", "9L1", "9M", "6L1", "5L1", "4L1", "3L1"],
 			takedown: ["9M"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M"],
 			toxic: ["9L46", "9L46", "9M", "9M", "9M", "5M", "4M", "3M"],
 			toxicspikes: ["9M"],
@@ -28157,7 +28010,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			surf: ["9M"],
 			tailwhip: ["9L1"],
 			takedown: ["9M"],
-
 			toxic: ["9M", "9L40"],
 			toxicspikes: ["9M", "9L4"],
 			trailblaze: ["9M"],
@@ -28255,7 +28107,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwind: ["9M", "9T", "9L50", "6T", "6L50", "5T", "5L51", "9T"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L31", "9M", "9L31", "9M", "6L31", "5M", "5L31", "4M", "4L31", "3M", "3L40"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderwave: ["9M", "9M", "9M", "5M", "4M", "9T"],
 			torment: ["9L55", "9M", "9L61", "9M", "6L61", "5M", "5L61", "4M", "3M"],
@@ -28346,7 +28197,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwind: ["9M", "9T", "6T", "5T", "9T"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "5M", "4M"],
-
 			thief: ["9M", "9M", "9M", "5M", "4M"],
 			thunderwave: ["9M", "9M", "9M", "5M", "4M"],
 			torment: ["9M", "9M", "5M", "4M"],
@@ -28454,7 +28304,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M", "9T", "9T"],
 			taunt: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			telekinesis: ["9T", "5M"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunder: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderbolt: ["9M", "9M", "9M", "5M", "4M", "3M"],
@@ -28555,7 +28404,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9T"],
 			taunt: ["9M", "9M", "9M", "5M", "4M"],
 			telekinesis: ["9T", "5M"],
-
 			thief: ["9M", "9M", "9M", "5M", "4M"],
 			thunder: ["9M", "9M", "9M", "5M", "4M"],
 			thunderbolt: ["9M", "9M", "9M", "5M", "4M"],
@@ -28730,7 +28578,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9M", "6L1", "5L1", "4L1", "3L1"],
 			takedown: ["9M", "9E", "9E", "9M", "9E", "5E", "4E", "3E"],
 			telekinesis: ["9T", "5M"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunder: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderbolt: ["9M", "9M", "9M", "5M", "4M", "3M"],
@@ -28824,7 +28671,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9E", "9E", "9M", "9E", "5E", "4E", "3E"],
 			tackle: ["9L1", "9L1", "9M", "6L1", "5L1", "4L1", "3L1", "9S0"],
 			takedown: ["9M", "9L12", "9L12", "9M", "6L12", "5L12", "4L9", "3L15"],
-
 			toxic: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			toxicspikes: ["9M", "9E", "9E", "9E", "5E", "5D", "4E"],
 			venoshock: ["9M", "9M", "9M", "5M"],
@@ -28925,7 +28771,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9M", "6L1", "5L1", "4L1", "3L1"],
 			takedown: ["9M", "9L12", "9L12", "9M", "6L12", "5L12", "4L1", "3L15"],
 			telekinesis: ["9T"],
-
 			thunderwave: ["9M"],
 			toxic: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			toxicspikes: ["9M", "9L1", "9L1", "6L1", "5L1", "4L1"],
@@ -29040,7 +28885,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			swagger: ["9M", "9M", "9M", "5M", "4M", "9T"],
 			takedown: ["9M", "9L36", "9L26", "9M", "6L22", "5L38", "4L37", "3L34"],
-
 			terrainpulse: ["9M"],
 			thief: ["9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunder: ["9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
@@ -29134,7 +28978,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M"],
 			tailwind: ["9M"],
 			takedown: ["9M"],
-
 			thief: ["9M"],
 			throatchop: ["9M"],
 			thunder: ["9M"],
@@ -29240,7 +29083,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwind: ["9M", "7T", "6T", "5T", "5D", "9T"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "5M", "4M"],
-
 			thief: ["9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			throatchop: ["9T"],
 			thunderfang: ["9M"],
@@ -29340,7 +29182,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwind: ["9M", "7T", "6T", "5T", "9T"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "5M", "4M"],
-
 			thief: ["9M", "9M", "9M", "5M", "4M"],
 			throatchop: ["9T"],
 			thunderfang: ["9M", "9L1", "9L1", "6L1", "5L1", "4L1"],
@@ -29661,7 +29502,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9L1", "7V", "6L1", "5L1", "4L1", "3L1", "3S0"],
 			takedown: ["9M", "9L48", "9L41", "7V", "6L41", "5L41", "4L41", "3L33"],
 			taunt: ["9M", "9M", "9M", "9M", "5M", "4M"],
-
 			throatchop: ["9M", "7T"],
 			thunderwave: ["9M", "9M", "9M", "9M", "5M", "4M", "9T"],
 			toxic: ["9M", "9L44", "9L52", "9M", "7V", "9M", "5M", "4M", "3M"],
@@ -29742,7 +29582,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			throatchop: ["9M"],
 			toxic: ["9M", "9L44"],
 			toxicspikes: ["9M", "9L36"],
@@ -29811,7 +29650,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			throatchop: ["9M"],
 			toxic: ["9M", "9L44"],
 			toxicspikes: ["9M", "9L36"],
@@ -30000,7 +29838,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9L50", "9M", "9L50", "9M", "9M", "5M", "4M", "9T"],
 			tackle: ["9L1", "9L1", "9L1", "9M", "6L1", "5L1", "4L1", "3L1"],
 			takedown: ["9M", "9E", "9L34", "9M", "6L28", "5L31", "4L31", "3L37"],
-
 			thief: ["9M", "9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			thrash: ["9L45", "9L45"],
 			throatchop: ["9L40", "9M", "9L40", "7T"],
@@ -30123,7 +29960,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M", "9M", "9M", "5M", "4M", "9T"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L6", "9M", "9L6", "9M", "9L1", "9M", "6L1", "5M", "5L1", "5D", "4M", "4L1", "3M", "3L1", "9S0"],
-
 			thief: ["9M", "9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			throatchop: ["9M", "7T", "9E"],
 			torment: ["9M", "9M", "5M", "4M", "3M"],
@@ -30196,7 +30032,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L6"],
-
 			thief: ["9M"],
 			throatchop: ["9M"],
 			toxic: ["9M"],
@@ -30309,7 +30144,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L1", "9M", "9L1", "9M", "9L1", "9M", "6L1", "5M", "5L1", "4M", "4L1"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			throatchop: ["9M", "7T"],
 			torment: ["9M", "9M", "5M", "4M"],
@@ -30382,7 +30216,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L6"],
-
 			thief: ["9M"],
 			throatchop: ["9M"],
 			toxic: ["9M"],
@@ -30488,7 +30321,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M", "9M", "5M", "4M", "9T"],
 			takedown: ["9M", "9E", "9M", "9E", "5E", "4E", "3E"],
 			taunt: ["9M", "9M", "9M", "5M", "4M", "3M"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thrash: ["9L41", "9L50", "9M", "6L50", "5L50", "4L50", "3L49"],
 			thunderpunch: ["9M", "9T", "9M", "6T", "5T", "9T", "9T"],
@@ -30604,7 +30436,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M", "9M", "5M", "4M", "9T"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "5M", "4M", "3M"],
-
 			thief: ["9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			thrash: ["9L56", "9L58", "7V", "6L58", "5L58", "4L58", "3L49"],
 			throatchop: ["9T"],
@@ -30690,7 +30521,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			thief: ["9M"],
 			thrash: ["9L56"],
 			throatchop: ["9M"],
@@ -30766,7 +30596,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			thief: ["9M"],
 			thunderpunch: ["9M"],
 			trailblaze: ["9M"],
@@ -30936,7 +30765,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			swagger: ["9M", "7V", "9M", "5M", "4M", "9T"],
 			takedown: ["9M"],
-
 			toxic: ["9M", "7V", "9M", "5M", "4M", "3M"],
 			willowisp: ["9M", "9M", "9M", "5M", "4M"],
 			yawn: ["9L1", "9L1", "6L1", "5L1", "4L1", "3L1"],
@@ -31106,7 +30934,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "7V", "9M", "5M", "4M", "9T"],
 			tackle: ["9L1", "9L1"],
 			takedown: ["9M", "9L44", "9L44", "9L28", "7V", "6L28", "5L32", "4L32", "3L28"],
-
 			thrash: ["9L65", "9L65", "9L41", "6L41", "5L41"],
 			toxic: ["9M", "7V", "9M", "5M", "4M", "3M"],
 			trailblaze: ["9M"],
@@ -31195,7 +31022,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "9M", "5M", "4M"],
 			tackle: ["9L1", "9L1"],
 			takedown: ["9M", "9L44", "9L44", "9L28", "6L28", "5L32", "5S0", "4L32"],
-
 			thrash: ["9L65", "9L65", "9L41", "6L41", "5L41"],
 			toxic: ["9M", "9M", "5M", "4M"],
 			trailblaze: ["9M"],
@@ -31818,7 +31644,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M", "9M", "9T", "9T"],
 			tailwind: ["9M"],
 			takedown: ["9M"],
-
 			thief: ["9M", "9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			toxic: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			trailblaze: ["9M"],
@@ -32254,7 +32079,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9T", "9T"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "5M", "4M", "3M"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderfang: ["9M", "9E", "9E", "9E", "5E", "4E"],
 			torment: ["9L32", "9M", "9M", "5M", "4M", "3M"],
@@ -32353,7 +32177,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9T", "9T"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "5M", "4M", "3M"],
-
 			thief: ["9M", "9M", "7V", "9M", "5M", "4M", "3M"],
 			throatchop: ["9T"],
 			thunderfang: ["9M", "9L1", "9L1", "6L1", "5L1", "4L1"],
@@ -32443,7 +32266,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "9M", "9M", "5M", "4M", "9T"],
 			tackle: ["9L1", "9L1", "9M", "6L1", "5L1", "4L1", "3L1"],
 			takedown: ["9M", "9L28", "9L28", "9M", "6L10", "5L10", "4L10", "3L25"],
-
 			thief: ["9M"],
 			toxic: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			trailblaze: ["9M"],
@@ -32540,7 +32362,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			superpower: ["9T", "6T", "5T", "9T"],
 			swagger: ["9M", "9M", "9M", "5M", "4M", "9T"],
 			takedown: ["9M"],
-
 			thief: ["9M"],
 			thunderfang: ["9M", "9L1", "9L1", "6L1", "5L1", "4L1"],
 			toxic: ["9M", "7V", "9M", "5M", "4M", "3M"],
@@ -32637,7 +32458,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M", "9T", "9T"],
 			tackle: ["9L1", "9L1", "9M", "6L1", "5L1", "5D", "4L1", "3L1", "9S0"],
 			takedown: ["9M", "9L21", "9L21", "9M", "6L21", "5L21", "4L21", "3L37"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thrash: ["9E", "9E", "9E", "5E", "4E"],
 			throatchop: ["9T"],
@@ -32714,7 +32534,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M"],
 			tackle: ["9L1"],
 			takedown: ["9M", "9L21"],
-
 			thief: ["9M"],
 			throatchop: ["9M"],
 			thunder: ["9M"],
@@ -33235,7 +33054,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
-
 			thrash: ["9L36", "9L36", "9L28", "9M", "6L28", "5L28", "4L23", "3L29"],
 			torment: ["9M", "9M", "5M", "4M", "3M"],
 			toxic: ["9M", "9M", "9M", "5M", "4M", "3M"],
@@ -33323,7 +33141,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
-
 			thrash: ["9L42", "9L42", "9L28", "9M", "6L28", "5L28", "4L23", "3L29"],
 			torment: ["9M", "9M", "5M", "4M", "3M"],
 			toxic: ["9M", "9M", "9M", "5M", "4M", "3M"],
@@ -33456,7 +33273,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
-
 			thrash: ["9L42", "9L42", "9L28", "9M", "6L28", "5L28", "4L23", "3L29", "9S0"],
 			thunder: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
@@ -35600,7 +35416,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			synthesis: ["9E", "9E", "7T", "9E", "6T", "9E", "5T", "5E", "9T", "4E", "3E"],
 			takedown: ["9M"],
 			teeterdance: ["9E", "9E", "9E", "9E", "5E"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			tickle: ["9E", "9E", "9E", "9E", "5E", "4E"],
 			toxic: ["9M", "9M", "5M", "4M", "3M"],
@@ -35701,7 +35516,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			synthesis: ["9T", "6T", "5T", "9T"],
 			takedown: ["9M"],
 			teeterdance: ["9L1", "9L1"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M", "3M", "3L37"],
 			thunderpunch: ["9M", "9M", "7T", "6T", "5T", "9T", "9T"],
 			toxic: ["9M", "9M", "5M", "4M", "3M"],
@@ -35810,7 +35624,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			synthesis: ["9T", "6T", "5T", "9T"],
 			takedown: ["9M"],
 			teeterdance: ["9L1", "9L1"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderpunch: ["9M", "9M", "7T", "6T", "5T", "9T", "9T"],
 			toxic: ["9M", "9M", "5M", "4M", "3M"],
@@ -36124,7 +35937,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwind: ["9M", "7T", "6T", "5T", "9T"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			throatchop: ["9M", "7T"],
 			torment: ["9L1", "9L1", "9M", "9M", "5M", "4M", "3M"],
@@ -36349,7 +36161,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M", "9T", "9T"],
 			tailwind: ["9M", "9T", "6T", "5T", "9T"],
 			takedown: ["9M"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			toxic: ["9M", "9M", "5M", "4M", "3M"],
 			twister: ["9E", "9E", "9E", "9E", "5E", "5D", "9T", "4E", "3E"],
@@ -36440,7 +36251,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M", "9T", "9T"],
 			tailwind: ["9M", "9L1", "9L1", "9T", "9L1", "6T", "6L1", "5T", "5L50", "9T", "4L50"],
 			takedown: ["9M"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			toxic: ["9M", "9M", "5M", "4M", "3M"],
 			twister: ["9T"],
@@ -36665,7 +36475,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			taunt: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			telekinesis: ["9T", "5M"],
 			teleport: ["9L15", "9L15", "9L1", "6L1", "5L1", "4L1", "3L1"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderpunch: ["9M", "9M", "7T", "6T", "5T", "9T", "9T"],
@@ -36783,7 +36592,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			taunt: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			telekinesis: ["9T", "5M"],
 			teleport: ["9L15", "9L15", "9L1", "6L1", "5L1", "4L1", "3L1"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "5M", "5S0", "4M", "3M"],
 			thunderpunch: ["9M", "9M", "7T", "6T", "5T", "9T", "9T"],
@@ -36932,7 +36740,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			taunt: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			telekinesis: ["9T", "5M"],
 			teleport: ["9L15", "9L15", "9L1", "6L1", "5L1", "4L1"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			throatchop: ["9M", "7T"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "5M", "4M"],
@@ -37022,7 +36829,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sweetscent: ["9L9", "9L9", "6L9", "5L13", "4L13", "3L13"],
 			swift: ["9T", "9T"],
 			takedown: ["9M"],
-
 			thief: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			toxic: ["9M", "9M", "5M", "4M", "3M"],
 			waterfall: ["9M"],
@@ -37115,7 +36921,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9T", "9T"],
 			tailwind: ["9M", "9T", "6T", "5T", "9T"],
 			takedown: ["9M"],
-
 			thief: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			toxic: ["9M", "9M", "5M", "4M", "3M"],
 			twister: ["9T"],
@@ -37190,7 +36995,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			synthesis: ["9T", "6T", "5T", "9T"],
 			tackle: ["9L1", "9L1", "6L1", "5L5", "4L5", "3L4"],
 			takedown: ["9M"],
-
 			toxic: ["9L33", "9M", "9L33", "9M", "6L33", "5M", "4M", "3M"],
 			venoshock: ["9M", "9M", "9M", "5M"],
 			wakeupslap: ["9E", "9E", "5E", "4E"],
@@ -37300,7 +37104,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			synthesis: ["9T", "6T", "5T", "9T"],
 			tackle: ["9L1", "9L1", "6L1", "5L1", "4L1", "3L1"],
 			takedown: ["9M"],
-
 			thunderpunch: ["9M", "9M", "6T", "5T", "9T", "9T"],
 			toxic: ["9L1", "9M", "9M", "5M", "4M", "3M"],
 			vacuumwave: ["9T"],
@@ -37398,7 +37201,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			swagger: ["9M", "9M", "5M", "4M", "9T"],
 			takedown: ["9M"],
-
 			thief: ["9M"],
 			throatchop: ["9L25"],
 			thunder: ["9M", "9M", "9M", "5M", "4M", "3M"],
@@ -37508,7 +37310,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "9M", "5M", "4M", "9T"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "5M", "4M", "3M"],
-
 			thief: ["9M"],
 			throatchop: ["9L27"],
 			thunder: ["9M", "9M", "9M", "5M", "4M", "3M"],
@@ -37629,7 +37430,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9L0", "9M", "9L1", "9M", "6L36", "5M", "5L36", "4M", "4L36", "9T", "3L36"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "5M", "4M", "3M"],
-
 			thief: ["9M"],
 			throatchop: ["9L27"],
 			thunder: ["9M", "9M", "9M", "5M", "4M", "3M"],
@@ -38224,7 +38024,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "6L1", "5L1", "4L1", "3L1"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			thief: ["9M"],
 			thunderpunch: ["9M", "7T", "6T", "5T", "9T", "9T"],
 			toxic: ["9M", "9M", "5M", "4M", "3M"],
@@ -38497,7 +38296,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "5M", "4M"],
 			telekinesis: ["9T"],
-
 			thunder: ["9M", "9M", "9M", "5M", "4M"],
 			thunderbolt: ["9M", "9M", "9M", "5M", "4M"],
 			thunderpunch: ["9M", "7T", "6T", "5T", "9T"],
@@ -38812,7 +38610,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "9M", "6S4", "5M", "4M", "3M"],
 			telekinesis: ["9T", "5M"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderpunch: ["9M", "9M", "7T", "6T", "5T", "9T", "9T"],
 			thunderwave: ["9M"],
@@ -39462,7 +39259,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			takedown: ["9M"],
 			taunt: ["9M"],
 			telekinesis: ["9T", "5M"],
-
 			thief: ["9M"],
 			thunderpunch: ["9M", "9L1", "9T", "9L1", "6T", "6L1", "5T", "5L1", "9T", "4L1", "9T", "3L1"],
 			toxic: ["9M", "9M", "5M", "4M", "3M"],
@@ -40289,7 +40085,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swallow: ["9L28", "9L28", "6L28", "5L39", "4L34", "3L34"],
 			swordsdance: ["9M"],
 			takedown: ["9M"],
-
 			thief: ["9M"],
 			thunderpunch: ["9M", "9T", "6T", "5T", "9T", "9T"],
 			thunderwave: ["9M"],
@@ -40384,7 +40179,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swallow: ["9L30", "9L30", "6L30", "5L45", "4L38", "3L40"],
 			swordsdance: ["9M"],
 			takedown: ["9M"],
-
 			thief: ["9M"],
 			thunderpunch: ["9M", "9T", "6T", "5T", "9T", "9T"],
 			thunderwave: ["9M"],
@@ -40812,7 +40606,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swallow: ["9E", "9E", "9E", "5E", "4E"],
 			tackle: ["9L1", "9L1", "6L1", "6S1", "5L1", "4L1", "3L1"],
 			takedown: ["9M", "9L31", "9L31", "6L31", "5L25", "4L21", "3L29", "3S0"],
-
 			charredterrain: ["9M"],
 			toxic: ["9M", "9M", "5M", "4M", "3M"],
 			trailblaze: ["9M"],
@@ -40906,7 +40699,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "9M", "5M", "4M", "9T"],
 			tackle: ["9L1", "9L1", "6L1", "5L1", "4L1", "3L1"],
 			takedown: ["9M", "9L31", "9L31", "6L31", "6S0", "5L25", "4L21", "3L29"],
-
 			toxic: ["9M", "9M", "5M", "4M", "3M"],
 			trailblaze: ["9M"],
 			willowisp: ["9M", "9M", "9M", "5M", "4M"],
@@ -41005,7 +40797,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "9M", "5M", "4M", "9T"],
 			takedown: ["9M"],
 			temperflare: ["9M"],
-
 			toxic: ["9M", "9M", "5M", "4M", "3M"],
 			weatherball: ["9M"],
 			willowisp: ["9M", "9M", "9M", "9M", "5M", "4M"],
@@ -41098,7 +40889,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			telekinesis: ["9T", "5M"],
-
 			thief: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderwave: ["9M", "9M", "9M", "5M", "4M"],
 			torment: ["9M", "9M", "5M", "4M", "3M"],
@@ -41221,7 +41011,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			taunt: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			teeterdance: ["9L0", "9L1", "6L32"],
 			telekinesis: ["9T", "5M"],
-
 			thief: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderpunch: ["9M", "9T", "6T", "5T", "9T", "9T"],
 			thunderwave: ["9M", "9M", "9M", "5M", "4M"],
@@ -41710,7 +41499,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			synthesis: ["9M", "6T", "5T", "9T"],
 			takedown: ["9M"],
 			teeterdance: ["9E", "9E", "9E", "5E", "5D", "4E", "3E"],
-
 			thief: ["9M"],
 			thunderpunch: ["9M", "7T", "6T", "5T", "5D", "9T", "9T"],
 			toxic: ["9M", "9M", "5M", "4M", "3M"],
@@ -41823,7 +41611,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			synthesis: ["9T", "6T", "5T", "9T"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			thief: ["9M"],
 			thunderpunch: ["9M", "7T", "6T", "5T", "9T", "9T"],
 			toxic: ["9M", "9M", "5M", "4M", "3M"],
@@ -41918,7 +41705,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M", "9T", "9T"],
 			tailwind: ["9M", "9E", "9E", "9T", "6T", "5T", "9T"],
 			takedown: ["9M", "9L36", "9L36", "9L23", "6L23", "5L28", "4L28", "3L31"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			toxic: ["9M", "9M", "5M", "4M", "3M"],
 			trailblaze: ["9M"],
@@ -42022,7 +41808,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M", "9T", "9T"],
 			tailwind: ["9M", "9T", "6T", "5T", "9T"],
 			takedown: ["9M", "9L38", "9L38", "9L23", "6L23", "5L28", "9S2", "4L28", "3L31", "9S0"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			toxic: ["9M", "9M", "5M", "4M", "3M"],
 			trailblaze: ["9M"],
@@ -42152,7 +41937,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9L47", "9M", "9L47", "9M", "6L43", "5M", "5L9", "4M", "4L9", "9T", "3L10", "9S0", "9S1"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L43", "9M", "9L43", "9M", "6L40", "5M", "5L35", "4M", "4L35", "3M", "3L37"],
-
 			thief: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			throatchop: ["9T"],
 			thunder: ["9M", "9M", "9M", "5M", "4M", "3M"],
@@ -42262,7 +42046,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M", "9L36"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "5M", "4M", "3M"],
-
 			thief: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			throatchop: ["9T"],
 			thunderfang: ["9M"],
@@ -42557,7 +42340,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "9M", "5M", "4M", "9T"],
 			swift: ["9M"],
 			takedown: ["9M", "9E", "9E", "9E", "9E", "5E", "4E"],
-
 			thrash: ["9E", "9E", "9E", "9E", "5E", "4E", "3E"],
 			toxic: ["9M", "9M", "5M", "4M", "3M"],
 			waterfall: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
@@ -42639,7 +42421,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "9M", "5M", "4M", "9T"],
 			swift: ["9M"],
 			takedown: ["9M"],
-
 			thrash: ["9L0", "9L0", "9L1"],
 			tickle: ["9L1", "9L1", "9L1", "6L1", "5L1", "4L1", "3L1"],
 			toxic: ["9M", "9M", "5M", "4M", "3M"],
@@ -42838,7 +42619,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9L40", "9M", "9L40", "9M", "9L40", "9M", "6L40", "5M", "5L52", "4M", "4L52", "9T", "3L43", "3S0", "3S1"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L1", "9M", "9L1", "9M", "9L36", "9M", "6L34", "5M", "5L34", "4M", "4L34", "3M", "3L33", "3S0", "3S1"],
-
 			thief: ["9M"],
 			toxic: ["9M", "9M", "5M", "4M", "3M"],
 			visegrip: ["9L1", "6L1", "5L1", "4L1", "3L1"],
@@ -43419,7 +43199,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "9M", "5M", "4M", "9T"],
 			swift: ["9M", "9M", "9T", "9T"],
 			tackle: ["9L15", "9L15", "9L15", "6L15", "5L15", "4L15", "3L15"],
-
 			tickle: ["9E", "9E", "9E", "9E", "5E", "4E"],
 			toxic: ["9M", "9M", "5M", "4M", "3M"],
 			waterfall: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
@@ -43507,7 +43286,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M", "9T", "9T"],
 			tackle: ["9L1", "9L1"],
 			takedown: ["9M"],
-
 			toxic: ["9M", "9M", "5M", "5S4", "4M", "3M"],
 			tripleaxel: ["9T"],
 			twister: ["9L8", "9L8", "9L14", "6L14", "5L17", "9T", "4L17", "3L25", "3S0"],
@@ -43813,7 +43591,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "9M", "5M", "4M", "9T"],
 			taunt: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			telekinesis: ["9T", "5M"],
-
 			thief: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			thunder: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderbolt: ["9M", "9M", "9M", "5M", "4M", "3M"],
@@ -43894,7 +43671,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			scaryface: ["9M"],
 			screech: ["9L1", "9L1", "6L1", "5L1", "4L1", "3L1"],
 			secretpower: ["9M", "4M", "3M"],
-			shedtail: ["9T"],
 			shadowball: ["9M", "9L30", "9M", "9L30", "9M", "6L30", "5M", "5L35", "5S1", "4M", "4L31", "3M", "3L48", "3S0"],
 			shadowclaw: ["9M", "9M", "9M", "5M", "4M"],
 			shadowsneak: ["9L19", "9L13", "6L13", "5L20", "4L20"],
@@ -43911,7 +43687,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M"],
 			taunt: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			telekinesis: ["9T", "5M"],
-
 			thief: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			throatchop: ["9T"],
 			thunder: ["9M", "9M", "9M", "5M", "4M", "3M"],
@@ -44319,7 +44094,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			synthesis: ["9L50", "9T", "9L50", "9E", "6T", "6L41", "9E", "5T", "5L41", "5E", "9T", "4L41", "4E", "4S0", "3L47"],
 			tailwind: ["9M", "9T", "6T", "5T", "9T"],
 			takedown: ["9M"],
-
 			toxic: ["9M", "9M", "5M", "4M", "3M"],
 			trailblaze: ["9M"],
 			twister: ["9T"],
@@ -44814,7 +44588,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "9M", "5M", "4M", "9T"],
 			switcheroo: ["9E", "9E", "9E", "9E"],
 			takedown: ["9M"],
-
 			toxic: ["9M", "9M", "5M", "4M", "3M"],
 			trailblaze: ["9M"],
 			waterpulse: ["9M", "9M", "6T", "5D", "4M", "3M", "3S0"],
@@ -44900,7 +44673,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "9M", "5M", "4M", "9T"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
-
 			torment: ["9M", "9M", "5M", "4M", "3M"],
 			toxic: ["9M", "9M", "5M", "4M", "3M"],
 			trailblaze: ["9M"],
@@ -44991,7 +44763,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			telekinesis: ["9T", "5M"],
-
 			thunder: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			thunderwave: ["9M", "9M", "9M", "9M", "5M", "4M"],
@@ -45547,7 +45318,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9T", "9T"],
 			tackle: ["9L1", "9L1", "6L1", "5L1", "4L1", "3L1"],
 			takedown: ["9M", "9L34", "9L34", "6L14", "5L14", "4L14", "3L24"],
-
 			toxic: ["9M", "9M", "5M", "4M", "3M"],
 			waterfall: ["9M", "9M", "9M", "5M", "4M", "3M"],
 			watergun: ["9L4", "9L4", "6L4", "5L7", "4L7", "3L12"],
@@ -45624,7 +45394,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			swagger: ["9M", "9M", "5M", "4M", "9T"],
 			takedown: ["9M"],
-
 			thrash: ["9E", "9E", "9E", "9E", "6S3", "5E", "4E", "3E"],
 			thunderfang: ["9M"],
 			toxic: ["9M", "9M", "5M", "4M", "3M"],
@@ -45707,7 +45476,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "9M", "5M", "4M", "9T"],
 			takedown: ["9M"],
 			temperflare: ["9M"],
-
 			thunderfang: ["9M"],
 			toxic: ["9M", "9M", "5M", "4M", "3M"],
 			twister: ["9T"],
@@ -45809,7 +45577,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwind: ["9M", "9T", "6T", "5T", "9T"],
 			takedown: ["9M"],
 			temperflare: ["9M"],
-
 			thunderfang: ["9M", "9M", "9L1", "6L1", "5L1", "4L1"],
 			toxic: ["9M", "9M", "5M", "4M", "3M"],
 			twister: ["9T"],
@@ -46666,7 +46433,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "9M", "5M", "4M", "9T"],
 			swift: ["9T", "9T"],
 			takedown: ["9M"],
-
 			thunder: ["9M", "9M", "8S11", "9M", "9M", "6S6", "5M", "5S3", "5S4", "4M", "3M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderwave: ["9M", "9M", "9M", "9M", "5M", "4M", "9T"],
@@ -46795,7 +46561,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9T", "9T"],
 			swordsdance: ["9M", "9M", "9M", "7S10", "9M", "5M", "4M", "9T"],
 			takedown: ["9M"],
-
 			thunder: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderpunch: ["9M", "9M", "9T", "6T", "5T", "9T", "9T"],
@@ -46917,7 +46682,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			tailwind: ["9M", "9T", "6T", "5T", "9T"],
 			takedown: ["9M"],
-
 			thunder: ["9M", "9M", "9M", "9M", "6S5", "5M", "4M", "3M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			thunderwave: ["9M", "9M", "9M", "9M", "5M", "4M", "9T"],
@@ -47541,7 +47305,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M", "9M", "5M", "4M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L9", "9M", "9L9", "9M", "6L9", "5M", "5L9", "5S1", "5S3", "4M", "4L9"],
-
 			thief: ["9M"],
 			thunderpunch: ["9M", "9E", "7T", "9E", "6T", "9E", "5T", "5E", "9T", "4E", "4S0", "4S2"],
 			torment: ["9L25", "9M", "9L25", "9M", "6L25", "5M", "5L25", "4M", "4L25"],
@@ -47641,7 +47404,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M", "9M", "5M", "4M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L9", "9M", "9L9", "9M", "6L9", "5M", "5L9", "4M", "4L9"],
-
 			thief: ["9M"],
 			thunderpunch: ["9M", "7T", "6T", "5T", "9T"],
 			torment: ["9L29", "9M", "9L29", "9M", "6L29", "5M", "5L29", "4M", "4L29"],
@@ -47747,7 +47509,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M", "9M", "5M", "4M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L1", "9M", "9L1", "9M", "6L1", "5M", "5L1", "4M", "4L1"],
-
 			thief: ["9M"],
 			thunderpunch: ["9M", "7T", "6T", "5T", "9T"],
 			torment: ["9L29", "9M", "9M", "5M", "4M"],
@@ -47833,7 +47594,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			surf: ["9M", "9M", "9M", "5M", "4M"],
 			swagger: ["9L22", "9M", "9M", "5M", "4M"],
 			swift: ["9M"],
-
 			toxic: ["9M", "9M", "5M", "4M"],
 			waterfall: ["9M", "9M", "9M", "5M", "4M"],
 			watergun: ["9L8"],
@@ -47920,7 +47680,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M"],
 			tackle: ["9L1", "9L1", "6L1", "5L1", "4L1"],
 			takedown: ["9M"],
-
 			toxic: ["9M", "9M", "5M", "4M"],
 			waterfall: ["9M", "9M", "9M", "5M", "4M"],
 			watergun: ["9L1"],
@@ -48018,7 +47777,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9L11", "9M", "9L11", "9M", "6L11", "5M", "5L11", "4M", "4L11"],
 			tackle: ["9L1", "9L1", "6L1", "5L1", "4L1"],
 			takedown: ["9M"],
-
 			throatchop: ["9T"],
 			toxic: ["9M", "9M", "5M", "4M"],
 			uproar: ["9M"],
@@ -48095,7 +47853,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "6L1", "5L1", "4L1", "4S0"],
 			tailwind: ["9M", "9T", "6T", "5T", "9T"],
 			takedown: ["9M", "9L29", "9L29", "6L29", "5L29", "4L29"],
-
 			thief: ["9M", "9M", "9M", "5M", "4M"],
 			toxic: ["9M", "9M", "5M", "4M"],
 			twister: ["9T"],
@@ -48160,7 +47917,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "6L1", "5L1", "4L1"],
 			tailwind: ["9M", "9T", "6T", "5T", "5D", "9T"],
 			takedown: ["9M", "9L33", "9L33", "6L33", "5L33", "4L33"],
-
 			thief: ["9M", "9M", "9M", "5M", "4M"],
 			toxic: ["9M", "9M", "5M", "4M"],
 			twister: ["9T"],
@@ -48230,7 +47986,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "6L1", "5L1", "4L1"],
 			tailwind: ["9M", "9T", "6T", "5T", "9T"],
 			takedown: ["9M", "9L33", "9L33", "6L33", "5L33", "4L33"],
-
 			thief: ["9M", "9M", "9M", "5M", "4M"],
 			toxic: ["9M", "9M", "5M", "4M"],
 			twister: ["9T"],
@@ -48421,7 +48176,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			stringshot: ["9T"],
 			strugglebug: ["9M", "9L6", "9L6", "9M", "6L6", "5L6", "5D"],
 			tackle: ["9L1"],
-
 			uproar: ["9T", "6T", "5T", "5D", "9T"],
 		},
 	},
@@ -48493,7 +48247,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L38", "9M", "9L38", "9M", "6L38", "5M", "5L38", "4M", "4L38"],
-
 			throatchop: ["9T"],
 			toxic: ["9M", "9M", "5M", "4M"],
 			trailblaze: ["9M"],
@@ -48563,7 +48316,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M", "9E", "9E", "5E", "9T"],
 			tackle: ["9L1", "9L1", "9L1", "6L1", "5L1", "4L1"],
 			takedown: ["9M", "9E", "9E", "9E", "9E", "5E", "4E"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			thunder: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "5M", "4M"],
@@ -48633,7 +48385,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M", "9T"],
 			tackle: ["9L1", "9L1", "9L1", "6L1", "5L1", "4L1"],
 			takedown: ["9M"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			thunder: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "5M", "4M"],
@@ -48710,7 +48461,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M", "9T"],
 			tackle: ["9L1", "9L1", "9L1", "6L1", "5L1", "4L1"],
 			takedown: ["9M"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			throatchop: ["9M", "7T"],
 			thunder: ["9M", "9M", "9M", "9M", "5M", "4M"],
@@ -49433,7 +49183,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwind: ["9T", "6T", "5T", "9T"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			toxic: ["9L36", "9L36", "9M", "9L33", "9M", "6L33", "5M", "5L27", "4M", "4L27"],
 			toxicspikes: ["9M", "9M"],
@@ -49617,7 +49366,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailslap: ["9E", "9E", "5E"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			thief: ["9M"],
 			toxic: ["9M", "9M", "5M", "4M"],
 			waterfall: ["9M", "9M", "9M", "5M", "4M"],
@@ -49706,7 +49454,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9L21", "9L21", "6L21", "5L15", "9T", "4L15"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "5M", "4M"],
-
 			thief: ["9M"],
 			torment: ["9M", "9M", "5M", "4M"],
 			toxic: ["9M", "9M", "5M", "4M"],
@@ -49917,7 +49664,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "9M", "5M", "4M"],
 			swallow: ["9E", "9E", "9E", "9E", "5E", "4E"],
 			takedown: ["9M"],
-
 			toxic: ["9M", "9M", "5M", "4M"],
 			trumpcard: ["9E", "9E", "5E", "4E"],
 			waterfall: ["9M"],
@@ -50000,7 +49746,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			surf: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			swagger: ["9M", "9M", "5M", "4M"],
 			takedown: ["9M"],
-
 			toxic: ["9M", "9M", "5M", "4M"],
 			waterfall: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			watergun: ["9L1", "9L1"],
@@ -50117,7 +49862,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M", "9T"],
 			tailwind: ["9M", "9L40", "9L40", "7T", "9E", "6T", "9E", "5T", "9T"],
 			telekinesis: ["9T", "5M"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			thunder: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "5M", "4M"],
@@ -50213,7 +49957,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M", "9T"],
 			tailwind: ["9M", "9L48", "9L48", "7T", "6T", "5T", "9T"],
 			telekinesis: ["9T", "5M"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			thunder: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "5M", "4M"],
@@ -50673,7 +50416,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailslap: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "9M", "5M", "4M"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			throatchop: ["9M", "7T"],
 			torment: ["9M", "9M", "5M", "4M"],
@@ -50766,7 +50508,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailslap: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "9M", "5M", "4M"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			throatchop: ["9M", "7T"],
 			torment: ["9M", "9M", "5M", "4M"],
@@ -50862,7 +50603,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9L1", "6L1", "5L1", "4L1"],
 			takedown: ["9M"],
 			telekinesis: ["9T", "5M"],
-
 			toxic: ["9M", "9M", "5M", "4M"],
 			trick: ["9M", "9M", "9T", "6T", "5T", "9T"],
 			trickroom: ["9M", "9M", "9M", "9M", "5M", "4M"],
@@ -50963,7 +50703,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9L1", "6L1", "5L1", "4L1"],
 			takedown: ["9M"],
 			telekinesis: ["9T", "5M"],
-
 			toxic: ["9M", "9M", "5M", "4M"],
 			trick: ["9M", "9M", "9M", "6T", "5T", "9T"],
 			trickroom: ["9M", "9S0", "9M", "9M", "9M", "5M", "4M"],
@@ -51122,7 +50861,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "9M", "5M", "4M"],
 			taunt: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			telekinesis: ["9T", "5M"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			torment: ["9M", "9M", "5M", "4M"],
 			toxic: ["9M", "9M", "5M", "4M"],
@@ -51212,7 +50950,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M"],
 			tackle: ["9L1", "9L1", "9L1", "6L1", "5L1", "4L1"],
 			takedown: ["9M", "9L54", "9L54", "9L15", "6L15", "5L15", "4L15"],
-
 			thrash: ["9E", "9E", "9E", "9E", "5E", "4E"],
 			thunderfang: ["9M"],
 			toxic: ["9M", "9M", "5M", "4M"],
@@ -51296,7 +51033,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M"],
 			tackle: ["9L1", "9L1", "9L1", "6L1", "5L1", "4L1"],
 			takedown: ["9M", "9L66", "9L66", "9L15", "6L15", "5L15", "4L15"],
-
 			thunderfang: ["9M"],
 			toxic: ["9M", "9M", "5M", "4M"],
 			twister: ["9T"],
@@ -51393,7 +51129,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M", "9M", "9M", "5M", "9S0", "4M"],
 			tackle: ["9L1", "9L1", "9L1", "6L1", "5L1", "4L1"],
 			takedown: ["9M", "9L72", "9L72", "9L15", "6L15", "5L15", "4L15"],
-
 			thunderfang: ["9M"],
 			toxic: ["9M", "9M", "5M", "4M"],
 			twister: ["9T"],
@@ -51499,7 +51234,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M", "9T"],
 			swordsdance: ["9M", "9L40", "9M", "9L40", "9M", "9M", "5M", "4M"],
 			takedown: ["9M"],
-
 			thunderpunch: ["9M", "9M", "9T", "6T", "5T", "9T"],
 			toxic: ["9M", "9M", "5M", "4M"],
 			trailblaze: ["9M"],
@@ -51617,7 +51351,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M", "9T"],
 			swordsdance: ["9M", "9L40", "9M", "9L40", "9M", "9L19", "9M", "6L19", "5M", "5L37", "4M", "4L33"],
 			takedown: ["9M"],
-
 			terrainpulse: ["9T"],
 			thunderpunch: ["9M", "9M", "9T", "6T", "5T", "9T"],
 			toxic: ["9M", "9M", "5M", "4M"],
@@ -51702,7 +51435,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swallow: ["9E", "9E", "9E", "9E", "5E", "4E"],
 			tackle: ["9L1", "9L1", "9L1", "6L1", "5L1", "4L1"],
 			takedown: ["9M", "9L28", "9L28", "9L19", "6L19", "5L19", "4L19"],
-
 			thunderfang: ["9M"],
 			toxic: ["9M", "9M", "5M", "4M"],
 			waterpulse: ["9T", "6T", "4M"],
@@ -51775,7 +51507,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "9M", "5M", "4M"],
 			tackle: ["9L1", "9L1", "9L1", "6L1", "5L1", "4L1"],
 			takedown: ["9M", "9L28", "9L28", "9L19", "6L19", "5L19", "4L19"],
-
 			thunderfang: ["9M", "9L1", "9M", "9L1", "9L1", "6L1", "5L1", "4L1"],
 			toxic: ["9M", "9M", "5M", "4M"],
 			waterpulse: ["9T", "6T", "4M"],
@@ -52065,7 +51796,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9L28", "9L28", "9M", "9L24", "9M", "6L24", "5M", "5L24", "4M", "4L24"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L8", "9M", "9L8", "9M", "9L10", "9M", "6L10", "5M", "5L10", "9S0", "9S1", "4M", "4L10"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			thunderpunch: ["9M", "9M", "7T", "6T", "5T", "9T"],
 			torment: ["9M", "9M", "5M", "4M"],
@@ -52182,7 +51912,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L1", "9M", "9L1", "9M", "9L10", "9M", "6L10", "5M", "5L10", "4M", "4L10"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			throatchop: ["9M", "7T"],
 			thunderpunch: ["9M", "9M", "7T", "6T", "5T", "9T"],
@@ -52342,7 +52071,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9T"],
 			tailwind: ["9M", "9L49", "9T", "6T", "5T", "9T"],
 			takedown: ["9M"],
-
 			thief: ["9M"],
 			tickle: ["9E", "9E", "9E", "5E", "4E"],
 			toxic: ["9M", "9M", "5M", "4M"],
@@ -52417,7 +52145,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9T"],
 			tailwind: ["9M", "9L59", "9T", "6T", "5T", "9T"],
 			takedown: ["9M"],
-
 			thief: ["9M"],
 			toxic: ["9M", "9M", "5M", "4M"],
 			twister: ["9T"],
@@ -52500,7 +52227,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			synthesis: ["9T", "6T", "5T", "9T"],
 			takedown: ["9M"],
-
 			toxic: ["9M", "9M", "5M", "4M"],
 			trailblaze: ["9M"],
 			waterpulse: ["9M", "9M", "6T", "4M"],
@@ -52596,7 +52322,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			synthesis: ["9T", "6T", "5T", "9T"],
 			takedown: ["9M"],
-
 			toxic: ["9M", "9M", "5M", "4M"],
 			trailblaze: ["9M"],
 			waterpulse: ["9M", "9M", "6T", "4M"],
@@ -52667,7 +52392,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "9M", "5M", "4M"],
 			swift: ["9M", "9M", "9T"],
 			telekinesis: ["9T", "5M"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			thunder: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "5M", "4M"],
@@ -52799,7 +52523,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "9M", "5M", "4M"],
 			swift: ["9M", "9L7", "9M", "9L7", "9L21", "7S4", "6L21", "5L21", "9T", "4L21", "4S1"],
 			telekinesis: ["9M", "5M"],
-
 			thunder: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			thunderpunch: ["9M", "9M", "9M", "6T", "5T", "9T"],
@@ -52908,7 +52631,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "9M", "5M", "4M"],
 			swift: ["9M", "9L7", "9M", "9L7", "9L21", "7S4", "6L21", "5L21", "9T", "4L21", "4S1"],
 			telekinesis: ["9M", "5M"],
-
 			thunder: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			thunderpunch: ["9M", "9M", "9M", "6T", "5T", "9T"],
@@ -53018,7 +52740,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9L7", "9M", "9L7", "9L21", "7S4", "6L21", "5L21", "9T", "4L21", "4S1"],
 			taunt: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			telekinesis: ["9M", "5M"],
-
 			thunder: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			thunderpunch: ["9M", "9M", "9M", "6T", "5T", "9T"],
@@ -53134,7 +52855,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "9M", "5M", "4M"],
 			swift: ["9M", "9M", "9T"],
 			takedown: ["9M"],
-
 			thunder: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			thunderwave: ["9M", "9M", "9M", "9M", "5M", "4M"],
@@ -53255,7 +52975,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "9M", "5M", "4M"],
 			swift: ["9M", "9M", "9T"],
 			takedown: ["9M"],
-
 			thunder: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			thunderwave: ["9M", "9M", "9M", "9M", "5M", "4M"],
@@ -53372,7 +53091,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "9M", "5M", "4M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "9M", "5M", "4M"],
-
 			torment: ["9M", "9M", "5M", "4M"],
 			toxic: ["9M", "9M", "5M", "4M"],
 			uproar: ["9M", "9T", "6T", "5T", "9T"],
@@ -53581,7 +53299,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwind: ["9T", "6T", "5T", "9T"],
 			takedown: ["9M"],
 			telekinesis: ["9T", "5M"],
-
 			thunder: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			thunderbolt: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			thunderwave: ["9M", "9M", "9M", "9M", "5M", "4M"],
@@ -53680,7 +53397,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "9M", "5M", "4M"],
 			swift: ["9M", "9M", "9T"],
 			telekinesis: ["9T", "5M"],
-
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thunderwave: ["9M", "9M", "9M", "9M", "5M", "4M"],
@@ -53750,7 +53466,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "9M", "5M", "4M"],
 			swift: ["9M", "9T"],
 			takeheart: ["9L75"],
-
 			toxic: ["9M", "9M", "5M", "4M"],
 			uproar: ["9T", "6T", "5T", "9T"],
 			uturn: ["9M", "9M", "9M", "5M", "4M"],
@@ -53831,7 +53546,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9T"],
 			tailglow: ["9L1", "9L1", "7S6", "6L1", "6S4", "6S5", "5L1", "4L1", "4S0", "4S1"],
 			takeheart: ["9L76"],
-
 			toxic: ["9M", "9M", "5M", "4M"],
 			uproar: ["9T", "6T", "5T", "9T"],
 			uturn: ["9M", "9M", "9M", "5M", "4M"],
@@ -53941,7 +53655,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9T"],
 			swordsdance: ["9M", "9M", "9M", "5M", "4M"],
 			taunt: ["9M", "9M", "9M", "5M", "4M"],
-
 			thief: ["9M", "9M", "9M", "5M", "4M"],
 			throatchop: ["9T"],
 			thunder: ["9M", "9M", "9M", "5M", "4M"],
@@ -54210,7 +53923,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			takedown: ["9M"],
 			taunt: ["9M"],
 			telekinesis: ["9T", "5M"],
-
 			thunder: ["9M", "9M", "9M", "5M", "4M"],
 			thunderbolt: ["9M", "9M", "9M", "5M", "4M"],
 			thunderwave: ["9M", "9M", "9M", "5M", "4M"],
@@ -54472,7 +54184,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			synthesis: ["9T", "6T", "5T", "5S0"],
 			tackle: ["9L1", "6L1", "5L1"],
 			taunt: ["9M", "9M", "5M"],
-
 			torment: ["9M", "9M", "5M"],
 			toxic: ["9M", "9M", "5M"],
 			twister: ["9E", "9E", "5E"],
@@ -54768,7 +54479,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L3", "6L3", "5L3"],
 			takedown: ["9L25", "6L25", "5L25"],
 			taunt: ["9M", "9M", "5M"],
-
 			thrash: ["9E", "9E", "5E"],
 			toxic: ["9M", "9M", "5M"],
 			wildcharge: ["9M", "9M", "5M"],
@@ -55087,7 +54797,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L5", "9L5", "6L5", "5L5"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "5M"],
-
 			thief: ["9M"],
 			toxic: ["9M", "9M", "5M"],
 			trumpcard: ["9E", "9E", "5E"],
@@ -55159,7 +54868,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1", "9L1", "6L1", "5L1"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "5M"],
-
 			thief: ["9M"],
 			toxic: ["9M", "9M", "5M"],
 			vacuumwave: ["9M"],
@@ -55247,7 +54955,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1", "9L1", "6L1", "5L1"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "5M"],
-
 			thief: ["9M"],
 			toxic: ["9M", "9M", "5M"],
 			vacuumwave: ["9M"],
@@ -55321,7 +55028,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			thief: ["9M"],
 			throatchop: ["9M"],
 			upperhand: ["9M"],
@@ -56376,7 +56082,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9E", "9E", "5E"],
 			synchronoise: ["9L25", "6L25", "5L25"],
 			telekinesis: ["9T", "9L43", "6L43", "5M", "5L43"],
-
 			thunderwave: ["9M", "9M", "9M", "5M"],
 			torment: ["9M", "9M", "5M"],
 			toxic: ["9M", "9M", "5M"],
@@ -57602,7 +57307,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "9M", "5M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "9M", "5M"],
-
 			thief: ["9M"],
 			thunderpunch: ["9M", "9M", "7T", "6T", "5T"],
 			toxic: ["9M", "9M", "5M"],
@@ -58015,7 +57719,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			synthesis: ["9E", "7T", "6T", "5T"],
 			tackle: ["9L1", "9L1", "6L1", "5L1"],
 			takedown: ["9M"],
-
 			toxic: ["9M", "9M", "5M"],
 			trailblaze: ["9M"],
 			worryseed: ["9E", "7T", "6T", "5T"],
@@ -58068,7 +57771,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			synthesis: ["9T", "6T", "5T"],
 			tackle: ["9L1", "9L1", "6L1", "5L1"],
 			takedown: ["9M"],
-
 			toxic: ["9M", "9M", "5M"],
 			trailblaze: ["9M"],
 			worryseed: ["9T", "6T", "5T"],
@@ -58145,7 +57847,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			synthesis: ["9T", "6T", "5T"],
 			tackle: ["9L1", "9L1", "6L1", "5L1"],
 			takedown: ["9M"],
-
 			throatchop: ["9T"],
 			toxic: ["9M", "9M", "5M"],
 			trailblaze: ["9M"],
@@ -58506,7 +58207,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			facade: ["9M", "9M", "9M", "9M", "5M"],
 			flash: ["9M", "5M"],
 			floralzone: ["9M"],
-
 			frustration: ["9M", "9M", "5M"],
 			gigadrain: ["9M", "9L21", "9M", "9L21", "9T", "9L26", "6T", "6L26", "5T", "5L26"],
 			grassknot: ["9M", "9M", "9M", "9M", "5M"],
@@ -58543,7 +58243,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "9M", "5M"],
 			sweetscent: ["9E", "9E", "9E", "9E", "5E", "5D"],
 			synthesis: ["9L33", "9L33", "9T", "9L17", "6T", "6L17", "5T", "5L17"],
-
 			toxic: ["9M", "9M", "5M"],
 			trailblaze: ["9M"],
 			worryseed: ["9E", "9E", "9T", "9E", "6T", "9E", "5T", "5E"],
@@ -58613,7 +58312,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M", "9M", "9M", "5M"],
 			synthesis: ["9L1", "9L1", "9M", "9L1", "6T", "6L1", "5T", "5L1"],
 			teeterdance: ["9L1", "9L1", "9L10", "6L10", "5L10"],
-
 			toxic: ["9M", "9M", "5M"],
 			trailblaze: ["9M"],
 			worryseed: ["9M", "6T", "5T"],
@@ -58678,7 +58376,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			synthesis: ["9L1"],
 			takedown: ["9M"],
 			teeterdance: ["9L1"],
-
 			trailblaze: ["9M"],
 			tripleaxel: ["9M"],
 			upperhand: ["9M"],
@@ -58746,7 +58443,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			synthesis: ["9L1"],
 			takedown: ["9M"],
 			teeterdance: ["9L1"],
-
 			trailblaze: ["9M"],
 			tripleaxel: ["9M"],
 			upperhand: ["9M"],
@@ -58823,7 +58519,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1", "9L1", "9L1", "6L1"],
 			takedown: ["9M", "9L36", "9L36", "9L14", "6L20", "5L20"],
 			taunt: ["9M", "9M", "9M", "9M", "5M"],
-
 			thrash: ["9L48", "9L48", "9L42", "6L1", "5L56"],
 			toxic: ["9M", "9M", "5M"],
 			uproar: ["9M", "9T", "9L3", "6T", "6L4", "5T", "5L4"],
@@ -58875,7 +58570,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L4"],
 			tailwhip: ["9L1"],
 			takedown: ["9M", "9L36"],
-
 			thrash: ["9L48"],
 			uproar: ["9M", "9L40"],
 			waterfall: ["9M"],
@@ -58954,7 +58648,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1", "9L1", "9L1", "6L1"],
 			takedown: ["9M", "9L36", "9L36", "9L14", "6L20", "5L20"],
 			taunt: ["9M", "9M", "9M", "9M", "5M"],
-
 			thrash: ["9L48", "9L48", "9L42", "6L1", "5L56"],
 			toxic: ["9M", "9M", "5M"],
 			uproar: ["9M", "9T", "9L3", "6T", "6L4", "5T", "5L4"],
@@ -59022,7 +58715,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L4"],
 			tailwhip: ["9L1"],
 			takedown: ["9M", "9L36"],
-
 			thrash: ["9L48"],
 			uproar: ["9M", "9L40"],
 			waterfall: ["9M"],
@@ -59083,7 +58775,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L4"],
 			tailwhip: ["9L1"],
 			takedown: ["9M", "9L36"],
-
 			thrash: ["9L48"],
 			uproar: ["9M", "9L40"],
 			waterfall: ["9M"],
@@ -59169,7 +58860,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9L24", "9L24", "9M", "9L25", "9M", "6L25", "5M", "5L25"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "9M", "5M"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M"],
 			thrash: ["9L39", "9L39", "9L46", "6L46", "5L46"],
 			thunderfang: ["9M", "9M", "9E", "9E", "5E"],
@@ -59262,7 +58952,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9L24", "9L24", "9M", "9L25", "9M", "6L25", "5M", "5L25"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "9M", "5M"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M"],
 			thrash: ["9L47", "9L47", "9L52", "6L52", "5L52"],
 			thunderfang: ["9M", "9M"],
@@ -59370,7 +59059,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9L24", "9L24", "9M", "9L25", "9M", "6L25", "5M", "5L25"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "9M", "5M"],
-
 			thief: ["9M", "9M", "9M", "9M", "5M"],
 			thrash: ["9L51", "9L51"],
 			throatchop: ["9M", "7T"],
@@ -61024,7 +60712,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M", "9M", "6M", "5M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L20", "9M", "9L20", "9M", "9L25", "6M", "6L25", "5M", "5L25"],
-
 			thief: ["9M", "9M", "9M", "6M", "5M"],
 			torment: ["9L4", "9L4", "9M", "9L33", "6M", "6L33", "5M", "5L33"],
 			toxic: ["9M", "6M", "5M"],
@@ -61087,7 +60774,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L20"],
-
 			thief: ["9M"],
 			torment: ["9L4"],
 			trick: ["9M"],
@@ -61183,7 +60869,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M", "9M", "6M", "5M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L20", "9M", "9L20", "9M", "9L25", "6M", "6L25", "5M", "5L25"],
-
 			thief: ["9M", "9M", "9M", "6M", "5M"],
 			throatchop: ["9M", "7T"],
 			torment: ["9L1", "9L1", "9M", "9L34", "6M", "6L34", "5M", "5L34"],
@@ -61266,7 +60951,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L20"],
-
 			thief: ["9M"],
 			throatchop: ["9M"],
 			torment: ["9L1"],
@@ -61496,7 +61180,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M"],
 			taunt: ["9M", "9M", "9M", "6M", "5M"],
 			telekinesis: ["9T", "9L40", "6L40", "5M", "5L40"],
-
 			thief: ["9M", "9M", "9M", "6M", "5M"],
 			thunderbolt: ["9M", "9M", "9M", "6M", "5M"],
 			thunderwave: ["9M", "9M", "9M", "6M", "5M"],
@@ -61585,7 +61268,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M"],
 			taunt: ["9M", "9M", "9M", "6M", "5M"],
 			telekinesis: ["9T", "9L43", "6L43", "5M", "5L43"],
-
 			thief: ["9M", "9M", "9M", "6M", "5M"],
 			thunderbolt: ["9M", "9M", "9M", "6M", "5M"],
 			thunderwave: ["9M", "9M", "9M", "6M", "5M"],
@@ -61689,7 +61371,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M"],
 			taunt: ["9M", "9M", "9M", "6M", "5M"],
 			telekinesis: ["9T", "9L45", "6L45", "5M", "5L45"],
-
 			thief: ["9M", "9M", "9M", "6M", "5M"],
 			thunderbolt: ["9M", "9M", "9M", "6M", "5M"],
 			thunderwave: ["9M", "9M", "9M", "6M", "5M"],
@@ -62018,7 +61699,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "6M", "5M"],
 			swift: ["9M"],
 			tailwind: ["9M", "9L37", "7T", "9L37", "6T", "6L37", "5T", "5L37"],
-
 			toxic: ["9M", "6M", "5M"],
 			trailblaze: ["9M"],
 			uproar: ["9T", "6T", "5T"],
@@ -62081,7 +61761,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "6M", "5M"],
 			swift: ["9M"],
 			tailwind: ["9M", "9L40", "7T", "9L40", "6T", "6L40", "5T", "5L40"],
-
 			toxic: ["9M", "6M", "5M"],
 			trailblaze: ["9M"],
 			uproar: ["9T", "6T", "5T"],
@@ -62326,7 +62005,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			synthesis: ["9E", "9T", "9E", "6T", "9E", "5T", "5E"],
 			tackle: ["9L1", "9L1", "6L1", "5L1"],
 			takedown: ["9M", "9L20", "9L20", "6L20", "5L20", "9S0"],
-
 			thunderwave: ["9M", "9M", "6M", "5M"],
 			toxic: ["9M", "6M", "5M"],
 			trailblaze: ["9M"],
@@ -62408,7 +62086,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			synthesis: ["9T", "6T", "5T"],
 			tackle: ["9L1", "9L1", "6L1", "5L1"],
 			takedown: ["9M", "9L20", "9L20", "6L20", "5L20"],
-
 			thunderwave: ["9M", "9M", "6M", "5M"],
 			toxic: ["9M", "6M", "5M"],
 			trailblaze: ["9M"],
@@ -62682,7 +62359,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "6M", "5M"],
 			sweetscent: ["9L24", "9L24", "9L24", "6L24", "5L24"],
 			synthesis: ["9L16", "9L16", "9T", "9L35", "6T", "6L35", "5T", "5L35"],
-
 			toxic: ["9L36", "9L36", "9M", "9L32", "6M", "6L32", "5M", "5L32"],
 			venoshock: ["9M", "9M", "9M", "6M", "5M"],
 			worryseed: ["9E", "9E", "9M", "6T", "5T"],
@@ -62745,7 +62421,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "6M", "5M"],
 			sweetscent: ["9L24", "9L24", "9L24", "6L24", "5L24"],
 			synthesis: ["9L16", "9L16", "9T", "9L35", "6T", "6L35", "5T", "5L35"],
-
 			toxic: ["9L36", "9L36", "9M", "9L32", "6M", "6L32", "5M", "5L32"],
 			venoshock: ["9M", "9M", "9M", "6M", "5M"],
 			worryseed: ["9M", "6T", "5T"],
@@ -62980,7 +62655,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			surf: ["9M", "9M", "6M", "5M"],
 			swagger: ["9M", "6M", "5M"],
 			takedown: ["9M"],
-
 			tickle: ["9E", "9E", "9E", "5E"],
 			toxic: ["9M", "6M", "5M"],
 			wakeupslap: ["9L29", "6L29", "5L29"],
@@ -63598,7 +63272,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			magnetrise: ["9M", "6T", "5T"],
 			spark: ["9L1", "9L1", "6L1", "5L1"],
 			tackle: ["9L1", "9L1", "6L1", "5L1"],
-
 			thunderwave: ["9M", "9L1", "9M", "9L1", "6M", "6L1", "5L1"],
 		},
 	},
@@ -63645,7 +63318,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			secretpower: ["9M"],
 			shockwave: ["9M", "6T"],
 			signalbeam: ["9M", "6T", "5T"],
-			shedtail: ["9L0"],
 			sleeptalk: ["9M", "9M", "6M", "5T"],
 			snore: ["9M", "6T", "5T"],
 			spark: ["9L1", "9L1", "6L1", "5L1"],
@@ -63653,7 +63325,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			superfang: ["9M", "6T", "5T"],
 			swagger: ["9M", "6M", "5M"],
 			takedown: ["9M"],
-
 			thrash: ["9L74", "9L74", "6L74", "5L74"],
 			throatchop: ["9T"],
 			thunder: ["9M", "9M", "6M", "5M"],
@@ -63750,7 +63421,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "6M", "5M"],
 			swift: ["9M"],
 			takedown: ["9M"],
-
 			thrash: ["9L1", "9L1", "6L1"],
 			throatchop: ["9T"],
 			thunder: ["9M", "9M", "6M", "5M"],
@@ -64012,7 +63682,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "6M", "5M"],
 			taunt: ["9M", "9M", "9M", "6M", "5M"],
 			telekinesis: ["9T", "5M"],
-
 			thief: ["9M", "9M", "9M", "6M", "5M"],
 			toxic: ["9M", "6M", "5M"],
 			trick: ["9M", "9M", "7T", "6T", "5T"],
@@ -64083,7 +63752,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "6M", "5M"],
 			taunt: ["9M", "9M", "9M", "6M", "5M"],
 			telekinesis: ["9T", "5M"],
-
 			thief: ["9M", "9M", "9M", "6M", "5M"],
 			toxic: ["9M", "6M", "5M"],
 			trick: ["9M", "9M", "7T", "6T", "5T"],
@@ -64160,7 +63828,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "6M", "5M"],
 			taunt: ["9M", "9M", "9M", "6M", "5M"],
 			telekinesis: ["9T", "5M"],
-
 			thief: ["9M", "9M", "9M", "6M", "5M"],
 			toxic: ["9M", "6M", "5M"],
 			trailblaze: ["9M"],
@@ -64249,7 +63916,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9L39", "9M", "9L39", "9M", "9L46", "6M", "6L46", "5M", "5L46"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L12", "9M", "9L12", "9M", "9L36", "6M", "6L36", "5M", "5L36"],
-
 			toxic: ["9M", "6M", "5M"],
 			trailblaze: ["9M"],
 			xscissor: ["9M", "9M", "9M", "6M", "5M"],
@@ -64333,7 +63999,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9L41", "9M", "9L41", "9M", "9L48", "6M", "6L48", "5M", "5L48"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L12", "9M", "9L12", "9M", "9L36", "6M", "6L36", "5M", "5L36"],
-
 			toxic: ["9M", "6M", "5M"],
 			trailblaze: ["9M"],
 			xscissor: ["9M", "9M", "9M", "6M", "5M"],
@@ -64425,7 +64090,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9L41", "9M", "9L41", "9M", "9L50", "6M", "6L50", "5M", "5L50"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L12", "9M", "9L12", "9M", "9L36", "6M", "6L36", "5M", "5L36"],
-
 			toxic: ["9M", "6M", "5M"],
 			trailblaze: ["9M"],
 			xscissor: ["9M", "9M", "9M", "6M", "5M", "9S0"],
@@ -64511,7 +64175,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "6M", "5M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			thief: ["9M"],
 			thrash: ["9L33", "9L33", "9L53", "6L53", "5L53"],
 			toxic: ["9M", "6M", "5M"],
@@ -64616,7 +64279,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M", "9M", "6M", "5M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "6M", "5M"],
-
 			thief: ["9M"],
 			thrash: ["9L33", "9L33", "9L1", "6L1", "5L59"],
 			throatchop: ["9M", "7T"],
@@ -64695,7 +64357,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			substitute: ["9M", "9M", "9M", "6M", "5M"],
 			swagger: ["9M", "6M", "5M"],
 			takedown: ["9M"],
-
 			toxic: ["9M", "6M", "5M"],
 			tripleaxel: ["9T"],
 			waterpulse: ["9M", "7T", "6T"],
@@ -65050,7 +64711,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M", "9M", "6M", "5M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "6M", "5M"],
-
 			toxic: ["9M", "6M", "5M"],
 			trailblaze: ["9M"],
 			uturn: ["9M", "9L30", "9M", "9L30", "9M", "9L41", "6M", "6L41", "5M", "5L41"],
@@ -65143,7 +64803,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M", "9M", "6M", "5M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "6M", "5M"],
-
 			toxic: ["9M", "6M", "5M"],
 			trailblaze: ["9M"],
 			uturn: ["9M", "9L30", "9M", "9L30", "9M", "9L41", "7S0", "6M", "6L41", "5M", "5L41"],
@@ -65525,7 +65184,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9L60", "9M", "9L60", "9M", "9L57", "6M", "6L57", "5M", "5L57"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "6M", "5M"],
-
 			thief: ["9M", "9M", "9M", "6M", "5M"],
 			thunderwave: ["9M", "9M", "9M", "6M", "5M"],
 			torment: ["9L15", "9L15", "9M", "9L14", "6M", "6L14", "5M", "5L14"],
@@ -65614,7 +65272,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9L64", "9M", "9L64", "9M", "9L63", "6M", "6L63", "5M", "5L63"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "6M", "5M"],
-
 			thief: ["9M", "9M", "9M", "6M", "5M"],
 			throatchop: ["9M", "7T"],
 			thunderwave: ["9M", "9M", "9M", "6M", "5M"],
@@ -65680,7 +65337,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9L64"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			thief: ["9M"],
 			throatchop: ["9M"],
 			thunderwave: ["9M"],
@@ -65832,7 +65488,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M"],
 			tailwind: ["9M", "9L18", "9L18", "9T", "9L37", "6T", "6L37", "5T", "5L37"],
 			takedown: ["9M"],
-
 			thrash: ["9L66", "9L66", "9L64", "6L64", "5L64"],
 			toxic: ["9M", "6M", "5M"],
 			uturn: ["9M", "9M", "9M", "6M", "5M"],
@@ -65909,7 +65564,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M"],
 			tailwind: ["9M", "9L18", "9L18", "9T", "9L37", "6T", "6L37", "5T", "5L37"],
 			takedown: ["9M"],
-
 			thrash: ["9L72", "9L72", "9L1", "6L1", "5L70"],
 			toxic: ["9M", "6M", "5M"],
 			uturn: ["9M", "9M", "9M", "6M", "5M"],
@@ -65989,7 +65643,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M"],
 			tailwind: ["9M", "9L18"],
 			takedown: ["9M"],
-
 			thrash: ["9L72"],
 			uturn: ["9M"],
 			vacuumwave: ["9M"],
@@ -66063,7 +65716,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwind: ["9M", "9L18", "9L18", "7T", "9L37", "6T", "6L37", "5T", "5L37"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "6M", "5M"],
-
 			thief: ["9M", "9M", "9M", "6M", "5M"],
 			torment: ["9M", "6M", "5M"],
 			toxic: ["9M", "9E", "9E", "9M", "6M", "5M"],
@@ -66141,7 +65793,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwind: ["9M", "9L18", "9L18", "7T", "9L37", "6T", "6L37", "5T", "5L37"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "6M", "5M"],
-
 			thief: ["9M", "9M", "9M", "6M", "5M"],
 			torment: ["9M", "6M", "5M"],
 			toxic: ["9M", "9L1", "9L1", "9M", "6M", "5M"],
@@ -66372,7 +66023,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9L1", "6L1", "5L1", "9S0"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "6M", "5M"],
-
 			thief: ["9M", "9M", "9M", "6M", "5M"],
 			thunderfang: ["9M", "9M", "9E", "9E", "5E"],
 			thunderwave: ["9M", "9M", "9M", "6M", "5M"],
@@ -66447,7 +66097,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "6M", "5M"],
-
 			thief: ["9M", "9M", "9M", "6M", "5M"],
 			thunderfang: ["9M", "9M"],
 			thunderwave: ["9M", "9M", "9M", "6M", "5M"],
@@ -66556,7 +66205,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwind: ["9M", "9T", "6T", "5T"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "6M", "5M"],
-
 			thief: ["9M", "9M", "9M", "6M", "5M"],
 			throatchop: ["9M", "7T"],
 			thunderfang: ["9M", "9M"],
@@ -66632,7 +66280,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M", "9M", "9M", "6M", "5M"],
 			swagger: ["9M", "6M", "5M"],
 			takedown: ["9M", "9L48", "9L48", "9L20", "6L20", "5L20"],
-
 			thrash: ["9E", "9E", "9L90", "6L90", "5L90"],
 			toxic: ["9M", "6M", "5M"],
 			trailblaze: ["9M"],
@@ -66713,7 +66360,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "6M", "5M"],
 			tailwind: ["9M", "7T", "6T", "5T"],
 			takedown: ["9M", "9L1", "9L1"],
-
 			thrash: ["9L1", "6L1"],
 			toxic: ["9M", "6M", "5M"],
 			trailblaze: ["9M"],
@@ -67064,7 +66710,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwind: ["9M", "9L30", "9L30", "9T", "9L49", "7S4", "7S5", "7S6", "6T", "6L1", "5T", "5L55"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "6M", "5M"],
-
 			thief: ["9M", "9M", "9M", "6M", "5M"],
 			thrash: ["9L70", "9L70", "9L1", "6L1", "5L85"],
 			torment: ["9M", "6M", "5M"],
@@ -67165,7 +66810,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9L10", "9L10", "9M", "9L1", "6M", "6L7", "5M", "5L7"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "6M", "5M"],
-
 			thief: ["9M", "9M", "9M", "6M", "5M"],
 			thrash: ["9L70", "9L70", "9L1", "6L1", "5L85"],
 			thunder: ["9M", "9L65", "9M", "9L65", "9S7", "9M", "9L61", "6M", "6L67", "5M", "5L67", "9S2"],
@@ -67479,7 +67123,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M", "9L25", "9M", "9L31", "6M", "6L37", "6S2", "5M", "5L37"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			toxic: ["9M", "6M", "5M"],
 			uturn: ["9M", "9M", "9M", "6M", "6S3", "5M"],
 			weatherball: ["9M"],
@@ -67958,7 +67601,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M"],
 			teeterdance: ["9L21", "9L21", "6L21", "5L21", "9S1"],
 			telekinesis: ["9T", "5M"],
-
 			thunder: ["9M", "9M", "6M", "5M"],
 			thunderbolt: ["9M", "9M", "6M", "5M"],
 			thunderpunch: ["9M", "7T", "6T", "5T"],
@@ -68177,7 +67819,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1"],
 			takedown: ["9M", "9L27", "9L27", "6L27"],
 			taunt: ["9M", "6M"],
-
 			thunderpunch: ["9M", "9T", "6T"],
 			toxic: ["9M", "6M"],
 			trailblaze: ["9M"],
@@ -68275,7 +67916,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1"],
 			takedown: ["9M", "9L29", "9L29", "6L30"],
 			taunt: ["9M", "9M", "6M"],
-
 			thunderpunch: ["9M", "9T", "6T"],
 			toxic: ["9M", "6M"],
 			trailblaze: ["9M"],
@@ -68391,7 +68031,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "6L1"],
 			takedown: ["9M", "9L29", "9L29", "6L30"],
 			taunt: ["9M", "9M", "6M"],
-
 			thunderpunch: ["9M", "9T", "6T"],
 			toxic: ["9M", "6M"],
 			trailblaze: ["9M"],
@@ -68471,7 +68110,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M"],
 			tailwhip: ["9L1", "9L1", "6L1"],
 			takedown: ["9M"],
-
 			thief: ["9M", "9M", "6M"],
 			toxic: ["9M", "6M"],
 			trick: ["9M"],
@@ -68559,7 +68197,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1", "9L1", "6L1"],
 			takedown: ["9M"],
 			telekinesis: ["9T"],
-
 			thief: ["9M", "9M", "6M"],
 			thunderpunch: ["9M", "9T", "6T"],
 			toxic: ["9M", "6M"],
@@ -68663,7 +68300,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1", "9L1", "6L1"],
 			takedown: ["9M"],
 			telekinesis: ["9T"],
-
 			thief: ["9M", "9M", "6M"],
 			thunderpunch: ["9M", "9T", "6T"],
 			toxic: ["9M", "6M"],
@@ -68743,7 +68379,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			switcheroo: ["9E"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "6M"],
-
 			thief: ["9M", "9M", "6M"],
 			toxic: ["9M", "6M"],
 			toxicspikes: ["9M", "9E", "9E", "9E"],
@@ -68826,7 +68461,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "6M"],
-
 			thief: ["9M", "9M", "6M"],
 			toxic: ["9M", "6M"],
 			toxicspikes: ["9M"],
@@ -69009,7 +68643,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M"],
-
 			thief: ["9M", "9M"],
 			toxic: ["9M"],
 			toxicspikes: ["9M"],
@@ -69249,7 +68882,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwind: ["9M", "9L35", "9L35", "9T", "9L45", "9E", "6T", "6L45", "9E"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "6M"],
-
 			thief: ["9M", "9M", "9M", "6M"],
 			toxic: ["9M", "6M"],
 			uturn: ["9M", "9M", "9M", "6M"],
@@ -69314,7 +68946,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwind: ["9M", "9L43", "9L43", "9T", "9L51", "6T", "6L51"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "6M"],
-
 			thief: ["9M", "9M", "9M", "6M"],
 			toxic: ["9M", "6M"],
 			uturn: ["9M", "9M", "9M", "6M"],
@@ -69387,7 +69018,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwind: ["9M", "9L47", "9L47", "9T", "9L55", "6T", "6L55"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "6M"],
-
 			thief: ["9M", "9M", "9M", "6M"],
 			toxic: ["9M", "6M"],
 			uturn: ["9M", "9M", "9M", "6M"],
@@ -69490,7 +69120,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "6M"],
 			swift: ["9M"],
 			tailwind: ["9M", "9T", "6T"],
-
 			thief: ["9M", "9M", "6M"],
 			toxic: ["9M", "6M"],
 			uturn: ["9M", "9M", "6M"],
@@ -69564,7 +69193,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "6M"],
 			swift: ["9M"],
 			tailwind: ["9M", "9T", "6T"],
-
 			thief: ["9M", "9M", "6M"],
 			toxic: ["9M", "6M"],
 			uturn: ["9M", "9M", "6M"],
@@ -69639,7 +69267,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "6M"],
 			swift: ["9M"],
 			tailwind: ["9M", "9T", "6T"],
-
 			thief: ["9M", "9M", "6M"],
 			toxic: ["9M", "6M"],
 			uturn: ["9M", "9M", "6M"],
@@ -69710,7 +69337,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "6L1"],
 			takedown: ["9M", "9L20", "9L20", "6L20"],
 			taunt: ["9M", "9M", "6M"],
-
 			thief: ["9M", "9M", "6M"],
 			thunderfang: ["9M"],
 			toxic: ["9M", "6M"],
@@ -69784,7 +69410,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "6L1"],
 			takedown: ["9M", "9L20", "9L20", "6L20"],
 			taunt: ["9M", "9M", "6M"],
-
 			thief: ["9M", "9M", "6M"],
 			thunderfang: ["9M"],
 			toxic: ["9M", "6M"],
@@ -69865,7 +69490,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			synthesis: ["9L33", "9T", "6T"],
 			tackle: ["9L1", "9L1", "6L1"],
 			tearfullook: ["9E", "9E"],
-
 			toxic: ["9M", "6M"],
 			trailblaze: ["9M"],
 			vinewhip: ["9L1", "9L1", "6L1"],
@@ -69936,7 +69560,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M"],
 			synthesis: ["9L38", "9T", "6T"],
 			tackle: ["9L1", "9L1", "6L1"],
-
 			toxic: ["9M", "6M"],
 			trailblaze: ["9M"],
 			trick: ["9M"],
@@ -70069,7 +69692,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "6M"],
 			swift: ["9M"],
 			synthesis: ["9L1", "9T", "6T"],
-
 			toxic: ["9M", "6M"],
 			trailblaze: ["9M"],
 			trick: ["9M"],
@@ -70141,7 +69763,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "6L1"],
 			tailwhip: ["9L9", "9L9", "6L9"],
 			takedown: ["9M", "9L22", "9L22", "6L22"],
-
 			toxic: ["9M", "6M"],
 			trailblaze: ["9M"],
 			vinewhip: ["9L7", "9L7", "6L7"],
@@ -70221,7 +69842,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "6L1"],
 			tailwhip: ["9L1", "9L1", "6L9"],
 			takedown: ["9M", "9L22", "9L22", "6L22"],
-
 			toxic: ["9M", "6M"],
 			trailblaze: ["9M"],
 			vinewhip: ["9L1", "9L1", "6L7"],
@@ -71667,7 +71287,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9L1", "6L1"],
 			tailwhip: ["9L15", "9L15", "9L9", "6L9"],
 			takedown: ["9M"],
-
 			thief: ["9M"],
 			thunderbolt: ["9M", "9M", "9M", "6M"],
 			toxic: ["9M", "9L35", "9L35", "9M", "9L32", "6M", "6L32"],
@@ -71741,7 +71360,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9L1", "6L1"],
 			tailwhip: ["9L15", "9L15", "9L9", "6L9"],
 			takedown: ["9M"],
-
 			thief: ["9M"],
 			thunder: ["9M", "9M", "9M", "6M"],
 			thunderbolt: ["9M", "9M", "9M", "6M"],
@@ -71815,7 +71433,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "6M"],
 			swordsdance: ["9M", "9L35", "9M", "9L35", "9M", "9L25", "6M", "6L25"],
 			takedown: ["9M"],
-
 			terrainpulse: ["9T"],
 			thief: ["9M"],
 			toxic: ["9M", "6M"],
@@ -71892,7 +71509,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "6M"],
 			swordsdance: ["9M", "9L35", "9M", "9L35", "9M", "9L25", "6M", "6L25"],
 			takedown: ["9M"],
-
 			terrainpulse: ["9T"],
 			thief: ["9M"],
 			toxic: ["9M", "6M"],
@@ -72479,7 +72095,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1", "9L1", "9L1", "6L1"],
 			takedown: ["9M", "9L1", "9L1"],
 			telekinesis: ["9T"],
-
 			toxic: ["9M", "6M"],
 			trailblaze: ["9M"],
 			weatherball: ["9M"],
@@ -72587,7 +72202,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwind: ["9T", "6T"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L32", "9M", "9L32", "9M", "6M"],
-
 			thief: ["9M"],
 			throatchop: ["9M", "7T"],
 			thunderpunch: ["9M", "9M", "7T", "6T"],
@@ -72668,7 +72282,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1", "9L1", "9L1", "6L1"],
 			takedown: ["9M"],
 			tearfullook: ["9E", "9E", "9E"],
-
 			thief: ["9M", "9M", "9M", "6M"],
 			thunder: ["9M", "9L60", "9M", "9L60", "9M", "9L45", "6M", "6L45"],
 			thunderbolt: ["9M", "9M", "9M", "6M"],
@@ -72758,7 +72371,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9L1", "6L1"],
 			takedown: ["9M"],
 			telekinesis: ["9T"],
-
 			terrainpulse: ["9T"],
 			toxic: ["9M", "6M"],
 			trickroom: ["9M", "9M", "9M", "6M"],
@@ -72813,7 +72425,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "6M"],
 			tackle: ["9L1", "9L1", "9L1", "6L1"],
 			takedown: ["9M"],
-
 			thunderbolt: ["9M", "9M", "9M", "6M"],
 			toxic: ["9M", "6M"],
 			watergun: ["9L5", "9L5"],
@@ -72871,7 +72482,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "6M"],
 			tackle: ["9L1", "9L1", "9L1", "6L1"],
 			takedown: ["9M"],
-
 			thunder: ["9M"],
 			thunderbolt: ["9M", "9M", "9M", "6M"],
 			toxic: ["9M", "6M"],
@@ -72924,7 +72534,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M"],
 			tackle: ["9L1"],
 			takedown: ["9M"],
-
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			watergun: ["9L1"],
@@ -73010,7 +72619,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9L1", "6L1"],
 			takedown: ["9M"],
 			tearfullook: ["9L1", "9L1"],
-
 			thunder: ["9M", "9M", "9M", "6M"],
 			thunderbolt: ["9M", "9M", "9M", "6M"],
 			thunderpunch: ["9M", "9M", "9M", "6T"],
@@ -73082,7 +72690,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1"],
 			takedown: ["9M"],
 			tearfullook: ["9L1"],
-
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thunderpunch: ["9M"],
@@ -73152,7 +72759,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M"],
 			switcheroo: ["9E", "9E", "9E", "9E"],
 			tackle: ["9L4", "9L4", "9L1", "6L1"],
-
 			thief: ["9M", "9M", "9M", "9E", "6M", "9E"],
 			thunderwave: ["9M", "9M", "9M", "6M"],
 			torment: ["9L12", "9L12", "9M", "9L32", "6M", "6L32"],
@@ -73576,7 +73182,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "6M"],
 			tackle: ["9L3", "9L3", "9L1", "6L1"],
 			takedown: ["9M", "9L36", "9L36", "9L15", "6L15"],
-
 			toxic: ["9M", "6M"],
 			waterpulse: ["9T", "6T"],
 		},
@@ -73654,7 +73259,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "6M"],
 			tackle: ["9L1", "9L1", "9L1", "6L1"],
 			takedown: ["9M", "9L36", "9L36", "9L15", "6L15"],
-
 			toxic: ["9M", "6M"],
 			waterpulse: ["9T", "6T"],
 			wideguard: ["9L1", "9L1", "9L1"],
@@ -73713,7 +73317,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			substitute: ["9M"],
 			tackle: ["9L1"],
 			takedown: ["9M", "9L36"],
-
 			wideguard: ["9L1"],
 		},
 	},
@@ -73770,7 +73373,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			substitute: ["9M"],
 			tackle: ["9L1"],
 			takedown: ["9M", "9L36"],
-
 			wideguard: ["9L1"],
 		},
 	},
@@ -73838,7 +73440,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwind: ["9M", "9L49", "9L49", "9M", "9L35", "9E", "6T", "6L35", "9E"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "6M"],
-
 			thief: ["9M", "9M", "9M", "6M"],
 			torment: ["9M", "6M"],
 			toxic: ["9M", "6M"],
@@ -73925,7 +73526,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwind: ["9M", "9L51", "9L51", "9T", "9L35", "6T", "6L35"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "6M"],
-
 			thief: ["9M", "9M", "9M", "6M"],
 			torment: ["9M", "6M"],
 			toxic: ["9M", "6M"],
@@ -74304,7 +73904,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9L1", "6L1"],
 			takedown: ["9M"],
 			telekinesis: ["9T"],
-
 			terrainpulse: ["9T"],
 			toxic: ["9M", "6M"],
 			trickroom: ["9M", "9M", "9M", "9L46", "6M", "6L46"],
@@ -74399,7 +73998,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "6M"],
 			telekinesis: ["9T"],
-
 			thief: ["9M", "9M", "6M"],
 			throatchop: ["9T"],
 			thunderbolt: ["9M", "9M", "6M"],
@@ -74499,7 +74097,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "6M"],
 			takedown: ["9M", "9L54", "9L54", "9L1", "6L1"],
 			taunt: ["9M"],
-
 			thunderfang: ["9M", "9M"],
 			toxic: ["9M", "6M"],
 			watergun: ["9L1", "9L1"],
@@ -74588,7 +74185,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			synthesis: ["9L18", "9L18", "9T", "9L25"],
 			tackle: ["9L1", "9L1", "9L1"],
 			takedown: ["9M"],
-
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			workup: ["9M", "9M"],
@@ -74665,7 +74261,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9L1"],
 			tailwind: ["9M"],
 			takedown: ["9M"],
-
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			workup: ["9M", "9M"],
@@ -74762,7 +74357,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9L1"],
 			tailwind: ["9M", "7T"],
 			takedown: ["9M"],
-
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			uturn: ["9M", "9L1", "9M", "9L1", "9M", "9L1"],
@@ -74842,7 +74436,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwind: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			trailblaze: ["9M"],
 			triplearrows: ["9L0"],
 			uturn: ["9M", "9L1"],
@@ -75510,7 +75103,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1"],
 			takedown: ["9M", "9L28", "9L28"],
 			taunt: ["9M", "9M"],
-
 			thief: ["9M", "9M"],
 			thrash: ["9L40", "9L43"],
 			thunderfang: ["9M", "9E", "9E"],
@@ -75591,7 +75183,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1"],
 			takedown: ["9M", "9L31", "9L31"],
 			taunt: ["9M", "9M"],
-
 			thief: ["9M", "9M"],
 			thrash: ["9L47", "9L51"],
 			thunderfang: ["9M"],
@@ -75722,7 +75313,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			substitute: ["9M", "9M", "9M"],
 			swagger: ["9M"],
 			takedown: ["9M"],
-
 			thunderbolt: ["9M", "9M", "9M"],
 			thunderwave: ["9M", "9M", "9M"],
 			toxic: ["9M"],
@@ -75781,7 +75371,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			substitute: ["9M", "9M", "9M"],
 			swagger: ["9M"],
 			takedown: ["9M"],
-
 			thunder: ["9M"],
 			thunderbolt: ["9M", "9M", "9M"],
 			thunderwave: ["9M", "9M", "9M"],
@@ -75858,7 +75447,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M"],
 			swift: ["9M"],
 			takedown: ["9M"],
-
 			thunder: ["9M", "9M", "9M"],
 			thunderbolt: ["9M", "9L0", "9M", "9L0", "9M", "9L1"],
 			thunderwave: ["9M", "9M", "9M"],
@@ -75997,7 +75585,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M"],
 			swift: ["9M"],
 			takedown: ["9M"],
-
 			thief: ["9M", "9M"],
 			thunderpunch: ["9M", "7T"],
 			toxic: ["9M"],
@@ -76084,7 +75671,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M"],
 			swift: ["9M"],
 			takedown: ["9M"],
-
 			thief: ["9M", "9M"],
 			thunderpunch: ["9M", "7T"],
 			toxic: ["9M"],
@@ -76153,7 +75739,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			takedown: ["9M"],
 			taunt: ["9M", "9M"],
 			teeterdance: ["9L26", "9L26"],
-
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			uturn: ["9M", "9M"],
@@ -76229,7 +75814,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			switcheroo: ["9L36", "9L36"],
 			tailwind: ["9M", "7T"],
 			telekinesis: ["9T"],
-
 			thief: ["9M", "9M", "9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
@@ -76314,7 +75898,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwind: ["9M", "7T"],
 			takedown: ["9M"],
 			telekinesis: ["9T"],
-
 			thief: ["9M", "9M", "9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
@@ -76451,7 +76034,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9L1"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M"],
-
 			thrash: ["9E", "9E", "9E"],
 			thunderfang: ["9M", "9M", "9E"],
 			toxic: ["9M"],
@@ -76520,7 +76102,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9L1", "7S1", "7S0"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M"],
-
 			thrash: ["9E", "9E", "9E"],
 			thunderfang: ["9M", "9M", "9E", "7S1"],
 			toxic: ["9M"],
@@ -76605,7 +76186,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailslap: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M"],
-
 			thunderfang: ["9M", "9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
@@ -76693,7 +76273,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9L1"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L1", "9M", "9L1", "9M", "9L1"],
-
 			throatchop: ["9M", "7T"],
 			thunderfang: ["9M", "9M"],
 			thunderpunch: ["9M", "9M", "7T"],
@@ -76778,7 +76357,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailslap: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L1", "9M", "9L1", "9M"],
-
 			thrash: ["9L1"],
 			thunderfang: ["9M", "9M"],
 			toxic: ["9M"],
@@ -76906,7 +76484,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			surf: ["9M", "9M", "9M"],
 			swagger: ["9M"],
 			swallow: ["9E", "9E", "9E", "7S0"],
-
 			toxic: ["9L50", "9L50", "9M", "9L21", "7S0"],
 			toxicspikes: ["9M", "9L30", "9M", "9L30", "9L13"],
 			venomdrench: ["9M", "9L40", "9L41"],
@@ -76986,7 +76563,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			substitute: ["9M", "9M", "9M"],
 			surf: ["9M", "9M", "9M"],
 			swagger: ["9M"],
-
 			toxic: ["9L56", "9L56", "9M", "9L21"],
 			toxicspikes: ["9M", "9L30", "9M", "9L30", "9L1"],
 			venomdrench: ["9M", "9L42", "9L44"],
@@ -77052,7 +76628,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			superpower: ["9L44", "9M", "9L44", "9T", "9L45"],
 			swagger: ["9M"],
 			takedown: ["9M"],
-
 			toxic: ["9M"],
 		},
 	},
@@ -77117,7 +76692,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			superpower: ["9L52", "9M", "9L52", "9T", "9L60"],
 			swagger: ["9M"],
 			takedown: ["9M"],
-
 			toxic: ["9M"],
 		},
 		encounters: [
@@ -77360,7 +76934,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M", "9M"],
 			synthesis: ["9L35", "9L35", "7T", "9L28"],
 			takedown: ["9M"],
-
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			weatherball: ["9M", "9E"],
@@ -77435,7 +77008,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M", "9M"],
 			synthesis: ["9L37", "9L37", "7T", "9L28"],
 			takedown: ["9M"],
-
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			weatherball: ["9M"],
@@ -77700,7 +77272,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M"],
-
 			thief: ["9M", "9M", "9M"],
 			thunderwave: ["9M", "9M"],
 			torment: ["9M"],
@@ -77796,7 +77367,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M"],
-
 			thief: ["9M", "9M", "9M"],
 			thunderwave: ["9M", "9M"],
 			torment: ["9L1", "9L1", "9M", "9L1"],
@@ -78082,7 +77652,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			synthesis: ["9E", "9E", "9T", "9E"],
 			takedown: ["9M"],
 			teeterdance: ["9L28", "9L28", "9L25"],
-
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			worryseed: ["9T"],
@@ -78150,7 +77719,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			synthesis: ["9T"],
 			takedown: ["9M"],
 			teeterdance: ["9L34", "9L34", "9L25"],
-
 			tropkick: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
@@ -78234,7 +77802,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			takedown: ["9M"],
 			taunt: ["9M", "9M"],
 			teeterdance: ["9L34", "9L34", "9L25"],
-
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			tripleaxel: ["9T"],
@@ -78409,7 +77976,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			takedown: ["9M"],
 			taunt: ["9M", "9L1", "9M", "9L1", "9M", "9L8"],
 			telekinesis: ["9T"],
-
 			terrainpulse: ["9T"],
 			thunder: ["9M", "9M", "9M"],
 			thunderbolt: ["9M", "9M", "9M"],
@@ -78508,7 +78074,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9L1"],
 			takedown: ["9M", "9L25", "9L25", "9L22"],
 			taunt: ["9M", "9M", "9M"],
-
 			thief: ["9M", "9M", "9M"],
 			thrash: ["9L40", "9L40", "9L29"],
 			toxic: ["9M"],
@@ -78732,7 +78297,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M"],
 			swagger: ["9M"],
 			swallow: ["9E", "9E", "9E"],
-
 			toxic: ["9M"],
 			trick: ["9M", "9M", "9T"],
 		},
@@ -78809,7 +78373,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			substitute: ["9M", "9M", "9M"],
 			sunnyday: ["9M"],
 			swagger: ["9M"],
-
 			terrainpulse: ["9T"],
 			toxic: ["9M"],
 			trick: ["9M", "9M", "9T"],
@@ -79149,7 +78712,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swallow: ["9L6", "9L6"],
 			swordsdance: ["9M", "9M"],
 			takedown: ["9M"],
-
 			thief: ["9M"],
 			thrash: ["9L46", "9L46"],
 			toxic: ["9M"],
@@ -79481,7 +79043,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M"],
 			telekinesis: ["9T"],
-
 			thief: ["9M", "9M", "9M"],
 			thunder: ["9M", "9M", "9M"],
 			thunderbolt: ["9M", "9M", "9M"],
@@ -79650,7 +79211,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			takedown: ["9M"],
 			taunt: ["9M", "9M"],
 			telekinesis: ["9T"],
-
 			torment: ["9M"],
 			toxic: ["9M"],
 			trickroom: ["9M", "9M"],
@@ -79902,7 +79462,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9L1"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M"],
-
 			toxic: ["9M"],
 			uproar: ["9M", "7T"],
 			workup: ["9L20", "9M", "9L20", "9M", "9L29"],
@@ -79979,7 +79538,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9L1"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M"],
-
 			toxic: ["9M"],
 			uproar: ["9M", "7T"],
 			vacuumwave: ["9M"],
@@ -80082,7 +79640,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9L1"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M"],
-
 			thunderpunch: ["9M", "9M", "7T"],
 			toxic: ["9M"],
 			uproar: ["9M", "7T"],
@@ -81474,7 +81031,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M"],
 			synchronoise: ["9L73"],
 			takedown: ["9M"],
-
 			thunderbolt: ["9M", "9M", "9M"],
 			thunderwave: ["9M", "9M", "9M"],
 			triattack: ["9M"],
@@ -81565,7 +81121,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M"],
 			swift: ["9M"],
 			takedown: ["9M"],
-
 			thunderbolt: ["9M", "9M"],
 			thunderwave: ["9M", "9M"],
 			triattack: ["9M"],
@@ -82183,7 +81738,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L8", "9M", "9L8"],
-
 			thief: ["9M"],
 			trailblaze: ["9M"],
 			uproar: ["9L28", "9M", "9L28"],
@@ -82242,7 +81796,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L1", "9M", "9L1"],
-
 			thief: ["9M"],
 			trailblaze: ["9M"],
 			uproar: ["9L36", "9M", "9L36"],
@@ -82323,7 +81876,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L1", "9M", "9L1"],
-
 			thief: ["9M"],
 			trailblaze: ["9M"],
 			uproar: ["9L38", "9M", "9L38"],
@@ -82386,7 +81938,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M"],
-
 			trailblaze: ["9M"],
 			uturn: ["9M", "9M"],
 			workup: ["9M"],
@@ -82444,7 +81995,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M"],
-
 			trailblaze: ["9M"],
 			uturn: ["9M", "9M"],
 			workup: ["9M"],
@@ -82520,7 +82070,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M"],
-
 			trailblaze: ["9M"],
 			uturn: ["9M", "9M"],
 			willowisp: ["9M"],
@@ -82568,7 +82117,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M"],
 			takedown: ["9M"],
 			tearfullook: ["9L17", "9L17"],
-
 			uturn: ["9M", "9L24", "9M", "9L24"],
 			waterfall: ["9M"],
 			watergun: ["9L6", "9L6"],
@@ -82613,7 +82161,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M"],
 			takedown: ["9M"],
 			tearfullook: ["9L19", "9L19"],
-
 			uturn: ["9M", "9L30", "9M", "9L30"],
 			waterfall: ["9M"],
 			watergun: ["9L1", "9L1"],
@@ -82683,7 +82230,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			takedown: ["9M"],
 			taunt: ["9M"],
 			tearfullook: ["9L19", "9L19"],
-
 			uturn: ["9M", "9L30", "9M", "9L30"],
 			vacuumwave: ["9M"],
 			waterfall: ["9M", "9M"],
@@ -82738,7 +82284,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailslap: ["9M"],
 			tailwhip: ["9L1", "9L1"],
 			takedown: ["9M"],
-
 			thief: ["9M", "9M"],
 			trailblaze: ["9M"],
 			uproar: ["9M"],
@@ -82799,7 +82344,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailslap: ["9M"],
 			tailwhip: ["9L1", "9L1"],
 			takedown: ["9M"],
-
 			thief: ["9M", "9M"],
 			thunderfang: ["9M", "9M"],
 			uproar: ["9M"],
@@ -82852,7 +82396,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwind: ["9M", "9E", "9E"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L20", "9M", "9L20"],
-
 			thief: ["9M", "9M"],
 			uturn: ["9M", "9M"],
 			workup: ["9M"],
@@ -82900,7 +82443,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwind: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L22", "9M", "9L22"],
-
 			thief: ["9M", "9M"],
 			uturn: ["9M", "9M"],
 			workup: ["9M"],
@@ -82966,7 +82508,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwind: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L22", "9M", "9L22"],
-
 			thief: ["9M", "9M"],
 			uturn: ["9M", "9M"],
 			workup: ["9M"],
@@ -83385,7 +82926,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			surf: ["9M", "9M"],
 			tackle: ["9L1", "9L1"],
 			takedown: ["9M"],
-
 			waterfall: ["9M"],
 			watergun: ["9L1", "9L1"],
 			waterpulse: ["9M"],
@@ -83462,7 +83002,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M"],
 			tackle: ["9L1", "9L1"],
 			takedown: ["9M"],
-
 			throatchop: ["9M"],
 			waterfall: ["9M", "9M"],
 			watergun: ["9L1", "9L1"],
@@ -83606,7 +83145,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1"],
 			takedown: ["9M"],
 			temperflare: ["9M"],
-
 			willowisp: ["9M", "9M"],
 		},
 	},
@@ -83666,7 +83204,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1"],
 			takedown: ["9M"],
 			temperflare: ["9M"],
-
 			willowisp: ["9M", "9M"],
 		},
 	},
@@ -83733,7 +83270,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1"],
 			takedown: ["9M"],
 			tarshot: ["9L0", "9L0"],
-
 			willowisp: ["9M", "9M"],
 		},
 	},
@@ -83749,7 +83285,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			recycle: ["9E", "9E"],
 			rollout: ["9E", "9E"],
 			suckerpunch: ["9E", "9E"],
-
 			withdraw: ["9L1", "9L1"],
 		},
 	},
@@ -83801,7 +83336,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			substitute: ["9M", "9M"],
 			sunnyday: ["9M", "9M"],
 			takedown: ["9M"],
-
 			trailblaze: ["9M"],
 			twister: ["9L1", "9L1"],
 			uturn: ["9M", "9M"],
@@ -83868,7 +83402,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			superpower: ["9M"],
 			sweetscent: ["9L1", "9L1"],
 			takedown: ["9M"],
-
 			trailblaze: ["9M"],
 			withdraw: ["9L1", "9L1"],
 			zenheadbutt: ["9M"],
@@ -83918,7 +83451,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			stoneedge: ["9M"],
 			substitute: ["9M", "9M"],
 			takedown: ["9M"],
-
 			wrap: ["9L1", "9L1"],
 		},
 	},
@@ -83973,7 +83505,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			stoneedge: ["9M", "9M"],
 			substitute: ["9M", "9M"],
 			takedown: ["9M"],
-
 			thunderfang: ["9M"],
 			wrap: ["9L1", "9L1"],
 			zenheadbutt: ["9M", "9M"],
@@ -84033,7 +83564,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swallow: ["9L1", "9L1"],
 			tailwind: ["9M"],
 			takedown: ["9M"],
-
 			thief: ["9M", "9M"],
 			thrash: ["9L49", "9L49"],
 			throatchop: ["9M"],
@@ -84087,7 +83617,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			surf: ["9M"],
 			swift: ["9M", "9M"],
 			takedown: ["9M"],
-
 			thrash: ["9E", "9E"],
 			throatchop: ["9M"],
 			waterfall: ["9M", "9M"],
@@ -84140,7 +83669,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			surf: ["9M", "9M"],
 			swift: ["9M", "9M"],
 			takedown: ["9M"],
-
 			throatchop: ["9L1", "9M", "9L1"],
 			waterfall: ["9M", "9M"],
 			waterpulse: ["9M"],
@@ -84239,7 +83767,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			takedown: ["9M"],
 			taunt: ["9M", "9L16", "9M", "9L16"],
 			tearfullook: ["9L1", "9L1"],
-
 			thief: ["9M"],
 			throatchop: ["9M"],
 			thunder: ["9M", "9M"],
@@ -84323,7 +83850,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			takedown: ["9M"],
 			taunt: ["9M", "9L16", "9M", "9L16"],
 			tearfullook: ["9L1", "9L1"],
-
 			thief: ["9M"],
 			throatchop: ["9M"],
 			thunder: ["9M", "9M"],
@@ -84581,7 +84107,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			substitute: ["9M", "9M"],
 			suckerpunch: ["9L24", "9L24"],
 			sweetscent: ["9L30"],
-
 			trick: ["9M", "9M"],
 			trickroom: ["9M"],
 			willowisp: ["9M", "9M"],
@@ -84630,7 +84155,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			substitute: ["9M"],
 			suckerpunch: ["9L24"],
 			sweetscent: ["9L30"],
-
 			trick: ["9M"],
 			trickroom: ["9M"],
 			willowisp: ["9M"],
@@ -84689,7 +84213,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			suckerpunch: ["9L24", "9L24"],
 			sweetscent: ["9L30"],
 			teatime: ["9L0", "9L0"],
-
 			trick: ["9M", "9M"],
 			trickroom: ["9M"],
 			willowisp: ["9M", "9M"],
@@ -84746,7 +84269,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			storedpower: ["9M", "9M"],
 			substitute: ["9M", "9M"],
 			swift: ["9M"],
-
 			thunderwave: ["9M", "9M"],
 			trick: ["9M"],
 			trickroom: ["9M"],
@@ -84798,7 +84320,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			storedpower: ["9M", "9M"],
 			substitute: ["9M", "9M"],
 			swift: ["9M"],
-
 			thunderwave: ["9M", "9M"],
 			trick: ["9M"],
 			trickroom: ["9M"],
@@ -84865,7 +84386,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			substitute: ["9M", "9M"],
 			swift: ["9M"],
 			swordsdance: ["9M", "9M"],
-
 			thunderwave: ["9M", "9M"],
 			trick: ["9M"],
 			trickroom: ["9M", "9M"],
@@ -84917,7 +84437,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9L20", "9L20"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M"],
-
 			thief: ["9M", "9M"],
 			thunderwave: ["9M", "9M"],
 			torment: ["9L28", "9L28"],
@@ -84973,7 +84492,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9L20", "9L20"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M"],
-
 			thief: ["9M", "9M"],
 			throatchop: ["9M"],
 			thunderwave: ["9M", "9M"],
@@ -85052,7 +84570,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9L20", "9L20"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M"],
-
 			thief: ["9M", "9M"],
 			throatchop: ["9M"],
 			thunderpunch: ["9M", "9M"],
@@ -85203,7 +84720,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M"],
 			tackle: ["9L1", "9L1"],
 			takedown: ["9M"],
-
 			throatchop: ["9M"],
 			trailblaze: ["9M"],
 			uproar: ["9M"],
@@ -85259,7 +84775,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			surf: ["9M", "9M"],
 			swift: ["9M"],
 			takedown: ["9M"],
-
 			throatchop: ["9M"],
 			thunder: ["9M", "9M"],
 			thunderbolt: ["9M", "9M"],
@@ -85351,7 +84866,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M"],
 			tailwind: ["9M", "9L44", "9L44"],
 			takedown: ["9M"],
-
 			tripleaxel: ["9T"],
 			uturn: ["9M", "9M"],
 			weatherball: ["9M", "9M"],
@@ -85410,7 +84924,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M"],
 			superpower: ["9M"],
 			takedown: ["9M"],
-
 			wideguard: ["9L48", "9L48"],
 			wonderroom: ["9M"],
 		},
@@ -85466,7 +84979,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			surf: ["9M", "9L54", "9M", "9L54"],
 			tackle: ["9L1", "9L1"],
 			takedown: ["9M"],
-
 			waterfall: ["9M", "9M"],
 			waterpulse: ["9M"],
 			weatherball: ["9M", "9L12", "9M", "9L12"],
@@ -85526,7 +85038,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			substitute: ["9M", "9M"],
 			swift: ["9M", "9M"],
 			takedown: ["9M"],
-
 			terrainpulse: ["9T"],
 			triattack: ["9M"],
 			trick: ["9M", "9M"],
@@ -85590,7 +85101,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			substitute: ["9M", "9M"],
 			swift: ["9M", "9M"],
 			takedown: ["9M"],
-
 			terrainpulse: ["9M"],
 			trick: ["9M", "9M"],
 			trickroom: ["9S0"],
@@ -85661,7 +85171,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1", "9L1"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M"],
-
 			thief: ["9M", "9M"],
 			thrash: ["9L60", "9L60"],
 			thunder: ["9M", "9M"],
@@ -85732,7 +85241,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9E", "9E"],
 			tackle: ["9L1", "9L1"],
 			takedown: ["9M"],
-
 			whirlwind: ["9E", "9E"],
 			workup: ["9M"],
 			zenheadbutt: ["9M", "9M"],
@@ -85797,7 +85305,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M"],
-
 			workup: ["9M"],
 			zenheadbutt: ["9M", "9M"],
 		},
@@ -86132,7 +85639,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			substitute: ["9M", "9M"],
 			suckerpunch: ["9E", "9E"],
 			swift: ["9M", "9M"],
-
 			thunderwave: ["9M", "9M"],
 		},
 	},
@@ -86190,7 +85696,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			surf: ["9M", "9M"],
 			swift: ["9M", "9M"],
 			takedown: ["9M", "9L54", "9L54"],
-
 			thief: ["9M", "9M"],
 			thunder: ["9M", "9M"],
 			thunderbolt: ["9M", "9M"],
@@ -86262,7 +85767,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			surf: ["9M", "9M"],
 			swift: ["9M", "9M"],
 			takedown: ["9M", "9L54", "9L54"],
-
 			thief: ["9M", "9M"],
 			thunder: ["9M", "9M"],
 			thunderbolt: ["9M", "9M"],
@@ -86336,7 +85840,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9L22", "9M", "9L22", "8S0", "8S1"],
 			tailslap: ["9M"],
 			takedown: ["9M"],
-
 			thunderfang: ["9M", "9M"],
 			trailblaze: ["9M"],
 			wildcharge: ["9M", "9M"],
@@ -86422,7 +85925,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M"],
 			tailslap: ["9M"],
 			takedown: ["9M"],
-
 			thunderfang: ["9M", "9M"],
 			trailblaze: ["9M"],
 			wideguard: ["9L1", "9L1", "9S1"],
@@ -86492,7 +85994,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			substitute: ["9M", "9M"],
 			sunnyday: ["9M"],
 			takedown: ["9M"],
-
 			toxic: ["9L8", "9L8"],
 			toxicspikes: ["9M", "9M"],
 			venomdrench: ["9M"],
@@ -86550,7 +86051,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			superpower: ["9M"],
 			swordsdance: ["9M"],
 			takedown: ["9M"],
-
 			thunderpunch: ["9M", "9M"],
 			uturn: ["9M", "9M"],
 			workup: ["9M"],
@@ -86629,7 +86129,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M"],
-
 			throatchop: ["9M"],
 			thunderpunch: ["9M", "9M"],
 			trailblaze: ["9M"],
@@ -86705,7 +86204,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M"],
-
 			thunderpunch: ["9M", "9M"],
 			trailblaze: ["9M"],
 			uturn: ["9M", "9M"],
@@ -86790,7 +86288,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			synthesis: ["9L66", "9L66"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M"],
-
 			thief: ["9M", "9M"],
 			thrash: ["9L78", "9L78"],
 			throatchop: ["9M"],
@@ -86878,7 +86375,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			synthesis: ["9L66", "9L66"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M"],
-
 			thief: ["9M", "9M"],
 			thrash: ["9L78", "9L78"],
 			throatchop: ["9M"],
@@ -86930,7 +86426,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			substitute: ["9M", "9M"],
 			swift: ["9M", "9M"],
 			takedown: ["9M"],
-
 			thrash: ["9L54", "9L54", "9S0"],
 			thunder: ["9M", "9M"],
 			thunderbolt: ["9M", "9L42", "9M", "9L42"],
@@ -86987,7 +86482,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			substitute: ["9M", "9M"],
 			swift: ["9M"],
 			takedown: ["9M"],
-
 			thrash: ["9L54", "9L54"],
 			thunderfang: ["9M", "9M"],
 			twister: ["9L1", "9L1"],
@@ -87048,7 +86542,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1", "9L1"],
 			takedown: ["9M", "9L42", "9L42"],
 			taunt: ["9M", "9L60", "9M", "9L60", "9S0"],
-
 			thrash: ["9L54", "9L54"],
 			throatchop: ["9M"],
 			torment: ["9L24", "9L24"],
@@ -87108,7 +86601,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1", "9L1"],
 			takedown: ["9M", "9L42", "9L42"],
 			taunt: ["9M", "9M"],
-
 			thrash: ["9L54", "9L54", "9S0"],
 			uproar: ["9M"],
 			willowisp: ["9M", "9M"],
@@ -87183,7 +86675,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M", "9M"],
 			swift: ["9M", "9M"],
 			takedown: ["9M"],
-
 			triattack: ["9M"],
 			trick: ["9M", "9M"],
 			trickroom: ["9M", "9M"],
@@ -87293,7 +86784,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1", "9L1"],
 			takedown: ["9M", "9L1", "9L1"],
 			taunt: ["9M", "9L1", "9M", "9L1"],
-
 			thrash: ["9L1", "9L1"],
 			throatchop: ["9M"],
 			torment: ["9L1", "9L1"],
@@ -87399,7 +86889,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1", "9L1"],
 			takedown: ["9M", "9L1", "9L1"],
 			taunt: ["9M", "9M"],
-
 			thrash: ["9L1", "9L1"],
 			triattack: ["9M"],
 			trick: ["9M", "9M"],
@@ -87463,7 +86952,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwind: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			torment: ["9L5"],
 			twister: ["9L15"],
 			uproar: ["9M", "9L50"],
@@ -87523,7 +87011,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwind: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			torment: ["9L5"],
 			twister: ["9L15"],
 			uproar: ["9M", "9L50"],
@@ -87579,7 +87066,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			trailblaze: ["9M"],
 			uturn: ["9M", "9L21"],
 			worryseed: ["9L25"],
@@ -87630,7 +87116,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			thunderpunch: ["9M"],
 			trailblaze: ["9M"],
 			uturn: ["9M", "9L24"],
@@ -87701,7 +87186,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			thief: ["9M"],
 			throatchop: ["9M"],
 			thunderpunch: ["9M"],
@@ -87757,7 +87241,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1"],
 			takedown: ["9M"],
 			temperflare: ["9M"],
-
 			thunderfang: ["9M"],
 			willowisp: ["9M"],
 			yawn: ["9L17"],
@@ -87806,7 +87289,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1"],
 			takedown: ["9M"],
 			temperflare: ["9M"],
-
 			thunderfang: ["9M"],
 			willowisp: ["9M", "9L42"],
 			yawn: ["9L15"],
@@ -87872,7 +87354,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1"],
 			takedown: ["9M"],
 			temperflare: ["9M"],
-
 			thunderfang: ["9M"],
 			torchsong: ["9L0"],
 			willowisp: ["9M", "9L47"],
@@ -87918,7 +87399,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			surf: ["9M"],
 			swift: ["9M"],
 			takedown: ["9M"],
-
 			watergun: ["9L1"],
 			waterpledge: ["9M"],
 			whirlpool: ["9M"],
@@ -87963,7 +87443,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			surf: ["9M"],
 			swift: ["9M"],
 			takedown: ["9M"],
-
 			tripleaxel: ["9M"],
 			watergun: ["9L1"],
 			waterpledge: ["9M"],
@@ -88030,7 +87509,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			tripleaxel: ["9M"],
 			upperhand: ["9M"],
 			uturn: ["9M"],
@@ -88080,7 +87558,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1"],
 			tailwhip: ["9L1"],
 			takedown: ["9M", "9L27"],
-
 			thief: ["9M"],
 			trailblaze: ["9M"],
 			trufflesearch: ["9M"],
@@ -88133,7 +87610,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1"],
 			tailwhip: ["9L1"],
 			takedown: ["9M", "9L26"],
-
 			thief: ["9M"],
 			trailblaze: ["9M"],
 			uproar: ["9M", "9L38"],
@@ -88185,7 +87661,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1"],
 			tailwhip: ["9L1"],
 			takedown: ["9M", "9L28"],
-
 			thief: ["9M"],
 			trailblaze: ["9M"],
 			uproar: ["9M", "9L34"],
@@ -88235,7 +87710,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M"],
 			tackle: ["9L1"],
 			takedown: ["9M"],
-
 			thief: ["9M"],
 			throatchop: ["9M", "9L40"],
 			toxicspikes: ["9M"],
@@ -88293,7 +87767,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			thief: ["9M"],
 			throatchop: ["9M", "9L45"],
 			toxicspikes: ["9M"],
@@ -88332,7 +87805,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M"],
 			tackle: ["9L1"],
 			takedown: ["9M"],
-
 			thief: ["9M"],
 			trailblaze: ["9M"],
 			uturn: ["9M"],
@@ -88387,7 +87859,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			thief: ["9M"],
 			throatchop: ["9M", "9L36"],
 			trailblaze: ["9M"],
@@ -88427,7 +87898,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			substitute: ["9M"],
 			tackle: ["9L1"],
 			takedown: ["9M", "9L24"],
-
 			thief: ["9M"],
 			weatherball: ["9M", "9E"],
 			xscissor: ["9M"],
@@ -88555,7 +88025,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1"],
 			tailwhip: ["9L6"],
 			takedown: ["9M"],
-
 			thief: ["9M"],
 			thunderfang: ["9M"],
 			trick: ["9M"],
@@ -88610,7 +88079,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1"],
 			tailwhip: ["9L6"],
 			takedown: ["9M"],
-
 			thief: ["9M"],
 			thunderfang: ["9M"],
 			trick: ["9M"],
@@ -88659,7 +88127,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M"],
 			swift: ["9M"],
 			takedown: ["9M"],
-
 			thief: ["9M"],
 			trick: ["9M"],
 			trickroom: ["9M"],
@@ -88726,7 +88193,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M"],
 			swift: ["9M"],
 			takedown: ["9M"],
-
 			thief: ["9M"],
 			trick: ["9M"],
 			trickroom: ["9M"],
@@ -88801,7 +88267,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M"],
 			tackle: ["9L1"],
 			takedown: ["9M"],
-
 			thief: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
@@ -88850,7 +88315,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			surf: ["9M"],
 			swift: ["9M"],
 			takedown: ["9M"],
-
 			throatchop: ["9M", "9L36"],
 			watergun: ["9L1"],
 			waterpulse: ["9M", "9L20"],
@@ -88895,7 +88359,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			surf: ["9M"],
 			swift: ["9M"],
 			takedown: ["9M"],
-
 			throatchop: ["9M", "9L48"],
 			tripledive: ["9L30"],
 			watergun: ["9L1"],
@@ -88944,7 +88407,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			surf: ["9M"],
 			tackle: ["9L1"],
 			takedown: ["9M"],
-
 			thrash: ["9E"],
 			tickle: ["9L5"],
 			waterfall: ["9M"],
@@ -89001,7 +88463,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			surf: ["9M"],
 			tackle: ["9L1"],
 			takedown: ["9M"],
-
 			thrash: ["9E"],
 			waterfall: ["9M"],
 			waterpulse: ["9M", "9L11"],
@@ -89049,7 +88510,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			surf: ["9M"],
 			swift: ["9M"],
 			takedown: ["9M"],
-
 			tickle: ["9E"],
 			waterfall: ["9M"],
 			watergun: ["9L1"],
@@ -89112,7 +88572,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			throatchop: ["9M"],
 			waterfall: ["9M"],
 			watergun: ["9L1"],
@@ -89156,7 +88615,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M"],
 			synthesis: ["9E"],
 			tackle: ["9L1"],
-
 			terrainpulse: ["9L38"],
 			trailblaze: ["9M"],
 			weatherball: ["9M", "9E"],
@@ -89194,7 +88652,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sweetscent: ["9L1"],
 			swift: ["9M"],
 			tackle: ["9L1"],
-
 			terrainpulse: ["9L42"],
 			trailblaze: ["9M"],
 			weatherball: ["9M"],
@@ -89248,7 +88705,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sweetscent: ["9L1"],
 			swift: ["9M"],
 			tackle: ["9L1"],
-
 			terrainpulse: ["9L46"],
 			trailblaze: ["9M"],
 			weatherball: ["9M"],
@@ -89291,7 +88747,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M", "9L17"],
 			superfang: ["9M"],
 			takedown: ["9M"],
-
 			thief: ["9M"],
 			trailblaze: ["9M"],
 			worryseed: ["9E"],
@@ -89342,7 +88797,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			superfang: ["9M"],
 			takedown: ["9M"],
 			temperflare: ["9M"],
-
 			thief: ["9M"],
 			trailblaze: ["9M"],
 			willowisp: ["9M"],
@@ -89382,7 +88836,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			suckerpunch: ["9L45"],
 			swift: ["9M"],
 			tackle: ["9L1"],
-
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thundershock: ["9L7"],
@@ -89429,7 +88882,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			supercellslam: ["9M"],
 			swift: ["9M"],
 			tackle: ["9L1"],
-
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thundershock: ["9L7"],
@@ -89486,7 +88938,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9L32"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L7"],
-
 			thief: ["9M"],
 			torment: ["9E"],
 			toxic: ["9M", "9E"],
@@ -89545,7 +88996,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			takedown: ["9M"],
 			taunt: ["9M", "9L7"],
 			temperflare: ["9M"],
-
 			thief: ["9M"],
 			toxic: ["9M"],
 			toxicspikes: ["9M"],
@@ -89604,7 +89054,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			substitute: ["9M"],
 			tackle: ["9L1"],
 			takedown: ["9M", "9L26"],
-
 			wrap: ["9L1", "9S0"],
 		},
 		eventData: [
@@ -89657,7 +89106,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			switcheroo: ["9E"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			thief: ["9M"],
 			thunderwave: ["9M"],
 			tickle: ["9E"],
@@ -89711,7 +89159,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			thief: ["9M"],
 			thunderwave: ["9M"],
 			tidyup: ["9L1"],
@@ -89768,7 +89215,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			superpower: ["9E"],
 			tackle: ["9L1"],
 			takedown: ["9M", "9L19"],
-
 			waterpulse: ["9M"],
 			yawn: ["9E"],
 		},
@@ -89820,7 +89266,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			substitute: ["9M"],
 			tackle: ["9L1"],
 			takedown: ["9M", "9L19"],
-
 			waterpulse: ["9M"],
 		},
 		eventData: [
@@ -89961,7 +89406,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M"],
 			tackle: ["9L1"],
 			takedown: ["9M", "9L42"],
-
 			thunderfang: ["9M"],
 			zenheadbutt: ["9M"],
 		},
@@ -90001,7 +89445,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			surf: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L28", "9S0"],
-
 			watergun: ["9L1"],
 			waterpulse: ["9M", "9L17"],
 			whirlpool: ["9M"],
@@ -90061,7 +89504,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			takedown: ["9M"],
 			taunt: ["9M", "9L11"],
 			temperflare: ["9M"],
-
 			thief: ["9M"],
 			thunderbolt: ["9M"],
 			thunderfang: ["9M"],
@@ -90114,7 +89556,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sweetkiss: ["9E"],
 			swift: ["9M"],
 			takedown: ["9M"],
-
 			thief: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
@@ -90174,7 +89615,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			superfang: ["9M"],
 			swift: ["9M"],
 			takedown: ["9M"],
-
 			thief: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
@@ -90249,7 +89689,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			superfang: ["9M"],
 			swift: ["9M"],
 			takedown: ["9M"],
-
 			thief: ["9M"],
 			throatchop: ["9M"],
 			thunder: ["9M"],
@@ -90303,7 +89742,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M"],
 			tailwind: ["9M"],
 			takedown: ["9M"],
-
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thundershock: ["9L4"],
@@ -90355,7 +89793,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M"],
 			tailwind: ["9M"],
 			takedown: ["9M"],
-
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thundershock: ["9L4"],
@@ -90425,7 +89862,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwind: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			thief: ["9M", "9L7"],
 			torment: ["9L24", "9S0"],
 			uturn: ["9M"],
@@ -90481,7 +89917,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwind: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L20"],
-
 			thief: ["9M"],
 			torment: ["9L10"],
 			uproar: ["9M", "9L24"],
@@ -90537,7 +89972,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwind: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			thief: ["9M"],
 			throatchop: ["9M", "9L48"],
 			upperhand: ["9M"],
@@ -90599,7 +90033,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9L33"],
 			takedown: ["9M"],
 			temperflare: ["9M"],
-
 			thief: ["9M"],
 			throatchop: ["9M"],
 			trailblaze: ["9M"],
@@ -90650,7 +90083,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M"],
 			tackle: ["9L1"],
 			takedown: ["9M"],
-
 			zenheadbutt: ["9M"],
 		},
 	},
@@ -90697,7 +90129,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M"],
 			tackle: ["9L1"],
 			takedown: ["9M"],
-
 			zenheadbutt: ["9M"],
 		},
 	},
@@ -90757,7 +90188,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M"],
 			tackle: ["9L1"],
 			takedown: ["9M"],
-
 			thunderpunch: ["9M"],
 			wideguard: ["9L1", "9S0"],
 			zenheadbutt: ["9M"],
@@ -90806,7 +90236,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			stoneedge: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
-
 			toxic: ["9M", "9E"],
 			toxicspikes: ["9M"],
 			venoshock: ["9M", "9L22"],
@@ -90858,7 +90287,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			stoneedge: ["9M"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],
-
 			toxic: ["9M"],
 			toxicspikes: ["9M", "9L1"],
 			venoshock: ["9M", "9L22"],
@@ -90914,7 +90342,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L33"],
-
 			thief: ["9M"],
 			throatchop: ["9M"],
 			toxic: ["9M", "9E"],
@@ -90974,7 +90401,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L37"],
-
 			thief: ["9M"],
 			throatchop: ["9M"],
 			toxic: ["9M"],
@@ -91029,7 +90455,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1"],
 			tailwhip: ["9L6", "9S0"],
 			takedown: ["9M"],
-
 			thunderfang: ["9M"],
 			trailblaze: ["9M"],
 			wish: ["9E"],
@@ -91087,7 +90512,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1"],
 			tailwhip: ["9L6"],
 			takedown: ["9M"],
-
 			thunderfang: ["9M"],
 			trailblaze: ["9M"],
 			workup: ["9L22"],
@@ -91136,7 +90560,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			thief: ["9M"],
 			thunderfang: ["9M"],
 			trailblaze: ["9M"],
@@ -91190,7 +90613,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			thief: ["9M"],
 			thunderfang: ["9M"],
 			trailblaze: ["9M"],
@@ -91242,7 +90664,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			spite: ["9M"],
 			strengthsap: ["9E"],
 			substitute: ["9M"],
-
 			thief: ["9M"],
 			trailblaze: ["9M"],
 		},
@@ -91289,7 +90710,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			spikes: ["9M"],
 			spite: ["9M"],
 			substitute: ["9M"],
-
 			thief: ["9M"],
 			trailblaze: ["9M"],
 		},
@@ -91313,7 +90733,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			substitute: ["9M"],
 			tackle: ["9L1", "9S0"],
 			takedown: ["9M", "9S1"],
-
 			thief: ["9M"],
 		},
 		eventData: [
@@ -91363,7 +90782,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			substitute: ["9M", "9L21"],
 			tackle: ["9L1"],
 			takedown: ["9M"],
-
 			thief: ["9M"],
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
@@ -91429,7 +90847,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			takedown: ["9M"],
 			taunt: ["9M", "9L14"],
 			temperflare: ["9M"],
-
 			throatchop: ["9M"],
 			thunderfang: ["9M"],
 			zenheadbutt: ["9M"],
@@ -91488,7 +90905,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M", "9L1"],
 			synthesis: ["9L21"],
 			taunt: ["9M"],
-
 			thief: ["9M"],
 			thrash: ["9L42", "9S0"],
 			trailblaze: ["9M"],
@@ -91548,7 +90964,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			supersonic: ["9L1"],
 			swift: ["9M"],
 			takedown: ["9M"],
-
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thundershock: ["9L1"],
@@ -91635,7 +91050,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			substitute: ["9M"],
 			sunnyday: ["9M", "9L1"],
 			takedown: ["9M"],
-
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thunderfang: ["9M"],
@@ -91699,7 +91113,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M", "9L1"],
 			swift: ["9M"],
 			taunt: ["9M"],
-
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thunderwave: ["9M"],
@@ -91763,7 +91176,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			superpower: ["9L49", "9S0"],
 			takedown: ["9M"],
 			temperflare: ["9M"],
-
 			thrash: ["9L91"],
 			trailblaze: ["9M"],
 			uturn: ["9M"],
@@ -91847,7 +91259,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwind: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			throatchop: ["9M", "9L77"],
 			thunderfang: ["9M"],
 			uturn: ["9M"],
@@ -91909,7 +91320,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			substitute: ["9M"],
 			supercellslam: ["9M"],
 			takedown: ["9M"],
-
 			thunder: ["9M"],
 			thunderfang: ["9M"],
 			voltswitch: ["9M"],
@@ -91970,7 +91380,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M"],
 			swift: ["9M"],
 			takedown: ["9M", "9L21"],
-
 			toxic: ["9M"],
 			toxicspikes: ["9M"],
 			uturn: ["9M"],
@@ -92035,7 +91444,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M"],
 			tackle: ["9L1"],
 			takedown: ["9M"],
-
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thunderpunch: ["9M", "9L21"],
@@ -92101,7 +91509,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwind: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			throatchop: ["9M"],
 			triattack: ["9L1"],
 			uturn: ["9M"],
@@ -92186,7 +91593,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thunderfang: ["9M", "9L1"],
@@ -92239,7 +91645,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M"],
 			takedown: ["9M", "9L21"],
 			taunt: ["9M"],
-
 			thief: ["9M"],
 			uturn: ["9M"],
 			waterpulse: ["9M"],
@@ -92322,7 +91727,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M"],
 			swordsdance: ["9M"],
 			taunt: ["9M"],
-
 			throatchop: ["9M"],
 			thunderbolt: ["9M"],
 			thunderpunch: ["9M"],
@@ -92383,7 +91787,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L30"],
-
 			thrash: ["9L35"],
 			throatchop: ["9M", "9L55", "9S0"],
 			whirlwind: ["9L25"],
@@ -92440,7 +91843,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9L25"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			throatchop: ["9M", "9L70"],
 		},
 		eventData: [
@@ -92499,7 +91901,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			tickle: ["9L5"],
 			trailblaze: ["9M"],
 			zenheadbutt: ["9M"],
@@ -92555,7 +91956,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			takedown: ["9M"],
 			taunt: ["9M"],
 			temperflare: ["9M"],
-
 			willowisp: ["9M", "9L15"],
 			zenheadbutt: ["9M"],
 		},
@@ -92633,7 +92033,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			takedown: ["9M"],
 			taunt: ["9M"],
 			temperflare: ["9M"],
-
 			thunderfang: ["9M"],
 			uproar: ["9M"],
 			uturn: ["9M"],
@@ -92698,7 +92097,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			thunder: ["9M", "9L84"],
 			thunderbolt: ["9M"],
 			thundershock: ["9L1"],
@@ -92760,7 +92158,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			substitute: ["9M"],
 			sweetkiss: ["9L21"],
 			swordsdance: ["9M"],
-
 			thief: ["9M"],
 			thunderwave: ["9M"],
 		},
@@ -92809,7 +92206,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			substitute: ["9M"],
 			sweetkiss: ["9L21"],
 			swordsdance: ["9M"],
-
 			thief: ["9M"],
 			thunderwave: ["9M"],
 		},
@@ -92863,7 +92259,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			substitute: ["9M"],
 			sweetkiss: ["9L21"],
 			swordsdance: ["9M"],
-
 			thief: ["9M"],
 			thunderwave: ["9M"],
 		},
@@ -92900,7 +92295,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			substitute: ["9M"],
 			sunnyday: ["9M"],
 			takedown: ["9M"],
-
 			willowisp: ["9M", "9L16"],
 		},
 		eventData: [
@@ -92963,7 +92357,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			trick: ["9M"],
 			trickroom: ["9M"],
 			weatherball: ["9M"],
@@ -93028,7 +92421,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9L37"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			throatchop: ["9M"],
 			vacuumwave: ["9M"],
 			willowisp: ["9M", "9L16"],
@@ -93089,7 +92481,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M"],
 			tackle: ["9L15"],
 			taunt: ["9M"],
-
 			tickle: ["9E"],
 			toxic: ["9M", "9E"],
 			toxicspikes: ["9M"],
@@ -93151,7 +92542,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M"],
 			tackle: ["9L15"],
 			taunt: ["9M"],
-
 			toxic: ["9M"],
 			toxicspikes: ["9M"],
 			trailblaze: ["9M"],
@@ -93210,7 +92600,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			surf: ["9M"],
 			swift: ["9M"],
 			takedown: ["9M"],
-
 			twister: ["9L1"],
 			waterfall: ["9M"],
 			waterpulse: ["9M", "9L14"],
@@ -93276,7 +92665,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9L35", "9S0"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			throatchop: ["9M"],
 			trailblaze: ["9M"],
 			wildcharge: ["9M"],
@@ -93330,7 +92718,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sweetscent: ["9L1"],
 			syrupbomb: ["9L28"],
 			takedown: ["9M"],
-
 			withdraw: ["9L1"],
 		},
 	},
@@ -93371,7 +92758,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			spite: ["9M"],
 			stunspore: ["9L1"],
 			substitute: ["9M"],
-
 			trickroom: ["9M"],
 			uproar: ["9M"],
 			withdraw: ["9L1"],
@@ -93411,7 +92797,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			spite: ["9M"],
 			stunspore: ["9L1"],
 			substitute: ["9M"],
-
 			trickroom: ["9M"],
 			uproar: ["9M"],
 			withdraw: ["9L1"],
@@ -93457,7 +92842,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			strengthsap: ["9L42"],
 			stunspore: ["9L1"],
 			substitute: ["9M"],
-
 			trickroom: ["9M"],
 			uproar: ["9M"],
 			withdraw: ["9L1"],
@@ -93503,7 +92887,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			strengthsap: ["9L42"],
 			stunspore: ["9L1"],
 			substitute: ["9M"],
-
 			trickroom: ["9M"],
 			uproar: ["9M"],
 			withdraw: ["9L1"],
@@ -93568,7 +92951,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			superpower: ["9L64"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			thief: ["9M"],
 			throatchop: ["9M"],
 			thunderfang: ["9M"],
@@ -93628,7 +93010,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			substitute: ["9M"],
 			swift: ["9M"],
 			taunt: ["9M"],
-
 			thief: ["9M"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
@@ -93697,7 +93078,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwind: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			thief: ["9M"],
 			toxic: ["9M"],
 			uproar: ["9M"],
@@ -93764,7 +93144,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			synthesis: ["9L42"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			throatchop: ["9M", "9L36"],
 			trailblaze: ["9M"],
 			uturn: ["9M"],
@@ -93828,7 +93207,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			substitute: ["9M"],
 			swordsdance: ["9M"],
 			takedown: ["9M"],
-
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			thunderwave: ["9M"],
@@ -93889,7 +93267,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sweetscent: ["9L1"],
 			syrupbomb: ["9L28"],
 			takedown: ["9M"],
-
 			uproar: ["9M"],
 			withdraw: ["9L1"],
 			yawn: ["9L1"],
@@ -93956,7 +93333,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M", "9L1"],
 			takedown: ["9M"],
 			temperflare: ["9M"],
-
 			thunderfang: ["9M"],
 			weatherball: ["9M"],
 		},
@@ -94008,7 +93384,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			supercellslam: ["9M"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			thunder: ["9M", "9L91"],
 			thunderbolt: ["9M"],
 			thunderclap: ["9L49"],
@@ -94068,7 +93443,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9L63"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			throatchop: ["9M"],
 			wildcharge: ["9M"],
 			xscissor: ["9M"],
@@ -94123,7 +93497,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M"],
 			tachyoncutter: ["9L56"],
 			takedown: ["9M"],
-
 			voltswitch: ["9M", "9L70"],
 			xscissor: ["9M"],
 			zenheadbutt: ["9M"],
@@ -94227,7 +93600,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			smog: ["9L1"],
 			spite: ["9M"],
 			substitute: ["9M"],
-
 			toxic: ["9M", "9L56"],
 			venoshock: ["9M"],
 			withdraw: ["9L8"],
@@ -94470,7 +93842,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1"],
 			tailwhip: ["9L1"],
 			takedown: ["9M"],
-
 			toxic: ["9M"],
 			uturn: ["9M"],
 			weatherball: ["9M"],
@@ -94768,7 +94139,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			stoneedge: ["9M"],
 			swagger: ["9M"],
 			sandstorm: ["9M"],
-
 			wish: ["9M"],
 			weatherball: ["9M"],
 			yawn: ["9M"],
@@ -94812,7 +94182,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			splash: ["9M"],
 			substitute: ["9M"],
 			tackle: ["9L1", "9L1", "6L1", "5L1"],
-
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			waterfall: ["9M"],
@@ -95842,7 +95211,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "9M", "5M", "4M", "9T"],
 			doublekick: ["9E", "9E", "9E", "9E"],
 			takedown: ["9M"],
-
 			toxic: ["9M", "9M", "5M", "4M", "3M"],
 			trailblaze: ["9M"],
 			tripleaxel: ["9M", "9M", "6T", "5D", "4M", "3M", "3S0"],
@@ -96941,7 +96309,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			synthesis: ["9T", "6T", "5T", "9T"],
 			tackle: ["9L1", "9L1", "6L1", "5L1", "4L1", "3L1"],
 			takedown: ["9M"],
-
 			thunderpunch: ["9M", "9M", "6T", "5T", "9T", "9T"],
 			vacuumwave: ["9T"],
 			upperhand: ["9M"],
@@ -96996,7 +96363,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			refresh: ["9T", "6T", "5T", "9T"],
 			uproar: ["9L1", "9L1", "6L1", "5L1", "4L1", "3L1"],
 			bugbuzz: ["9M"],
-
 			signalbeam: ["9M", "9M", "6T", "5T", "9T", "9T"],
 			stringshot: ["9T"],
 			wingattack: ["9M"],
@@ -97051,7 +96417,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			muddywater: ["9T", "6T", "5T", "9T"],
 			headbutt: ["9L1", "9L1", "6L1", "5L1", "4L1", "3L1"],
 			takedown: ["9M"],
-
 			icepunch: ["9M", "9M", "6T", "5T", "9T", "9T"],
 			perishsong: ["9T"],
 			thunderwave: ["9M"],
@@ -98744,7 +98109,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M", "9M", "4M"],
 			tailglow: ["9E", "4E"],
 			taunt: ["9M", "9M", "9M", "4M"],
-
 			toxic: ["9M", "4M"],
 			trailblaze: ["9M"],
 			uturn: ["9M", "9M", "9M", "4M"],
@@ -98834,7 +98198,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M"],
 			swordsdance: ["9M", "9M", "9M", "4M"],
 			taunt: ["9M", "9M", "9M", "4M"],
-
 			toxic: ["9M", "4M"],
 			trailblaze: ["9M"],
 			tripleaxel: ["9T"],
@@ -98940,7 +98303,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "4M"],
 			telekinesis: ["9M"],
-
 			thunderpunch: ["9M"],
 			torment: ["9M", "4M"],
 			toxic: ["9M", "4M"],
@@ -99030,7 +98392,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M", "9M", "4M"],
 			synthesis: ["9L25", "9L25", "9T", "9L14", "9T", "4L37"],
 			takedown: ["9M"],
-
 			terrainpulse: ["9T"],
 			toxic: ["9M", "4M"],
 			trailblaze: ["9M"],
@@ -99125,7 +98486,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M", "9M", "4M"],
 			synthesis: ["9L27", "9L27", "9L14", "9T", "4L44"],
 			takedown: ["9M"],
-
 			terrainpulse: ["9T"],
 			toxic: ["9M", "4M"],
 			trailblaze: ["9M"],
@@ -99228,7 +98588,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M", "9M", "4M"],
 			synthesis: ["9L27", "9L27", "9L14", "9T", "4L48"],
 			takedown: ["9M"],
-
 			terrainpulse: ["9T"],
 			toxic: ["9M", "4M"],
 			trailblaze: ["9M"],
@@ -99313,7 +98672,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M", "9T"],
 			tailwind: ["9M", "9L4", "9L4", "9L1", "9T", "4L1"],
 			taunt: ["9M", "9M", "9M"],
-
 			thief: ["9M", "9M", "9M"],
 			toxic: ["9L40", "9L40", "9M", "4M"],
 			toxicspikes: ["9M", "9L20", "9M", "9L20", "9L39", "4L39"],
@@ -99417,7 +98775,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M", "9T"],
 			tailwind: ["9M", "9L1", "9L1", "9L1", "9T", "4L1"],
 			taunt: ["9M", "9M", "9M", "4M"],
-
 			thief: ["9M", "9M", "9M", "4M"],
 			torment: ["9M", "4M"],
 			toxic: ["9L44", "9L44", "9M", "4M"],
@@ -99498,7 +98855,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M"],
 			swift: ["9M", "9M", "9T"],
 			tackle: ["9L1", "9L1", "9L1", "4L1"],
-
 			toxic: ["9M", "4M"],
 			trick: ["9M", "9M", "9T", "9T"],
 			vacuumwave: ["9L24", "9L24", "9L60", "9T"],
@@ -99573,7 +98929,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M"],
 			swift: ["9M", "9M", "9T"],
 			tackle: ["9L1", "9L1", "9L1", "4L1"],
-
 			toxic: ["9M", "4M"],
 			trick: ["9M", "9M", "9T", "9T"],
 			vacuumwave: ["9L24", "9L24", "9L60", "9T"],
@@ -99654,7 +99009,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M"],
 			swift: ["9M", "9M", "9T"],
 			tackle: ["9L1", "9L1", "9L1", "4L1"],
-
 			toxic: ["9M", "4M"],
 			trick: ["9M", "9M", "9T", "9T"],
 			vacuumwave: ["9L24", "9L24", "9L60", "9T"],
@@ -99749,7 +99103,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "4M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L32", "9M", "9L32", "9M", "9L24", "4M", "4L36"],
-
 			thief: ["9M", "9L8", "9M", "9L8", "9M", "9L45", "4M", "4L47"],
 			throatchop: ["9M"],
 			thunderpunch: ["9M", "9M", "9T", "9T"],
@@ -99860,7 +99213,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "4M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L32", "9M", "9L32", "9M", "9L24", "4M", "4L36"],
-
 			thief: ["9M", "9L1", "9M", "9L1", "9M", "9L51", "4M", "4L47"],
 			throatchop: ["9M"],
 			thunderpunch: ["9M", "9M", "9T", "9T"],
@@ -99959,7 +99311,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1", "9L1", "9L1", "4L1"],
 			taunt: ["9M", "9M", "9M", "4M"],
 			telekinesis: ["9M"],
-
 			thief: ["9M", "9M", "9M", "4M"],
 			thunderpunch: ["9M", "9M", "9T", "9T"],
 			torment: ["9L24", "9L24", "9M", "4M"],
@@ -100063,7 +99414,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1", "9L1", "9L1", "4L1"],
 			taunt: ["9M", "9M", "9M", "4M"],
 			telekinesis: ["9M"],
-
 			thief: ["9M", "9M", "9M", "4M"],
 			thunderpunch: ["9M", "9M", "9T", "9T"],
 			torment: ["9L24", "9L24", "9M", "4M"],
@@ -100144,7 +99494,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M", "9T"],
 			tackle: ["9L1", "9L1", "9L1", "4L1"],
 			takedown: ["9M"],
-
 			thrash: ["9L48", "9L48", "9L53", "4L50"],
 			thunder: ["9M", "9L52", "9M", "9L52", "9M", "9L65", "4M"],
 			thunderbolt: ["9M", "9M", "9M", "4M"],
@@ -100242,7 +99591,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M", "9T"],
 			tackle: ["9L1", "9L1", "9L1", "4L1"],
 			takedown: ["9M"],
-
 			thrash: ["9L58", "9L58", "9L53", "4L50"],
 			thunder: ["9M", "9L64", "9M", "9L64", "9M", "9L65", "4M"],
 			thunderbolt: ["9M", "9M", "9M", "4M"],
@@ -100345,7 +99693,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M", "9T"],
 			tackle: ["9L1", "9L1", "9L1", "4L1"],
 			takedown: ["9M"],
-
 			thrash: ["9L64", "9L64", "9L53", "4L50"],
 			thunder: ["9M", "9L72", "9M", "9L72", "9M", "9L65", "4M"],
 			thunderbolt: ["9M", "9M", "9M", "4M"],
@@ -100448,7 +99795,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swallow: ["9L40", "9L40", "9L53", "4L48"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "4M"],
-
 			thunderfang: ["9M", "9M", "9E", "4E"],
 			torment: ["9M"],
 			toxic: ["9M", "4M"],
@@ -100544,7 +99890,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swallow: ["9L42", "9L42", "9L53", "4L48"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "4M"],
-
 			thunderfang: ["9M", "9M"],
 			torment: ["9M"],
 			toxic: ["9M", "4M"],
@@ -100566,7 +99911,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			mirrorcoat: ["9E", "9E", "9E", "4E"],
 			sheercold: ["9E", "9E", "9E", "4E"],
 			speedswap: ["9E"],
-
 			thundershock: ["9L5", "9L5", "9L5", "4L5"],
 			watergun: ["9L1", "9L1"],
 		},
@@ -100647,7 +99991,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			surf: ["9M", "9M", "9M", "4M"],
 			swagger: ["9M"],
 			swift: ["9M", "9M", "9T"],
-
 			thunder: ["9M", "9L55", "9M", "9L55", "9M", "9L63", "4M", "4L63"],
 			thunderbolt: ["9M", "9M", "9M", "4M"],
 			thunderpunch: ["9M", "9M", "9T", "9T"],
@@ -100739,7 +100082,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "4M"],
 			tearfullook: ["9L24", "9L24", "9L22"],
-
 			thief: ["9M", "9M", "9M", "4M"],
 			thunderbolt: ["9M", "9M", "9M"],
 			thunderwave: ["9M", "9M", "9M", "4M"],
@@ -100842,7 +100184,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "4M"],
 			taunt: ["9M", "9M", "9M", "4M"],
 			tearfullook: ["9L24", "9L24", "9L22"],
-
 			thief: ["9M", "9M", "9M", "4M"],
 			throatchop: ["9L1", "9M", "9L1"],
 			thunderbolt: ["9M", "9M", "9M"],
@@ -100925,7 +100266,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "5M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L15", "9M", "9L15", "9M", "9L49", "5M", "5L49"],
-
 			thief: ["9M", "9M", "9M", "5M"],
 			throatchop: ["9M"],
 			toxic: ["9M", "5M"],
@@ -101018,7 +100358,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "5M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9L1", "9M", "9L1", "9M", "5M"],
-
 			thief: ["9M", "9M", "9M", "5M"],
 			throatchop: ["9M"],
 			toxic: ["9M", "5M"],
@@ -101088,7 +100427,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M", "9M", "9M", "5M"],
 			swagger: ["9M", "5M"],
 			telekinesis: ["6M", "5M"],
-
 			thief: ["9M", "9M", "9M", "5M"],
 			torment: ["9M", "5M"],
 			toxic: ["9M", "5M"],
@@ -101163,7 +100501,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			superfang: ["9L1", "9L1", "9L1", "6T", "5L1"],
 			swagger: ["9M", "5M"],
 			telekinesis: ["6M", "5M"],
-
 			thief: ["9M", "9M", "9M", "5M"],
 			thunderfang: ["9M", "9L1", "9M", "9L1", "9L1", "5L1"],
 			torment: ["9M", "5M"],
@@ -101244,7 +100581,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M", "9M", "9M", "5M"],
 			swagger: ["9M", "5M"],
 			swift: ["9M", "9M"],
-
 			thief: ["9M", "9M", "9M", "5M"],
 			thunder: ["9M", "9M", "9M", "5M"],
 			thunderbolt: ["9M", "9M", "9M", "5M"],
@@ -101329,7 +100665,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9L1", "5L1"],
 			tailglow: ["9L60"],
 			telekinesis: ["9M"],
-
 			toxic: ["9M", "5M"],
 			trick: ["9M", "9M", "9T", "5T"],
 			waterpulse: ["9M", "9T"],
@@ -101411,7 +100746,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9L1", "5L1"],
 			tailglow: ["9L65"],
 			telekinesis: ["9M"],
-
 			toxic: ["9M", "5M"],
 			trick: ["9M", "9M", "9T", "5T"],
 			waterpulse: ["9M", "9T"],
@@ -101504,7 +100838,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tackle: ["9L1", "9L1", "9L1", "5L1"],
 			tailglow: ["9L67", "5L67"],
 			telekinesis: ["9M"],
-
 			terrainpulse: ["9T"],
 			thunder: ["9M", "9M", "9M", "5M"],
 			thunderbolt: ["9M", "9M", "9M", "5M"],
@@ -101591,7 +100924,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sweetscent: ["9E", "9E", "9E", "5E"],
 			synthesis: ["9E", "9E", "9T", "9E", "6T", "9E", "5T", "5E"],
 			taunt: ["9M", "9M", "9M", "5M"],
-
 			thief: ["9M", "9M", "9M", "5M"],
 			thunderfang: ["9M", "9M", "9E"],
 			toxic: ["9M", "6M", "5M"],
@@ -101677,7 +101009,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "5M"],
 			synthesis: ["9T", "6T", "5T"],
 			taunt: ["9M", "9M", "9M", "5M"],
-
 			thief: ["9M", "9M", "9M", "5M"],
 			throatchop: ["9M"],
 			thunderfang: ["9M", "9M"],
@@ -101760,7 +101091,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9L20", "9M", "9L20", "5L9"],
 			tailwind: ["9M", "9L40", "9L40", "5T", "5L45"],
 			takedown: ["9M"],
-
 			toxic: ["9M"],
 			waterpulse: ["9M", "9T"],
 			watersport: ["9E", "5E"],
@@ -101838,7 +101168,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9L20", "9M", "9L20", "9L9", "5L9"],
 			tailwind: ["9M", "9L44", "9L44", "5T", "5L48"],
 			takedown: ["9M"],
-
 			throatchop: ["9M"],
 			toxic: ["9M", "5M"],
 			waterpulse: ["9M", "9T"],
@@ -101907,7 +101236,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M", "9M", "6M"],
 			surf: ["9M", "9M", "6M"],
 			swagger: ["9M"],
-
 			thief: ["9M", "9M", "6M"],
 			tickle: ["9E", "9E", "9E", "9E"],
 			torment: ["9M"],
@@ -101984,7 +101312,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M", "9M", "9M", "6M"],
 			surf: ["9M", "9M", "9M", "6M"],
 			swagger: ["9M", "6M"],
-
 			thief: ["9M", "9M", "9M", "6M"],
 			torment: ["9M", "6M"],
 			toxic: ["9M", "6M"],
@@ -102054,7 +101381,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			surf: ["9M"],
 			swagger: ["9M"],
 			taunt: ["9M", "9M", "6M"],
-
 			thunder: ["9M", "9L48", "9M", "9L48", "6M", "6L46"],
 			thunderbolt: ["9M", "9M", "6M"],
 			thundershock: ["9L1", "9L1", "6L1"],
@@ -102130,7 +101456,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			surf: ["9M"],
 			swagger: ["9L58", "9L58", "9M", "9L56", "6M", "6L56"],
 			taunt: ["9M", "9M", "9M", "6M"],
-
 			thunder: ["9M", "9L64", "9M", "9L64", "9M", "9L60", "6M", "6L60"],
 			thunderbolt: ["9M", "9M", "9M", "6M"],
 			thundershock: ["9L1", "9L1", "9L1", "6L1"],
@@ -102210,7 +101535,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			surf: ["9M", "9M", "6M"],
 			swagger: ["9M"],
 			taunt: ["9M", "9M", "6M"],
-
 			thunderfang: ["9M", "9M", "9E", "9E"],
 			toxic: ["9M"],
 			waterfall: ["9M", "9M", "6M"],
@@ -102292,7 +101616,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			surf: ["9M", "9M", "6M"],
 			swagger: ["9M"],
 			taunt: ["9M", "9M", "6M"],
-
 			thunderfang: ["9M", "9M"],
 			thunderpunch: ["9M", "9M", "6T"],
 			toxic: ["9M"],
@@ -102378,7 +101701,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			surf: ["9M", "9M", "9M", "6M"],
 			swagger: ["9M", "6M"],
 			taunt: ["9M", "9M", "9M", "6M"],
-
 			thunderfang: ["9M", "9M"],
 			thunderpunch: ["9M", "9M", "6T"],
 			toxic: ["9M", "6M"],
@@ -102466,7 +101788,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			stoneedge: ["9M", "9M", "9M", "6M"],
 			substitute: ["9M", "9M", "9M", "6M"],
 			swagger: ["9M", "6M"],
-
 			torment: ["9L20", "9L20", "9M", "9L48", "6M", "6L48"],
 			toxic: ["9L56", "9L56", "9M", "9L7", "6M", "6L7"],
 			toxicspikes: ["9M", "9L36", "9M", "9L36", "9L19", "6L19"],
@@ -102533,7 +101854,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M", "6M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "6M"],
-
 			torment: ["9L33", "9L33", "6M"],
 			toxic: ["9M"],
 			uproar: ["9M"],
@@ -102623,7 +101943,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M", "9M", "6M"],
-
 			torment: ["9L36", "9L36", "9M", "6M"],
 			toxic: ["9M", "6M"],
 			uproar: ["9M"],
@@ -102715,7 +102034,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			takedown: ["9M"],
 			taunt: ["9M"],
 			telekinesis: ["9T"],
-
 			throatchop: ["9M", "9T"],
 			toxic: ["9M"],
 			toxicspikes: ["9M", "9M", "9L28"],
@@ -102789,7 +102107,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			synthesis: ["9L50", "9L50", "9T"],
 			tackle: ["9L1", "9L1", "9L4"],
 			takedown: ["9M"],
-
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			wish: ["9L30", "9L30", "9L22"],
@@ -102873,7 +102190,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			synthesis: ["9L50", "9L50", "9T"],
 			tackle: ["9L1", "9L1", "9L1"],
 			takedown: ["9M"],
-
 			toxic: ["9M"],
 			trailblaze: ["9M"],
 			wish: ["9L30", "9L30", "9L21"],
@@ -102942,7 +102258,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			synthesis: ["9L33", "9L33", "9T"],
 			tackle: ["9L1", "9L1", "9L1"],
 			takedown: ["9M"],
-
 			thundershock: ["9L6", "9L6", "9L7"],
 			toxic: ["9M"],
 			trailblaze: ["9M"],
@@ -103015,7 +102330,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			synthesis: ["9L45", "9L45", "9T"],
 			tackle: ["9L1", "9L1", "9L1"],
 			takedown: ["9M"],
-
 			throatchop: ["9M"],
 			thunder: ["9M", "9M", "9M"],
 			thunderbolt: ["9M", "9M", "9M"],
@@ -103102,7 +102416,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			synthesis: ["9L51", "9L51", "9T"],
 			tackle: ["9L1", "9L1", "9L1"],
 			takedown: ["9M"],
-
 			terrainpulse: ["9T"],
 			throatchop: ["9M"],
 			thunder: ["9M", "9M", "9M"],
@@ -103189,7 +102502,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M"],
 			tailwhip: ["9L1", "9L1", "9L4"],
 			taunt: ["9M", "9M", "9M"],
-
 			toxic: ["9L36", "9L36", "9M"],
 			trailblaze: ["9M"],
 			venomdrench: ["9M"],
@@ -103265,7 +102577,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M"],
 			tailwhip: ["9L1", "9L1", "9L1"],
 			taunt: ["9M", "9M", "9M"],
-
 			toxic: ["9L55", "9L55", "9M"],
 			trailblaze: ["9M"],
 			venomdrench: ["9M"],
@@ -103358,7 +102669,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M"],
 			tailwhip: ["9L1", "9L1", "9L1"],
 			taunt: ["9M", "9M", "9M"],
-
 			toxic: ["9L63", "9L63", "9M"],
 			trailblaze: ["9M"],
 			venomdrench: ["9M"],
@@ -103441,7 +102751,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M"],
 			swift: ["9M", "9M"],
 			swordsdance: ["9M", "9L30", "9M", "9L30", "9M", "9L48"],
-
 			toxic: ["9L36", "9L36", "9M"],
 			trick: ["9M", "9M", "9T"],
 			uproar: ["9M", "9T"],
@@ -103524,7 +102833,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M"],
 			swift: ["9M", "9M"],
 			swordsdance: ["9M", "9L45", "9M", "9L45", "9M", "9L58"],
-
 			toxic: ["9L55", "9L55", "9M"],
 			trick: ["9M", "9M", "9T"],
 			trickroom: ["9M", "9M", "9M"],
@@ -103618,7 +102926,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swagger: ["9M"],
 			swift: ["9M", "9M"],
 			swordsdance: ["9M", "9L51", "9M", "9L51", "9M", "9L64"],
-
 			toxic: ["9L65", "9L65", "9M"],
 			trick: ["9M", "9M", "9T"],
 			trickroom: ["9M", "9M", "9M"],
@@ -103699,7 +103006,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			steelroller: ["9T"],
 			substitute: ["9M", "9M", "9M"],
 			swagger: ["9M"],
-
 			trickroom: ["9M", "9M", "9M"],
 			wonderroom: ["9M", "9T"],
 			workup: ["9M", "9M"],
@@ -103770,7 +103076,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			steelroller: ["9T"],
 			substitute: ["9M", "9M", "9M"],
 			swagger: ["9M"],
-
 			trickroom: ["9M", "9M", "9M"],
 			wonderroom: ["9M", "9T"],
 			workup: ["9M", "9M"],
@@ -103835,7 +103140,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1", "9L1"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M"],
-
 			thunderwave: ["9M", "9M"],
 			twister: ["9E", "9E"],
 			willowisp: ["9M", "9M"],
@@ -103908,7 +103212,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1", "9L1"],
 			takedown: ["9M"],
 			taunt: ["9M", "9M"],
-
 			thunderwave: ["9M", "9M"],
 			willowisp: ["9M", "9M"],
 			workup: ["9M"],
@@ -103973,7 +103276,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			superpower: ["9M"],
 			swordsdance: ["9M", "9M"],
 			taunt: ["9M", "9M"],
-
 			thunderfang: ["9M", "9M"],
 			uproar: ["9M"],
 			workup: ["9M"],
@@ -104047,7 +103349,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			superpower: ["9M"],
 			swordsdance: ["9M", "9M"],
 			taunt: ["9M", "9M"],
-
 			thunder: ["9M", "9M"],
 			thunderbolt: ["9M", "9M"],
 			thunderfang: ["9M", "9M"],
@@ -104124,7 +103425,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M", "9M"],
 			switcheroo: ["9L1", "9L1"],
 			taunt: ["9M", "9M"],
-
 			thief: ["9M", "9M"],
 			thunder: ["9M", "9M"],
 			thunderbolt: ["9M", "9M"],
@@ -104204,7 +103504,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swift: ["9M", "9M"],
 			tailwind: ["9M"],
 			takedown: ["9M"],
-
 			thunderwave: ["9M", "9M"],
 			toxic: ["9L30", "9L30"],
 			toxicspikes: ["9M", "9M"],
@@ -104257,7 +103556,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M"],
 			tackle: ["9L1", "9L1"],
 			taunt: ["9M", "9L8", "9M", "9L8"],
-
 			thief: ["9M", "9L24", "9M", "9L24"],
 			watergun: ["9L12", "9L12"],
 			waterpulse: ["9M", "9E", "9E"],
@@ -104313,7 +103611,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9M"],
 			tackle: ["9L1", "9L1"],
 			taunt: ["9M", "9L1", "9M", "9L1"],
-
 			thief: ["9M", "9L1", "9M", "9L1"],
 			watergun: ["9L1", "9L1"],
 			waterpulse: ["9M"],
@@ -104357,7 +103654,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M"],
 			sweetkiss: ["9L8"],
 			takedown: ["9M"],
-
 			trailblaze: ["9M"],
 			trick: ["9M"],
 			wildcharge: ["9M"],
@@ -104423,7 +103719,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L4"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			tickle: ["9L16"],
@@ -104496,7 +103791,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			tailwhip: ["9L1"],
 			takedown: ["9M"],
 			taunt: ["9M"],
-
 			thunder: ["9M"],
 			thunderbolt: ["9M"],
 			tickle: ["9L1"],

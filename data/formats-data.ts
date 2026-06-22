@@ -2228,7 +2228,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "RU",
 	},
 	absolmega: {
-		tier: "OU",
+		tier: "UU",
 		natDexTier: "RU",
 	},
 	absolmegaz: {
