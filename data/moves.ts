@@ -3125,7 +3125,7 @@ export const Moves: { [moveid: string]: MoveData; } = {
 		category: "Status",
 		name: "Conversion 3",
 		pp: 30,
-		priority: 1,
+		priority: 0,
 		flags: { bypasssub: 1 },
 		onHit(target, source) {
 			const types = new Set<string>();

@@ -2713,6 +2713,10 @@ export const AbilitiesText: { [k: string]: AbilityText; } = {
 		desc: "This Pokemon's Normal-type moves become Rock-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
 		shortDesc: "This Pokemon's Normal-type moves become Rock type and have 1.2x power.",
 	},
+	curseeater: {
+		name: "Curse Eater",
+		shortDesc: "Cures burn, freeze, paralysis, poisoning at end of turn for other Pokémon. Heals 10% per cure.",
+	},
 };
 
 

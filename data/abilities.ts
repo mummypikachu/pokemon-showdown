@@ -7479,4 +7479,28 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 		},
 		num: 3330333,
 	},
+	curseeater: {
+		name: "Curse Eater",
+		rating: 3,
+		onResidual(pokemon) {
+			let cures = 0;
+
+			for (const side of this.sides) {
+				for (const target of side.active) {
+					if (!target || target === pokemon || target.fainted) continue;
+
+					if (['brn', 'frz', 'par', 'psn', 'tox'].includes(target.status)) {
+						this.add('-activate', pokemon, 'ability: Curse Eater');
+						target.cureStatus();
+						cures++;
+					}
+				}
+			}
+
+			if (cures) {
+				this.heal(pokemon.baseMaxhp * cures / 10, pokemon);
+			}
+		},
+		num: 444424424,
+	},
 };
