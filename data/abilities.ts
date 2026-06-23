@@ -2232,14 +2232,14 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 		rating: 3,
 		num: 159,
 	},
-	hailstorm: {
+	hailwarning: {
 		onStart(source) {
 			this.field.setWeather('hail');
 		},
 		onImmunity(type, pokemon) {
 			if (type === 'hail') return false;
 		},
-		name: "Hailstorm",
+		name: "Hail Warning",
 		rating: 4,
 		num: 117,
 	},
