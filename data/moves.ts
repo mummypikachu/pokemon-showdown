@@ -24306,6 +24306,6 @@ export const Moves: { [moveid: string]: MoveData; } = {
 		},
 		noSketch: true,
 		secondary: null,
-		type: "Bird",
+		type: "Almighty",
 	},
 };
