@@ -20543,7 +20543,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData; } = {
 		num: 1536,
 		name: "Bounspike",
 		types: ["Normal"],
-		baseStats: { hp: 66, atk: 97, def: 66, spa: 92, spd: 66, spe: 115 },
+		baseStats: { hp: 76, atk: 97, def: 66, spa: 72, spd: 66, spe: 125 },
 		abilities: { 0: "Iron Barbs", H: "Run Away" },
 		heightm: 0.3,
 		weightkg: 11.4,
