@@ -24280,4 +24280,32 @@ export const Moves: { [moveid: string]: MoveData; } = {
 		secondary: null,
 		type: "Bird",
 	},
+	shadowblast: {
+		num: 6354751458,
+		accuracy: 100,
+		basePower: 85,
+		category: "Physical",
+		name: "Shadow Blast",
+		pp: 15,
+		priority: 0,
+		target: "normal",
+		flags: { contact: 1, protect: 1, mirror: 1 },
+
+		onEffectiveness(typeMod, target, type, move) {
+			if (!target) return 0;
+
+			if (target.item === 'heartlocker') {
+				return -1;
+			}
+			const firstType = target.types[0];
+
+			if (type === firstType) {
+				return 1;
+			}
+			return 0;
+		},
+		noSketch: true,
+		secondary: null,
+		type: "Bird",
+	},
 };

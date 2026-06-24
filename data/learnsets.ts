@@ -33414,6 +33414,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			wonderroom: ["9M", "7T", "6T", "5T"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M", "7T", "6T", "5T", "9T"],
+			shadowblast: ["9M"],
 		},
 		eventData: [
 			{ generation: 3, level: 70, shiny: 1, moves: ["recover", "hydropump", "raindance", "swift"] },

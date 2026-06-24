@@ -1637,6 +1637,10 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "Uber",
 		natDexTier: "Uber",
 	},
+	lugiashadow: {
+		tier: "Uber",
+		natDexTier: "Uber",
+	},
 	hooh: {
 		tier: "Uber",
 		natDexTier: "Uber",
