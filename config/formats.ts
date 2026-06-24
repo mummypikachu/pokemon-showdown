@@ -265,7 +265,7 @@ export const Formats: FormatList = [
 				'terablast', 'hiddenpower', 'return', 'frustration', 'pursuit'
 			];
 			const fanItems = [
-				'strikervest', 'bronzebrick', 'securitydisc', 'electromagnet', 'eterniaorb',
+				'strikervest', 'bronzebrick', 'securitydisc', 'electromagnet', 'eterniaorb', 'heartlocker',
 			];
 
 			const item = this.dex.items.get(set.item);
