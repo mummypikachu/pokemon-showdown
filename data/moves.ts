@@ -24291,12 +24291,7 @@ export const Moves: { [moveid: string]: MoveData; } = {
 		target: "normal",
 		flags: { protect: 1, mirror: 1 },
 		onTryMove(pokemon, source) {
-			if (source.species.name === 'Lugia') {
-				this.attrLastMove('[still]');
-				this.add('-fail', source, 'move: Shadow Blast', '[forme]');
-				return null;
-			}
-			if (pokemon.species.id !== 'lugiashadow') {
+						if (pokemon.species.id !== 'lugiashadow') {
 				this.add('-fail', pokemon, 'move: Shadow Blast');
 				this.hint('Only Lugia-Shadow can use Shadow Blast.');
 				return false;
