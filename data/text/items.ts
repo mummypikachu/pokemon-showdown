@@ -2752,9 +2752,9 @@ export const ItemsText: { [k: string]: ItemText; } = {
 		name: "Bronze Brick",
 		desc: "If held by a Hoopa, its will always get Critical hits.",
 	},
-	heartlocket: {
-		name: "Heart Locket",
-		desc: "PLACEHOLDER.",
+	heartlocker: {
+		name: "Heart Locker",
+		desc: "Turns Lugia into Lugia-Shadow. Boosts move power by 1.2x. May hit itself.",
 	},
 
 	// Gen 2 items
