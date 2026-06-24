@@ -5161,8 +5161,8 @@ export const Pokedex: { [speciesid: string]: SpeciesData; } = {
 		weightkg: 216,
 		color: "Black",
 		eggGroups: ["Undiscovered"],
+		changesFrom: "Lugia",
 		requiredItem: "Heart Locker",
-		battleOnly: "Lugia",
 		tags: ["Restricted Legendary"],
 	},
 	hooh: {

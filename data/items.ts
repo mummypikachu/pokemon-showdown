@@ -8990,7 +8990,7 @@ export const Items: { [itemid: string]: ItemData; } = {
 		fling: {
 			basePower: 0,
 		},
-		itemUser: ["Lugia"],
 		forcedForme: "Lugia-Shadow",
+		itemUser: ["Lugia-Shadow"],
 	},
 };

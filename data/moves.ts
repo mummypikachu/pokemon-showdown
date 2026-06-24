@@ -24289,7 +24289,7 @@ export const Moves: { [moveid: string]: MoveData; } = {
 		pp: 15,
 		priority: 0,
 		target: "normal",
-		flags: { contact: 1, protect: 1, mirror: 1 },
+		flags: { protect: 1, mirror: 1 },
 
 		onEffectiveness(typeMod, target, type, move) {
 			if (!target) return 0;
