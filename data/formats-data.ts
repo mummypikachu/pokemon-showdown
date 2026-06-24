@@ -5787,7 +5787,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "NFE",
 		newDexTier: "RU",
 	},
-	tanking: {
+	taniking: {
 		tier: "OU",
 		natDexTier: "UU",
 		doublesTier: "DOU",

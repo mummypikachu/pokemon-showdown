@@ -10001,8 +10001,8 @@ export const Moves: { [moveid: string]: MoveData; } = {
 		contestType: "Tough",
 	},
 	hurricanepunch: {
-		num: 223,
-		accuracy: 80,
+		num: 8252825825,
+		accuracy: 70,
 		basePower: 120,
 		category: "Physical",
 		name: "Hurricane Punch",

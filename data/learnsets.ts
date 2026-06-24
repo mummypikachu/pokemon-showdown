@@ -93894,6 +93894,10 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			doubleteam: ["9M"],
 			confide: ["9M"],
 			toxic: ["9M"],//end Univ. TMs
+			uturn: ["9M"],
+			poweruppunch: ["9M"],
+			toxicspikes: ["9M"],
+			dig: ["9M"],
 		},
 	},
 	awanezumi: {
@@ -94216,7 +94220,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			stomp: ["9M"],
 		},
 	},
-	tanking: {
+	taniking: {
 		learnset: {
 			terablast: ["9M"],
 			bodyslam: ["9M"],
@@ -94231,6 +94235,8 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			psychocut: ["9M"],
 			rapidspin: ["9M"],
 			slash: ["9M"],
+			roar: ["9M"],
+			stormthrow: ["9M"],
 			swordsdance: ["9M"],
 		},
 	},
@@ -94828,6 +94834,12 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			doubleteam: ["9M"],
 			confide: ["9M"],
 			toxic: ["9M"],//end Univ. TMs
+			sunnyday: ["9M"],
+			raindance: ["9M"],
+			sandattack: ["9M"],
+			dig: ["9M"],
+			cut: ["9M"],
+			uturn: ["9M"],
 		},
 	},
 	bererun: {
@@ -94859,6 +94871,19 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			doubleteam: ["9M"],
 			confide: ["9M"],
 			toxic: ["9M"],//end Univ. TMs
+			flashcannon: ["9M"],
+			alluringvoice: ["9M"],
+			babydolleyes: ["9M"],
+			morningsun: ["9M"],
+			honeclaws: ["9M"],
+			solarbeam: ["9M"],
+			icefang: ["9M"],
+			thunderfang: ["9M"],
+			thunderbolt: ["9M"],
+			roar: ["9M"],
+			lick: ["9M"],
+			shadowball: ["9M"],
+			shadowclaw: ["9M"],
 		},
 	},
 	totta: {
@@ -96976,6 +97001,20 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			hurricanepunch: ["9M"],
 			hyperbeam: ["9L1", "9L1"],
 			aurasphere: ["9L1", "9L1"],
+			drainpunch: ["9M"],
+			reflect: ["9M"],
+			barrier: ["9M"],
+			finalgambit: ["9M"],
+			ironhead: ["9M"],
+			headbutt: ["9M"],
+			uturn: ["9M"],
+			yawn: ["9M"],
+			nobleroar: ["9M"],
+			closecombat: ["9M"],
+			superpower: ["9M"],
+			outrage: ["9M"],
+			slam: ["9M"],
+			armthrust: ["9M"],
 		},
 	},
 	toggt: {
