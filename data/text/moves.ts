@@ -3375,7 +3375,7 @@ export const MovesText: { [k: string]: MoveText; } = {
 	icespinner: {
 		name: "Ice Spinner",
 		desc: "Ends the effects of Electric Terrain, Grassy Terrain, Misty Terrain, Psychic Terrain, and Trick Room.",
-		shortDesc: "Ends the effects of terrain. & trickroom.",
+		shortDesc: "Ends the effects of terrain and trickroom.",
 	},
 	iciclecrash: {
 		name: "Icicle Crash",
