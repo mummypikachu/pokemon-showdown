@@ -5288,8 +5288,8 @@ export const MovesText: { [k: string]: MoveText; } = {
 	},
 	rapidjab: {
 		name: "Rapid Jab",
-		desc: "The user attacks the opponent with a flurry of quick punches. All hits of the move always results in a critical hit.",
-		shortDesc: "All hits always results in a critical hit.",
+		desc: "The user attacks the opponent 3 times. All hits of the move always results in a critical hit.",
+		shortDesc: "Hits 3 times. Guaranteed crit.",
 	},
 	rapidspin: {
 		name: "Rapid Spin",
