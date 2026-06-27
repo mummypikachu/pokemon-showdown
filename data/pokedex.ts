@@ -3594,7 +3594,6 @@ export const Pokedex: { [speciesid: string]: SpeciesData; } = {
 		requiredItem: "Meganiumite",
 		gen: 9,
 	},
-
 	cyndaquil: {
 		num: 155,
 		name: "Cyndaquil",

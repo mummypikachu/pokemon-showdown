@@ -3872,13 +3872,21 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 				this.add('-activate', pokemon, 'ability: Own Tempo');
 				pokemon.removeVolatile('confusion');
 			}
+			if (pokemon.volatiles['yawn']) {
+				this.add('-activate', pokemon, 'ability: Own Tempo');
+				pokemon.removeVolatile('yawn');
+			}
 		},
 		onTryAddVolatile(status, pokemon) {
 			if (status.id === 'confusion') return null;
+			if (status.id === 'yawn') return null;
 		},
 		onHit(target, source, move) {
 			if (move?.volatileStatus === 'confusion') {
 				this.add('-immune', target, 'confusion', '[from] ability: Own Tempo');
+			}
+			if (move?.volatileStatus === 'yawn') {
+				this.add('-immune', target, 'yawn', '[from] ability: Own Tempo');
 			}
 		},
 		onTryBoost(boost, target, source, effect) {

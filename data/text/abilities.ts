@@ -1359,7 +1359,7 @@ export const AbilitiesText: { [k: string]: AbilityText; } = {
 	owntempo: {
 		name: "Own Tempo",
 		desc: "This Pokemon cannot be confused. Gaining this Ability while confused cures it. This Pokemon is immune to the effect of the Intimidate Ability.",
-		shortDesc: "This Pokemon cannot be confused. Immune to Intimidate.",
+		shortDesc: "This Pokemon cannot be confused. Immune to Intimidate and Yawn.",
 		gen7: {
 			desc: "This Pokemon cannot be confused. Gaining this Ability while confused cures it.",
 			shortDesc: "This Pokemon cannot be confused.",
@@ -2119,7 +2119,7 @@ export const AbilitiesText: { [k: string]: AbilityText; } = {
 	sweetveil: {
 		name: "Sweet Veil",
 		desc: "This Pokemon and its allies cannot fall asleep, but those already asleep do not wake up immediately. This Pokemon and its allies cannot use Rest successfully or become affected by Yawn, and those previously affected will not fall asleep.",
-		shortDesc: "This Pokemon and its allies cannot fall asleep; those already asleep do not wake up.",
+		shortDesc: "This Pokemon and its allies can't fall asleep; those already asleep do not get woken up.",
 
 		block: "  [POKEMON] can't fall asleep due to a veil of sweetness!",
 	},
