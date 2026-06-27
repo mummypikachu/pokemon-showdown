@@ -5491,6 +5491,18 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 		num: 176,
 	},
 	static: {
+		onDamagingHit(damage, target, source, move) {
+			if (this.checkMoveMakesContact(move, source, target)) {
+				if (this.randomChance(3, 10)) {
+					source.trySetStatus('par', target);
+				}
+			}
+		},
+		name: "Static",
+		rating: 2,
+		num: 9,
+	},
+	statictouch: {
 		onModifyMove(move) {
 			if (!move?.flags['contact'] || move.target === 'self') return;
 			if (!move.secondaries) {
@@ -5499,12 +5511,12 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 			move.secondaries.push({
 				chance: 30,
 				status: 'par',
-				ability: this.dex.abilities.get('static'),
+				ability: this.dex.abilities.get('statictouch'),
 			});
 		},
-		name: "Static",
+		name: "Static Touch",
 		rating: 2,
-		num: 9,
+		num: 571512,
 	},
 	steadfast: {
 		onFlinch(pokemon) {

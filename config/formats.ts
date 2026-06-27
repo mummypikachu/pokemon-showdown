@@ -241,7 +241,6 @@ export const Formats: FormatList = [
 			'Dynamax Clause',
 			'Terastal Clause',
 			'Z-Move Clause',
-			'Sleep Clause Mod',
 		],
 
 		onValidateSet(set) {

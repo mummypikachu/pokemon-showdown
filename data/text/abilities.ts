@@ -1992,6 +1992,10 @@ export const AbilitiesText: { [k: string]: AbilityText; } = {
 	},
 	static: {
 		name: "Static",
+		shortDesc: "30% chance a Pokemon making contact with this Pokemon will be paralyzed.",
+	},
+	statictouch: {
+		name: "Static Touch",
 		desc: "This Pokemon's contact moves have a 30% chance of paralyzing. This effect comes after a move's inherent secondary effect chance.",
 		shortDesc: "This Pokemon's contact moves have a 30% chance of paralyzing.",
 	},
