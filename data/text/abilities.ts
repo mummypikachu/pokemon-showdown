@@ -1997,8 +1997,8 @@ export const AbilitiesText: { [k: string]: AbilityText; } = {
 	},
 	statictouch: {
 		name: "Static Touch",
-		desc: "This Pokemon's contact moves have a 30% chance of paralyzing. This effect comes after a move's inherent secondary effect chance.",
-		shortDesc: "This Pokemon's contact moves have a 30% chance of paralyzing.",
+		desc: "This Pokemon's contact moves have a 20% chance of paralyzing. This effect comes after a move's inherent secondary effect chance.",
+		shortDesc: "This Pokemon's contact moves have a 20% chance of paralyzing.",
 	},
 	steadfast: {
 		name: "Steadfast",

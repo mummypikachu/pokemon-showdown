@@ -5519,7 +5519,7 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 				move.secondaries = [];
 			}
 			move.secondaries.push({
-				chance: 30,
+				chance: 20,
 				status: 'par',
 				ability: this.dex.abilities.get('statictouch'),
 			});

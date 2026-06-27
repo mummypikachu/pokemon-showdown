@@ -33,9 +33,9 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		megaNoItem: "  [POKEMON] is reacting to [TRAINER]'s Key Stone!",
 		megaGen6: "  [POKEMON]'s [ITEM] is reacting to [TRAINER]'s Mega Bracelet!",
 		transformMega: "[POKEMON] has Mega Evolved into Mega [SPECIES]! It's Mega-Morphin Time!",
-		primal: "[POKEMON]'s Primal Reversion! It reverted to its primal state! oooh very scary. -Mario 1996.",
-		zPower: "  [POKEMON] surrounded itself with its Z-Power! nah he's just flexing.",
-		zBroken: "  [POKEMON] couldn't fully protect itself and got hurt! :(",
+		primal: "[POKEMON]'s Primal Reversion! It reverted to its primal state! Now, where's Primal Dialga...",
+		zPower: "  [POKEMON] surrounded itself with its Z-Power!",
+		zBroken: "  [POKEMON] couldn't fully protect itself and got hurt! Yikes!",
 		terastallize: "  [POKEMON] has Terastallized into the [TYPE]-type! Is it ban worthy?", // filler
 
 		// in case the different default messages didn't make it obvious, the difference
@@ -114,7 +114,7 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		resistedSpread: "  It's not very effective on [POKEMON].",
 		crit: "  A lucky crit! (did it matter?)",
 		critSpread: "  A critical hit on [POKEMON]!",
-		immune: "  Skill issue. It doesn't affect [POKEMON]...",
+		immune: "  Too bad! It doesn't affect [POKEMON]...",
 		immuneNoPokemon: "  It had no effect!", // old gens
 		immuneOHKO: "  [POKEMON] is unaffected!",
 		miss: "  [POKEMON] avoided the attack! Blame RNG.",
