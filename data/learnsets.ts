@@ -56403,6 +56403,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			thunderwave: ["9M", "9L15", "9M", "6L15", "5M", "5L15"],
 			toxic: ["9M", "9M", "5M"],
 			voltswitch: ["9M", "9M", "5M"],
+			voltmane: ["9M"],
 			wildcharge: ["9M", "9L39", "9M", "6L39", "5M", "5L39"],
 		},
 	},

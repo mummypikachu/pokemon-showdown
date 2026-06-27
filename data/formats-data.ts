@@ -3008,7 +3008,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "NFE",
 	},
 	unfezant: {
-		tier: "PU",
+		tier: "RU",
 		natDexTier: "RU",
 	},
 	blitzle: {
