@@ -120,10 +120,13 @@ export const Aliases: {[alias: string]: string} = {
 	mry: "Raichu-Mega-Y",
 	raichux: "Raichu-Mega-X",
 	raichuy: "Raichu-Mega-Y",
+	mraix: "Raichu-Mega-X",
+	mraiy: "Raichu-Mega-Y",
 	flygonz: "Flygon-Mega-Z",
 	absolz: "Absol-Mega-Z",
 	garchompz: "Garchomp-Mega-Z",
 	lucarioz: "Lucario-Mega-Z",
+	megapich: "Pichu-Mega",
 
 	// Pokéstar Studios
 	blackdoor: "Pokestar Black-Door",
@@ -304,6 +307,16 @@ export const Aliases: {[alias: string]: string} = {
 	taurospaldea: "Tauros-Paldea-Combat",
 	taurospaldeafire: "Tauros-Paldea-Blaze",
 	taurospaldeawater: "Tauros-Paldea-Aqua",
+	afdghold: "Phyridengo",
+	ouroboros: "Ourobothon",
+	pyroarwf: "Pyroar-Wildfire",
+	pichuse: "Pichu-Spiky-eared",
+	slime: "Alkaslime",
+	avanoble: "Avalugg-Noble",
+	arcnoble: "Arcanine-Noble",
+	lillinoble: "Lilligant-Noble",
+	kleavnoble: "Kleavor-Noble",
+	trodenoble: "Electrode-Noble",
 
 	// base formes
 	nidoranfemale: "Nidoran-F",
@@ -575,6 +588,14 @@ export const Aliases: {[alias: string]: string} = {
 	pheal: "Poison Heal",
 	regen: "Regenerator",
 	stag: "Shadow Tag",
+	psychicprinciple: "Mind Principle",
+	fightingprinciple: "Power Principle",
+	steelprinciple: "Resilience Principle",
+	loti: "Lord of the Isles",
+	lotw: "Lord of the Woods",
+	lott: "Lord of the Tundra",
+	loth: "Lord of the Hollow",
+	lotr: "Lady of the Ridge",
 
 	// items
 	assvest: "Assault Vest",

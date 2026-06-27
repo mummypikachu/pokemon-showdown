@@ -2110,17 +2110,9 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 		onModifyDef(pokemon) {
 			if (this.field.isTerrain('grassyterrain')) return this.chainModify(1.5);
 			if (this.field.isTerrain('electricterrain')) return this.chainModify(1.5);
-			if (this.field.isTerrain('mistyterrain')) return this.chainModify(0.25);
-			if (this.field.isTerrain('psychicterrain')) return this.chainModify(0.25);
 		},
 		onStart(source) {
 			this.field.setTerrain('grassyterrain');
-		},
-		onDamagingHitOrder: 1,
-		onDamagingHit(damage, target, source, move) {
-			if (!target.hp && this.checkMoveMakesContact(move, source, target, true)) {
-				this.damage(source.baseMaxhp / 4, source, target);
-			}
 		},
 		isBreakable: true,
 		name: "Lord of the Hollow",
@@ -5046,13 +5038,7 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
 			if (move.flags['slicing']) {
-				this.debug('Sharpness boost');
-				return this.chainModify(1.5);
-			}
-			const basePowerAfterMultiplier = this.modify(basePower, this.event.modifier);
-			this.debug('Base Power: ' + basePowerAfterMultiplier);
-			if (basePowerAfterMultiplier <= 60) {
-				this.debug('Technician boost');
+				this.debug('lordofthewoods boost');
 				return this.chainModify(1.5);
 			}
 		},
@@ -5617,7 +5603,7 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 	ladyoftheridge: {
 		onModifySpe(spe, pokemon) {
 			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
-				return this.chainModify(2);
+				return this.chainModify(1.5);
 			}
 		},
 		onBasePowerPriority: 23,

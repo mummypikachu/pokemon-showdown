@@ -2580,34 +2580,34 @@ export const AbilitiesText: { [k: string]: AbilityText; } = {
 	},
 	cleanslate: {
 		name: "Clean Slate",
-		shortDesc: "On switch-in, all hazards are cleared off the field. This also includes Trick Room and Safeguard.",
+		shortDesc: "On switch-in, all hazards are cleared off the field. This includes Trick Room/Safeguard.",
 
-		activate: " [POKEMON] cleaned off the field."
+		activate: " [POKEMON] cleaned off the field!"
 	},
 	lordoftheisles: { //Noble Arcanine. do not hand out to another pokemon.
 		name: "Lord of the Isles",
 		desc: "On switch-in, this Pokemon lowers the Attack of opposing Pokemon by 1 stage. This ignores abilities like Inner Focus, Scrappy etc. and does not activate Guard Dog. This Pokemon does not take recoil damage, except Struggle. Does not affect Life Orb damage or crash damage.",
-		shortDesc: "Lowers opponents their attack by 1 on switch-in. Takes no recoil damage from recoil moves.",
+		shortDesc: "Lowers opponents' attack by 1 on switch-in. Takes no recoil damage.",
 	},
 	lordofthehollow: { //Noble Electrode. do not hand out to another pokemon.
 		name: "Lord of the Hollow",
-		desc: "If Grassy Terrain or Electric Terrain is active, this Pokemon's Defense is multiplied by 1.5. Defense is multiplied by 0.25 if Psychic or Misty Terrain is up. On switch-in, this Pokemon summons Grassy Terrain. If this Pokemon is knocked out with a contact move, that move's user loses 1/4 of its maximum HP, rounded down. This ignores Damp.",
-		shortDesc: "Sets Grassy Terrain. Multiplies Defense by 1.5 if Grassy/Electric Terrain, 0.25 if other. Does 25% opponents max HP if KO'd with Contact Move.",
+		desc: "If Grassy Terrain or Electric Terrain is active, this Pokemon's Defense is multiplied by 1.5. On switch-in, this Pokemon summons Grassy Terrain.",
+		shortDesc: "Sets Grassy Terrain. Boosts Defense by 1.5 if Grassy/Electric Terrain.",
 	},
 	lordofthewoods: { //Noble Kleavor. do not hand out to another pokemon.
 		name: "Lord of the Woods",
-		desc: "This Pokemon's slicing moves have their power multiplied by 1.5. Boosts the power of moves with 60 base power or less by 1.5. Attack cannot be lowered.",
-		shortDesc: "Boosts power of slicing moves, moves at or under 60 base power, and attack cannot lower.",
+		desc: "This Pokemon's slicing moves have their power multiplied by 1.5. Attack cannot be lowered by other Pokémon.",
+		shortDesc: "Boosts power of slicing moves by 1.5. Can't have its attack lowered.",
 	},
 	ladyoftheridge: { //Noble Lilligant. do not hand out to another pokemon.
 		name: "Lady of the Ridge",
-		desc: "Boosts the power of kicking moves by 1.5 and multiplies the Speed stat by 2 if under Sunny Day or Desolate Land.",
-		shortDesc: "Boosts power of kicking moves by 1.5. Double speed under sun.",
+		desc: "Boosts the power of kicking moves by 1.5, and multiplies the Speed stat by 1.5 if under Sunny Day or Desolate Land.",
+		shortDesc: "Boosts power of kicking moves by 1.5x. 1.5x speed under sun.",
 	},
 	lordofthetundra: { //Noble Avalugg. do not hand out to another pokemon.
 		name: "Lord of the Tundra",
 		desc: "If this Pokemon is at full HP, it survives one hit with at least 1 HP. OHKO moves fail when used against this Pokemon. Biting moves have their power boosted by 1.5.",
-		shortDesc: "Survives any attack from full HP. Immune to OHKO. Biting moves: 1.5x power.",
+		shortDesc: "Survives any attack from full HP, immune to OHKO. Biting moves: 1.5x power.",
 	},
 	brittlecoral: { // corsola. do not hand out to another pokemon. Reskin this ability at best if you REALLY need it.
 		name: "Brittle Coral",

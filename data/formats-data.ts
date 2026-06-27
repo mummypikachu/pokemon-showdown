@@ -138,7 +138,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "LC",
 	},
 	fearow: {
-		tier: "UU",
+		tier: "NU",
 		natDexTier: "RU",
 	},
 	ekans: {
@@ -146,7 +146,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "LC",
 	},
 	arbok: {
-		tier: "UU",
+		tier: "RU",
 		natDexTier: "RU",
 	},
 	pichu: {
@@ -3696,7 +3696,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "RU",
 	},
 	chesnaughtmega: {
-		tier: "OU",
+		tier: "UU",
 		natDexTier: "OU",
 	},
 	fennekin: {
@@ -3727,8 +3727,8 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "OU",
 	},
 	greninjamega: {
-		tier: "OU",
-		doublesTier: "DUU",
+		tier: "Uber",
+		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
 	greninjaash: {
@@ -3786,7 +3786,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "RU",
 	},
 	pyroarmega: {
-		tier: "UU",
+		tier: "UUBL",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
@@ -3803,9 +3803,11 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	floetteeternal: {
 		tier: "RU",
+		doublesTier: "(DUU)",
 	},
 	floettemega: {
 		tier: "OU",
+		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
 	florges: {
@@ -3830,7 +3832,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "RU",
 	},
 	furfrou: {
-		tier: "RU",
+		tier: "NU",
 		natDexTier: "RU",
 	},
 	espurr: {
@@ -3838,11 +3840,11 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "LC",
 	},
 	meowstic: {
-		tier: "RU",
+		tier: "NU",
 		natDexTier: "RU",
 	},
 	meowsticf: {
-		tier: "RU",
+		tier: "NU",
 		natDexTier: "RU",
 	},
 	meowsticmega: {
