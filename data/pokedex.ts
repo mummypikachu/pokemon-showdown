@@ -8893,7 +8893,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData; } = {
 		types: ["Electric", "Fighting"],
 		genderRatio: { M: 0.75, F: 0.25 },
 		baseStats: { hp: 95, atk: 120, def: 90, spa: 65, spd: 115, spe: 65 },
-		abilities: { 0: "Static Touch", H: "Iron Fist" },
+		abilities: { 0: "Static Touch", 1: "Motor Drive", H: "Iron Fist" },
 		heightm: 1.8,
 		weightkg: 138.6,
 		color: "Yellow",
