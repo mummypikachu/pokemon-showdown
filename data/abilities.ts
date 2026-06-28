@@ -7400,19 +7400,9 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 		name: "Infinity",
 		onUpdate(pokemon) {
 			if (!pokemon.hp) return;
-
-			const moveSlot =
-				pokemon.moveSlots.find(move => move.pp === 0) ||
-				pokemon.moveSlots.find(move => move.pp < move.maxpp);
-
+			const moveSlot = pokemon.moveSlots.find(move => move.pp === 0);
 			if (!moveSlot) return;
-
-			moveSlot.pp += 1;
-
-			if (moveSlot.pp > moveSlot.maxpp) {
-				moveSlot.pp = moveSlot.maxpp;
-			}
-
+			moveSlot.pp = 1;
 			this.add('-activate', pokemon, 'ability: Infinity', moveSlot.move);
 		},
 		rating: 0,
