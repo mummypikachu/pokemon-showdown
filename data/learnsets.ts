@@ -88483,6 +88483,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			waterfall: ["9M"],
 			waterpulse: ["9M", "9L11"],
 			zenheadbutt: ["9M"],
+			downpour: ["9M"],
 		},
 	},
 	finizen: {

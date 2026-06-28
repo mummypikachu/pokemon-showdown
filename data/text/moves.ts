@@ -5922,7 +5922,7 @@ export const MovesText: { [k: string]: MoveText; } = {
 	},
 	shockwave: {
 		name: "Shock Wave",
-		shortDesc: "This move does not check accuracy.",
+		shortDesc: "This move doesn't check accuracy. Hits adjacent foes.",
 	},
 	shoreup: {
 		name: "Shore Up",
