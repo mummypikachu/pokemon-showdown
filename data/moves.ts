@@ -4318,7 +4318,6 @@ export const Moves: { [moveid: string]: MoveData; } = {
 		},
 		target: "normal",
 		type: "Psychic",
-		zMove: { boost: { spa: 1 } },
 		contestType: "Clever",
 	},
 	dorminrush: {
@@ -23952,17 +23951,26 @@ export const Moves: { [moveid: string]: MoveData; } = {
 		type: "Steel",
 		contestType: "Tough",
 	},
-	contraryfield: {
+	contraryfield: { // do not ever give this move to anything. this solely exists to make Mega Malamar work!
 		num: 15315135135,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
 		name: "Contrary Field",
-		pp: 5,
-		priority: 0,
+		pp: 1,
+		priority: -8,
 		target: "all",
 		flags: {},
 		pseudoWeather: 'contraryfield',
+		onTry(source, target, move) {
+			if (source.species.name === 'THIS MOVE CANNOT BE USED BY OTHER POKEMON' || move.hasBounced) {
+				return;
+			}
+			this.add('-fail', source, 'move: Contrary Field');
+			this.hint("Contrary field can't ever be used by any pokemon. This move exists to bypass technical limitations.");
+			this.hint("If you're using this move in Custom Game, remove it from this Pokémon.");
+			return null;
+		},
 		condition: {
 			duration: 0,
 			onStart(field, source) {
@@ -23987,6 +23995,7 @@ export const Moves: { [moveid: string]: MoveData; } = {
 			},
 		},
 		noSketch: true,
+		noPPBoosts: true,
 		secondary: null,
 		type: "Bird",
 	},
