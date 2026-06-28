@@ -23962,7 +23962,7 @@ export const Moves: { [moveid: string]: MoveData; } = {
 		priority: 0,
 		flags: { protect: 1, mirror: 1, distance: 1 },
 		secondary: {
-			chance: 30,
+			chance: 20,
 			volatileStatus: 'flinch',
 		},
 		target: "any",

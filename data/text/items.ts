@@ -2757,12 +2757,12 @@ export const ItemsText: { [k: string]: ItemText; } = {
 		desc: "Turns Lugia into Lugia-Shadow. Boosts move power by 1.2x. May hit itself.",
 	},
 
-	// Gen 2 items
-
 	berserkgene: {
 		name: "Berserk Gene",
-		desc: "(Gen 2) On switch-in, raises holder's Attack by 1 and confuses it. Single use.",
+		desc: "On switch-in, raises holder's Attack by 1 and confuses it. Single use.",
 	},
+	
+	// Gen 2 items
 	berry: {
 		name: "Berry",
 		desc: "(Gen 2) Restores 10 HP when at 1/2 max HP or less. Single use.",

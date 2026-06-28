@@ -7866,8 +7866,8 @@ export const MovesText: { [k: string]: MoveText; } = {
 	},
 	downpour: {
 		name: "Downpour",
-		desc: "Has a 30% chance to make the target flinch.",
-		shortDesc: "30% chance to make the target flinch.",
+		desc: "Has a 20% chance to make the target flinch.",
+		shortDesc: "20% chance to make the target flinch.",
 	},
 	masqueradeslash: {
 		name: "Masquerade Slash",
@@ -7900,7 +7900,7 @@ export const MovesText: { [k: string]: MoveText; } = {
 	},
 	clawslash: {
 		name: "Claw Slash",
-		shortDesc: "No secondary effect.",
+		shortDesc: "No additional effect.",
 	},
 	prayer: {
 		name: "Prayer",

@@ -787,6 +787,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			workup: ["9M", "9M"],
 			yawn: ["9E", "9E", "9E", "5E", "4E", "3E"],
 			zenheadbutt: ["9M", "7T", "6T", "5T", "9T"],
+			downpour: ["9M"],
 		},
 		eventData: [
 			{ generation: 3, level: 10, gender: "M", moves: ["tackle", "tailwhip", "bubble", "withdraw"], pokeball: "pokeball" },
@@ -34378,6 +34379,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			wideguard: ["9E", "9E", "9E", "5E"],
 			workup: ["9M", "9M"],
 			yawn: ["9E", "9E", "9E", "5E", "4E"],
+			downpour: ["9M"],
 		},
 		eventData: [
 			{ generation: 3, level: 10, gender: "M", moves: ["tackle", "growl", "mudslap", "watergun"], pokeball: "pokeball" },
@@ -44916,6 +44918,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			watergun: ["9L1", "9L1", "6L1", "5L1", "4L1", "3L1"],
 			waterpulse: ["9T", "6T", "4M", "3M"],
 			whirlpool: ["9M", "4M"],
+			downpour: ["9M"],
 		},
 		encounters: [
 			{ generation: 4, level: 25 },
@@ -49672,6 +49675,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			waterpulse: ["9M", "9L15", "9L15", "7T", "9L7", "6T", "6L7", "5L7", "4M", "4L7"],
 			whirlpool: ["9M", "4M"],
 			yawn: ["9E", "9E", "9E", "9E", "5E", "5D", "4E"],
+			downpour: ["9M"],
 		},
 	},
 	gastrodon: {
@@ -52081,6 +52085,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			watergun: ["9L6", "9L6", "6L6", "5L6", "4L6"],
 			waterpulse: ["9M", "9L22", "7T", "9L22", "6T", "6L22", "5L22", "5D", "4M", "4L22"],
 			whirlpool: ["9L38", "9L38", "6L38", "5L38", "4M", "4L38"],
+			downpour: ["9M"],
 		},
 	},
 	lumineon: {
@@ -55936,6 +55941,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			waterpulse: ["9T", "6T"],
 			watersport: ["9L16", "6L16", "5L16"],
 			workup: ["9M", "5M"],
+			downpour: ["9M"],
 		},
 		eventData: [
 			{ generation: 5, level: 10, gender: "M", isHidden: true, moves: ["leer", "lick", "watergun", "hydropump"] },
@@ -58580,6 +58586,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			wavecrash: ["9L44"],
 			whirlpool: ["9M"],
 			zenheadbutt: ["9M"],
+			downpour: ["9M"],
 		},
 	},
 	basculinexcir: {
@@ -58665,6 +58672,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			aircutter: ["9L44"],
 			tailwind: ["9M", "9E", "9E", "5E"],
 			fly: ["9M", "9M", "7T", "6T", "5T", "5D"],
+			downpour: ["9M"],
 		},
 	},
 	basculegion: {
@@ -62510,6 +62518,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			whirlpool: ["9M", "9L36"],
 			willowisp: ["9M", "9M", "6M", "5M"],
 			wringout: ["9L55", "6L55", "5L55"],
+			downpour: ["9M"],
 		},
 	},
 	jellicent: {
@@ -74737,6 +74746,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			whirlpool: ["9M"],
 			wonderroom: ["9M", "7T", "9E"],
 			workup: ["9M", "9M"],
+			downpour: ["9M"],
 		},
 	},
 	brionne: {
@@ -76422,6 +76432,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			waterpulse: ["9E", "9T", "9E"],
 			watersport: ["9E"],
 			whirlpool: ["9M", "9E"],
+			downpour: ["9M"],
 		},
 	},
 	mareanie: {
@@ -76760,6 +76771,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			watersport: ["9L1"],
 			wonderroom: ["9M", "7T"],
 			xscissor: ["9M", "9M"],
+			downpour: ["9M"],
 		},
 	},
 	araquanid: {
@@ -83574,6 +83586,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			waterpulse: ["9M"],
 			weatherball: ["9M", "9M"],
 			whirlpool: ["9M"],
+			downpour: ["9M"],
 		},
 	},
 	arrokuda: {
@@ -84066,6 +84079,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			waterfall: ["9M"],
 			whirlpool: ["9M"],
 			workup: ["9M"],
+			downpour: ["9M"],
 		},
 	},
 	sinistea: {
@@ -93749,6 +93763,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			taunt: ["9M"],
 			helpinghand: ["9M"],
 			knockoff: ["9T"],
+			downpour: ["9M"],
 		}
 	},
 	unknownevogecqua: {
