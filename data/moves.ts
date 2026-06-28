@@ -23963,7 +23963,7 @@ export const Moves: { [moveid: string]: MoveData; } = {
 		flags: {},
 		pseudoWeather: 'contraryfield',
 		onTry(source, target, move) {
-			if (source.species.name === 'THIS MOVE CANNOT BE USED BY OTHER POKEMON' || move.hasBounced) {
+			if (source.species.name === 'Bulbasaur-Mega-EX-BREAK-Gmax-Tera-Galar-Alola-Hisui-Paldea-Ultra-Delta' || move.hasBounced) {
 				return;
 			}
 			this.add('-fail', source, 'move: Contrary Field');
