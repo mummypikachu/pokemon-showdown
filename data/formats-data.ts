@@ -6024,7 +6024,13 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		newDexTier: "UUBL",
 	},
 	toroika: {
-		tier: "New",
+		tier: "NU",
+		doublesTier: "(DUU)",
+		natDexTier: "NU",
+		newDexTier: "Uber",
+	},
+	toroikamega: {
+		tier: "OU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 		newDexTier: "Uber",

@@ -8902,6 +8902,17 @@ export const Items: { [itemid: string]: ItemData; } = {
 		num: 2643,
 		gen: 9,
 	},
+	toroikite: {
+		name: "Toroikite",
+		spritenum: 625,
+		megaStone: "Toroika-Mega",
+		megaEvolves: "Toroika",
+		itemUser: ["Toroika"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+	},
 	securitydisc: {
 		name: "Security Disc",
 		spritenum: 113,

@@ -1955,9 +1955,9 @@ export const ItemsText: { [k: string]: ItemText; } = {
 		name: "Pichunite",
 		desc: "If held by Pichu-Spiky-eared, this item allows it to Mega Evolve in battle.",
 	},
-	vikavoltite: {
-		name: "Vikavoltite",
-		desc: "CURRENTLY USELESS If held by a Vikavolt, this item allows it to Mega Evolve in battle.",
+	toroikite: {
+		name: "Toroikite",
+		desc: "If held by a Toroika, this item allows it to Mega Evolve in battle.",
 	},
 	sceptilite: {
 		name: "Sceptilite",
@@ -2756,7 +2756,6 @@ export const ItemsText: { [k: string]: ItemText; } = {
 		name: "Heart Locker",
 		desc: "Turns Lugia into Lugia-Shadow. Boosts move power by 1.2x. May hit itself.",
 	},
-
 	berserkgene: {
 		name: "Berserk Gene",
 		desc: "On switch-in, raises holder's Attack by 1 and confuses it. Single use.",
