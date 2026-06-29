@@ -95687,7 +95687,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 	ubausagi: {
 		learnset: {
 			terablast: ["9M"],
-			populationbomb: ["9M"],
+			tailslap: ["9M"],
 			milkdrink: ["9M"],
 			uturn: ["9M"],
 			highjumpkick: ["9M"],
