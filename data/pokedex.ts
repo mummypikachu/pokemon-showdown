@@ -20764,7 +20764,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData; } = {
 		baseSpecies: "Toroika",
 		types: ["Water"],
 		baseStats: { hp: 85, atk: 65, def: 145, spa: 125, spd: 145, spe: 40 },
-		abilities: { 0: "Grossout" },
+		abilities: { 0: "Intimidate" },
 		heightm: 1.2,
 		weightkg: 51,
 		color: "White",
