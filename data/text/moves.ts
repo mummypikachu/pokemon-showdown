@@ -6113,7 +6113,7 @@ export const MovesText: { [k: string]: MoveText; } = {
 		},
 	},
 	slowstrike: {
-		name: "Sludge",
+		name: "Slow Strike",
 		desc: "-1 Priority. Has a 100% chance to make the target flinch.",
 		shortDesc: "-1 Priority, 100% chance to flinch.",
 	},
@@ -7908,6 +7908,12 @@ export const MovesText: { [k: string]: MoveText; } = {
 	},
 	contraryfield: {
 		name: "Contrary Field",
+		desc: "This move can't be used by any Pokémon, and will always fail after use. It only exists to make an ability, Opposite Day, functional.",
 		shortDesc: "Opposite Day ability. All mons=contrary effect."
+	},
+	shadowblast: {
+		name: "Shadow Blast",
+		desc: "This move can only be used by Lugia-Shadow. This move will always be Super Effective against the first type of the opposing Pokémon. If the opposing Pokémon is holding a Heart Locker, this move will be not very effective, even against the opponent's secondary type.",
+		shortDesc: "Lugia-Shadow: Hits for Super Effective damage.",
 	},
 };
