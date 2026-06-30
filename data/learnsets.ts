@@ -58672,7 +58672,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			aircutter: ["9L44"],
 			tailwind: ["9M", "9E", "9E", "5E"],
 			fly: ["9M", "9M", "7T", "6T", "5T", "5D"],
-			downpour: ["9M"],
 		},
 	},
 	basculegion: {

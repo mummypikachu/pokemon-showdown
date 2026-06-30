@@ -2760,7 +2760,7 @@ export const ItemsText: { [k: string]: ItemText; } = {
 		name: "Berserk Gene",
 		desc: "On switch-in, raises holder's Attack by 1 and confuses it. Single use.",
 	},
-	
+
 	// Gen 2 items
 	berry: {
 		name: "Berry",
