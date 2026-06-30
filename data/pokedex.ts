@@ -6579,7 +6579,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData; } = {
 		name: "Lunatone",
 		types: ["Rock", "Psychic"],
 		gender: "N",
-		baseStats: { hp: 90, atk: 55, def: 95, spa: 105, spd: 100, spe: 55 },
+		baseStats: { hp: 90, atk: 55, def: 65, spa: 105, spd: 85, spe: 100 },
 		abilities: { 0: "Levitate", H: "Psychic Surge" },
 		heightm: 1,
 		weightkg: 168,
