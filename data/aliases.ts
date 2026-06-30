@@ -318,16 +318,7 @@ export const Aliases: {[alias: string]: string} = {
 	kleavnoble: "Kleavor-Noble",
 	trodenoble: "Electrode-Noble",
 	elecnoble: "Electrode-Noble",
-	scaffixer1: "Scaffixer-Foundation",
-	scaffixer2: "Scaffixer-Scaffolding",
-	scaffixer3: "Scaffixer-Complete",
-	sfoundation: "Scaffixer-Foundation",
-	scaffolding: "Scaffixer-Scaffolding",
-	scaffcomplete: "Scaffixer-Complete",
-	tanking: "Taniking",
-	ferrasteel: "Suiba",
-	muscklar: "Muscules",
-
+	
 	// base formes
 	nidoranfemale: "Nidoran-F",
 	nidoranmale: "Nidoran-M",
