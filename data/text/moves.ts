@@ -7916,4 +7916,9 @@ export const MovesText: { [k: string]: MoveText; } = {
 		desc: "This move can only be used by Lugia-Shadow. This move will always be Super Effective against the first type of the opposing Pokémon. If the opposing Pokémon is holding a Heart Locker, this move will be not very effective, even against the opponent's secondary type.",
 		shortDesc: "Lugia-Shadow: Hits for Super Effective damage.",
 	},
+	lunarbeam: {
+		name: "Lunar Beam",
+		desc: "This attack charges on the first turn and executes on the second. Power is halved if the weather is Desolate Land or Sunny Day. If the user is holding a Power Herb or the terrain is Psychic Terrain, the move completes in one turn. If the user is not grounded, the move will have to charge.",
+		shortDesc: "Charges. Hits turn 2. No charge in Psychic Terrain.",
+	},
 };

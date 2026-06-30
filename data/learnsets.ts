@@ -5423,6 +5423,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			workup: ["9M", "9M", "5M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M", "9M", "6T", "5T", "9T"],
+			lunarbeam: ["9M"],
 		},
 	},
 	clefairy: {
@@ -30331,6 +30332,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			workup: ["9M", "5M"],
 			yawn: ["9E", "9E", "9E", "5E", "4E", "3E"],
 			zapcannon: ["9M"],
+			lunarbeam: ["9M"],
 		},
 		eventData: [
 			{ generation: 3, level: 10, gender: "M", abilities: ["pickup"], moves: ["scratch", "leer", "lick"], pokeball: "pokeball" },
@@ -38482,6 +38484,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			wildcharge: ["9M", "9M", "5M"],
 			workup: ["9M", "5M"],
 			zenheadbutt: ["9T", "6T", "5T", "9T"],
+			lunarbeam: ["9M"],
 		},
 		eventData: [
 			{ generation: 3, level: 18, abilities: ["cutecharm"], moves: ["sweetkiss", "secretpower", "attract", "shockwave"] },
@@ -42164,6 +42167,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			trickroom: ["9M", "9M", "9M", "5M", "4M"],
 			weatherball: ["9M"],
 			zenheadbutt: ["9M", "9T", "6T", "5T", "9T"],
+			lunarbeam: ["9M"],
 		},
 		eventData: [
 			{ generation: 3, level: 10, moves: ["tackle", "harden", "confusion"], pokeball: "pokeball" },
@@ -53410,6 +53414,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			trick: ["9M", "9M", "9T", "6T", "5T", "9T"],
 			trickroom: ["9M", "9M", "9M", "9M", "5M", "4M"],
 			zenheadbutt: ["9M", "9M", "9T", "6T", "5T", "9T"],
+			lunarbeam: ["9M"],
 		},
 		eventData: [
 			{ generation: 4, level: 50, shiny: 1, moves: ["mist", "aurorabeam", "futuresight", "slash"] },
@@ -80296,6 +80301,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			willowisp: ["9M", "9M"],
 			wonderroom: ["9M", "7T"],
 			workup: ["9M", "9M"],
+			lunarbeam: ["9M"],
 		},
 		eventData: [
 			{ generation: 7, level: 55, moves: ["moongeistbeam", "cosmicpower", "nightdaze", "shadowball"] },
@@ -95902,6 +95908,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			healingwish: ["9M"],
 			imprison: ["9M"],
 			miracleeye: ["9M"],
+			lunarbeam: ["9M"],
 		},
 	},
 	chilleti: {

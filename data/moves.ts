@@ -24031,4 +24031,40 @@ export const Moves: { [moveid: string]: MoveData; } = {
 		secondary: null,
 		type: "Almighty",
 	},
+	lunarbeam: {
+		num: 74549834777,
+		accuracy: 100,
+		basePower: 120,
+		category: "Special",
+		name: "Lunar Beam",
+		pp: 10,
+		priority: 0,
+		flags: { charge: 1, protect: 1, mirror: 1 },
+		onTryMove(attacker, defender, move) {
+			if (attacker.removeVolatile(move.id)) {
+				return;
+			}
+			this.add('-prepare', attacker, move.name);
+			if (this.field.isTerrain('psychicterrain')) {
+				this.attrLastMove('[still]');
+				this.addMove('-anim', attacker, move.name, defender);
+				return;
+			}
+			if (!this.runEvent('ChargeMove', attacker, defender, move)) {
+				return;
+			}
+			attacker.addVolatile('twoturnmove', defender);
+			return null;
+		},
+		onBasePower(basePower, pokemon) {
+			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
+				this.debug('weakened by sunlight');
+				return this.chainModify(0.5);
+			}
+		},
+		secondary: null,
+		target: "normal",
+		type: "Psychic",
+		contestType: "Cool",
+	},
 };
