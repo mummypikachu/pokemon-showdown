@@ -6217,6 +6217,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			airride: ["9M"],
 			workup: ["9M", "9M", "5M"],
 			zapcannon: ["9M"],
+			lunarbeam: ["9M"],
 		},
 		eventData: [
 			{ generation: 3, level: 5, shiny: 1, abilities: ["cutecharm"], moves: ["sing", "charm", "defensecurl", "tickle"], pokeball: "pokeball" },
@@ -21202,6 +21203,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			wonderroom: ["9M", "9M", "6T", "5T"],
 			workup: ["9M", "9M", "5M"],
 			zapcannon: ["9M"],
+			lunarbeam: ["9M"],
 		},
 		eventData: [
 			{ generation: 3, level: 70, moves: ["feintattack", "meanlook", "screech", "moonlight"], pokeball: "pokeball" },
@@ -30604,6 +30606,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			trailblaze: ["9M"],
 			uproar: ["9M"],
 			vacuumwave: ["9M"],
+			lunarbeam: ["9M"],
 		},
 	},
 	slugma: {
@@ -35357,6 +35360,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			uturn: ["9M", "9M", "5M", "4M"],
 			venoshock: ["9M", "9L20", "9M", "6L20", "5M"],
 			whirlwind: ["9L30", "6L27", "5L27", "4L27", "3L27"],
+			lunarbeam: ["9M"],
 		},
 	},
 	lotad: {
@@ -46980,6 +46984,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			wrap: ["9L1", "6L1", "5L1", "4L1", "4S8", "3L1"],
 			zapcannon: ["9L61", "6L61", "5L81", "4L81", "4S4", "3L40"],
 			zenheadbutt: ["9T", "9L49", "6T", "6L49", "5T", "5L65", "9T", "4L65"],
+			lunarbeam: ["9M"],
 		},
 		eventData: [
 			{ generation: 3, level: 30, shiny: 1, moves: ["taunt", "pursuit", "psychic", "superpower"] },
@@ -56103,6 +56108,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			worryseed: ["9T", "6T", "5T"],
 			yawn: ["9L32", "9L7", "6L7", "5L7"],
 			zenheadbutt: ["9M", "9L24", "9T", "9L23", "6T", "6L23", "5T", "5L23"],
+			lunarbeam: ["9M"],
 		},
 		eventData: [
 			{ generation: 7, level: 39, nature: "Mild", isHidden: true, moves: ["hypnosis", "dreameater", "rest", "sleeptalk"], pokeball: "dreamball" },
@@ -63536,6 +63542,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			uproar: ["9M", "9T", "6T", "5T"],
 			wonderroom: ["9M", "9L54", "9T", "9L56", "6T", "6L56", "5T", "5L56"],
 			zenheadbutt: ["9M", "9L36", "9T", "9L32", "6T", "6L32", "5T", "5L32"],
+			lunarbeam: ["9M"],
 		},
 	},
 	beheeyem: {
@@ -94926,6 +94933,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			lick: ["9M"],
 			shadowball: ["9M"],
 			shadowclaw: ["9M"],
+			lunarbeam: ["9M"],
 		},
 	},
 	totta: {
@@ -94984,6 +94992,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			meanlook: ["9M"],
 			miracleeye: ["9M"],
 			psyshock: ["9M"],
+			lunarbeam: ["9M"],
 		},
 	},
 	kolibrary: {
@@ -95909,6 +95918,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			imprison: ["9M"],
 			miracleeye: ["9M"],
 			lunarbeam: ["9M"],
+			moonlight: ["9M"],
 		},
 	},
 	chilleti: {
