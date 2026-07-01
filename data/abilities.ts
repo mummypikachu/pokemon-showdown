@@ -7505,7 +7505,23 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 		name: "Evolot",
 		onStart(pokemon) {
 			if (pokemon.species.id !== 'evolotto') return;
-			const formes = ['Serperior', 'Spinda', 'Lurantis', 'Incineroar'];
+			const formes = ['Serperior', 'Emboar', 'Samurott', 'Venusaur', 'Decidueye', 'Mismagius', 'Machamp', 'Kingler', 'Sunflora',
+				'Qwilfish', 'Octillery', 'Swellow', 'Heliolisk', 'Politoed', 'Ninetales', 'Ninetales-Alola', 'Gigalith', 'Swoobat', 'Electivire',
+				'Jynx', 'Magmortar', 'Rhyperior', 'Unfezant', 'Diggersby', 'Blastoise', 'Charizard', 'Venusaur', 'Golem-Alola', 'Golem',
+				'Oricorio', 'Oricorio-Baile', 'Oricorio-Sensu', 'Mightyena', 'Obstagoon', 'Linoone', 'Donphan', 'Muk', 'Muk-Alola', 'Ludicolo',
+				'Shiftry', 'Gyarados', 'Milotic', 'Overqwil', 'Farigiraf', 'Dudunsparce', 'Sunkern', 'Wigglytuff', 'Clefable', 'Granbull',
+				'Armaldo', 'Cradily', 'Aerodactyl', 'Carracosta', 'Archeops', 'Tyrantrum', 'Aurorus', 'Kabutops', 'Omastar', 'Luxray',
+				'Pyroar', 'Florges', 'Gumshoos', 'Spidops', 'Wishiwashi', 'Kangaskhan', 'Pinsir', 'Scizor', 'Kleavor', 'Heracross',
+				'Staraptor', 'Pidgeot', 'Skuntank', 'Jumpluff', 'Probopass', 'Gardevoir', 'Gallade', 'Alcremie', 'Slurpuff', 'Aromatisse',
+				'Cramorant', 'Eiscue', 'Darmanitan', 'Darmanitan-Galar', 'Goodra', 'Sceptile', 'Blaziken', 'Swampert', 'Relicanth', 'Toxtricity',
+				'Lokix', 'Vileplume', 'Bellossom', 'Raticate', 'Raticate-Alola', 'Watchog', 'Houndoom', 'Stoutland', 'Audino', 'Scrafty',
+				'Arcanine', 'Arcanine-Hisui', 'Braviary', 'Braviary-Hisui', 'Wyrdeer', 'Pichu-Spiky-eared', 'Floette-Eternal', 'Indeedee',
+				'Indeedee-F', 'Meowstic', 'Meowstic-F', 'Huntail', 'Gorebyss', 'Stunfisk', 'Stunfisk-Galar', 'Bruxish', 'Cinccino', 'Zebstrika',
+				'Boltund', 'Eldegoss', 'Steelix', 'Aggron', 'Orthworm', 'Cyclizar', 'Incineroar', 'Decidueye', 'Primarina', 'Kricketune',
+				'Palafin', 'Ditto', 'Revavroom', 'Coalossal', 'Kecleon', 'Crabominable', 'Raichu', 'Raichu-Alola', 'Genesect', 'Poliwrath',
+				'Pincurchin', 'Escavalier', 'Accelgor', 'Throh', 'Sawk', 'Golurk', 'Seismitoad', 'Gogoat', 'Lilligant', 'Lilligant-Hisui',
+				'Spinda', 'Malamar', 'Corsola', 'Cursola', 'Glimmora', 'Bastiodon', 'Rampardos', 'Greedent',
+			];
 			const forme = this.sample(formes);
 			const species = this.dex.species.get(forme);
 			if (!species.exists) return;

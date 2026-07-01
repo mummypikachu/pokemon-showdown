@@ -1122,7 +1122,7 @@ export const Formats: FormatList = [
 				'sandtomb', 'gust', 'watergun', 'powdersnow', 'twister', 'echoedvoice',
 				'twinbeam', 'vacuumwave', 'poweruppunch', 'bubble', 'thundershock', 'acidspray',
 				'pursuit', 'dualchop', 'mirrormove', 'transform', 'poisonsting', 'angerhit',
-				'pressurechop', 'constrict', 'bis', 'posthaste', 
+				'pressurechop', 'constrict', 'bis', 'posthaste',
 			];
 
 			// Check each move in the set
@@ -1244,7 +1244,7 @@ export const Formats: FormatList = [
 			const dexButBanned = [
 				'Scaffixer', 'Movile-Mega', 'Forzer', 'Toggt', 'Resuil', 'Alkaslime'
 			];
-			
+
 			const item = this.dex.items.get(set.item);
 
 			const species = this.dex.species.get(set.species);
@@ -1255,6 +1255,28 @@ export const Formats: FormatList = [
 				return [`${species.name} is not entirely a fakemon. This tier only allows Pokémon that are purely original and don't evolve from a pre-existing mon and aren't a Betamon.`];
 			}
 
+		},
+	},
+	{
+		name: "[Gen 9] Evolotto Roulette",
+		mod: 'gen9',
+		ruleset: [
+			'Standard',
+			'Dynamax Clause',
+			'Terastal Clause',
+			'Z-Move Clause',
+			'!Species Clause'
+		],
+
+		onValidateSet(set) {
+			const allowedPokemon = [
+				'Evolotto',
+			];
+
+			const species = this.dex.species.get(set.species);
+			if (!allowedPokemon.includes(species.name)) {
+				return [`${species.name} is not an Evolotto.`];
+			}
 		},
 	},
 ];
