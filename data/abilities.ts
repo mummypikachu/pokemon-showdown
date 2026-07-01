@@ -6804,7 +6804,7 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 	updraft: {
 		onStart(pokemon) {
 			const move = this.dex.moves.get('tailwind');
-			this.add('-ability', pokemon, 'Wind Power');
+			this.add('-ability', pokemon, 'Updraft');
 			this.actions.useMove(move, pokemon);
 		},
 		name: "Updraft",
@@ -7501,7 +7501,7 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 		},
 		num: 444424424,
 	},
-	evolot: {
+	evolot: { // evolotto ability.
 		name: "Evolot",
 		onStart(pokemon) {
 			if (pokemon.species.id !== 'evolotto') return;
@@ -7518,15 +7518,24 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 				'Arcanine', 'Arcanine-Hisui', 'Braviary', 'Braviary-Hisui', 'Wyrdeer', 'Pichu-Spiky-eared', 'Floette-Eternal', 'Indeedee',
 				'Indeedee-F', 'Meowstic', 'Meowstic-F', 'Huntail', 'Gorebyss', 'Stunfisk', 'Stunfisk-Galar', 'Bruxish', 'Cinccino', 'Zebstrika',
 				'Boltund', 'Eldegoss', 'Steelix', 'Aggron', 'Orthworm', 'Cyclizar', 'Incineroar', 'Decidueye', 'Primarina', 'Kricketune',
-				'Palafin', 'Ditto', 'Revavroom', 'Coalossal', 'Kecleon', 'Crabominable', 'Raichu', 'Raichu-Alola', 'Genesect', 'Poliwrath',
+				'Palafin', 'Chandelure', 'Revavroom', 'Coalossal', 'Kecleon', 'Crabominable', 'Raichu', 'Raichu-Alola', 'Genesect', 'Poliwrath',
 				'Pincurchin', 'Escavalier', 'Accelgor', 'Throh', 'Sawk', 'Golurk', 'Seismitoad', 'Gogoat', 'Lilligant', 'Lilligant-Hisui',
-				'Spinda', 'Malamar', 'Corsola', 'Cursola', 'Glimmora', 'Bastiodon', 'Rampardos', 'Greedent',
+				'Spinda', 'Malamar', 'Corsola', 'Cursola', 'Glimmora', 'Bastiodon', 'Rampardos', 'Greedent', 'Druddigon', 'Haxorus',
+				'Altaria', 'Sharpedo', 'Ninjask', 'Masquerain', 'Walrein', 'Wailord', 'Liepard', 'Purugly', 'Persian', 'Perrserker',
+				'Persian-Alola', 'Exeggutor', 'Exeggutor-Alola', 'Sandslash', 'Sandslash-Alola', 'Beautifly', 'Dustox', 'Venomoth',
+				'Cloyster', 'Chansey', 'Rotom-Wash', 'Rotom', 'Rotom-Fan', 'Rotom-Frost', 'Rotom-Mow', 'Rotom-Heat', 'Trevenant',
+				'Gourgeist', 'Tauros', 'Tauros-Paldea-Blaze', 'Tauros-Paldea-Aqua', 'Miltank', 'Bouffalant', 'Hariyama', 'Absol',
+				'Sneasel', 'Weavile', 'Avalugg', 'Avalugg-Hisui', 'Sneasel-Hisui', 'Delibird', 'Weezing', 'Weezing-Galar', 'Magcargo',
+				'Eelektross', 'Dragalge', 'Clawitzer', 'Armarouge', 'Ceruledge', 'Toucannon', 'Crawdaunt', 'Dugtrio', 'Dugtrio-Alola',
+				'Wugtrio', 'Ampharos', 'Noctowl', 'Furret', 'Sneasler', 'Polteageist', 'Sinistcha', 'Vivillon', 'Butterfree', 'Beedrill',
 			];
 			const forme = this.sample(formes);
 			const species = this.dex.species.get(forme);
 			if (!species.exists) return;
 			const oldMaxHP = pokemon.maxhp;
 			const oldHP = pokemon.hp;
+			; this.add('-activate', pokemon, 'ability: Evolot');
+			this.add('-formechange', pokemon, species.name);
 			pokemon.formeChange(species, this.effect, true);
 			if (pokemon.maxhp !== oldMaxHP) {
 				pokemon.hp = Math.max(
@@ -7538,8 +7547,7 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 			if (hiddenAbility) {
 				pokemon.setAbility(hiddenAbility);
 			}
-			this.add('-activate', pokemon, 'ability: Evolot');
-			this.add('-formechange', pokemon, species.name);
+
 		},
 		rating: 4,
 		num: 43741713,

@@ -2725,7 +2725,7 @@ export const AbilitiesText: { [k: string]: AbilityText; } = {
 	},
 	evolot: {
 		name: "Evolot",
-		shortDesc: "Transforms into a random Pokémon, but keeps its own movepool.",
+		shortDesc: "Permanently transforms into a random Pokémon on switch in, but keeps its own movepool.",
 	},
 };
 
