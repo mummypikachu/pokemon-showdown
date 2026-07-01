@@ -1136,6 +1136,7 @@ export const Formats: FormatList = [
 			}
 		},
 	},
+	/*
 	// Sigmatic Dex
 	///////////////////////////////////////////////////////////////////
 
@@ -1186,6 +1187,7 @@ export const Formats: FormatList = [
 		ruleset: ['Standard New Dex'],
 		banlist: ['Uber', 'OU', 'UUBL', 'UU', 'RUBL', 'RU', 'NUBL', 'Moody', 'Sand Veil', 'Snow Cloak', 'King\'s Rock', 'Baton Pass', 'Gorilla Tactics', 'Last Respects', 'Shedinja + Air Balloon', 'Zygarde + Power Construct'],
 	},
+	*/
 	{
 		name: "[Gen 9] Metronome Battle",
 		mod: 'gen9',
@@ -1225,7 +1227,7 @@ export const Formats: FormatList = [
 		},
 	},
 	{
-		name: "[Gen 9] Complete Fakemon OU",
+		name: "[Gen 9] Complete Fakemon Only",
 		mod: 'gen9',
 		ruleset: [
 			'Standard',
@@ -1250,7 +1252,7 @@ export const Formats: FormatList = [
 				return [`${species.name} is banned.`];
 			}
 			if (!allowedPokemon.includes(species.name)) {
-				return [`${species.name} is not entirely a fakemon. This tier only allows Pokémon that are purely original and don't evolve from a pre-existing mon, aren't convergent, and aren't a Betamon.`];
+				return [`${species.name} is not entirely a fakemon. This tier only allows Pokémon that are purely original and don't evolve from a pre-existing mon and aren't a Betamon.`];
 			}
 
 		},
