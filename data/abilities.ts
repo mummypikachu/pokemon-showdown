@@ -7501,4 +7501,31 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 		},
 		num: 444424424,
 	},
+	evolot: {
+		name: "Evolot",
+		onStart(pokemon) {
+			if (pokemon.species.id !== 'bulbasaur') return;
+			const formes = ['Pikachu', 'Anorith', 'Blissey', 'Armaldo'];
+			const forme = this.sample(formes);
+			const species = this.dex.species.get(forme);
+			if (!species.exists) return;
+			const oldMaxHP = pokemon.maxhp;
+			const oldHP = pokemon.hp;
+			pokemon.formeChange(species, this.effect, true);
+			if (pokemon.maxhp !== oldMaxHP) {
+				pokemon.hp = Math.max(
+					1,
+					Math.floor(oldHP * pokemon.maxhp / oldMaxHP)
+				);
+			}
+			const hiddenAbility = species.abilities?.H;
+			if (hiddenAbility) {
+				pokemon.setAbility(hiddenAbility);
+			}
+			this.add('-activate', pokemon, 'ability: Evolot');
+			this.add('-formechange', pokemon, species.name);
+		},
+		rating: 4,
+		num: 43741713,
+	},
 };
