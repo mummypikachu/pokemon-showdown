@@ -2711,6 +2711,7 @@ export const AbilitiesText: { [k: string]: AbilityText; } = {
 	},
 	oppositeday: {
 		name: "Opposite Day",
+		desc: "All Pokémon on the field are under the effect of Contrary. This ability does not get reverted by another Pokémon with Opposite Day.",
 		shortDesc: "All Pokémon on the field are under the effect of Contrary.",
 	},
 	petrificate: {
@@ -2720,7 +2721,11 @@ export const AbilitiesText: { [k: string]: AbilityText; } = {
 	},
 	curseeater: {
 		name: "Curse Eater",
-		shortDesc: "Cures burn, freeze, paralysis, poison at end of turn for other Pokémon. Heals 10% per cure.",
+		shortDesc: "Cures burn, freeze, paralysis, poison at end of turn for other Pokémon. Cure=heal 10%",
+	},
+	evolot: {
+		name: "Evolot",
+		shortDesc: "Transforms into a random Pokémon, but keeps its own movepool.",
 	},
 };
 

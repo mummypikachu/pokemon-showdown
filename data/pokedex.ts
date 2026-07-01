@@ -5,7 +5,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData; } = {
 		types: ["Grass", "Poison"],
 		genderRatio: { M: 0.875, F: 0.125 },
 		baseStats: { hp: 45, atk: 49, def: 49, spa: 65, spd: 65, spe: 45 },
-		abilities: { 0: "Overgrow", 1: "Evolot", H: "Chlorophyll" },
+		abilities: { 0: "Overgrow", H: "Chlorophyll" },
 		heightm: 0.7,
 		weightkg: 6.9,
 		color: "Green",
@@ -21373,6 +21373,17 @@ export const Pokedex: { [speciesid: string]: SpeciesData; } = {
 		weightkg: 2,
 		color: "Gray",
 		eggGroups: ["Mineral"],
+	},
+	evolotto: {
+		num: 1592,
+		name: "Evolotto",
+		types: ["Normal"],
+		baseStats: { hp: 60, atk: 60, def: 60, spa: 60, spd: 60, spe: 60 },
+		abilities: { 0: "Evolot" },
+		heightm: 0.3,
+		weightkg: 1,
+		color: "White",
+		eggGroups: ["Unknown"],
 	},
 	//cap
 	syclar: {

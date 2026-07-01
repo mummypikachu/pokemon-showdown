@@ -6230,7 +6230,10 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NU",
 	},
 	screamstone: {
-		tier: "New",
+		tier: "NU",
+	},
+	evolotto: {
+		tier: "OU",
 	},
 	// Start CAP/Missingno, don't place new mons under this
 	missingno: {

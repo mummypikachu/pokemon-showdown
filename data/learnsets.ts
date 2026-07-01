@@ -98303,6 +98303,11 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			perishsong: ["9M"],
 		},
 	},
+	evolotto: {
+		learnset: {
+			superpower: ["9L1", "9L1", "9M", "9L1", "9M", "7S0", "6L1", "5L1", "4L1", "3L1"],
+		},
+	},
 	//capmons
 	syclar: {
 		learnset: {

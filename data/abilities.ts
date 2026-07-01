@@ -7504,8 +7504,8 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 	evolot: {
 		name: "Evolot",
 		onStart(pokemon) {
-			if (pokemon.species.id !== 'bulbasaur') return;
-			const formes = ['Pikachu', 'Anorith', 'Blissey', 'Armaldo'];
+			if (pokemon.species.id !== 'evolotto') return;
+			const formes = ['Serperior', 'Spinda', 'Lurantis', 'Incineroar'];
 			const forme = this.sample(formes);
 			const species = this.dex.species.get(forme);
 			if (!species.exists) return;
