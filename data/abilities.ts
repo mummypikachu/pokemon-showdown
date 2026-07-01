@@ -7528,6 +7528,9 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 				'Sneasel', 'Weavile', 'Avalugg', 'Avalugg-Hisui', 'Sneasel-Hisui', 'Delibird', 'Weezing', 'Weezing-Galar', 'Magcargo',
 				'Eelektross', 'Dragalge', 'Clawitzer', 'Armarouge', 'Ceruledge', 'Toucannon', 'Crawdaunt', 'Dugtrio', 'Dugtrio-Alola',
 				'Wugtrio', 'Ampharos', 'Noctowl', 'Furret', 'Sneasler', 'Polteageist', 'Sinistcha', 'Vivillon', 'Butterfree', 'Beedrill',
+				'Glalie', 'Froslass', 'Porygon2', 'Blissey', 'Rabsca', 'Pawmot', 'Plusle', 'Pachirisu', 'Emolga', 'Dedenne', 'Togedemaru',
+				'Palossand', 'Meganium', 'Typhlosion', 'Feraligatr', 'Typhlosion-Hisui', 'Banette', 'Beartic', 'Whimsicott', 'Mimikyu',
+				'Seaking', 'Bronzong', 'Flygon', 'Exploud', 'Pelipper', 'Torkoal', 'Hawlucha', 'Basculin', 'Orbeetle', 'Bibarel', 'Camerupt',
 			];
 			const forme = this.sample(formes);
 			const species = this.dex.species.get(forme);
