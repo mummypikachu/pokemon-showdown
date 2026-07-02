@@ -7513,7 +7513,7 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 				'Armaldo', 'Cradily', 'Aerodactyl', 'Carracosta', 'Archeops', 'Tyrantrum', 'Aurorus', 'Kabutops', 'Omastar', 'Luxray',
 				'Pyroar', 'Florges', 'Gumshoos', 'Spidops', 'Wishiwashi', 'Kangaskhan', 'Pinsir', 'Scizor', 'Kleavor', 'Heracross',
 				'Staraptor', 'Pidgeot', 'Skuntank', 'Jumpluff', 'Probopass', 'Gardevoir', 'Gallade', 'Alcremie', 'Slurpuff', 'Aromatisse',
-				'Cramorant', 'Eiscue', 'Darmanitan', 'Darmanitan-Galar', 'Goodra', 'Sceptile', 'Blaziken', 'Swampert', 'Relicanth', 'Toxtricity',
+				'Cramorant-Gulping', 'Eiscue', 'Darmanitan', 'Darmanitan-Galar', 'Goodra', 'Sceptile', 'Blaziken', 'Swampert', 'Relicanth',
 				'Lokix', 'Vileplume', 'Bellossom', 'Raticate', 'Raticate-Alola', 'Watchog', 'Houndoom', 'Stoutland', 'Audino', 'Scrafty',
 				'Arcanine', 'Arcanine-Hisui', 'Braviary', 'Braviary-Hisui', 'Wyrdeer', 'Pichu-Spiky-eared', 'Floette-Eternal', 'Indeedee',
 				'Indeedee-F', 'Meowstic', 'Meowstic-F', 'Huntail', 'Gorebyss', 'Stunfisk', 'Stunfisk-Galar', 'Bruxish', 'Cinccino', 'Zebstrika',
@@ -7532,7 +7532,7 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 				'Palossand', 'Meganium', 'Typhlosion', 'Feraligatr', 'Typhlosion-Hisui', 'Banette', 'Beartic', 'Whimsicott', 'Mimikyu',
 				'Seaking', 'Bronzong', 'Flygon', 'Exploud', 'Pelipper', 'Torkoal', 'Hawlucha', 'Basculin', 'Orbeetle', 'Slowbro', 'Camerupt',
 				'Jellicent', 'Arboliva', 'Infernape', 'Empoleon', 'Torterra', 'Delcatty', 'Tsareena', 'Dodrio', 'Maractus', 'Sigilyph',
-				'Glalie', 'Bibarel',
+				'Glalie', 'Bibarel', 'Darmanitan-Zen', 'Darmanitan-Galar-Zen', 'Toxtricity',
 			];
 			const forme = this.sample(formes);
 			const species = this.dex.species.get(forme);
@@ -7574,6 +7574,15 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 				case 'torkoal':
 					newAbility = 'Drought'; //Second ability defining for this pokemon
 					break;
+				case 'steelix':
+					newAbility = 'Sturdy';
+					break;
+				case 'darmanitan': //separate Sheer Force and Zen Mode Darmanitan
+					newAbility = 'No Ability';
+					break;
+				case 'darmanitangalar':
+					newAbility = 'No Ability';
+					break;
 				default:
 					newAbility = species.abilities?.H;
 					break;
@@ -7611,9 +7620,6 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 			let newAbility: string | undefined;
 			switch (species.id) {
 				case 'ninetalesalola':
-					newAbility = 'Misty Surge';
-					newAbility = 'Drought';
-					newAbility = 'Opposite Day';
 					newAbility = 'Intimidate';
 					break;
 				default:
