@@ -7561,7 +7561,7 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 		onStart(pokemon) {
 			if (pokemon.species.id !== 'evolotto') return;
 			const formes = [
-				'Glalie', 'Glalie', 'Glalie', 'Glalie', 'Glalie',
+				'Malamar', 'Malamar', 'Malamar', 'Glalie', 'Glalie', 'Glalie',
 			];
 			const forme = this.sample(formes);
 			const species = this.dex.species.get(forme);
@@ -7581,6 +7581,12 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 			switch (species.id) {
 				case 'malamar':
 					newAbility = 'Contrary';
+					break;
+				case 'glalie':
+					newAbility = 'Intimidate';
+					break;
+				case 'glalie':
+					newAbility = 'Opposite Day';
 					break;
 				default:
 					newAbility = species.abilities?.H;
