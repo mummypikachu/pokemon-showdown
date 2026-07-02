@@ -7556,18 +7556,19 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 		rating: 4,
 		num: 43741713,
 	},
-	minievolot: { // evolotto ability for LC stuff.
+	minievolot: { // evolotto testing ability
 		name: "Mini-Evolot",
 		onStart(pokemon) {
 			if (pokemon.species.id !== 'evolotto') return;
-			const formes = ['Glalie', 'Glalie', 'Glalie', 'Glalie', 'Glalie',
+			const formes = [
+				'Glalie', 'Glalie', 'Glalie', 'Glalie', 'Glalie',
 			];
 			const forme = this.sample(formes);
 			const species = this.dex.species.get(forme);
 			if (!species.exists) return;
 			const oldMaxHP = pokemon.maxhp;
 			const oldHP = pokemon.hp;
-			; this.add('-activate', pokemon, 'ability: Evolot');
+			this.add('-activate', pokemon, 'ability: Evolot');
 			this.add('-formechange', pokemon, species.name);
 			pokemon.formeChange(species, this.effect, true);
 			if (pokemon.maxhp !== oldMaxHP) {
@@ -7576,11 +7577,20 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 					Math.floor(oldHP * pokemon.maxhp / oldMaxHP)
 				);
 			}
-			const hiddenAbility = species.abilities?.H;
-			if (hiddenAbility) {
-				pokemon.setAbility(hiddenAbility);
+			let newAbility: string | undefined;
+			switch (species.id) {
+				case 'malamar':
+					newAbility = 'Contrary';
+					break;
+				default:
+					newAbility = species.abilities?.H;
+					break;
 			}
-
+			if (newAbility) {
+				pokemon.setAbility(newAbility, null, true);
+				pokemon.baseAbility = this.toID(newAbility);
+				pokemon.m.abilityState = {};
+			}
 		},
 		rating: 4,
 		num: 43741713,
