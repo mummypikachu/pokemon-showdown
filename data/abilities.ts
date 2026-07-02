@@ -7562,17 +7562,17 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 				case 'durant':
 					newAbility = 'Swarm'; //prevent Truant
 					break;
-				case 'gardevoir':
-					newAbility = 'No Ability'; //Telepathy
+				case 'pelipper':
+					newAbility = 'Drizzle'; //Second ability defining for this pokemon
 					break;
-				case 'musharna':
-					newAbility = 'No Ability'; //Telepathy
+				case 'gigalith':
+					newAbility = 'Sand Stream'; //Second ability defining for this pokemon
 					break;
-				case 'orbeetle':
-					newAbility = 'No Ability'; //Telepathy
+				case 'vanilluxe':
+					newAbility = 'Snow Warning'; //Second ability defining for this pokemon
 					break;
-				case 'rabsca':
-					newAbility = 'No Ability'; //Telepathy
+				case 'torkoal':
+					newAbility = 'Drought'; //Second ability defining for this pokemon
 					break;
 				default:
 					newAbility = species.abilities?.H;
@@ -7592,7 +7592,7 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 		onStart(pokemon) {
 			if (pokemon.species.id !== 'evolotto') return;
 			const formes = [
-				'Glalie', 'Glalie', 'Glalie', 'Glalie', 'Glalie',
+				'Ninetales-Alola', 'Ninetales-Alola', 'Ninetales-Alola', 'Ninetales-Alola', 'Ninetales-Alola',
 			];
 			const forme = this.sample(formes);
 			const species = this.dex.species.get(forme);
@@ -7610,7 +7610,10 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 			}
 			let newAbility: string | undefined;
 			switch (species.id) {
-				case 'Glalie':
+				case 'ninetalesalola':
+					newAbility = 'Misty Surge';
+					newAbility = 'Drought';
+					newAbility = 'Opposite Day';
 					newAbility = 'Intimidate';
 					break;
 				default:
