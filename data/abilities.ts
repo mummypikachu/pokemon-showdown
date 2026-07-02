@@ -7556,4 +7556,33 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 		rating: 4,
 		num: 43741713,
 	},
+	minievolot: { // evolotto ability for LC stuff.
+		name: "Mini-Evolot",
+		onStart(pokemon) {
+			if (pokemon.species.id !== 'evolotto') return;
+			const formes = ['Glalie', 'Glalie', 'Glalie', 'Glalie', 'Glalie',
+			];
+			const forme = this.sample(formes);
+			const species = this.dex.species.get(forme);
+			if (!species.exists) return;
+			const oldMaxHP = pokemon.maxhp;
+			const oldHP = pokemon.hp;
+			; this.add('-activate', pokemon, 'ability: Evolot');
+			this.add('-formechange', pokemon, species.name);
+			pokemon.formeChange(species, this.effect, true);
+			if (pokemon.maxhp !== oldMaxHP) {
+				pokemon.hp = Math.max(
+					1,
+					Math.floor(oldHP * pokemon.maxhp / oldMaxHP)
+				);
+			}
+			const hiddenAbility = species.abilities?.H;
+			if (hiddenAbility) {
+				pokemon.setAbility(hiddenAbility);
+			}
+
+		},
+		rating: 4,
+		num: 43741713,
+	},
 };
