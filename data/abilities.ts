@@ -7532,36 +7532,7 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 				'Palossand', 'Meganium', 'Typhlosion', 'Feraligatr', 'Typhlosion-Hisui', 'Banette', 'Beartic', 'Whimsicott', 'Mimikyu',
 				'Seaking', 'Bronzong', 'Flygon', 'Exploud', 'Pelipper', 'Torkoal', 'Hawlucha', 'Basculin', 'Orbeetle', 'Slowbro', 'Camerupt',
 				'Jellicent', 'Arboliva', 'Infernape', 'Empoleon', 'Torterra', 'Delcatty', 'Tsareena', 'Dodrio', 'Maractus', 'Sigilyph',
-			];
-			const forme = this.sample(formes);
-			const species = this.dex.species.get(forme);
-			if (!species.exists) return;
-			const oldMaxHP = pokemon.maxhp;
-			const oldHP = pokemon.hp;
-			; this.add('-activate', pokemon, 'ability: Evolot');
-			this.add('-formechange', pokemon, species.name);
-			pokemon.formeChange(species, this.effect, true);
-			if (pokemon.maxhp !== oldMaxHP) {
-				pokemon.hp = Math.max(
-					1,
-					Math.floor(oldHP * pokemon.maxhp / oldMaxHP)
-				);
-			}
-			const hiddenAbility = species.abilities?.H;
-			if (hiddenAbility) {
-				pokemon.setAbility(hiddenAbility);
-			}
-
-		},
-		rating: 4,
-		num: 43741713,
-	},
-	minievolot: { // evolotto testing ability
-		name: "Mini-Evolot",
-		onStart(pokemon) {
-			if (pokemon.species.id !== 'evolotto') return;
-			const formes = [
-				'Malamar', 'Malamar', 'Malamar', 'Glalie', 'Glalie', 'Glalie',
+				'Glalie', 'Bibarel',
 			];
 			const forme = this.sample(formes);
 			const species = this.dex.species.get(forme);
@@ -7583,10 +7554,64 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 					newAbility = 'Contrary';
 					break;
 				case 'glalie':
-					newAbility = 'Intimidate';
+					newAbility = 'No Ability'; //Due to Moody
 					break;
-				case 'glalie':
-					newAbility = 'Opposite Day';
+				case 'bibarel':
+					newAbility = 'No Ability'; //Due to Moody
+					break;
+				case 'durant':
+					newAbility = 'Swarm'; //prevent Truant
+					break;
+				case 'gardevoir':
+					newAbility = 'No Ability'; //Telepathy
+					break;
+				case 'musharna':
+					newAbility = 'No Ability'; //Telepathy
+					break;
+				case 'orbeetle':
+					newAbility = 'No Ability'; //Telepathy
+					break;
+				case 'rabsca':
+					newAbility = 'No Ability'; //Telepathy
+					break;
+				default:
+					newAbility = species.abilities?.H;
+					break;
+			}
+			if (newAbility) {
+				pokemon.setAbility(newAbility, null, true);
+				pokemon.baseAbility = this.toID(newAbility);
+				pokemon.m.abilityState = {};
+			}
+		},
+		rating: 4,
+		num: 43741713,
+	},
+	minievolot: { // evolotto testing ability
+		name: "Mini-Evolot",
+		onStart(pokemon) {
+			if (pokemon.species.id !== 'evolotto') return;
+			const formes = [
+				'Glalie', 'Glalie', 'Glalie', 'Glalie', 'Glalie',
+			];
+			const forme = this.sample(formes);
+			const species = this.dex.species.get(forme);
+			if (!species.exists) return;
+			const oldMaxHP = pokemon.maxhp;
+			const oldHP = pokemon.hp;
+			this.add('-activate', pokemon, 'ability: Evolot');
+			this.add('-formechange', pokemon, species.name);
+			pokemon.formeChange(species, this.effect, true);
+			if (pokemon.maxhp !== oldMaxHP) {
+				pokemon.hp = Math.max(
+					1,
+					Math.floor(oldHP * pokemon.maxhp / oldMaxHP)
+				);
+			}
+			let newAbility: string | undefined;
+			switch (species.id) {
+				case 'Glalie':
+					newAbility = 'Intimidate';
 					break;
 				default:
 					newAbility = species.abilities?.H;
