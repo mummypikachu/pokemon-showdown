@@ -98349,7 +98349,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			bulkup: ["9M"],
 			sludgebomb: ["9M"],
 			sludgewave: ["9M"],
-			toxicspikes: ["9M"],
 			poisonjab: ["9M"],
 			earthquake: ["9M"],
 			earthpower: ["9M"],
@@ -98467,6 +98466,9 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			psychocut: ["9M"],
 			aquacutter: ["9M"],
 			leafblade: ["9M"],
+			dragonclaw: ["9M"],
+			dragonrush: ["9M"],
+			hypervoice: ["9M"],
 		},
 	},
 	//capmons

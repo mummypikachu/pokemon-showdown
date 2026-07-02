@@ -7520,7 +7520,7 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 				'Boltund', 'Eldegoss', 'Steelix', 'Aggron', 'Orthworm', 'Cyclizar', 'Incineroar', 'Decidueye', 'Primarina', 'Kricketune',
 				'Palafin', 'Chandelure', 'Revavroom', 'Coalossal', 'Kecleon', 'Crabominable', 'Raichu', 'Raichu-Alola', 'Genesect', 'Poliwrath',
 				'Pincurchin', 'Escavalier', 'Accelgor', 'Throh', 'Sawk', 'Golurk', 'Seismitoad', 'Gogoat', 'Lilligant', 'Lilligant-Hisui',
-				'Spinda', 'Malamar', 'Corsola', 'Cursola', 'Glimmora', 'Bastiodon', 'Rampardos', 'Greedent', 'Druddigon', 'Haxorus',
+				'Spinda', 'Malamar', 'Corsola', 'Cursola', 'Garbodor', 'Bastiodon', 'Rampardos', 'Greedent', 'Druddigon', 'Haxorus',
 				'Altaria', 'Sharpedo', 'Ninjask', 'Masquerain', 'Walrein', 'Wailord', 'Liepard', 'Purugly', 'Persian', 'Perrserker',
 				'Persian-Alola', 'Exeggutor', 'Exeggutor-Alola', 'Sandslash', 'Sandslash-Alola', 'Beautifly', 'Dustox', 'Venomoth',
 				'Cloyster', 'Chansey', 'Rotom-Wash', 'Rotom', 'Rotom-Fan', 'Rotom-Frost', 'Rotom-Mow', 'Rotom-Heat', 'Trevenant',
