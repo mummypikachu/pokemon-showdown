@@ -7532,7 +7532,9 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 				'Palossand', 'Meganium', 'Typhlosion', 'Feraligatr', 'Typhlosion-Hisui', 'Banette', 'Beartic', 'Whimsicott', 'Mimikyu',
 				'Seaking', 'Bronzong', 'Flygon', 'Exploud', 'Pelipper', 'Torkoal', 'Hawlucha', 'Basculin', 'Orbeetle', 'Slowbro', 'Camerupt',
 				'Jellicent', 'Arboliva', 'Infernape', 'Empoleon', 'Torterra', 'Delcatty', 'Tsareena', 'Dodrio', 'Maractus', 'Sigilyph',
-				'Glalie', 'Bibarel', 'Darmanitan-Zen', 'Darmanitan-Galar-Zen', 'Toxtricity',
+				'Glalie', 'Bibarel', 'Darmanitan-Zen', 'Darmanitan-Galar-Zen', 'Toxtricity', 'Toxtricity-Low-Key', 'Starmie', 'Azumarill',
+				'Hitmonlee', 'Hitmonchan', 'Hitmontop', 'Thievul', 'Zorua', 'Zoroark', 'Zorua-Hisui', 'Zoroark-Hisui', 'Durant', 'Vanilluxe',
+				'Drapion', 'Carbink',
 			];
 			const forme = this.sample(formes);
 			const species = this.dex.species.get(forme);
@@ -7580,8 +7582,23 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 				case 'darmanitan': //separate Sheer Force and Zen Mode Darmanitan
 					newAbility = 'No Ability';
 					break;
-				case 'darmanitangalar':
+				case 'darmanitangalar': //see above
 					newAbility = 'No Ability';
+					break;
+				case 'kangaskhan':
+					newAbility = 'Scrappy';
+					break;
+				case 'azumarill':
+					newAbility = 'Huge Power';
+					break;
+				case 'starmie': //too fast for analytic
+					newAbility = 'Natural Cure';
+					break;
+				case 'skuntank': //keeneye
+					newAbility = 'Aftermath';
+					break;
+				case 'drapion': //keeneye
+					newAbility = 'Sniper';
 					break;
 				default:
 					newAbility = species.abilities?.H;
