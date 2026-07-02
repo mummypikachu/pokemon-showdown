@@ -7518,7 +7518,7 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 				'Arcanine', 'Arcanine-Hisui', 'Braviary', 'Braviary-Hisui', 'Wyrdeer', 'Pichu-Spiky-eared', 'Floette-Eternal', 'Indeedee',
 				'Indeedee-F', 'Meowstic', 'Meowstic-F', 'Huntail', 'Gorebyss', 'Stunfisk', 'Stunfisk-Galar', 'Bruxish', 'Cinccino', 'Zebstrika',
 				'Boltund', 'Eldegoss', 'Steelix', 'Aggron', 'Orthworm', 'Cyclizar', 'Incineroar', 'Decidueye', 'Primarina', 'Kricketune',
-				'Palafin', 'Chandelure', 'Revavroom', 'Coalossal', 'Kecleon', 'Crabominable', 'Raichu', 'Raichu-Alola', 'Genesect', 'Poliwrath',
+				'Palafin', 'Chandelure', 'Revavroom', 'Coalossal', 'Kecleon', 'Crabominable', 'Raichu', 'Raichu-Alola', 'Morpeko', 'Poliwrath',
 				'Pincurchin', 'Escavalier', 'Accelgor', 'Throh', 'Sawk', 'Golurk', 'Seismitoad', 'Gogoat', 'Lilligant', 'Lilligant-Hisui',
 				'Spinda', 'Malamar', 'Corsola', 'Cursola', 'Garbodor', 'Bastiodon', 'Rampardos', 'Greedent', 'Druddigon', 'Haxorus',
 				'Altaria', 'Sharpedo', 'Ninjask', 'Masquerain', 'Walrein', 'Wailord', 'Liepard', 'Purugly', 'Persian', 'Perrserker',
@@ -7534,7 +7534,8 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 				'Jellicent', 'Arboliva', 'Infernape', 'Empoleon', 'Torterra', 'Delcatty', 'Tsareena', 'Dodrio', 'Maractus', 'Sigilyph',
 				'Glalie', 'Bibarel', 'Darmanitan-Zen', 'Darmanitan-Galar-Zen', 'Toxtricity', 'Toxtricity-Low-Key', 'Starmie', 'Azumarill',
 				'Hitmonlee', 'Hitmonchan', 'Hitmontop', 'Thievul', 'Zorua', 'Zoroark', 'Zorua-Hisui', 'Zoroark-Hisui', 'Durant', 'Vanilluxe',
-				'Drapion', 'Carbink',
+				'Drapion', 'Carbink', 'Sableye', 'Mawile', 'Klinklang', 'Forretress', 'Sudowoodo', 'Ledian', 'Ariados', 'Runerigus', 'Smeargle',
+				'Vikavolt', 'Marowak', 'Marowak-Alola', 'Gengar', 'Mr. Mime', 'Mr. Rime', 'Mimikyu', 'Oricorio-Pom-Pom', 'Scolipede', 'Leavanny',
 			];
 			const forme = this.sample(formes);
 			const species = this.dex.species.get(forme);
@@ -7556,10 +7557,10 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 					newAbility = 'Contrary';
 					break;
 				case 'glalie':
-					newAbility = 'No Ability'; //Due to Moody
+					newAbility = 'Ice Body'; //Due to Moody
 					break;
 				case 'bibarel':
-					newAbility = 'No Ability'; //Due to Moody
+					newAbility = 'Unaware'; //Due to Moody
 					break;
 				case 'durant':
 					newAbility = 'Swarm'; //prevent Truant
@@ -7600,6 +7601,18 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 				case 'drapion': //keeneye
 					newAbility = 'Sniper';
 					break;
+				case 'audino': //klutz
+					newAbility = 'Regenerator';
+					break;
+				case 'eldegoss':
+					newAbility = 'Regenerator';
+					break;
+				case 'smeargle': //moody ban
+					newAbility = 'Technician';
+					break;
+				case 'mrrime':
+					newAbility = 'Screen Cleaner';
+					break;
 				default:
 					newAbility = species.abilities?.H;
 					break;
@@ -7618,7 +7631,7 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 		onStart(pokemon) {
 			if (pokemon.species.id !== 'evolotto') return;
 			const formes = [
-				'Ninetales-Alola', 'Ninetales-Alola', 'Ninetales-Alola', 'Ninetales-Alola', 'Ninetales-Alola',
+				'Magikarp',
 			];
 			const forme = this.sample(formes);
 			const species = this.dex.species.get(forme);
@@ -7636,8 +7649,8 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 			}
 			let newAbility: string | undefined;
 			switch (species.id) {
-				case 'ninetalesalola':
-					newAbility = 'Intimidate';
+				case 'magikarp':
+					newAbility = 'Truant';
 					break;
 				default:
 					newAbility = species.abilities?.H;
