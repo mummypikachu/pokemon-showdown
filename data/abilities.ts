@@ -7531,6 +7531,7 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 				'Glalie', 'Froslass', 'Porygon2', 'Blissey', 'Rabsca', 'Pawmot', 'Plusle', 'Pachirisu', 'Emolga', 'Dedenne', 'Togedemaru',
 				'Palossand', 'Meganium', 'Typhlosion', 'Feraligatr', 'Typhlosion-Hisui', 'Banette', 'Beartic', 'Whimsicott', 'Mimikyu',
 				'Seaking', 'Bronzong', 'Flygon', 'Exploud', 'Pelipper', 'Torkoal', 'Hawlucha', 'Basculin', 'Orbeetle', 'Bibarel', 'Camerupt',
+				 'Jellicent', 'Arboliva', 'Infernape', 'Empoleon', 'Torterra', 'Delcatty', 'Tsareena', 'Dodrio',
 			];
 			const forme = this.sample(formes);
 			const species = this.dex.species.get(forme);

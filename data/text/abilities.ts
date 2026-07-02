@@ -2725,6 +2725,7 @@ export const AbilitiesText: { [k: string]: AbilityText; } = {
 	},
 	evolot: {
 		name: "Evolot",
+		desc: "Permanently transforms into a random Pokémon on switch in, but keeps its own movepool. On transformation, the Pokémon Evolotto transforms into will have its Hidden Ability; However, if switched out, it will revert to the first ability it has. If Evolotto transforms into Ditto, Ditto's Imposter will not work.",
 		shortDesc: "Permanently transforms into a random Pokémon on switch in, but keeps its own movepool.",
 	},
 };
