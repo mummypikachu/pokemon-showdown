@@ -818,7 +818,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "UU",
 	},
 	tangela: {
-		tier: "LC",
+		tier: "LC Ubers",
 		natDexTier: "LC",
 	},
 	tangrowth: {
@@ -1350,8 +1350,8 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "RU",
 	},
 	yanma: {
-		tier: "LC",
-		natDexTier: "LC",
+		tier: "LC Ubers",
+		natDexTier: "NFE",
 	},
 	yanmega: {
 		tier: "UU",
@@ -1427,7 +1427,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "RU",
 	},
 	gligar: {
-		tier: "LC",
+		tier: "LC Ubers",
 		natDexTier: "LC",
 	},
 	gliscor: {
@@ -4227,7 +4227,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "RU",
 	},
 	cutiefly: {
-		tier: "LC",
+		tier: "LC Ubers",
 		natDexTier: "LC",
 	},
 	ribombee: {
