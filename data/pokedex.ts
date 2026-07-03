@@ -1103,7 +1103,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData; } = {
 		forme: "Alola",
 		types: ["Ice", "Fairy"],
 		genderRatio: { M: 0.25, F: 0.75 },
-		baseStats: { hp: 83, atk: 50, def: 95, spa: 106, spd: 92, spe: 79 },
+		baseStats: { hp: 73, atk: 67, def: 75, spa: 81, spd: 100, spe: 109 },
 		abilities: { 0: "Magic Guard", H: "Snow Warning" },
 		heightm: 1.1,
 		weightkg: 19.9,
