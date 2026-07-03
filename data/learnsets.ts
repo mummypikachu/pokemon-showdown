@@ -31461,7 +31461,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			{ generation: 7, level: 10 },
 		],
 	},
-	exciroctillery: {
+	octilleryexcir: {
 		learnset: {
 			terablast: ["9M"],
 			assurance: ["9M"],

@@ -1541,6 +1541,11 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DOU",
 		natDexTier: "RU",
 	},
+	octilleryexcir: {
+		tier: "UU",
+		doublesTier: "DOU",
+		natDexTier: "RU",
+	},
 	delibird: {
 		tier: "PU",
 		doublesTier: "(DUU)",
