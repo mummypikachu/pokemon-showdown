@@ -4730,7 +4730,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData; } = {
 		name: "Octillery",
 		types: ["Water"],
 		baseStats: { hp: 85, atk: 105, def: 85, spa: 105, spd: 85, spe: 45 },
-		abilities: { 0: "Suction Cups", 1: "Regenerator", H: "Mega Launcher" },
+		abilities: { 0: "Suction Cups", 1: "Regenerator", H: "Moody" },
 		heightm: 0.9,
 		weightkg: 28.5,
 		color: "Red",
