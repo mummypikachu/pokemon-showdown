@@ -404,8 +404,8 @@ export const AbilitiesText: { [k: string]: AbilityText; } = {
 		desc: "On switch-in, the weather becomes Desolate Land, which includes all the effects of Sunny Day and prevents damaging Water-type moves from executing. This weather remains in effect until this Ability is no longer active for any Pokemon, or the weather is changed by the Delta Stream or Primordial Sea Abilities.",
 		shortDesc: "On switch-in, extremely harsh sunlight begins until this Ability is not active in battle.",
 	},
-	desolation: {
-		name: "Desolation",
+	charringsurge: {
+		name: "Charring Surge",
 		shortDesc: "On switch-in, this Pokemon summons Charred Terrain.",
 	},
 	detonator: {

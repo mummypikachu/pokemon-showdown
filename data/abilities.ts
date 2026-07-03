@@ -1380,11 +1380,11 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 		rating: 4,
 		num: 226,
 	},
-	desolation: {
+	charringsurge: {
 		onStart(source) {
 			this.field.setTerrain('charredterrain');
 		},
-		name: "Desolation",
+		name: "Charring Surge",
 		rating: 4,
 		num: 226,
 	},
