@@ -7536,6 +7536,7 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 				'Hitmonlee', 'Hitmonchan', 'Hitmontop', 'Thievul', 'Zorua', 'Zoroark', 'Zorua-Hisui', 'Zoroark-Hisui', 'Durant', 'Vanilluxe',
 				'Drapion', 'Carbink', 'Sableye', 'Mawile', 'Klinklang', 'Forretress', 'Sudowoodo', 'Ledian', 'Ariados', 'Runerigus', 'Smeargle',
 				'Vikavolt', 'Marowak', 'Marowak-Alola', 'Gengar', 'Mr. Mime', 'Mr. Rime', 'Mimikyu', 'Oricorio-Pom-Pom', 'Scolipede', 'Leavanny',
+				'Chesnaught', 'Greninja', 'Delphox', 'Dubwool', 'Manectric', 'Rapidash', 'Rapidash-Galar', 'Quagsire', 'Clodsire', 'Tatsugiri',
 			];
 			const forme = this.sample(formes);
 			const species = this.dex.species.get(forme);
@@ -7612,6 +7613,9 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 					break;
 				case 'mrrime':
 					newAbility = 'Screen Cleaner';
+					break;
+				case 'rapidashgalar':
+					newAbility = 'Pastel Veil';
 					break;
 				default:
 					newAbility = species.abilities?.H;

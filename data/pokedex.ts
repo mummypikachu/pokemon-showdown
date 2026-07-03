@@ -21225,7 +21225,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData; } = {
 		name: "Possaho",
 		types: ["Electric", "Dark"],
 		baseStats: { hp: 55, atk: 55, def: 75, spa: 94, spd: 71, spe: 93 },
-		abilities: { 0: "Dynamo" },
+		abilities: { 0: "Dynamo" , H: "Charge Expulsion"},
 		heightm: 0.4,
 		weightkg: 5.6,
 		color: "Black",
