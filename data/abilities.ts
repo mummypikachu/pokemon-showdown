@@ -5243,6 +5243,9 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 				return this.chainModify(2);
 			}
 		},
+		onImmunity(type, pokemon) {
+			if (type === 'hail') return false;
+		},
 		name: "Slush Rush",
 		rating: 3,
 		num: 202,
@@ -7619,45 +7622,6 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 					break;
 				case 'rapidashgalar':
 					newAbility = 'Pastel Veil';
-					break;
-				default:
-					newAbility = species.abilities?.H;
-					break;
-			}
-			if (newAbility) {
-				pokemon.setAbility(newAbility, null, true);
-				pokemon.baseAbility = this.toID(newAbility);
-				pokemon.m.abilityState = {};
-			}
-		},
-		rating: 4,
-		num: 43741713,
-	},
-	minievolot: { // evolotto testing ability
-		name: "Mini-Evolot",
-		onStart(pokemon) {
-			if (pokemon.species.id !== 'evolotto') return;
-			const formes = [
-				'Magikarp',
-			];
-			const forme = this.sample(formes);
-			const species = this.dex.species.get(forme);
-			if (!species.exists) return;
-			const oldMaxHP = pokemon.maxhp;
-			const oldHP = pokemon.hp;
-			this.add('-activate', pokemon, 'ability: Evolot');
-			this.add('-formechange', pokemon, species.name);
-			pokemon.formeChange(species, this.effect, true);
-			if (pokemon.maxhp !== oldMaxHP) {
-				pokemon.hp = Math.max(
-					1,
-					Math.floor(oldHP * pokemon.maxhp / oldMaxHP)
-				);
-			}
-			let newAbility: string | undefined;
-			switch (species.id) {
-				case 'magikarp':
-					newAbility = 'Truant';
 					break;
 				default:
 					newAbility = species.abilities?.H;

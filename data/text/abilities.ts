@@ -2612,7 +2612,7 @@ export const AbilitiesText: { [k: string]: AbilityText; } = {
 	lordofthetundra: { //Noble Avalugg. do not hand out to another pokemon.
 		name: "Lord of the Tundra",
 		desc: "If this Pokemon is at full HP, it survives one hit with at least 1 HP. OHKO moves fail when used against this Pokemon. Biting moves have their power boosted by 1.5.",
-		shortDesc: "Survives any attack from full HP, immune to OHKO. Biting moves: 1.5x power.",
+		shortDesc: "Survives any attack from full HP, OHKO-immune. Biting moves: 1.5x power.",
 	},
 	brittlecoral: { // corsola. do not hand out to another pokemon. Reskin this ability at best if you REALLY need it.
 		name: "Brittle Coral",
@@ -2727,11 +2727,6 @@ export const AbilitiesText: { [k: string]: AbilityText; } = {
 		name: "Evolot",
 		desc: "Permanently transforms into a random Pokémon on switch in, but keeps its own movepool. On transformation, the Pokémon Evolotto transforms into will have its Hidden Ability; However, if switched out, it will revert to the first ability it has. If Evolotto transforms into Ditto, Ditto's Imposter will not work.",
 		shortDesc: "Permanently transforms into a random Pokémon on switch in, but keeps its own movepool.",
-	},
-	minievolot: {
-		name: "Mini-Evolot",
-		desc: "Permanently transforms into a random Pokémon on switch in, but keeps its own movepool. On transformation, the Pokémon Evolotto transforms into will have its Hidden Ability; However, if switched out, it will revert to the first ability it has. If Evolotto transforms into Ditto, Ditto's Imposter will not work.",
-		shortDesc: "Permanently transforms into a unevolved Pokémon on switch in. Keeps its own movepool.",
 	},
 };
 
