@@ -8349,12 +8349,23 @@ export const Items: { [itemid: string]: ItemData; } = {
 		name: "Zygardite",
 		spritenum: 627,
 		megaStone: "Zygarde-Mega",
-		megaEvolves: "Zygarde", //find out a way to make zygarde-complete ONLY mega evolve
+		megaEvolves: "Zygarde",
 		itemUser: ["Zygarde", "Zygarde-10%", "Zygarde-Complete"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
+		onUpdate(pokemon) {
+			if (
+				pokemon.species.id === 'zygardecomplete' &&
+				!pokemon.canMegaEvo &&
+				!pokemon.transformed
+			) {
+				pokemon.canMegaEvo = 'Zygarde-Mega';
+				this.actions.runMegaEvo(pokemon);
+			}
+		},
+
 		num: 2584,
 		gen: 9,
 	},
