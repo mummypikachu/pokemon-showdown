@@ -4197,6 +4197,12 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 			pokemon.hp = newMaxHP - (pokemon.maxhp - pokemon.hp);
 			pokemon.maxhp = newMaxHP;
 			this.add('-heal', pokemon, pokemon.getHealth, '[silent]');
+			//mega zygarde
+			pokemon.formeChange('Zygarde-Complete', this.effect, true);
+			if (pokemon.item === 'zygardite') {
+				pokemon.canMegaEvo = 'Zygarde-Mega';
+				this.actions.runMegaEvo(pokemon);
+			}
 		},
 		isPermanent: true,
 		name: "Power Construct",

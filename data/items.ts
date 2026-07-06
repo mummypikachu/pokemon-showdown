@@ -8348,24 +8348,10 @@ export const Items: { [itemid: string]: ItemData; } = {
 	zygardite: {
 		name: "Zygardite",
 		spritenum: 627,
-		megaStone: "Zygarde-Mega",
-		megaEvolves: "Zygarde",
 		itemUser: ["Zygarde", "Zygarde-10%", "Zygarde-Complete"],
-		onTakeItem(item, source) {
-			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
-			return true;
+		onTakeItem() {
+			return false;
 		},
-		onUpdate(pokemon) {
-			if (
-				pokemon.species.id === 'zygardecomplete' &&
-				!pokemon.canMegaEvo &&
-				!pokemon.transformed
-			) {
-				pokemon.canMegaEvo = 'Zygarde-Mega';
-				this.actions.runMegaEvo(pokemon);
-			}
-		},
-
 		num: 2584,
 		gen: 9,
 	},
