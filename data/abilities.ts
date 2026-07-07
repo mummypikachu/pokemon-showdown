@@ -7514,7 +7514,7 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 		name: "Evolot",
 		onStart(pokemon) {
 			if (pokemon.species.id !== 'evolotto') return;
-			const formes = ['Serperior', 'Emboar', 'Samurott', 'Venusaur', 'Decidueye', 'Mismagius', 'Machamp', 'Kingler', 'Sunflora',
+			const formes = ['Serperior', 'Emboar', 'Samurott', 'Victreebel', 'Brambleghast', 'Mismagius', 'Machamp', 'Kingler', 'Sunflora',
 				'Qwilfish', 'Octillery', 'Swellow', 'Heliolisk', 'Politoed', 'Ninetales', 'Ninetales-Alola', 'Gigalith', 'Swoobat', 'Electivire',
 				'Jynx', 'Magmortar', 'Rhyperior', 'Unfezant', 'Diggersby', 'Blastoise', 'Charizard', 'Venusaur', 'Golem-Alola', 'Golem',
 				'Oricorio', 'Oricorio-Baile', 'Oricorio-Sensu', 'Mightyena', 'Obstagoon', 'Linoone', 'Donphan', 'Muk', 'Muk-Alola', 'Ludicolo',
@@ -7546,6 +7546,7 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 				'Drapion', 'Carbink', 'Sableye', 'Mawile', 'Klinklang', 'Forretress', 'Sudowoodo', 'Ledian', 'Ariados', 'Runerigus', 'Smeargle',
 				'Vikavolt', 'Marowak', 'Marowak-Alola', 'Gengar', 'Mr. Mime', 'Mr. Rime', 'Mimikyu', 'Oricorio-Pom-Pom', 'Scolipede', 'Leavanny',
 				'Chesnaught', 'Greninja', 'Delphox', 'Dubwool', 'Manectric', 'Rapidash', 'Rapidash-Galar', 'Quagsire', 'Clodsire', 'Tatsugiri',
+				'Mantine', 'Skeledirge', 'Quaquaval', 'Meowscarada',
 			];
 			const forme = this.sample(formes);
 			const species = this.dex.species.get(forme);
@@ -7628,6 +7629,12 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 					break;
 				case 'rapidashgalar':
 					newAbility = 'Pastel Veil';
+					break;
+				case 'weezing': //unity power
+					newAbility = 'Stench';
+					break;
+				case 'mantine': //unitypower
+					newAbility = 'No Ability';
 					break;
 				default:
 					newAbility = species.abilities?.H;
