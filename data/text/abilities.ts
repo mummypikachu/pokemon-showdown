@@ -524,7 +524,7 @@ export const AbilitiesText: { [k: string]: AbilityText; } = {
 	emergencyexit: {
 		name: "Emergency Exit",
 		desc: "At the end of the turn, if this Pokemon has less than 1/2 of its maximum HP, it switches out to a chosen ally. When it switches back it gains a +2 Attack when switching back.",
-		shortDesc: "If this Pokemon is below 1/2 HP at the end of the turn, it switches out. When it comes back it gets a +2 attack.",
+		shortDesc: "If this Pokemon is below 1/2 HP at turn's end, it switches out. +1 Atk on switch-in after.",
 	},
 	fairyaura: {
 		name: "Fairy Aura",

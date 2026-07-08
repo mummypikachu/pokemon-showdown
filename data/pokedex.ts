@@ -20095,7 +20095,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData; } = {
 		// gen: 10,
 	},
 	unknownevobrowt: {
-		num: 1026,
+		num: 1027,
 		name: "Unknown Evo-Browt",
 		types: ["Grass"],
 		baseStats: { hp: 1, atk: 1, def: 1, spa: 1, spd: 1, spe: 1 },

@@ -56913,6 +56913,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9L36", "9M", "9L36", "9M", "6L36", "5M", "5L36"],
 			toxic: ["9M", "9M", "5M"],
 			xscissor: ["9M", "9M", "9M", "5M"],
+			clawslash: ["9M"],
 		},
 	},
 	excadrill: {
@@ -56983,6 +56984,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M", "9L40", "9M", "9L42", "9M", "6L42", "5M", "5L42"],
 			toxic: ["9M", "9M", "5M"],
 			xscissor: ["9M", "9M", "9M", "5M"],
+			clawslash: ["9M"],
 		},
 		encounters: [
 			{ generation: 6, level: 30 },
@@ -64943,6 +64945,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			thunderpunch: ["9M", "9T", "6T", "5T"],
 			torment: ["9M", "6M", "5M"],
 			toxic: ["9M", "6M", "5M"],
+			clawslash: ["9M"],
 		},
 		eventData: [
 			{ generation: 5, level: 1, shiny: true, moves: ["leer", "scratch"], pokeball: "pokeball" },
@@ -78259,6 +78262,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			waterfall: ["9M", "9M"],
 			waterpulse: ["9T"],
 			xscissor: ["9M", "9M"],
+			clawslash: ["9M"],
 		},
 	},
 	sandygast: {

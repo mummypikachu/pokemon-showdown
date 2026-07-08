@@ -1453,9 +1453,9 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 		onSwitchIn(pokemon) {
 			// Check if the switch-in is due to Emergency Exit activation
 			if (pokemon.switchFlag === true && pokemon.hasAbility('emergencyexit')) {
-				// Apply a +2 Attack boost to the switching-in Pokémon
-				this.boost({ atk: 2 }, pokemon);
-				this.add('-message', `${pokemon.name} is buffed and ready to attack!`);
+				// Apply a +1 Attack boost to the switching-in Pokémon
+				this.boost({ atk: 1 }, pokemon);
+				this.add('-message', `${pokemon.name} got stronger during the retreat!`);
 			}
 		},
 		name: "Emergency Exit",
