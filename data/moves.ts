@@ -24067,4 +24067,23 @@ export const Moves: { [moveid: string]: MoveData; } = {
 		type: "Psychic",
 		contestType: "Cool",
 	},
+	cannonblast: {
+		num: 445177347,
+		accuracy: 100,
+		basePower: 90,
+		category: "Special",
+		name: "Cannon Blast",
+		pp: 15,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, pulse: 1 },
+		onTryHit(pokemon) {
+			// will shatter screens through sub, before you hit
+			pokemon.side.removeSideCondition('reflect');
+			pokemon.side.removeSideCondition('lightscreen');
+			pokemon.side.removeSideCondition('auroraveil');
+		},
+		secondary: null,
+		target: "normal",
+		type: "Water",
+	},
 };

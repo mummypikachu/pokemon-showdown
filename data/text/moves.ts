@@ -7921,4 +7921,15 @@ export const MovesText: { [k: string]: MoveText; } = {
 		desc: "This attack charges on the first turn and executes on the second. Power is halved if the weather is Desolate Land or Sunny Day. If the user is holding a Power Herb or the terrain is Psychic Terrain, the move completes in one turn. If the user is not grounded, the move will have to charge.",
 		shortDesc: "Charges. Hits turn 2. No charge in Psychic Terrain.",
 	},
+	cannonblast: {
+		name: "Cannon Blast",
+		desc: "If this attack does not miss, the effects of Reflect, Light Screen, and Aurora Veil end for the target's side of the field before damage is calculated.",
+		shortDesc: "Destroys screens, unless the target is immune.",
+		activate: "  [POKEMON] shattered [TEAM]'s protections!",
+	},
+	seedstorm: {
+		name: "Seed Storm",
+		desc: "Hits 1 to 3 times. Has a 10% chance to flinch on each hit.",
+		shortDesc: "Hits 1-3 times, has a 10% chance to flinch each hit.",
+	},
 };
