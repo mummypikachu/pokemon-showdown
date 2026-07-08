@@ -31452,6 +31452,10 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			whirlpool: ["9M", "9M", "4M"],
 			wrap: ["9L1"],
 			wringout: ["9L28", "6L28", "5L36", "4L36"],
+			cannonblast: ["9M"],
+			shadowball: ["9M"],
+			darkpulse: ["9M"],
+			focusblast: ["9M"],
 		},
 		eventData: [
 			{ generation: 4, level: 50, gender: "F", nature: "Serious", abilities: ["suctioncups"], moves: ["octazooka", "icebeam", "signalbeam", "hyperbeam"], pokeball: "cherishball" },
