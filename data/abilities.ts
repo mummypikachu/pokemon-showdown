@@ -7574,7 +7574,7 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 					newAbility = 'Unaware'; //Due to Moody
 					break;
 				case 'Octillery':
-					newAbility = 'Regenerator'; //Due to Moody
+					newAbility = 'Regenerator'; 
 					break;
 				case 'durant':
 					newAbility = 'Swarm'; //prevent Truant

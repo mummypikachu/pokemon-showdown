@@ -31456,6 +31456,9 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			shadowball: ["9M"],
 			darkpulse: ["9M"],
 			focusblast: ["9M"],
+			zapcannon: ["9M"],
+			weatherball: ["9M"],
+			octolock: ["9M"],
 		},
 		eventData: [
 			{ generation: 4, level: 50, gender: "F", nature: "Serious", abilities: ["suctioncups"], moves: ["octazooka", "icebeam", "signalbeam", "hyperbeam"], pokeball: "cherishball" },
@@ -31555,7 +31558,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			autotomize: ["9M"],
 			metalburst: ["9M"],
 			mirrorshot: ["9M"],
-			aurasphere: ["9M"],
 			cannonblast: ["9M"],
 			steelbeam: ["9M"],
 			mudbomb: ["9M"],
