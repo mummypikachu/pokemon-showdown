@@ -2725,8 +2725,13 @@ export const AbilitiesText: { [k: string]: AbilityText; } = {
 	},
 	evolot: {
 		name: "Evolot",
-		desc: "Permanently transforms into a random Pokémon on switch in, but keeps its own movepool. On transformation, the Pokémon Evolotto transforms into will have its Hidden Ability; However, if switched out, it will revert to the first ability it has. If Evolotto transforms into Ditto, Ditto's Imposter will not work.",
-		shortDesc: "Permanently transforms into a random Pokémon on switch in, but keeps its own movepool.",
+		desc: "Permanently transforms into a random Pokémon on switch in, but keeps its own movepool, nature, HP and IV/EV spreads. On transformation, the Pokémon Evolotto transforms into will have its Hidden Ability; However, if switched out, it will revert to the first ability it has. If Evolotto transforms into Ditto, Ditto's Imposter will not work.",
+		shortDesc: "Forever transforms into a random Pokémon on switchin, keeps HP+movepool+IV/EV spread.",
+	},
+	psychiceye: {
+		name: "Psychic Eye",
+		desc: "This Pokemon can hit Dark types with Psychic-type moves. This Pokemon is immune to the effect of the Strong Spirit Ability.",
+		shortDesc: "Psychic moves hit Dark. Immune to Strong Spirit.",
 	},
 };
 

@@ -7510,6 +7510,24 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 		},
 		num: 444424424,
 	},
+	psychiceye: {
+		onModifyMovePriority: -5,
+		onModifyMove(move) {
+			if (!move.ignoreImmunity) move.ignoreImmunity = {};
+			if (move.ignoreImmunity !== true) {
+				move.ignoreImmunity['Psychic'] = true;
+			}
+		},
+		onTryBoost(boost, target, source, effect) {
+			if (effect.name === 'Strong Spirit' && boost.spa) {
+				delete boost.atk;
+				this.add('-fail', target, 'unboost', 'Sp. Atk', '[from] ability: Psychic Eye', '[of] ' + target);
+			}
+		},
+		name: "Psychic Eye",
+		rating: 3,
+		num: 78358753,
+	},
 	evolot: { // evolotto ability.
 		name: "Evolot",
 		onStart(pokemon) {
