@@ -21420,6 +21420,28 @@ export const Pokedex: { [speciesid: string]: SpeciesData; } = {
 		color: "White",
 		eggGroups: ["Unknown"],
 	},
+	/*heartle: {
+		num: 1593,
+		name: "Heartle",
+		types: ["Electric"],
+		baseStats: { hp: 105, atk: 40, def: 60, spa: 75, spd: 95, spe: 80 },
+		abilities: { 0: "Plus", H: "Volt Absorb" },
+		heightm: 0.4,
+		weightkg: 4.2,
+		color: "Pink",
+		eggGroups: ["Fairy"],
+	},
+	paddlun: {
+		num: 1594,
+		name: "Paddlun",
+		types: ["Electric"],
+		baseStats: { hp: 105, atk: 75, def: 95, spa: 40, spd: 60, spe: 80 },
+		abilities: { 0: "Minus", H: "Motor Drive" },
+		heightm: 0.4,
+		weightkg: 4.2,
+		color: "Red",
+		eggGroups: ["Fairy"],
+	}, */
 	//cap
 	syclar: {
 		num: -1,
