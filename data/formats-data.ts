@@ -6240,6 +6240,12 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	evolotto: {
 		tier: "OU",
 	},
+	heartle: {
+		tier: "PU",
+	},
+	paddlun: {
+		tier: "PU",
+	},
 	// Start CAP/Missingno, don't place new mons under this
 	missingno: {
 		isNonstandard: "Custom",

@@ -21420,7 +21420,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData; } = {
 		color: "White",
 		eggGroups: ["Unknown"],
 	},
-	/*heartle: {
+	heartle: {
 		num: 1593,
 		name: "Heartle",
 		types: ["Electric"],
@@ -21441,7 +21441,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData; } = {
 		weightkg: 4.2,
 		color: "Red",
 		eggGroups: ["Fairy"],
-	}, */
+	},
 	//cap
 	syclar: {
 		num: -1,
