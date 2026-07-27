@@ -2694,11 +2694,10 @@ export const Rulesets: {[k: string]: FormatData} = {
 		effectType: 'ValidatorRule',
 		name: "Form Mega Clause",
 		desc: `Bans Alternate Formes from holding Mega Stones belonging to their Base species.`,
-		//Clause exists to have second forms (such as Raichu-Alola, Zygarde-10% and Slowbro-Galar) not Mega evolve. Manually updated.
+		//Clause exists to have secondary/regional forms (such as Ursaluna-bm, Raichu-Alola and Slowbro-Galar) not be able to Mega evolve outside
+		//of how they are normally tiered, since the tier checks are bypassed by the alternate forms. For example, a Raichu-Alola in PU can become a
+		//Mega Raichu X in a PU battle, even if Mega Raichu X would be ranked in Ubers. Manually updated for alternate forms.
 		onValidateSet(set) {
-			if (set.species === 'Zygarde-10%' && set.item === 'Zygardite') {
-				return ["Zygarde-10% cannot hold Zygardite."];
-			}
 			if (set.species === 'Raichu-Alola' && set.item === 'Raichunite X') {
 				return ["Raichu-Alola cannot hold Raichunite X."];
 			}

@@ -1753,7 +1753,7 @@ export const ItemsText: { [k: string]: ItemText; } = {
 	},
 	zygardite: {
 		name: "Zygardite",
-		desc: "If held by Zygarde-Complete, this item will Mega Evolve it in battle.",
+		desc: "Mega Evolves Zygarde automatically when Power Construct activates.",
 	},
 	starminite: {
 		name: "Starminite",
