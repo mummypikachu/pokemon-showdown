@@ -90,7 +90,7 @@ export const Formats: FormatList = [
 		name: "[Gen 9] Dynamaxless OU",
 
 		mod: 'gen9',
-		ruleset: ['[Gen 9] OU', 'Dynamax Clause'],
+		ruleset: ['Standard', '+CAP', 'Form Mega Clause', 'Dynamax Clause'],
 		banlist: ['Uber', 'AG', 'Moody', 'Sand Veil', 'Snow Cloak', 'King\'s Rock', 'Baton Pass', 'Gorilla Tactics', 'Last Respects', 'Shedinja + Air Balloon', 'Zygarde + Power Construct'],
 	},
 	{
