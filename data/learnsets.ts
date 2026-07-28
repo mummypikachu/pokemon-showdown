@@ -93554,7 +93554,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 	},
 	terapagos: {
 		learnset: {
-			terablast: ["9M"],
 			ancientpower: ["9L10"],
 			aurasphere: ["9M"],
 			bodypress: ["9M"],
@@ -94627,6 +94626,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			rocktomb: ["9M", "9L20", "9M", "6L20", "5L20", "4L20"],
 			protect: ["9M", "9L1", "9M", "6L1", "5L1", "5D", "4L1"],
 			zenheadbutt: ["9T", "6T", "5T"],
+			terablast: ["9M"],
 		},
 	},
 	boultang: {
@@ -94794,6 +94794,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			harden: ["9M"],
 			tackle: ["9L1", "6L10", "5L10", "4L10"],
 			rollout: ["9L10"],
+			terablast: ["9M"],
 		},
 	},
 	lustremoth: {
@@ -95248,6 +95249,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			iceball: ["9M"],
 			defensecurl: ["9M"],
 			snowscape: ["9M"],
+			terablast: ["9M"],
 		},
 	},
 	bunnicy: {
@@ -96457,6 +96459,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			swordsdance: ["9M"],
 			solarbeam: ["9M"],
 			weatherball: ["9M"],
+			terablast: ["9M"],
 		},
 	},
 	brawloom: {
@@ -98490,6 +98493,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			dragonclaw: ["9M"],
 			dragonrush: ["9M"],
 			hypervoice: ["9M"],
+			terablast: ["9M"],
 		},
 	},
 	heartle: {
