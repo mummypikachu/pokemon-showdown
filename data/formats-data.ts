@@ -1386,7 +1386,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "RU",
 	},
 	mismagiusmega: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
@@ -2556,7 +2556,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "LC",
 	},
 	floatzel: {
-		tier: "OU",
+		tier: "NUBL",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
@@ -2591,7 +2591,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "LC",
 	},
 	lopunny: {
-		tier: "UU",
+		tier: "NU",
 		natDexTier: "RU",
 	},
 	lopunnymega: {
@@ -3891,11 +3891,11 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "LC",
 	},
 	malamar: {
-		tier: "RU",
+		tier: "NUBL",
 		natDexTier: "RU",
 	},
 	malamarmega: {
-		tier: "OU",
+		tier: "UU",
 		natDexTier: "OU",
 	},
 	binacle: {
@@ -4510,7 +4510,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "RU",
 	},
 	drampamega: {
-		tier: "OU",
+		tier: "RUBL",
 		natDexTier: "OU",
 	},
 	dhelmise: {
@@ -5149,7 +5149,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DOU",
 	},
 	calyrex: {
-		tier: "UU",
+		tier: "PU",
 		natDexTier: "RU",
 		doublesTier: "DOU",
 	},
@@ -5668,7 +5668,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "OU",
 	},
 	ogerpon: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
@@ -5678,12 +5678,12 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "OU",
 	},
 	ogerponhearthflame: {
-		tier: "OU",
+		tier: "Uber",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
 	ogerponcornerstone: {
-		tier: "OU",
+		tier: "UUBL",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
@@ -6226,7 +6226,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "RU",
 	},
 	kricketude: {
-		tier: "(OU)",
+		tier: "RUBL",
 	},
 	panspark: {
 		tier: "LC",
@@ -6238,7 +6238,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NU",
 	},
 	evolotto: {
-		tier: "OU",
+		tier: "(OU)",
 	},
 	heartle: {
 		tier: "PU",
