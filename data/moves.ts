@@ -19885,6 +19885,11 @@ export const Moves: { [moveid: string]: MoveData; } = {
 			onEntryHazard(pokemon) {
 				if (!pokemon.isGrounded() || pokemon.hasItem('heavydutyboots')) return;
 				this.add('-activate', pokemon, 'move: Sticky Web');
+				if (pokemon.hasAbility('webwalker')) {
+					this.add('-activate', pokemon, 'ability: Web Walker');
+					this.boost({ spe: 1 }, pokemon, this.effectState.source, this.dex.getActiveMove('stickyweb'));
+					return;
+				}
 				this.boost({ spe: -1 }, pokemon, this.effectState.source, this.dex.getActiveMove('stickyweb'));
 			},
 		},

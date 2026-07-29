@@ -7592,7 +7592,7 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 					newAbility = 'Unaware'; //Due to Moody
 					break;
 				case 'Octillery':
-					newAbility = 'Regenerator'; 
+					newAbility = 'Regenerator';
 					break;
 				case 'durant':
 					newAbility = 'Swarm'; //prevent Truant
@@ -7666,5 +7666,11 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 		},
 		rating: 4,
 		num: 43741713,
+	},
+	webwalker: {
+		name: "Web Walker",
+		//ability effect coded into Sticky Web itself
+		rating: 0,
+		num: 118,
 	},
 };

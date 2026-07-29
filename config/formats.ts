@@ -1272,14 +1272,13 @@ export const Formats: FormatList = [
 			'Dynamax Clause',
 			'Terastal Clause',
 			'Z-Move Clause',
-			'!Species Clause'
+			'!Species Clause',
 		],
 
 		onValidateSet(set) {
 			const allowedPokemon = [
 				'Evolotto',
 			];
-
 			const species = this.dex.species.get(set.species);
 			if (!allowedPokemon.includes(species.name)) {
 				return [`${species.name} is not an Evolotto.`];
