@@ -1184,7 +1184,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "NFE",
 	},
 	meganium: {
-		tier: "RU",
+		tier: "NU",
 		doublesTier: "DOU",
 		natDexTier: "RU",
 	},
@@ -1233,7 +1233,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "LC",
 	},
 	furret: {
-		tier: "RU",
+		tier: "NU",
 		natDexTier: "RU",
 	},
 	hoothoot: {
@@ -1241,7 +1241,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "LC",
 	},
 	noctowl: {
-		tier: "UU",
+		tier: "NU",
 		natDexTier: "RU",
 	},
 	ledyba: {
@@ -2548,7 +2548,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "RU",
 	},
 	pachirisu: {
-		tier: "RU",
+		tier: "PU",
 		doublesTier: "DUU",
 		natDexTier: "RU",
 	},
@@ -3875,7 +3875,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "LC",
 	},
 	aromatisse: {
-		tier: "RU",
+		tier: "NU",
 		natDexTier: "RU",
 	},
 	swirlix: {
@@ -4766,7 +4766,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "LC",
 	},
 	thievul: {
-		tier: "RU",
+		tier: "NU",
 		natDexTier: "RU",
 	},
 	gossifleur: {
@@ -4774,7 +4774,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "LC",
 	},
 	eldegoss: {
-		tier: "RU",
+		tier: "NU",
 		natDexTier: "RU",
 	},
 	wooloo: {
@@ -5418,7 +5418,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "LC",
 	},
 	naclstack: {
-		tier: "RU",
+		tier: "NFE",
 		doublesTier: "NFE",
 		natDexTier: "NFE",
 	},
@@ -5672,20 +5672,28 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
+	ogerpontera: {
+	},
 	ogerponwellspring: {
 		tier: "OU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
+	},
+	ogerponwellspringtera: {
 	},
 	ogerponhearthflame: {
 		tier: "Uber",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
+	ogerponhearthflametera: {
+	},
 	ogerponcornerstone: {
 		tier: "UUBL",
 		doublesTier: "DOU",
 		natDexTier: "OU",
+	},
+	ogerponcornerstonetera: {
 	},
 	archaludon: {
 		tier: "OU",
@@ -6205,19 +6213,19 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NU",
 	},
 	porygon3: {
-		tier: "(OU)",
+		tier: "UU",
 	},
 	hanmiror: {
 		tier: "LC",
 	},
 	mireflekt: {
-		tier: "RU",
+		tier: "NU",
 	},
 	psyppy: {
 		tier: "LC",
 	},
 	psychound: {
-		tier: "UU",
+		tier: "NU",
 	},
 	caizhi: {
 		tier: "UU",
