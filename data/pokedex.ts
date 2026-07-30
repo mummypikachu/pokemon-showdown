@@ -21272,7 +21272,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData; } = {
 		name: "Porygon3",
 		types: ["Normal"],
 		gender: "N",
-		baseStats: { hp: 85, atk: 71, def: 110, spa: 135, spd: 110, spe: 64 },
+		baseStats: { hp: 85, atk: 61, def: 110, spa: 125, spd: 110, spe: 64 },
 		abilities: { 0: "Adaptability", 1: "Download", H: "Analytic" },
 		heightm: 0.9,
 		weightkg: 34,

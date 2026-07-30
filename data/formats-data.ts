@@ -1052,7 +1052,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		newDexTier: "OU",
 	},
 	aerileon: {
-		tier: "(OU)",
+		tier: "UUBL",
 		doublesTier: "(DOU)",
 		newDexTier: "Uber",
 	},
@@ -6240,7 +6240,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "RU",
 	},
 	kricketude: {
-		tier: "RUBL",
+		tier: "NUBL",
 	},
 	panspark: {
 		tier: "LC",
