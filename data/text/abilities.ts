@@ -2733,6 +2733,11 @@ export const AbilitiesText: { [k: string]: AbilityText; } = {
 		desc: "This Pokemon can hit Dark types with Psychic-type moves. This Pokemon is immune to the effect of the Strong Spirit Ability.",
 		shortDesc: "Psychic moves hit Dark. Immune to Strong Spirit.",
 	},
+	webwalker: {
+		name: "Web Walker",
+		desc: "This Pokemon's Speed is raised by 1 stage if it lands on a Sticky Web, even if it is the user's own Sticky Web.",
+		shortDesc: "This Pokemon's Speed is raised by 1 if it lands on a Sticky Web.",
+	},
 };
 
 
