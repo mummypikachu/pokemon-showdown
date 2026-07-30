@@ -48303,6 +48303,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			trailblaze: ["9M"],
 			uproar: ["9M", "6T", "5T", "9T"],
 			xscissor: ["9M", "9L30", "9M", "9L30", "9M", "6L30", "5M", "5L30", "4M", "4L26"],
+			uturn: ["9M"],
 		},
 	},
 	shinx: {
@@ -62525,7 +62526,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			energyball: ["9M", "9M", "6M", "5M"],
 			facade: ["9M", "9M", "6M", "5M"],
 			flash: ["6M", "5M"],
-			freezedry: ["9M"],
 			frustration: ["9M", "6M", "5M"],
 			gigadrain: ["9M", "9T", "6T", "5T"],
 			hail: ["9M", "9M", "6M", "5M"],
@@ -62577,6 +62577,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			willowisp: ["9M", "9M", "6M", "5M"],
 			wringout: ["9L55", "6L55", "5L55"],
 			downpour: ["9M"],
+			nightmare: ["9M"],
 		},
 	},
 	jellicent: {

@@ -3306,9 +3306,9 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "RU",
 	},
 	zoroarkhisui: {
-		tier: "OU",
-		doublesTier: "DOU",
-		natDexTier: "OU",
+		tier: "UU",
+		doublesTier: "DUU",
+		natDexTier: "UU",
 	},
 	minccino: {
 		tier: "LC",
@@ -3396,7 +3396,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "LC",
 	},
 	jellicent: {
-		tier: "OU",
+		tier: "NU",
 		natDexTier: "RU",
 	},
 	alomomola: {
@@ -3996,7 +3996,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "RU",
 	},
 	goodrahisui: {
-		tier: "OU",
+		tier: "UU",
 	},
 	klefki: {
 		tier: "RU",
@@ -4260,7 +4260,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "RU",
 	},
 	wishiwashi: {
-		tier: "OU",
+		tier: "RU",
 		natDexTier: "RU",
 	},
 	wishiwashischool: {

@@ -5229,12 +5229,6 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 			onModifySpe(spe, pokemon) {
 				return this.chainModify(0.5);
 			},
-			onModifyDef(def, pokemon) {
-				return this.chainModify(2);
-			},
-			onModifySpD(spd, pokemon) {
-				return this.chainModify(2);
-			},
 			onEnd(target) {
 				this.add('-end', target, 'Slow Start');
 			},
@@ -7069,16 +7063,21 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 	},
 	unitypower: {
 		name: "Unity Power",
-		onModifyMove(move) {
+		onModifyMove(move, pokemon) {
 			// Ensure the move is not a status move and can hit twice
 			if (move.category !== 'Status' && !move.multihit) {
 				move.multihit = 2; // Makes the move hit twice
 				move.multihitType = 'unitypower'; // Custom multihit type for this ability
 			}
+			if (move.secondaries) {
+				delete move.secondaries;
+				// Technically not a secondary effect, but it is negated
+				delete move.self;
+			}
 		},
 		onBasePower(basePower, pokemon, target, move) {
 			if (move.multihitType === 'unitypower') {
-				return this.chainModify(0.55); // Reduce power to 55% for each hit
+				return this.chainModify(0.52); // Reduce power to 52% for each hit
 			}
 		},
 		rating: 4.5,

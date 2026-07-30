@@ -1888,7 +1888,7 @@ export const AbilitiesText: { [k: string]: AbilityText; } = {
 	},
 	slowstart: {
 		name: "Slow Start",
-		shortDesc: "On switch-in, this Pokemon's Attack and Speed are halved for 3 turns. Doubled Defenses.",
+		shortDesc: "On switch-in, this Pokemon's Attack and Speed are halved for 3 turns.",
 		gen7: {
 			desc: "On switch-in, this Pokemon's Attack and Speed are halved for 3 turns. During the effect, if this Pokemon uses a generic Z-Move based on a special move, its Special Attack is halved during damage calculation.",
 		},
@@ -2364,8 +2364,8 @@ export const AbilitiesText: { [k: string]: AbilityText; } = {
 	},
 	unitypower: {
 		name: "Unity Power",
-		desc: "This Pokémon's moves hit twice. Each hit deals 55% of its original power.",
-		shortDesc: "Moves hit twice at 55% power.",
+		desc: "This Pokémon's moves hit twice. Each hit deals 52% of its original power. Secondary effects are removed.",
+		shortDesc: "Moves hit twice at 52% power, but secondary effects are removed.",
 	},
 	unnerve: {
 		name: "Unnerve",
