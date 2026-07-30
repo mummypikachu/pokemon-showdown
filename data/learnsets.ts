@@ -94692,6 +94692,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			bulkup: ["9L10", "6L10", "5L10", "4L10"],
 			swordsdance: ["9L10", "6L10", "5L10", "4L10"],
 			earthpower: ["9L10", "6L10", "5L10", "4L10"],
+			psychicterrain: ["9M"],
 			facade: ["9M"], //universal TMs. ALWAYS INCLUDE UNLESS NOTED OTHERWISE.
 			frustration: ["9M"],
 			return: ["9M"],
@@ -94725,6 +94726,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			thrash: ["9L10", "6L10", "5L10", "4L10"],
 			outrage: ["9L10", "6L10", "5L10", "4L10"],
 			magnetrise: ["9L10", "6L10", "5L10", "4L10"],
+			psychicfangs: ["9M"],
 		},
 	},
 	heamanbou: {

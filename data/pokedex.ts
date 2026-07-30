@@ -20586,7 +20586,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData; } = {
 		eggGroups: ["Field"],
 		gen: 3,
 	},
-	snobal: { //literal snowball. THIS SHOULD ONLY LEARN ICE BALL DEFENSE CURL SNOWSCAPE!
+	snobal: { //literal snowball. THIS SHOULD ONLY LEARN ICE BALL DEFENSE CURL SNOWSCAPE TERABLAST
 		num: 1537,
 		name: "Snobal",
 		types: ["Ice"],
@@ -20599,17 +20599,18 @@ export const Pokedex: { [speciesid: string]: SpeciesData; } = {
 		eggGroups: ["Field"],
 		gen: 2,
 	},
-	bunnicy: { //designed NU/ZU. Yuki Usagi. Actual movepool.
+	bunnicy: { //Yuki Usagi. Actual movepool.
 		num: 1538,
 		name: "Bunnicy",
 		types: ["Ice", "Grass"],
-		baseStats: { hp: 60, atk: 72, def: 70, spa: 90, spd: 63, spe: 101 },
+		baseStats: { hp: 60, atk: 72, def: 70, spa: 70, spd: 63, spe: 101 },
 		abilities: { 0: "Ice Body", 1: "Harvest", H: "Quick Feet" },
 		heightm: 0.4,
 		weightkg: 18.5,
 		color: "White",
 		prevo: "Snobal",
 		evoLevel: 28,
+		//evos: ["Snowhare"],
 		eggGroups: ["Field"],
 		gen: 2,
 	},
@@ -21409,7 +21410,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData; } = {
 		color: "Gray",
 		eggGroups: ["Mineral"],
 	},
-	evolotto: {
+	evolotto: { //Transforms into other pokemon. for the list check Evolot ability.
 		num: 1592,
 		name: "Evolotto",
 		types: ["Normal"],
@@ -21420,7 +21421,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData; } = {
 		color: "White",
 		eggGroups: ["Unknown"],
 	},
-	heartle: {
+	heartle: { //betamon plusle clone
 		num: 1593,
 		name: "Heartle",
 		types: ["Electric"],
@@ -21431,7 +21432,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData; } = {
 		color: "Pink",
 		eggGroups: ["Fairy"],
 	},
-	paddlun: {
+	paddlun: { //betamon minun clone
 		num: 1594,
 		name: "Paddlun",
 		types: ["Electric"],
@@ -21442,6 +21443,19 @@ export const Pokedex: { [speciesid: string]: SpeciesData; } = {
 		color: "Red",
 		eggGroups: ["Fairy"],
 	},
+	/*snowhare: { //Snowman Pokémon
+		num: 1595,
+		name: "Snowhare",
+		types: ["Ice", "Grass"],
+		baseStats: { hp: 80, atk: 82, def: 80, spa: 90, spd: 83, spe: 111 },
+		abilities: { 0: "Ice Body", 1: "Harvest", H: "Quick Feet" },
+		heightm: 0.4,
+		weightkg: 4.2,
+		prevo: "Bunnicy",
+		evoLevel: 47,
+		color: "White",
+		eggGroups: ["Field"],
+	},*/
 	//cap
 	syclar: {
 		num: -1,
