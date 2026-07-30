@@ -1699,7 +1699,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "NFE",
 	},
 	swampert: {
-		tier: "RU",
+		tier: "RUBL",
 		natDexTier: "RU",
 	},
 	swampertmega: {
@@ -4963,7 +4963,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "RU",
 	},
 	alcremiemega: {
-		tier: "UU",
+		tier: "OU",
 		natDexTier: "RU",
 	},
 	falinks: {
@@ -6205,6 +6205,12 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	scaffixer: {
 		tier: "UU",
+	},
+	scaffixercomplete: {
+	},
+	scaffixerfoundation: {
+	},
+	scaffixerscaffolding: {
 	},
 	megawattrel: { //not a mega
 		tier: "OU",

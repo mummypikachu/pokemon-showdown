@@ -25469,6 +25469,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			venomdrench: ["9L1", "6L1"],
 			venoshock: ["9M", "9M", "9M", "5M"],
 			xscissor: ["9M", "9M", "9M", "5M"],
+			poisonfang: ["9M"],
 		},
 		encounters: [
 			{ generation: 2, level: 7 },
@@ -34594,6 +34595,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			toxic: ["9M", "9M", "5M", "4M", "3M"],
 			uproar: ["9M", "7T", "6T"],
 			waterfall: ["9M", "9M", "9M", "5M", "4M", "3M"],
+			wavecrash: ["9M"],
 			watergun: ["9L1", "9L1", "6L1", "5L1", "4L1", "3L1"],
 			waterpledge: ["9T", "7T", "6T", "5T"],
 			waterpulse: ["9L20", "7T", "6T", "4M", "3M"],
