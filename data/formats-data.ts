@@ -907,7 +907,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "RU",
 	},
 	jynxmega: {
-		tier: "UU",
+		tier: "RU",
 		natDexTier: "RU",
 	},
 	elekid: {
@@ -919,7 +919,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "NFE",
 	},
 	electivire: {
-		tier: "OU",
+		tier: "UU",
 		natDexTier: "RU",
 	},
 	magby: {
@@ -1110,7 +1110,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "RU",
 	},
 	articunomega: {
-		tier: "UU",
+		tier: "UUBL",
 		natDexTier: "RU",
 	},
 	articunogalar: {
@@ -5770,13 +5770,13 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	//fakemon
 	kaburion: {
-		tier: "New",
+		tier: "RUBL",
 		natDexTier: "RU",
 		doublesTier: "(DUU)",
 		newDexTier: "RU",
 	},
 	chivalmet: {
-		tier: "New",
+		tier: "RU",
 		natDexTier: "RU",
 		doublesTier: "DUU",
 		newDexTier: "RU",
@@ -5787,7 +5787,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		newDexTier: "RU",
 	},
 	garock: {
-		tier: "New",
+		tier: "NU",
 		natDexTier: "UU",
 		doublesTier: "DUU",
 		newDexTier: "OU",
@@ -5813,12 +5813,12 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "LC",
 	},
 	muscules: {
-		tier: "NU",
+		tier: "PU",
 		natDexTier: "RU",
 		newDexTier: "UU",
 	},
 	musculesmega: {
-		tier: "UU",
+		tier: "RU",
 		natDexTier: "RU",
 	},
 	tepigphyor: {
@@ -5867,7 +5867,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		newDexTier: "NU",
 	},
 	kodomin: {
-		tier: "New",
+		tier: "RU",
 		natDexTier: "OU",
 		doublesTier: "DOU",
 		newDexTier: "OU",
@@ -5878,7 +5878,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		newDexTier: "LC",
 	},
 	raitora: {
-		tier: "New",
+		tier: "NUBL",
 		natDexTier: "OU",
 		doublesTier: "DOU",
 		newDexTier: "UUBL",
@@ -5889,7 +5889,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		newDexTier: "LC",
 	},
 	ikari: {
-		tier: "New",
+		tier: "RU",
 		natDexTier: "OU",
 		doublesTier: "DOU",
 		newDexTier: "OU",
@@ -5900,37 +5900,37 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		newDexTier: "LC",
 	},
 	lustremoth: {
-		tier: "New",
+		tier: "PUBL",
 		natDexTier: "NU",
 		doublesTier: "DOU",
 		newDexTier: "RUBL",
 	},
 	kolibrary: {
-		tier: "New",
+		tier: "NU",
 		natDexTier: "OU",
 		doublesTier: "DOU",
 		newDexTier: "UUBL",
 	},
 	shabo: {
-		tier: "New",
+		tier: "NU",
 		natDexTier: "OU",
 		doublesTier: "DOU",
 		newDexTier: "UUBL",
 	},
 	bounspike: {
-		tier: "New",
+		tier: "PUBL",
 		natDexTier: "RU",
 		doublesTier: "(DUU)",
 		newDexTier: "RU",
 	},
 	hakogame: {
-		tier: "New",
+		tier: "UU",
 		natDexTier: "UU",
 		doublesTier: "(DUU)",
 		newDexTier: "UU",
 	},
 	mimime: {
-		tier: "New",
+		tier: "NU",
 		doublesTier: "DOU",
 		natDexTier: "RU",
 		newDexTier: "UU",
@@ -5941,7 +5941,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		newDexTier: "LC",
 	},
 	bunnicy: {
-		tier: "New",
+		tier: "PU", //move to NFE later. New"
 		doublesTier: "DOU",
 		natDexTier: "RU",
 		newDexTier: "RU",
@@ -5952,7 +5952,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		newDexTier: "LC",
 	},
 	ubausagi: {
-		tier: "New",
+		tier: "RU",
 		doublesTier: "DOU",
 		natDexTier: "RU",
 		newDexTier: "RU",
@@ -5979,18 +5979,18 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		newDexTier: "RU",
 	},
 	klinklangexcir: {
-		tier: "New",
+		tier: "UU",
 		natDexTier: "UU",
 		doublesTier: "DOU",
 		newDexTier: "UU",
 	},
 	vertebrawn: {
-		tier: "New",
+		tier: "PUBL",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
 	pyreox: {
-		tier: "New",
+		tier: "PU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 		newDexTier: "UU",
@@ -6002,7 +6002,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		newDexTier: "RUBL",
 	},
 	suiba: {
-		tier: "New",
+		tier: "RU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 		newDexTier: "OU",
@@ -6043,7 +6043,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		newDexTier: "Uber",
 	},
 	toroikamega: {
-		tier: "OU",
+		tier: "UUBL",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 		newDexTier: "Uber",
