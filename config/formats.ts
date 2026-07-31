@@ -670,7 +670,7 @@ export const Formats: FormatList = [
 		ruleset: ['Standard OMs', 'Evasion Items Clause', 'Evasion Abilities Clause', 'Sleep Moves Clause', 'Min Source Gen = 9'],
 		banlist: ['Koraidon', 'Miraidon', 'Beedrillite', 'Blazikenite', 'Gengarite', 'Kangaskhanite', 'Mawilite', 'Medichamite', 'Moody', 'Rusted Sword',
 			'Shadow Tag', 'Baton Pass', 'Shed Tail', 'Mothimite', 'Melmetalite', 'Talonflamite', 'Celebinite', 'Zygardite', 'Starminite', 'Scovillainite',
-			'Raichunite Y', 'Malamarite', 'Swoobattite'],
+			'Raichunite Y', 'Malamarite', 'Orbeetite'],
 		restricted: [
 			'Arceus', 'Calyrex-Ice', 'Ceruledge', 'Deoxys-Normal', 'Deoxys-Attack', 'Dialga', 'Eternatus', 'Flutter Mane', 'Gholdengo', 'Giratina', 'Gouging Fire',
 			'Groudon', 'Ho-Oh', 'Iron Bundle', 'Kyurem-Black', 'Kyurem-White', 'Lugia', 'Lunala', 'Manaphy', 'Mewtwo', 'Necrozma-Dawn-Wings', 'Necrozma-Dusk-Mane',

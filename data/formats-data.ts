@@ -4754,11 +4754,11 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "NFE",
 	},
 	orbeetle: {
-		tier: "UU",
+		tier: "RU",
 		natDexTier: "RU",
 	},
 	orbeetlemega: {
-		tier: "UU",
+		tier: "UUBL",
 		natDexTier: "RU",
 	},
 	nickit: {
