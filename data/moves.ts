@@ -2123,17 +2123,6 @@ export const Moves: { [moveid: string]: MoveData; } = {
 		pp: 30,
 		priority: 0,
 		flags: { bullet: 1, protect: 1, mirror: 1 },
-		basePowerCallback(pokemon, target, move) {
-			if (pokemon.species.name === 'Cacturne-Mega') {
-				return 95;
-			}
-			return move.basePower;
-		},
-		onModifyMove(move, pokemon) {
-			if (pokemon.species.name === 'Cacturne-Mega') {
-				move.multihit = 1;
-			}
-		},
 		multihit: [2, 5],
 		secondary: null,
 		target: "normal",

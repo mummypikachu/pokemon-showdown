@@ -7590,7 +7590,7 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 				case 'bibarel':
 					newAbility = 'Unaware'; //Due to Moody
 					break;
-				case 'Octillery':
+				case 'octillery':
 					newAbility = 'Regenerator';
 					break;
 				case 'durant':
@@ -7651,7 +7651,7 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 					newAbility = 'Stench';
 					break;
 				case 'mantine': //unitypower
-					newAbility = 'No Ability';
+					newAbility = 'Water Absorb';
 					break;
 				default:
 					newAbility = species.abilities?.H;
