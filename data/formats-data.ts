@@ -76,6 +76,10 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DOU",
 		natDexTier: "RU",
 	},
+	butterfreegmax: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	butterfreemega: {
 		tier: "OU",
 		doublesTier: "DOU",
@@ -497,6 +501,10 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "RU",
 		natDexTier: "RU",
 	},
+	machampgmax: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	machampmega: {
 		tier: "UU",
 	},
@@ -708,6 +716,10 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	kingler: {
 		tier: "PU",
 		natDexTier: "RU",
+	},
+	kinglergmax: {
+		isNonstandard: "Past",
+		tier: "Illegal",
 	},
 	kinglermega: {
 		tier: "NU",
@@ -3291,6 +3303,10 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "NU",
 		natDexTier: "RU",
 	},
+	garbodorgmax: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	garbodormega: {
 		tier: "UU",
 	},
@@ -4741,6 +4757,10 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
 	},
+	corviknightgmax: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	corviknightmega: {
 		tier: "OU",
 		natDexTier: "Uber",
@@ -4756,6 +4776,10 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	orbeetle: {
 		tier: "RU",
 		natDexTier: "RU",
+	},
+	orbeetlegmax: {
+		isNonstandard: "Past",
+		tier: "Illegal",
 	},
 	orbeetlemega: {
 		tier: "UUBL",
@@ -4903,6 +4927,10 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "UU",
 		natDexTier: "RU",
 	},
+	centiskorchgmax: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	centiskorchmega: {
 		tier: "OU",
 	},
@@ -4933,6 +4961,10 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
+	hatterenegmax: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	hatterenemega: {
 		tier: "Uber",
 		doublesTier: "DUber",
@@ -4949,6 +4981,10 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
+	grimmsnarlgmax: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	grimmsnarlmega: {
 		tier: "OU",
 		doublesTier: "DOU",
@@ -4961,6 +4997,10 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	alcremie: {
 		tier: "RU",
 		natDexTier: "RU",
+	},
+	alcremiegmax: {
+		isNonstandard: "Past",
+		tier: "Illegal",
 	},
 	alcremiemega: {
 		tier: "OU",
