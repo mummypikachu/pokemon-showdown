@@ -675,7 +675,7 @@ export const Formats: FormatList = [
 			'Arceus', 'Calyrex-Ice', 'Ceruledge', 'Deoxys-Normal', 'Deoxys-Attack', 'Dialga', 'Eternatus', 'Flutter Mane', 'Gholdengo', 'Giratina', 'Gouging Fire',
 			'Groudon', 'Ho-Oh', 'Iron Bundle', 'Kyurem-Black', 'Kyurem-White', 'Lugia', 'Lunala', 'Manaphy', 'Mewtwo', 'Necrozma-Dawn-Wings', 'Necrozma-Dusk-Mane',
 			'Palkia', 'Rayquaza', 'Regigigas', 'Reshiram', 'Slaking', 'Sneasler', 'Solgaleo', 'Ursaluna-Bloodmoon', 'Urshifu-Single-Strike', 'Walking Wake', 'Zacian',
-			'Zekrom', 'Melmetal + Melmetalite'
+			'Zekrom', 'Melmetal + Melmetalite', 'Evolotto'
 		],
 		onValidateTeam(team) {
 			const itemTable = new Set<ID>();

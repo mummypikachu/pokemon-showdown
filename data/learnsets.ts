@@ -11503,6 +11503,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			toxic: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			wildcharge: ["9M", "9M", "9M", "5M"],
 			willowisp: ["9M", "9M", "9M", "9M", "5M", "4M"],
+			charredterrain: ["9M"],
 		},
 		encounters: [
 			{ generation: 1, level: 28 },
@@ -19696,6 +19697,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			toxic: ["9M", "7V", "9M", "5M", "4M", "3M"],
 			uproar: ["9M", "7T", "6T", "5T", "9T"],
 			willowisp: ["9M", "9M", "9M", "5M", "4M"],
+			charredterrain: ["9M"],
 		},
 	},
 	magmar: {
@@ -20992,6 +20994,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			workup: ["9M", "9M", "5M"],
 			yawn: ["9M"],
 			zapcannon: ["9M"],
+			charredterrain: ["9M"],
 		},
 		eventData: [
 			{ generation: 5, level: 10, gender: "M", isHidden: true, moves: ["tailwhip", "tackle", "helpinghand", "sandattack"] },
@@ -55838,6 +55841,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			willowisp: ["9M", "9M", "5M"],
 			workup: ["9M", "5M"],
 			yawn: ["9L16", "6L16", "5L16"],
+			charredterrain: ["9M"],
 		},
 		eventData: [
 			{ generation: 5, level: 10, gender: "M", isHidden: true, moves: ["leer", "lick", "incinerate", "heatwave"] },
@@ -63758,6 +63762,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			trick: ["9M", "9M", "7T", "6T", "5T"],
 			trickroom: ["9M", "9M", "9M", "6M", "5M"],
 			willowisp: ["9M", "9L20", "9M", "9L20", "9M", "9L16", "6M", "6L16", "5M", "5L16"],
+			charredterrain: ["9M"],
 		},
 	},
 	lampent: {
@@ -65962,6 +65967,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			toxic: ["9M", "6M", "5M"],
 			willowisp: ["9M", "9M", "6M", "5M"],
 			wrap: ["9E", "9E", "5E"],
+			charredterrain: ["9M"],
 		},
 	},
 	durant: {
@@ -83990,6 +83996,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			sunnyday: ["9M"],
 			venoshock: ["9M"],
 			wrap: ["9L5"],
+			charredterrain: ["9M"],
 		},
 	},
 	centiskorch: {
@@ -92043,6 +92050,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			temperflare: ["9M"],
 			willowisp: ["9M", "9L15"],
 			zenheadbutt: ["9M"],
+			charredterrain: ["9M"],
 		},
 		eventData: [
 			{ generation: 9, level: 60, moves: ["lavaplume", "ruination", "bounce", "swagger"] },
