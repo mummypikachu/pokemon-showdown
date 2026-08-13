@@ -6893,6 +6893,10 @@ export const MovesText: { [k: string]: MoveText; } = {
 		name: "Tackle",
 		shortDesc: "No additional effect.",
 	},
+	dragontackle: {
+		name: "Dragon Tackle",
+		shortDesc: "No additional effect.",
+	},
 	tachyoncutter: {
 		name: "Tachyon Cutter",
 		desc: "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit. This move does not check accuracy.",

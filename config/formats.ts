@@ -1137,7 +1137,7 @@ export const Formats: FormatList = [
 				'sandtomb', 'gust', 'watergun', 'powdersnow', 'twister', 'echoedvoice',
 				'twinbeam', 'vacuumwave', 'poweruppunch', 'bubble', 'thundershock', 'acidspray',
 				'pursuit', 'dualchop', 'mirrormove', 'transform', 'poisonsting', 'angerhit',
-				'pressurechop', 'constrict', 'bis', 'posthaste',
+				'pressurechop', 'constrict', 'bis', 'posthaste', 'dragontackle',
 			];
 
 			// Check each move in the set

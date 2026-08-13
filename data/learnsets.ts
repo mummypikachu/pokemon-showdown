@@ -72511,6 +72511,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			toxic: ["9M", "6M"],
 			watergun: ["9L5", "9L5"],
 			waterpulse: ["9M", "9L25", "9L25", "9T", "6T"],
+			dragontackle: ["9M"],
 		},
 		eventData: [
 			{ generation: 7, level: 1, shiny: 1, isHidden: true, moves: ["bodyslam", "dragonpulse", "counter"], pokeball: "cherishball" },
