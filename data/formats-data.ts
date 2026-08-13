@@ -6300,6 +6300,19 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	paddlun: {
 		tier: "PU",
 	},
+	kurusu: {
+		tier: "LC",
+		natDexTier: "LC",
+	},
+	akua: {
+		tier: "NFE",
+		natDexTier: "NFE",
+	},
+	akuantis: {
+		tier: "UU",
+		doublesTier: "DOU",
+		natDexTier: "RU",
+	},
 	// Start CAP/Missingno, don't place new mons under this
 	missingno: {
 		isNonstandard: "Custom",
