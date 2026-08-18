@@ -14181,6 +14181,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			willowisp: ["9M", "9M", "9M", "9S7", "9M", "9M", "6S3", "5M", "4M"],
 			wonderroom: ["9M", "9T", "6T", "5T"],
 			zapcannon: ["9M"],
+			powershift: ["9M"],
 		},
 		eventData: [
 			{ generation: 3, level: 23, gender: "F", nature: "Hardy", ivs: { hp: 19, atk: 14, def: 0, spa: 14, spd: 17, spe: 27 }, moves: ["spite", "curse", "nightshade", "confuseray"], pokeball: "pokeball" },
@@ -14285,6 +14286,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			toxic: ["9M", "9M", "9M", "9M", "5M", "4M", "3M"],
 			twister: ["9T"],
 			wideguard: ["9E", "9E"],
+			powershift: ["9M"],
 		},
 		encounters: [
 			{ generation: 1, level: 13 },
@@ -18443,6 +18445,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			uproar: ["9M", "9T", "6T", "5T", "9T"],
 			wakeupslap: ["9E", "9E", "5E", "4E"],
 			wonderroom: ["9M", "9T", "6T", "5T"],
+			powershift: ["9M"],
 		},
 	},
 	mrmime: {
@@ -38264,6 +38267,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			voltswitch: ["9M", "9M", "5M"],
 			wideguard: ["9E", "9E"],
 			zapcannon: ["9L43", "6L43", "5L67", "4L61", "3L43"],
+			powershift: ["9M"],
 		},
 		eventData: [
 			{ generation: 3, level: 26, moves: ["helpinghand", "thunderbolt", "thunderwave", "rockslide"] },
@@ -51419,6 +51423,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			workup: ["9L16", "9M", "9L1", "9M", "9L42", "5M"],
 			zenheadbutt: ["9M", "9M", "7T", "6T", "5T", "9T"],
 			zenaurablast: ["9M"],
+			powershift: ["9M"],
 		},
 		eventData: [
 			{ generation: 4, level: 50, gender: "M", nature: "Modest", abilities: ["steadfast"], moves: ["aurasphere", "darkpulse", "dragonpulse", "waterpulse"], pokeball: "cherishball" },

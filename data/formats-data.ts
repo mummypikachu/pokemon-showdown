@@ -6313,6 +6313,28 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		doublesTier: "DOU",
 		natDexTier: "RU",
 	},
+	wyrmple: {
+		tier: "LC",
+		natDexTier: "LC",
+	},
+	silgon: {
+		tier: "NFE",
+		natDexTier: "NFE",
+	},
+	beautivern: {
+		tier: "New",
+		doublesTier: "DOU",
+		natDexTier: "RU",
+	},
+	casgon: {
+		tier: "NFE",
+		natDexTier: "NFE",
+	},
+	dragox: {
+		tier: "New",
+		doublesTier: "DOU",
+		natDexTier: "RU",
+	},
 	// Start CAP/Missingno, don't place new mons under this
 	missingno: {
 		isNonstandard: "Custom",
