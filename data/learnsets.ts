@@ -98818,6 +98818,48 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			ironhead: ["9M"],
 		},
 	},
+	wyrmple: {
+		learnset: {
+			terablast: ["9M"],
+			bugbite: ["9T", "9L15", "6T", "6L15", "5T", "5L15", "5D", "9T", "4L15"],
+			electroweb: ["9T", "6T", "5T"],
+			poisonsting: ["9L5", "6L5", "5L5", "5D", "4L5", "3L5"],
+			snore: ["9T", "6T", "5T", "5D", "9T"],
+			stringshot: ["9L1", "6L1", "5L1", "9T", "4L1", "3L1"],
+			tackle: ["9L1", "6L1", "5L1", "4L1", "3L1"],
+			dragontackle: ["9M"],
+		},
+	},
+	silgon: {
+		learnset: {
+			terablast: ["9M"],
+			bugbite: ["9T", "6T", "5T", "9T"],
+			electroweb: ["9T", "6T", "5T"],
+			harden: ["9L1", "6L1", "5L1", "4L1", "3L1"],
+			irondefense: ["9T", "6T", "5T", "9T"],
+			stringshot: ["9T"],
+		},
+	},
+	casgon: {
+		learnset: {
+			terablast: ["9M"],
+			bugbite: ["9T", "6T", "5T", "9T"],
+			electroweb: ["9T", "6T", "5T"],
+			harden: ["9L1", "6L1", "5L1", "4L1", "3L1"],
+			irondefense: ["9T", "6T", "5T", "9T"],
+			stringshot: ["9T"],
+		},
+	},
+	beautivern: {
+		learnset: {
+			terablast: ["9M"],
+		},
+	},
+	scalox: {
+		learnset: {
+			terablast: ["9M"],
+		},
+	},
 	//capmons
 	syclar: {
 		learnset: {
