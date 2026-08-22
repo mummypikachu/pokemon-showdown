@@ -24094,4 +24094,22 @@ export const Moves: { [moveid: string]: MoveData; } = {
 		target: "normal",
 		type: "Water",
 	},
+	dialup: {
+		num: 10010101001,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Dial Up",
+		pp: 40,
+		priority: 0,
+		flags: { protect: 1, reflectable: 1, mirror: 1 },
+		boosts: {
+			spe: -12,
+		},
+		secondary: null,
+		target: "all",
+		type: "Normal",
+		zMove: { boost: { spa: 2 } },
+		contestType: "Clever",
+	},
 };

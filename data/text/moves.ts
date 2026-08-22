@@ -7936,4 +7936,9 @@ export const MovesText: { [k: string]: MoveText; } = {
 		desc: "Hits 1 to 3 times. Has a 10% chance to flinch on each hit.",
 		shortDesc: "Hits 1-3 times, has a 10% chance to flinch each hit.",
 	},
+	dialup: {
+		name: "Dial Up",
+		desc: "Lowers all active Pokémon their Speed by 12 stages.",
+		shortDesc: "Lowers all Pokémon's Speed by 12.",
+	},
 };

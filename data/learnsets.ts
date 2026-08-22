@@ -21507,6 +21507,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			wonderroom: ["9M", "7T", "6T", "5T"],
 			zapcannon: ["9L60", "9L62", "7V", "6L62", "5L62", "4L62", "3L48"],
 			zenheadbutt: ["9M", "7T", "6T", "5T", "9T"],
+			dialup: ["9M"],
 		},
 		eventData: [
 			{ generation: 5, level: 10, isHidden: true, moves: ["tackle", "conversion", "sharpen", "psybeam"] },
