@@ -7669,7 +7669,18 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 	webwalker: {
 		name: "Web Walker",
 		//ability effect coded into Sticky Web itself
-		rating: 0,
+		rating: 1,
 		num: 118,
+	},
+	aurashield: {
+		onSourceModifyDamage(damage, source, target, move) {
+			let mod = 1;
+			if (move.flags['contact']) mod /= 2;
+			return this.chainModify(mod);
+		},
+		isBreakable: true,
+		name: "Aura Shield",
+		rating: 3.5,
+		num: 218,
 	},
 };
