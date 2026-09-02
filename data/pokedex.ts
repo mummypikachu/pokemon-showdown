@@ -1774,7 +1774,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData; } = {
 		forme: "Mega",
 		types: ["Grass", "Poison"],
 		baseStats: { hp: 80, atk: 125, def: 85, spa: 135, spd: 95, spe: 90 },
-		abilities: { 0: "Corrosion" },
+		abilities: { 0: "Innards Out" },
 		heightm: 4.5,
 		weightkg: 125.5,
 		color: "Green",

@@ -7922,7 +7922,7 @@ export const MovesText: { [k: string]: MoveText; } = {
 	},
 	lunarbeam: {
 		name: "Lunar Beam",
-		desc: "This attack charges on the first turn and executes on the second. Power is halved if the weather is Desolate Land or Sunny Day. If the user is holding a Power Herb or the terrain is Psychic Terrain, the move completes in one turn. If the user is not grounded, the move will have to charge.",
+		desc: "This attack charges on the first turn, executes on the second. Power is halved if the weather is Desolate Land or Sunny Day. If the user is holding a Power Herb or the terrain is Psychic Terrain, the move completes in one turn. If the user is not grounded, the move has to charge.",
 		shortDesc: "Charges. Hits turn 2. No charge in Psychic Terrain.",
 	},
 	cannonblast: {
@@ -7938,7 +7938,7 @@ export const MovesText: { [k: string]: MoveText; } = {
 	},
 	dialup: {
 		name: "Dial Up",
-		desc: "Lowers all active Pokémon their Speed by 12 stages.",
+		desc: "Lowers all active Pokémon their Speed by 12 stages. This includes the user.",
 		shortDesc: "Lowers all Pokémon's Speed by 12.",
 	},
 };

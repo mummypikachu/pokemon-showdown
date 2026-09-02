@@ -2274,12 +2274,12 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 		onResidualSubOrder: 3,
 		onResidual(pokemon) {
 			for (const allyActive of pokemon.adjacentAllies()) {
-				if (allyActive.status && this.randomChance(3, 10)) {
+				if (allyActive.status && this.randomChance(5, 10)) {
 					this.add('-activate', pokemon, 'ability: Healer');
 					allyActive.cureStatus();
 				}
 			}
-			if (pokemon.hp && pokemon.status && this.randomChance(33, 100)) {
+			if (pokemon.hp && pokemon.status && this.randomChance(50, 100)) {
 				this.debug('healer');
 				this.add('-activate', pokemon, 'ability: Healer');
 				pokemon.cureStatus();

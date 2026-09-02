@@ -23037,6 +23037,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			whirlpool: ["9M", "4M"],
 			wrap: ["9L1", "9L1", "9M", "9L1", "9M", "6L1", "5L1", "4L1", "3L1"],
 			zapcannon: ["9M"],
+			dragontackle: ["9M"],
 		},
 		encounters: [
 			{ generation: 1, level: 10 },
@@ -41760,6 +41761,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			trailblaze: ["9M"],
 			twister: ["9T"],
 			uproar: ["9M", "9T", "6T", "5T", "9T"],
+			dragontackle: ["9M"],
 		},
 		eventData: [
 			{ generation: 3, level: 5, shiny: 1, moves: ["peck", "growl", "falseswipe"], pokeball: "pokeball" },
@@ -83380,6 +83382,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			rollout: ["9E", "9E"],
 			suckerpunch: ["9E", "9E"],
 			withdraw: ["9L1", "9L1"],
+			dragontackle: ["9M"],
 		},
 	},
 	flapple: {
@@ -98859,11 +98862,19 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 	beautivern: {
 		learnset: {
 			terablast: ["9M"],
+			dragonpulse: ["9M"],
+			bugbuzz: ["9M"],
+			airslash: ["9M"],
+			roost: ["9M"],
 		},
 	},
 	scalox: {
 		learnset: {
 			terablast: ["9M"],
+			dragonpulse: ["9M"],
+			sludgewave: ["9M"],
+			bugbuzz: ["9M"],
+			airslash: ["9M"],
 		},
 	},
 	//capmons
