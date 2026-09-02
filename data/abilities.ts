@@ -7672,14 +7672,14 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 		rating: 1,
 		num: 118,
 	},
-	aurashield: {
+	auraguard: {
 		onSourceModifyDamage(damage, source, target, move) {
 			let mod = 1;
 			if (move.flags['contact']) mod /= 2;
 			return this.chainModify(mod);
 		},
 		isBreakable: true,
-		name: "Aura Shield",
+		name: "Aura Guard",
 		rating: 3.5,
 		num: 218,
 	},
