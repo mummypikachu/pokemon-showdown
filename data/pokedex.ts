@@ -21637,7 +21637,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData; } = {
 		eggGroups: ["Fairy"],
 	},
 	wyrmple: {
-		num: 1595, 
+		num: 1595,
 		name: "Wyrmple",
 		types: ["Dragon"],
 		baseStats: { hp: 45, atk: 45, def: 35, spa: 20, spd: 30, spe: 20 },
