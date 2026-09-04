@@ -2837,7 +2837,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "UUBL",
 	},
 	darkrai: {
-		tier: "OU",
+		tier: "Uber",
 		doublesTier: "DUber",
 		natDexTier: "Uber",
 	},
@@ -3105,15 +3105,15 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "NFE",
 	},
 	seismitoad: {
-		tier: "OU",
+		tier: "RU",
 		natDexTier: "RU",
 	},
 	throh: {
-		tier: "RU",
+		tier: "PU",
 		natDexTier: "RU",
 	},
 	sawk: {
-		tier: "RU",
+		tier: "PU",
 		natDexTier: "RU",
 	},
 	sewaddle: {
