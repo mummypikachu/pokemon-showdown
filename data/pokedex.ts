@@ -8688,7 +8688,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData; } = {
 		genderRatio: { M: 0.875, F: 0.125 },
 		baseStats: { hp: 70, atk: 100, def: 70, spa: 164, spd: 70, spe: 151 },
 		abilities: { 0: "Aura Guard" },
-		heightm: 1.3, 
+		heightm: 1.3,
 		weightkg: 49.4,
 		color: "Gray",
 		eggGroups: ["Field", "Human-Like"],
