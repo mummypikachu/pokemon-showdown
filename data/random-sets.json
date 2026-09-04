@@ -9210,7 +9210,7 @@
             }
         ]
     },
-    "megamismagius": {
+    "mismagiusmega": {
         "level": 81,
         "sets": [
             {
@@ -9227,11 +9227,11 @@
             }
         ]
     },
-    "megapalossand": {
-        "level": 78,
+    "palossandmega": {
+        "level": 83,
         "sets": [
             {
-                "role": "Fast Sweeper",
+                "role": "Bulky Attacker",
                 "movepool": [
                     "Earth Power",
                     "Shore Up",
@@ -9405,7 +9405,7 @@
                     "Hyper Beam",
                     "Blizzard",
                     "Power Gem",
-                    "Aurora Veil"
+                    "Earth Power"
                 ],
                 "teraTypes": [
                     "Ice"
