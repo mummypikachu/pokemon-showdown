@@ -23954,6 +23954,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			workup: ["9M"],
 			worryseed: ["9T", "6T", "5T", "9T"],
 			wringout: ["9E", "9E", "5E", "4E"],
+			trailblaze: ["9M"],
 		},
 		eventData: [
 			{ generation: 3, level: 10, gender: "M", moves: ["tackle", "growl", "razorleaf"], pokeball: "pokeball" },
@@ -24550,6 +24551,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			watersport: ["9E", "9E", "5E", "4E", "3E"],
 			whirlpool: ["9M", "4M"],
 			workup: ["9M"],
+			trailblaze: ["9M"],
 		},
 		eventData: [
 			{ generation: 3, level: 10, gender: "M", moves: ["scratch", "leer", "rage"], pokeball: "pokeball" },
@@ -54261,6 +54263,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			worryseed: ["9T", "6T", "5T"],
 			wrap: ["9L10", "6L10", "5L10"],
 			wringout: ["9L37", "6L37", "5L37"],
+			trailblaze: ["9M"],
 		},
 		eventData: [
 			{ generation: 5, level: 5, gender: "M", nature: "Hardy", moves: ["growth", "synthesis", "energyball", "aromatherapy"], pokeball: "cherishball" },
@@ -54347,6 +54350,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			workup: ["9M"],
 			worryseed: ["9T", "6T", "5T"],
 			wrap: ["9L10", "6L10", "5L10"],
+			trailblaze: ["9M"],
 			wringout: ["9L37", "6L37", "5L37"],
 		},
 	},
@@ -54555,6 +54559,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			workup: ["9M"],
 			yawn: ["9E", "9E", "5E"],
 			zenheadbutt: ["9T", "6T"],
+			trailblaze: ["9M"],
 		},
 	},
 	tepigphyor: {
@@ -54634,6 +54639,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			thunderwave: ["9M"],
 			thundershock: ["9M"],
 			voltswitch: ["9M"], //end
+			trailblaze: ["9M"],
 		},
 	},
 	pignite: {
