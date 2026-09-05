@@ -506,7 +506,7 @@
         "sets": [
             {
                 "role": "Wallbreaker",
-                "abilities": ["Wonder Guard"],
+                "ability": ["Wonder Guard"],
                 "movepool": [
                     "Draco Meteor",
                     "Outrage",
