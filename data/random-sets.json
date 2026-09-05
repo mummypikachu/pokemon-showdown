@@ -9536,10 +9536,10 @@
     },
     "garchompmegaz": {
         "level": 86,
+        "abilities": ["Wonder Guard"],
         "sets": [
             {
                 "role": "Wallbreaker",
-                "abilities": ["Wonder Guard"],
                 "movepool": [
                     "Draco Meteor",
                     "Outrage",
