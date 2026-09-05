@@ -9539,7 +9539,7 @@
         "sets": [
             {
                 "role": "Wallbreaker",
-                "ability": ["Wonder Guard"],
+                "abilities": ["Wonder Guard"],
                 "movepool": [
                     "Draco Meteor",
                     "Outrage",
