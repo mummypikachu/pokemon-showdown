@@ -1112,7 +1112,7 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 			}
 		},
 		name: "Detonator",
-		rating: 3,
+		rating: 0,
 		num: 89,
 	},
 	divinegrace: {
