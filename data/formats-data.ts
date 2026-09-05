@@ -3106,7 +3106,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	seismitoad: {
 		tier: "RU",
-		natDexTier: "RU",
+		natDexTier: "RU", 
 	},
 	throh: {
 		tier: "PU",
