@@ -966,8 +966,7 @@ export class RandomTeams {
 		if (abilities.has('Guts') && (moves.has('facade') || moves.has('sleeptalk'))) return 'Guts';
 		if (abilities.has('Harvest') && moves.has('substitute')) return 'Harvest';
 		if (species.id === 'hypno') return 'Iron Fist';
-		//below is a list of Mega pokemon that have to have their abilities forced to a normal one.
-		if (species.id === 'garchompmegaz') return 'Rough Skin';
+		//below is a list of a few Mega pokemon that have to have their abilities forced to a normal one.
 		if (species.id === 'lucariomegaz') return 'Inner Focus';
 		if (species.id === 'flygonmegaz') return 'Levitate';
 		if (species.id === 'regigigasmega') return 'Slow Start';
