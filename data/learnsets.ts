@@ -81723,6 +81723,10 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			thundershock: ["9L1", "9M", "9L27"],
 			thunderwave: ["9M", "9L24", "9M", "9M", "9L18"],
 			toxic: ["9M", "9M"],
+			mirrorshot: ["9M", "9M"],
+			charge: ["9M", "9M"],
+			flash: ["9M", "9M"],
+			magnetbomb: ["9M", "9M"],
 		},
 	},
 	melmetal: {
@@ -81776,6 +81780,11 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			thundershock: ["9L1", "9M", "9L27"],
 			thunderwave: ["9M", "9L24", "9M", "9M", "9L1"],
 			toxic: ["9M", "9M"],
+			chargebeam: ["9M", "9M"],
+			zapcannon: ["9M", "9M"],
+			metalsound: ["9M", "9M"],
+			electroball: ["9M", "9M"],
+			focusblast: ["9M", "9M"],
 		},
 		eventData: [
 			{ generation: 8, level: 100, nature: "Brave", ivs: { hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 0 }, moves: ["doubleironbash", "hyperbeam", "dynamicpunch", "thunderpunch"], pokeball: "cherishball" },
