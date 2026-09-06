@@ -2907,16 +2907,6 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 				// Do not ignore offensive boosts
 			}
 		},
-		onBasePowerPriority: 23,
-		onBasePower(basePower, pokemon, target, move) {
-			if (move.typeChangerBoosted === this.effect) {
-				// Check if the move is Bug or Fighting type
-				if (['Flying'].includes(move.type)) {
-					// Boost the base power for Bug and Fighting type moves
-					return this.chainModify([4915, 4096]);
-				}
-			}
-		},
 		name: "Ledian Is Unbreakable",
 		rating: 4,
 		num: 994,
