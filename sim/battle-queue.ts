@@ -13,7 +13,7 @@
  * @license MIT
  */
 
-import type {Battle} from './battle';
+import type { Battle } from './battle';
 
 /** A move action */
 export interface MoveAction {
@@ -166,7 +166,7 @@ export class BattleQueue {
 		if (!action.side && action.pokemon) action.side = action.pokemon.side;
 		if (!action.move && action.moveid) action.move = this.battle.dex.getActiveMove(action.moveid);
 		if (!action.order) {
-			const orders: {[choice: string]: number} = {
+			const orders: { [choice: string]: number; } = {
 				team: 1,
 				start: 2,
 				instaswitch: 3,
@@ -367,7 +367,7 @@ export class BattleQueue {
 			choice.pokemon.updateSpeed();
 		}
 		const actions = this.resolveAction(choice, midTurn);
-	
+
 		// Determine the order for different types of actions
 		if (choice.choice === 'terastallize') {
 			// Insert Terastallize actions first
@@ -389,7 +389,7 @@ export class BattleQueue {
 					break;
 				}
 			}
-	
+
 			if (firstIndex === null) {
 				this.list.push(...actions);
 			} else {
@@ -425,10 +425,10 @@ export class BattleQueue {
 				return this.battle.comparePriority(a, b);
 			}
 		});
-	
+
 		return this;
 	}
-	
+
 }
 
 export default BattleQueue;

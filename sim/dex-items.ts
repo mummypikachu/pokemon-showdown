@@ -1,5 +1,5 @@
-import {PokemonEventMethods} from './dex-conditions';
-import {BasicEffect, toID} from './dex-data';
+import { PokemonEventMethods } from './dex-conditions';
+import { BasicEffect, toID } from './dex-data';
 
 interface FlingData {
 	basePower: number;
@@ -92,7 +92,7 @@ export class Item extends BasicEffect implements Readonly<BasicEffect> {
 	declare readonly condition?: ConditionData;
 	declare readonly forcedForme?: string;
 	declare readonly isChoice?: boolean;
-	declare readonly naturalGift?: {basePower: number, type: string};
+	declare readonly naturalGift?: { basePower: number, type: string; };
 	declare readonly spritenum?: number;
 	declare readonly boosts?: SparseBoostsTable | false;
 
@@ -143,11 +143,11 @@ export class Item extends BasicEffect implements Readonly<BasicEffect> {
 			// specified manually
 		}
 
-		if (this.isBerry) this.fling = {basePower: 10};
-		if (this.id.endsWith('plate')) this.fling = {basePower: 90};
-		if (this.onDrive) this.fling = {basePower: 70};
-		if (this.megaStone) this.fling = {basePower: 80};
-		if (this.onMemory) this.fling = {basePower: 50};
+		if (this.isBerry) this.fling = { basePower: 10 };
+		if (this.id.endsWith('plate')) this.fling = { basePower: 90 };
+		if (this.onDrive) this.fling = { basePower: 70 };
+		if (this.megaStone) this.fling = { basePower: 80 };
+		if (this.onMemory) this.fling = { basePower: 50 };
 	}
 }
 
@@ -199,7 +199,7 @@ export class DexItems {
 				(item as any).isNonstandard = 'Past';
 			}
 		} else {
-			item = new Item({name: id, exists: false});
+			item = new Item({ name: id, exists: false });
 		}
 
 		if (item.exists) this.itemCache.set(id, item);

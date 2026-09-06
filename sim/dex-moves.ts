@@ -1,5 +1,5 @@
-import {Utils} from '../lib';
-import {BasicEffect, toID} from './dex-data';
+import { Utils } from '../lib';
+import { BasicEffect, toID } from './dex-data';
 
 /**
  * Describes the acceptable target(s) of a move.
@@ -122,14 +122,14 @@ export interface MoveEventMethods {
 	onMoveFail?: CommonHandlers['VoidMove'];
 	onModifyType?: (this: Battle, move: ActiveMove, pokemon: Pokemon, target: Pokemon) => void;
 	onModifyTarget?: (
-		this: Battle, relayVar: {target: Pokemon}, pokemon: Pokemon, target: Pokemon, move: ActiveMove
+		this: Battle, relayVar: { target: Pokemon; }, pokemon: Pokemon, target: Pokemon, move: ActiveMove
 	) => void;
 	onPrepareHit?: CommonHandlers['ResultMove'];
 	onTry?: CommonHandlers['ResultSourceMove'];
 	onTryHit?: CommonHandlers['ExtResultSourceMove'];
 	onTryHitField?: CommonHandlers['ResultMove'];
 	onTryHitSide?: (this: Battle, side: Side, source: Pokemon, move: ActiveMove) => boolean |
-	 null | "" | void;
+		null | "" | void;
 	onTryImmunity?: CommonHandlers['ResultMove'];
 	onTryMove?: CommonHandlers['ResultSourceMove'];
 	onUseMoveMessage?: CommonHandlers['VoidSourceMove'];
@@ -186,7 +186,7 @@ export interface MoveData extends EffectData, MoveEventMethods, HitEffect {
 	heal?: number[] | null;
 	forceSwitch?: boolean;
 	selfSwitch?: 'copyvolatile' | 'shedtail' | boolean;
-	selfBoost?: {boosts?: SparseBoostsTable};
+	selfBoost?: { boosts?: SparseBoostsTable; };
 	selfdestruct?: 'always' | 'ifHit' | boolean;
 	breaksProtect?: boolean;
 	/**
@@ -233,7 +233,7 @@ export interface MoveData extends EffectData, MoveEventMethods, HitEffect {
 	ignoreAccuracy?: boolean;
 	ignoreDefensive?: boolean;
 	ignoreEvasion?: boolean;
-	ignoreImmunity?: boolean | {[k: string]: boolean};
+	ignoreImmunity?: boolean | { [k: string]: boolean; };
 	ignoreNegativeOffensive?: boolean;
 	ignoreOffensive?: boolean;
 	ignorePositiveDefensive?: boolean;
@@ -296,7 +296,7 @@ interface MoveHitData {
 }
 
 type MutableMove = BasicEffect & MoveData;
-type RuinableMove = {[k in `ruined${'Atk' | 'Def' | 'SpA' | 'SpD'}`]?: Pokemon;};
+type RuinableMove = { [k in `ruined${'Atk' | 'Def' | 'SpA' | 'SpD'}`]?: Pokemon; };
 export interface ActiveMove extends MutableMove, RuinableMove {
 	readonly name: string;
 	readonly effectType: 'Move';
@@ -386,19 +386,19 @@ export class DataMove extends BasicEffect implements Readonly<BasicEffect & Move
 	/**
 	 * Pokemon for the attack stat. Ability and Item damage modifiers still come from the real attacker.
 	 */
-	 readonly overrideOffensivePokemon?: 'target' | 'source';
+	readonly overrideOffensivePokemon?: 'target' | 'source';
 	/**
 	 * Physical moves use attack stat modifiers, special moves use special attack stat modifiers.
 	 */
-	 readonly overrideOffensiveStat?: StatIDExceptHP;
+	readonly overrideOffensiveStat?: StatIDExceptHP;
 	/**
 	 * Pokemon for the defense stat. Ability and Item damage modifiers still come from the real defender.
 	 */
-	 readonly overrideDefensivePokemon?: 'target' | 'source';
+	readonly overrideDefensivePokemon?: 'target' | 'source';
 	/**
 	 * uses modifiers that match the new stat
 	 */
-	 readonly overrideDefensiveStat?: StatIDExceptHP;
+	readonly overrideDefensiveStat?: StatIDExceptHP;
 	/** Whether or not this move ignores negative attack boosts. */
 	readonly ignoreNegativeOffensive: boolean;
 	/** Whether or not this move ignores positive defense boosts. */
@@ -507,7 +507,7 @@ export class DataMove extends BasicEffect implements Readonly<BasicEffect & Move
 		this.volatileStatus = typeof data.volatileStatus === 'string' ? (data.volatileStatus as ID) : undefined;
 
 		if (this.category !== 'Status' && !this.maxMove && this.id !== 'struggle') {
-			this.maxMove = {basePower: 1};
+			this.maxMove = { basePower: 1 };
 			if (this.isMax || this.isZ) {
 				// already initialized to 1
 			} else if (!this.basePower) {

@@ -1,5 +1,5 @@
-import {BasicEffect, toID} from './dex-data';
-import type {SecondaryEffect, MoveEventMethods} from './dex-moves';
+import { BasicEffect, toID } from './dex-data';
+import type { SecondaryEffect, MoveEventMethods } from './dex-moves';
 
 export interface EventMethods {
 	onDamagingHit?: (this: Battle, damage: number, target: Pokemon, source: Pokemon, move: ActiveMove) => void;
@@ -594,15 +594,15 @@ export interface FieldEventMethods extends EventMethods {
 	onFieldResidualPriority?: number;
 	onFieldResidualSubOrder?: number;
 }
-export interface PokemonConditionData extends Partial<Condition>, PokemonEventMethods {}
+export interface PokemonConditionData extends Partial<Condition>, PokemonEventMethods { }
 export interface SideConditionData extends
-	Partial<Omit<Condition, 'onStart' | 'onRestart' | 'onEnd'>>, SideEventMethods {}
+	Partial<Omit<Condition, 'onStart' | 'onRestart' | 'onEnd'>>, SideEventMethods { }
 export interface FieldConditionData extends
-	Partial<Omit<Condition, 'onStart' | 'onRestart' | 'onEnd'>>, FieldEventMethods {}
+	Partial<Omit<Condition, 'onStart' | 'onRestart' | 'onEnd'>>, FieldEventMethods { }
 
 export type ConditionData = PokemonConditionData | SideConditionData | FieldConditionData;
 
-export type ModdedConditionData = ConditionData & {inherit?: true};
+export type ModdedConditionData = ConditionData & { inherit?: true; };
 
 export class Condition extends BasicEffect implements
 	Readonly<BasicEffect & SideConditionData & FieldConditionData & PokemonConditionData> {
@@ -627,7 +627,7 @@ export class Condition extends BasicEffect implements
 	}
 }
 
-const EMPTY_CONDITION: Condition = new Condition({name: '', exists: false});
+const EMPTY_CONDITION: Condition = new Condition({ name: '', exists: false });
 
 export class DexConditions {
 	readonly dex: ModdedDex;
@@ -653,26 +653,26 @@ export class DexConditions {
 		let found;
 		if (id.startsWith('item:')) {
 			const item = this.dex.items.getByID(id.slice(5) as ID);
-			condition = {...item, id: 'item:' + item.id as ID} as any as Condition;
+			condition = { ...item, id: 'item:' + item.id as ID } as any as Condition;
 		} else if (id.startsWith('ability:')) {
 			const ability = this.dex.abilities.getByID(id.slice(8) as ID);
-			condition = {...ability, id: 'ability:' + ability.id as ID} as any as Condition;
+			condition = { ...ability, id: 'ability:' + ability.id as ID } as any as Condition;
 		} else if (this.dex.data.Rulesets.hasOwnProperty(id)) {
 			condition = this.dex.formats.get(id) as any as Condition;
 		} else if (this.dex.data.Conditions.hasOwnProperty(id)) {
-			condition = new Condition({name: id, ...this.dex.data.Conditions[id]});
+			condition = new Condition({ name: id, ...this.dex.data.Conditions[id] });
 		} else if (
 			(this.dex.data.Moves.hasOwnProperty(id) && (found = this.dex.data.Moves[id]).condition) ||
 			(this.dex.data.Abilities.hasOwnProperty(id) && (found = this.dex.data.Abilities[id]).condition) ||
 			(this.dex.data.Items.hasOwnProperty(id) && (found = this.dex.data.Items[id]).condition)
 		) {
-			condition = new Condition({name: found.name || id, ...found.condition});
+			condition = new Condition({ name: found.name || id, ...found.condition });
 		} else if (id === 'recoil') {
-			condition = new Condition({name: 'Recoil', effectType: 'Recoil'});
+			condition = new Condition({ name: 'Recoil', effectType: 'Recoil' });
 		} else if (id === 'drain') {
-			condition = new Condition({name: 'Drain', effectType: 'Drain'});
+			condition = new Condition({ name: 'Drain', effectType: 'Drain' });
 		} else {
-			condition = new Condition({name: id, exists: false});
+			condition = new Condition({ name: id, exists: false });
 		}
 
 		this.conditionCache.set(id, condition);

@@ -4,7 +4,7 @@
  *
  * @license MIT
  */
-import {Utils} from '../lib';
+import { Utils } from '../lib';
 
 /**
 * Converts anything to an ID. An ID must have only lowercase alphanumeric
@@ -175,7 +175,7 @@ export class DexNatures {
 			nature = new Nature(natureData);
 			if (nature.gen > this.dex.gen) nature.isNonstandard = 'Future';
 		} else {
-			nature = new Nature({name: id, exists: false});
+			nature = new Nature({ name: id, exists: false });
 		}
 
 		if (nature.exists) this.natureCache.set(id, nature);
@@ -226,7 +226,7 @@ export class TypeInfo implements Readonly<TypeData> {
 	 * Type chart, attackingTypeName:result, effectid:result
 	 * result is: 0 = normal, 1 = weakness, 2 = resistance, 3 = immunity
 	 */
-	readonly damageTaken: {[attackingTypeNameOrEffectid: string]: number};
+	readonly damageTaken: { [attackingTypeNameOrEffectid: string]: number; };
 	/** The IVs to get this Type Hidden Power (in gen 3 and later) */
 	readonly HPivs: SparseStatsTable;
 	/** The DVs to get this Type Hidden Power (in gen 2). */
@@ -273,9 +273,9 @@ export class DexTypes {
 
 		const typeName = id.charAt(0).toUpperCase() + id.substr(1);
 		if (typeName && this.dex.data.TypeChart.hasOwnProperty(id)) {
-			type = new TypeInfo({name: typeName, id, ...this.dex.data.TypeChart[id]});
+			type = new TypeInfo({ name: typeName, id, ...this.dex.data.TypeChart[id] });
 		} else {
-			type = new TypeInfo({name: typeName, id, exists: false, effectType: 'EffectType'});
+			type = new TypeInfo({ name: typeName, id, exists: false, effectType: 'EffectType' });
 		}
 
 		if (type.exists) this.typeCache.set(id, type);
@@ -308,7 +308,7 @@ export class DexTypes {
 }
 
 const idsCache: readonly StatID[] = ['hp', 'atk', 'def', 'spa', 'spd', 'spe'];
-const reverseCache: {readonly [k: string]: StatID} = {
+const reverseCache: { readonly [k: string]: StatID; } = {
 	__proto: null as any,
 	"hitpoints": 'hp',
 	"attack": 'atk',
@@ -319,9 +319,9 @@ const reverseCache: {readonly [k: string]: StatID} = {
 	"speed": 'spe',
 };
 export class DexStats {
-	readonly shortNames: {readonly [k in StatID]: string};
-	readonly mediumNames: {readonly [k in StatID]: string};
-	readonly names: {readonly [k in StatID]: string};
+	readonly shortNames: { readonly [k in StatID]: string };
+	readonly mediumNames: { readonly [k in StatID]: string };
+	readonly names: { readonly [k in StatID]: string };
 	constructor(dex: ModdedDex) {
 		if (dex.gen !== 1) {
 			this.shortNames = {
