@@ -5,9 +5,9 @@
  * @license MIT
  */
 
-import {State} from './state';
-import {EffectState} from './pokemon';
-import {toID} from './dex';
+import { State } from './state';
+import { type EffectState } from './pokemon';
+import { toID } from './dex';
 
 export class Field {
 	readonly battle: Battle;
@@ -17,7 +17,7 @@ export class Field {
 	weatherState: EffectState;
 	terrain: ID;
 	terrainState: EffectState;
-	pseudoWeather: {[id: string]: EffectState};
+	pseudoWeather: { [id: string]: EffectState };
 
 	constructor(battle: Battle) {
 		this.battle = battle;
@@ -26,9 +26,9 @@ export class Field {
 		this.id = '';
 
 		this.weather = '';
-		this.weatherState = {id: ''};
+		this.weatherState = this.battle.initEffectState({ id: '' });
 		this.terrain = '';
-		this.terrainState = {id: ''};
+		this.terrainState = this.battle.initEffectState({ id: '' });
 		this.pseudoWeather = {};
 	}
 
@@ -39,12 +39,12 @@ export class Field {
 	setWeather(status: string | Condition, source: Pokemon | 'debug' | null = null, sourceEffect: Effect | null = null) {
 		status = this.battle.dex.conditions.get(status);
 		if (!sourceEffect && this.battle.effect) sourceEffect = this.battle.effect;
-		if (!source && this.battle.event && this.battle.event.target) source = this.battle.event.target;
+		if (!source && this.battle.event?.target) source = this.battle.event.target;
 		if (source === 'debug') source = this.battle.sides[0].active[0];
 
 		if (this.weather === status.id) {
 			if (sourceEffect && sourceEffect.effectType === 'Ability') {
-				if (this.battle.gen > 9 || this.weatherState.duration === 0) {
+				if (this.battle.gen > 5 || this.weatherState.duration === 0) {
 					return false;
 				}
 			} else if (this.battle.gen > 2 || status.id === 'sandstorm') {
@@ -67,7 +67,7 @@ export class Field {
 		const prevWeather = this.weather;
 		const prevWeatherState = this.weatherState;
 		this.weather = status.id;
-		this.weatherState = {id: status.id};
+		this.weatherState = this.battle.initEffectState({ id: status.id });
 		if (source) {
 			this.weatherState.source = source;
 			this.weatherState.sourceSlot = source.getSlot();
@@ -93,7 +93,7 @@ export class Field {
 		const prevWeather = this.getWeather();
 		this.battle.singleEvent('FieldEnd', prevWeather, this.weatherState, this);
 		this.weather = '';
-		this.weatherState = {id: ''};
+		this.battle.clearEffectState(this.weatherState);
 		this.battle.eachEvent('WeatherChange');
 		return true;
 	}
@@ -106,7 +106,8 @@ export class Field {
 	suppressingWeather() {
 		for (const side of this.battle.sides) {
 			for (const pokemon of side.active) {
-				if (pokemon && !pokemon.fainted && !pokemon.ignoringAbility() && pokemon.getAbility().suppressWeather) {
+				if (pokemon && !pokemon.fainted && !pokemon.ignoringAbility() &&
+					pokemon.getAbility().suppressWeather && !pokemon.abilityState.ending) {
 					return true;
 				}
 			}
@@ -129,26 +130,20 @@ export class Field {
 	setTerrain(status: string | Effect, source: Pokemon | 'debug' | null = null, sourceEffect: Effect | null = null) {
 		status = this.battle.dex.conditions.get(status);
 		if (!sourceEffect && this.battle.effect) sourceEffect = this.battle.effect;
-		if (!source && this.battle.event && this.battle.event.target) source = this.battle.event.target;
+		if (!source && this.battle.event?.target) source = this.battle.event.target;
 		if (source === 'debug') source = this.battle.sides[0].active[0];
 		if (!source) throw new Error(`setting terrain without a source`);
-		if (this.terrain === status.id) {
-		if (sourceEffect && sourceEffect.effectType === 'Ability') {
-				if (this.battle.gen > 9 || this.terrainState.duration === 0) {
-					return false;
-				}
-			}
-		}
+
 		if (this.terrain === status.id) return false;
 		const prevTerrain = this.terrain;
 		const prevTerrainState = this.terrainState;
 		this.terrain = status.id;
-		this.terrainState = {
+		this.terrainState = this.battle.initEffectState({
 			id: status.id,
 			source,
 			sourceSlot: source.getSlot(),
 			duration: status.duration,
-		};
+		});
 		if (status.durationCallback) {
 			this.terrainState.duration = status.durationCallback.call(this.battle, source, source, sourceEffect);
 		}
@@ -166,7 +161,7 @@ export class Field {
 		const prevTerrain = this.getTerrain();
 		this.battle.singleEvent('FieldEnd', prevTerrain, this.terrainState, this);
 		this.terrain = '';
-		this.terrainState = {id: ''};
+		this.battle.clearEffectState(this.terrainState);
 		this.battle.eachEvent('TerrainChange');
 		return true;
 	}
@@ -193,7 +188,7 @@ export class Field {
 		source: Pokemon | 'debug' | null = null,
 		sourceEffect: Effect | null = null
 	): boolean {
-		if (!source && this.battle.event && this.battle.event.target) source = this.battle.event.target;
+		if (!source && this.battle.event?.target) source = this.battle.event.target;
 		if (source === 'debug') source = this.battle.sides[0].active[0];
 		status = this.battle.dex.conditions.get(status);
 
@@ -202,12 +197,12 @@ export class Field {
 			if (!(status as any).onFieldRestart) return false;
 			return this.battle.singleEvent('FieldRestart', status, state, this, source, sourceEffect);
 		}
-		state = this.pseudoWeather[status.id] = {
+		state = this.pseudoWeather[status.id] = this.battle.initEffectState({
 			id: status.id,
 			source,
 			sourceSlot: source?.getSlot(),
 			duration: status.duration,
-		};
+		});
 		if (status.durationCallback) {
 			if (!source) throw new Error(`setting fieldcond without a source`);
 			state.duration = status.durationCallback.call(this.battle, source, source, sourceEffect);
