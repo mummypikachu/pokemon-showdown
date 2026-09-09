@@ -6533,6 +6533,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			workup: ["9M", "9M", "5M"],
 			zapcannon: ["9M"],
 			zenheadbutt: ["9M"],
+			moonblast: ["9M"],
 		},
 		encounters: [
 			{ generation: 1, level: 22 },
@@ -40243,6 +40244,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			wringout: ["9L1", "6L1", "5L66", "4L59"],
 			yawn: ["9L1", "9L1", "6L1", "5L1", "4L1", "3L1"],
 			zenheadbutt: ["9M"],
+			bodypress: ["9M"],
 		},
 	},
 	carvanha: {
@@ -78324,6 +78326,10 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			waterpulse: ["9T"],
 			xscissor: ["9M", "9M"],
 			clawslash: ["9M"],
+			agility: ["9M"],
+			nightslash: ["9M"],
+			gunkshot: ["9M"],
+			zenheadbutt: ["9M"],
 		},
 	},
 	sandygast: {
@@ -83979,6 +83985,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			venoshock: ["9M"],
 			voltswitch: ["9M", "9M"],
 			wildcharge: ["9M", "9M"],
+			paraboliccharge: ["9M"],
 		},
 	},
 	sizzlipede: {
@@ -85220,6 +85227,8 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			trick: ["9M", "9M"],
 			trickroom: ["9S0"],
 			zenheadbutt: ["9M", "9M"],
+			sing: ["9M"],
+			wish: ["9M"],
 		},
 		eventData: [
 			{ generation: 9, level: 75, shiny: 1, perfectIVs: 4, moves: ["psychic", "hypervoice", "shadowball", "trickroom"] },

@@ -5120,10 +5120,10 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 	shielddust: {
 		onModifySecondaries(secondaries) {
 			this.debug('Shield Dust prevent secondary');
-			return secondaries.filter(effect => !!(effect.self || effect.dustproof));
+			return secondaries.filter(effect => !!effect.self);
 		},
-		isBreakable: true,
 		name: "Shield Dust",
+		isBreakable: true,
 		rating: 2,
 		num: 19,
 	},

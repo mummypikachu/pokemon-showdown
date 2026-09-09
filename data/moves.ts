@@ -4440,7 +4440,7 @@ export const Moves: { [moveid: string]: MoveData; } = {
 		name: "Double Shock",
 		pp: 5,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, punch: 1 },
 		onTryMove(pokemon, target, move) {
 			if (pokemon.hasType('Electric')) return;
 			this.add('-fail', pokemon, 'move: Double Shock');
@@ -12698,7 +12698,7 @@ export const Moves: { [moveid: string]: MoveData; } = {
 	meteorassault: {
 		num: 794,
 		accuracy: 100,
-		basePower: 150,
+		basePower: 170,
 		category: "Physical",
 		name: "Meteor Assault",
 		pp: 5,
@@ -18661,7 +18661,7 @@ export const Moves: { [moveid: string]: MoveData; } = {
 	slash: {
 		num: 163,
 		accuracy: 100,
-		basePower: 70,
+		basePower: 80,
 		category: "Physical",
 		name: "Slash",
 		pp: 20,
@@ -18988,7 +18988,7 @@ export const Moves: { [moveid: string]: MoveData; } = {
 	snipeshot: {
 		num: 745,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 85,
 		category: "Special",
 		name: "Snipe Shot",
 		pp: 15,
