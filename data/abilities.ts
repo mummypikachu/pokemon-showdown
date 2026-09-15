@@ -4810,23 +4810,9 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 		num: 24,
 	},
 	runaway: {
-		onAfterEachBoost(boost, target, source, effect) {
-			if (!source || target.isAlly(source)) {
-				if (effect.id === 'stickyweb') {
-					this.hint("Court Change Sticky Web counts as lowering your own Speed, and Run Away only affects stats lowered by foes.", true, source.side);
-				}
-				return;
-			}
-			let statsLowered = false;
-			let i: BoostID;
-			for (i in boost) {
-				if (boost[i]! < 0) {
-					statsLowered = true;
-				}
-			}
-			if (statsLowered) {
-				this.boost({ spe: 2 }, target, target, null, false, true);
-			}
+		onTrapPokemonPriority: -10,
+		onTrapPokemon(pokemon) {
+			pokemon.trapped = pokemon.maybeTrapped = false;
 		},
 		name: "Run Away",
 		rating: 4,

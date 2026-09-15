@@ -95159,6 +95159,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			doubleteam: ["9M"],
 			confide: ["9M"],
 			toxic: ["9M"],//end Univ. TMs
+			ingrain: ["9M"],
 		},
 	},
 	shabo: {

@@ -1722,13 +1722,13 @@ export const AbilitiesText: { [k: string]: AbilityText; } = {
 	},
 	runaway: {
 		name: "Run Away",
-		desc: "This Pokemon's Speed is raised by 2 stages for each of its stat stages that is lowered by an opposing Pokemon.",
-		shortDesc: "This Pokemon's Speed is raised by 2 for each of its stats that is lowered by a foe.",
+		desc: "This Pokémon may switch out, even when it is trapped by another Pokemon or its own Ingrain.",
+		shortDesc: "This Pokémon may switch out even when trapped by another Pokemon or Ingrain.",
 	},
 	rusting: { //klang-excir line
 		name: "Rusting",
 		desc: "This Pokemon's Speed is raised by 2 stages, and has its Defense and Special Defense lowered by 1 stage at the end of each full turn it has been on the field.",
-		shortDesc: "This Pokemon's Speed is raised 2 stages and lowers defenses each turn. Immune to Salt Cure.",
+		shortDesc: "This Pokemon's Speed is raised by 2 and lowers (Sp)Def by 1 each turn. Immune to Salt Cure.",
 	},
 	sandforce: {
 		name: "Sand Force",
