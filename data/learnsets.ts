@@ -40244,7 +40244,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			wringout: ["9L1", "6L1", "5L66", "4L59"],
 			yawn: ["9L1", "9L1", "6L1", "5L1", "4L1", "3L1"],
 			zenheadbutt: ["9M"],
-			bodypress: ["9M"],
+			stuffcheeks: ["9M"],
 		},
 	},
 	carvanha: {
@@ -95160,6 +95160,11 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			confide: ["9M"],
 			toxic: ["9M"],//end Univ. TMs
 			ingrain: ["9M"],
+			lick: ["9M"],
+			infestation: ["9M"],
+			silverwind: ["9M"],
+			ominouswind: ["9M"],
+			fairywind: ["9M"],
 		},
 	},
 	shabo: {
@@ -97670,7 +97675,7 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			steelbeam: ["9M"],
 			steelroller: ["9M"],
 			rollout: ["9M"],
-			decorate: ["9M"],
+			metalburst: ["9M"],
 			mirrorshot: ["9M"],
 			flash: ["9M"],
 			refresh: ["9M"],
@@ -97732,6 +97737,12 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			recover: ["9M"],
 			stealthrock: ["9M"],
 			rest: ["9M"],
+			metalburst: ["9M"],
+			rocksmash: ["9M"],
+			ironhead: ["9M"],
+			rockblast: ["9M"],
+			smackdown: ["9M"],
+			powergem: ["9M"],
 		},
 	},
 	megawattrel: {

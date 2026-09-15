@@ -21392,7 +21392,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData; } = {
 		name: "Scaffixer-Foundation",
 		baseSpecies: "Scaffixer",
 		forme: "Foundation",
-		types: ["Ground", "Normal"],
+		types: ["Ground", "Rock"],
 		gender: "N",
 		baseStats: { hp: 70, atk: 70, def: 70, spa: 70, spd: 70, spe: 30 },
 		abilities: { 0: "Construction" },
