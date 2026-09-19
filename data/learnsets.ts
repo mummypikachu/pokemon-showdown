@@ -73813,7 +73813,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			camouflage: ["9L59", "6L59", "6S0"],
 			coil: ["9L72", "9L72", "6L80"],
 			confide: ["9M", "6M"],
-			coreenforcer: ["9L1", "9T"],
 			crunch: ["9M", "9L32", "9L51", "6L51", "6S0"],
 			dig: ["9M", "9L16", "9L10", "7S2", "6M", "6L10"],
 			doubleteam: ["9M", "6M"],

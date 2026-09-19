@@ -4192,6 +4192,16 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 			if (pokemon.item === 'zygardite') {
 				pokemon.canMegaEvo = 'Zygarde-Mega';
 				this.actions.runMegaEvo(pokemon);
+
+				//coreenforcer to nihillight so that it doesn't create a useless moveslot for 10% and base form
+				const coreEnforcer = pokemon.moveSlots.findIndex(move => move.id === 'coreenforcer');
+				if (coreEnforcer !== -1) {
+					pokemon.moveSlots[coreEnforcer] = {
+						...pokemon.moveSlots[coreEnforcer],
+						id: this.toID('Nihil Light'),
+						move: 'Nihil Light',
+					};
+				}
 			}
 		},
 		isPermanent: true,
