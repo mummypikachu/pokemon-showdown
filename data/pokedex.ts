@@ -21608,7 +21608,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData; } = {
 		name: "Evolotto",
 		types: ["Normal"],
 		baseStats: { hp: 60, atk: 60, def: 60, spa: 60, spd: 60, spe: 60 },
-		abilities: { 0: "Evolot" },
+		abilities: { 0: "Evolot", S:"MegaEvolot" },
 		heightm: 0.3,
 		weightkg: 1,
 		color: "White",

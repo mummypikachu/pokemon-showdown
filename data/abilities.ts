@@ -7642,6 +7642,41 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 		rating: 4,
 		num: 43741713,
 	},
+	megaevolot: { // evolotto ability.
+		name: "MegaEvolot",
+		onStart(pokemon) {
+			if (pokemon.species.id !== 'evolotto') return;
+			const formes = ['Aggron',
+			];
+			const forme = this.sample(formes);
+			const species = this.dex.species.get(forme);
+			if (!species.exists) return;
+			const oldMaxHP = pokemon.maxhp;
+			const oldHP = pokemon.hp;
+			this.add('-activate', pokemon, 'ability: Evolot');
+			this.add('-formechange', pokemon, species.name);
+			pokemon.formeChange(species, this.effect, true);
+			if (pokemon.maxhp !== oldMaxHP) {
+				pokemon.hp = Math.max(
+					1,
+					Math.floor(oldHP * pokemon.maxhp / oldMaxHP)
+				);
+			}
+			let newAbility: string | undefined;
+			switch (species.id) {
+				default:
+					newAbility = species.abilities?.H;
+					break;
+			}
+			if (newAbility) {
+				pokemon.setAbility(newAbility, null, true);
+				pokemon.baseAbility = this.toID(newAbility);
+				pokemon.m.abilityState = {};
+			}
+		},
+		rating: 4,
+		num: 43741713,
+	},
 	webwalker: {
 		name: "Web Walker",
 		//ability effect coded into Sticky Web itself
