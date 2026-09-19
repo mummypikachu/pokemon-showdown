@@ -7539,7 +7539,7 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 				'Drapion', 'Carbink', 'Sableye', 'Mawile', 'Klinklang', 'Forretress', 'Sudowoodo', 'Ledian', 'Ariados', 'Runerigus', 'Smeargle',
 				'Vikavolt', 'Marowak', 'Marowak-Alola', 'Gengar', 'Mr. Mime', 'Mr. Rime', 'Mimikyu', 'Oricorio-Pom-Pom', 'Scolipede', 'Leavanny',
 				'Chesnaught', 'Greninja', 'Delphox', 'Dubwool', 'Manectric', 'Rapidash', 'Rapidash-Galar', 'Quagsire', 'Clodsire', 'Tatsugiri',
-				'Mantine', 'Skeledirge', 'Quaquaval', 'Meowscarada',
+				'Mantine', 'Skeledirge', 'Quaquaval', 'Meowscarada', 'Aggron', 'Lanturn', 'Komala', 'Magikarp',
 			];
 			const forme = this.sample(formes);
 			const species = this.dex.species.get(forme);
@@ -7629,41 +7629,6 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 				case 'mantine': //unitypower
 					newAbility = 'Water Absorb';
 					break;
-				default:
-					newAbility = species.abilities?.H;
-					break;
-			}
-			if (newAbility) {
-				pokemon.setAbility(newAbility, null, true);
-				pokemon.baseAbility = this.toID(newAbility);
-				pokemon.m.abilityState = {};
-			}
-		},
-		rating: 4,
-		num: 43741713,
-	},
-	megaevolot: { // evolotto ability.
-		name: "MegaEvolot",
-		onStart(pokemon) {
-			if (pokemon.species.id !== 'evolotto') return;
-			const formes = ['Aggron',
-			];
-			const forme = this.sample(formes);
-			const species = this.dex.species.get(forme);
-			if (!species.exists) return;
-			const oldMaxHP = pokemon.maxhp;
-			const oldHP = pokemon.hp;
-			this.add('-activate', pokemon, 'ability: Evolot');
-			this.add('-formechange', pokemon, species.name);
-			pokemon.formeChange(species, this.effect, true);
-			if (pokemon.maxhp !== oldMaxHP) {
-				pokemon.hp = Math.max(
-					1,
-					Math.floor(oldHP * pokemon.maxhp / oldMaxHP)
-				);
-			}
-			let newAbility: string | undefined;
-			switch (species.id) {
 				default:
 					newAbility = species.abilities?.H;
 					break;
