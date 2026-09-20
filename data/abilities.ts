@@ -6187,26 +6187,9 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 	toxicboost: {
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
-			if (
-				(attacker.status === 'psn' || attacker.status === 'tox') &&
-				move.category === 'Physical' &&
-				attacker.hasAbility('Toxic Boost') // Check for custom "Toxic Boost" ability
-			) {
-				return this.chainModify(1.5); // Apply the base power boost
+			if ((attacker.status === 'psn' || attacker.status === 'tox') && move.category === 'Physical') {
+				return this.chainModify(1.5);
 			}
-		},
-		// Prevent the Pokémon from taking damage from poison
-		onDamagePriority: 1,
-		onDamage(damage, target, source, effect) {
-			// Check if the Pokémon has the custom "Toxic Boost" ability
-			if (target.hasAbility('Toxic Boost')) {
-				// Prevent the Pokémon from taking damage from poison
-				if (effect.id === 'psn' || effect.id === 'tox') {
-					return 0;
-				}
-			}
-			// Continue with the regular damage calculation
-			return damage;
 		},
 		name: "Toxic Boost",
 		rating: 3,
