@@ -2355,19 +2355,10 @@ export const AbilitiesText: { [k: string]: AbilityText; } = {
 		desc: "If this Pokemon loses its held item for any reason, its Speed is doubled as long as it remains active, has this Ability, and is not holding an item.",
 		shortDesc: "Speed is doubled on held item loss; boost is lost if it switches, gets new item/Ability.",
 	},
-	unitypower: {
-		name: "Unity Power",
-		desc: "If an active ally has this Ability or the Minus Ability, this Pokemon's Special Attack is multiplied by 1.5.",
-		shortDesc: "If an active ally has this Ability or Plus/Minus, this Pokemon's Sp. Atk is 1.5x.",
-		gen4: {
-			desc: "If an active ally has the Minus Ability, this Pokemon's Special Attack is multiplied by 1.5.",
-			shortDesc: "If an active ally has the Minus Ability, this Pokemon's Sp. Atk is 1.5x.",
-		},
-		gen3: {
-			desc: "If an active Pokemon has the Minus Ability, this Pokemon's Special Attack is multiplied by 1.5.",
-			shortDesc: "If an active Pokemon has the Minus Ability, this Pokemon's Sp. Atk is 1.5x.",
-		},
-	},
+	scraper: {
+		name: "Scraper",
+		desc: "If this Pokemon is a Remoraid and a Mantine is an active ally, this Pokemon goes into the Mantine's mouth. The Mantine has its Attack, Special Attack, Speed, Defense, and Special Defense raised by 2 stages. During the effect, the Mantine cannot be switched out, this Pokemon cannot select an action, and attacks targeted at this Pokemon will be avoided but it will still take indirect damage. If this Pokemon faints during the effect, a Pokemon can be switched in as a replacement but the Mantine remains unable to be switched out. If the Mantine faints during the effect, this Pokemon regains the ability to select an action.",
+		shortDesc: "If ally is Mantine: this Pokemon cannot fight, +2 to all Mantine's stats.",
 	},
 	unnerve: {
 		name: "Unnerve",

@@ -4080,6 +4080,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	xerneas: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexTier: "Uber",
 	},
 	xerneasneutral: {
@@ -4088,10 +4089,12 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	yveltal: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexTier: "Uber",
 	},
 	zygarde: {
 		tier: "OU",
+		doublesTier: "DUber",
 		natDexTier: "Uber",
 	},
 	zygarde10: {
@@ -4100,10 +4103,12 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	zygardecomplete: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexTier: "Uber",
 	},
 	zygardemega: {
 		tier: "Uber",
+		doublesTier: "DUber",
 		natDexTier: "Uber",
 	},
 	diancie: {
@@ -4112,6 +4117,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 	},
 	dianciemega: {
 		tier: "OU",
+		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
 	hoopa: {

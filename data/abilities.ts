@@ -7003,16 +7003,31 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 		rating: 4.5,
 		num: 280,
 	},
-	unitypower: {
-		name: "Unity Power",
-		onModifySpAPriority: 5,
-		onModifySpA(spa, pokemon) {
-			for (const allyActive of pokemon.allies()) {
-				if (allyActive.hasAbility(['minus', 'plus'])) {
-					return this.chainModify(1.5);
-				}
+	scraper: {
+		name: "Scraper",
+		onUpdate(pokemon) {
+			const ally = pokemon.allies()[0];
+			if (!ally || pokemon.baseSpecies.baseSpecies !== 'Remoraid' || ally.baseSpecies.baseSpecies !== 'Mantine') {
+				// Handle any edge cases
+				if (pokemon.getVolatile('commanding')) pokemon.removeVolatile('commanding');
+				return;
+			}
+
+			if (!pokemon.getVolatile('commanding')) {
+				// If Dondozo already was commanded this fails
+				if (ally.getVolatile('commanded')) return;
+				// Cancel all actions this turn for pokemon if applicable
+				this.queue.cancelAction(pokemon);
+				// Add volatiles to both pokemon
+				pokemon.addVolatile('commanding');
+				ally.addVolatile('commanded', pokemon);
+				// Continued in conditions.ts in the volatiles
+			} else {
+				if (!ally.fainted) return;
+				pokemon.removeVolatile('commanding');
 			}
 		},
+		isPermanent: true,
 		rating: 4.5,
 		num: 2222222222281,
 	},
