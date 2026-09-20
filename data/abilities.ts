@@ -3890,33 +3890,6 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 		rating: 1.5,
 		num: 20,
 	},
-	speedcontrol: {
-		onSwitchIn(target) {
-			this.add('-start', target, 'ability: Speed Control');
-		},
-		onFoeTryMove(target, source, move) {
-			const targetAllExceptions = ['perishsong', 'flowershield', 'rototiller'];
-			if (move.target === 'foeSide' || (move.target === 'all' && !targetAllExceptions.includes(move.id))) {
-				return;
-			}
-
-			const speedControlHolder = this.effectState.target;
-			if ((source.isAlly(speedControlHolder) || move.target === 'all') && move.priority > 0.1) {
-				this.attrLastMove('[still]');
-				this.add('cant', speedControlHolder, 'ability: Speed Control', move, '[of] ' + target);
-				return false;
-			}
-		},
-		onAnyModifySpe(spe, pokemon) {
-			if (pokemon.hasAbility('speedcontrol') && (pokemon.boosts.spe > 0)) {
-				return this.chainModify(1); // Neutralize the effect of Trick Room and speed boosts
-			}
-		},
-		isBreakable: true,
-		name: "Speed Control",
-		rating: 3,
-		num: 517154,
-	},
 	parentalbond: {
 		onPrepareHit(source, target, move) {
 			if (move.category === 'Status' || move.selfdestruct || move.multihit) return;

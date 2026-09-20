@@ -1365,13 +1365,6 @@ export const AbilitiesText: { [k: string]: AbilityText; } = {
 			shortDesc: "This Pokemon cannot be confused.",
 		},
 	},
-	speedcontrol: {
-		name: "Speed Control",
-		desc: "This Pokemon cannot have its speed changed, including Trick Room.",
-		shortDesc: "Immune to all forms of Speed control.",
-
-		start: "  [POKEMON] is going at its own pace!",
-	},
 	parentalbond: {
 		name: "Parental Bond",
 		desc: "This Pokemon's damaging moves become multi-hit moves that hit twice. The second hit has its damage quartered. Does not affect multi-hit moves or moves that have multiple targets.",
