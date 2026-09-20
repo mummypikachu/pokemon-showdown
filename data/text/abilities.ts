@@ -2357,8 +2357,17 @@ export const AbilitiesText: { [k: string]: AbilityText; } = {
 	},
 	unitypower: {
 		name: "Unity Power",
-		desc: "This Pokémon's moves hit twice. Each hit deals 52% of its original power. Secondary effects are removed.",
-		shortDesc: "Moves hit twice at 52% power, but secondary effects are removed.",
+		desc: "If an active ally has this Ability or the Minus Ability, this Pokemon's Special Attack is multiplied by 1.5.",
+		shortDesc: "If an active ally has this Ability or Plus/Minus, this Pokemon's Sp. Atk is 1.5x.",
+		gen4: {
+			desc: "If an active ally has the Minus Ability, this Pokemon's Special Attack is multiplied by 1.5.",
+			shortDesc: "If an active ally has the Minus Ability, this Pokemon's Sp. Atk is 1.5x.",
+		},
+		gen3: {
+			desc: "If an active Pokemon has the Minus Ability, this Pokemon's Special Attack is multiplied by 1.5.",
+			shortDesc: "If an active Pokemon has the Minus Ability, this Pokemon's Sp. Atk is 1.5x.",
+		},
+	},
 	},
 	unnerve: {
 		name: "Unnerve",

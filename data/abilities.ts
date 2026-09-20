@@ -7005,25 +7005,16 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 	},
 	unitypower: {
 		name: "Unity Power",
-		onModifyMove(move, pokemon) {
-			// Ensure the move is not a status move and can hit twice
-			if (move.category !== 'Status' && !move.multihit) {
-				move.multihit = 2; // Makes the move hit twice
-				move.multihitType = 'unitypower'; // Custom multihit type for this ability
-			}
-			if (move.secondaries) {
-				delete move.secondaries;
-				// Technically not a secondary effect, but it is negated
-				delete move.self;
-			}
-		},
-		onBasePower(basePower, pokemon, target, move) {
-			if (move.multihitType === 'unitypower') {
-				return this.chainModify(0.52); // Reduce power to 52% for each hit
+		onModifySpAPriority: 5,
+		onModifySpA(spa, pokemon) {
+			for (const allyActive of pokemon.allies()) {
+				if (allyActive.hasAbility(['minus', 'plus'])) {
+					return this.chainModify(1.5);
+				}
 			}
 		},
 		rating: 4.5,
-		num: 281, // Unique identifier for the ability
+		num: 2222222222281,
 	},
 	wisped: {
 		name: "Wisped",
