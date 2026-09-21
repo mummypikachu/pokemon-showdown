@@ -53,12 +53,14 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 			if (attacker.species.baseSpecies !== 'Deoxys' || attacker.transformed) return;
 			if (move.id !== 'protect' && move.id !== 'recover' && move.category !== 'Physical' && move.category !== 'Special' && move.category !== 'Status') return;
 			let targetForme = 'Deoxys';
-			if (move.id === 'protect' || move.id === 'recover') {
-				targetForme = 'Deoxys-Defense';
+			if (move.category === 'Status') {
+				if (defender?.isAlly(attacker) || attacker === defender) {
+					targetForme = 'Deoxys-Defense';
+				} else {
+					targetForme = 'Deoxys-Speed';
+				}
 			} else if (move.category === 'Physical' || move.category === 'Special') {
 				targetForme = 'Deoxys-Attack';
-			} else if (move.category === 'Status') {
-				targetForme = 'Deoxys-Speed';
 			}
 			if (attacker.species.name !== targetForme) attacker.formeChange(targetForme);
 		},
@@ -2098,7 +2100,7 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 	grasspelt: {
 		onModifyDefPriority: 6,
 		onModifyDef(pokemon) {
-			if (this.field.isTerrain('grassyterrain')) return this.chainModify(1.5);
+			if (this.field.isTerrain('grassyterrain')) return this.chainModify(2);
 		},
 		isBreakable: true,
 		name: "Grass Pelt",
