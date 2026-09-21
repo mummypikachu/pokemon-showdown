@@ -7615,7 +7615,7 @@ export const Pokedex: { [speciesid: string]: SpeciesData; } = {
 		baseForme: "Normal",
 		types: ["Psychic"],
 		gender: "N",
-		baseStats: { hp: 90, atk: 110, def: 90, spa: 110, spd: 90, spe: 110 },
+		baseStats: { hp: 50, atk: 150, def: 50, spa: 150, spd: 50, spe: 150 },
 		abilities: { 0: "Pressure", H: "Adaptation" },
 		heightm: 1.7,
 		weightkg: 60.8,
