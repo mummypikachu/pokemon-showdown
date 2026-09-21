@@ -10,7 +10,8 @@ export const AbilitiesText: { [k: string]: AbilityText; } = {
 	},
 	adaptation: {
 		name: "Adaptation",
-		shortDesc: "Allows Deoxys to switch inbetween its formes based on its last attack used.",
+		desc: "If the user is Deoxys, Deoxys will transform into Deoxys-Attack if it uses an attacking move. If it uses a status move on itself or an ally, it will become Defense forme, and Speed forme if it targets the pokemon of an opponent.",
+		shortDesc: "Deoxys: Attack forme if attacking, Defense if Status targets own team, else Speed.",
 
 		transform: "  [POKEMON] is adapting.",
 		transformEnd: "  [POKEMON] is adapting.",
@@ -716,7 +717,7 @@ export const AbilitiesText: { [k: string]: AbilityText; } = {
 	},
 	grasspelt: {
 		name: "Grass Pelt",
-		shortDesc: "If Grassy Terrain is active, this Pokemon's Defense is multiplied by 1.5.",
+		shortDesc: "If Grassy Terrain is active, this Pokemon's Defense is multiplied by 2.",
 	},
 	grassysurge: {
 		name: "Grassy Surge",
