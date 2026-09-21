@@ -72,7 +72,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "NFE",
 	},
 	butterfree: {
-		tier: "UU",
+		tier: "PU",
 		doublesTier: "DOU",
 		natDexTier: "RU",
 	},
@@ -81,7 +81,7 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		tier: "Illegal",
 	},
 	butterfreemega: {
-		tier: "OU",
+		tier: "RU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
@@ -94,11 +94,11 @@ export const FormatsData: { [k: string]: SpeciesFormatsData; } = {
 		natDexTier: "NFE",
 	},
 	beedrill: {
-		tier: "UU",
+		tier: "PU",
 		natDexTier: "RU",
 	},
 	beedrillmega: {
-		tier: "Uber",
+		tier: "UU",
 		natDexTier: "UU",
 	},
 	pidgey: {
