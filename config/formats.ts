@@ -46,7 +46,7 @@ export const Formats: FormatList = [
 		rated: false,
 		ruleset: [
 			'Picked Team Size = 3', 'Max Team Size = 6',
-			'Standard', '+CAP'
+			'Standard'
 		],
 		banlist: ['Uber', 'AG', 'Moody', 'Sand Veil', 'Snow Cloak', 'King\'s Rock', 'Baton Pass', 'Shedinja + Air Balloon'],
 	},
@@ -60,7 +60,7 @@ export const Formats: FormatList = [
 		rated: false,
 		ruleset: [
 			'Picked Team Size = 3', 'Max Team Size = 6',
-			'Standard', '+CAP'
+			'Standard'
 		],
 	},
 	{
@@ -83,21 +83,21 @@ export const Formats: FormatList = [
 		name: "[Gen 9] OU",
 
 		mod: 'gen9',
-		ruleset: ['Standard', '+CAP', 'Form Mega Clause'],
+		ruleset: ['Standard', 'Form Mega Clause'],
 		banlist: ['Uber', 'AG', 'Moody', 'Sand Veil', 'Snow Cloak', 'King\'s Rock', 'Baton Pass', 'Gorilla Tactics', 'Last Respects', 'Shedinja + Air Balloon', 'Zygarde + Power Construct'],
 	},
 	{
 		name: "[Gen 9] Dynamaxless OU",
 
 		mod: 'gen9',
-		ruleset: ['Standard', '+CAP', 'Form Mega Clause', 'Dynamax Clause'],
+		ruleset: ['Standard', 'Form Mega Clause', 'Dynamax Clause'],
 		banlist: ['Uber', 'AG', 'Moody', 'Sand Veil', 'Snow Cloak', 'King\'s Rock', 'Baton Pass', 'Gorilla Tactics', 'Last Respects', 'Shedinja + Air Balloon', 'Zygarde + Power Construct'],
 	},
 	{
 		name: "[Gen 9] No Team View OU",
 
 		mod: 'gen9',
-		ruleset: ['Standard No Preview', '+CAP', 'Form Mega Clause'],
+		ruleset: ['Standard No Preview', 'Form Mega Clause'],
 		banlist: ['Uber', 'AG', 'Moody', 'Sand Veil', 'Snow Cloak', 'King\'s Rock', 'Baton Pass', 'Gorilla Tactics', 'Last Respects', 'Shedinja + Air Balloon', 'Zygarde + Power Construct'],
 	},
 	{
@@ -1124,7 +1124,7 @@ export const Formats: FormatList = [
 	{
 		name: "[Gen 9] 40 BP",
 		mod: 'gen9',
-		ruleset: ['Standard', '+CAP'],
+		ruleset: ['Standard'],
 		banlist: [
 			'Leftovers', 'Cud Chew', 'Harvest', 'Mew', 'Arceus', 'Mewtwo-Mega-Y', 'Mewtwo-Mega-X', 'Necrozma-Ultra',
 			'Groudon-Primal', 'Kyogre-Primal', 'Zygarde-Complete', 'Calyrex-Ice', 'Necrozma', 'Zacian', 'Zamazenta',
