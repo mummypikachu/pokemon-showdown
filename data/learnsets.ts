@@ -92212,7 +92212,6 @@ export const Learnsets: { [k: string]: LearnsetData; } = {
 			protect: ["9M"],
 			reflect: ["9M"],
 			rest: ["9M"],
-			risingvoltage: ["9M"],
 			scaryface: ["9M"],
 			shockwave: ["9L7"],
 			sleeptalk: ["9M"],
