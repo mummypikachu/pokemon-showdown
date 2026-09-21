@@ -2336,19 +2336,19 @@ export const Abilities: { [abilityid: string]: AbilityData; } = {
 		rating: 0,
 		num: 134,
 	},
-	hivemind: {
+	insectoidaura: {
 		onStart(pokemon) {
 			if (this.suppressingAbility(pokemon)) return;
-			this.add('-ability', pokemon, 'Hivemind');
+			this.add('-ability', pokemon, 'Insectoid Aura');
 		},
 		onAnyBasePowerPriority: 20,
 		onAnyBasePower(basePower, source, target, move) {
 			if (target === source || move.category === 'Status' || move.type !== 'Bug') return;
-			if (!move.auraBooster?.hasAbility('Hivemind')) move.auraBooster = this.effectState.target;
+			if (!move.auraBooster?.hasAbility('Insectoid Aura')) move.auraBooster = this.effectState.target;
 			if (move.auraBooster !== this.effectState.target) return;
 			return this.chainModify([move.hasAuraBreak ? 3072 : 5448, 4096]);
 		},
-		name: "Hivemind",
+		name: "Insectoid Aura",
 		rating: 3,
 	},
 	honeygather: {
